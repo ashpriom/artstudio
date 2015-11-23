@@ -1,0 +1,159 @@
+<?php
+/**
+ * @package WordPress
+ * @subpackage SynStudio_Theme
+ */	
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+	<head>
+		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+		<meta name="keywords" content="<?php bloginfo('url'); _e(''); ?>" />
+		<meta name="author" content="Andrea Acosta Duarte, Bill Jamshedji, Syed Ashfaque Uddin Priom" />
+		<meta name="copyright" content="Syn Studio" />
+		<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1,initial-scale=1"/>
+		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
+		<meta name="google-site-verification" content="qAS47Im9uAwkEff6CyCYdn_7r6BaP2aRFotf7Fs9Nrs" />
+		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
+		<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+
+		<?php wp_enqueue_script("jquery"); ?>
+		<?php $options = get_option( 'sample_theme_options' ); ?> 
+		<?php wp_head(); ?>
+
+		<?php 
+		//$currentLang = qtrans_getLanguage(); 
+		if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); }
+		if ($currentLang == "fr") { ?>
+			<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-fr.css" type="text/css" media="screen" />
+		<?php }
+		?>
+
+		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.js"></script>
+
+		<script type="text/javascript">
+			jQuery( document ).ready(function( $ ) {
+			 	$("#close-msg").bind( "click", function() {
+					$("#popup-message").hide();
+					$.cookie("syn-popup", "true", { path: '/' });
+					//alert($.cookie("syn-popup"));
+				});	
+			});
+		</script>
+
+		<!-- SkyGlue -->
+		<script type="text/javascript">
+		   var _sgq = _sgq || [];
+		   _sgq.push(['setSgAccount', 'jjkqccji']);
+		   setTimeout(function() {
+			 var sg = document.createElement('script'); sg.type = 'text/javascript'; sg.async = true;
+			 sg.src = ("https:" == document.location.protocol ? "https://dc" : "http://cdn0") + ".skyglue.com/sgtracker.js";
+			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sg, s);
+		   }, 1);
+		</script>
+	</head>
+
+	<body>
+		<!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MJ8KT7"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MJ8KT7');</script>
+        <!-- End Google Tag Manager -->
+        
+		<?php remove_filter ('the_content', 'wpautop'); ?>
+		
+		<div id="wrapper"> <!-- Main Content Wrapper: Start -->
+		<div id="header"> <!-- header: start -->
+	  	
+	  	<!-- pop-up message: start -->
+		<?php
+	  	if($currentLang=="en"){ $cat = 'Pop-up Message'; } else{ $cat = 'Pop-up Message FR'; }
+	  	$catID = get_cat_ID($cat);
+	  	query_posts('cat=' . $catID);
+		while (have_posts()) : the_post();
+		 	$postID = get_the_ID();
+			echo '<div id="popup-message" style="display:none;">';
+			echo '<a id="close-msg" href="javascript: ;">X</a>';
+		 	echo '<h2>' . get_the_title() . '</h2>';
+		  	the_content();
+			echo '</div>';
+			echo '<script type="text/javascript">jQuery( document ).ready(function( $ ) {';
+			echo 'if ($.cookie("syn-popup")=="true"){';
+			echo '$("#popup-message").hide();';
+			echo '} else {';
+			echo '$("#popup-message").show();';
+			echo '}';
+			echo '});</script>';		
+		endwhile;
+		wp_reset_query();
+	  	?>
+  		<!-- pop-up message: end -->
+ 
+		<div id="logo">
+			<?php if($currentLang=="en"){ ?><a href="/home/">Syn Studio - Art School</a> <?php }
+			else{ ?><a href="/francais/">Syn Studio - École d’art à Montréal</a> <?php } ?>
+		</div>
+ 
+		<div id="language">
+   			<div class="phone">514 998-7625</div>   	
+   			<?php if (function_exists('pll_the_languages')){ 
+   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); } 
+   				//qtrans_generateLanguageSelectCode('both');
+   			?>
+		</div>
+  
+		<div id="nav">
+	
+			<div id="mobile-header">
+				<a id="responsive-menu-button" href="#sidr-main"><img alt="Toggle menu" src="<?php echo get_template_directory_uri(); ?>/images/responsive/mobi-toogleMenu.png"></a>
+			</div>
+ 
+		  	<div id="nav-wrapper">
+				<?php
+				if ($currentLang == "fr") {
+					wp_nav_menu( array('menu' => 'Main Nav FR' ));
+					}
+				else {
+					wp_nav_menu( array('menu' => 'Main Nav' ));
+					}
+				?>
+		   	</div>
+	   
+		   	<div id="social">
+				<?php
+				if ($currentLang == "fr") {
+					echo "<h4>GARDEZ LE CONTACT</h4>";
+					}
+				else {
+					echo "<h4>Stay in touch</h4>";
+					}
+				?>
+
+		   		<!-- Social Media -->
+			   	<a href="http://www.facebook.com/SynStudio" target="_blank" title="Facebook" id="lnk-facebook">Facebook</a>
+			    <a href="https://twitter.com/SynStudio" target="_blank" title="Twitter" id="lnk-twitter">Twitter</a>
+			    <a href="https://www.youtube.com/user/SynStudioMontreal" target="_blank" title="You Tube" id="lnk-youtube">YouTube</a>
+
+				<?php 
+				if ($currentLang == "fr") { ?>
+					<script type="text/javascript">
+						var addthis_config = {
+				      	ui_language: "fr" 
+						} 
+					</script>
+				<?php } ?>
+
+				<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=galeriesyn"></script>
+		   	</div>
+ 
+		</div>
+ 
+	</div> <!-- header: end....wrapper ends in footer.php -->
