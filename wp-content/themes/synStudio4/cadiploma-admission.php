@@ -1088,7 +1088,7 @@ Template Name: Concept Art Diploma - Admission
           <div class="response" id="mce-success-response" style="display:none"></div>
         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style="position: absolute; left: -5000px;"><input type="text" name="b_23c298529438530e62af0db46_e8c037fe10" tabindex="-1" value=""></div>
-          <div class="clear" style="width:100%;text-align:center;"><input type="submit" value="Reserve Your Spot Now" name="subscribe" id="mc-embedded-subscribe" class="button orange reserve" onClick="ga(‘send’, ‘event’, ‘CADP’, ‘click-button’, ‘Reserve-Now’, 10);"></div>
+          <div class="clear" style="width:100%;text-align:center;"><input type="submit" value="Reserve Your Spot Now" name="subscribe" id="mc-embedded-subscribe" class="button orange reserve"></div>
           </div>
       </form>
       </div>
@@ -1173,7 +1173,7 @@ Template Name: Concept Art Diploma - Admission
             <p class="synstudio-logo-text-en">Art school</p>
         </div>
             <div class="nav-social hidden-xs hidden-sm">
-                <ul class="menu social-links-menu text-right">
+                <ul class="menu social-links-menu text-right">Uncaught
                     <li>
                         <?php if (function_exists('pll_the_languages')){ 
                             pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
@@ -2128,7 +2128,7 @@ Template Name: Concept Art Diploma - Admission
     <div class="response" id="mce-success-response" style="display:none"></div>
   </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_23c298529438530e62af0db46_f0a74fd57f" tabindex="-1" value=""></div>
-    <div class="clear" style="width:100%;text-align:center;"><input type="submit" value="Reservez votre place des maintenant" name="subscribe" id="mc-embedded-subscribe" class="button orange reserve" onClick="ga(‘send’, ‘event’, ‘CADP’, ‘click-button’, ‘Reservez-Maintenant’, 10);"></div>
+    <div class="clear" style="width:100%;text-align:center;"><input type="submit" value="Reservez votre place des maintenant" name="subscribe" id="mc-embedded-subscribe" class="button orange reserve" ></div>
     </div>
 </form>
 </div>

@@ -283,7 +283,7 @@ Template Name: Concept Art Diploma - About
                         </div>
                         <div class="col-md-4">
                             <div class="tile12">
-                                <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/12_teachers_Shatterd_planet.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/12_teachers_Moons_Hunters.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -760,7 +760,7 @@ Template Name: Concept Art Diploma - About
                         </div>
                         <div class="col-md-4">
                             <div class="tile12">
-                                <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/12_teachers_Shatterd_planet.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/12_teachers_Moons_Hunters.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -1105,7 +1105,7 @@ Template Name: Concept Art Diploma - About
         });  
 
         $(document).ready(function(){
-            jQuery(".tile12").append("<p class='hovertext12'><?php if($currentLang=="en"){echo "Our instructor Xin Ran Liu was the lead artist and co-founder of Kitfox Games, the studio behind Shattered Planet, one of the biggest Kickstarter indy game successes of 2014.";} else{ echo "Notre instructeur Xin Ran Liu fut est le principal artiste et le co-fondateur de Kitfox Games, le studio à l’origine de Shattered Planet, l’un des plus gros succès de Kickstarter en tant jeu indépendant de l’année 2014.";} ?></p>");
+            jQuery(".tile12").append("<p class='hovertext12'><?php if($currentLang=="en"){echo "Our instructor Xin Ran Liu, was lead artist on Moon Hunters, one of the biggest Kickstarter indy game successes of 2014.";} else{ echo "Notre instructeur Xin Ran Liu fut l'artiste principal de Moon Hunters, l'un des plus gros succès Kickstarter en tant que jeu indépendant de 2014.";} ?></p>");
             jQuery(".tile12 .hovertext12").hide();
             jQuery(".tile12").mouseover(function(){
                 jQuery(".tile12 .hovertext12").show();
