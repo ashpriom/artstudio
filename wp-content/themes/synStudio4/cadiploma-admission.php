@@ -1136,7 +1136,7 @@ Template Name: Concept Art Diploma - Admission
     </select>
 </div>
 <div class="mc-field-group input-group">
-    <ul><li><input type="checkbox" value="1" name="group[9225][1]" id="mce-group[9225]-9225-0"><label for="mce-group[9225]-9225-0">I would like to receive free updates from Syn Studio about the world of Concept Art, including masterclasses, podcasts and interviews with world-famous artists, blog articles, free tutorials, etc.. Your information will always be kept safe and secure and won't be shared with others.</label></li>
+    <ul><li><input type="checkbox" value="1" name="group[9225][1]" id="mce-group[9225]-9225-0"><label for="mce-group[9225]-9225-0">  I would like to receive free updates from Syn Studio about the world of Concept Art, including masterclasses, podcasts and interviews with world-famous artists, blog articles, free tutorials, etc.. Your information will always be kept safe and secure and won't be shared with others.</label></li>
 </ul>
 </div>
     <div id="mce-responses" class="clear">
