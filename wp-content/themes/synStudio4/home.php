@@ -40,7 +40,7 @@ get_header(); ?>
 			scroll: 1,
 			auto: 2,
 			wrap: 'last',
-			//animation: 30,
+			//animation: 300,
 			initCallback: mycarousel_initCallback
    			});	
 		}
@@ -50,7 +50,7 @@ get_header(); ?>
 			scroll: 1,
 			auto: 2,
 			wrap: 'last',
-			//animation: 30,
+			//animation: 300,
 			initCallback: mycarousel_initCallback
    			});
 		}
