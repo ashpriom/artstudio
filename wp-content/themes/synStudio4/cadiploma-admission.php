@@ -1144,7 +1144,7 @@ Template Name: Concept Art Diploma - Admission
         <div class="response" id="mce-success-response" style="display:none"></div>
     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_23c298529438530e62af0db46_e8c037fe10" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Reserve Your Spot Now" name="subscribe" id="mc-embedded-subscribe" class="button orange reserve"></div>
+    <div class="clear" style="width:100%;text-align:center;"><input type="submit" value="Reserve Your Spot Now" name="subscribe" id="mc-embedded-subscribe" class="button orange reserve"></div>
     </div>
 </form>
 </div>
@@ -2231,8 +2231,7 @@ End mc_embed_signup-->
     </select>
 </div>
 <div class="mc-field-group input-group">
-    <strong>Contenu </strong>
-    <ul><li><input type="checkbox" value="1" name="group[9233][1]" id="mce-group[9233]-9233-0"><label for="mce-group[9233]-9233-0">Je veux recevoir des informations gratuites de la part de Syn Studio  à propos de l'univers de de la conception artistique (cours, émissions et interviews d'artistes de renommée mondiale, artciles, tutoriels ratuits, etc).</label></li>
+    <ul><li><input type="checkbox" value="1" name="group[9233][1]" id="mce-group[9233]-9233-0"><label for="mce-group[9233]-9233-0">  Je veux recevoir des informations gratuites de la part de Syn Studio  à propos de l'univers de de la conception artistique (cours, émissions et interviews d'artistes de renommée mondiale, artciles, tutoriels ratuits, etc).</label></li>
 </ul>
 </div>
     <div id="mce-responses" class="clear">
@@ -2240,7 +2239,7 @@ End mc_embed_signup-->
         <div class="response" id="mce-success-response" style="display:none"></div>
     </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_23c298529438530e62af0db46_f0a74fd57f" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Reservez votre place des maintenant" name="subscribe" id="mc-embedded-subscribe" class="button orange reserve"></div>
+    <div class="clear" style="width:100%;text-align:center;"><input type="submit" value="Reservez votre place des maintenant" name="subscribe" id="mc-embedded-subscribe" class="button orange reserve"></div>
     </div>
 </form>
 </div>
