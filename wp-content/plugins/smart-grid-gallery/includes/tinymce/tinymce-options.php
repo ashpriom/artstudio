@@ -8,6 +8,13 @@ $grid = array (
 		"title"	=> 'Row Height',
 		"desc"	=> 'The approximate height of rows' ),
 
+	"mobile_row_height" => array (
+		"type"	=> 'text',
+		"value"	=> '200',
+		"units"	=> 'px',
+		"title"	=> 'Mobile Row Height',
+		"desc"	=> 'The approximate height of rows on mobile devices (phones, tablets). <b>Does not consider resolution, window width, or any other factors!</b>' ),
+
 	"fixed_height" => array (
 		"type"	=> 'select',
 		"value"	=> 'false',

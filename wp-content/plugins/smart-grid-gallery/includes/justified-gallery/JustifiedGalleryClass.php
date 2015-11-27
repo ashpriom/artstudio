@@ -32,6 +32,7 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 				
 				// Available in generator
 				"rowHeight" 				=> 200,
+				"mobileRowHeight" 			=> 200,
 				"margins" 					=> 10,
 				"lastRow" 					=> 'nojustify', // or can be 'justify' or 'hide'
 				"fixedHeight" 				=> 'false',
@@ -128,19 +129,10 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 				$this->lightbox_atts['counter'] = str_replace( "B", "%total%", 	$this->lightbox_atts['counter'] );
 			}
 
-			// TosRUs defaults
-			/*if ( $this->lightbox == "tosrus" ) {
-				
-				$this->lightbox_atts = shortcode_atts( array(
-					"effect" 			=> 'slide', // 'fade'
-					"title" 			=> 'true',
-					"pagination" 		=> 'true',
-					"pagination_style"	=> 'thumbnails',
-
-					//"scale"		=> 'fill', // 'fit'
-					
-				), $atts );
-			}*/
+			// Check fo mobile devices
+			if ( wp_is_mobile() ) {
+				$this->gallery_atts['rowHeight'] = $this->gallery_atts['mobileRowHeight'];
+			}
 
 		}
 
@@ -192,6 +184,7 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 			</style>
         	<?php 
 		}
+
 
 		/**
 		 * Echo custom JS based on shortcode params
@@ -249,6 +242,7 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 
 			return $shortcodes;
 		}
+
 
 		/**
 		 * Echo images HTML as required by JustifiedGallery based on ids list
@@ -341,9 +335,7 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 				$target = "";
 				$target = apply_filters( "smart_grid_external_link_target", $target );
 
-				//var_dump($embed_url);
-				
-				
+				//var_dump($embed_url);			
 				
 				// No lightbox
 				if ( $this->shortcode_atts['lightbox'] == "none" ) {
@@ -387,15 +379,7 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 			if ( ! $this->gallery_atts )
 				return;
 
-			$atts_output = "sizeRangeSuffixes : {
-				'lt100': '', 
-				'lt240': '', 
-				'lt320': '', 
-				'lt500': '', 
-				'lt640': '', 
-				'lt1024': ''
-			},";
-
+			$atts_output = "sizeRangeSuffixes : {'lt100': '', 'lt240': '', 'lt320': '', 'lt500': '', 'lt640': '', 'lt1024': ''},";
 			$atts_output .= $this->js_atts( $this->gallery_atts );
 
 			echo $atts_output;
@@ -470,6 +454,12 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 						},";
 
 				$js .= "iframe: {
+						  markup: 
+						    '<div class=\"mfp-iframe-scaler\">'+
+							  '<div class=\"mfp-close\"></div>'+
+							    '<iframe class=\"mfp-iframe\" frameborder=\"0\" allowfullscreen></iframe>'+
+							  '<div class=\"mfp-title\"></div>'+
+							'</div>',
 						  patterns: {
 						    youtube: {
 						      index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
@@ -490,36 +480,18 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 						      src: '//player.vimeo.com/video/%id%?byline=0&amp;portrait=0'
 						    }
 						  }
+						},
+						callbacks: {
+						  markupParse: function(template, values, item) {
+						   values.title = item.el.attr('data-caption');
+						  }
 						}";
 				
 				// Close
 				$js .= "});";
 			}
 
-			// TosRUs
-			/*if ( $this->lightbox == "tosrus" ) {
-				
-				$js .= "$('#justified_gallery_$this->ID a').tosrus({";
-				
-				$js .= "caption: {
-							add: '".$this->lightbox_atts['title']."',
-							attributes: ['data-caption'],
-						},";
-
-				$js .= "pagination : {
-					      add: '".$this->lightbox_atts['pagination']."',
-					      type: '".$this->lightbox_atts['pagination_style']."',
-					   },";
-
-				$js .=	"slides: {
-							scale: '".$this->lightbox_atts['scale']."',
-						},";
-
-				$js .= "});";
-			}*/
-
 			echo $js;
-
 		}
 
 
