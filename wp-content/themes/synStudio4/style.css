@@ -644,9 +644,8 @@ input[type=submit]:hover {
 .Website-Body-Text-C1 {
     color: #F9DF94;
     font-family: "Verdana",sans-serif;
-    /*font-size: 12px;*/
     font-weight: 700;
-    /*line-height: 1.17em;*/
+    margin: 10px 10px 10px 0px;
 }
 
 

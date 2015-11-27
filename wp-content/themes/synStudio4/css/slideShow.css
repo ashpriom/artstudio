@@ -72,9 +72,9 @@
 	text-transform: uppercase;
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: lighter;
-	padding: 5px 24px 6px;
+	/*padding: 5px 24px 6px;*/
+	padding: 0px;
 	display: inline;
-
 	position:absolute;
 	bottom:100px;
 	right:0;
