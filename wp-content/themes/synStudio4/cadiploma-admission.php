@@ -1104,7 +1104,7 @@ Template Name: Concept Art Diploma - Admission
        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
 <div id="mc_embed_signup" class="form11">
-<form action="//synstudio.us2.list-manage.com/subscribe/post?u=23c298529438530e62af0db46&amp;id=e8c037fe10" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="//synstudio.us2.list-manage.com/subscribe/post?u=23c298529438530e62af0db46&amp;id=e8c037fe10" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
     <div id="mc_embed_signup_scroll">
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">
@@ -2198,7 +2198,7 @@ End mc_embed_signup-->
        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
 <div id="mc_embed_signup" class="form11">
-<form action="//synstudio.us2.list-manage.com/subscribe/post?u=23c298529438530e62af0db46&amp;id=f0a74fd57f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="//synstudio.us2.list-manage.com/subscribe/post?u=23c298529438530e62af0db46&amp;id=f0a74fd57f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
     <div id="mc_embed_signup_scroll">
 <div class="indicates-required"><span class="asterisk">*</span> VEUILLEZ NOTER QUE nous créerons un formulaire d'inscription – veuillez garder la place nécessaire**</div>
 <div class="mc-field-group">
