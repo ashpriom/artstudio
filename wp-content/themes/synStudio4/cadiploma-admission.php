@@ -2242,7 +2242,7 @@ End mc_embed_signup-->
     </div>
 </form>
 </div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='MMERGE2';ftypes[2]='dropdown';fnames[3]='MMERGE3';ftypes[3]='dropdown'; /*
+<!--<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='MMERGE2';ftypes[2]='dropdown';fnames[3]='MMERGE3';ftypes[3]='dropdown'; /*
  * Translated default messages for the $ validation plugin.
  * Locale: FR
  */
@@ -2265,7 +2265,7 @@ $.extend($.validator.messages, {
         max: $.validator.format("Veuillez entrer une valeur inférieure ou égale à {0}."),
         min: $.validator.format("Veuillez entrer une valeur supérieure ou égale à {0}.")
 });}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
+<End mc_embed_signup-->
 
             <div class="row">
                 <div class="col-md-12">
