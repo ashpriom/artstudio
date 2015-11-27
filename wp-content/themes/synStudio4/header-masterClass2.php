@@ -27,6 +27,13 @@
 	<?php } ?>
 
 	<style>#nav #social{top:-40px !important;}</style>
+	<style>
+		#mobile-header { display: none; }
+		@media only screen and (max-width: 768px){
+			#mobile-header { display: block;}
+			#nav-wrapper { display: none; }
+		}
+	</style>
 
 </head>
 

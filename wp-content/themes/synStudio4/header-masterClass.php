@@ -15,21 +15,25 @@
 <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<?php wp_enqueue_script("jquery"); ?>
 
+<?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>
 
 <?php 
 if (function_exists('pll_current_language')) { $currentLang = pll_current_language('slug'); } 
 
-if ($currentLang == "fr") {
-?>
-<link rel="stylesheet" href="http://www.synstudio.ca/wp-content/themes/synStudio/css/style-fr.css" type="text/css" media="screen" />
-<?php	
-	
-}
+if ($currentLang == "fr") { ?>
+	<link rel="stylesheet" href="http://www.synstudio.ca/wp-content/themes/synStudio/css/style-fr.css" type="text/css" media="screen" />
+<?php } ?>
 
-?>
+<style>
+	#mobile-header { display: none; }
+	@media only screen and (max-width: 768px){
+		#mobile-header { display: block;}
+		#nav-wrapper { display: none; }
+	}
+</style>
+
 <script src="http://sandbox.synstudio.ca/wp-content/themes/synStudio/test/tinynav.min.js"></script>
 
 <script type="text/javascript">
