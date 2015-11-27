@@ -1150,7 +1150,6 @@ Template Name: Concept Art Diploma - Admission
 </div>
 
 <!--End mc_embed_signup-->
-
             <div class="row">
                 <div class="col-md-12">
                 </div>
