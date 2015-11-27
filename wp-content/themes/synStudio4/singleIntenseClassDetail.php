@@ -195,16 +195,16 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
 					}
 					echo "\",\n";
 					if($currentLang=="en" && $field['text3']!=""){
-					    echo "slideText2:\"Level <span class='Website-Body-Text-C0'>".$field['text3'];
+					    echo "slideText2:\"&nbsp;&nbsp;Level <span class='Website-Body-Text-C0'>".$field['text3'];
 					}
 					elseif($currentLang=="fr" && $field['text3']=="General"){
-					    echo "slideText2:\"Niveau <span class='Website-Body-Text-C0'>GÉNÉRAL";
+					    echo "slideText2:\"&nbsp;&nbsp;Niveau <span class='Website-Body-Text-C0'>GÉNÉRAL";
 					}
 					elseif($currentLang=="fr" && $field['text3']=="Special"){
-					    echo "slideText2:\"Niveau <span class='Website-Body-Text-C0'>SPÉCIAL";
+					    echo "slideText2:\"&nbsp;&nbsp;Niveau <span class='Website-Body-Text-C0'>SPÉCIAL";
 					}
 					elseif($currentLang=="fr" && $field['text3']=="Advanced"){
-					    echo "slideText2:\"Niveau <span class='Website-Body-Text-C0'>AVANCÉ";
+					    echo "slideText2:\"&nbsp;&nbsp;Niveau <span class='Website-Body-Text-C0'>AVANCÉ";
 					}
 					elseif($field['text3']==""){
 					    if($currentLang=="en" || $currentLang=="fr"){
@@ -212,7 +212,7 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
 					    }
 					}
 					else{
-					    echo "slideText2:\"Niveau <span class='Website-Body-Text-C0'>".$field['text3'];
+					    echo "slideText2:\"&nbsp;&nbsp;Niveau <span class='Website-Body-Text-C0'>".$field['text3'];
 					}
 					echo "</span><span class='Website-Body-Text-C1'>".$field['text4'];
 					echo "</span>";
