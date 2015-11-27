@@ -35,6 +35,14 @@
 
 		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.js"></script>
 
+		<style>
+			#mobile-header { display: none; }
+			@media only screen and (max-width: 768px){
+				#mobile-header { display: block;}
+				#nav-wrapper { display: none; }
+			}
+		</style>
+
 		<script type="text/javascript">
 			jQuery( document ).ready(function( $ ) {
 			 	$("#close-msg").bind( "click", function() {

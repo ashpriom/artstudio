@@ -65,13 +65,13 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/test/css/jquery.sidr.light.css" type="text/css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css" type="text/css" media="screen">
 
-<style>
-	#mobile-header { display: none; }
-	@media only screen and (max-width: 768px){
-	#mobile-header { display: block;}
-	#nav-wrapper { display: none; }
-	}
-</style>
+		<style>
+			#mobile-header { display: none; }
+			@media only screen and (max-width: 768px){
+				#mobile-header { display: block;}
+				#nav-wrapper { display: none; }
+			}
+		</style>
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/test/js/jquery.sidr.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.touchwipe.1.1.1.js"></script>
