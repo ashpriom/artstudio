@@ -168,9 +168,9 @@ if ( ! class_exists( 'WSW_Show' ) ) {
 
                 //$settings = get_post_meta( $post_id , 'wsw-settings');
 
-                if (WSW_Main::$settings['chk_author_linking'] == '1') {
-                     //echo '<br><p align="center"><small>This site is using the Seo Wizard Wordpress plugin created by <a href="http://seo.uk.net/" target="_blank">Seo Uk</a></small></p>' . "\n";
-                }
+                //if (WSW_Main::$settings['chk_author_linking'] == '1') {
+                    // echo '<br /><div align="center"><small>This site is using the <a href="http://seo.uk.net/seo-wizard/" target="_blank">Seo Wizard Plugin</a> powered by <a href="http://seo.uk.net/" target="_blank"><img src="http://seo.uk.net/wp-content/uploads/2013/11/seo.uk_.net_.gif" height="19" /></a></small></div>' . "\n";
+                //}
             }
         }
 

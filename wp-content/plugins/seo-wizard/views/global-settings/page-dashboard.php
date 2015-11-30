@@ -57,8 +57,9 @@
 </script>
 <div id="dashboard-page" class="box-border-box col-md-9" style="float: left; display:none; margin-right: 0px;margin-top: 0px;">
 
-    <form action="admin.php?page=wsw_dashboard_page" id="wsw_log_404_form" method="post" class="form-horizontal" role="form">
-
+    <form action="admin.php?page=wsw_dashboard_page" id="wsw_log_404_form" method="post" class="form-horizontal" role="form"><br />
+<strong><font color="green"><font size="4">Get weekly seo tips, important news and exclusive offers from the owners of Seo Wizard <a href="http://seo.uk.net/go-subscribe" target="_blank">click here to subscribe!</a>.</font></font></strong>
+<hr />
         <!-- Zozo Tabs Start-->
         <div id="tabbed-nav">
             <!-- Tab Navigation Menu -->
