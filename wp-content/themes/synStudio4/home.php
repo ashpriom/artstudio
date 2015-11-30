@@ -336,7 +336,7 @@ get_header(); ?>
 			
 				<div class="text">
 					<?php 
-						echo do_shortcode( '[gcal id="9468"]' );
+						echo do_shortcode( '[gcal id="12028"]' );
 						if ($currentLang == "en") { ?>
 			 				<style type="text/css">.gce-list-event {display: block;}</style>
 			 			<?php }
