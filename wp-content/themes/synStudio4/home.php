@@ -320,11 +320,10 @@ get_header(); ?>
 				echo "</div>";
 			}
 			endwhile;
-		?>			
-		<!-- Join Our Newsletter : end -->
+		?>	<!-- Join Our Newsletter : end -->
 
-		<!-- Calendar : start -->
-		<div class="info-box1Wrapper"> 
+		
+		<div class="info-box1Wrapper"> <!-- Calendar : start -->
 			<div class="info-box1">
 				<?php
 					if ($currentLang == "en") {
