@@ -109,55 +109,20 @@ jQuery(document).ready(function () {
 				?>
    </div>
    
-   <div id="social">
-			<?php
-			 echo "<h4>&nbsp;</h4>";
-				//if ($currentLang == "fr") {
-				//	echo "<h4>GARDEZ LE CONTACT</h4>";
-				//}
-				//else {
-				//	echo "<h4>Stay in touch</h4>";
-				//}
-				
-				?>   
-   	<a href="http://www.facebook.com/SynStudio" target="_blank" id="lnk-facebook">Facebook</a>
-    <a href="https://twitter.com/SynStudio" target="_blank" id="lnk-twitter">Twitter</a>
-    
-				<?php
-				if ($currentLang == "fr") {
-					?>
-     <a href="http://synstudio.ca/fr/join-our-newsletter/" id="lnk-newsletter">Newsletter</a>
-     <?
-				}
-				else {
-					?>
-     <a href="http://synstudio.ca/join-our-newsletter/" id="lnk-newsletter">Newsletter</a>
-     <?
-				}
-				?>
-        
-    
-    <!--<a href="#" id="lnk-share">Share</a>-->
-<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style" style="position: absolute; right: 0px; top: 17px;">
-<a class="addthis_button_compact" title="More Choices" id="lnk-share">Share</a>
-</div>
-<?php 
-if ($currentLang == "fr") {
-?>
-<script type="text/javascript">
-var addthis_config = {
-      ui_language: "fr" 
-} 
-</script>
-<?php	
-	
-}
-
-?>
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=galeriesyn"></script>
-<!-- AddThis Button END -->
-   </div>
+   	<div id="social">
+		<?php
+			echo "<h4>&nbsp;</h4>";
+			//if ($currentLang == "fr") {
+			//	echo "<h4>GARDEZ LE CONTACT</h4>";
+			//}
+			//else {
+			//	echo "<h4>Stay in touch</h4>";
+			//}
+		?>   
+	   	<a href="http://www.facebook.com/SynStudio" target="_blank" id="lnk-facebook">Facebook</a>
+	    <a href="https://twitter.com/SynStudio" target="_blank" id="lnk-twitter">Twitter</a>
+	    <a href="https://www.youtube.com/user/SynStudioMontreal" target="_blank" id="lnk-youtube">You Tube</a>
+   	</div>
   </div>
  
  </div>
