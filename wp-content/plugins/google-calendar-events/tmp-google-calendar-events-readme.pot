@@ -1,0 +1,966 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Simple Calendar (aka Google Calendar Events)"
+msgstr ""
+
+#. Short description.
+msgid "Add Google Calendar events to your WordPress site in minutes. Beautiful calendar displays. Fully responsive."
+msgstr ""
+
+#. Screenshot description.
+msgid "Basic Grid view"
+msgstr ""
+
+#. Screenshot description.
+msgid "Basic List view"
+msgstr ""
+
+#. Screenshot description.
+msgid "Calendar settings - Events"
+msgstr ""
+
+#. Screenshot description.
+msgid "Calendar settings - Appearance"
+msgstr ""
+
+#. Screenshot description.
+msgid "Calendar settings - Google Calendar"
+msgstr ""
+
+#. Screenshot description.
+msgid "Calendar settings - Advanced"
+msgstr ""
+
+#. Screenshot description.
+msgid "Add a calendar widget"
+msgstr ""
+
+#. Screenshot description.
+msgid "Attach a calendar to a post or page"
+msgstr ""
+
+#. Found in description header.
+msgid "SIMPLE CALENDAR FEATURES"
+msgstr ""
+
+#. Found in description header.
+msgid "GOOGLE CALENDAR PRO ADD-ON FEATURES"
+msgstr ""
+
+#. Found in description list item.
+msgid "Display events from any public Google Calendar."
+msgstr ""
+
+#. Found in description list item.
+msgid "Keep managing events in Google Calendar. No need to create events in WordPress."
+msgstr ""
+
+#. Found in description list item.
+msgid "Out-of-the-box designs that match your theme’s look and feel."
+msgstr ""
+
+#. Found in description list item.
+msgid "Fully responsive and mobile-friendly monthly grid and list views."
+msgstr ""
+
+#. Found in description list item.
+msgid "Customize event content display using simple tags. No coding required."
+msgstr ""
+
+#. Found in description list item.
+msgid "Combine multiple calendars into single displays explicitly or using categories."
+msgstr ""
+
+#. Found in description list item.
+msgid "Intuitive admin settings for simple configuration changes."
+msgstr ""
+
+#. Found in description list item.
+msgid "Advanced settings to adjust time zones, date/time formats and start of the week."
+msgstr ""
+
+#. Found in description list item.
+msgid "Many translations available with more being added on a regular basis. <a href=\"https://translate.wordpress.org/projects/wp-plugins/google-calendar-events\">Translations welcome!</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "Fully extensible to support add-ons with advanced features for more specific needs."
+msgstr ""
+
+#. Found in description list item.
+msgid "Open source with code hosted on GitHub. <a href=\"https://github.com/moonstonemedia/Simple-Calendar\">Contributions welcome!</a>"
+msgstr ""
+
+#. Found in description list item.
+msgid "Display events from <strong>Private</strong> Google Calendars."
+msgstr ""
+
+#. Found in description list item.
+msgid "Secure connection established between your site and Google using the OAuth standard."
+msgstr ""
+
+#. Found in description list item.
+msgid "Highlight events with colors that match those selected within each Google Calendar event."
+msgstr ""
+
+#. Found in description list item.
+msgid "Display event guest information for any private or public event such as their avatar and if they’re attending."
+msgstr ""
+
+#. Found in description list item.
+msgid "Display event organizer information."
+msgstr ""
+
+#. Found in description list item.
+msgid "Display a list of attachments with links to their original source."
+msgstr ""
+
+#. Found in description list item.
+msgid "Automatic easy updates."
+msgstr ""
+
+#. Found in description list item.
+msgid "Priority email support with a 24-hour response time during weekdays backed by a top-notch team."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"https://simplecalendar.io\">Simple Calendar</a> is the easiest way to add Google Calendar events to your WordPress site. Keep managing everything in Google Calendar. Fine tune the display of your calendars to your liking. Add advanced features with add-ons."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong><a href=\"https://simplecalendar.io/addons/google-calendar-pro/?utm_source=wordpress.org&amp;utm_medium=link&amp;utm_campaign=simple-cal-readme&amp;utm_content=description\">Love the plugin? Please consider purchasing our Google Calendar Pro add-on</a></strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong><a href=\"https://simplecalendar.io/addons/google-calendar-pro/?utm_source=wordpress.org&amp;utm_medium=link&amp;utm_campaign=simple-cal-readme&amp;utm_content=description\">Get these additional features with Google Calendar Pro</a></strong>"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "<a href=\"http://docs.simplecalendar.io/simple-calendar-installation/?utm_source=wordpress.org&amp;utm_medium=link&amp;utm_campaign=simple-cal-readme&amp;utm_content=installation\">Plugin installation instructions</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fixed all day multi-day events showing on an extra day."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fixed multi-day events that span less than 24 hours to show up on both days."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fixed multi-day events that span 2 days to show up correctly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fixed issues with grouped calendars using categories not loading."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Additional empty check for previous array_combine PHP error."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Remove extra qtip triangle image from popup."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fixed bug with days being off by one day."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Added check for array to avoid array_combine() PHP error."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Allow last list event to show correctly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Update shortcode to not check for a singular page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fixed a bug where HTML in event description was not being rendered properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fixed a script loading issue when using the CPT view."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Check for required PHP extensions upon plugin activation (curl and mbstring so far)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fixed always enqueue option to work correctly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fixed issue where multiple shortcodes would sometimes not load scripts correctly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fixed z-index issue for admin tooltips."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Change default \"today\" color to blue (#1e73be)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Added option to display a compact list view."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Added option to hide the header in list view."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Improved CSS styling for default list and grid CSS."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fixed bug where calendar days were off by one day."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fixed bug with update script being skipped via attachment to activation hook."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Announcement: Plugin renamed to Simple Calendar."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Announcement: Visit our new website at <a href=\"https://simplecalendar.io/?utm_source=wordpress.org&amp;utm_medium=link&amp;utm_campaign=simple-cal-readme&amp;utm_content=changelog\">simplecalendar.io</a>!"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Modular and extensible plugin, add-ons ready."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Reworked default calendar views, now fully responsive (and titles in grid)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Completely redesigned the admin user interface."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Many new settings panel in admin dashboard, with better semantics and organization."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: A System Report page to help you troubleshoot problems and improve support response."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Use categories to organize your calendars."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Feeds moved from 'gce_feed' to 'calendar' post type slug, permalink change. "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Timezones handling are more accurate."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Incompatibilities with themes and other plugins."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Several other bugfixes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Refactor: Plugin rebuilt from ground up: namespaces, closures, Composer support, entirely OOP."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Dev: PHP 5.3 minimum required."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Dev: All requests to Google from now on will be handled with the official Google API PHP Client."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Dev: Tested up to WordPress 4.4."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Announcement: Simple Calendar is coming, changes ahead."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Deprecation: The bundled/default Google API key reached it's quota and was shut off. Using your own API key is now required."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Bug in HTML support in events description."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Fallback for DateTime::setTimestamp() for installations still using PHP 5.2."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Support HTML in events description when using <code>html=\"true\"</code> attribute in shortcode."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Localization: Added Finnish translations, courtesy of Ville Myllymäki."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Improve timezone handling when sending a request to Google."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Reintroduced imagesloaded library to improve compatibility with themes using Isotope and Masonry."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Calendar not working correctly with custom date range grid after 2.2.9 changes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Event links pointing to Google Calendar have a timezone argument from feed setting."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Improved assets loading, only load scripts on posts and pages that have a calendar."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Localization: Updated Norwegian translations."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Improved security when saving plugin settings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Added URL encoding to fix some issues with API keys containing special characters."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Use calendar feed timezone or website timezone (default calendar)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feature: Added an 'Add Calendar' button to quickly add a shortcode in posts."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix: Reverted register scripts hook to init."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Localization: Updated French translations."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Flush permalinks on plugin activation and deactivation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Added <code>[if-not-location]</code> event builder conditional shortcode."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Added a 'gce_no_events_message_text' filter when no events are found."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tweak: Added a clear cache bulk action for clearing caches of multiple feeds."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Plugin performs a requirements check to ensure users are running a recent version of WordPress."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added '.gce-has--events' class to count events in each day in grid display."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed unnecessary imagesLoaded JS library (optional dependency of the qTip2 library)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with the start month of the custom date range grid view."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with backslashes in date ant time custom format inputs."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed scripts and styles loading issues."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bugs when custom date range values were left blank."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Russian translation provided by Vadim Reutskiy."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Swedish translation provided by Familjedaghemmet Chicos."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tested up to WordPress 4.3."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated calls to add_query_arg to prevent any possible XSS attacks."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with fatal error in rare cases by rearragning order of plugin file includes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with navigation links sometimes returning -1."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Corrected typo with paging links title attributes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated French translation files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed Catalan translation files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed encoding bug with [maps-link] new window attribute."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with the \"More details...\" link encoding."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added note about total event limit of 2,500 now enforced by the Google Calendar API."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated earliest feed event date default to 1 (one) month back."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "0 (zero) value now allowed for earliest and latest feed event dates (sets them to the current date)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor public script improvements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Brazilian Portuguese translation files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated jQuery UI datepicker CSS CDN reference for feed settings pages."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tested up to WordPress 4.2."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Option to always enqueue scripts &amp; styles now enabled by default."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to always enqueue scripts and styles on every post and page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added custom date range grid option to display modes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to disable the plugin CSS file."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with list intervals."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with event list showing past events."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor public JavaScript performance updates."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Enqueue scripts &amp; styles on all posts &amp; pages temporarily until better detection can be put in place."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed GCal ID encoding in feed settings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated Italian translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated French translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added custom date range options."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to hide tooltips on grid display."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added additional save button at the bottom of the feed settings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Performance updates to script enqueues."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated Catalan translation files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated list output logic."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with multi-day events sometimes not showing up in list view."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with calendar ID field not getting encoded."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with tooltips scrolling on mobile."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with Google Hangout event links."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with widget settings not being unique."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Widget UI enhancements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Feed settings UI enhancements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Error messaging updates."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Security improvements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Restructured next and back paging navigation script."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated Italian translation files."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "More tooltip (qTip2) effects &amp; styling."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with tooltip (qTip2) in some cases by now including it's imagesLoaded script."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tooltip style improvements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tooltip minified JS map file now included."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated Lithuanian translation."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix bug with grouped-list multi-day event title."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix bug when saving a bulk edit."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated jQuery tooltip library to <a href=\"http://qtip2.com/\">qTip2</a>. Previously using unmaintained original qTip library."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Reverted CSS enqueue change."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Catalan translation - Provided by Toni Ginard &amp; Monica Grau of <a href=\"http://agora.xtec.cat/\">agora.xtec.cat</a>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated AJAX security code."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with calendar ID field not trimming extra spaces."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated French translation - Pull Request by @Jojaba"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tested up to WordPress 4.1."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Only load plugin scripts and stylesheets when the viewable page is rendering output from this plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bugs with simple display options."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added better error checking and output options to help in debugging GCal feeds."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Dutch translation - Provided by Henri van Werkhoven."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with quick edit clearing out feed settings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix bug with pagination creating extra DOM elements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Localization string fixes - Pull Request by @Jojaba"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added HTML to group events of the same day semantically - Pull Request by @martinburchell"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with [cal-id] event builder code."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add in post data resets."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with all day events not displaying."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added missing timezone parameter to internal query."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated to use Google Calendar API version 3. Version 2 deprecated on Nov. 17, 2014."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "As of Nov. 17, 2014 the GCal API v2 is deprecated, which breaks all calendar feed displays. This update will temporarily hide the display while we work on a solution that uses GCal API v3."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Events will now display if it hasn't ended yet for list views."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with date() call causing a display error in some cases."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with with widget tooltip text display."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added cache clearing on upgrade."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added filters for Previous and Next link text."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Internationalization and language file updates."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Simplified text domain function."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Lithuanian translation - Provided by Andrius Mazeika of <a href=\"http://mazeika.info/\">mazeika.info</a>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Reverted previous bug fix that introduced new bugs."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Polish translation - Provided by Michał Pasternak of <a href=\"http://iplweb.pl/\">iplweb.pl</a>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor bug fixes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added minimum and maximum feed date options to fix event display issues and boost performance."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a caching issue to increase performance."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug where backslashes kept getting added to event titles that already contained single quotes when navigating through pages in widget."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix timezone issue."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed display bug with event date and grouped lists."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed broken paging links when feed IDs contain spaces between them."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug with start offset and grouped lists not working properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug where clear cache link was showing on any type of CPT."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added German translation - Provided by Stefanie Drucker of <a href=\"http://www.kreativhuhn.at/\">kreativhuhn.at</a>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Norwegian translation - Provided by Tore Hjartland of <a href=\"http://www.aliom.no/\">aliom.no</a>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to show/hide paging."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to limit display to any number of days or events per page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to set the start date offset any number of days back or ahead (list view)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed retrieve events from/until options now that display limit options will be used."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed max number of events to retrieve option."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added shortcode attribute 'paging'."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added shortcode attribute 'interval'."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added shortcode attribute 'interval_count'."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added shortcode attribute 'offset_interval_count'."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added shortcode attribute 'offset_direction'."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated shortcode 'display' attribute to allow a value of 'grouped-list'."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Date no longer shows up for the title (list view)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "HTML restructured to use div tags instead of an unordered list (list view)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Nav bar HTML (Back/Next links and month title) restructured to use div tags instead of span and percentages."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Moved clear cache button and changed style."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Italian translation - Provided by Francesco Paccagnella of <a href=\"http://www.pacca.it/\">pacca.it</a>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added French translation - Provided by Vincent Bray."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed PHP error during upgrade."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed cross-site scripting (XSS) vulnerability."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "JavaScript restructured to fit more in line with best practices."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove unused admin script file."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug where retrieve from/until dates were accidentally removed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug where calendar feed caches weren't getting cleared properly."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed feed settings metabox content wrapping issue."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Spanish translation - Provided by Eduardo Larequi of <a href=\"http://www.educacion.navarra.es/web/pnte/\">educacion.navarra.es/web/pnte/</a>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed timezone issues by forcing calendar feeds to use the timezone selected in the site's General Settings. Feed-specific timezone setting removed."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug with recurring events display."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed an upgrade bug with multiple day events."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed display errors with certain event builder shortcodes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added language folder."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Plugin rewritten from scratch."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Now using custom post types for storing and customizing Google calendar feeds."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Introduced the shortcode <code>[gcal]</code> (old shortcode still supported)."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "= 2.0.3.1 - October 7, 2014="
+msgstr ""
+
+#. Found in faq header.
+msgid "Where's your plugin documentation?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I get notified by email of new releases?"
+msgstr ""
+
+#. Found in faq header.
+msgid "How do I contribute to Simple Calendar?"
+msgstr ""
+
+#. Found in faq list item.
+msgid "<a href=\"https://wordpress.org/support/view/plugin-reviews/google-calendar-events?postform#postform\">Rate our plugin</a> and help spread the word!"
+msgstr ""
+
+#. Found in faq list item.
+msgid "Help answer questions in our <a href=\"https://wordpress.org/support/plugin/google-calendar-events\">community support forum</a>."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Report bugs (with steps to reproduce) or submit pull requests <a href=\"https://github.com/moonstonemedia/Simple-Calendar\">on GitHub</a>."
+msgstr ""
+
+#. Found in faq list item.
+msgid "Help add or update a <a href=\"https://translate.wordpress.org/projects/wp-plugins/google-calendar-events\">plugin translation</a>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Find our docs at <a href=\"http://docs.simplecalendar.io/?utm_source=wordpress.org&amp;utm_medium=link&amp;utm_campaign=simple-cal-readme&amp;utm_content=faq\">docs.simplecalendar.io</a>"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<a href=\"https://www.getdrip.com/forms/9434542/submissions/new\">Subscribe here</a> to be notified by email of major features or updates."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "We'd love your help! Here's a few things you can do:"
+msgstr ""
