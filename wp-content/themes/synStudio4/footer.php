@@ -80,7 +80,6 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 	jQuery('#responsive-menu-button').sidr({
 	name: 'sidr-main',
 	<?php
-	    //$currentLang = qtrans_getLanguage(); 
 		if ($currentLang == "fr") { ?>
 			source: '.menu-main-nav-fr-container'
 		<?php }
@@ -121,7 +120,6 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 				jQuery('#responsive-menu-button').sidr({
 					name: 'sidr-main',
 					<?php
-				    //$currentLang = qtrans_getLanguage(); 
 					if ($currentLang == "fr") { ?>
 						source: '.menu-main-nav-fr-container'
 					<?php }

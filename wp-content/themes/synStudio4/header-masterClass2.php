@@ -67,8 +67,7 @@
 
   		<div id="language2" style="top: 270px; right: 12px; color:white;">
    			<?php if (function_exists('pll_the_languages')){ 
-   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); } 
-   				//qtrans_generateLanguageSelectCode('both');
+   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); }
    			?>
   		</div>
   

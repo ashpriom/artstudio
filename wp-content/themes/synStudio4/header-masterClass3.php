@@ -91,8 +91,9 @@ jQuery(document).ready(function () {
 				?>  
   <!-- banner: end -->
   <div id="language2" style="top: 270px; right: 12px; color:white;">
-   <?php echo qtrans_generateLanguageSelectCode('both'); ?>   
-   <!--<a href="#">Fran&ccedil;ais</a>-->
+   <?php if (function_exists('pll_the_languages')){ 
+   		pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); }
+   	?>
   </div>
   
   <div id="nav">
@@ -122,27 +123,7 @@ jQuery(document).ready(function () {
    	<a href="http://www.facebook.com/SynStudio" target="_blank" id="lnk-facebook">Facebook</a>
     <a href="https://twitter.com/SynStudio" target="_blank" id="lnk-twitter">Twitter</a>
     <a href="https://www.youtube.com/user/SynStudioMontreal" target="_blank" id="lnk-youtube">You Tube</a>
-				
-	<!--			<?php
-    $currentLang = qtrans_getLanguage(); 
-				if ($currentLang == "fr") {
-					?>
-     <a href="http://synstudio.ca/fr/join-our-newsletter/" id="lnk-newsletter">Newsletter</a>
-     <?
-				}
-				else {
-					?>
-     <a href="http://synstudio.ca/join-our-newsletter/" id="lnk-newsletter">Newsletter</a>
-     <?
-				}
-				?>
-        
-    
-    <a href="#" id="lnk-share">Share</a>-->
-<!-- AddThis Button BEGIN 
-<div class="addthis_toolbox addthis_default_style" style="position: absolute; right: 0px; top: 17px;">
-<a class="addthis_button_compact" title="More Choices" id="lnk-share">Share</a>
-</div>-->
+
 <?php 
 if ($currentLang == "fr") {
 ?>

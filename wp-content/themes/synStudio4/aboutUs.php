@@ -8,7 +8,7 @@ Template Name: About Us Page
  */
 get_header();
 
-$currentLang = qtrans_getLanguage(); 
+if (function_exists('pll_current_language')) { $currentLang = pll_current_language('slug'); }
 
 ?>
 

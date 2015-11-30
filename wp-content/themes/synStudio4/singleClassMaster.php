@@ -1,7 +1,7 @@
 <?php
 
 $postID = get_the_ID();
-$currentLang = qtrans_getLanguage(); 
+if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); }
 $options = get_option( 'sample_theme_options' );
 
 ?>

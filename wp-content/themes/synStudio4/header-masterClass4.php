@@ -89,11 +89,12 @@ jQuery(document).ready(function () {
 					echo "<img src='http://synstudio.ca/wp-content/uploads/2015/05/Syn_MIM_Partnership_Banner_v01a_English.jpg' alt='Shaddy Safadi & Eytan Zana - Concept Art Masterclass' width='1000' />";
 				}
 				?>  
-  <!-- banner: end -->
-  <div id="language2" style="top: 270px; right: 12px; color:white;">
-   <?php echo qtrans_generateLanguageSelectCode('both'); ?>   
-   <!--<a href="#">Fran&ccedil;ais</a>-->
-  </div>
+  	<!-- banner: end -->
+  	<div id="language2" style="top: 270px; right: 12px; color:white;">
+   	<?php if (function_exists('pll_the_languages')){ 
+   		pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); }
+   	?>
+  	</div>
   
   <div id="nav">
   	<div id="nav-wrapper">

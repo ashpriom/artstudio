@@ -26,7 +26,6 @@
 		<?php wp_head(); ?>
 
 		<?php 
-		//$currentLang = qtrans_getLanguage(); 
 		if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); }
 		if ($currentLang == "fr") { ?>
 			<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-fr.css" type="text/css" media="screen" />
@@ -113,8 +112,7 @@
 		<div id="language">
    			<div class="phone">514 998-7625</div>   	
    			<?php if (function_exists('pll_the_languages')){ 
-   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); } 
-   				//qtrans_generateLanguageSelectCode('both');
+   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); }
    			?>
 		</div>
   
