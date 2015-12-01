@@ -7,7 +7,6 @@ Description: Information System for Syn Studio Art School
 Author: Syed Ashfaque Uddin Priom
 Version: 1.0
 Author URI: http://ashpriom.com/
-
 Copyright 2015 Syed Ashfaque Uddin Priom, Syn Studio 
 */
 
