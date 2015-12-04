@@ -268,7 +268,7 @@ Template Name: Concept Art Diploma - Admission
                             <table>
                                 <tr class="grey-table-row">
                                     <td>School Name:</td>
-                                    <td>Syn Studio</td>
+                                    <td>Syn Studio (693630)</td>
                                 </tr>
                                 <tr>
                                     <td>Program Name and Code:</td>
@@ -1378,7 +1378,7 @@ Template Name: Concept Art Diploma - Admission
                             <table>
                                 <tr class="grey-table-row">
                                     <td>Nom de l'école:</td>
-                                    <td>Syn Studio</td>
+                                    <td>Syn Studio (693630)</td>
                                 </tr>
                                 <tr>
                                     <td>Nom du programme:</td>
