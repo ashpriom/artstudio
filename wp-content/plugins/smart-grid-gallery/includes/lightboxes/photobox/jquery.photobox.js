@@ -1,22 +1,23 @@
 /*!
-    photobox v1.9.1
+    photobox v1.9.9
     (c) 2013 Yair Even Or <http://dropthebit.com>
 
     MIT-style license.
 */
 
-(function($, doc, win){
+
+;(function($, doc, win){
     "use strict";
 
-    var Photobox, photobox, options, images=[], imageLinks, activeImage = -1, activeURL, lastActive, activeType, prevImage, nextImage, thumbsStripe, docElm, APControl,
-        transitionend = "transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
+    var Photobox, photobox, options, images=[], imageLinks, activeImage = -1, activeURL, lastActive, activeType, prevImage, nextImage, thumbsStripe, docElm, APControl, changeImage,
         isOldIE = !('placeholder' in doc.createElement('input')),
         noPointerEvents = (function(){ var el = $('<p>')[0]; el.style.cssText = 'pointer-events:auto'; return !el.style.pointerEvents})(),
-        isMobile = 'ontouchend' in doc, // should be updated to something that detects the lack of a mouse
+        isTouchDevice = false, // assume "false" unless there's a touch
         thumbsContainerWidth, thumbsTotalWidth, activeThumb = $(),
         blankImg = "data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==",
         transformOrigin = getPrefixed('transformOrigin'),
         transition = getPrefixed('transition'),
+        transitionend = "transitionend webkitTransitionEnd oTransitionEnd otransitionend",
           // Normalize rAF
         raf = window.requestAnimationFrame
            || window.webkitRequestAnimationFrame
@@ -30,24 +31,25 @@
         closeBtn, image, video, prevBtn, nextBtn, thumbsToggler, caption, captionText, pbLoader, autoplayBtn, thumbs, wrapper,
 
         defaults = {
-            single        : false,   // if "true" - gallery will only show a single image, with no way to navigate
-            beforeShow    : null,    // Callback before showing an image
-            afterClose    : null,    // Callback after closing the gallery
-            loop          : true,    // Allows to navigate between first and last images
-            thumb         : null,    // A relative path from the link to the thumbnail (if it's not inside the link)
-            thumbs        : true,    // Show gallery thumbnails below the presented photo
-            counter       : "(A/B)", // Counts which piece of content is being viewed, relative to the total count of items in the photobox set. ["false","String"]
-            title         : true,    // show the original alt or title attribute of the image's thumbnail. (path to image, relative to the element which triggers photobox)
-            autoplay      : false,   // should autoplay on first time or not
-            time          : 3000,    // autoplay interval, in miliseconds (less than 1000 will hide the autoplay button)
-            history       : true,    // should use history hashing if possible (HTML5 API)
-            hideFlash     : true,    // Hides flash elements on the page when photobox is activated. NOTE: flash elements must have wmode parameter set to "opaque" or "transparent" if this is set to false
-            zoomable      : true,    // disable/enable mousewheel image zooming
-            wheelNextPrev : true,    // change image using mousewheel left/right
+            single        : false,        // if "true" - gallery will only show a single image, with no way to navigate
+            beforeShow    : null,         // Callback before showing an image
+            afterClose    : null,         // Callback after closing the gallery
+            loop          : true,         // Allows to navigate between first and last images
+            thumb         : null,         // A relative path from the link to the thumbnail (if it's not inside the link)
+            thumbs        : true,         // Show gallery thumbnails below the presented photo
+            thumbAttr     : 'data-src',   // Attribute to get the image for the thumbnail from
+            counter       : "(A/B)",      // Counts which piece of content is being viewed, relative to the total count of items in the photobox set. ["false","String"]
+            title         : true,         // show the original alt or title attribute of the image's thumbnail. (path to image, relative to the element which triggers photobox)
+            autoplay      : false,        // should autoplay on first time or not
+            time          : 3000,         // autoplay interval, in miliseconds (less than 1000 will hide the autoplay button)
+            history       : false,        // should use history hashing if possible (HTML5 API)
+            hideFlash     : true,         // Hides flash elements on the page when photobox is activated. NOTE: flash elements must have wmode parameter set to "opaque" or "transparent" if this is set to false
+            zoomable      : true,         // disable/enable mousewheel image zooming
+            wheelNextPrev : true,         // change image using mousewheel left/right
             keys          : {
-                close : '27, 88, 67',    // keycodes to close photobox, default: esc (27), 'x' (88), 'c' (67)
-                prev  : '37, 80',        // keycodes to navigate to the previous image, default: Left arrow (37), 'p' (80)
-                next  : '39, 78'         // keycodes to navigate to the next image, default: Right arrow (39), 'n' (78)
+                close : [27, 88, 67],    // keycodes to close photobox, default: esc (27), 'x' (88), 'c' (67)
+                prev  : [37, 80],        // keycodes to navigate to the previous image, default: Left arrow (37), 'p' (80)
+                next  : [39, 78]         // keycodes to navigate to the next image, default: Right arrow (39), 'n' (78)
             }
         },
 
@@ -71,18 +73,38 @@
                             thumbs = $('<div>').addClass('pbThumbs')
                         )
                     );
-    /*---------------------------------------------------------------
-        Initialization (on DOM ready)
-    */
+
+    ///////////////////////////////////////////////
+    // Should remove this and use underscore/lodash if possible
+
+    function throttle(callback, duration){
+        var wait = false;
+        return function(){
+            if( !wait ){
+                callback.call();
+                wait = true;
+                setTimeout(function(){wait = false; }, duration);
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////
+    // Initialization (on DOM ready)
+
     function prepareDOM(){
         noPointerEvents && overlay.hide();
+
+        $(doc).on('touchstart.testMouse', function(){
+            $(doc).off('touchstart.testMouse');
+            isTouchDevice = true;
+            overlay.addClass('mobile');
+        });
 
         autoplayBtn.off().on('click', APControl.toggle);
         // attach a delegated event on the thumbs container
         thumbs.off().on('click', 'a', thumbsStripe.click);
         // if useragent is IE < 10 (user deserves a slap on the face, but I gotta support them still...)
         isOldIE && overlay.addClass('msie');
-        isMobile && overlay.addClass('mobile');
 
         // cancel prorogation up to the overlay container so it won't close
         overlay.off().on('click', 'img', function(e){
@@ -158,59 +180,63 @@
             // if any node was added or removed from the Selector of the gallery
             this.observerTimeout = null;
 
-            if( this.selector[0].nodeType == 1 ) // observe normal nodes
-                that.observeDOM( that.selector[0], function(){
-                    // use a timeout to prevent more than one DOM change event firing at once, and also to overcome the fact that IE's DOMNodeRemoved is fired BEFORE elements were actually removed
-                    clearTimeout(that.observerTimeout);
-                    that.observerTimeout = setTimeout( function(){
-                        var filtered = that.imageLinksFilter( that.selector.find(that.target) ),
-                            activeIndex = 0,
-                            isActiveUrl = false,
-                            i;
+            if( !isOldIE && this.selector[0].nodeType == 1 ) // observe normal nodes
+                this.observeDOM( this.selector[0], this.onDOMchanges.bind(this));
+        },
 
-                        // Make sure that ONLY DOM changes in the photobox number of items will trigger a change
-                        if(that.imageLinks.length == filtered[0].length)
-                            return;
+        onDOMchanges : function(){
+            var that = this;
+             // use a timeout to prevent more than one DOM change event firing at once, and also to overcome the fact that IE's DOMNodeRemoved is fired BEFORE elements were actually removed
+            clearTimeout(this.observerTimeout);
+            that.observerTimeout = setTimeout( function(){
+                var filtered = that.imageLinksFilter( that.selector.find(that.target) ),
+                    activeIndex = 0,
+                    isActiveUrl = false,
+                    i;
 
-                        that.imageLinks = filtered[0];
-                        that.images = filtered[1];
+                // Make sure that ONLY DOM changes in the photobox number of items will trigger a change
+                if(that.imageLinks.length == filtered[0].length)
+                    return;
 
-                        // if photobox is opened
-                        if( photobox ){
-                            // if gallery which was changed is the currently viewed one:
-                            if( that.selector == photobox.selector ){
-                                images = that.images;
-                                imageLinks = that.imageLinks;
-                                // check if the currently VIEWED photo has been de-tached from a photobox set
-                                // if so, remove navigation arrows
-                                // TODO: fix the "images" to be an object and not an array.
-                                for( i = images.length; i--; ){
-                                    if( images[i][0] == activeURL )
-                                        isActiveUrl = true;
-                                    // if not exits any more
-                                }
-                                if( isActiveUrl )
-                                    overlay.removeClass('hasArrows');
-                            }
+                that.imageLinks = filtered[0];
+                that.images = filtered[1];
+
+                // if photobox is opened
+                if( photobox ){
+                    // if gallery which was changed is the currently viewed one:
+                    if( that.selector == photobox.selector ){
+                        images = that.images;
+                        imageLinks = that.imageLinks;
+                        // check if the currently VIEWED photo has been detached from a photobox set
+                        // if so, remove navigation arrows
+                        // TODO: fix the "images" to be an object and not an array.
+                        for( i = images.length; i--; ){
+                            if( images[i][0] == activeURL )
+                                isActiveUrl = true;
+                            // if not exits any more
                         }
+                       // if( isActiveUrl ){
+                       //     overlay.removeClass('hasArrows');
+                       // }
+                    }
+                }
 
-                        // if this gallery has thumbs
-                        //if( that.options.thumbs ){
-                            that.thumbsList = thumbsStripe.generate.apply(that);
-                            thumbs.html( that.thumbsList );
-                        //}
+                // if this gallery has thumbs
+                //if( that.options.thumbs ){
+                    that.thumbsList = thumbsStripe.generate.apply(that);
+                    thumbs.html( that.thumbsList );
+                //}
 
-                        if( that.images.length && activeURL && that.options.thumbs ){
-                            activeIndex = that.thumbsList.find('a[href="'+activeURL+'"]').eq(0).parent().index();
+                if( that.images.length && activeURL && that.options.thumbs ){
+                    activeIndex = that.thumbsList.find('a[href="'+activeURL+'"]').eq(0).parent().index();
 
-                            if( activeIndex == -1 )
-                                activeIndex = 0;
+                    if( activeIndex == -1 )
+                        activeIndex = 0;
 
-                            updateIndexes(activeIndex);
-                            thumbsStripe.changeActive(activeIndex, 0);
-                        }
-                    }, 50);
-                });
+                    // updateIndexes(activeIndex);
+                    thumbsStripe.changeActive(activeIndex, 0);
+                }
+            }, 50);
         },
 
         open : function(link){
@@ -262,8 +288,7 @@
                 // if no img child found in the link
                 if( thumbImg ){
                     captionlink = thumbImg.getAttribute('data-pb-captionlink');
-                    thumbSrc = thumbImg.getAttribute('src');
-
+                    thumbSrc = thumbImg.getAttribute(that.options.thumbAttr) || thumbImg.getAttribute('src');
                     caption.content = ( thumbImg.getAttribute('alt') || thumbImg.getAttribute('title') || '');
                 }
 
@@ -296,17 +321,18 @@
 
             return function(obj, callback){
                 if( MutationObserver ){
-                    // define a new observer
-                    var obs = new MutationObserver(function(mutations, observer){
-                        if( mutations[0].addedNodes.length || mutations[0].removedNodes.length )
-                            callback();
-                    });
-                    // have the observer observe foo for changes in children
+                    var that = this,
+                        // define a new observer
+                        obs = new MutationObserver(function(mutations, observer){
+                            if( mutations[0].addedNodes.length || mutations[0].removedNodes.length )
+                                callback(that);
+                        });
+                    // have the observer observe for changes in children
                     obs.observe( obj, { childList:true, subtree:true });
                 }
                 else if( eventListenerSupported ){
-                    obj.addEventListener('DOMNodeInserted', callback, false);
-                    obj.addEventListener('DOMNodeRemoved', callback, false);
+                    obj.addEventListener('DOMNodeInserted', callback.bind(that), false);
+                    obj.addEventListener('DOMNodeRemoved', callback.bind(that), false);
                 }
             }
         })(),
@@ -315,12 +341,9 @@
         setup : function (open){
             var fn = open ? "on" : "off";
 
-            // a hack to change the image src to nothing, because you can't do that in CHROME
-            image[0].src = blankImg;
-
             // thumbs stuff
             if( options.thumbs ){
-                if( !isMobile ){
+                if( !isTouchDevice ){
                     thumbs[fn]('mouseenter.photobox', thumbsStripe.calc)
                           [fn]('mousemove.photobox', thumbsStripe.move);
                 }
@@ -368,7 +391,7 @@
 
             $(doc).off("keydown.photobox")[fn]({ "keydown.photobox": keyDown });
 
-            if( isMobile ){
+            if( isTouchDevice ){
                 overlay.removeClass('hasArrows'); // no need for Arrows on touch-enabled
                 wrapper[fn]('swipe', onSwipe);
             }
@@ -379,7 +402,7 @@
             }
 
             if( !options.single && options.wheelNextPrev ){
-                overlay[fn]({"mousewheel.photobox": wheelNextPrev });
+                overlay[fn]({"mousewheel.photobox": throttle(wheelNextPrev,1000) });
             }
         },
 
@@ -412,11 +435,11 @@
 
     // manage the (bottom) thumbs strip
     thumbsStripe = (function(){
-        var containerWidth   = 0,
-            scrollWidth      = 0,
-            posFromLeft      = 0,    // Stripe position from the left of the screen
-            stripePos        = 0,    // When relative mouse position inside the thumbs stripe
-            animated         = null,
+        var containerWidth = 0,
+            scrollWidth    = 0,
+            posFromLeft    = 0,    // Stripe position from the left of the screen
+            stripePos      = 0,    // When relative mouse position inside the thumbs stripe
+            animated       = null,
             padding,                 // in percentage to the containerWidth
             el, $el, ratio, scrollPos, pos;
 
@@ -459,6 +482,9 @@
             **  @thumbClick - if a user clicked on a thumbnail, don't center on it
             */
             changeActive : function(index, delay, thumbClick){
+                if( !options.thumbs )
+                    return;
+
                 var lastIndex = activeThumb.index();
                 activeThumb.removeClass('active');
                 activeThumb = thumbs.find('li').eq(index).addClass('active');
@@ -572,9 +598,9 @@
     function keyDown(event){
         var code = event.keyCode, ok = options.keys, result;
         // Prevent default keyboard action (like navigating inside the page)
-        return ok.close.indexOf(code) >= 0 && close() ||
-               ok.next.indexOf(code) >= 0 && !options.single && loophole(nextImage) ||
-               ok.prev.indexOf(code) >= 0 && !options.single && loophole(prevImage) || true;
+        return $.inArray(code, ok.close) >= 0 && close() ||
+               $.inArray(code, ok.next) >= 0 && !options.single && loophole(nextImage) ||
+               $.inArray(code, ok.prev) >= 0 && !options.single && loophole(prevImage) || true;
     }
 
     function wheelNextPrev(e, dY, dX){
@@ -619,72 +645,90 @@
         changeImage(idx);
     }
 
-    function changeImage(imageIndex, firstTime, thumbClick){
-        if( !imageIndex || imageIndex < 0 )
-            imageIndex = 0;
+    changeImage = (function(){
+        var timer;
 
-        // hide/show next-prev buttons
-        if( !options.loop ){
-            nextBtn[ imageIndex == images.length-1 ? 'addClass' : 'removeClass' ]('hide');
-            prevBtn[ imageIndex == 0 ? 'addClass' : 'removeClass' ]('hide');
-        }
+        return function(imageIndex, firstTime, thumbClick){
+            // throttle mechanism
+            if( timer )
+                return;
 
-        // if there's a callback for this point:
-        if( typeof options.beforeShow == "function")
-            options.beforeShow(imageLinks[imageIndex]);
+            timer = setTimeout(function(){
+                timer = null;
+            }, 150);
 
-        overlay.removeClass('error').addClass( imageIndex > activeImage ? 'next' : 'prev' );
+            if( !imageIndex || imageIndex < 0 )
+                imageIndex = 0;
 
-        updateIndexes(imageIndex);
+            // hide/show next-prev buttons
+            if( !options.loop ){
+                //nextBtn[ imageIndex == images.length-1 ? 'addClass' : 'removeClass' ]('pbHide');
+                nextBtn.toggleClass('pbHide', imageIndex == images.length-1);
+                //prevBtn[ imageIndex == 0 ? 'addClass' : 'removeClass' ]('pbHide');
+                prevBtn.toggleClass('pbHide', imageIndex == 0);
+            }
 
-        // reset things
-        stop();
-        video.empty();
-        preload.onerror = null;
-        image.add(video).data('zoom', 1);
+            // if there's a callback for this point:
+            if( typeof options.beforeShow == "function")
+                options.beforeShow(imageLinks[imageIndex]);
 
-        //activeType = imageLinks[imageIndex].rel == 'video' ? 'video' : 'image'; 
-        activeType = imageLinks[imageIndex].getAttribute("data-type") == 'video' ? 'video' : 'image';
+            overlay.removeClass('error');
 
-        // check if current link is a video
-        if( activeType == 'video' ){
-            video.html( newVideo() ).addClass('hide');
-            showContent(firstTime);
-        }
-        else{
-            // give a tiny delay to the preloader, so it won't be showed when images load very quickly
-            var loaderTimeout = setTimeout(function(){ overlay.addClass('pbLoading'); }, 50);
+            if( activeImage >= 0 )
+                overlay.addClass( imageIndex > activeImage ? 'next' : 'prev' );
 
-            if( isOldIE ) overlay.addClass('hide'); // should wait for the image onload. just hide the image while old IE display the preloader
+            updateIndexes(imageIndex);
 
-            options.autoplay && APControl.progress.reset();
-            preload = new Image();
-            preload.onload = function(){
-                preload.onload = null;
+            // reset things
+            stop();
+            video.empty();
+            preload.onerror = null;
+            image.add(video).data('zoom', 1);
 
-                if( prevImage >= 0 ) preloadPrev.src = images[prevImage][0];
-                if( nextImage >= 0 ) preloadNext.src = images[nextImage][0];
+            //activeType = imageLinks[imageIndex].rel == 'video' ? 'video' : 'image';
+            activeType = imageLinks[imageIndex].getAttribute("data-type") == 'video' ? 'video' : 'image';
 
-                clearTimeout(loaderTimeout);
+            // check if current link is a video
+            if( activeType == 'video' ){
+                video.html( newVideo() ).addClass('pbHide');
                 showContent(firstTime);
-            };
-            preload.onerror = imageError;
-            preload.src = activeURL;
-        }
+            }
+            else{
+                // give a tiny delay to the preloader, so it won't be showed when images load very quickly
+                var loaderTimeout = setTimeout(function(){ overlay.addClass('pbLoading'); }, 50);
 
-        // Show Caption text
-        captionText.on(transitionend, captionTextChange).addClass('change');
-        if( firstTime || isOldIE ) captionTextChange();
+                if( isOldIE ) overlay.addClass('pbHide'); // should wait for the image onload. just hide the image while old IE display the preloader
 
-        if( options.thumbs )
+                options.autoplay && APControl.progress.reset();
+                preload = new Image();
+                preload.onload = function(){
+                    preload.onload = null;
+
+                    if( prevImage >= 0 ) preloadPrev.src = images[prevImage][0];
+                    if( nextImage >= 0 ) preloadNext.src = images[nextImage][0];
+
+                    clearTimeout(loaderTimeout);
+                    showContent(firstTime);
+                };
+                preload.onerror = imageError;
+                preload.src = activeURL;
+            }
+
+            // Show Caption text
+            captionText.on(transitionend, captionTextChange).addClass('change');
+            if( firstTime || isOldIE ) captionTextChange();
+
+
             thumbsStripe.changeActive(imageIndex, firstTime, thumbClick);
-        // Save url hash for current image
-        history.save();
-    }
+            // Save url hash for current image
+            history.save();
+        }
+    })();
 
     function newVideo(){
-
-        console.log ('!!!');
+        //var url = images[activeImage][0],
+        //    sign = $('<a>').prop('href',images[activeImage][0])[0].search ? '&' : '?';
+        //url += sign + 'vq=hd720&wmode=opaque';
 
         var url = images[activeImage][0];
         var youtubeUrl = url.match( /watch\?v=([a-zA-Z0-9\-_]+)/ ),
@@ -702,10 +746,7 @@
         } else if ( vimeoUrl ) {
 
             url = '//player.vimeo.com/video/' + vimeoUrl[1] + '?byline=0&amp;portrait=0';
-        
         }
-
-
 
         return $("<iframe>").prop({ scrolling:'no', frameborder:0, allowTransparency:true, src:url }).attr({webkitAllowFullScreen:true, mozallowfullscreen:true, allowFullScreen:true});
     }
@@ -742,6 +783,8 @@
             var hash = decodeURIComponent( window.location.hash.slice(1) ), i, j;
             if( !hash && overlay.hasClass('show') )
                 close();
+
+            $('a[href="' + hash + '"]').trigger('click.photobox');
         },
         clear : function(){
             if( options.history && 'pushState' in window.history )
@@ -776,7 +819,7 @@
             overlay.removeClass("pbLoading");
             pbLoader.removeAttr('style');
         });
-        overlay.addClass('hide');
+        overlay.addClass('pbHide');
 
         image.add(video).removeAttr('style').removeClass('zoomable'); // while transitioning an image, do not apply the 'zoomable' class
 
@@ -810,7 +853,7 @@
             // filthy hack for the transitionend event, but cannot work without it:
             setTimeout(function(){
                 image.add(video).removeAttr('style').removeClass('prepare');
-                overlay.removeClass('hide next prev');
+                overlay.removeClass('pbHide next prev');
                 setTimeout(function(){
                     image.add(video).on(transitionend, showDone);
                     if(isOldIE) showDone(); // IE9 and below don't support transitionEnd...
@@ -823,10 +866,11 @@
     function showDone(){
         image.add(video).off(transitionend).addClass('zoomable');
         if( activeType == 'video' )
-            video.removeClass('hide');
-        else
+            video.removeClass('pbHide');
+        else{
             autoplayBtn && options.autoplay && APControl.play();
-        if( typeof photobox.callback == 'function' )
+        }
+        if( photobox && typeof photobox.callback == 'function' )
             photobox.callback.apply(imageLinks[activeImage]);
     }
 
@@ -897,41 +941,45 @@
     }
 
     function close(){
-            if( !overlay.hasClass('show') )
-                return false;
+        if( !overlay.hasClass('show') )
+            return false;
 
-            stop();
-            video.find('iframe').prop('src','').empty();
-            Photobox.prototype.setup();
-            history.clear();
+        stop();
+        video.find('iframe').prop('src','').empty();
+        Photobox.prototype.setup();
+        history.clear();
 
-            overlay.removeClass('on video').addClass('hide');
+        overlay.removeClass('on video').addClass('pbHide');
+        activeImage = -1;
 
-            image.on(transitionend, hide);
-            isOldIE && hide();
+        image.on(transitionend, hide);
+        isOldIE && hide();
 
-            // the "photobox" instance might be needed for async transitionEnd functions, so give it some time before clearing it
-            setTimeout(function(){
-                photobox = null;
-            },1000);
+        // the "photobox" instance might be needed for async transitionEnd functions, so give it some time before clearing it
+        setTimeout(function(){
+            photobox = null;
+        },1000);
 
-            function hide(){
-                if( overlay[0].className == '' ) return; // if already hidden
-                overlay.removeClass('show hide error pbLoading');
-                image.removeAttr('class').removeAttr('style').off().data('zoom',1);
-                caption.find('.title').empty();
+        function hide(){
+            if( overlay[0].className == '' ) return; // if already hidden
+            overlay.removeClass('show pbHide error pbLoading');
+            image.removeAttr('class').removeAttr('style').off().data('zoom',1);
+            // a hack to change the image src to nothing, because you can't do that in CHROME
+            image[0].src = blankImg;
 
-                if(noPointerEvents) // pointer-events lack support in IE, so just hide the overlay
-                    setTimeout(function(){ overlay.hide(); }, 200);
+            caption.find('.title').empty();
 
-                options.hideFlash && $('iframe, object, embed').css('visibility', 'visible');
-            }
+            if(noPointerEvents) // pointer-events lack support in IE, so just hide the overlay
+                setTimeout(function(){ overlay.hide(); }, 200);
 
-            // fall-back if the 'transitionend' event didn't fire
-            setTimeout(hide, 500);
-            // callback after closing the gallery
-            if( typeof options.afterClose === 'function' )
-                options.afterClose(overlay);
+            options.hideFlash && $('iframe, object, embed').css('visibility', 'visible');
+        }
+
+        // fall-back if the 'transitionend' event didn't fire
+        setTimeout(hide, 500);
+        // callback after closing the gallery
+        if( typeof options.afterClose === 'function' )
+            options.afterClose(overlay);
     }
 
 
@@ -992,7 +1040,8 @@
         }
     };
 
-    /*! Copyright (c) 2013 Brandon Aaron (http://brandon.aaron.sh)
+    /* MouseWheel plugin
+     * ! Copyright (c) 2013 Brandon Aaron (http://brandon.aaron.sh)
      * Licensed under the MIT License (LICENSE.txt).
      *
      * Version: 3.1.11
@@ -1006,6 +1055,9 @@
 
     // Expose:
     window._photobox = {
+        DOM      : {
+            overlay : overlay
+        },
         close    : close,
         history  : history,
         defaults : defaults

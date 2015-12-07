@@ -288,7 +288,8 @@ img.mfp-img {
   color: #f3f3f3;
   word-wrap: break-word;
   padding-right: 36px;
-  position: absolute; }
+  position: absolute; 
+  top: 101%; }
 
 .mfp-image-holder .mfp-content {
   max-width: 100%; }
