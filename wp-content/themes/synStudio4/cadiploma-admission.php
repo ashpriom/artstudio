@@ -938,14 +938,14 @@ Template Name: Concept Art Diploma - Admission
                                         <td>December 8th, 2015</td>
                                         <td class="orange-table-row">$50 CAN</td>
                                     </tr>-->
-                                    <tr>
+                                    <tr class="grey-table-row">
                                         <td>1</td>
                                         <td>General Portfolio/Application Review (this is where our team determines which candidates get an interview)</td>
                                         <td>March 2nd, 2016</td>
                                         <td class="orange-table-row">$50 CAN</td>
                                         <!--<td class="orange-table-row">FREE for those who submitted to the intial portfolio review ($50 otherwise)</td>-->
                                     </tr>
-                                    <tr class="grey-table-row">
+                                    <tr>
                                         <td>2</td>
                                         <td>Admissions interview (the in-person or skype interview that determines if we accept you into our elite concept art training program)</td>
                                         <td>March/April 2016</td>
@@ -2035,14 +2035,14 @@ Template Name: Concept Art Diploma - Admission
                                         <td>8 décembre 2015</td>
                                         <td class="orange-table-row">$50</td>
                                     </tr>-->
-                                    <tr>
+                                    <tr class="grey-table-row">
                                         <td>1</td>
                                         <td>Portofolio général/ analyse (c'est là que nos équipes décident qui passera à la prochaine étape)</td>
                                         <td>2 mars 2016</td>
                                         <td class="orange-table-row">$50</td>
                                         <!--<td class="orange-table-row">GRATUIT pour ceux qui ont déjà envoyé un portfolio pour candidature ($50 pour les autres)</td>-->
                                     </tr>
-                                    <tr class="grey-table-row">
+                                    <tr>
                                         <td>2</td>
                                         <td>Entretiens (entretien individuel ou sur Skype déterminant pour savoir si vous êtes accepté dans notre programme d'entraînement d'élite)</td>
                                         <td>Mars/Avril 2016</td>
