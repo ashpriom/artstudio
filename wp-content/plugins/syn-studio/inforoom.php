@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link href="<?php plugin_dir_url( __FILE__ ); ?>/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php plugins_url( '/css/bootstrap.min.css', dirname(__FILE__) ) ?>" rel="stylesheet">
 	<script src="<?php plugins_url(); ?>/syn-studio/js/bootstrap.min.js"></script>
 </head>
 
