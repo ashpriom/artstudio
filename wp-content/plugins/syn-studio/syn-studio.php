@@ -68,8 +68,13 @@ function main_menu(){
 add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style');
 function load_custom_wp_admin_style(){
     wp_register_style('custom_wp_admin_css', plugins_url().'/syn-studio/css/style.css', false, '1.0.0');
-    wp_register_style('custom_wp_admin_css', plugins_url().'/syn-studio/css/bootstrap.min.css', false, '1.0.0');
     wp_enqueue_style('custom_wp_admin_css');
+}
+
+add_action( 'admin_enqueue_scripts', 'load_bootstrap_css');
+function load_bootstrap_css(){
+    wp_register_style('bootstrap_css', plugins_url().'/syn-studio/css/bootstrap.min.css', false, '1.0.0');
+    wp_enqueue_style('bootstrap_css');
 }
 
 add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_script');
@@ -78,10 +83,10 @@ function load_custom_wp_admin_script(){
     wp_enqueue_script('custom_wp_admin_script');
 }
 
-add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_script2');
-function load_custom_wp_admin_script2(){
-    wp_register_script('custom_wp_admin_script2', plugins_url().'/syn-studio/js/bootstrap.min.js', false, '1.0.0');
-    wp_enqueue_script('custom_wp_admin_script2');
+add_action( 'admin_enqueue_scripts', 'load_bootstrap');
+function load_bootstrap(){
+    wp_register_script('bootstrap', plugins_url().'/syn-studio/js/bootstrap.min.js', false, '1.0.0');
+    wp_enqueue_script('bootstrap');
 }
 
 function Semesters(){
