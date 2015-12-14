@@ -68,12 +68,14 @@ function main_menu(){
 add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style');
 function load_custom_wp_admin_style(){
     wp_register_style('custom_wp_admin_css', plugins_url().'/syn-studio/css/style.css', false, '1.0.0');
+    wp_register_style('custom_wp_admin_css', plugins_url().'/syn-studio/css/bootstrap.min.css', false, '1.0.0');
     wp_enqueue_style('custom_wp_admin_css');
 }
 
 add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_script');
 function load_custom_wp_admin_script(){
     wp_register_script('custom_wp_admin_script', plugins_url().'/syn-studio/js/googlefonts.js', false, '1.0.0');
+    wp_register_script('custom_wp_admin_script', plugins_url().'/syn-studio/js/bootstrap.min.js', false, '1.0.0');
     wp_enqueue_script('custom_wp_admin_script');
 }
 
