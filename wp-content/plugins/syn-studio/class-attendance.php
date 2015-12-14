@@ -50,7 +50,7 @@ if(isset($_POST['class_instance_id']) && isset($_POST['class_semester_id'])){
 
 			echo "</table>"; ?>
 				<div><p>
-						<input name="student_id_array" type="hidden" value="<?php echo $studentIDArray; ?>"/>
+						<input name="student_id_array" type="hidden" value="<?php $studentIDArray; ?>"/>
 						<input type="submit" name="attendance" class="button-purple" id="synstudio-button" value="Submit Class Attendance"/>
 				</p></div>
 		</form>
