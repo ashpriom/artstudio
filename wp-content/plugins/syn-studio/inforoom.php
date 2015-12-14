@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link href="<?php plugins_url( '/css/bootstrap.min.css', dirname(__FILE__) ); ?>" rel="stylesheet">
-	<script src="<?php plugins_url( '/js/bootstrap.min.js', dirname(__FILE__) ); ?>"></script>
-</head>
-
 <body>
 	<div class="container-fluid">
 		<div><h1><b>Syn Studio Information System</b></h1><div>
