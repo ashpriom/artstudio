@@ -5,23 +5,25 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link href="<?php plugins_url( '/css/bootstrap.min.css', dirname(__FILE__) ) ?>" rel="stylesheet">
-	<script src="<?php plugins_url( '/js/bootstrap.min.js', dirname(__FILE__) ) ?>"></script>
+	<link href="<?php plugins_url( '/css/bootstrap.min.css', dirname(__FILE__) ); ?>" rel="stylesheet">
+	<script src="<?php plugins_url( '/js/bootstrap.min.js', dirname(__FILE__) ); ?>"></script>
 </head>
 
 <body>
-	<div><h1><b>Syn Studio Information System</b></h1><div>
+	<div class="container-fluid">
+		<div><h1><b>Syn Studio Information System</b></h1><div>
 
-	<?php
-		echo "<div id=\"inforoom\" class=\"inforoom-menu\">";
-			echo "<p class=\"lead\">Welcome to the Information Room. Here you can manage information about Syn Studio.</p>";
-			echo "<ul>";
-				echo "<li><h2><a href=\"admin.php?page=syn-studio/semesters.php\" target=\"_BLANK\">Semesters</a></h2></li>";
-				echo "<li><h2><a href=\"admin.php?page=syn-studio/classrooms.php\" target=\"_BLANK\">Classrooms</a></h2></li>";
-				echo "<li><h2><a href=\"admin.php?page=syn-studio/students.php\" target=\"_BLANK\">Students</a></h2></li>";
-			echo "</ul>";
-		echo "</div>";
-	?>
+		<?php
+			echo "<div id=\"inforoom\" class=\"inforoom-menu\">";
+				echo "<p class=\"lead\">Welcome to the Information Room. Here you can manage information about Syn Studio.</p>";
+				echo "<ul>";
+					echo "<li><h2><a href=\"admin.php?page=syn-studio/semesters.php\" target=\"_BLANK\">Semesters</a></h2></li>";
+					echo "<li><h2><a href=\"admin.php?page=syn-studio/classrooms.php\" target=\"_BLANK\">Classrooms</a></h2></li>";
+					echo "<li><h2><a href=\"admin.php?page=syn-studio/students.php\" target=\"_BLANK\">Students</a></h2></li>";
+				echo "</ul>";
+			echo "</div>";
+		?>
+	</div>
 
 </body>
 </html>
