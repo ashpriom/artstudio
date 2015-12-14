@@ -199,8 +199,9 @@ function ClassInfo(){
 	echo "<div id=\"inforoom\">";
 
 		global $wpdb;
-		if(isset($_POST['semester_id'])){
 
+		if(isset($_POST['semester_id'])){
+			
 			$semesterID = $_POST['semester_id'];
 			
 			$semesterName = $wpdb->get_var( "SELECT semester_name_en FROM syn1_syn_semester WHERE semester_id = $semesterID ");
