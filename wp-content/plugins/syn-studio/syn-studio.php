@@ -75,8 +75,13 @@ function load_custom_wp_admin_style(){
 add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_script');
 function load_custom_wp_admin_script(){
     wp_register_script('custom_wp_admin_script', plugins_url().'/syn-studio/js/googlefonts.js', false, '1.0.0');
-    wp_register_script('custom_wp_admin_script', plugins_url().'/syn-studio/js/bootstrap.min.js', false, '1.0.0');
     wp_enqueue_script('custom_wp_admin_script');
+}
+
+add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_script2');
+function load_custom_wp_admin_script2(){
+    wp_register_script('custom_wp_admin_script2', plugins_url().'/syn-studio/js/bootstrap.min.js', false, '1.0.0');
+    wp_enqueue_script('custom_wp_admin_script2');
 }
 
 function Semesters(){
