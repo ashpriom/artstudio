@@ -2,7 +2,8 @@
 
 if(isset($_POST['student_id_array'])){
 	
-	echo $studentIDArray = $_POST['student_id_array'];
+	$studentIDArray = $_POST['student_id_array'];
+	print_r($studentIDArray);
 	
 	global $wpdb;
 	$semester_class_insert = $wpdb->insert( 
@@ -20,7 +21,7 @@ if(isset($_POST['student_id_array'])){
 			'%d',
 			'%s',
 			'%s',
-		) 
+		)
 	);
 
 	$wpdb->print_error();
