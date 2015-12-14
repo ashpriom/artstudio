@@ -3,7 +3,7 @@
 
 <body>
 	<div class="container-fluid">
-		<div><h1><b>Syn Studio Information System</b></h1><div>
+		<div class="center-block"><h1><b>Syn Studio Information System</b></h1><div>
 
 		<?php
 			echo "<div id=\"inforoom\" class=\"inforoom-menu\">";
@@ -16,6 +16,5 @@
 			echo "</div>";
 		?>
 	</div>
-
 </body>
 </html>

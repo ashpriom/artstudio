@@ -80,3 +80,13 @@
 
 #delete-entry tr{background-color:transparent !important;}
 #delete-entry tr td{padding:0px !important;}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.element {
+  .center-block();
+}
