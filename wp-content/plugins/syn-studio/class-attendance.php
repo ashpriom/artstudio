@@ -45,7 +45,7 @@ if(isset($_POST['class_instance_id']) && isset($_POST['class_semester_id'])){
 						$studentNameLast = $wpdb->get_var( "SELECT student_last FROM syn1_syn_student WHERE student_id = $studentID ");
 						echo "<td>".$studentNameLast.", ".$studentNameFirst."</td>";
 						echo "<td>";
-							echo "<input type=\"checkbox\" name=\"attendance_array[]\" unchecked value=\"absent\">Present";
+							echo "<input type=\"checkbox\" name=\"attendance_array[]\" unchecked value=\"absent\">Absent";
 							echo "<input type=\"checkbox\" name=\"attendance_array[]\" unchecked value=\"present\">Present";
 						echo "</td>";
 					echo "</tr>";
@@ -54,6 +54,7 @@ if(isset($_POST['class_instance_id']) && isset($_POST['class_semester_id'])){
 			echo "</table>"; ?>
 				<div><p>
 						<input name="student_id_array" type="hidden" value="<?php echo implode(',',$studentIDArray); ?>"/>
+						<input name="class_instance_id" type="hidden" value="<?php echo $classInstanceID; ?>"/>
 						<input type="submit" name="attendance" class="button-purple" id="synstudio-button" value="Submit Class Attendance"/>
 				</p></div>
 		</form>

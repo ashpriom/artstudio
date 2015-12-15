@@ -1,7 +1,8 @@
 <?php 
 
-if(isset($_POST['student_id_array'])){
+if(isset($_POST['student_id_array']) && isset($_POST['class_instance_id'])){
 	
+	$classInstanceID = $_POST['class_instance_id'];
 	$studentIDArray = explode(',',$_POST['student_id_array']);
 	//$studentIDArray = implode(',',$studentIDArray);
 	print_r($studentIDArray);
@@ -9,24 +10,26 @@ if(isset($_POST['student_id_array'])){
 	//$attendanceArray = implode(',',$attendanceArray);
 	print_r($attendanceArray);
 
-	$c = array_combine($studentIDArray, $attendanceArray);
-	print_r($c);
+	$studentAttendances = array_combine($studentIDArray, $attendanceArray);
+	print_r($studentAttendance);
 
 	global $wpdb;
 
-	$semester_class_insert = $wpdb->insert( 
-		'syn1_syn_attendance', 
-		array(
-			'student_id' => sanitize_text_field($classID),
-			'classinstance_id' => sanitize_text_field($semesterID),
-			'attendance' => sanitize_text_field($teacherID),
-		),
-		array(
-			'%d',
-			'%d',
-			'%d',
-		)
-	);
+	foreach($studentAttendances as $studentAttendance){
+		$semester_class_insert = $wpdb->insert( 
+			'syn1_syn_attendance', 
+			array(
+				'student_id' => array_search($studentAttendance, $studentAttendances),
+				'classinstance_id' => sanitize_text_field($classInstanceID),
+				'attendance' => sanitize_text_field($studentAttendance),
+			),
+			array(
+				'%d',
+				'%d',
+				'%d',
+			)
+		);
+	}
 
 	$wpdb->print_error();
 }
