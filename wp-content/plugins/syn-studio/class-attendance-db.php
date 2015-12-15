@@ -7,7 +7,7 @@ if(isset($_POST['student_id_array'])){
 	print_r($studentIDArray);
 	$attendanceArray = $_POST['attendance_array'];
 	//$attendanceArray = implode(',',$attendanceArray);
-	//print_r($attendanceArray);
+	print_r($attendanceArray);
 	echo $attendanceArray;
 
 	global $wpdb;
