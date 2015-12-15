@@ -120,6 +120,7 @@
                 <li><a>Social SEO<span></span></a></li>
                 <li><a onclick='show_page_score();'>Page Analysis<span></span></a></li>
                 <li><a>Noindex / Nofollow<span></span></a></li>
+                <li><a>Auto Link</a></li>
             </ul>
 
             <!-- Content container -->
@@ -680,13 +681,43 @@
                                     <input type="checkbox" id="wsw_is_meta_robot_nofollow" <?php echo ($wsw_is_meta_robot_nofollow =='1')?'checked':''?> >
                                     Allow SEOWizard to tell search engines not to spider links on this post.
                                 </label>
+<!------------------------------custom_code--------------------------------------------------------------------------------------------------------------------------->
+                                <label style="width: 100%;">
+                                    <input type="checkbox" id="wsw_is_meta_robot_noodp" <?php echo ($wsw_is_meta_robot_noodp =='1')?'checked':''?> >
+                                   Don't use this site's Open Directory description in search results.
+                                </label>
+                                <label style="width: 100%;">
+                                    <input type="checkbox" id="wsw_is_meta_robot_noydir" <?php echo ($wsw_is_meta_robot_noydir =='1')?'checked':''?> >
+                                     Don't use this site's Yahoo! Directory description in search results.
+                                </label>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
                             </div>
                         </div>
                     </div>
                     <!--  Zozo Tabs nested (Overview) End-->
                 </div>
 
+               <div>
+                   <div class="wsw-post-settings">
 
+                       <div class="form-group col-sm-8 col-md-8">
+                           <label class="col-sm-4 col-md-4 control-label" for="_su_autolinks">Inbound Autolink Anchors:<br><em>(one per line)</em></label>
+                           <div class="col-sm-6 col-md-6"><textarea name="wsw_autolinks" id="wsw_autolinks" class="form-control regular-text" tabindex="2" cols="60" rows="3"><?php echo $variables['wsw_autolink_anchor']; ?></textarea>
+                           </div>
+                           <div class="col-sm-8 col-md-8 help-text">
+                           </div>
+                       </div>
+                       <br>
+                       <div class="form-group col-sm-8 col-md-8">
+                           <label class="col-sm-4 col-md-4 control-label">Autolink Exclusion:</label>
+                           <div class="col-sm-6 col-md-6">
+                               <div class="checkbox"><label for="wsw_disable_autolinks"><input name="wsw_disable_autolinks" id="wsw_disable_autolinks" type="checkbox" tabindex="2" value="<?php echo $variables['is_disable_autolink']?>"> Don’t add autolinks to anchor texts found in this post.</label></div>
+                           </div>
+                           <div class="col-sm-8 col-md-8 help-text">
+                           </div>
+                       </div>
+                   </div>
+               </div>
 
             </div>
 

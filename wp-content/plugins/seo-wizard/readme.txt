@@ -1,16 +1,23 @@
 ﻿=== SEO ===
 Contributors: Seo UK Team
 Donate link: http://seo.uk.net
-Tags: seo, page, pages, post, posts, plugin, 404, nofollow, google, widget, meta, sitemap, sitemaps, robots, rss, yahoo, bing, multisite, canonical, nofollow, noindex, keywords, meta keywords, description, webmaster tools, google webmaster tools, analysis, score, snippets, facebook, twitter, author
+Tags: seo, deeplink, juggeranut, interlinking, monitor, linking, seo links, automatic linking, link, links, page, pages, post, posts, plugin, 404, nofollow, google, widget, meta, sitemap, sitemaps, robots, rss, yahoo, bing, multisite, canonical, nofollow, noindex, keywords, meta keywords, description, webmaster tools, google webmaster tools, analysis, score, snippets, facebook, twitter, author
 Requires at least: 3.8
 Tested up to: 4.4
-Stable tag: 3.0.5
+Stable tag: 3.0.6
 
 SEO Wizard helps you write better content, write optimized meta titles and descriptions, integrate social media, view post/page analysis and much more!
 
 == Description ==
 
 SEO Wizard is one of the most coveted WordPress plugins because of the flexibility it offers its users. The tool helps designers write better content, keep track of posts, write optimized meta titles and descriptions, and integrate social media. It's a comprehensive plugin that's proving its worth in the wordpress community. 
+
+= New added modules =
+
+* 404 Monitor
+* Deeplink Juggernaut
+
+* We will be adding more modules & features to the plugin every month, please send us your suggestions by <a href="http://seo.uk.net/contact-us/#contact">contacting us</a>.
 
 = Here's what you can expect of SEO Wizard if you plan to use it. =
 
@@ -72,6 +79,13 @@ Do you have questions? Please contact us at http://seo.uk.net/contact-us/
 8. Social Seo
 9. Page Analysis
 10. Noindex / Nofollow
+11. 404 Monitor - Settings
+12. Content Links - Juggernaut
+13. Content Link Settings - Juggernaut
+14. Footer Links - Juggernaut
+15. Footer Links settings - Juggernaut
+16. Auto Link Settings
+17. Noindex-nofollow settings
 
 == Changelog ==
 

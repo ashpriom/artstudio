@@ -3,7 +3,7 @@
 Plugin Name: Seo Wizard
 Plugin URI: http://seo.uk.net/seo-wizard/
 Description: SEO Wizard helps you write better content, write optimized meta titles and descriptions, integrate social media, view post/page analysis and much more!
-Version: 3.0.5
+Version: 3.1.0
 Author: Seo UK Team
 Author URI: http://seo.uk.net
 
@@ -29,7 +29,6 @@ define( 'WSW_REQUIRED_WP_VERSION',  '3.1' );
         '/classes/wsw-show',
         '/classes/wsw-setting',
         '/classes/wsw-calc',
-        '/classes/wsw-table',
         '/includes/admin-notice-helper/admin-notice-helper',
         '/lib/bootstrap',
         '/lib/Youtube/YoutubeInterface',
@@ -37,7 +36,15 @@ define( 'WSW_REQUIRED_WP_VERSION',  '3.1' );
         '/lib/LSI/lsi',
         '/lib/Self/keywords',
         '/lib/Self/html_styles',
-        '/model/model-log'
+        '/model/model-log',
+
+        '/includes/jlfunctions/jlfunctions',
+        '/includes/jlwp/jlwp',
+        '/plugin/seo-functions',
+        '/plugin/seo-update',
+        '/modules/seo-module',
+        '/modules/seo-importmodule'
+
     );
 
     foreach ($files as $file) {
@@ -48,6 +55,8 @@ define( 'WSW_REQUIRED_WP_VERSION',  '3.1' );
     if ( class_exists( 'WSW_Main' ) ) {
 
         $GLOBALS['wp-seo-wizard'] = WSW_Main::get_instance();
+        global $seo_update;
+        $seo_update=new SEO_Update(__FILE__);
         register_activation_hook(   __FILE__, array( $GLOBALS['wp-seo-wizard'], 'activate' ) );
         register_deactivation_hook( __FILE__, array( $GLOBALS['wp-seo-wizard'], 'deactivate' ) );
     }

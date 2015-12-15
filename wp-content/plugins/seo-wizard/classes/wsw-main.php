@@ -66,6 +66,7 @@ if ( ! class_exists( 'WSW_Main' ) ) {
 				'WSW_Dashboard'     => WSW_Dashboard::get_instance(),
                 'WSW_Show'          => WSW_Show::get_instance(),
 			);
+
 		}
 
 		public function register_hook_callbacks() {
@@ -256,6 +257,15 @@ if ( ! class_exists( 'WSW_Main' ) ) {
 
         public function deactivate() {
            // WSW_Settings::delete_options();
+           /* $psdata = (array)get_option('seo_update', array());
+            if (!empty($psdata['modules'])) {
+                $module_keys = array_keys($psdata['modules']);
+                foreach ($module_keys as $module)
+                    delete_option("seo_update_module_$module");
+            }
+
+            //Delete plugin data
+            delete_option('seo_update');*/
             remove_filter('category_rewrite_rules', 'WSW_Show::no_category_base_rewrite_rules');
             global $wp_rewrite;
             update_option("SEOWizard_Options",'');

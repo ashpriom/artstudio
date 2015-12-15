@@ -96,6 +96,10 @@ function save_post_settings()
         is_meta_description  : (jQuery('#wsw_is_meta_description').attr('checked')) ? '1' : '',
         is_meta_robot_noindex  : (jQuery('#wsw_is_meta_robot_noindex').attr('checked')) ? '1' : '',
         is_meta_robot_nofollow  : (jQuery('#wsw_is_meta_robot_nofollow').attr('checked')) ? '1' : '',
+
+        is_meta_robot_noodp  : (jQuery('#wsw_is_meta_robot_noodp').attr('checked')) ? '1' : '',
+        is_meta_robot_noydir  : (jQuery('#wsw_is_meta_robot_noydir').attr('checked')) ? '1' : '',
+
         meta_description:jQuery('#wsw_meta_description').attr('value'),
         is_over_sentences  : (jQuery('#wsw_is_over_sentences').attr('checked')) ? '1' : '',
         first_over_sentences  : (jQuery('#wsw_first_over_sentences').attr('checked')) ? '1' : '',
@@ -138,7 +142,9 @@ function save_post_settings()
 
         is_social_twitter  : (jQuery('#wsw_is_social_twitter').attr('checked')) ? '1' : '',
         social_twitter_title:jQuery('#wsw_social_twitter_title').val(),
-        social_twitter_description:jQuery('#wsw_social_twitter_description').val()
+        social_twitter_description:jQuery('#wsw_social_twitter_description').val(),
+        is_disable_autolink:(jQuery('#wsw_disable_autolinks').attr('checked'))?'1':'',
+        autolink_anchor:jQuery('#wsw_autolinks').val()
 
     };
 

@@ -55,11 +55,11 @@
         }
     }
 </script>
-<div id="dashboard-page" class="box-border-box col-md-9" style="float: left; display:none; margin-right: 0px;margin-top: 0px;">
+<div id="dashboard-page" class="box-border-box col-md-9" style="float: left; display:none; margin-right: 0px;margin-top: 0px;"> <br />
+<strong><font color="red"><font size="3"><a href="http://seo.uk.net/contact-us/#contact" target="_blank">Suggest us a new feature or an idea</a>, we are updating our plugin weekly with new modules so stay tuned!</font></font></strong><hr />
 
-    <form action="admin.php?page=wsw_dashboard_page" id="wsw_log_404_form" method="post" class="form-horizontal" role="form"><br />
-<strong><font color="green"><font size="4">Get weekly seo tips, important news and exclusive offers from the owners of Seo Wizard <a href="http://seo.uk.net/go-subscribe" target="_blank">click here to subscribe!</a>.</font></font></strong>
-<hr />
+    <form action="admin.php?page=wsw_dashboard_page" id="wsw_log_404_form" method="post" class="form-horizontal" role="form">
+
         <!-- Zozo Tabs Start-->
         <div id="tabbed-nav">
             <!-- Tab Navigation Menu -->
@@ -67,7 +67,6 @@
                 <li><a>Global<span></span></a></li>
                 <li><a>Advanced<span></span></a></li>
                 <li><a>API Key<span></span></a></li>
-                <li><a>404 Monitor<span></span></a></li>
                 <li><a>XML Sitemap<span></span></a></li>
 
             </ul>
@@ -83,6 +82,7 @@
                             <label style="width: 100%;">
                                 <input type="checkbox" id="chk_keyword_to_titles" <?php echo ($chk_keyword_to_titles =='1')?'checked':''?>>
                                 Allow SEO Wizard to automatically add the keyword in Posts titles.
+
                             </label>
                          </div>
                     </div>
@@ -167,7 +167,9 @@
 
                 </div>
                 <!-- Advanced -->
+
                 <div>
+
                     <!-- Zozo Tabs nested (Subscribe) Start-->
                     <div class="nested-tabs">
                         <ul>
@@ -330,23 +332,7 @@
                     </div>
                 </div>
 
-                <!-- 404 Log -->
-                <div>
 
-                    <div class="form-group">
-                        <div class="col-sm-12">
-                            <?php
-                            $table_list = new WSW_Table_Log();
-                            $table_list->prepare_items();
-                            ?>
-                                <input type="hidden" name="page" value="wsw_log_404">
-                                <?php
-                                $table_list->display();
-                                ?>
-                        </div>
-                    </div>
-
-                </div>
 
                 <!-- XML Sitemap -->
                 <div>
@@ -370,9 +356,13 @@
             </div>
 
         </div>
+
         <!-- Zozo Tabs End-->
-		<p>Access your <a href="../wp-admin/edit.php" target="_blank">Post(s)</a> or <a href="../wp-admin/edit.php?post_type=page" target="_blank">Page(s)</a> to view the full functionality of Seo Wizard.</p>
-		<br /><p><a href="http://seo.uk.net/?wizard" target="_blank"><img src="http://seo.uk.net/wp-content/uploads/2014/10/seo-banner.gif" /></a></p>
+		<br />
+<strong><font color="green"><font size="3"><a href="http://seo.uk.net/c-seo-wizard" target="_blank">Do you need better search engine rankings? The Seo Wizards can help you, visit our website!</a></font></font></strong><hr />
+
+
+<p><a href="http://seo.uk.net/?wizard" target="_blank"><img src="http://seo.uk.net/wp-content/uploads/2014/10/seo-banner.gif" /></a></p>
         <div class="wsw-global-save-view">
         <button type="button"  class="btn btn-primary" onclick="save_global_settings();">Save Settings</button>
         </div>

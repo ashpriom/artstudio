@@ -152,8 +152,25 @@ if ( ! class_exists( 'WSW_Show' ) ) {
                     $strIndex = 'index';
                     if($settings[0]['is_meta_robot_noindex'] == '1') $strIndex = 'noindex';
                     $strFollow = 'follow';
-                    if($settings[0]['is_meta_robot_nofollow'] == '1') $strIndex = 'nofollow';
+                    if($settings[0]['is_meta_robot_nofollow'] == '1') $strFollow = 'nofollow';
                     echo '<meta name="robots" content="' . $strIndex . ',' . $strFollow .'" />' . "\n";
+
+   /**********************************custom_code**************************************************************************************************/
+                    $strODP = '';
+                    if($settings[0]['is_meta_robot_noodp'] == '1')
+                    {
+                        $strODP = 'noodp';
+                        echo '<meta name="robots" content="' . $strODP .'" />' . "\n";
+                    }
+                    $strYDIR = '';
+                    if($settings[0]['is_meta_robot_noydir'] == '1')
+                    {
+                        $strYDIR = 'noydir';
+                        echo '<meta name="robots" content="' .$strYDIR.'" />' . "\n";
+                    }
+
+  /************************************************************************************************************************************************/
+
                 }
             }
         }
@@ -168,9 +185,9 @@ if ( ! class_exists( 'WSW_Show' ) ) {
 
                 //$settings = get_post_meta( $post_id , 'wsw-settings');
 
-                //if (WSW_Main::$settings['chk_author_linking'] == '1') {
-                    // echo '<br /><div align="center"><small>This site is using the <a href="http://seo.uk.net/seo-wizard/" target="_blank">Seo Wizard Plugin</a> powered by <a href="http://seo.uk.net/" target="_blank"><img src="http://seo.uk.net/wp-content/uploads/2013/11/seo.uk_.net_.gif" height="19" /></a></small></div>' . "\n";
-                //}
+                if (WSW_Main::$settings['chk_author_linking'] == '1') {
+                    // echo '<br /><div align="center"><small>This site is using the <a href="https://wordpress.org/plugins/seo-wizard/" title="Seo - Free Wordpress Plugin" target="_blank">Seo Wizard</a> plugin by <a href="http://seo.uk.net/" title="Seo.uk.net - An official Seo company in London,UK" target="_blank">http://seo.uk.net/</a></small></div>' . "\n";
+                }
             }
         }
 

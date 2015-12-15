@@ -316,6 +316,8 @@ if ( ! class_exists( 'WSW_Dashboard' ) ) {
         public function register_settings_pages() {
 
             $hook = add_menu_page(WSW_NAME . ' Settings', WSW_NAME , 'manage_options', self::page_id, __CLASS__ . '::markup_dashboard_page');
+             add_submenu_page(self::page_id,WSW_NAME . ' Settings','General','manage_options',self::page_id);
+            //$submenu[self::page_id][0][0]='Dashboard';
             //  $hook = add_submenu_page(self::page_id, 'Dashboard', 'Dashboard', 'manage_options',self::page_id, __CLASS__ . '::markup_dashboard_page');
 
             add_action( 'admin_print_scripts-' . $hook, __CLASS__ . '::enqueue_scripts');
@@ -509,6 +511,10 @@ if ( ! class_exists( 'WSW_Dashboard' ) ) {
             $settings['is_meta_description'] = $_POST['is_meta_description'];
             $settings['is_meta_robot_noindex'] = $_POST['is_meta_robot_noindex'];
             $settings['is_meta_robot_nofollow'] = $_POST['is_meta_robot_nofollow'];
+/****************************************custom_code*************************************************************************/
+            $settings['is_meta_robot_noodp'] = $_POST['is_meta_robot_noodp'];
+            $settings['is_meta_robot_noydir'] = $_POST['is_meta_robot_noydir'];
+/***************************************************************************************************************************/
             $settings['meta_description'] = $_POST['meta_description'];
             $settings['is_over_sentences'] = $_POST['is_over_sentences'];
             $settings['first_over_sentences'] = $_POST['first_over_sentences'];
@@ -552,6 +558,8 @@ if ( ! class_exists( 'WSW_Dashboard' ) ) {
             $settings['is_social_twitter'] = $_POST['is_social_twitter'];
             $settings['social_twitter_title'] = $_POST['social_twitter_title'];
             $settings['social_twitter_description'] = $_POST['social_twitter_description'];
+            $settings['autolink_anchor']=$_POST['autolink_anchor'];
+            $settings['is_disable_autolink']=$_POST['is_disable_autolink'];
 
             update_post_meta($post_id, 'wsw-settings', $settings);
 
@@ -583,6 +591,10 @@ if ( ! class_exists( 'WSW_Dashboard' ) ) {
                 $variables['wsw_is_meta_description'] = $settings[0]['is_meta_description'];
                 $variables['wsw_is_meta_robot_noindex'] = $settings[0]['is_meta_robot_noindex'];
                 $variables['wsw_is_meta_robot_nofollow'] = $settings[0]['is_meta_robot_nofollow'];
+/*********************************************************custom_code**************************************************************************/
+                $variables['wsw_is_meta_robot_noodp'] = $settings[0]['is_meta_robot_noodp'];
+                $variables['wsw_is_meta_robot_noydir'] = $settings[0]['is_meta_robot_noydir'];
+/**********************************************************************************************************************************************/
                 $variables['wsw_meta_description'] = $settings[0]['meta_description'];
                 $variables['wsw_is_over_sentences'] = $settings[0]['is_over_sentences'];
                 $variables['wsw_first_over_sentences'] = $settings[0]['first_over_sentences'];
@@ -627,6 +639,8 @@ if ( ! class_exists( 'WSW_Dashboard' ) ) {
                 $variables['wsw_is_social_twitter'] = $settings[0]['is_social_twitter'];
                 $variables['wsw_social_twitter_title'] = $settings[0]['social_twitter_title'];
                 $variables['wsw_social_twitter_description'] = $settings[0]['social_twitter_description'];
+                $variables['wsw_autolink_anchor'] =$settings[0]['autolink_anchor'];
+                $variables['is_disable_autolink']=$settings[0]['is_disable_autolink'];
 
                 self::enqueue_styles();
 
@@ -905,6 +919,7 @@ if ( ! class_exists( 'WSW_Dashboard' ) ) {
         static public function ajax_set_support_time(){
             $options = WSW_Main::$settings;
             $options['wsw_initial_dt'] = time();
+            $options['wsw_set_time_check']=$_POST['set_time_check'];
             WSW_Settings::update_options($options);
 
             die();

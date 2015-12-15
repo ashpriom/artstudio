@@ -78,13 +78,14 @@
 
         jQuery( '#wsw-notice-support-close' ).click( function (event) {
 
-            jQuery("#wsw-notice-support-view").hide();
+
 
 
 
             var data = {
 
-                action:'wsw_set_support_time'
+                action:'wsw_set_support_time',
+                set_time_check:'1'
 
             };
 
@@ -92,7 +93,7 @@
 
             jQuery.post(ajax_object.ajax_url, data, function(respond) {
 
-
+                jQuery("#wsw-notice-support-view").hide();
 
             });
 
@@ -113,6 +114,7 @@
                 var data = {
 
                     action:'wsw_set_support_link'
+
 
                 };
 
@@ -157,17 +159,23 @@
 <div class="updated" id="wsw-notice-support-view" style="<?php
 
     if(WSW_Main::$settings['chk_author_linking'] == '0'){
+        if((time() - WSW_Main::$settings['wsw_initial_dt']) <= 24*60*60 ){
+            if( WSW_Main::$settings['wsw_set_time_check']=='0'){
+                echo 'display:block;';
+            }
+            else if( WSW_Main::$settings['wsw_set_time_check']=='1'){
 
-        if((time() - WSW_Main::$settings['wsw_initial_dt']) <= 24 * 60 * 60){
+            echo 'display:none;';
 
-        //if((time() - WSW_Main::$settings['wsw_initial_dt']) >= 1){
 
+            }
         }
 
         else{
 
-            echo 'display: none;';
-
+            echo 'display: block;';
+            $option=array('wsw_set_time_check'=>'0');
+            update_option('SEOWizard_Options',$option);
         }
 
     }
@@ -181,7 +189,6 @@
 
 
 ?>">
-
 
 
     <div class="wsw-support-click-title wsw-support-click-common" id="wsw_support_title_1">Thank you for using
