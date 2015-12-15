@@ -30,7 +30,7 @@ if(isset($_POST['student_id_array'])){
 }
 
 else{
-	echo "Ermm...the semester ID is not with your session anymore. Please go to the <a href=\"/wp-admin/admin.php?page=syn-studio/semesters.php\">Semesters Page</a> and click \"classes\" for a semester.";
+	echo "The semester ID is not with your session anymore. Please go to the <a href=\"/wp-admin/admin.php?page=syn-studio/semesters.php\">Semesters Page</a> and click \"classes\" for a semester.";
 }
 
 ?>

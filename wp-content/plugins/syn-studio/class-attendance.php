@@ -4,9 +4,9 @@ if(isset($_POST['class_instance_id']) && isset($_POST['class_semester_id'])){
 
 	$classInstanceID = $_POST['class_instance_id'];
 	$classSemesterID = $_POST['class_semester_id'];
-	$className = $_POST['class_name'];
 	$classSemesterName = $_POST['class_semester_name'];
-	$semesterName = $_POST['semester_name'];	
+	$className = $_POST['class_name'];
+	$semesterName = $_POST['semester_name'];
 	$classroomName = $_POST['classroom_name'];
 	$startTimestamp = $_POST['start_timestamp'];
 	$endTimestamp = $_POST['end_timestamp'];
@@ -60,6 +60,6 @@ if(isset($_POST['class_instance_id']) && isset($_POST['class_semester_id'])){
 	<?php $wpdb->print_error();
 }
 
-else{echo "Error. Contact system admin. Thank you.";}
+else{echo "There is a problem with form submission. Please contact system admin. Thank you.";}
 
 ?>

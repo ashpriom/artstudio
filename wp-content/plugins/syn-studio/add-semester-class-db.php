@@ -32,8 +32,6 @@ if(isset($_POST['semester_id']) && isset($_POST['class_semester_name_en']) && is
 	wp_safe_redirect($location, $status=302);
 }
 
-else{
-	echo "Ermm...the semester ID is not with your session anymore. Please go to the <a href=\"/wp-admin/admin.php?page=syn-studio/semesters.php\">Semesters Page</a> and click \"classes\" for a semester.";
-}
+else{ echo "There was a problem processing the data. Please try again, go to <a href=\"/wp-admin/admin.php?page=syn-studio/semesters.php\">Semesters Page</a> and click on \"classes\"."; }
 
 ?>
