@@ -3,15 +3,15 @@
 <link rel="stylesheet" href="../wp-content/plugins/syn-studio/css/jquery.timepicker.css">
 
 <script>
-$(document).ready(
+	$(document).ready(
 		function(){
 			$(" #start_time ").timepicker({'timeFormat': 'H:i', 'disableTextInput':'true', 'minTime':'10:00','maxTime':'21:00'});
-	  	}
+		}
 	);
 </script>
 
 <script>
-$(document).ready(
+	$(document).ready(
 		function(){
 			$(" #end_time ").timepicker({'timeFormat': 'H:i', 'disableTextInput':'true', 'minTime':'10:00','maxTime':'21:00'});
 	  	}
