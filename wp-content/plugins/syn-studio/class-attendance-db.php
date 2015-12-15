@@ -1,32 +1,31 @@
 <?php 
 
-if(isset($_POST['student_id_array'])){
+if(isset($_POST['student_id_array']) && isset($_POST['attendance_array'])){
 	
 	$studentIDArray = explode(',',$_POST['student_id_array']);
 	$studentIDArray = implode(',',$studentIDArray);
 	print_r($studentIDArray);
-	
+	$attendanceArray = explode(',',$_POST['attendance']);
+	$attendanceArray = implode(',',$attendanceArray);
+	print_r($attendanceArray);
+
 	global $wpdb;
 	$semester_class_insert = $wpdb->insert( 
-		'syn1_syn_class_semester', 
+		'syn1_syn_attendance', 
 		array(
-			'class_id' => sanitize_text_field($classID),
-			'semester_id' => sanitize_text_field($semesterID),
-			'teacher_id' => sanitize_text_field($teacherID),
-			'class_semester_name_en' => sanitize_text_field($classSemesterNameEn),
-			'class_semester_name_fr' => sanitize_text_field($classSemesterNameFr),
+			'student_id' => sanitize_text_field($classID),
+			'classinstance_id' => sanitize_text_field($semesterID),
+			'attendance' => sanitize_text_field($teacherID),
 		),
 		array(
 			'%d',
 			'%d',
 			'%d',
-			'%s',
-			'%s',
 		)
 	);
 
 	$wpdb->print_error();
-	$location = "admin.php?page=syn-studio%2Fsemesters.php";
+	//$location = "admin.php?page=syn-studio%2Fsemesters.php";
 	//wp_safe_redirect($location, $status=302);
 }
 
