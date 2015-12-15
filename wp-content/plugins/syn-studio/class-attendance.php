@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if(isset($_POST['class_instance_id']) && isset($_POST['class_semester_id'])){
 
@@ -44,7 +44,7 @@ if(isset($_POST['class_instance_id']) && isset($_POST['class_semester_id'])){
 						$studentNameFirst = $wpdb->get_var( "SELECT student_first FROM syn1_syn_student WHERE student_id = $studentID ");
 						$studentNameLast = $wpdb->get_var( "SELECT student_last FROM syn1_syn_student WHERE student_id = $studentID ");
 						echo "<td>".$studentNameLast.", ".$studentNameFirst."</td>";
-						echo "<td><input type=\"checkbox\" id=\"attendance\" name=\"attendance_array[]\" unchecked checked=\"checked\"></td>";
+						echo "<td><input type=\"checkbox\" name=\"attendance_array[]\" unchecked checked=\"checked\"></td>";
 					echo "</tr>";
 				}
 
