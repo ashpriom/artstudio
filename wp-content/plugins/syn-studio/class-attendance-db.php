@@ -1,13 +1,14 @@
 <?php 
 
-if(isset($_POST['student_id_array']) && isset($_POST['attendance_array'])){
+if(isset($_POST['student_id_array'])){
 	
 	$studentIDArray = explode(',',$_POST['student_id_array']);
 	$studentIDArray = implode(',',$studentIDArray);
 	print_r($studentIDArray);
-	$attendanceArray = explode(',',$_POST['attendance']);
-	$attendanceArray = implode(',',$attendanceArray);
+	$attendanceArray = $_POST['attendance']);
+	//$attendanceArray = implode(',',$attendanceArray);
 	print_r($attendanceArray);
+	echo $attendanceArray;
 
 	global $wpdb;
 	$semester_class_insert = $wpdb->insert( 
