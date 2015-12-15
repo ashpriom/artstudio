@@ -5,7 +5,7 @@ if(isset($_POST['student_id_array'])){
 	$studentIDArray = explode(',',$_POST['student_id_array']);
 	$studentIDArray = implode(',',$studentIDArray);
 	print_r($studentIDArray);
-	$attendanceArray = $_POST['attendance'];
+	$attendanceArray = $_POST['attendance_array'];
 	//$attendanceArray = implode(',',$attendanceArray);
 	//print_r($attendanceArray);
 	echo $attendanceArray;
