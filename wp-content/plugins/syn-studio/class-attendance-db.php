@@ -3,14 +3,17 @@
 if(isset($_POST['student_id_array'])){
 	
 	$studentIDArray = explode(',',$_POST['student_id_array']);
-	$studentIDArray = implode(',',$studentIDArray);
+	//$studentIDArray = implode(',',$studentIDArray);
 	print_r($studentIDArray);
 	$attendanceArray = $_POST['attendance_array'];
-	print_r($attendanceArray);
-	$attendanceArray = implode(',',$attendanceArray);
+	//$attendanceArray = implode(',',$attendanceArray);
 	print_r($attendanceArray);
 
+	$c = array_combine($studentIDArray, $attendanceArray);
+	print_r($c);
+
 	global $wpdb;
+
 	$semester_class_insert = $wpdb->insert( 
 		'syn1_syn_attendance', 
 		array(
