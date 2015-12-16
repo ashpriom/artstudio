@@ -100,17 +100,6 @@
    				<a href="http://www.facebook.com/SynStudio" target="_blank" id="lnk-facebook">Facebook</a>
     			<a href="https://twitter.com/SynStudio" target="_blank" id="lnk-twitter">Twitter</a>
     			<a href="https://www.youtube.com/user/SynStudioMontreal" target="_blank" id="lnk-youtube">You Tube</a>
-				
-				<?php 
-				if ($currentLang == "fr") { ?>
-					<script type="text/javascript">
-						var addthis_config = {
-      						ui_language: "fr" 
-						} 
-					</script>
-				<?php } ?>
-				
-				<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=galeriesyn"></script>
    			
    			</div>
   		

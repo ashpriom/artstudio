@@ -65,16 +65,16 @@
 		</script>
 
 		<!-- Start of SkyGlue Code -->
-         <script type="text/javascript">
-           var _sgq = _sgq || [];
-           _sgq.push(['setSgAccount', 'jjkqccji']);
+        	<script type="text/javascript">
+           		var _sgq = _sgq || [];
+           		_sgq.push(['setSgAccount', 'jjkqccji']);
 
-           setTimeout(function() {
-             var sg = document.createElement('script'); sg.type = 'text/javascript'; sg.async = true;
-             sg.src = ("https:" == document.location.protocol ? "https://dc" : "http://cdn0") + ".skyglue.com/sgtracker.js";
-             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sg, s);
-           }, 1);
-         </script>
+           		setTimeout(function() {
+             		var sg = document.createElement('script'); sg.type = 'text/javascript'; sg.async = true;
+             		sg.src = ("https:" == document.location.protocol ? "https://dc" : "http://cdn0") + ".skyglue.com/sgtracker.js";
+             		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sg, s);
+           		}, 1);
+        	</script>
 		<!-- End of SkyGlue Code -->
 
 		<!-- Facebook Pixel Code -->
