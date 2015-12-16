@@ -11,7 +11,7 @@ if(isset($_POST['student_id_array']) && isset($_POST['class_instance_id'])){
 	print_r($attendanceArray);
 
 	$studentAttendances = array_combine($studentIDArray, $attendanceArray);
-	print_r($studentAttendance);
+	print_r($studentAttendances);
 
 	global $wpdb;
 

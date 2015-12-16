@@ -15,9 +15,9 @@ add_action( 'admin_menu', 'main_menu' );
 
 function main_menu(){
 	global $inforoomPages;
-	add_menu_page( 'InfoRoom@SynStudio', 'SynStudio', 'manage_options', 'syn-studio/inforoom.php', '', plugins_url('syn-studio/images/icon.png'),3);
+	add_menu_page( 'InfoRoom@SynStudio', 'Syn Studio', 'manage_options', 'syn-studio/inforoom.php', '', plugins_url('syn-studio/images/icon.png'),3);
 
-	add_submenu_page( 'syn-studio/inforoom.php', 'Syn-Studio', 'Overview', 'manage_options', 'syn-studio/inforoom.php');	
+	add_submenu_page( 'syn-studio/inforoom.php', 'Syn-Studio', 'Home', 'manage_options', 'syn-studio/inforoom.php');	
 	add_submenu_page( 'syn-studio/inforoom.php', 'Semesters', 'Semesters', 'manage_options', 'syn-studio/semesters.php','Semesters');
 	add_submenu_page( 'syn-studio/inforoom.php', 'Classrooms', 'Classrooms', 'manage_options', 'syn-studio/classrooms.php','Classrooms');
 	add_submenu_page( 'syn-studio/inforoom.php', 'Students', 'Students', 'manage_options', 'syn-studio/students.php','Students');
