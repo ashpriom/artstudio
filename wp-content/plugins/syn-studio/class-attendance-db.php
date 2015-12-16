@@ -21,19 +21,21 @@ if(isset($_POST['student_id_array']) && isset($_POST['class_instance_id'])){
 	global $wpdb;
 
 	foreach($studentAttendances as $studentAttendance){
+		$studentID = array_search($studentAttendance, $studentAttendances);
 		if($studentAttendance == "present"){$studentAttendance = 1;}
 		if($studentAttendance == "absent"){$studentAttendance = 0;}
+		echo $studentID;
 		$semester_class_insert = $wpdb->insert( 
 			'syn1_syn_attendance', 
 			array(
-				'student_id' => array_search($studentAttendance, $studentAttendances),
-				'classinstance_id' => sanitize_text_field($classInstanceID),
+				'student_id' => $studentID,
+				'classinstance_id' => $classInstanceID,
 				'attendance' => sanitize_text_field($studentAttendance),
 			),
 			array(
 				'%d',
 				'%d',
-				'%s',
+				'%d',
 			)
 		);
 	}
