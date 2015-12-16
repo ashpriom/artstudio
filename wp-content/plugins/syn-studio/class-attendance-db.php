@@ -26,7 +26,11 @@
 				)
 			);
 		}
+
 		$wpdb->print_error();
+		$location = "admin.php?page=syn-studio%2Fsemesters.php";
+		wp_safe_redirect($location, $status=302);
+	
 	}
 
 	else{
@@ -34,5 +38,5 @@
 		Please go to the <a href=\"/wp-admin/admin.php?page=syn-studio/semesters.php\">Semesters Page</a> and
 		click \"classes\" for a semester.";
 	}
-	
+
 ?>

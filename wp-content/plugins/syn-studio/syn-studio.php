@@ -520,7 +520,7 @@ function ClassStudents(){
 			$semesterName = $wpdb->get_var( "SELECT semester_name_en FROM syn1_syn_semester WHERE semester_id = $semesterID ");
 
 			echo "<h1><b>List of Enrolled Students</b></h1><br>";
-			echo "<h2> Semester: ".$semesterName."</h2>";
+			echo "<h2>Semester: ".$semesterName."</h2>";
 			echo "<h2>Class: ".$className."   ".$classSemesterNameEn."</h2><br>";
 			
 			$classStudents = $wpdb->get_results( "SELECT enrollment_id, student_id, enrollment_date FROM syn1_syn_enrollment WHERE class_semester_id = $classSemesterID ");
@@ -576,6 +576,13 @@ function ClassStudents(){
 					<input name="semester_id" type="hidden" value="<?php echo $semesterID; ?>"/>
 					<input name="class_semester_id" type="hidden" value="<?php echo $classSemesterID; ?>"/>
 					<input type="submit" class="button-purple" value="Enroll Existing Student"/>
+				</p></div>
+			</form>
+
+			<form id="semester" action="<?php home_url(); ?>/wp-admin/admin.php?page=syn-studio/add-student.php" method="POST">
+				<div><p>
+					<input type="submit" name="student" class="button-purple" id="synstudio-button" value="New Student"/>
+					<img src="<?php echo admin_url('/images/wpspin_light.gif');?>" class="waiting" id="synstudio-loading" style="display:none"/>
 				</p></div>
 			</form>
 
