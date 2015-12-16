@@ -27,7 +27,7 @@
 			wp_safe_redirect($location, $status=302);
 		}
 
-		else{ echo "Student already enrolled in this course."; }
+		else{ echo "<p class=\"lead bg-danger\">Student already enrolled in this course. Please go to the <a href=\"/wp-admin/admin.php?page=syn-studio/semesters.php\">Semesters Page</a>.<p>"; }
 	}
 
 	else{ echo "Something is wrong. Please contact system admin. Thank you.";}
