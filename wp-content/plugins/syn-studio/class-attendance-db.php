@@ -21,6 +21,8 @@ if(isset($_POST['student_id_array']) && isset($_POST['class_instance_id'])){
 	global $wpdb;
 
 	foreach($studentAttendances as $studentAttendance){
+		if($studentAttendance == "present"){$studentAttendance = 1;}
+		if($studentAttendance == "absent"){$studentAttendance = 0;}
 		$semester_class_insert = $wpdb->insert( 
 			'syn1_syn_attendance', 
 			array(
@@ -31,7 +33,7 @@ if(isset($_POST['student_id_array']) && isset($_POST['class_instance_id'])){
 			array(
 				'%d',
 				'%d',
-				'%d',
+				'%s',
 			)
 		);
 	}
