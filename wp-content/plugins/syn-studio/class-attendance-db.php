@@ -3,9 +3,14 @@
 if(isset($_POST['student_id_array']) && isset($_POST['class_instance_id'])){
 	
 	$classInstanceID = $_POST['class_instance_id'];
+	echo $classInstanceID;
+
+	// Student ID Array
 	$studentIDArray = explode(',',$_POST['student_id_array']);
 	//$studentIDArray = implode(',',$studentIDArray);
 	print_r($studentIDArray);
+	
+	// Attendance Array
 	$attendanceArray = $_POST['attendance_array'];
 	//$attendanceArray = implode(',',$attendanceArray);
 	print_r($attendanceArray);
