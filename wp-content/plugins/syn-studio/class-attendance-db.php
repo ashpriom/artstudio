@@ -9,7 +9,8 @@
 
 		global $wpdb;
 		foreach($studentAttendances as $studentAttendance){
-			$studentID = array_search($studentAttendance, $studentAttendances);
+			echo $studentAttendance;
+			echo $studentID = array_search($studentAttendance, $studentAttendances);
 			if($studentAttendance == "present"){$studentAttendance = 1;}
 			if($studentAttendance == "absent"){$studentAttendance = 0;}
 			$semester_class_insert = $wpdb->insert( 
@@ -29,7 +30,7 @@
 
 		$wpdb->print_error();
 		$location = "admin.php?page=syn-studio%2Fsemesters.php";
-		wp_safe_redirect($location, $status=302);
+		//wp_safe_redirect($location, $status=302);
 	
 	}
 
