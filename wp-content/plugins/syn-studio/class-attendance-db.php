@@ -8,10 +8,11 @@
 		$studentAttendances = array_combine($studentIDArray, $attendanceArray);
 
 		global $wpdb;
-		foreach($studentAttendances as $studentAttendance){
+		foreach($studentAttendances as $studentID => $studentAttendance){
 			echo $studentAttendance;
+			echo $studentID;
 			//echo $studentID = array_search($studentAttendance, $studentAttendances);
-			echo $studentID = key($studentAttendances);
+			//echo $studentID = key($studentAttendances);
 			if($studentAttendance == "present"){$studentAttendance = 1;}
 			if($studentAttendance == "absent"){$studentAttendance = 0;}
 			$semester_class_insert = $wpdb->insert( 
