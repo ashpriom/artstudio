@@ -39,9 +39,10 @@
 
 #inforoom .info-table tr{width: 80%;}
 #inforoom .info-table td{ padding: 7px;}
-#inforoom table tr:first-child{ background-color: #504B5E;color: whitesmoke;}
-#inforrom .info-table table td:first-child{ background-color:#e0e0e0 !important; max-width: 60px !important; }
-#inforoom form{float:left; margin-right: 7px;}
+#inforoom  table tr:first-child{ background-color: #504B5E;color: whitesmoke;}
+#inforoom .info-table table td:first-child{ background-color:#e0e0e0 !important; max-width: 60px !important; }
+#inforoom .info-table select{ width: 350px !important;}
+#inforoom  form{float:left; margin-right: 7px;}
 
 #inforoom .button-primary{
 	font-family: 'Droid Sans', sans-serif !important;
@@ -80,13 +81,3 @@
 
 #delete-entry tr{background-color:transparent !important;}
 #delete-entry tr td{padding:0px !important;}
-
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.element {
-  .center-block();
-}
