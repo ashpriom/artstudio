@@ -97,9 +97,9 @@ function Semesters(){
 
 		echo "<table class=\"info-table\">";
 			echo "<tr>";
-				echo "<td class=\"row_id\">#</td>";
-				echo "<td>Semester ID</td>";
-				echo "<td>Name</td>";
+				//echo "<td class=\"row_id\">#</td>";
+				//echo "<td>Semester ID</td>";
+				echo "<td>Semester</td>";
 				echo "<td>Starts On</td>";
 				echo "<td>Ends On</td>";
 				echo "<td>Actions</td>";
@@ -111,9 +111,10 @@ function Semesters(){
 			foreach($classrooms as $classroom){
 				$i++;
 				echo "<tr>";
-					echo "<td class=\"row_id\">".$i."</td>";
-					echo "<td>"; echo $semesterID = sanitize_text_field($classroom->semester_id); echo "</td>";
-					echo "<td>"; echo $semester_name_en = sanitize_text_field($classroom->semester_name_en); echo " ( "; echo $semester_name_fr = sanitize_text_field($classroom->semester_name_fr); echo " )</td>";
+					//echo "<td class=\"row_id\">".$i."</td>";
+					//echo "<td>"; echo $semesterID = sanitize_text_field($classroom->semester_id); echo "</td>";
+					//echo "<td>"; echo $semester_name_en = sanitize_text_field($classroom->semester_name_en); echo " ( "; echo $semester_name_fr = sanitize_text_field($classroom->semester_name_fr); echo " )</td>";
+					echo "<td>"; echo $semester_name_en = sanitize_text_field($classroom->semester_name_en); echo "</td>";
 					echo "<td>"; $start_date = sanitize_text_field($classroom->start_date); $format = 'Y-m-d'; $date = DateTime::createFromFormat($format, $start_date); echo $date->format('F j, Y'); echo "</td>";
 					echo "<td>"; $end_date = sanitize_text_field($classroom->end_date); $format = 'Y-m-d'; $date = DateTime::createFromFormat($format, $end_date); echo $date->format('F j, Y'); echo "</td>";
 					echo "<td>";?>

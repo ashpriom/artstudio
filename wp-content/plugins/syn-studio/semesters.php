@@ -11,9 +11,9 @@ $semesters = $wpdb->get_results( "SELECT semester_id, semester_name_en, semester
 $i=0;
 echo "<table class=\"info-table\">";
 	echo "<tr>";
-		echo "<td>#</td>";
-		echo "<td>Semester ID</td>";
-		echo "<td>Name</td>";
+		//echo "<td>#</td>";
+		//echo "<td>Semester ID</td>";
+		echo "<td>Semester</td>";
 		echo "<td>Starts On</td>";
 		echo "<td>Ends On</td>";
 	echo "</tr>";
@@ -21,9 +21,10 @@ echo "<table class=\"info-table\">";
 	foreach ( $semesters as $semester ){
 		$i++;
 		echo "<tr>";
-			echo "<td>".$i."</td>";
-			echo "<td>".$semester->semester_id."</td>";
-			echo "<td>".$semester->semester_name_en." ( ".$semester->semester_name_fr." )"."</td>";
+			//echo "<td>".$i."</td>";
+			//echo "<td>".$semester->semester_id."</td>";
+			//echo "<td>".$semester->semester_name_en." ( ".$semester->semester_name_fr." )"."</td>";
+			echo "<td>".$semester->semester_name_en."</td>";
 			echo "<td>".$semester->start_date."</td>";
 			echo "<td>".$semester->end_date."</td>";
 		echo "</tr>";
