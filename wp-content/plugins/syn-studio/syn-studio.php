@@ -111,6 +111,7 @@ function Semesters(){
 			foreach($classrooms as $classroom){
 				$i++;
 				echo "<tr>";
+					$semesterID = sanitize_text_field($classroom->semester_id);
 					//echo "<td class=\"row_id\">".$i."</td>";
 					//echo "<td>"; echo $semesterID = sanitize_text_field($classroom->semester_id); echo "</td>";
 					//echo "<td>"; echo $semester_name_en = sanitize_text_field($classroom->semester_name_en); echo " ( "; echo $semester_name_fr = sanitize_text_field($classroom->semester_name_fr); echo " )</td>";
