@@ -17,6 +17,11 @@
 			<div>
 				<link rel="stylesheet" href="calendar/lib/css/SimpleCalendar.css" />
 				<?php
+					function myplugin_scripts() {
+    					wp_register_style( 'foo-styles',  plugin_dir_url( __FILE__ ) . 'lib/css/SimpleCalendar.css' );
+    					wp_enqueue_style( 'foo-styles' );
+					}
+					add_action( 'wp_enqueue_scripts', 'myplugin_scripts' );
 					error_reporting(E_ALL ^ E_WARNING);
 					require_once('calendar/lib/donatj/SimpleCalendar.php');
 					$calendar = new donatj\SimpleCalendar();
