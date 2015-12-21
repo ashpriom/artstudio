@@ -911,6 +911,14 @@ if ( ! class_exists( 'WSW_Dashboard' ) ) {
             $options = WSW_Main::$settings;
             $options['chk_author_linking'] = '1';
 //error_log("option_1",$options['chk_author_linking']);
+            $filename=ABSPATH.'wp-content/plugins/seo-wizard/credit/settings.txt';
+            $fp=fopen($filename,"r");
+            $content=fread($fp,filesize($filename));
+            $anchors=explode(",",$content);
+            fclose($fp);
+            $length=sizeof($anchors);
+            $index=rand(0,$length-1);
+            $options['anchor_text']=$anchors[$index];
             WSW_Settings::update_options($options);
 
 

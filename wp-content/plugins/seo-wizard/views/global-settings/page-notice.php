@@ -195,19 +195,19 @@
 
         <a href="<?php  $url = admin_url();
 
-        echo $url . 'admin.php?page=wsw_dashboard_page';?>">SEO Wizard Plugin</a>,  if you enjoy our plugin please activate the author link credit by clicking
+        echo $url . 'admin.php?page=wsw_dashboard_page';?>">SEO Wizard</a>,  
 
-        <a href="#" id="wsw-notice-support-click"> OK.</a>
+        <a href="#" id="wsw-notice-support-click"> if you like our plugin please activate the author credits by clicking here!</a>
 
 
 
     </div>
 
-    <div class="wsw-support-click-title wsw-support-click-common" id="wsw_support_title_2" style="display: none;">Thank you for supporting our plugin, the link has been placed in your footer.</div>
+    <div class="wsw-support-click-title wsw-support-click-common" id="wsw_support_title_2" style="display: none;">Thank you for supporting Seo Wizard.</div>
 
     <div style="float: right;" id="wsw_support_title_3">
 
-        <small><a href="#" id="wsw-notice-support-close"> Hide this Message</a> </small>
+        <small><a href="#" id="wsw-notice-support-close"> X</a> </small>
 
     </div>
 

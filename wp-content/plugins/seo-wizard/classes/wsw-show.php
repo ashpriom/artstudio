@@ -180,13 +180,17 @@ if ( ! class_exists( 'WSW_Show' ) ) {
          */
         public function fake_wp_footer() {
             // Only to add the head in Single page where Post is shown
+
             if (is_single() || is_page()) {
                 $post_id = get_the_ID();
 
                 //$settings = get_post_meta( $post_id , 'wsw-settings');
 
                 if (WSW_Main::$settings['chk_author_linking'] == '1') {
-                    // echo '<br /><div align="center"><small>This site is using the <a href="https://wordpress.org/plugins/seo-wizard/" title="Seo - Free Wordpress Plugin" target="_blank">Seo Wizard</a> plugin by <a href="http://seo.uk.net/" title="Seo.uk.net - An official Seo company in London,UK" target="_blank">http://seo.uk.net/</a></small></div>' . "\n";
+                    $anchor_text=WSW_Main::$settings['anchor_text'];
+
+                    //echo '<br /><div align="center"><small>Site is using the <a href="https://wordpress.org/plugins/seo-wizard/" title="Wordpress Seo Plugin" target="_blank">Seo Wizard</a> plugin by Seo.uk.net ( <a href="http://seo.uk.net/" target="_blank">'.$anchor_text.'</a> )</small></div>' . "\n";
+
                 }
             }
         }

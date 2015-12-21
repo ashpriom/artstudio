@@ -82,7 +82,8 @@ if ( ! class_exists( 'WSW_Settings' ) ) {
                 'chk_use_meta_robot' => '1',
                 'chk_tweak_permalink' => '0',
                 'chk_make_sitemap' => '0',
-                'wsw_set_time_check'=>'0'
+                'wsw_set_time_check'=>'0',
+                'anchor_text'=>''
             );
 
 
