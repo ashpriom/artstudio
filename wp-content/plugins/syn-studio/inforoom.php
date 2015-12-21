@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<body>
+		<link rel="stylesheet" href="<?php bloginfo('url'); _e(''); ?>/wp-content/plugins/syn-studio/css/bootstrap.min.css" type="text/css" media="screen" />
+		<script src="<?php bloginfo('url'); _e(''); ?>/wp-content/plugins/syn-studio/js/bootstrap.min.js" /></script>
 		<div class="container-fluid">
-			<div class="center-block"><h1><b>Syn Studio Information System</b></h1></div>
-			<div id="inforoom" class="inforoom-menu">
-				<p class=\"lead\">Welcome to the Information Room. Here you can manage information about Syn Studio.</p>
+			<div class=".col-md-5"><h1><b>Syn Studio Information System</b></h1></div>
+			<div id="inforoom" class="inforoom-menu .col-md-7">
 				<ul>
 					<?php
 					echo "<li><h2><a href=\"admin.php?page=syn-studio/semesters.php\" target=\"_BLANK\">Semesters</a></h2></li>";
@@ -14,14 +15,9 @@
 				</ul>
 			</div>
 	
-			<div>
+			<div class=".col-md-12">
 				<link rel="stylesheet" href="<?php bloginfo('url'); _e(''); ?>/wp-content/plugins/syn-studio/calendar/lib/css/SimpleCalendar.css" />
 				<?php
-					function myplugin_scripts() {
-    					wp_register_style( 'foo-styles',  plugin_dir_url( __FILE__ ) . 'lib/css/SimpleCalendar.css' );
-    					wp_enqueue_style( 'foo-styles' );
-					}
-					add_action( 'wp_enqueue_scripts', 'myplugin_scripts' );
 					error_reporting(E_ALL ^ E_WARNING);
 					require_once('calendar/lib/donatj/SimpleCalendar.php');
 					$calendar = new donatj\SimpleCalendar();

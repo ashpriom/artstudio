@@ -204,12 +204,7 @@ function my_formatter($content) {
 
 remove_filter('the_content', 'wpautop');
 remove_filter('the_content', 'wptexturize');
- 
-add_filter('the_content', 'my_formatter', 99);
 
-function microsite(){
-    $homef1 = "You want to be a";
-    $homee1 = "Vous voulez faire de";
-}
+add_filter('the_content', 'my_formatter', 99);
 
 ?>
