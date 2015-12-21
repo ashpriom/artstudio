@@ -15,7 +15,7 @@
 			</div>
 	
 			<div>
-				<link rel="stylesheet" href="calendar/lib/css/SimpleCalendar.css" />
+				<link rel="stylesheet" href="<?php bloginfo('url'); _e(''); ?>/wp-content/plugins/syn-studio/calendar/lib/css/SimpleCalendar.css" />
 				<?php
 					function myplugin_scripts() {
     					wp_register_style( 'foo-styles',  plugin_dir_url( __FILE__ ) . 'lib/css/SimpleCalendar.css' );
