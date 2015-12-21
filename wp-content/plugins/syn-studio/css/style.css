@@ -1,5 +1,5 @@
 #inforoom{ font-family: 'Droid Sans', sans-serif; font-size: 1em; }
-#inforoom h1{ font-family: 'Droid Sans', sans-serif; padding:7px; }
+#inforoom h1{ font-family: 'Droid Sans', sans-serif; padding:7px; font-size: 30px; }
 
 #inforoom h2{
 	font-family: 'Droid Sans', sans-serif;
@@ -10,7 +10,6 @@
 
 #inforoom ul{
 	background-color: currentColor;
-    width: 50%;
     height: 80px;
     padding: 7px;
 }
