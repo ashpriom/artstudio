@@ -12,6 +12,7 @@
 						echo "<li><h2><a href=\"admin.php?page=syn-studio/semesters.php\" target=\"_BLANK\">Semesters</a></h2></li>";
 						echo "<li><h2><a href=\"admin.php?page=syn-studio/classrooms.php\" target=\"_BLANK\">Classrooms</a></h2></li>";
 						echo "<li><h2><a href=\"admin.php?page=syn-studio/students.php\" target=\"_BLANK\">Students</a></h2></li>";
+						echo "<li><h2><a href=\"admin.php?page=syn-studio/syn-options.php\" target=\"_BLANK\">Options</a></h2></li>";
 						?>
 					</ul>
 				</div>
