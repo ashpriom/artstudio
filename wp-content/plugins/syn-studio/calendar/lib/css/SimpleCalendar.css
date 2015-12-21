@@ -1,13 +1,16 @@
 table.SimpleCalendar {
-  font-family: Arial;
-  border-collapse: collapse; }
-  table.SimpleCalendar th {
-    background: #C9E9F0;
-    color: #0092B4;
-    font-size: 11px;
-    padding: 3px;
-    border: 1px solid #bbb;
-    border-top: none; }
+  font-family: 'Droid Sans', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+table.SimpleCalendar th {
+  background: #C9E9F0;
+  color: #0092B4;
+  font-size: 11px;
+  padding: 3px;
+  border: 1px solid #bbb;
+  border-top: none; 
+}
   table.SimpleCalendar tbody td {
     vertical-align: top;
     width: 90px;

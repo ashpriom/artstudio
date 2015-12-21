@@ -23,8 +23,8 @@
 						error_reporting(E_ALL ^ E_WARNING);
 						require_once('calendar/lib/donatj/SimpleCalendar.php');
 						$calendar = new donatj\SimpleCalendar();
-						$calendar->setStartOfWeek('Sunday');
-						$calendar->addDailyHtml( 'Sample Event', 'today', 'tomorrow' );
+						$calendar->setStartOfWeek('Monday');
+						$calendar->addDailyHtml( 'Sample Event', 'today', 'today' );
 						$calendar->show(true);
 					?>
 				</div>

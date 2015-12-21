@@ -16,9 +16,7 @@ if ( function_exists('register_sidebar') )
 	));
 	register_sidebars(1);
 	
-//Twitter: start
-function getTwitterFollowers($screenName = 'codeforest')
-{
+function getTwitterFollowers($screenName = 'codeforest'){
     // some variables
     $consumerKey = '0lnJHFRzifcDvTDJuwhQ';
     $consumerSecret = '7hPA64Rqt0VGoelIJVuqRflPYGZOMbKirUVqE1Dv760';
@@ -88,7 +86,6 @@ function getTwitterFollowers($screenName = 'codeforest')
  
     return $numberOfFollowers;
 }
-// Twitter End
 
 function custom_excerpt_length( $length ) {
 	return 20;
@@ -104,7 +101,7 @@ function theme_options_init(){
 
 function theme_options_add_page() {
  add_theme_page( __( 'Theme Options', 'sampletheme' ), __( 'Theme Options', 'sampletheme' ), 'edit_theme_options', 'theme_options', 'theme_options_do_page' );
-} 
+}
 
 function theme_options_do_page() { 
     global $select_options; 
@@ -120,7 +117,7 @@ function theme_options_do_page() {
         if ( false !== $_REQUEST['settings-updated'] ) : ?>
             <div>
                 <p><strong><?php _e( 'Options saved', 'customtheme' ); ?></strong></p></div>
-        <?php endif; ?>  
+        <?php endif; ?> 
 
     <form method="post" action="options.php">
         <?php settings_fields( 'sample_options' ); ?>  
