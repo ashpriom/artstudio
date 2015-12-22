@@ -1,5 +1,6 @@
 <?php
 
+function options(){
 	global $select_options; 
     if ( ! isset( $_REQUEST['settings-updated'] ) ) $_REQUEST['settings-updated'] = false; ?>
 
@@ -71,3 +72,5 @@
     </p>
     </form>
     </div>
+    
+<?php } ?>
