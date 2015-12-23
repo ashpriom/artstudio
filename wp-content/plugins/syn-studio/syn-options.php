@@ -73,4 +73,9 @@ function options(){
     </form>
     </div>
     
-<?php } ?>
+
+<?php }
+
+options();
+
+ ?>
