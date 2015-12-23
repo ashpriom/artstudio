@@ -1,6 +1,6 @@
 <?php
 
-function options(){
+function DeadlineNotice(){
 	global $select_options; 
     if ( ! isset( $_REQUEST['settings-updated'] ) ) $_REQUEST['settings-updated'] = false; ?>
 
@@ -18,7 +18,7 @@ function options(){
 
     <form method="post" action="options.php">
         <?php settings_fields( 'sample_options' ); ?>  
-        <?php $options = get_option( 'sample_theme_options' ); ?> 
+        <?php $syn_deadlines = get_option( 'deadline_notice' ); ?>
 
     <table>
 
@@ -76,6 +76,6 @@ function options(){
 
 <?php }
 
-options();
+DeadlineNotice();
 
  ?>

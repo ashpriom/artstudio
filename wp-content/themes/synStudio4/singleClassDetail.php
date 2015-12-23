@@ -5,6 +5,7 @@
 		$translationID = pll_get_post($postID,'en');
 	}
 	$options = get_option( 'sample_theme_options' );
+	$syn_deadlines = get_option( 'sample_theme_options' );
 ?>
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.2.min.js"></script>
