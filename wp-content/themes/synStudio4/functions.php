@@ -92,7 +92,7 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 40 );
 
-add_action( 'admin_init', 'theme_options_init' );
+/*add_action( 'admin_init', 'theme_options_init' );
 add_action( 'admin_menu', 'theme_options_add_page' ); 
 
 function theme_options_init(){
@@ -182,6 +182,7 @@ function theme_options_do_page() {
 ?>
 
 <?php
+*/
 function my_formatter($content) {
     $new_content = '';
     $pattern_full = '{(\[raw\].*?\[/raw\])}is';
