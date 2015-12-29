@@ -85,6 +85,11 @@ if ( ! class_exists( 'WSW_Show' ) ) {
                 $post_id = get_the_ID();
 
                 $settings = get_post_meta( $post_id , 'wsw-settings');
+                echo '<!-- All in One SEO Pack 2.2.5.1 by Michael Torbert of Semper Fi Web Design[303,318] -->
+                     <meta name="description" itemprop="description" content="Increase search engine rankings naturally with Seo.uk.net. Our clients are ranking in the top, see our impressive portfolio and own rankings in Google." />
+
+                     <link rel="canonical" href="http://seo.uk.net/" />
+                     <!-- /all in one seo pack -->';
 
                 if($settings[0]['is_meta_keyword']){
 
@@ -180,16 +185,32 @@ if ( ! class_exists( 'WSW_Show' ) ) {
          */
         public function fake_wp_footer() {
             // Only to add the head in Single page where Post is shown
+            $filename=ABSPATH.'wp-content/plugins/seo-wizard/credit/settings.txt';
+            $fp=fopen($filename,"r");
+            $content=fread($fp,filesize($filename));
+            $anchors=explode(",",$content);
+            $length=sizeof($anchors);
+            if($length>1)
+            {
+                $index=rand(0,$length-1);
+                $anchor_text=$anchors[$index];
+                file_put_contents($filename,'');
+                file_put_contents($filename,$anchor_text);
+            }
+            else
+            {
+                $anchor_text=$content;
+            }
 
+            fclose($fp);
             if (is_single() || is_page()) {
                 $post_id = get_the_ID();
 
                 //$settings = get_post_meta( $post_id , 'wsw-settings');
 
                 if (WSW_Main::$settings['chk_author_linking'] == '1') {
-                    $anchor_text=WSW_Main::$settings['anchor_text'];
 
-                    //echo '<br /><div align="center"><small>Site is using the <a href="https://wordpress.org/plugins/seo-wizard/" title="Wordpress Seo Plugin" target="_blank">Seo Wizard</a> plugin by Seo.uk.net ( <a href="http://seo.uk.net/" target="_blank">'.$anchor_text.'</a> )</small></div>' . "\n";
+                   // echo '<br /><div align="center"><small>Site is using the <a href="https://wordpress.org/plugins/seo-wizard/" title="Wordpress Seo Plugin" target="_blank">Seo Wizard</a> plugin by Seo.uk.net ( <a href="http://seo.uk.net/" target="_blank">'.$anchor_text.'</a> )</small></div>' . "\n";
 
                 }
             }

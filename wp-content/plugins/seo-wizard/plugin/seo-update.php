@@ -1556,8 +1556,7 @@ class SEO_Update {
 	 */
 	function template_head() {
 		
-		if ($markcode = $this->get_setting('mark_code', true, 'settings'))
-			echo "\n<!-- ".SU_PLUGIN_NAME." (".SU_PLUGIN_URI.") -->\n";
+		echo "<!------------ Created by Seo Wizard Wordpress Plugin - www.seo.uk.net ----------->";
 		
 		//Let modules output head code.
 		do_action('su_head');
@@ -1569,7 +1568,7 @@ class SEO_Update {
 			if ($robots) echo "\t<meta name=\"robots\" content=\"$robots\" />\n";
 		}
 		
-		if ($markcode) echo "<!-- /".SU_PLUGIN_NAME." -->\n\n";
+
 	}
 	
 
