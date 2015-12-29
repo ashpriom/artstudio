@@ -1,6 +1,6 @@
 <?php
 
-function DeadlineNotice(){
+//function DeadlineNotice(){
 	global $select_options; 
     if ( ! isset( $_REQUEST['settings-updated'] ) ) $_REQUEST['settings-updated'] = false; ?>
 
@@ -74,8 +74,8 @@ function DeadlineNotice(){
     </div>
     
 
-<?php }
+<?php //}
 
-DeadlineNotice();
+//DeadlineNotice();
 
  ?>
