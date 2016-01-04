@@ -621,15 +621,6 @@ function SynOption1() {
 	echo "<input id='synoption1' name='synstudio-options[text_string]' size='40' type='text' value='{$options['text_string']}' />";
 } ?>
 
-<?php // validate our options
-/*function SynValidate($input){
-	$newinput['text_string'] = trim($input['text_string']);
-	if(!preg_match('/^[a-z0-9]{32}$/i', $newinput['text_string'])) {
-		$newinput['text_string'] = '';
-	}
-	return $newinput;
-}*/
-?>
 
 <?php // validate our options
 function SynValidate($input){
