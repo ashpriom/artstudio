@@ -635,9 +635,9 @@ function SynOption1() {
 function SynValidate($input){
 	$options = get_option('synstudio-options');
 	$options['text_string'] = trim($input['text_string']);
-	if(!preg_match('/^*$/i', $options['text_string'])) {
-		$options['text_string'] = '';
-	}
+	//if(!preg_match('/^*$/i', $options['text_string'])) {
+	//	$options['text_string'] = '';
+	//}
 	return $options;
 }
 ?>
