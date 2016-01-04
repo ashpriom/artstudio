@@ -21,7 +21,7 @@ function main_menu(){
 	add_submenu_page( 'syn-studio/inforoom.php', 'Semesters', 'Semesters', 'manage_options', 'syn-studio/semesters.php','Semesters');
 	add_submenu_page( 'syn-studio/inforoom.php', 'Classrooms', 'Classrooms', 'manage_options', 'syn-studio/classrooms.php','Classrooms');
 	add_submenu_page( 'syn-studio/inforoom.php', 'Students', 'Students', 'manage_options', 'syn-studio/students.php','Students');
-	add_options_page('Syn Studio Options', 'Syn Studio Options', 'manage_options', 'synstudio-options', 'SynOptions');
+	add_submenu_page('Syn Studio Options', 'Syn Studio Options', 'manage_options', 'synstudio-options', 'SynOptions');
 	
 	add_submenu_page( 'NULL', 'Update-Semester', 'Update Semesters', 'manage_options', 'syn-studio/update-semester.php');
 	add_submenu_page( 'NULL', 'Update-Semester', '', 'manage_options', 'syn-studio/update-semester-db.php');
