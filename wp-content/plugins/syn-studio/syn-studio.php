@@ -606,13 +606,13 @@ function SynOptions() { ?>
 add_action('admin_init', 'plugin_admin_init');
 function plugin_admin_init(){
 	register_setting('synstudio-options', 'synstudio-options', 'SynValidate');
-	add_settings_section('synstudio_main', 'Main Settings', 'syn_callback', 'synstudio');
-	add_settings_field('synoption1', 'Plugin Text Input', 'SynOption1', 'synstudio', 'synstudio_main');
+	add_settings_section('synstudio_main', 'Syn Studio Settings', 'syn_callback', 'synstudio');
+	add_settings_field('synoption1', 'Deadline Notice (EN)', 'SynOption1', 'synstudio', 'synstudio_main');
 } ?>
 
 <?php 
 function syn_callback() {
-	echo '<p>Main description of this section here.</p>';
+	echo '<p>Main settings go here.</p>';
 } ?>
 
 <?php 
