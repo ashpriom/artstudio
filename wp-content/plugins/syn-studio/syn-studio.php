@@ -21,7 +21,7 @@ function main_menu(){
 	add_submenu_page( 'syn-studio/inforoom.php', 'Semesters', 'Semesters', 'manage_options', 'syn-studio/semesters.php','Semesters');
 	add_submenu_page( 'syn-studio/inforoom.php', 'Classrooms', 'Classrooms', 'manage_options', 'syn-studio/classrooms.php','Classrooms');
 	add_submenu_page( 'syn-studio/inforoom.php', 'Students', 'Students', 'manage_options', 'syn-studio/students.php','Students');
-	add_submenu_page( 'syn-studio/inforoom.php', 'Options', 'Options', 'manage_options', 'syn-studio/syn-options.php');
+	add_options_page('Syn Studio Options', 'Syn Studio Options', 'manage_options', 'synstudio-options', 'SynOptions');
 	
 	add_submenu_page( 'NULL', 'Update-Semester', 'Update Semesters', 'manage_options', 'syn-studio/update-semester.php');
 	add_submenu_page( 'NULL', 'Update-Semester', '', 'manage_options', 'syn-studio/update-semester-db.php');
@@ -589,4 +589,55 @@ function ClassStudents(){
 	<?php
 }
 
+function SynOptions() { ?>
+	<div>
+		<h2>Syn Studio Options</h2>
+		Options relating to the Custom Plugin.
+		<form action="options.php" method="post">
+			<?php settings_fields('synstudio-options'); ?>
+			<?php do_settings_sections('synstudio'); ?>
+			<input name="Submit" type="submit" value="<?php esc_attr_e('Save Changes'); ?>" />
+		</form>
+	</div>
+<?php } ?>
+
+
+<?php // add the admin settings and such
+add_action('admin_init', 'plugin_admin_init');
+function plugin_admin_init(){
+	register_setting('synstudio-options', 'synstudio-options', 'SynValidate');
+	add_settings_section('synstudio_main', 'Main Settings', 'syn_callback', 'synstudio');
+	add_settings_field('synoption1', 'Plugin Text Input', 'SynOption1', 'synstudio', 'synstudio_main');
+} ?>
+
+<?php 
+function syn_callback() {
+	echo '<p>Main description of this section here.</p>';
+} ?>
+
+<?php 
+function SynOption1() {
+	$options = get_option('synstudio-options');
+	echo "<input id='synoption1' name='synstudio-options[text_string]' size='40' type='text' value='{$options['text_string']}' />";
+} ?>
+
+<?php // validate our options
+/*function SynValidate($input){
+	$newinput['text_string'] = trim($input['text_string']);
+	if(!preg_match('/^[a-z0-9]{32}$/i', $newinput['text_string'])) {
+		$newinput['text_string'] = '';
+	}
+	return $newinput;
+}*/
+?>
+
+<?php // validate our options
+function SynValidate($input){
+	$options = get_option('synstudio-options');
+	$options['text_string'] = trim($input['text_string']);
+	if(!preg_match('/^[a-z0-9]{32}$/i', $options['text_string'])) {
+		$options['text_string'] = '';
+	}
+	return $options;
+}
 ?>
