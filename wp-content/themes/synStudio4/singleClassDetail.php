@@ -391,6 +391,9 @@
 	                if($class_offered == "1" && (!in_category('workshops') || !in_category('ateliers'))){ ?>
 						<h3>
 							<?php
+							$today = date("y-m-d");
+							echo $today;
+
 						 	if ($currentLang=="en"){
 								//echo $options_redundant['deadline_en'];
 								echo $options['deadline_en'];

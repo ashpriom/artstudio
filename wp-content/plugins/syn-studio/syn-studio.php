@@ -637,4 +637,21 @@ function SynValidate($input){
 	return $options;
 }
 
+function GetSemester($today){
+    $today=date('Y-m-d', strtotime($today));
+    
+    
+    $contractDateBegin = date('Y-m-d', strtotime("01/01/2001"));
+    $contractDateEnd = date('Y-m-d', strtotime("01/01/2012"));
+
+    if (($paymentDate > $contractDateBegin) && ($paymentDate < $contractDateEnd))
+    {
+      echo "is between";
+    }
+    else
+    {
+      echo "NO GO!";  
+    }
+}
+
 ?>
