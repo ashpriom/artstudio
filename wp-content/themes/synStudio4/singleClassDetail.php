@@ -13,105 +13,103 @@
 	
 ?>
 
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/skin.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideShow.css" />
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.js"></script>
 
 <script type="text/javascript">	
-
-	function closeDetailBox(a) {
+	
+	function closeDetailBox(a){
 	   $(a).hide();
 	}					
 
-	$(document).ready(function () {								
-	//jCarousel Plugin
-	if($(window).width() < 768) {
-        $('#carousel').jcarousel({
-            horizontal: true,
-            scroll: 1,
-            auto: 2,
-            wrap: 'last',
-            //animation: 3000,
-            initCallback: mycarousel_initCallback
-        });	
-        $( "#col2 a" ).bind( "click", function(event) {
-            event.preventDefault();
-        });       
-        //Add Close link in description boxes
-        $( ".details-box" ).each(function( index ) {
-           var idBox = $( this ).attr("id");
-           $( this ).append("<a href='javascript:closeDetailBox(\"#"+idBox+"\");' class='detail-boxLink'>CLOSE(X)</a>");    
-        });        
-           
-	}
-	else {
-	    $('#carousel').jcarousel({
-			vertical: true,
-			scroll: 1,
-			auto: 2,
-			wrap: 'last',
-			//animation: 3000,
-			initCallback: mycarousel_initCallback
-	   	});
-	}        
+	$(document).ready(function (){
+		if($(window).width() < 768){
+	        $('#carousel').jcarousel({
+	            horizontal: true,
+	            scroll: 1,
+	            auto: 2,
+	            wrap: 'last',
+	            initCallback: mycarousel_initCallback
+	        });
 
-	//Front page Carousel - Initial Setup
-   	$('div#slideshow-carousel a img').css({'opacity': '0.5'});
-   	$('div#slideshow-carousel a img:first').css({'opacity': '1.0'});
-   	$('div#slideshow-carousel li a:first').append('<span class="arrow"></span>')
-  
-  	//Combine jCarousel with Image Display
-    $('div#slideshow-carousel li a').hover(
-       	function () {
-       		if (!$(this).has('span').length) {
-        		$('div#slideshow-carousel li a img').stop(true, true).css({'opacity': '0.5'});
-   	    		$(this).stop(true, true).children('img').css({'opacity': '1.0'});
-       		}		
-       	},
-       	function () {
-       		$('div#slideshow-carousel li a img').stop(true, true).css({'opacity': '0.5'});
-       		$('div#slideshow-carousel li a').each(function () {
-       			if ($(this).has('span').length) $(this).children('img').css({'opacity': '1.0'});
-       		});
-       	}
-	).click(function () {
-	      	$('span.arrow').remove();        
-			$(this).append('<span class="arrow"></span>');
-       		$('div#slideshow-main li').removeClass('active');        
-       		$('div#slideshow-main li.' + $(this).attr('rel')).addClass('active');	
-       	return false;
-	});
+	        $( "#col2 a" ).bind( "click", function(event) {
+	            event.preventDefault();
+	        });
 
-	var slideshowItems = $("div#slideshow-main li").size();
-	var r = 2;
-	var slider = function() {
-		$('div#slideshow-main li').removeClass('active');        
-	    $('div#slideshow-main li.p' + r).addClass('active');		
-		$('span.arrow').remove();        
-		$('div#slideshow-carousel a img').css({'opacity': '0.5'});
-	   	$('div#slideshow-carousel li.jcarousel-item-' + r + ' a img:first').css({'opacity': '1.0'});
-		$('div#slideshow-carousel li.jcarousel-item-' + r + ' a:first').append('<span class="arrow"></span>')
-
-		if (r<slideshowItems) {
-			r = r + 1;
+	        //Add Close link in description boxes
+	        $( ".details-box" ).each(function(index){
+	           var idBox = $( this ).attr("id");
+	           $( this ).append("<a href='javascript:closeDetailBox(\"#"+idBox+"\");' class='detail-boxLink'>CLOSE(X)</a>");    
+	        });
 		}
-		else {
-			r = 1;
-		}	
-	};
 
-	var interval = setInterval(slider, 5000);
-					
-	// when the user hovers in, clear the interval; if they hover out, restart it again
-	$('#slideshow-carousel').hover(function() {
-		clearInterval(interval);
-	},function() {
-		interval = setInterval(slider, 5000);
-	});
+		else{
+		    $('#carousel').jcarousel({
+				vertical: true,
+				scroll: 1,
+				auto: 2,
+				wrap: 'last',
+				initCallback: mycarousel_initCallback
+		   	});
+		}     
 
+		//Front page Carousel - Initial Setup
+	   	$('div#slideshow-carousel a img').css({'opacity': '0.5'});
+	   	$('div#slideshow-carousel a img:first').css({'opacity': '1.0'});
+	   	$('div#slideshow-carousel li a:first').append('<span class="arrow"></span>')
+	  
+	  	//Combine jCarousel with Image Display
+	    $('div#slideshow-carousel li a').hover(
+	       	function(){
+	       		if (!$(this).has('span').length) {
+	        		$('div#slideshow-carousel li a img').stop(true, true).css({'opacity': '0.5'});
+	   	    		$(this).stop(true, true).children('img').css({'opacity': '1.0'});
+	       		}		
+	       	},
+	       	function(){
+	       		$('div#slideshow-carousel li a img').stop(true, true).css({'opacity': '0.5'});
+	       		$('div#slideshow-carousel li a').each(function () {
+	       			if ($(this).has('span').length) $(this).children('img').css({'opacity': '1.0'});
+	       		});
+	       	}
+		).click(function(){
+		      	$('span.arrow').remove();        
+				$(this).append('<span class="arrow"></span>');
+	       		$('div#slideshow-main li').removeClass('active');        
+	       		$('div#slideshow-main li.' + $(this).attr('rel')).addClass('active');	
+	       	return false;
+		});
+
+		var slideshowItems = $("div#slideshow-main li").size();
+		var r = 2;
+		var slider = function() {
+			$('div#slideshow-main li').removeClass('active');        
+		    $('div#slideshow-main li.p' + r).addClass('active');		
+			$('span.arrow').remove();        
+			$('div#slideshow-carousel a img').css({'opacity': '0.5'});
+		   	$('div#slideshow-carousel li.jcarousel-item-' + r + ' a img:first').css({'opacity': '1.0'});
+			$('div#slideshow-carousel li.jcarousel-item-' + r + ' a:first').append('<span class="arrow"></span>')
+
+			if (r<slideshowItems) {
+				r = r + 1;
+			}
+			else {
+				r = 1;
+			}	
+		};
+		var interval = setInterval(slider, 5000);
+						
+		// when the user hovers in, clear the interval; if they hover out, restart it again
+		$('#slideshow-carousel').hover(function() {
+			clearInterval(interval);
+		},function() {
+			interval = setInterval(slider, 5000);
+		});
 	});
 
 
