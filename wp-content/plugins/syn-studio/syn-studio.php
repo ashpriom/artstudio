@@ -589,9 +589,12 @@ function ClassStudents(){
 	<?php
 }
 
-// This area defines the plugin options page. Please visit http://ottopress.com/2009/wordpress-settings-api-tutorial/ for detailed explanation
 
-function SynOptions() { ?>
+
+// This area defines the plugin options page by using WordPress Settings API. 
+// Please visit http://ottopress.com/2009/wordpress-settings-api-tutorial/ for detailed explanation
+
+function SynOptions(){ ?>
 	<div>
 		<h2></h2>
 		<form action="options.php" method="post">
@@ -599,47 +602,39 @@ function SynOptions() { ?>
 			<?php do_settings_sections('synstudio'); ?>
 			<input name="Submit" type="submit" value="<?php esc_attr_e('Save Changes'); ?>" />
 		</form>
-	</div>
-<?php } ?>
+	</div> <?php 
+} 
+	
+add_action('admin_init', 'plugin_admin_init');
+function plugin_admin_init(){
+	register_setting('synstudio-options', 'synstudio-options', 'SynValidate'); // Register all settings
+	add_settings_section('synstudio_main', 'Syn Studio Settings', 'NoticeCallback', 'synstudio'); // Add a section for Syn Studio settings
+	add_settings_field('synoption1', 'Deadline Notice (EN)', 'SynOption1', 'synstudio', 'synstudio_main'); // Add new field under the section
+	add_settings_field('synoption2', 'Deadline Notice (FR)', 'SynOption2', 'synstudio', 'synstudio_main'); // Add a second field under the section
+}
 
-
-<?php
-	add_action('admin_init', 'plugin_admin_init');
-	function plugin_admin_init(){
-		register_setting('synstudio-options', 'synstudio-options', 'SynValidate'); // Register all settings
-		add_settings_section('synstudio_main', 'Syn Studio Settings', 'NoticeCallback', 'synstudio'); // Add a section for Syn Studio settings
-		add_settings_field('synoption1', 'Deadline Notice (EN)', 'SynOption1', 'synstudio', 'synstudio_main'); // Add new field under the section
-		add_settings_field('synoption2', 'Deadline Notice (FR)', 'SynOption2', 'synstudio', 'synstudio_main'); // Add a second field under the section
-	}
-?>
-
-<?php 
 function NoticeCallback() {
 	echo '<p>Notice texts can be updated here.</p>';
-} ?>
+} 
 
-<?php 
 function SynOption1() {
 	$options = get_option('synstudio-options');
-	echo "<input id='synoption1' name='synstudio-options[text_string]' size='40' type='textarea' value='{$options['text_string']}' />";
+	echo "<input id='synoption1' name='synstudio-options[text_string1]' size='40' type='textarea' value='{$options['text_string1']}' />";
 }
 
 function SynOption2() {
 	$options = get_option('synstudio-options');
-	echo "<input id='synoption1' name='synstudio-options[text_string]' size='40' type='textarea' value='{$options['text_string']}' />";
-} 
+	echo "<input id='synoption2' name='synstudio-options[text_string2]' size='40' type='textarea' value='{$options['text_string2']}' />";
+}
 
-
-?>
-
-
-<?php // validate our options
 function SynValidate($input){
 	$options = get_option('synstudio-options');
-	$options['text_string'] = trim($input['text_string']);
+	$options['text_string1'] = trim($input['text_string1']);
+	$options['text_string2'] = trim($input['text_string2']);
 	//if(!preg_match('/^*$/i', $options['text_string'])) {
 	//	$options['text_string'] = '';
 	//}
 	return $options;
 }
+
 ?>
