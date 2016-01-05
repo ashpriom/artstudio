@@ -1,10 +1,16 @@
 <?php
+
 	$postID = get_the_ID();
 	if (function_exists('pll_current_language')) { $currentLang = pll_current_language('slug'); }
 	if (function_exists('pll_get_post')){ 
 		$translationID = pll_get_post($postID,'en');
 	}
-	$options = get_option( 'sample_theme_options' );
+
+	if(function_exists('get_option')){
+		$options_redundant = get_option('sample_theme_options');
+		$options = get_option('synstudio-options');
+	}
+	
 ?>
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.2.min.js"></script>
@@ -388,7 +394,8 @@
 						<h3>
 							<?php
 						 	if ($currentLang=="en") {
-								echo $options['deadline_en'];
+								echo $options_redundant['deadline_en'];
+								echo $options['text_string1'];
 							}
 							else {
 								echo $options['deadline_fr'];
