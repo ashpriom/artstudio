@@ -393,9 +393,9 @@
 	                if($class_offered == "1" && (!in_category('workshops') || !in_category('ateliers'))){ ?>
 						<h3>
 							<?php
-						 	if ($currentLang=="en") {
-								echo $options_redundant['deadline_en'];
-								echo $options['text_string1'];
+						 	if ($currentLang=="en"){
+								//echo $options_redundant['deadline_en'];
+								echo $options['deadline_en'];
 							}
 							else {
 								echo $options['deadline_fr'];

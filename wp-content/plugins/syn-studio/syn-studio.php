@@ -609,28 +609,28 @@ add_action('admin_init', 'plugin_admin_init');
 function plugin_admin_init(){
 	register_setting('synstudio-options', 'synstudio-options', 'SynValidate'); // Register all settings
 	add_settings_section('synstudio_main', 'Syn Studio Settings', 'NoticeCallback', 'synstudio'); // Add a section for Syn Studio settings
-	add_settings_field('synoption1', 'Deadline Notice (EN)', 'SynOption1', 'synstudio', 'synstudio_main'); // Add new field under the section
-	add_settings_field('synoption2', 'Deadline Notice (FR)', 'SynOption2', 'synstudio', 'synstudio_main'); // Add a second field under the section
+	add_settings_field('synoption1', 'Deadline Notice (EN)', 'DeadlineEn', 'synstudio', 'synstudio_main'); // Add new field under the section
+	add_settings_field('synoption2', 'Deadline Notice (FR)', 'DeadlineFr', 'synstudio', 'synstudio_main'); // Add a second field under the section
 }
 
-function NoticeCallback() {
+function NoticeCallback(){
 	echo '<p>Notice texts can be updated here.</p>';
 } 
 
-function SynOption1() {
+function DeadlineEn(){
 	$options = get_option('synstudio-options');
-	echo "<input id='synoption1' name='synstudio-options[text_string1]' size='40' type='textarea' value='{$options['text_string1']}' />";
+	echo "<input id='synoption1' name='synstudio-options[deadline_en]' size='40' type='textarea' value='{$options['deadline_en']}' />";
 }
 
-function SynOption2() {
+function DeadlineFr(){
 	$options = get_option('synstudio-options');
-	echo "<input id='synoption2' name='synstudio-options[text_string2]' size='40' type='textarea' value='{$options['text_string2']}' />";
+	echo "<input id='synoption2' name='synstudio-options[deadline_fr]' size='40' type='textarea' value='{$options['deadline_fr']}' />";
 }
 
 function SynValidate($input){
 	$options = get_option('synstudio-options');
-	$options['text_string1'] = trim($input['text_string1']);
-	$options['text_string2'] = trim($input['text_string2']);
+	$options['deadline_en'] = trim($input['deadline_en']);
+	$options['deadline_fr'] = trim($input['deadline_fr']);
 	//if(!preg_match('/^*$/i', $options['text_string'])) {
 	//	$options['text_string'] = '';
 	//}
