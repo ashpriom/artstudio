@@ -589,10 +589,11 @@ function ClassStudents(){
 	<?php
 }
 
+// This area defines the plugin options page. Please visit http://ottopress.com/2009/wordpress-settings-api-tutorial/ for detailed explanation
+
 function SynOptions() { ?>
 	<div>
-		<h2>Syn Studio Options</h2>
-		Options relating to the Custom Plugin.
+		<h2></h2>
 		<form action="options.php" method="post">
 			<?php settings_fields('synstudio-options'); ?>
 			<?php do_settings_sections('synstudio'); ?>
@@ -602,24 +603,34 @@ function SynOptions() { ?>
 <?php } ?>
 
 
-<?php // add the admin settings and such
-add_action('admin_init', 'plugin_admin_init');
-function plugin_admin_init(){
-	register_setting('synstudio-options', 'synstudio-options', 'SynValidate');
-	add_settings_section('synstudio_main', 'Syn Studio Settings', 'syn_callback', 'synstudio');
-	add_settings_field('synoption1', 'Deadline Notice (EN)', 'SynOption1', 'synstudio', 'synstudio_main');
-} ?>
+<?php
+	add_action('admin_init', 'plugin_admin_init');
+	function plugin_admin_init(){
+		register_setting('synstudio-options', 'synstudio-options', 'SynValidate'); // Register all settings
+		add_settings_section('synstudio_main', 'Syn Studio Settings', 'NoticeCallback', 'synstudio'); // Add a section for Syn Studio settings
+		add_settings_field('synoption1', 'Deadline Notice (EN)', 'SynOption1', 'synstudio', 'synstudio_main'); // Add new field under the section
+		add_settings_field('synoption2', 'Deadline Notice (FR)', 'SynOption2', 'synstudio', 'synstudio_main'); // Add a second field under the section
+	}
+?>
 
 <?php 
-function syn_callback() {
-	echo '<p>Main settings go here.</p>';
+function NoticeCallback() {
+	echo '<p>Notice texts can be updated here.</p>';
 } ?>
 
 <?php 
 function SynOption1() {
 	$options = get_option('synstudio-options');
-	echo "<input id='synoption1' name='synstudio-options[text_string]' size='40' type='text' value='{$options['text_string']}' />";
-} ?>
+	echo "<input id='synoption1' name='synstudio-options[text_string]' size='40' type='textarea' value='{$options['text_string']}' />";
+}
+
+function SynOption2() {
+	$options = get_option('synstudio-options');
+	echo "<input id='synoption1' name='synstudio-options[text_string]' size='40' type='textarea' value='{$options['text_string']}' />";
+} 
+
+
+?>
 
 
 <?php // validate our options
