@@ -643,19 +643,20 @@ function SynValidate($input){
 
 function GetSemester(){
     global $wpdb;
-    //$today=date('Y-m-d', strtotime($today));
     $today=date('Y-m-d');
 	$semesters = $wpdb->get_results( "SELECT semester_id, semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester");
 	foreach($semesters as $semester){
-		$early_registration = sanitize_text_field($semester->early_registration);
-		$late_registration = sanitize_text_field($semester->late_registration);
-		if (($today > $early_registration) && ($today < $late_registration)){
-      		echo $semester->early_registration;
+		$start_date = sanitize_text_field($semester->start_date);
+		$end_date = sanitize_text_field($semester->end_date);
+		if (($today > $start_date) && ($today < $end_date)){
+			$currentSemester = $semester->semester_id;
+      		return $currentSemester;
     	}
     	else{
-			echo "NO GO!";
+			return NULL;
     	}
 	}
+	//$today=date('Y-m-d', strtotime($today));
     //$contractDateBegin = date('Y-m-d', strtotime("01/01/2001"));
     //$contractDateEnd = date('Y-m-d', strtotime("01/01/2012"));
 }
