@@ -21,7 +21,7 @@ function main_menu(){
 	add_submenu_page( 'syn-studio/inforoom.php', 'Semesters', 'Semesters', 'manage_options', 'syn-studio/semesters.php','Semesters');
 	add_submenu_page( 'syn-studio/inforoom.php', 'Classrooms', 'Classrooms', 'manage_options', 'syn-studio/classrooms.php','Classrooms');
 	add_submenu_page( 'syn-studio/inforoom.php', 'Students', 'Students', 'manage_options', 'syn-studio/students.php','Students');
-	add_submenu_page( 'syn-studio/inforoom.php','Settings', 'Syn Studio Options', 'manage_options', 'syn-studio/synstudio-options.php', 'SynOptions');
+	add_submenu_page( 'syn-studio/inforoom.php','Settings', 'Settings', 'manage_options', 'syn-studio/synstudio-options.php', 'SynOptions');
 	
 	add_submenu_page( 'NULL', 'Update-Semester', 'Update Semesters', 'manage_options', 'syn-studio/update-semester.php');
 	add_submenu_page( 'NULL', 'Update-Semester', '', 'manage_options', 'syn-studio/update-semester-db.php');
@@ -97,17 +97,17 @@ function Semesters(){
 			
 			$i=0;
 			global $wpdb;
-			$classrooms = $wpdb->get_results( "SELECT semester_id, semester_name_en, semester_name_fr, start_date, end_date FROM syn1_syn_semester");
-			foreach($classrooms as $classroom){
+			$semesters = $wpdb->get_results( "SELECT semester_id, semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester");
+			foreach($semesters as $semester){
 				$i++;
 				echo "<tr>";
-					$semesterID = sanitize_text_field($classroom->semester_id);
+					$semesterID = sanitize_text_field($semester->semester_id);
 					//echo "<td class=\"row_id\">".$i."</td>";
-					//echo "<td>"; echo $semesterID = sanitize_text_field($classroom->semester_id); echo "</td>";
-					//echo "<td>"; echo $semester_name_en = sanitize_text_field($classroom->semester_name_en); echo " ( "; echo $semester_name_fr = sanitize_text_field($classroom->semester_name_fr); echo " )</td>";
-					echo "<td>"; echo $semester_name_en = sanitize_text_field($classroom->semester_name_en); echo "</td>";
-					echo "<td>"; $start_date = sanitize_text_field($classroom->start_date); $format = 'Y-m-d'; $date = DateTime::createFromFormat($format, $start_date); echo $date->format('F j, Y'); echo "</td>";
-					echo "<td>"; $end_date = sanitize_text_field($classroom->end_date); $format = 'Y-m-d'; $date = DateTime::createFromFormat($format, $end_date); echo $date->format('F j, Y'); echo "</td>";
+					//echo "<td>"; echo $semesterID = sanitize_text_field($semester->semester_id); echo "</td>";
+					//echo "<td>"; echo $semester_name_en = sanitize_text_field($semester->semester_name_en); echo " ( "; echo $semester_name_fr = sanitize_text_field($semester->semester_name_fr); echo " )</td>";
+					echo "<td>"; echo $semester_name_en = sanitize_text_field($semester->semester_name_en); echo "</td>";
+					echo "<td>"; $start_date = sanitize_text_field($semester->start_date); $format = 'Y-m-d'; $date = DateTime::createFromFormat($format, $start_date); echo $date->format('F j, Y'); echo "</td>";
+					echo "<td>"; $end_date = sanitize_text_field($semester->end_date); $format = 'Y-m-d'; $date = DateTime::createFromFormat($format, $end_date); echo $date->format('F j, Y'); echo "</td>";
 					echo "<td>";?>
 						<form action="<?php home_url(); ?>/wp-admin/admin.php?page=syn-studio/classes.php" method="POST">
 							<input name="semester_id" type="hidden" value="<?php echo $semesterID; ?>"/>
@@ -639,8 +639,6 @@ function SynValidate($input){
 
 function GetSemester($today){
     $today=date('Y-m-d', strtotime($today));
-    
-    
     $contractDateBegin = date('Y-m-d', strtotime("01/01/2001"));
     $contractDateEnd = date('Y-m-d', strtotime("01/01/2012"));
 

@@ -67,6 +67,8 @@ if(isset($_POST['semester_id'])){
 				echo "<td>Semester Name (Francais)</td>";
 				echo "<td>Starts On</td>";
 				echo "<td>Ends On</td>";
+				echo "<td>Early Registration Deadline</td>";
+				echo "<td>Late Registration Deadline</td>";
 			echo "</tr>";
 			
 			echo "<tr>"; ?>
