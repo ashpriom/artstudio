@@ -6,7 +6,7 @@
 	if(function_exists('get_option')){ $options = get_option('synstudio-options');}
 
 	if(function_exists('GetSemester')){
-		$currentSemester = GetSemester();
+		GetSemester();
 		echo $currentSemester;
 	}
 	else{
