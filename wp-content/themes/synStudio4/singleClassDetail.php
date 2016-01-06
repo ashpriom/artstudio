@@ -1,18 +1,13 @@
 <?php
 
 	$postID = get_the_ID();
-	if (function_exists('pll_current_language')) { $currentLang = pll_current_language('slug'); }
-	if (function_exists('pll_get_post')){ 
-		$translationID = pll_get_post($postID,'en');
-	}
-
-	if(function_exists('get_option')){
-		//$options_redundant = get_option('sample_theme_options');
-		$options = get_option('synstudio-options');
-	}
+	if (function_exists('pll_current_language')){ $currentLang = pll_current_language('slug'); }
+	if (function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en');}
+	if(function_exists('get_option')){ $options = get_option('synstudio-options');}
 
 	if(function_exists('GetSemester')){
-		$options = GetSemester();
+		$currentSemester = GetSemester();
+		echo $currentSemester;
 	}
 	else{
 		echo "error";
