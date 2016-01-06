@@ -56,8 +56,8 @@ if(isset($_POST['semester_id'])){
 	
 	$semesterID = $_POST['semester_id'];
 
-	global $wpdb; // Declaring $wpdb as global to execute SQL query statements that return PHP objects.
-	$semesters = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date FROM syn1_syn_semester WHERE semester_id = $semesterID ");
+	global $wpdb;
+	$semesters = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $semesterID ");
 
 	echo "<div id=\"inforoom\">";
 	echo "<h1><b>Edit Semester Form</b></h1>";
