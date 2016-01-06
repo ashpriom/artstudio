@@ -641,19 +641,23 @@ function SynValidate($input){
 	return $options;
 }
 
-function GetSemester($today){
-    $today=date('Y-m-d', strtotime($today));
-    $contractDateBegin = date('Y-m-d', strtotime("01/01/2001"));
-    $contractDateEnd = date('Y-m-d', strtotime("01/01/2012"));
-
-    if (($paymentDate > $contractDateBegin) && ($paymentDate < $contractDateEnd))
-    {
-      echo "is between";
-    }
-    else
-    {
-      echo "NO GO!";  
-    }
+function GetSemester(){
+    global $wpdb;
+    //$today=date('Y-m-d', strtotime($today));
+    $today=date('Y-m-d');
+	$semesters = $wpdb->get_results( "SELECT semester_id, semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester");
+	foreach($semesters as $semester){
+		$early_registration = sanitize_text_field($semester->early_registration);
+		$late_registration = sanitize_text_field($semester->late_registration);
+		if (($today > $early_registration) && ($today < $late_registration)){
+      		echo "is between";
+    	}
+    	else{
+			echo "NO GO!";
+    	}
+	}
+    //$contractDateBegin = date('Y-m-d', strtotime("01/01/2001"));
+    //$contractDateEnd = date('Y-m-d', strtotime("01/01/2012"));
 }
 
 ?>
