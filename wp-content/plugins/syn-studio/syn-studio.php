@@ -650,7 +650,7 @@ function GetSemester(){
 		$early_registration = sanitize_text_field($semester->early_registration);
 		$late_registration = sanitize_text_field($semester->late_registration);
 		if (($today > $early_registration) && ($today < $late_registration)){
-      		echo "is between";
+      		echo $semester->early_registration;
     	}
     	else{
 			echo "NO GO!";

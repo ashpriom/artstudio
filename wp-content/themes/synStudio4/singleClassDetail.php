@@ -7,8 +7,15 @@
 	}
 
 	if(function_exists('get_option')){
-		$options_redundant = get_option('sample_theme_options');
+		//$options_redundant = get_option('sample_theme_options');
 		$options = get_option('synstudio-options');
+	}
+
+	if(function_exists('GetSemester')){
+		$options = GetSemester();
+	}
+	else{
+		echo "error";
 	}
 	
 ?>
