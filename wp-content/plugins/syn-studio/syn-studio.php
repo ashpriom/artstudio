@@ -650,7 +650,6 @@ function GetSemester(){
 		$end_date = sanitize_text_field($semester->end_date);
 		if (($today > $start_date) && ($today < $end_date)){
 			$currentSemester = $semester->semester_id;
-      		return $currentSemester;
     	}
     	else{
 			return NULL;
