@@ -92,6 +92,8 @@ function Semesters(){
 				echo "<td>Semester</td>";
 				echo "<td>Starts On</td>";
 				echo "<td>Ends On</td>";
+				echo "<td>Early Registration Deadline</td>";
+				echo "<td>Late Registration Deadline</td>";
 				echo "<td>Actions</td>";
 			echo "</tr>";
 			
@@ -108,6 +110,8 @@ function Semesters(){
 					echo "<td>"; echo $semester_name_en = sanitize_text_field($semester->semester_name_en); echo "</td>";
 					echo "<td>"; $start_date = sanitize_text_field($semester->start_date); $format = 'Y-m-d'; $date = DateTime::createFromFormat($format, $start_date); echo $date->format('F j, Y'); echo "</td>";
 					echo "<td>"; $end_date = sanitize_text_field($semester->end_date); $format = 'Y-m-d'; $date = DateTime::createFromFormat($format, $end_date); echo $date->format('F j, Y'); echo "</td>";
+					echo "<td>"; $early_registration = sanitize_text_field($semester->early_registration); $format = 'Y-m-d'; $date = DateTime::createFromFormat($format, $early_registration); echo $date->format('F j, Y'); echo "</td>";
+					echo "<td>"; $late_registration = sanitize_text_field($semester->late_registration); $format = 'Y-m-d'; $date = DateTime::createFromFormat($format, $late_registration); echo $date->format('F j, Y'); echo "</td>";
 					echo "<td>";?>
 						<form action="<?php home_url(); ?>/wp-admin/admin.php?page=syn-studio/classes.php" method="POST">
 							<input name="semester_id" type="hidden" value="<?php echo $semesterID; ?>"/>
