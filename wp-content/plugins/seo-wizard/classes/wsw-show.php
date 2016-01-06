@@ -85,11 +85,7 @@ if ( ! class_exists( 'WSW_Show' ) ) {
                 $post_id = get_the_ID();
 
                 $settings = get_post_meta( $post_id , 'wsw-settings');
-                echo '<!-- All in One SEO Pack 2.2.5.1 by Michael Torbert of Semper Fi Web Design[303,318] -->
-                     <meta name="description" itemprop="description" content="Increase search engine rankings naturally with Seo.uk.net. Our clients are ranking in the top, see our impressive portfolio and own rankings in Google." />
-
-                     <link rel="canonical" href="http://seo.uk.net/" />
-                     <!-- /all in one seo pack -->';
+        
 
                 if($settings[0]['is_meta_keyword']){
 
@@ -210,7 +206,7 @@ if ( ! class_exists( 'WSW_Show' ) ) {
 
                 if (WSW_Main::$settings['chk_author_linking'] == '1') {
 
-                   // echo '<br /><div align="center"><small>Site is using the <a href="https://wordpress.org/plugins/seo-wizard/" title="Wordpress Seo Plugin" target="_blank">Seo Wizard</a> plugin by Seo.uk.net ( <a href="http://seo.uk.net/" target="_blank">'.$anchor_text.'</a> )</small></div>' . "\n";
+                    //echo '<br /><div align="center"><small>Site is using the <a href="https://wordpress.org/plugins/seo-wizard/" title="Wordpress Seo Plugin" target="_blank">Seo Wizard</a> plugin by Seo.uk.net ( <a href="http://seo.uk.net/" target="_blank">'.$anchor_text.'</a> )</small></div>' . "\n";
 
                 }
             }
