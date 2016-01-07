@@ -3,7 +3,7 @@
 	$postID = get_the_ID();
 	if (function_exists('pll_current_language')){ $currentLang = pll_current_language('slug'); }
 	if (function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en');}
-	if(function_exists('get_option')){ $options = get_option('synstudio-options');}
+	if(function_exists('get_option')){ $options = get_option('synstudio-options'); $redundant_options = get_option( 'sample_theme_options' ); }
 	if(function_exists('GetPreSemester')){ $preSemesterID = GetPreSemester();}
 
 	global $wpdb;
@@ -392,14 +392,15 @@
 						<h3>
 							<?php
 							$today = date("y-m-d");
-							echo $today;
+							//echo $today;
 
 						 	if ($currentLang=="en"){
-								//echo $options_redundant['deadline_en'];
-								echo $options['deadline_en'];
+								echo $redundant_$options['deadline_en'];
+								//echo $options['deadline_en'];
 							}
 							else {
-								echo $options['deadline_fr'];
+								//echo $options['deadline_fr'];
+								echo $redundant_$options['deadline_fr'];
 							}
 							?>
 						</h3>
