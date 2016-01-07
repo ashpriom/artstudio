@@ -10,9 +10,10 @@
 	<head>
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-		<meta name="keywords" content="<?php bloginfo('url'); _e(''); ?>" />
+		<meta name="keywords" content="Montreal Art School Concept Art Classes" />
+		<meta name="description" itemprop="description" content="Great artists are NOT born, they are made! Syn Studio is Canada's leading Concept Art school. We offer fundamental art classes for beginners as well as masterclasses for industry artists and everything in between." />
 		<meta name="author" content="Andrea Acosta Duarte, Bill Jamshedji, Syed Ashfaque Uddin Priom" />
-		<meta name="copyright" content="Syn Studio" />
+		<meta name="copyright" content="<?php bloginfo('url'); _e(''); ?>" />
 		<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1,initial-scale=1"/>
 		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
 		<meta name="google-site-verification" content="qAS47Im9uAwkEff6CyCYdn_7r6BaP2aRFotf7Fs9Nrs" />
