@@ -649,10 +649,7 @@ function GetPreSemester(){
 		$early_registration = sanitize_text_field($semester->early_registration);
 		$late_registration = sanitize_text_field($semester->late_registration);
 		if (($today > $early_registration) && ($today < $late_registration)){
-			echo $semester->semester_id; // pre semester means the period starting from early reg to late reg deadlines.
-    	}
-    	else{
-			echo " ";
+			return $semester->semester_id; // pre semester means the period starting from early reg to late reg deadlines.
     	}
 	}
 	//$today=date('Y-m-d', strtotime($today));
