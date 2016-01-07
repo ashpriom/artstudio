@@ -3,7 +3,7 @@
 	if (function_exists('pll_current_language')){ $currentLang = pll_current_language('slug'); }
 	if (function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en');}
 	if(function_exists('get_option')){ $options = get_option('synstudio-options');}
-	if(function_exists('GetSemester')){ GetSemester(); $theSemester = GetSemester(); echo $theSemester; } else{ echo "error"; }
+	if(function_exists('PreSemester')){ $preSemester = PreSemester(); echo $preSemester; } else{ echo "error"; }
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
