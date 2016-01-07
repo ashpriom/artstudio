@@ -4,7 +4,7 @@
 	if (function_exists('pll_current_language')){ $currentLang = pll_current_language('slug'); }
 	if (function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en');}
 	if(function_exists('get_option')){ $options = get_option('synstudio-options');}
-	if(function_exists('GetPreSemester')){ GetPreSemester(); $preSemesterID = GetPreSemester(); echo $preSemesterID; }
+	if(function_exists('GetPreSemester')){ $preSemesterID = GetPreSemester(); echo $preSemesterID; }
 
 ?>
 
