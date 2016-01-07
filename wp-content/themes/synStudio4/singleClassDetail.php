@@ -10,7 +10,7 @@
 	$thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
 	$earlyRegistrationDate = $semesters->early_registration;
 	$today=date('Y-m-d');
-	date('Y-m-d', strtotime('-5 days'));
+	$fiveBeforeERD = date('Y-m-d', strtotime('-5 days'));
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
@@ -396,15 +396,19 @@
 
 						 	if ($currentLang=="en"){
 								echo $redundant_options['deadline_en'];
-								//echo $options['deadline_en'];
+								if (($today > $fiveBeforeERD) && ($today < $early_registration)){
+									echo $options['deadline_en'];
+    							}
+    							if (($today > $fiveBeforeLRD) && ($today < $late_registration)){
+									echo $options['deadline_en'];
+    							}
 							}
 							else {
-								//echo $options['deadline_fr'];
 								echo $redundant_options['deadline_fr'];
 							}
 							?>
 						</h3>
-					<?php } ?>					
+					<?php } ?>				
 			</div></br>
 			
 			<div> <!-- Paypal Code: show it if the class is offered -->
