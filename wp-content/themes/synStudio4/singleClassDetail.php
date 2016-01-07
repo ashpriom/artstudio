@@ -395,12 +395,12 @@
 							//echo $today;
 
 						 	if ($currentLang=="en"){
-								echo $redundant_$options['deadline_en'];
+								echo $redundant_options['deadline_en'];
 								//echo $options['deadline_en'];
 							}
 							else {
 								//echo $options['deadline_fr'];
-								echo $redundant_$options['deadline_fr'];
+								echo $redundant_options['deadline_fr'];
 							}
 							?>
 						</h3>
