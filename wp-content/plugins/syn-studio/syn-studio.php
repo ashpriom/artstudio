@@ -641,7 +641,7 @@ function SynValidate($input){
 	return $options;
 }
 
-function PreSemester(){
+function GetPreSemester(){
     global $wpdb;
     $today=date('Y-m-d');
 	$semesters = $wpdb->get_results( "SELECT semester_id, semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester");
