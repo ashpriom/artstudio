@@ -1,17 +1,9 @@
 <?php
-
 	$postID = get_the_ID();
 	if (function_exists('pll_current_language')){ $currentLang = pll_current_language('slug'); }
 	if (function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en');}
 	if(function_exists('get_option')){ $options = get_option('synstudio-options');}
-
-	if(function_exists('GetSemester')){
-		GetSemester();
-		echo $currentSemester;
-	}
-	else{
-		echo "error";
-	}
+	if(function_exists('GetSemester')){ $theSemester = GetSemester(); echo $theSemester; } else{ echo "error"; }
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
@@ -22,7 +14,7 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.js"></script>
 
-<script type="text/javascript">	
+<script type="text/javascript">
 	
 	function closeDetailBox(a){
 	   $(a).hide();
@@ -136,7 +128,7 @@
 </script>
  
 <div id="content" class="class-details"> <!-- content: start -->
- 
+
 	<?php while ( have_posts() ) : the_post(); ?>
 	<?php echo "<h1>" . get_the_title() ."</h1>"; ?>
     <?php
