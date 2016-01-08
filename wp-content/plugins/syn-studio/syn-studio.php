@@ -652,9 +652,6 @@ function GetPreSemester(){
 			return $semester->semester_id; // pre semester means the period starting from early reg to late reg deadlines.
     	}
 	}
-	//$today=date('Y-m-d', strtotime($today));
-    //$contractDateBegin = date('Y-m-d', strtotime("01/01/2001"));
-    //$contractDateEnd = date('Y-m-d', strtotime("01/01/2012"));
 }
 
 ?>
