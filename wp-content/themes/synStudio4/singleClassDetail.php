@@ -7,12 +7,12 @@
 
 	global $wpdb;
 	$thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
-	echo "1<br>".$preSemesterID;
-	echo "2<br>".$earlyRegistrationDate = $thisSemester->early_registration;
-	echo "3<br>".$lateRegistrationDate = $thisSemester->late_registration;
-	echo "4<br>".$today = date('Y-m-d');
-	echo "5<br>".$sevenBeforeERD = date('Y-m-d', strtotime('-7 days', strtotime($early_registration)));
-	echo "6<br>".$sevenBeforeLRD = date('Y-m-d', strtotime('-7 days', strtotime($late_registration)));
+	echo "<br>1 ".$preSemesterID;
+	echo "<br>2 ".$earlyRegistrationDate = $thisSemester->early_registration;
+	echo "<br>3 ".$lateRegistrationDate = $thisSemester->late_registration;
+	echo "<br>4 ".$today = date('Y-m-d');
+	echo "<br>5 ".$sevenBeforeERD = date('Y-m-d', strtotime('-7 days', $early_registration));
+	echo "<br>6 ".$sevenBeforeLRD = date('Y-m-d', strtotime('-7 days', $late_registration));
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
