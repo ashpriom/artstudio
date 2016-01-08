@@ -12,7 +12,7 @@
 	echo "<br>3 ".$lateRegistrationDate = $thisSemester->late_registration;
 	echo "<br>4 ".$today = date('Y-m-d');
 	
-	$erd = new DateTime($early_registration);
+	$sevenBeforeERD = new DateTime($early_registration);
 	$sevenBeforeERD->modify('-7 days');
 	echo "<br>5 ".$sevenBeforeERD->format('Y-m-d');
 	//echo "<br>5 ".$sevenBeforeERD = date('Y-m-d', strtotime('-7 days', $early_registration));
