@@ -1,5 +1,4 @@
 <?php
-
 	$postID = get_the_ID();
 	if(function_exists('pll_current_language')){ $currentLang = pll_current_language('slug'); }
 	if(function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en');}
@@ -8,24 +7,23 @@
 
 	global $wpdb;
 	$thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
-	echo "1".$preSemesterID;
-	echo "2".$earlyRegistrationDate = $semesters->early_registration;
-	echo "3".$lateRegistrationDate = $semesters->late_registration;
-	echo "4".$today = date('Y-m-d');
-	echo "5".$sevenBeforeERD = date('Y-m-d', strtotime('-7 days', strtotime($early_registration)));
-	echo "6".$sevenBeforeLRD = date('Y-m-d', strtotime('-7 days', strtotime($late_registration)));
+	echo "1<br>".$preSemesterID;
+	echo "2<br>".$earlyRegistrationDate = $thisSemester->early_registration;
+	echo "3<br>".$lateRegistrationDate = $thisSemester->late_registration;
+	echo "4<br>".$today = date('Y-m-d');
+	echo "5<br>".$sevenBeforeERD = date('Y-m-d', strtotime('-7 days', strtotime($early_registration)));
+	echo "6<br>".$sevenBeforeLRD = date('Y-m-d', strtotime('-7 days', strtotime($late_registration)));
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/skin.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideShow.css" />
-
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.js"></script>
 
 <script type="text/javascript">
-	
+
 	function closeDetailBox(a){
 	   $(a).hide();
 	}					
@@ -157,7 +155,7 @@
 				echo get_post_meta($postID, 'breadcrumb_' . $currentLang, true);
 			}
 			else {
-				echo "&nbsp;";
+				echo "<a href=\"http://synstudio.ca/classes/\"/>All Classes</a>";
 			}
 			?>
 		</p>
