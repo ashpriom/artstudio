@@ -11,8 +11,12 @@
 	echo "<br>2 ".$earlyRegistrationDate = $thisSemester->early_registration;
 	echo "<br>3 ".$lateRegistrationDate = $thisSemester->late_registration;
 	echo "<br>4 ".$today = date('Y-m-d');
-	echo "<br>5 ".$sevenBeforeERD = date('Y-m-d', strtotime('-7 days', $early_registration));
-	echo "<br>6 ".$sevenBeforeLRD = date('Y-m-d', strtotime('-7 days', $late_registration));
+	
+	$erd = new DateTime($early_registration);
+	$sevenBeforeERD->modify('-7 days');
+	echo "<br>5 ".$sevenBeforeERD->format('Y-m-d');
+	//echo "<br>5 ".$sevenBeforeERD = date('Y-m-d', strtotime('-7 days', $early_registration));
+	//echo "<br>6 ".$sevenBeforeLRD = date('Y-m-d', strtotime('-7 days', $late_registration));
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
