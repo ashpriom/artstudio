@@ -401,14 +401,14 @@
 							$today = date("y-m-d");
 						 	if ($currentLang=="en"){
 								echo $redundant_options['deadline_en'];
-								if (($today > $sevenBeforeERD) && ($today < $early_registration)){
-									echo $options['deadline_en']; // show early notice
+								if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
+									echo "<br>".$options['deadline_en']." ".$earlyRegistrationDate;
     							}
-    							if (($today > $early_registration) && ($today < $sevenBeforeLRD)){
-									echo $options['deadline_en']; // show normal notice
+    							if (($today > $earlyRegistrationDate) && ($today < $sevenBeforeLRD)){
+									echo "<br>".$options['deadline_en']." ".$sevenBeforeLRD;
     							}
-    							if (($today > $sevenBeforeLRD) && ($today < $late_registration)){
-									echo $options['deadline_en']; // show late deadline notice
+    							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
+									echo "<br>".$options['deadline_en']." ".$lateRegistrationDate;
     							}
 							}
 							else {
