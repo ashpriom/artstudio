@@ -613,28 +613,42 @@ add_action('admin_init', 'plugin_admin_init');
 function plugin_admin_init(){
 	register_setting('synstudio-options', 'synstudio-options', 'SynValidate'); // Register all settings
 	add_settings_section('synstudio_main', 'Syn Studio Settings', 'NoticeCallback', 'synstudio'); // Add a section for Syn Studio settings
-	add_settings_field('synoption1', 'Deadline Notice (EN)', 'DeadlineEn', 'synstudio', 'synstudio_main'); // Add new field under the section
-	add_settings_field('synoption2', 'Deadline Notice (FR)', 'DeadlineFr', 'synstudio', 'synstudio_main'); // Add a second field under the section
+	add_settings_field('synoption1', 'Early Deadline Notice (EN)', 'EarlyDeadlineEn', 'synstudio', 'synstudio_main'); // Add new field under the section
+	add_settings_field('synoption2', 'Early Deadline Notice (FR)', 'EarlyDeadlineFr', 'synstudio', 'synstudio_main'); // Add a second field under the section
+	add_settings_field('synoption3', 'Late Deadline Notice (EN)', 'LateDeadlineEn', 'synstudio', 'synstudio_main'); // more...
+	add_settings_field('synoption4', 'Late Deadline Notice (FR)', 'LateDeadlineFr', 'synstudio', 'synstudio_main');
 }
 
 function NoticeCallback(){
 	echo '<p>Notice texts can be updated here.</p>';
 } 
 
-function DeadlineEn(){
+function EarlyDeadlineEn(){
 	$options = get_option('synstudio-options');
-	echo "<input id='synoption1' name='synstudio-options[deadline_en]' size='40' type='textarea' value='{$options['deadline_en']}' />";
+	echo "<input id='synoption1' name='synstudio-options[early_deadline_en]' size='40' type='textarea' value='{$options['deadline_en']}' />";
 }
 
-function DeadlineFr(){
+function EarlyDeadlineFr(){
 	$options = get_option('synstudio-options');
-	echo "<input id='synoption2' name='synstudio-options[deadline_fr]' size='40' type='textarea' value='{$options['deadline_fr']}' />";
+	echo "<input id='synoption2' name='synstudio-options[early_deadline_fr]' size='40' type='textarea' value='{$options['deadline_fr']}' />";
+}
+
+function LateDeadlineEn(){
+	$options = get_option('synstudio-options');
+	echo "<input id='synoption3' name='synstudio-options[late_deadline_en]' size='40' type='textarea' value='{$options['deadline_en']}' />";
+}
+
+function LateDeadlineFr(){
+	$options = get_option('synstudio-options');
+	echo "<input id='synoption4' name='synstudio-options[late_deadline_fr]' size='40' type='textarea' value='{$options['deadline_fr']}' />";
 }
 
 function SynValidate($input){
 	$options = get_option('synstudio-options');
-	$options['deadline_en'] = trim($input['deadline_en']);
-	$options['deadline_fr'] = trim($input['deadline_fr']);
+	$options['early_deadline_en'] = trim($input['early_deadline_en']);
+	$options['early_deadline_fr'] = trim($input['early_deadline_fr']);
+	$options['late_deadline_en'] = trim($input['late_deadline_en']);
+	$options['late_deadline_fr'] = trim($input['late_deadline_fr']);
 	//if(!preg_match('/^*$/i', $options['text_string'])) {
 	//	$options['text_string'] = '';
 	//}

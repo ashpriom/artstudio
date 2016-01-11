@@ -402,13 +402,13 @@
 						 	if ($currentLang=="en"){
 								echo $redundant_options['deadline_en'];
 								if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
-									echo "<br>".$options['deadline_en']." ".$earlyRegistrationDate;
+									echo "<br>".$options['early_deadline_en']." ".$earlyRegistrationDate;
     							}
     							if (($today > $earlyRegistrationDate) && ($today < $sevenBeforeLRD)){
-									echo "<br>".$options['deadline_en']." ".$sevenBeforeLRD;
+									echo "<br>Registration Deadline is: ".$sevenBeforeLRD;
     							}
     							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
-									echo "<br>".$options['deadline_en']." ".$lateRegistrationDate;
+									echo "<br>".$options['late_deadline_en']." ".$lateRegistrationDate;
     							}
 							}
 							else {
