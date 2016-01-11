@@ -17,12 +17,12 @@
 	$sevenBeforeERD = new DateTime($earlyRegistrationDate);
 	$sevenBeforeERD->modify('-7 days');
 	$sevenBeforeERD = $sevenBeforeERD->format('Y-m-d');
-	echo "<br>5 ".$sevenBeforeERDFormat = DateTime::createFromFormat($format, $sevenBeforeERD); echo $sevenBeforeERDFormat->format('F j, Y');
+	$sevenBeforeERDPretty = DateTime::createFromFormat($format, $sevenBeforeERD); echo "<br>5 ".$sevenBeforeERDPretty->format('F j, Y');
 
 	$sevenBeforeLRD = new DateTime($lateRegistrationDate);
 	$sevenBeforeLRD->modify('-7 days');
 	$sevenBeforeLRD = $sevenBeforeLRD->format('Y-m-d');
-	echo "<br>6 ".$sevenBeforeLRDFormat = DateTime::createFromFormat($format, $sevenBeforeLRD); echo $sevenBeforeLRDFormat->format('F j, Y');
+	$sevenBeforeLRDPretty = DateTime::createFromFormat($format, $sevenBeforeLRD); echo "<br>6 ". $sevenBeforeLRDPretty->format('F j, Y');
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
