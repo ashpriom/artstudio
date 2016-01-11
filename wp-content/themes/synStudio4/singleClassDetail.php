@@ -8,12 +8,12 @@
 	global $wpdb;
 	$thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
 	echo "<br>1 ".$preSemesterID;
+	$format = 'Y-m-d';
 	$earlyRegistrationDate = $thisSemester->early_registration;
 	$earlyRegistrationDatePretty = DateTime::createFromFormat($format, $earlyRegistrationDate); echo "<br>2 ".$earlyRegistrationDatePretty->format('F j, Y');
 	$lateRegistrationDate = $thisSemester->late_registration;
 	$lateRegistrationDatePretty = DateTime::createFromFormat($format, $lateRegistrationDate); echo "<br>3 ".$lateRegistrationDatePretty->format('F j, Y');
 	echo "<br>4 ".$today = date('Y-m-d');
-	$format = 'Y-m-d';
 	
 	$sevenBeforeERD = new DateTime($earlyRegistrationDate);
 	$sevenBeforeERD->modify('-7 days');
