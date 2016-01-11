@@ -9,16 +9,20 @@
 	$thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
 	echo "<br>1 ".$preSemesterID;
 	echo "<br>2 ".$earlyRegistrationDate = $thisSemester->early_registration;
+	$sevenBeforeERDFormat = DateTime::createFromFormat($format, $sevenBeforeERD); echo $sevenBeforeERDFormat->format('F j, Y');
 	echo "<br>3 ".$lateRegistrationDate = $thisSemester->late_registration;
 	echo "<br>4 ".$today = date('Y-m-d');
+	$format = 'Y-m-d';
 	
 	$sevenBeforeERD = new DateTime($earlyRegistrationDate);
 	$sevenBeforeERD->modify('-7 days');
-	echo "<br>5 ".$sevenBeforeERD = $sevenBeforeERD->format('Y-m-d');
+	$sevenBeforeERD = $sevenBeforeERD->format('Y-m-d');
+	echo "<br>5 ".$sevenBeforeERDFormat = DateTime::createFromFormat($format, $sevenBeforeERD); echo $sevenBeforeERDFormat->format('F j, Y');
 
 	$sevenBeforeLRD = new DateTime($lateRegistrationDate);
 	$sevenBeforeLRD->modify('-7 days');
-	echo "<br>6 ".$sevenBeforeLRD = $sevenBeforeLRD->format('Y-m-d');
+	$sevenBeforeLRD = $sevenBeforeLRD->format('Y-m-d');
+	echo "<br>6 ".$sevenBeforeLRDFormat = DateTime::createFromFormat($format, $sevenBeforeLRD); echo $sevenBeforeLRDFormat->format('F j, Y');
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />

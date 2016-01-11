@@ -604,7 +604,7 @@ function SynOptions(){ ?>
 		<form action="options.php" method="post">
 			<?php settings_fields('synstudio-options'); ?>
 			<?php do_settings_sections('synstudio'); ?>
-			<input name="Submit" type="submit" value="<?php esc_attr_e('Save Changes'); ?>" />
+			<input name="Submit" type="submit" class="button-purple" id="synstudio-button" value="<?php esc_attr_e('Save Changes'); ?>" />
 		</form>
 	</div> <?php 
 } 
