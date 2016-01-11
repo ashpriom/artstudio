@@ -14,11 +14,11 @@
 	
 	$sevenBeforeERD = new DateTime($earlyRegistrationDate);
 	$sevenBeforeERD->modify('-7 days');
-	echo "<br>5 ".$sevenBeforeERD->format('Y-m-d');
+	echo "<br>5 ".$sevenBeforeERD = $sevenBeforeERD->format('Y-m-d');
 
 	$sevenBeforeLRD = new DateTime($lateRegistrationDate);
 	$sevenBeforeLRD->modify('-7 days');
-	echo "<br>6 ".$sevenBeforeLRD->format('Y-m-d');
+	echo "<br>6 ".$sevenBeforeLRD = $sevenBeforeLRD->format('Y-m-d');
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
