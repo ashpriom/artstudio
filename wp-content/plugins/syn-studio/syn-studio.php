@@ -625,22 +625,22 @@ function NoticeCallback(){
 
 function EarlyDeadlineEn(){
 	$options = get_option('synstudio-options');
-	echo "<input id='synoption1' name='synstudio-options[early_deadline_en]' size='40' type='textarea' value='{$options['deadline_en']}' />";
+	echo "<input id='synoption1' name='synstudio-options[early_deadline_en]' size='40' type='textarea' value='{$options['early_deadline_en']}' />";
 }
 
 function EarlyDeadlineFr(){
 	$options = get_option('synstudio-options');
-	echo "<input id='synoption2' name='synstudio-options[early_deadline_fr]' size='40' type='textarea' value='{$options['deadline_fr']}' />";
+	echo "<input id='synoption2' name='synstudio-options[early_deadline_fr]' size='40' type='textarea' value='{$options['early_deadline_fr']}' />";
 }
 
 function LateDeadlineEn(){
 	$options = get_option('synstudio-options');
-	echo "<input id='synoption3' name='synstudio-options[late_deadline_en]' size='40' type='textarea' value='{$options['deadline_en']}' />";
+	echo "<input id='synoption3' name='synstudio-options[late_deadline_en]' size='40' type='textarea' value='{$options['late_deadline_en']}' />";
 }
 
 function LateDeadlineFr(){
 	$options = get_option('synstudio-options');
-	echo "<input id='synoption4' name='synstudio-options[late_deadline_fr]' size='40' type='textarea' value='{$options['deadline_fr']}' />";
+	echo "<input id='synoption4' name='synstudio-options[late_deadline_fr]' size='40' type='textarea' value='{$options['late_deadline_fr']}' />";
 }
 
 function SynValidate($input){
