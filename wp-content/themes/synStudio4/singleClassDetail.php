@@ -330,17 +330,33 @@
 
 	<!-- Triggers effects on the boxes on right on mouseover -->  
 	<?php if ($currentLang == "en") { ?>
-	<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')">Teacher Info</a>
-	<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>
-	<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Course Outline</a>
-	<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Schedule</a>
-	<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pre-Requisites</a>
+		<?php if($postID == 12105){ ?>
+			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')">Speaker Info</a>
+			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>
+			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Workshop Outline</a>
+			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Schedule</a>
+			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Who is this for?</a>
+		<?php } else{ ?>
+			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')">Teacher Info</a>
+			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>
+			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Course Outline</a>
+			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Schedule</a>
+			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pre-Requisites</a>
+		<?php } ?>
 	<?php } else { ?>
-	<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')"> À propos du prof</a>
-	<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>     
-	<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Plan de cours</a>
-	<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
-	<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pré-requis</a>
+		<?php if($postID == 12105){ ?>
+			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')"> À propos du prof</a>
+			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>     
+			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Plan de cours</a>
+			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
+			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pré-requis</a>
+		<?php } else{ ?>
+			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')"> À propos du prof</a>
+			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>     
+			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Plan de cours</a>
+			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
+			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pré-requis</a>		
+		<?php } ?>
 	<?php }	?>
 
 </div> <!-- column 2: end -->
