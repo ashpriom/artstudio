@@ -9,21 +9,21 @@
 	$thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
 	echo "<br>1 ".$preSemesterID;
 	$format = 'Y-m-d';
-	$earlyRegistrationDate = $thisSemester->early_registration;
-	$earlyRegistrationDatePretty = DateTime::createFromFormat($format, $earlyRegistrationDate); echo "<br>2 ".$earlyRegistrationDatePretty->format('F j, Y');
-	$lateRegistrationDate = $thisSemester->late_registration;
-	$lateRegistrationDatePretty = DateTime::createFromFormat($format, $lateRegistrationDate); echo "<br>3 ".$lateRegistrationDatePretty->format('F j, Y');
+	echo "<br>2 ".$earlyRegistrationDate = $thisSemester->early_registration;
+	$earlyRegistrationDatePretty = DateTime::createFromFormat($format, $earlyRegistrationDate); $earlyRegistrationDatePretty->format('F j, Y');
+	echo "<br>3 ".$lateRegistrationDate = $thisSemester->late_registration;
+	$lateRegistrationDatePretty = DateTime::createFromFormat($format, $lateRegistrationDate); $lateRegistrationDatePretty->format('F j, Y');
 	echo "<br>4 ".$today = date('Y-m-d');
 	
 	$sevenBeforeERD = new DateTime($earlyRegistrationDate);
 	$sevenBeforeERD->modify('-7 days');
-	$sevenBeforeERD = $sevenBeforeERD->format('Y-m-d');
-	$sevenBeforeERDPretty = DateTime::createFromFormat($format, $sevenBeforeERD); echo "<br>5 ".$sevenBeforeERDPretty->format('F j, Y');
+	echo "<br>5 ".$sevenBeforeERD = $sevenBeforeERD->format('Y-m-d');
+	$sevenBeforeERDPretty = DateTime::createFromFormat($format, $sevenBeforeERD); $sevenBeforeERDPretty->format('F j, Y');
 
 	$sevenBeforeLRD = new DateTime($lateRegistrationDate);
 	$sevenBeforeLRD->modify('-7 days');
-	$sevenBeforeLRD = $sevenBeforeLRD->format('Y-m-d');
-	$sevenBeforeLRDPretty = DateTime::createFromFormat($format, $sevenBeforeLRD); echo "<br>6 ". $sevenBeforeLRDPretty->format('F j, Y');
+	echo "<br>6 ".$sevenBeforeLRD = $sevenBeforeLRD->format('Y-m-d');
+	$sevenBeforeLRDPretty = DateTime::createFromFormat($format, $sevenBeforeLRD); $sevenBeforeLRDPretty->format('F j, Y');
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
