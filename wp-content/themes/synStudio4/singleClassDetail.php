@@ -433,6 +433,9 @@
     							}
 							}
 							else {
+								$locale = 'fr_FR.utf8';
+								setlocale(LC_ALL, $locale);
+								
 								echo $redundant_options['deadline_fr'];
 								if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
 									echo "<br>".$options['early_deadline_fr']." ".$earlyRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
@@ -441,7 +444,7 @@
 									echo "<br>Date limite d'inscription est: ".$sevenBeforeLRDPretty." at 11:59 PM";
     							}
     							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
-									echo "<br>".$options['late_deadline_fr']." ".$lateRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
+									echo "<br>".$options['late_deadline_fr']." ".strftime('%d %B %Y', strtotime($earlyRegistrationDatePretty));." at 11:59 PM";
     							}
 							}
 							?>
