@@ -9,10 +9,10 @@
 	$thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
 	echo "<br>1 ".$preSemesterID;
 	$format = 'Y-m-d';
-	echo "<br>2 ".$earlyRegistrationDate = $thisSemester->early_registration;
+	$earlyRegistrationDate = $thisSemester->early_registration;
 	$earlyRegistrationDatePretty = DateTime::createFromFormat($format, $earlyRegistrationDate); $earlyRegistrationDatePretty->format('F j, Y');
 	$lateRegistrationDate = $thisSemester->late_registration;
-	$lateRegistrationDatePretty = DateTime::createFromFormat($format, $lateRegistrationDate); $lateRegistrationDatePretty->format('F j, Y');
+	$lateRegistrationDatePretty = DateTime::createFromFormat($format, $lateRegistrationDate);
 	echo "<br>4 ".$today = date('Y-m-d');
 	
 	$sevenBeforeERD = new DateTime($earlyRegistrationDate);
@@ -428,7 +428,7 @@
 									echo "<br>Registration Deadline is: ".$sevenBeforeLRDPretty;
     							}
     							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
-									echo "<br>".$options['late_deadline_en']." ".$lateRegistrationDatePretty;
+									echo "<br>".$options['late_deadline_en']." ".$lateRegistrationDatePretty->format('F j, Y');
     							}
 							}
 							else {
@@ -440,7 +440,7 @@
 									echo "<br>Registration Deadline is: ".$sevenBeforeLRDPretty;
     							}
     							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
-									echo "<br>".$options['late_deadline_fr']." ".$lateRegistrationDatePretty;
+									echo "<br>".$options['late_deadline_fr']." ".$lateRegistrationDatePretty->format('F j, Y');
     							}
 							}
 							?>
