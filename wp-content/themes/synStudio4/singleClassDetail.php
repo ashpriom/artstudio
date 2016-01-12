@@ -11,7 +11,7 @@
 	$format = 'Y-m-d';
 	echo "<br>2 ".$earlyRegistrationDate = $thisSemester->early_registration;
 	$earlyRegistrationDatePretty = DateTime::createFromFormat($format, $earlyRegistrationDate); $earlyRegistrationDatePretty->format('F j, Y');
-	echo "<br>3 ".$lateRegistrationDate = $thisSemester->late_registration;
+	$lateRegistrationDate = $thisSemester->late_registration;
 	$lateRegistrationDatePretty = DateTime::createFromFormat($format, $lateRegistrationDate); $lateRegistrationDatePretty->format('F j, Y');
 	echo "<br>4 ".$today = date('Y-m-d');
 	
