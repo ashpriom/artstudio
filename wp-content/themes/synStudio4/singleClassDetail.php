@@ -419,7 +419,6 @@
 	                if($class_offered == "1" && (!in_category('workshops') || !in_category('ateliers'))){ ?>
 						<h3>
 							<?php
-							$today = date("y-m-d");
 						 	if ($currentLang=="en"){
 								echo $redundant_options['deadline_en'];
 								if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
