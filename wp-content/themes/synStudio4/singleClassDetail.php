@@ -444,7 +444,7 @@
 									echo "<br>Date limite d'inscription est: ".$sevenBeforeLRDPretty." at 11:59 PM";
     							}
     							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
-									echo "<br>".$options['late_deadline_fr']." ".strftime('%d %B %Y', strtotime($earlyRegistrationDatePretty));." at 11:59 PM";
+									echo "<br>".$options['late_deadline_fr']." ".strftime('%d %B %Y', strtotime($earlyRegistrationDatePretty))." at 11:59 PM";
     							}
 							}
 							?>
