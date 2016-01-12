@@ -7,23 +7,24 @@
 
 	global $wpdb;
 	$thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
-	echo "<br>1 ".$preSemesterID;
-	$format = 'Y-m-d';
 	$earlyRegistrationDate = $thisSemester->early_registration;
-	$earlyRegistrationDatePretty = DateTime::createFromFormat($format, $earlyRegistrationDate); $earlyRegistrationDatePretty->format('F j, Y');
 	$lateRegistrationDate = $thisSemester->late_registration;
+
+	$today = date('Y-m-d');
+	$format = 'Y-m-d';
+	
+	$earlyRegistrationDatePretty = DateTime::createFromFormat($format, $earlyRegistrationDate);
 	$lateRegistrationDatePretty = DateTime::createFromFormat($format, $lateRegistrationDate);
-	echo "<br>4 ".$today = date('Y-m-d');
 	
 	$sevenBeforeERD = new DateTime($earlyRegistrationDate);
 	$sevenBeforeERD->modify('-7 days');
-	echo "<br>5 ".$sevenBeforeERD = $sevenBeforeERD->format('Y-m-d');
-	$sevenBeforeERDPretty = DateTime::createFromFormat($format, $sevenBeforeERD); $sevenBeforeERDPretty->format('F j, Y');
+	$sevenBeforeERD = $sevenBeforeERD->format('Y-m-d');
+	$sevenBeforeERDPretty = DateTime::createFromFormat($format, $sevenBeforeERD);
 
 	$sevenBeforeLRD = new DateTime($lateRegistrationDate);
 	$sevenBeforeLRD->modify('-7 days');
-	echo "<br>6 ".$sevenBeforeLRD = $sevenBeforeLRD->format('Y-m-d');
-	$sevenBeforeLRDPretty = DateTime::createFromFormat($format, $sevenBeforeLRD); $sevenBeforeLRDPretty->format('F j, Y');
+	$sevenBeforeLRD = $sevenBeforeLRD->format('Y-m-d');
+	$sevenBeforeLRDPretty = DateTime::createFromFormat($format, $sevenBeforeLRD);
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
@@ -422,25 +423,25 @@
 						 	if ($currentLang=="en"){
 								echo $redundant_options['deadline_en'];
 								if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
-									echo "<br>".$options['early_deadline_en']." ".$earlyRegistrationDatePretty;
+									echo "<br>".$options['early_deadline_en']." ".$earlyRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
     							}
     							if (($today > $earlyRegistrationDate) && ($today < $sevenBeforeLRD)){
-									echo "<br>Registration Deadline is: ".$sevenBeforeLRDPretty;
+									echo "<br>Registration Deadline is: ".$sevenBeforeLRDPretty." at 11:59 PM";
     							}
     							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
-									echo "<br>".$options['late_deadline_en']." ".$lateRegistrationDatePretty->format('F j, Y');
+									echo "<br>".$options['late_deadline_en']." ".$lateRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
     							}
 							}
 							else {
 								echo $redundant_options['deadline_fr'];
 								if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
-									echo "<br>".$options['early_deadline_fr']." ".$earlyRegistrationDatePretty;
+									echo "<br>".$options['early_deadline_fr']." ".$earlyRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
     							}
     							if (($today > $earlyRegistrationDate) && ($today < $sevenBeforeLRD)){
-									echo "<br>Registration Deadline is: ".$sevenBeforeLRDPretty;
+									echo "<br>Date limite d'inscription est: ".$sevenBeforeLRDPretty." at 11:59 PM";
     							}
     							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
-									echo "<br>".$options['late_deadline_fr']." ".$lateRegistrationDatePretty->format('F j, Y');
+									echo "<br>".$options['late_deadline_fr']." ".$lateRegistrationDatePretty->format('F j, Y')" at 11:59 PM";
     							}
 							}
 							?>
