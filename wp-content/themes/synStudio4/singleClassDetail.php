@@ -449,7 +449,7 @@
 						<h3>
 							<?php
 						 	if ($currentLang=="en"){
-						 		if(!in_category('workshops'){
+						 		if(!in_category('workshops')){
 									echo $redundant_options['deadline_en'];
 								
 									/*if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
