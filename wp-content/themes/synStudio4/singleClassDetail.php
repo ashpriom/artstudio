@@ -347,10 +347,10 @@
 	<?php } else { ?>
 		<?php if($postID == 12106){ ?>
 			<a href="#" id="lnk-teacherInfo" class="fifteen-pixel" onmouseover="showDetails('#cnt-teacherInfo')">À propos du conférencier</a>
-			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>     
+			<a href="#" id="lnk-description" class="fifteen-pixel" onmouseover="showDetails('#cnt-description')">Description</a>     
 			<a href="#" id="lnk-courseOutline" class="fifteen-pixel" onmouseover="showDetails('#cnt-courseOutline')">Aperçu de l'événement</a>
-			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
-			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pré-requis</a>
+			<a href="#" id="lnk-schedule" class="fifteen-pixel" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
+			<a href="#" id="lnk-preRequisites" class="fifteen-pixel" onmouseover="showDetails('#cnt-preRequisites')">Pré-requis</a>
 		<?php } else{ ?>
 			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')"> À propos du prof</a>
 			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>     
