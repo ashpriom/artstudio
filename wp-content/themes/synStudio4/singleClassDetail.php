@@ -464,7 +464,8 @@
 								}
 							}
 							else {
-							 	if(!in_category('ateliers')){						
+							 	if(!in_category('workshops-fr')){
+									echo $translationID;					
 									echo $redundant_options['deadline_fr'];
 									
 									/*$locale = 'fr_FR.utf8';
