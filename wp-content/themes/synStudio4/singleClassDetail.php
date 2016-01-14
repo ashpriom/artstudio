@@ -334,7 +334,7 @@
 		<?php if($postID == 12105){ ?>
 			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')">Speaker Info</a>
 			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>
-			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Workshop Outline</a>
+			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Event Outline</a>
 			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Schedule</a>
 			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Who is this for?</a>
 		<?php } else{ ?>
@@ -350,7 +350,7 @@
 			<a href="#" id="lnk-description" class="fifteen-pixel" onmouseover="showDetails('#cnt-description')">Description</a>     
 			<a href="#" id="lnk-courseOutline" class="fifteen-pixel" onmouseover="showDetails('#cnt-courseOutline')">Aperçu de l'événement</a>
 			<a href="#" id="lnk-schedule" class="fifteen-pixel" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
-			<a href="#" id="lnk-preRequisites" class="fifteen-pixel" onmouseover="showDetails('#cnt-preRequisites')">Pré-requis</a>
+			<a href="#" id="lnk-preRequisites" class="fifteen-pixel" onmouseover="showDetails('#cnt-preRequisites')">C'est pour qui?</a>
 		<?php } else{ ?>
 			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')"> À propos du prof</a>
 			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>     
@@ -429,7 +429,21 @@
 </div>  
   
 <div id="cnt-preRequisites" class="details-box">
-  	<h3><?php if($currentLang=="en"){?> Pre-requisite <?php } else{ ?> PRÉ-REQUIS <?php } ?></h3>
+	<h3><?php 
+  		if($currentLang=="en"){ 
+	  		if($postID == 12105){ ?> 
+	  			Who is this for? <?php 
+	  		} else{ ?> 
+	  			Pre-requisite
+	  		<?php } } 
+  		else{
+  			if($postID == 12106){ ?>
+	  			C'est pour qui? <?php 
+	  		} else{ ?> 
+	  			PRÉ-REQUIS 
+	  		<?php }
+  		} ?>
+  	</h3>
    	<div class="text"><?php echo get_post_meta($postID, 'pre_requisite_' . $currentLang, true); ?></div>
    	<div class="bgd-box"></div>
 </div>   
