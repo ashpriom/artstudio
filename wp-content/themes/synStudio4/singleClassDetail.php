@@ -345,10 +345,10 @@
 			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pre-Requisites</a>
 		<?php } ?>
 	<?php } else { ?>
-		<?php if($postID == 12105){ ?>
-			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')"> À propos du prof</a>
+		<?php if($postID == 12106){ ?>
+			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')">À propos du conférencier</a>
 			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>     
-			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Plan de cours</a>
+			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Aperçu de l'événement</a>
 			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
 			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pré-requis</a>
 		<?php } else{ ?>
@@ -364,7 +364,21 @@
   
 <!-- Content boxes at the bottom -->
 <div id="cnt-teacherInfo" class="details-box">
-  	<h3><?php if($currentLang=="en"){?> Teacher Information <?php } else{ ?> À PROPOS DES PROFESSEUR <?php } ?></h3>
+  	<h3><?php 
+  		if($currentLang=="en"){ 
+	  		if($postID == 12105){ ?> 
+	  			Speaker Information <?php 
+	  		} else{ ?> 
+	  			Teacher Information 
+	  		<?php } } 
+  		else{
+  			if($postID == 12105){ ?> 
+	  			À propos du conférencier <?php 
+	  		} else{ ?> 
+	  			À PROPOS DES PROFESSEUR 
+	  		<?php }  			 
+  		} ?>
+  	</h3>
 	<div class="text">
 		<?php
 		if($currentLang=="en"){ 
@@ -383,7 +397,21 @@
 </div>
   
 <div id="cnt-courseOutline" class="details-box">
-  	<h3><?php if($currentLang=="en"){?> Course Outline <?php } else{ ?> PLAN DE COURS <?php } ?></h3>
+	<h3><?php 
+  		if($currentLang=="en"){ 
+	  		if($postID == 12105){ ?> 
+	  			Event Outline <?php 
+	  		} else{ ?> 
+	  			Course Outline 
+	  		<?php } } 
+  		else{
+  			if($postID == 12105){ ?>
+	  			Aperçu de l'événement <?php 
+	  		} else{ ?> 
+	  			PLAN DE COURS 
+	  		<?php }
+  		} ?>
+  	</h3>
    	<div class="text"><?php echo get_post_meta($postID, 'course_outline_' . $currentLang, true); ?></div>
    	<div class="bgd-box"></div>
 </div>
@@ -423,7 +451,7 @@
 						 	if ($currentLang=="en"){
 								echo $redundant_options['deadline_en'];
 								
-								if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
+								/*if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
 									echo "<br>".$options['early_deadline_en']." ".$earlyRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
     							}
     							if (($today > $earlyRegistrationDate) && ($today < $sevenBeforeLRD)){
@@ -431,12 +459,12 @@
     							}
     							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
 									echo "<br>".$options['late_deadline_en']." ".$lateRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
-    							}
+    							}*/
 							}
 							else {								
 								echo $redundant_options['deadline_fr'];
 								
-								$locale = 'fr_FR.utf8';
+								/*$locale = 'fr_FR.utf8';
 								setlocale(LC_ALL, $locale);
 								if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
 									echo "<br>".$options['early_deadline_fr']." ".strftime('%d %B %Y', strtotime($earlyRegistrationDatePretty->format('F j, Y')))." à 23h59.";
@@ -446,7 +474,7 @@
     							}
     							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
 									echo "<br>".$options['late_deadline_fr']." ".strftime('%d %B %Y', strtotime($lateRegistrationDatePretty->format('F j, Y')))." à 23h59.";
-    							}
+    							}*/
 							}
 							?>
 						</h3>
