@@ -372,7 +372,7 @@
 	  			Teacher Information 
 	  		<?php } } 
   		else{
-  			if($postID == 12105){ ?> 
+  			if($postID == 12106){ ?> 
 	  			À propos du conférencier <?php 
 	  		} else{ ?> 
 	  			À PROPOS DES PROFESSEUR 
@@ -405,7 +405,7 @@
 	  			Course Outline 
 	  		<?php } } 
   		else{
-  			if($postID == 12105){ ?>
+  			if($postID == 12106){ ?>
 	  			Aperçu de l'événement <?php 
 	  		} else{ ?> 
 	  			PLAN DE COURS 
@@ -445,36 +445,40 @@
 				<?php 
 	                if($currentLang=="en"){$class_offered = get_post_meta($postID, 'class_offered', true); }
 	                else{ $class_offered = get_post_meta($translationID, 'class_offered', true); }
-	                if($class_offered == "1" && (!in_category('workshops') || !in_category('ateliers'))){ ?>
+	                if($class_offered == "1"){ ?>
 						<h3>
 							<?php
 						 	if ($currentLang=="en"){
-								echo $redundant_options['deadline_en'];
+						 		if(!in_category('workshops'){
+									echo $redundant_options['deadline_en'];
 								
-								/*if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
-									echo "<br>".$options['early_deadline_en']." ".$earlyRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
-    							}
-    							if (($today > $earlyRegistrationDate) && ($today < $sevenBeforeLRD)){
-									echo "<br>Registration Deadline is: ".$sevenBeforeLRDPretty->format('F j, Y')." at 11:59 PM";
-    							}
-    							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
-									echo "<br>".$options['late_deadline_en']." ".$lateRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
-    							}*/
+									/*if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
+										echo "<br>".$options['early_deadline_en']." ".$earlyRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
+	    							}
+	    							if (($today > $earlyRegistrationDate) && ($today < $sevenBeforeLRD)){
+										echo "<br>Registration Deadline is: ".$sevenBeforeLRDPretty->format('F j, Y')." at 11:59 PM";
+	    							}
+	    							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
+										echo "<br>".$options['late_deadline_en']." ".$lateRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
+	    							}*/
+								}
 							}
-							else {								
-								echo $redundant_options['deadline_fr'];
-								
-								/*$locale = 'fr_FR.utf8';
-								setlocale(LC_ALL, $locale);
-								if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
-									echo "<br>".$options['early_deadline_fr']." ".strftime('%d %B %Y', strtotime($earlyRegistrationDatePretty->format('F j, Y')))." à 23h59.";
-    							}
-    							if (($today > $earlyRegistrationDate) && ($today < $sevenBeforeLRD)){
-									echo "<br>Date limite d'inscription est: ".strftime('%d %B %Y', strtotime($sevenBeforeLRD->format('F j, Y')))." à 23h59.";
-    							}
-    							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
-									echo "<br>".$options['late_deadline_fr']." ".strftime('%d %B %Y', strtotime($lateRegistrationDatePretty->format('F j, Y')))." à 23h59.";
-    							}*/
+							else {
+							 	if(!in_category('ateliers')){						
+									echo $redundant_options['deadline_fr'];
+									
+									/*$locale = 'fr_FR.utf8';
+									setlocale(LC_ALL, $locale);
+									if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
+										echo "<br>".$options['early_deadline_fr']." ".strftime('%d %B %Y', strtotime($earlyRegistrationDatePretty->format('F j, Y')))." à 23h59.";
+	    							}
+	    							if (($today > $earlyRegistrationDate) && ($today < $sevenBeforeLRD)){
+										echo "<br>Date limite d'inscription est: ".strftime('%d %B %Y', strtotime($sevenBeforeLRD->format('F j, Y')))." à 23h59.";
+	    							}
+	    							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
+										echo "<br>".$options['late_deadline_fr']." ".strftime('%d %B %Y', strtotime($lateRegistrationDatePretty->format('F j, Y')))." à 23h59.";
+	    							}*/
+	    						}
 							}
 							?>
 						</h3>
