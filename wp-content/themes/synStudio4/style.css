@@ -1733,6 +1733,8 @@ li#menu-item-943, li#menu-item-945, li#menu-item-946, li#menu-item-947, li#menu-
 	display: none;
 }
 
+.fifteen-pixel{font-size:15px !important;}
+
 #popup-message {
 	background: #f16927;
 	width: 320px;
