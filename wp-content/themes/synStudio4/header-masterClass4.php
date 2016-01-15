@@ -82,13 +82,12 @@ jQuery(document).ready(function () {
 	<div id="header">
  	<!-- banner: start -->
 				<?php
-				if ($currentLang == "fr") {
-					echo "<img src=\"bloginfo('url');/wp-content/uploads/2016/01/gathering-of-masters.jpg\" alt=\"SYN STUDIO - GATHERING OF MASTERS 2016\" width=\"1000\" />";
-				}
-				else {
-					echo "<img src=\"bloginfo('url');/wp-content/uploads/2016/01/gathering-of-masters.jpg\" alt=\"SYN STUDIO - GATHERING OF MASTERS 2016\" width=\"1000\" />";
-				}
-				?>  
+				if ($currentLang == "fr") { ?>
+					<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/01/gathering-of-masters.jpg\" alt="SYN STUDIO - GATHERING OF MASTERS 2016" width="1000" />
+				<?php }
+				else { ?>
+					<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/01/gathering-of-masters.jpg\" alt="SYN STUDIO - GATHERING OF MASTERS 2016" width="1000" />
+				<?php } ?>  
   	<!-- banner: end -->
   	<div id="language2" style="top: 270px; right: 12px; color:white;">
    	<?php if (function_exists('pll_the_languages')){ 
