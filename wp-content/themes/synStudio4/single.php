@@ -7,7 +7,7 @@ $postID = get_the_ID();
 if($postID==6502){ get_header("masterClass");} // activate header-masterClass.php, header-masterClass2.php and so on.
 elseif($postID==10088){ get_header("masterClass2"); }
 elseif ($postID==10212) { get_header("masterClass3"); }
-elseif ($postID==10320) { get_header("masterClass4"); }
+elseif ($postID==10320 || $postID==12105 || $postID==12106) { get_header("masterClass4"); }
 else{ get_header(); }
 
 if ( have_posts() ) { the_post(); rewind_posts(); } // I guess it rewinds posts...I guess.
