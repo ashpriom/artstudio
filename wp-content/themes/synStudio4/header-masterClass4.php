@@ -83,10 +83,10 @@ jQuery(document).ready(function () {
  	<!-- banner: start -->
 				<?php
 				if ($currentLang == "fr") {
-					 echo "<img src='<?php bloginfo('url'); ?>/wp-content/uploads/2016/01/gathering-of-masters.jpg' alt='Shaddy Safadi & Eytan Zana - Concept Art Masterclass' width='1000' />";
+					echo "<img src=\"bloginfo('url');/wp-content/uploads/2016/01/gathering-of-masters.jpg\" alt=\"SYN STUDIO - GATHERING OF MASTERS 2016\" width=\"1000\" />";
 				}
 				else {
-					echo "<img src='<?php bloginfo('url'); ?>/wp-content/uploads/2016/01/gathering-of-masters.jpg' alt='Shaddy Safadi & Eytan Zana - Concept Art Masterclass' width='1000' />";
+					echo "<img src=\"bloginfo('url');/wp-content/uploads/2016/01/gathering-of-masters.jpg\" alt=\"SYN STUDIO - GATHERING OF MASTERS 2016\" width=\"1000\" />";
 				}
 				?>  
   	<!-- banner: end -->
