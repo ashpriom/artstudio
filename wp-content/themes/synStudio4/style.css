@@ -85,6 +85,7 @@ input{ font: 1em Helvetica, Verdana, Arial, sans-serif; }
 #header #language2 {
 	position: absolute;
 	top: 14px;
+	list-style: none;
 	right: 0;
 	text-align: right;
 }
@@ -96,6 +97,7 @@ input{ font: 1em Helvetica, Verdana, Arial, sans-serif; }
 }
 #header #language2 a {
 	color: #ffffff;
+	text-decoration: none;
 	font-size: 1em;
 	font-weight: bold;
 }
@@ -112,6 +114,11 @@ input{ font: 1em Helvetica, Verdana, Arial, sans-serif; }
 	margin-top: 10px;
 	position: relative;
 }
+
+.masterclass-nav{
+	margin-top: 0px !important;
+}
+
 #nav-wrapper{
 	background: url(images/nav-tile4.png) 0 0 repeat-x;
 	clear: both;

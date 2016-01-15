@@ -31,27 +31,6 @@
 				#nav-wrapper { display: none; }
 			}
 		</style>
-
-		<script type="text/javascript">
-			jQuery(document).ready(function (){
-				jQuery("li#menu-item-5944 a").append("<div class='classNotOffered' style='padding: 16px 8px'>Class Not Offered for this semester</div>");
-				jQuery("li#menu-item-5944 a .classNotOffered").hide();
-				jQuery("li#menu-item-5944").mouseover(function() {
-					jQuery("li#menu-item-5944 a .classNotOffered").show();
-				}).mouseout(function(){
-					jQuery("li#menu-item-5944 a .classNotOffered").hide();
-				});
-				
-				//FRENCH Advanced Production Techniques
-				jQuery("li#menu-item-4767 a").append("<div class='classNotOffered' style='padding: 16px 8px'>Ce cours n&rsquo;est pas offert cette session</div>");
-				jQuery("li#menu-item-4767 a .classNotOffered").hide();
-				jQuery("li#menu-item-4767").mouseover(function() {
-					jQuery("li#menu-item-4767 a .classNotOffered").show();
-				}).mouseout(function(){
-					jQuery("li#menu-item-4767 a .classNotOffered").hide();
-				});
-			});
-		</script>
 	</head>
 
 	<body>
@@ -72,7 +51,7 @@
 			
 				<?php
 				if ($currentLang == "fr") { ?>
-					<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/01/gathering-of-masters.jpg" alt="SYN STUDIO - GATHERING OF MASTERS 2016" width="1000" />
+					<img src="<?php bloginfo('url'); ?>/../wp-content/uploads/2016/01/gathering-of-masters.jpg" alt="SYN STUDIO - GATHERING OF MASTERS 2016" width="1000" />
 				<?php }
 				else { ?>
 					<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/01/gathering-of-masters.jpg" alt="SYN STUDIO - GATHERING OF MASTERS 2016" width="1000" />
@@ -86,7 +65,7 @@
 			   		?>
 			  	</div>
 		  
-		  		<div id="nav">
+		  		<div id="nav" class="masterclass-nav">
 		  			<div id="nav-wrapper">
 						<?php
 						if ($currentLang == "fr") {
