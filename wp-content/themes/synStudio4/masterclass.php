@@ -332,32 +332,18 @@
 
 	<!-- Triggers effects on the boxes on right on mouseover -->  
 	<?php if ($currentLang == "en") { ?>
-		<?php if($postID == 12105){ ?>
 			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')">Speaker Info</a>
 			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>
 			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Event Outline</a>
 			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Schedule</a>
 			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Who is this for?</a>
-		<?php } else{ ?>
-			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')">Teacher Info</a>
-			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>
-			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Course Outline</a>
-			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Schedule</a>
-			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pre-Requisites</a>
 		<?php } ?>
 	<?php } else { ?>
-		<?php if($postID == 12106){ ?>
 			<a href="#" id="lnk-teacherInfo" class="fifteen-pixel" onmouseover="showDetails('#cnt-teacherInfo')">À propos du conférencier</a>
 			<a href="#" id="lnk-description" class="fifteen-pixel" onmouseover="showDetails('#cnt-description')">Description</a>     
 			<a href="#" id="lnk-courseOutline" class="fifteen-pixel" onmouseover="showDetails('#cnt-courseOutline')">Aperçu de l'événement</a>
 			<a href="#" id="lnk-schedule" class="fifteen-pixel" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
-			<a href="#" id="lnk-preRequisites" class="fifteen-pixel" onmouseover="showDetails('#cnt-preRequisites')">C'est pour qui?</a>
-		<?php } else{ ?>
-			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')"> À propos du prof</a>
-			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>     
-			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Plan de cours</a>
-			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
-			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pré-requis</a>		
+			<a href="#" id="lnk-preRequisites" class="fifteen-pixel" onmouseover="showDetails('#cnt-preRequisites')">C'est pour qui?</a>	
 		<?php } ?>
 	<?php }	?>
 
@@ -366,19 +352,11 @@
 <!-- Content boxes at the bottom -->
 <div id="cnt-teacherInfo" class="details-box">
   	<h3><?php 
-  		if($currentLang=="en"){ 
-	  		if($postID == 12105){ ?> 
-	  			Speaker Information <?php 
-	  		} else{ ?> 
-	  			Teacher Information 
-	  		<?php } } 
-  		else{
-  			if($postID == 12106){ ?> 
-	  			À propos du conférencier <?php 
-	  		} else{ ?> 
-	  			À PROPOS DES PROFESSEUR 
-	  		<?php }  			 
-  		} ?>
+  		if($currentLang=="en"){  ?> 
+	  			Speaker Information
+  		<?php } else{ ?>
+  				À propos du conférencier 
+  		<?php } ?>
   	</h3>
 	<div class="text">
 		<?php
@@ -399,19 +377,11 @@
   
 <div id="cnt-courseOutline" class="details-box">
 	<h3><?php 
-  		if($currentLang=="en"){ 
-	  		if($postID == 12105){ ?> 
-	  			Event Outline <?php 
-	  		} else{ ?> 
-	  			Course Outline 
-	  		<?php } } 
-  		else{
-  			if($postID == 12106){ ?>
-	  			Aperçu de l'événement <?php 
-	  		} else{ ?> 
-	  			PLAN DE COURS 
-	  		<?php }
-  		} ?>
+  		if($currentLang=="en"){ ?> 
+	  			Event Outline 
+	  		<?php } else{ ?> 
+	  			Aperçu de l'événement 
+	  	<?php } ?>
   	</h3>
    	<div class="text"><?php echo get_post_meta($postID, 'course_outline_' . $currentLang, true); ?></div>
    	<div class="bgd-box"></div>
@@ -431,19 +401,12 @@
   
 <div id="cnt-preRequisites" class="details-box">
 	<h3><?php 
-  		if($currentLang=="en"){ 
-	  		if($postID == 12105){ ?> 
+  		if($currentLang=="en"){ ?> 
 	  			Who is this for? <?php 
-	  		} else{ ?> 
-	  			Pre-requisite
-	  		<?php } } 
-  		else{
-  			if($postID == 12106){ ?>
+	  		} else{ ?>
 	  			C'est pour qui? <?php 
-	  		} else{ ?> 
-	  			PRÉ-REQUIS 
-	  		<?php }
-  		} ?>
+	  		}
+  		 	?>
   	</h3>
    	<div class="text"><?php echo get_post_meta($postID, 'pre_requisite_' . $currentLang, true); ?></div>
    	<div class="bgd-box"></div>
@@ -466,34 +429,11 @@
 						 	if ($currentLang=="en"){
 						 		if(!in_category('workshops')){
 									echo $redundant_options['deadline_en'];
-								
-									/*if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
-										echo "<br>".$options['early_deadline_en']." ".$earlyRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
-	    							}
-	    							if (($today > $earlyRegistrationDate) && ($today < $sevenBeforeLRD)){
-										echo "<br>Registration Deadline is: ".$sevenBeforeLRDPretty->format('F j, Y')." at 11:59 PM";
-	    							}
-	    							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
-										echo "<br>".$options['late_deadline_en']." ".$lateRegistrationDatePretty->format('F j, Y')." at 11:59 PM";
-	    							}*/
 								}
 							}
 							else {
-							 	if(!in_category('workshops-fr')){
-									echo $translationID;					
+							 	if(!in_category('workshops-fr')){					
 									echo $redundant_options['deadline_fr'];
-									
-									/*$locale = 'fr_FR.utf8';
-									setlocale(LC_ALL, $locale);
-									if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
-										echo "<br>".$options['early_deadline_fr']." ".strftime('%d %B %Y', strtotime($earlyRegistrationDatePretty->format('F j, Y')))." à 23h59.";
-	    							}
-	    							if (($today > $earlyRegistrationDate) && ($today < $sevenBeforeLRD)){
-										echo "<br>Date limite d'inscription est: ".strftime('%d %B %Y', strtotime($sevenBeforeLRD->format('F j, Y')))." à 23h59.";
-	    							}
-	    							if (($today > $sevenBeforeLRD) && ($today < $lateRegistrationDate)){
-										echo "<br>".$options['late_deadline_fr']." ".strftime('%d %B %Y', strtotime($lateRegistrationDatePretty->format('F j, Y')))." à 23h59.";
-	    							}*/
 	    						}
 							}
 							?>
