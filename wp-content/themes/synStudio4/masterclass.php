@@ -167,7 +167,8 @@
 				echo get_post_meta($postID, 'breadcrumb_' . $currentLang, true);
 			}
 			else {
-				echo "<a href=\"http://synstudio.ca/classes/\"/>All Classes</a>";
+				if($currentLang == en){ ?> <a href="<?php bloginfo('home'); ?>/classes/">All Classes</a> <?php }
+				else{ ?> <a href="<?php bloginfo('home'); ?>/cours-arts/">Tous les cours</a> <?php }
 			}
 			?>
 		</p>
