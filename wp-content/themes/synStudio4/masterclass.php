@@ -3,28 +3,6 @@
 	if(function_exists('pll_current_language')){ $currentLang = pll_current_language('slug'); }
 	if(function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en');}
 	if(function_exists('get_option')){ $options = get_option('synstudio-options'); $redundant_options = get_option( 'sample_theme_options' ); }
-	if(function_exists('GetPreSemester')){ $preSemesterID = GetPreSemester();}
-
-	global $wpdb;
-	$thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
-	$earlyRegistrationDate = $thisSemester->early_registration;
-	$lateRegistrationDate = $thisSemester->late_registration;
-
-	$today = date('Y-m-d');
-	$format = 'Y-m-d';
-	
-	$earlyRegistrationDatePretty = DateTime::createFromFormat($format, $earlyRegistrationDate);
-	$lateRegistrationDatePretty = DateTime::createFromFormat($format, $lateRegistrationDate);
-	
-	$sevenBeforeERD = new DateTime($earlyRegistrationDate);
-	$sevenBeforeERD->modify('-7 days');
-	$sevenBeforeERD = $sevenBeforeERD->format('Y-m-d');
-	$sevenBeforeERDPretty = DateTime::createFromFormat($format, $sevenBeforeERD);
-
-	$sevenBeforeLRD = new DateTime($lateRegistrationDate);
-	$sevenBeforeLRD->modify('-7 days');
-	$sevenBeforeLRD = $sevenBeforeLRD->format('Y-m-d');
-	$sevenBeforeLRDPretty = DateTime::createFromFormat($format, $sevenBeforeLRD);
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
@@ -180,12 +158,8 @@
 
 
    		<div id="welcomeHero">
-
-     		<?php // $postID = get_the_ID(); ?>
-
-    		
     		<div id="slideshow-main">
-      			<ul></ul>										
+      			<ul></ul>									
      		</div>
 
      	<div id="slideshow-carousel"><ul id="carousel" class="jcarousel jcarousel-skin-tango"></ul></div>
@@ -193,18 +167,17 @@
      	<script type="text/javascript">
 
 		 		<?php
-				/*	echo get_post_meta($postID, 'slideshow_' . $currentLang, true);
-					A loop field named "slider" with sub-fields "image"
+				/*	A loop field named "slider" with sub-fields "image"
 				    It uses the Custom Field Suite plugin's loop functionality.
 				    Prints Javascript snippet for the slider code in next blocks of code.
 				*/
 
-				    if($currentLang=="en"){
+				    //if($currentLang=="en"){
 						$fields = CFS()->get('slider');
-					}
-					else{
-						$fields = CFS()->get('slider',$translationID);
-					}
+					//}
+					//else{
+					//	$fields = CFS()->get('slider',$translationID);
+					//}
 					$i=0;
 					foreach ((array)$fields as $field) {
 						$i++;

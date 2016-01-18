@@ -932,6 +932,7 @@ Template Name: Concept Art Diploma - Admission
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    
                                     <!--<tr class="grey-table-row">
                                         <td>1</td>
                                         <td>Submit for the Initial Portfolio/Application Review (receive feedback from a professional concept artist and the chance to reapply free of charge if your portfolio doesn’t pass the review)</td>
