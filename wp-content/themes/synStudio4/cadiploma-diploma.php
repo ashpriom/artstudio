@@ -112,14 +112,14 @@ Template Name: Concept Art Diploma - Concept Art Diploma Page
                         <p>
                         <?php if($currentLang == "en"){ ?>
                         If you qualify for this <strong>elite 18 month training program</strong>, you will receive all
-                        <br /> the tools, techniques, training, skills and strategies required to build
-                        <br /> a <strong>killer concept</strong> art portfolio and <strong>get hired</strong> as a concept artist
-                        <br /> in the <strong>entertainment industry</strong>.
+                        the tools, techniques, training, skills and strategies required to build
+                        a <strong>killer concept</strong> art portfolio and <strong>get hired</strong> as a concept artist
+                        in the <strong>entertainment industry</strong>.
                         <br />
                         <br /> This is a <strong>very intensive training</strong> where you will <strong>develop your design</strong> and
-                        <br />
+                        
                         <strong>illustration skills </strong>while working in an <strong> industry environment,</strong> under the
-                        <br /> direct supervision of <strong>an instructor</strong> who will act as your <strong>art director</strong>.
+                        direct supervision of <strong>an instructor</strong> who will act as your <strong>art director</strong>.
                         <?php } else{ ?>
                         Si vous avez toutes les qualifications requises pour participer à ce <strong style="color:black;">programme d'entraînement élite de 18 mois</strong>, vous recevrez les outils, 
                         les techniques, l'entraînement, les compétences et les stratégies dont vous aurez besoin pour créer un <strong style="color:black;">superbe portfolio</strong>
