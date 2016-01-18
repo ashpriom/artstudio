@@ -14,6 +14,7 @@ if ( have_posts() ) { the_post(); rewind_posts(); } // I guess it rewinds posts.
 
 if ( in_category(4) || in_category(48) ) {
 	if ($postID==6502) { include(TEMPLATEPATH . '/singleClassMaster.php'); } // masterclass
+	elseif ($postID==12105 || $postID==12106) { include(TEMPLATEPATH . '/masterclass.php'); } // masterclass
 	elseif ($postID==8397 || $postID==11019) { include(TEMPLATEPATH . '/singleIntenseClassDetail.php'); } // this is template for full time intensive
 	else { include(TEMPLATEPATH . '/singleClassDetail.php'); } // regular class
 }
