@@ -477,7 +477,7 @@
 	    							}*/
 								}
 							}
-							else {
+							else{
 							 	if(!in_category('workshops-fr') && $postID != 11019){
 									echo $redundant_options['deadline_fr'];
 									
