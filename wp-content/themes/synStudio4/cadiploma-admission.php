@@ -90,7 +90,6 @@ Template Name: Concept Art Diploma - Admission
         <!-- End Google Tag Manager -->
 
     <?php if($currentLang == "en"){ ?>
-    <!-- HEADER -->
     <div class="off-canvas-menu-wrap">
         <a class="close-button" id="close-button" href="#"><?php if($currentLang == "en"){ ?>Close Menu<?php } else{ ?>Fermer Menu<?php } ?></a>
             <ul class="menu off-canvas-menu">

@@ -178,7 +178,7 @@
 					//	$fields = CFS()->get('slider',$translationID);
 					//}
 					$i=0;
-					foreach ((array)$fields as $field) {
+					foreach ((array)$fields as $field){
 						$i++;
 						echo "var slide".$i." = { \n";
 					    echo "slideLarge:\"".$field['image'];
