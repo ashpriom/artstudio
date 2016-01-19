@@ -463,7 +463,7 @@
 						<h3>
 							<?php
 						 	if ($currentLang=="en"){
-						 		if(!in_category('workshops')){
+						 		if(!in_category('workshops') && $postID != 8397){
 									echo $redundant_options['deadline_en'];
 								
 									/*if (($today > $sevenBeforeERD) && ($today < $earlyRegistrationDate)){
@@ -478,7 +478,7 @@
 								}
 							}
 							else {
-							 	if(!in_category('workshops-fr')){
+							 	if(!in_category('workshops-fr') && $postID != 11019){
 									echo $redundant_options['deadline_fr'];
 									
 									/*$locale = 'fr_FR.utf8';
