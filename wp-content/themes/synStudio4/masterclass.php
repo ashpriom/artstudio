@@ -171,12 +171,12 @@
 				    It uses the Custom Field Suite plugin's loop functionality.
 				    Prints Javascript snippet for the slider code in next blocks of code.
 				*/
-				    //if($currentLang=="en"){
+				    if($currentLang=="en"){
 						$fields = CFS()->get('slider');
-					//}
-					//else{
-					//	$fields = CFS()->get('slider',$translationID);
-					//}
+					}
+					else{
+						$fields = CFS()->get('slider',$translationID);
+					}
 					$i=0;
 					foreach ((array)$fields as $field){
 						$i++;
