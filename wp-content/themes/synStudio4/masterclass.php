@@ -114,6 +114,7 @@
 		});
 	}
 
+	// Show hide information boxes
 	function showDetails(a){
 		$(".details-box").hide();
 		$(a).show();
@@ -124,6 +125,8 @@
 	}	
 
 </script>
+
+<style>#slideshow-main .p1 .content{display:none;}</style> <!-- Hide the text and level on first slide -->
  
 <div id="content" class="class-details"> <!-- content: start -->
 
@@ -155,16 +158,15 @@
   	<div style="display: none;"><?php the_content(); ?></div>  
  	
  	<div id="col1" onmouseover="hideDetails();"> <!-- column 1: start -->
-
-
+   		
    		<div id="welcomeHero">
     		<div id="slideshow-main">
       			<ul></ul>									
      		</div>
 
-     	<div id="slideshow-carousel"><ul id="carousel" class="jcarousel jcarousel-skin-tango"></ul></div>
+     		<div id="slideshow-carousel"><ul id="carousel" class="jcarousel jcarousel-skin-tango"></ul></div>
   
-     	<script type="text/javascript">
+     		<script type="text/javascript">
 
 		 		<?php
 				/*	A loop field named "slider" with sub-fields "image"
@@ -292,7 +294,7 @@
 				}
 			}
 			
-		</script>
+			</script>
 
      	<div class="clear"></div>
    
