@@ -331,53 +331,29 @@
 
 	<!-- Triggers effects on the boxes on right on mouseover -->  
 	<?php if ($currentLang == "en") { ?>
-		<?php if($postID == 12105){ ?>
-			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')">Speaker Info</a>
-			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>
-			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Event Outline</a>
-			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Schedule</a>
-			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Who is this for?</a>
-		<?php } else{ ?>
-			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')">Teacher Info</a>
-			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>
-			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Course Outline</a>
-			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Schedule</a>
-			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pre-Requisites</a>
-		<?php } ?>
+		<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')">Teacher Info</a>
+		<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>
+		<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Course Outline</a>
+		<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Schedule</a>
+		<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pre-Requisites</a>
 	<?php } else { ?>
-		<?php if($postID == 12106){ ?>
-			<a href="#" id="lnk-teacherInfo" class="fifteen-pixel" onmouseover="showDetails('#cnt-teacherInfo')">À propos du conférencier</a>
-			<a href="#" id="lnk-description" class="fifteen-pixel" onmouseover="showDetails('#cnt-description')">Description</a>     
-			<a href="#" id="lnk-courseOutline" class="fifteen-pixel" onmouseover="showDetails('#cnt-courseOutline')">Aperçu de l'événement</a>
-			<a href="#" id="lnk-schedule" class="fifteen-pixel" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
-			<a href="#" id="lnk-preRequisites" class="fifteen-pixel" onmouseover="showDetails('#cnt-preRequisites')">C'est pour qui?</a>
-		<?php } else{ ?>
-			<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')"> À propos du prof</a>
-			<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>     
-			<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Plan de cours</a>
-			<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
-			<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pré-requis</a>		
-		<?php } ?>
-	<?php }	?>
+		<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')"> À propos du prof</a>
+		<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>     
+		<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Plan de cours</a>
+		<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
+		<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pré-requis</a>		
+	<?php } ?>
 
 </div> <!-- column 2: end -->
   
 <!-- Content boxes at the bottom -->
 <div id="cnt-teacherInfo" class="details-box">
-  	<h3><?php 
-  		if($currentLang=="en"){ 
-	  		if($postID == 12105){ ?> 
-	  			Speaker Information <?php 
-	  		} else{ ?> 
-	  			Teacher Information 
-	  		<?php } } 
-  		else{
-  			if($postID == 12106){ ?> 
-	  			À propos du conférencier <?php 
-	  		} else{ ?> 
-	  			À PROPOS DES PROFESSEUR 
-	  		<?php }  			 
-  		} ?>
+  	<h3><?php
+  		if($currentLang=="en"){ ?>
+	  		Teacher Information 
+	  	<?php } else{ ?>
+	  		À PROPOS DES PROFESSEUR 
+	  	<?php } ?>
   	</h3>
 	<div class="text">
 		<?php
@@ -395,22 +371,14 @@
 	</div>
 	<div class="bgd-box"></div>
 </div>
-  
+
 <div id="cnt-courseOutline" class="details-box">
 	<h3><?php 
-  		if($currentLang=="en"){ 
-	  		if($postID == 12105){ ?> 
-	  			Event Outline <?php 
-	  		} else{ ?> 
-	  			Course Outline 
-	  		<?php } } 
-  		else{
-  			if($postID == 12106){ ?>
-	  			Aperçu de l'événement <?php 
-	  		} else{ ?> 
-	  			PLAN DE COURS 
-	  		<?php }
-  		} ?>
+  		if($currentLang=="en"){ ?> 
+	  		Course Outline 
+	  	<?php } else{ ?>
+	  		PLAN DE COURS 
+	  	<?php } ?>
   	</h3>
    	<div class="text"><?php echo get_post_meta($postID, 'course_outline_' . $currentLang, true); ?></div>
    	<div class="bgd-box"></div>
@@ -430,25 +398,18 @@
   
 <div id="cnt-preRequisites" class="details-box">
 	<h3><?php 
-  		if($currentLang=="en"){ 
-	  		if($postID == 12105){ ?> 
-	  			Who is this for? <?php 
-	  		} else{ ?> 
-	  			Pre-requisite
-	  		<?php } } 
-  		else{
-  			if($postID == 12106){ ?>
-	  			C'est pour qui? <?php 
-	  		} else{ ?> 
-	  			PRÉ-REQUIS 
+  		if($currentLang=="en"){ ?>
+	  		Pre-requisite
 	  		<?php }
+  		else{ ?>
+  			PRÉ-REQUIS 
+	  		<?php
   		} ?>
   	</h3>
    	<div class="text"><?php echo get_post_meta($postID, 'pre_requisite_' . $currentLang, true); ?></div>
    	<div class="bgd-box"></div>
 </div>   
 <!-- content boxes: end -->
-
      
 <!-- column 3: start -->
 <div id="col3" onmouseover="hideDetails();">
