@@ -361,10 +361,10 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
 					<h3>
 						<?php
 						 	if ($currentLang=="en") {
-								echo $options['deadline_en'];
+								// echo $options['deadline_en'];
 							}
 							else {
-								echo $options['deadline_fr'];
+								// echo $options['deadline_fr'];
 							}
 						?>
 					</h3>
