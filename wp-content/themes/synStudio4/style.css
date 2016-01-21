@@ -577,6 +577,18 @@ a.lnk-readMore {
     text-decoration: underline;
 }
 
+.text h4{
+	color: #f7f7f7;
+    font-size: 1em;
+    text-transform: uppercase;
+    background: #f16927;
+    padding: 4px 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+	text-align: left !important;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
 /* footer */
 
 #footer {
