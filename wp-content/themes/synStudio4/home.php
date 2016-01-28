@@ -295,7 +295,7 @@ get_header(); ?>
 	
 	<?php endwhile; // end of the loop. ?>
 
-	<!-- column 2: starts and ends in this function. File is sidebar.php -->
+	<!-- column 2: all in this this function. File is sidebar.php -->
 	<?php get_sidebar(); ?>
 
 	<!-- column 3: start -->
