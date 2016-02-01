@@ -507,7 +507,6 @@
     ?>	
   
 </div> <!-- column 3: end -->     			
-
 </div> <!-- content: end -->
 
 <?php get_footer(); ?>
