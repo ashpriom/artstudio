@@ -103,7 +103,11 @@
 			}			
    
     $catID = get_cat_ID($cat);
-    query_posts('cat=' . $catID, 'orderby' => 'ASC');
+    //query_posts('cat=' . $catID, 'orderby' => 'ASC');
+    query_posts(array(
+        'orderby' => 'ASC',
+        'category_id' => $catID,
+    ));
     
     while (have_posts()) : the_post();
       echo "<div class='teacher-boxWrapper'>";
