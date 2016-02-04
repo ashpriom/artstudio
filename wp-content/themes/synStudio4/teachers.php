@@ -61,15 +61,15 @@
                       }
           					  
                       echo "<style>";
-          						echo ".podcast #col1 {position: inherit; width: 100%}";
-          						echo ".podcast #col1 p {clear: both;}";
-          						echo ".podcast #col2 {display: none;}";
-          						echo ".teacher-boxWrapper .teacher-box {height: 412px;}";
-          						echo ".teachers-thumb {float: left; margin-right: 43px; margin-bottom: 12px;}";
-          						echo ".teachers-art img {height: 152px;}";
-          						echo ".podcast-boxWrapper h2 {font-size: 18px; margin-bottom: 10px;}";
-          						echo " -webkit-line-clamp: 4";
-          						echo "-webkit-box-orient: vertical;";
+            						echo ".podcast #col1 {position: inherit; width: 100%}";
+            						echo ".podcast #col1 p {clear: both;}";
+            						echo ".podcast #col2 {display: none;}";
+            						echo ".teacher-boxWrapper .teacher-box {height: 412px;}";
+            						echo ".teachers-thumb {float: left; margin-right: 43px; margin-bottom: 12px;}";
+            						echo ".teachers-art img {height: 152px;}";
+            						echo ".podcast-boxWrapper h2 {font-size: 18px; margin-bottom: 10px;}";
+            						echo " -webkit-line-clamp: 4";
+            						echo "-webkit-box-orient: vertical;";
           						echo "</style>";
                       break;
               case 11042:
@@ -81,15 +81,15 @@
                       }
 
                       echo "<style>";
-                      echo ".podcast #col1 {position: inherit; width: 100%}";
-                      echo ".podcast #col1 p {clear: both;}";
-                      echo ".podcast #col2 {display: none;}";
-                      echo ".teacher-boxWrapper .teacher-box {height: 412px;}";
-                      echo ".teachers-thumb {float: left; margin-right: 43px; margin-bottom: 12px;}";
-                      echo ".teachers-art img {height: 152px;}";
-                      echo ".podcast-boxWrapper h2 {font-size: 18px; margin-bottom: 10px;}";
-                      echo " -webkit-line-clamp: 4";
-                      echo "-webkit-box-orient: vertical;";
+                        echo ".podcast #col1 {position: inherit; width: 100%}";
+                        echo ".podcast #col1 p {clear: both;}";
+                        echo ".podcast #col2 {display: none;}";
+                        echo ".teacher-boxWrapper .teacher-box {height: 412px;}";
+                        echo ".teachers-thumb {float: left; margin-right: 43px; margin-bottom: 12px;}";
+                        echo ".teachers-art img {height: 152px;}";
+                        echo ".podcast-boxWrapper h2 {font-size: 18px; margin-bottom: 10px;}";
+                        echo " -webkit-line-clamp: 4";
+                        echo "-webkit-box-orient: vertical;";
                       echo "</style>";
                       break;        
               case 3123:
@@ -103,11 +103,12 @@
 			}			
    
     $catID = get_cat_ID($cat);
-    //query_posts('cat=' . $catID, 'orderby' => 'ASC');
-    query_posts(array(
+    query_posts('cat=' . $catID);
+
+    /*query_posts(array(
         'orderby' => 'ASC',
         'category_id' => $catID,
-    ));
+    ));*/
     
     while (have_posts()) : the_post();
       echo "<div class='teacher-boxWrapper'>";
