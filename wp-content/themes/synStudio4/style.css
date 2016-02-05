@@ -557,24 +557,20 @@ a.lnk-readMore {
 	padding-bottom: 60px;
 }
 
-#newsletter-box .text p {
+#newsletter-box .text p{
 	font-size: 1em;
-	text-align: justify;
-	margin-bottom: 12px;
+    margin-bottom: 20px;
 }
-#registration .text,
-#registration .text p {
-	/*font-size: 1.2em;*/
-	font-size: 1em;
-}
+
+#registration .text, #registration .text p{ font-size: 1em; }
 
 .text h3{
 	color: #fff !important;
-	text-align: left !important;
-	margin: 7px 0px 0px 0px;
-    font-stretch: ultra-condensed;
+    text-align: left !important;
+    margin: 10px 0px 0px 0px;
     font-weight: 600;
-    text-decoration: underline;
+    font-size: 1.15em;
+    font-style: italic;
 }
 
 .text h4{
