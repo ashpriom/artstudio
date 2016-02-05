@@ -166,8 +166,9 @@
 			if (get_post_meta($postID, 'breadcrumb_' . $currentLang, true)!=""){
 				echo get_post_meta($postID, 'breadcrumb_' . $currentLang, true);
 			}
-			else {
-				echo "<a href=\"http://synstudio.ca/classes/\"/>All Classes</a>";
+			else{
+				if($currentLang == "en"){ echo "<a href=\"http://synstudio.ca/classes/\"/>All Classes</a>"; }
+				else { echo "<a href=\"http://synstudio.ca/cours-arts/\"/>Toutes les classes</a>"; }
 			}
 			?>
 		</p>
