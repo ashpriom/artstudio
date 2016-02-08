@@ -16,7 +16,7 @@
                                                                                                       
 -->
 
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html ⚡ xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 	<head>
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
@@ -29,6 +29,7 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
 		<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+		<script async src="https://cdn.ampproject.org/v0.js"></script>
 
 		<?php wp_enqueue_script("jquery"); ?>
 		<?php $options = get_option( 'sample_theme_options' ); ?> 
