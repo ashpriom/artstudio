@@ -42,7 +42,7 @@
 <meta property="og:site_name" content="Syn Studio" />
 <meta property="og:url" content="<?php the_permalink(); ?>" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="<?php the_title(); ?> | Syn Studio" />
+<meta property="og:title" content="<?php the_title(); ?>" />
 <meta property="og:description" content="<?php echo $short_description; ?>" />
 <meta property="og:image" content="<?php echo wp_get_attachment_image($attachment_id, 'large'); ?>" />
 
