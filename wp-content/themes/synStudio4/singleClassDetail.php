@@ -25,6 +25,12 @@
 	$sevenBeforeLRD->modify('-7 days');
 	$sevenBeforeLRD = $sevenBeforeLRD->format('Y-m-d');
 	$sevenBeforeLRDPretty = DateTime::createFromFormat($format, $sevenBeforeLRD);
+
+	if($currentLang=="en"){ $attachment_id = get_post_meta($postID, 'thumbnail', true); }
+    else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
+
+    if($currentLang=="en"){ $short_description = get_post_meta($postID, 'short_description_en', true); }
+    else{ $short_description = get_post_meta($translationID, 'short_description_fr', true); }
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
@@ -33,6 +39,11 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.js"></script>
+<meta property="og:url" content="<?php the_permalink(); ?>" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="<?php the_title(); ?> | Syn Studio" />
+<meta property="og:description" content="<?php echo $short_description; ?>" />
+<meta property="og:image" content="<?php echo wp_get_attachment_image($attachment_id, 'large'); ?>" />
 
 <script type="text/javascript">
 
