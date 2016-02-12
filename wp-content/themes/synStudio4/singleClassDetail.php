@@ -39,6 +39,7 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.js"></script>
+<meta property="og:site_name" content="Syn Studio" />
 <meta property="og:url" content="<?php the_permalink(); ?>" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="<?php the_title(); ?> | Syn Studio" />
