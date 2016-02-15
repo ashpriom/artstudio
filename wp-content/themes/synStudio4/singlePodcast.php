@@ -1,6 +1,7 @@
 <?php
-get_header(); 
-if (function_exists('pll_current_language')) { $currentLang = pll_current_language('slug'); }
+	$postIDPodcast = get_the_ID(); 
+	get_header(); 
+	if (function_exists('pll_current_language')) { $currentLang = pll_current_language('slug');}
 ?>
 
 <div id="content" class="general-page podcast"> <!-- content: start -->
@@ -13,8 +14,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 		<div class="podcast-boxWrapper">
     		<div class="podcast-box">
 				<div class="podcontent">
-					<?php
- 					$postIDPodcast = get_the_ID();   
+					<?php  
 					echo "<div class='main-text'>"; 
 					echo "<div class='image-description'>";
 					echo "<img width='178' height='300' alt='' src='".get_post_meta($postIDPodcast, 'podcastsImage', true)."'>";
