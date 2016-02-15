@@ -17,6 +17,16 @@
 		<meta name="copyright" content="Syn Studio" />
 		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
 		<meta name="google-site-verification" content="qAS47Im9uAwkEff6CyCYdn_7r6BaP2aRFotf7Fs9Nrs" />
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="Syn Studio"/>
+		<meta name="twitter:title" content="<?php the_title(); ?>">
+		<meta name="twitter:creator" content="Syn Studio"/>
+		<meta name="twitter:domain" content="synstudio.ca"/>
+		<meta property="og:site_name" content="Syn Studio" />
+		<meta property="og:url" content="<?php the_permalink(); ?>" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="<?php the_title(); ?>" />
+		<meta itemprop="name" content="<?php the_title(); ?>"/>
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:regular,700&amp;subset=latin">

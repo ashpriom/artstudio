@@ -8,10 +8,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 	<head>
+		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 		<meta name="author" content="Anthony Walsh, Courtney Clinton, Syed Ashfaque Uddin Priom" />
 		<meta name="copyright" content="Syn Studio" />
-		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="Syn Studio"/>
+		<meta name="twitter:title" content="<?php the_title(); ?>">
+		<meta name="twitter:creator" content="Syn Studio"/>
+		<meta name="twitter:domain" content="synstudio.ca"/>
+		<meta property="og:site_name" content="Syn Studio" />
+		<meta property="og:url" content="<?php the_permalink(); ?>" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="<?php the_title(); ?>" />
+		<meta itemprop="name" content="<?php the_title(); ?>"/>
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
