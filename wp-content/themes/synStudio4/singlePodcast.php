@@ -4,6 +4,9 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 ?>
 
 <div id="content" class="general-page podcast"> <!-- content: start -->
+	<meta name="twitter:image:src" content="<?php echo get_post_meta($postIDPodcast, 'podcastsImage', true); ?>"/>
+	<meta property="og:image" content="<?php echo get_post_meta($postIDPodcast, 'podcastsImage', true); ?>" />
+	<meta itemprop="image" content="<?php echo get_post_meta($postIDPodcast, 'podcastsImage', true); ?>"/>
 	<div id="col1">
    		<?php while ( have_posts() ) : the_post(); ?>
  		<?php echo "<h1>" . get_the_title() . "</h1>"; ?>

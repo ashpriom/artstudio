@@ -4,6 +4,9 @@
 ?>
 
 <div id="content" class="general-page"> <!-- Interview content: start -->
+  <meta name="twitter:image:src" content="<?php echo wp_get_attachment_image($attachment_id, 'large'); ?>"/>
+  <meta property="og:image" content="<?php echo wp_get_attachment_image($attachment_id, 'large'); ?>" />
+  <meta itemprop="image" content="<?php echo wp_get_attachment_image($attachment_id, 'large'); ?>"/>
   <div id="col1">
     <?php while ( have_posts() ) : the_post(); ?>
     <?php echo "<h1>" . get_the_title() . "</h1>"; ?>

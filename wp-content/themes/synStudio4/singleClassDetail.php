@@ -6,7 +6,7 @@
 	if(function_exists('GetPreSemester')){ $preSemesterID = GetPreSemester();}
 
 	global $wpdb;
-	$thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
+	// $thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
 	$earlyRegistrationDate = $thisSemester->early_registration;
 	$lateRegistrationDate = $thisSemester->late_registration;
 
