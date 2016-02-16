@@ -40,7 +40,7 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.js"></script>
 
-<!-- Twiiter -->
+<!-- Twiiter 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:site" content="Syn Studio"/>
 <meta name="twitter:title" content="<?php the_title(); ?>">
@@ -49,7 +49,7 @@
 <meta name="twitter:image:src" content="<?php echo wp_get_attachment_image($attachment_id, 'large'); ?>"/>
 <meta name="twitter:domain" content="synstudio.ca"/>
 
-<!-- Facebook -->
+<!-- Facebook
 <meta property="og:site_name" content="Syn Studio" />
 <meta property="og:url" content="<?php the_permalink(); ?>" />
 <meta property="og:type" content="article" />
@@ -57,10 +57,11 @@
 <meta property="og:description" content="<?php echo $short_description; ?>" />
 <meta property="og:image" content="<?php echo wp_get_attachment_image($attachment_id, 'large'); ?>" />
 
-<!-- Google Plus -->
+<!-- Google Plus
 <meta itemprop="name" content="<?php the_title(); ?>"/>
 <meta itemprop="description" content="<?php echo $short_description; ?>"/>
-<meta itemprop="image" content="<?php echo wp_get_attachment_image($attachment_id, 'large'); ?>"/>
+<meta itemprop="image" content="<?php echo wp_get_attachment_image($attachment_id, 'large'); ?>"/>-->
+
 
 <script type="text/javascript">
 
