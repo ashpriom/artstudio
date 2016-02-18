@@ -42,9 +42,9 @@
 		<script async src="https://cdn.ampproject.org/v0.js"></script>
 
 		<?php wp_enqueue_script("jquery"); ?>
-		<script>jQuery.noConflict();</script>
 		<?php $options = get_option( 'sample_theme_options' ); ?> 
 		<?php wp_head(); ?>
+		<script>jQuery.noConflict();</script>
 
 		<?php 
 		if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); }
