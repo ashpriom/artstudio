@@ -42,7 +42,7 @@
 		<script async src="https://cdn.ampproject.org/v0.js"></script>
 
 		<?php wp_head(); ?>
-		<?php wp_enqueue_script("jquery"); ?>
+		<?php // wp_enqueue_script("jquery"); ?>
 		<?php $options = get_option( 'sample_theme_options' ); ?>
 
 		<?php 
