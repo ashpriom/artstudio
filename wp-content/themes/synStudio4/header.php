@@ -41,10 +41,9 @@
 		<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
 		<script async src="https://cdn.ampproject.org/v0.js"></script>
 
-		<?php wp_enqueue_script("jquery"); ?>
-		<?php $options = get_option( 'sample_theme_options' ); ?> 
 		<?php wp_head(); ?>
-		<script>jQuery.noConflict();</script>
+		<?php wp_enqueue_script("jquery"); ?>
+		<?php $options = get_option( 'sample_theme_options' ); ?>
 
 		<?php 
 		if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); }
