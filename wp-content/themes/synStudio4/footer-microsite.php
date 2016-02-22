@@ -98,12 +98,12 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
         </div>
     </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script> $('table').stacktable(); </script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bxslider.min.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/stacktable.js"></script>
+        <script> $('table').stacktable(); </script>
     <!-- end FOOTER -->
 </body>
 
