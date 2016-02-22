@@ -923,7 +923,7 @@ Template Name: Concept Art Diploma - Admission
                 <div class="col-xs-12">
                     <div class="overviewtable2">
                         <div class="admissionprocesstable table-responsive">
-                            <table>
+                            <table class="the-stack">
                                 <thead>
                                     <tr>
                                         <th>STEP:</th>
@@ -1963,7 +1963,7 @@ Template Name: Concept Art Diploma - Admission
                 <div class="col-xs-12">
                     <div class="overviewtable2">
                         <div class="admissionprocesstable table-responsive">
-                            <table>
+                            <table class="the-stack">
                                 <thead>
                                     <tr>
                                         <th>Étape:</th>
