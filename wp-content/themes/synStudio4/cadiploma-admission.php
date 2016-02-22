@@ -204,7 +204,7 @@ Template Name: Concept Art Diploma - Admission
                         </div>
                         <div class="admissionqa">
                             <div class="thequestion">
-                                <p class="text-139">2. Are you passionate, focused, mature and improvement oriented? Will you have been out of high school for at least one year before starting the program and could you potentially demonstrate this with the appropriate documentation and a letter of motivation?</p>
+                                <p class="text-139">2. Are you passionate, focused, mature and improvement oriented? Will you have been out of high school for at least one year (for Quebec residents only) before starting the program and could you potentially demonstrate this with the appropriate documentation and a letter of motivation?</p>
                                 <div id="notext2" style="display:none;">
                                     <p class="text-140">We are sorry. This is a high-level program and we can only accept candidates who are ready. Please come back when you meet the criteria mentioned above.</p>
                                 </div>
@@ -921,7 +921,7 @@ Template Name: Concept Art Diploma - Admission
                 <br />
                 <br />
                 <div class="col-md-12">
-                    <div class="overviewtable2 hidden-xs">
+                    <div class="overviewtable2">
                         <div class="admissionprocesstable">
                             <table>
                                 <thead>
@@ -1015,11 +1015,11 @@ Template Name: Concept Art Diploma - Admission
                             </table>
                         </div>
                     </div>
-                    <div class="hidden-md hidden-lg">
+                    <div>
                         <br />
                             <p class="italicpara">*Certain conditions apply</p>
                             <br />
-                            <a class="orange-text" href="<?php echo get_template_directory_uri(); ?>/docs/synstudio-admission-process-details.pdf" target="_blank">Click here to see admission process and tuition details.</a>
+                            <!--<a class="orange-text" href="<?php echo get_template_directory_uri(); ?>/docs/synstudio-admission-process-details.pdf" target="_blank">Click here to see admission process and tuition details.</a>-->
                     </div>
                     <div class="hidden-xs hidden-sm">
                         <p class="longnote"><strong class="text-style-8"></strong>*Student loans of up to $20,000 available for Canadians (fill out the form below for more information)</p>
@@ -1257,7 +1257,7 @@ Template Name: Concept Art Diploma - Admission
                         </div>
                         <div class="admissionqa">
                             <div class="thequestion">
-                                <p class="text-139">2. Êtes-vous passionné(e), concentré(e), mûr(e) et orienté(e) vers le progrès? Aurez vous terminé l'école secondaire depuis au moins un an au début du programme et pourriez vous le prouver avec des documents et une lettre de motivation?</p>
+                                <p class="text-139">2. Êtes-vous passionné(e), concentré(e), mûr(e) et orienté(e) vers le progrès? Aurez vous terminé l'école secondaire depuis au moins un an (pour les résidents du Québec seulement) au début du programme et pourriez vous le prouver avec des documents et une lettre de motivation?</p>
                                 <div id="notext2" style="display:none;">
                                     <p class="text-140">Nous sommes désolés. Ceci est un programme dehaut niveau et nous ne pouvons accepter que les candidats qui sont prêts. Veuillez revenir lorsque vous remplirez les critères cités ci-dessus.</p>
                                 </div>
@@ -1961,7 +1961,7 @@ Template Name: Concept Art Diploma - Admission
                 <br />
                 <br />
                 <div class="col-md-12">
-                    <div class="overviewtable2 hidden-xs">
+                    <div class="overviewtable2">
                         <div class="admissionprocesstable">
                             <table>
                                 <thead>
@@ -2055,11 +2055,11 @@ Template Name: Concept Art Diploma - Admission
                             </table>
                         </div>
                     </div>
-                    <div class="hidden-md hidden-lg">
+                    <div>
                         <br />
                             <p class="italicpara">*Certaines conditions peuvent s'appliquer</p>
-                            <br />
-                            <a class="orange-text" href="<?php echo get_template_directory_uri(); ?>/docs/synstudio-admission-process-details-fr.pdf" target="_blank">Cliquer ici pour voir la procédure et les frais d'admission en détails.</a>
+                            <!--<br />
+                            <a class="orange-text" href="<?php echo get_template_directory_uri(); ?>/docs/synstudio-admission-process-details-fr.pdf" target="_blank">Cliquer ici pour voir la procédure et les frais d'admission en détails.</a>-->
                     </div>
                     <div class="hidden-xs hidden-sm">
                         <p class="longnote"><strong class="text-style-8"></strong>*Des bourses d'études allant jusqu'à $20 000 dollars canadiens sont disponibles pour les étudiants canadiens (remplir le formulaire ci-dessous pour plus d'informations)</p>
