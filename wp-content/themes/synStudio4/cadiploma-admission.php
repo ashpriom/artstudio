@@ -281,7 +281,7 @@ Template Name: Concept Art Diploma - Admission
                                 </tr>
                                 <tr>
                                     <td>Diploma Type:*</td>
-                                    <td>Attestation of College Studies:</td>
+                                    <td>Attestation of College Studies</td>
                                 </tr>
                                 <tr class="grey-table-row">
                                     <td>
