@@ -338,7 +338,7 @@
     font-size: 20px;
   }
   .overviewtable2 {
-    width: 80% !important;
+    width: 80%;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
@@ -493,4 +493,27 @@
   }
   .navbar-header{display:none;}
 
+}
+
+.stacktable.large-only { display: table; }
+.stacktable.small-only { display: none; }
+
+@media (max-width: 800px) {
+  .stacktable.large-only { display: none; }
+  .stacktable.small-only { display: table; }
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+table caption {
+  padding: .5em 0;
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
 }

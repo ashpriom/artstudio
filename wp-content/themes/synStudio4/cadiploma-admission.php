@@ -33,6 +33,8 @@ Template Name: Concept Art Diploma - Admission
 
 <script type="text/javascript">
 
+    $('table').stacktable();
+
     /*jQuery(document).ready(function(){
       $('.scroll-link').on('click', function(event){
         event.preventDefault();
@@ -920,9 +922,9 @@ Template Name: Concept Art Diploma - Admission
                 <h1>Admission Process, Dates & Tuition</h1>
                 <br />
                 <br />
-                <div class="col-md-12">
+                <div class="col-xs-12">
                     <div class="overviewtable2">
-                        <div class="admissionprocesstable">
+                        <div class="admissionprocesstable table-responsive">
                             <table>
                                 <thead>
                                     <tr>
@@ -1960,9 +1962,9 @@ Template Name: Concept Art Diploma - Admission
                 <h1>Processus d'admission, dates et tarifs</h1>
                 <br />
                 <br />
-                <div class="col-md-12">
+                <div class="col-xs-12">
                     <div class="overviewtable2">
-                        <div class="admissionprocesstable">
+                        <div class="admissionprocesstable table-responsive">
                             <table>
                                 <thead>
                                     <tr>
