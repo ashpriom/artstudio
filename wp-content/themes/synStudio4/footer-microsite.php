@@ -102,7 +102,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
         <script src="<?php echo get_template_directory_uri(); ?>/js/classie.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.bxslider.min.js"></script>
-        <script src="<?php echo get_template_directory_uri(); ?>/js/stackable.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/stacktable.js"></script>
     <!-- end FOOTER -->
 </body>
 

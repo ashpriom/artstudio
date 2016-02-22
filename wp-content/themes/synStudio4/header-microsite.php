@@ -35,7 +35,7 @@
     	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" type="text/css" />
     	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-mini.css" type="text/css" />
     	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.responsive-mini.css" type="text/css" />
-    	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/stackable.css" type="text/css" />
+    	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/stacktable.css" type="text/css" />
     	<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
     	<!--[if lt IE 9]>
       	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
