@@ -338,7 +338,7 @@
     font-size: 20px;
   }
   .overviewtable2 {
-    width: 80%;
+    width: 80% !important;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
