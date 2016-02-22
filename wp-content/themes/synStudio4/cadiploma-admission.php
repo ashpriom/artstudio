@@ -33,8 +33,6 @@ Template Name: Concept Art Diploma - Admission
 
 <script type="text/javascript">
 
-    $('table').stacktable();
-
     /*jQuery(document).ready(function(){
       $('.scroll-link').on('click', function(event){
         event.preventDefault();
