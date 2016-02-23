@@ -1204,11 +1204,10 @@ width:100%;
 }
 				
 #wrapper { width: 100%!important; }
-#header #language { right: auto; left: 0; top: -65px; width: 100%; } /* top: -26px; */
-#header #language .phone { left: 50%; margin-left: -60px; position: absolute; font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px; } /* margin-left: -65px; */
+#header #language { right: auto; left: 0; top: -65px; width: 100%; }
+#header #language .phone { left: 50%; margin-left: -60px; position: absolute; font-family: Arial, Helvetica, sans-serif;font-size: 15px; }
 #header .qtrans_language_chooser { float: right; margin: 0 4px; }
-#header #logo a { margin: 22% auto 5% auto;} /* margin: 40px auto; */
+#header #logo a { margin: 22% auto 5% auto;}
 #nav { left: 7px; margin-top: 10px; position: absolute; top: -80px; z-index: 4; }
 #nav #social { display: none; }
 #nav-wrapper li { float: none; }
@@ -1228,15 +1227,15 @@ width:100%;
 #slideshow-main li span.content p {bottom: 10px;}
 
 /* popme alert message */
-#popup-message {
-  /*position: relative;*/
+#popup-message{
+  position: relative !important;
   top: 100px;
   z-index: 1000;
   height: 80px;
-  /*margin-left: -153px;
-  width: 280px;*/
-  width: 300px;
+  width: 340px;
   float: left;
+  font-size: 0.9em;
+  left: 45% !important;
 }
 
 /* Boxes on Teacher Page */
@@ -1320,10 +1319,10 @@ a#lnk-teacherInfo, a#lnk2-teacherInfo, a#lnk-courseOutline, a#lnk2-courseOutline
 @media only screen and (max-width: 320px ) {
 
 img {
-display:block;
-height: auto;
-max-width: 100%;
-width:100%;
+  display:block;
+  height: auto;
+  max-width: 100%;
+  width:100%;
 }
 
 /* Center main columns */
