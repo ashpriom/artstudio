@@ -204,7 +204,7 @@ Template Name: Concept Art Diploma - Admission
                         </div>
                         <div class="admissionqa">
                             <div class="thequestion">
-                                <p class="text-139">2. Are you passionate, focused, mature and improvement oriented? Will you have been out of high school for at least one year (for Quebec residents only) before starting the program and could you potentially demonstrate this with the appropriate documentation and a letter of motivation?</p>
+                                <p class="text-139">2. Are you passionate, focused, mature and improvement oriented? Will you have graduated and been out of high school for at least one year (for Quebec residents only) before starting the program and could you potentially demonstrate this with the appropriate documentation and a letter of motivation?</p>
                                 <div id="notext2" style="display:none;">
                                     <p class="text-140">We are sorry. This is a high-level program and we can only accept candidates who are ready. Please come back when you meet the criteria mentioned above.</p>
                                 </div>
@@ -1257,7 +1257,7 @@ Template Name: Concept Art Diploma - Admission
                         </div>
                         <div class="admissionqa">
                             <div class="thequestion">
-                                <p class="text-139">2. Êtes-vous passionné(e), concentré(e), mûr(e) et orienté(e) vers le progrès? Aurez vous terminé l'école secondaire depuis au moins un an (pour les résidents du Québec seulement) au début du programme et pourriez vous le prouver avec des documents et une lettre de motivation?</p>
+                                <p class="text-139">2. Êtes-vous passionné(e), concentré(e), mûr(e) et orienté(e) vers le progrès? Êtes-vous gradué du secondaire et l'aurez vous terminé depuis au moins un an (pour les résidents du Québec seulement) au début du programme et pourriez vous le prouver avec des documents et une lettre de motivation?</p>
                                 <div id="notext2" style="display:none;">
                                     <p class="text-140">Nous sommes désolés. Ceci est un programme dehaut niveau et nous ne pouvons accepter que les candidats qui sont prêts. Veuillez revenir lorsque vous remplirez les critères cités ci-dessus.</p>
                                 </div>
