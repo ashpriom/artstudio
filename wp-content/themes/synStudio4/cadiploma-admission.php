@@ -190,9 +190,10 @@ Template Name: Concept Art Diploma - Admission
                                     <p class="text-140">Sorry. This is an elite program that requires that you possess a minimum level of skill before applying. You need to learn fundamentals of drawing, painting and digital painting. There are many schools where you can learn fundamental skills and prepare a portfolio to apply for our Concept Art Diploma Program. We offer ahigh quality preparation course at a very reasonable price. You can find out more info about our prep program <a href='http://synstudio.ca/full-time-intensive/'>HERE</a>.</p>
                                 </div>
                                 <div id="yestext1" style="display:none;">
-                                    <p class="text-140" style="color:lightgreen; font-size:3.5em;">✔</p>
+                                    <p class="text-140" style="color:lightgreen; font-size:3.5em;"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAdmission/tick.png" alt="tick"></p>
                                 </div>
                             </div>
+                            
                             <div class="theanswer">
                                 <div class="rounded-rectangle-1-holder">
                                     <a class="btn btn-primary btn-orange-theme" href="javascript:toggleDiv('yestext1');" style="padding: 5px 10px;">Yes</a>
