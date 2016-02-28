@@ -210,7 +210,7 @@ Template Name: Concept Art Diploma - Admission
                                     <p class="text-140">We are sorry. This is a high-level program and we can only accept candidates who are ready. Please come back when you meet the criteria mentioned above.</p>
                                 </div>
                                 <div id="yestext2" style="display:none;">
-                                    <p class="text-140" style="color:green; font-size:3.5em;">✔</p>
+                                    <p class="text-140" style="color:green; font-size:3.5em;"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAdmission/tick.png" alt="tick"></p>
                                 </div>
                             </div>
                             <div class="theanswer">
@@ -229,7 +229,7 @@ Template Name: Concept Art Diploma - Admission
                                     <p class="text-140">We are sorry. Please improve your spoken English level (there are a number of courses and programs for that) and come back to us when you are ready.</p>
                                 </div>
                                 <div id="yestext3" style="display:none;">
-                                    <p class="text-140" style="color:green; font-size:3.5em;">✔</p>
+                                    <p class="text-140" style="color:green; font-size:3.5em;"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAdmission/tick.png" alt="tick"></p>
                                 </div>
                             </div>
                             <div class="theanswer">
@@ -1244,7 +1244,7 @@ Template Name: Concept Art Diploma - Admission
                                     <p class="text-140">Nous sommes désolés. Ceci est un programe de haut niveau qui recquiert un minimum de compétence savant de pouvoir candidater. Vous devez apprendre les bases du dessin, de la peinture et du peinture numérique. Plusieurs écoles existent où vous pourrez apprendre les fondamentaux et préparer un portfolio pour pouvoir somuettre votre candidature pour notre Diplôme en Conception Artistique. Nous proposons un cours de préparation de qualité pour un prix abordable. Pour plus d'informations, <a href="http://synstudio.ca/temps-plein-intensif/">rendez vous ICI</a></p>
                                 </div>
                                 <div id="yestext1" style="display:none;">
-                                    <p class="text-140" style="color:lightgreen; font-size:3.5em;">✔</p>
+                                    <p class="text-140" style="color:lightgreen; font-size:3.5em;"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAdmission/tick.png" alt="tick"></p>
                                 </div>
                             </div>
                             <div class="theanswer">
@@ -1263,7 +1263,7 @@ Template Name: Concept Art Diploma - Admission
                                     <p class="text-140">Nous sommes désolés. Ceci est un programme dehaut niveau et nous ne pouvons accepter que les candidats qui sont prêts. Veuillez revenir lorsque vous remplirez les critères cités ci-dessus.</p>
                                 </div>
                                 <div id="yestext2" style="display:none;">
-                                    <p class="text-140" style="color:lightgreen; font-size:3.5em;">✔</p>
+                                    <p class="text-140" style="color:lightgreen; font-size:3.5em;"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAdmission/tick.png" alt="tick"></p>
                                 </div>
                             </div>
                             <div class="theanswer">
@@ -1282,7 +1282,7 @@ Template Name: Concept Art Diploma - Admission
                                     <p class="text-140">Nous sommes désolés. Veuillez améliorer votre niveau d'anglais parlé (il existe un certain nombres de cours et de programmes pour cela) et revenir vers nous quand vous serez prêt(e).</p>
                                 </div>
                                 <div id="yestext3" style="display:none;">
-                                    <p class="text-140" style="color:lightgreen; font-size:3.5em;">✔</p>
+                                    <p class="text-140" style="color:lightgreen; font-size:3.5em;"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAdmission/tick.png" alt="tick"></p>
                                 </div>
                             </div>
                             <div class="theanswer">
@@ -1295,12 +1295,11 @@ Template Name: Concept Art Diploma - Admission
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
         </div>
-
+        
         <div class="congrats container-fluid section-highlight" id="congrats" style="display:none;">
             <div class="wrapper-16">
                 <p class="congratulations">Félicitations!</p>
