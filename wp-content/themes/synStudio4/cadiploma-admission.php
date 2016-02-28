@@ -179,7 +179,7 @@ Template Name: Concept Art Diploma - Admission
         <div class="container-fluid section-highlight" id="section-highlight-intro">
             <div class="row">
                 <div class="col-md-6">
-                    <h2>Basic admission requirement<br /><small>Pre application interview</small></h2>
+                    <h2>Basic admissions requirements<br /><small>Pre-application interview</small></h2>
                 </div>
                 <div class="col-md-6">
                     <div class="qagroup">
