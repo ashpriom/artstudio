@@ -1165,6 +1165,8 @@ img {
     //background-color: red;
 }
 */
+.thequestion img{ width:44px !important; height: 48px !important; }
+
 #section-highlight-program-overview {
   padding-top: 50px;
   padding-bottom: 0;
