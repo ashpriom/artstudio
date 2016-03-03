@@ -3,14 +3,14 @@
  * @package WordPress
  * @subpackage SynStudio_Theme
  */
-	
+
 if (function_exists('pll_current_language')) { $currentLang = pll_current_language('slug'); }
 ?>
 
 <div id="footer">
 
 	<div class="footer-left">
- 		<?php 
+ 		<?php
 		if ($currentLang == "fr") { ?>
 	 		<a href="/francais/">Accueil</a> || &nbsp;
 	 		<a href="/a-propos/">À propos de nous</a> || &nbsp;
@@ -22,9 +22,9 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 	 		<a href="/politique-de-confidentialite/">Politique de confidentialité</a> || &nbsp;
 	 		<a href="/contactez-nous/">Contactez-nous</a>
 	 		<br/><br/>
-  			460 St. Catherine Ouest, #508. Montreal. H3B 1A7  
+  			460 St. Catherine Ouest, #508. Montreal. H3B 1A7
 	  	<?php }
-	
+
 		else { ?>
 	 		<a href="/home">Home</a> || &nbsp;
 	 		<a href="/about">About</a> || &nbsp;
@@ -35,17 +35,17 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 	 		<a href="http://synstudio.ca/wp-content/uploads/2012/10/Policies.pdf">School Policies</a> || &nbsp;
 	 		<a href="/privacy-policy">Privacy Policy</a> || &nbsp;<a href="/contact-us">Contact us</a>
 	 		<br/><br/>
-  			460 St. Catherine West, #508. Montreal. H3B 1A7   
+  			460 St. Catherine West, #508. Montreal. H3B 1A7
 	  	<?php } ?>
-			
+
   		<br/><br/>
   		&copy; <?php echo date("Y"); ?> Syn Studio
   	</div>
 
   	<div class="footer-right">
-  		<?php 
-  		if ($currentLang == "fr") { ?> Commandité par <?php } 
-  		else{ ?> Sponsored By <?php } 
+  		<?php
+  		if ($currentLang == "fr") { ?> Commandité par <?php }
+  		else{ ?> Sponsored By <?php }
   		?>
   		<br/>
   		<a href="http://www.wacom.com/" target="_blank">
@@ -63,7 +63,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 <?php wp_footer(); ?>
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/test/css/jquery.sidr.light.css" type="text/css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.min.css" type="text/css" media="screen">
 
 <style>
 	#mobile-header { display: none; }
@@ -83,24 +83,24 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 		if ($currentLang == "fr") { ?>
 			source: '.menu-main-nav-fr-container'
 		<?php }
-					
+
 		else { ?>
 			source: '.menu-main-nav-container'
-		<?php }			
+		<?php }
 	?>
 	});
 
 	jQuery( window ).load(function() {
-		if(jQuery("#sidr-main").length !== 0) {        
-				jQuery(".sidr-class-sub-menu").hide();      
+		if(jQuery("#sidr-main").length !== 0) {
+				jQuery(".sidr-class-sub-menu").hide();
 				jQuery( "li.sidr-class-menu-item ul.sidr-class-sub-menu" ).each(function() {
 				jQuery( this ).after("<div class='lnk-plus'>+</div>");
 				});
-				
+
 	            jQuery( ".lnk-plus" ).toggle(function() {
 	                            var id1= jQuery( this ).parent().attr("id");
 	                            jQuery("#" + id1 + " ul.sidr-class-sub-menu").show();
-	                            jQuery("#" + id1 + " .sidr-class-menu-item-has-children ul").hide();   
+	                            jQuery("#" + id1 + " .sidr-class-menu-item-has-children ul").hide();
 	                            jQuery( this ).html("-");
 	            }, function() {
 	                            var id1= jQuery( this ).parent().attr("id");
@@ -116,14 +116,14 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 		jQuery(document).ready(function($){
 			var deviceAgent = navigator.userAgent.toLowerCase();
 			var agentID = deviceAgent.match(/(ipad|iphone)/);
-			if (agentID) {		
+			if (agentID) {
 				jQuery('#responsive-menu-button').sidr({
 					name: 'sidr-main',
 					<?php
 					if ($currentLang == "fr") { ?>
 						source: '.menu-main-nav-fr-container'
 					<?php }
-								
+
 					else { ?>
 						source: '.menu-main-nav-container'
 					<?php }
@@ -131,22 +131,22 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 				});
 
 				if(jQuery("#sidr-main").length !== 0) {
-					jQuery(window).bind('touchstart click', function(){	
+					jQuery(window).bind('touchstart click', function(){
 							//return false
 					});
-								            
+
 			      	jQuery( ".lnk-plus" ).toggle(function() {
 			        var id1= jQuery( this ).parent().attr("id");
 			        jQuery("#" + id1 + " ul.sidr-class-sub-menu").show("slow");
-			        jQuery("#" + id1 + " .sidr-class-menu-item-has-children ul").hide("slow");   
+			        jQuery("#" + id1 + " .sidr-class-menu-item-has-children ul").hide("slow");
 			        jQuery( this ).html("-");
 			        }, function() {
 	                var id1= jQuery( this ).parent().attr("id");
 	                jQuery("#" + id1 + " ul.sidr-class-sub-menu").hide("slow");
 	                jQuery( this ).html("+");
-	            	});	
+	            	});
 
-	        	}					
+	        	}
 	 		}
 		});
 </script>
@@ -169,10 +169,10 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 </script>
 
 <!-- Switch Between Mobile and Desktop Versions -->
-<script src="<?php echo get_template_directory_uri(); ?>/js/responsible.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/responsible.min.js"></script>
 <script>
   	responsible.init({
-    cssPath: '<?php echo get_template_directory_uri(); ?>/css/responsive.css', // path to responsive css file containing media queries
+    cssPath: '<?php echo get_template_directory_uri(); ?>/css/responsive.min.css', // path to responsive css file containing media queries
     desktopWidth: 1000, // the desired width of the mobile desktop view
     toggleThreshold: 768, // if the window is smaller than this width, the mobile toggle will display
     desktopToggleDisplay: true, // set to false to hide mobile toggle
@@ -182,7 +182,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 	}
 	else {
 		echo "desktopToggleText: \"changez a la version mobile\",";
-	}   
+	}
 	?>
   	//desktopToggleText: "Switch to Mobile Version", Text on the 'Back to mobile' Toggle
     mobileToggleDisplay: true, // set to false to hide mobile toggle
