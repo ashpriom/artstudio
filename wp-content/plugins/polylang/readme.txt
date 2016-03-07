@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: multilingual, bilingual, translate, translation, language, multilanguage, international, localization
 Requires at least: 4.0
 Tested up to: 4.4
-Stable tag: 1.8.3
+Stable tag: 1.8.4
 License: GPLv2 or later
 
 Making WordPress multilingual
@@ -70,6 +70,10 @@ See http://polylang.wordpress.com/documentation/contribute/
 4. The Edit Post screen with the Languages metabox
 
 == Changelog ==
+
+= 1.8.4 (2016-03-06) =
+
+* Revert canonical redirection of static front page when combining plain permalinks + default language hidden in url (introduced in 1.8.2)
 
 = 1.8.3 (2016-03-04) =
 
