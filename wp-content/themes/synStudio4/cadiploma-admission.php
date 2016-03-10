@@ -41,7 +41,7 @@ Template Name: Concept Art Diploma - Admission
       });
       $('.scroll-top').on('click', function(event) {
         event.preventDefault();
-        $('html, body').animate({scrollTop:0}, 'slow');     
+        $('html, body').animate({scrollTop:0}, 'slow');
       });
       $('#nav-toggle').on('click', function (event) {
         event.preventDefault();
@@ -123,8 +123,8 @@ Template Name: Concept Art Diploma - Admission
             <div class="nav-social hidden-xs hidden-sm">
                 <ul class="menu social-links-menu text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-white.png" alt="" /></a></li>
@@ -135,8 +135,8 @@ Template Name: Concept Art Diploma - Admission
             <div class="nav-social hidden-md hidden-lg">
                 <ul class="menu social-links-menu-dark text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-black.png" alt="" /></a></li>
@@ -146,8 +146,8 @@ Template Name: Concept Art Diploma - Admission
             </div>
         <h1 class="header-title shadow-text white-text"><small class="white-text">Program</small><br />Details</h1>
     </div> <!-- end HEADER -->
-    
-    <!--<div id="headeroo">  MAIN CONTENT 
+
+    <!--<div id="headeroo">  MAIN CONTENT
     <div>
         <div class="container">
             <nav class="navbar navbar-inverse" role="navigation">
@@ -187,13 +187,13 @@ Template Name: Concept Art Diploma - Admission
                             <div class="thequestion">
                                 <p class="text-139">1. Do you already have some training (or self-teaching) in the fundamentals of realistic drawing and painting (including digital painting) and could you potentially show us a portfolio that demonstrates your skill level?</p>
                                 <div id="notext1" style="display:none;">
-                                    <p class="text-140">Sorry. This is an elite program that requires that you possess a minimum level of skill before applying. You need to learn fundamentals of drawing, painting and digital painting. There are many schools where you can learn fundamental skills and prepare a portfolio to apply for our Concept Art Diploma Program. We offer ahigh quality preparation course at a very reasonable price. You can find out more info about our prep program <a href='http://synstudio.ca/full-time-intensive/'>HERE</a>.</p>
+                                    <p class="text-140">Sorry. This is an elite program that requires that you possess a minimum level of skill before applying. You need to learn fundamentals of drawing, painting and digital painting. There are many schools where you can learn fundamental skills and prepare a portfolio to apply for our Concept Art Diploma Program. We offer a high quality preparation course at a very reasonable price. You can find out more info about our prep program <a href='http://synstudio.ca/full-time-intensive/'>HERE</a>.</p>
                                 </div>
                                 <div id="yestext1" style="display:none;">
                                     <p class="text-140" style="color:lightgreen; font-size:3.5em;"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAdmission/tick.png" alt="tick"></p>
                                 </div>
                             </div>
-                            
+
                             <div class="theanswer">
                                 <div class="rounded-rectangle-1-holder">
                                     <a class="btn btn-primary btn-orange-theme" href="javascript:toggleDiv('yestext1');" style="padding: 5px 10px;">Yes</a>
@@ -253,7 +253,7 @@ Template Name: Concept Art Diploma - Admission
             </div>
             <p class="text-6">You meet the basic requirements to apply for the Concept Art diploma program! See the program overview below:</p>
         </div>
-                    
+
         <div id="overview">
         <div class="container-fluid section-highlight" id="section-highlight-program-overview">
             <div class="row">
@@ -326,7 +326,7 @@ Template Name: Concept Art Diploma - Admission
                 <h1>Program Structure</h1>
             </div>
             <br/>
-            
+
             <!-- Term 1 -->
                 <div class="row">
                     <div class="class-structure-box">
@@ -854,7 +854,7 @@ Template Name: Concept Art Diploma - Admission
             <br />
         </div>
         </div>
-        
+
         <div id="features">
         <div class="container-fluid section-highlight program-div">
             <div class="row row-80percent">
@@ -914,7 +914,7 @@ Template Name: Concept Art Diploma - Admission
             </div>
         </div>
         </div>
-        
+
         <div id="dates">
         <div class="container-fluid section-highlight program-div">
             <div class="row">
@@ -1035,7 +1035,7 @@ Template Name: Concept Art Diploma - Admission
             </div>
         </div>
         </div>
-        
+
         <div id="apply">
         <div class="container-fluid section-highlight general-content row-60percent program-div">
             <h1>Admission Application Form</h1>
@@ -1175,8 +1175,8 @@ Template Name: Concept Art Diploma - Admission
             <div class="nav-social hidden-xs hidden-sm">
                 <ul class="menu social-links-menu text-right">Uncaught
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-white.png" alt="" /></a></li>
@@ -1187,8 +1187,8 @@ Template Name: Concept Art Diploma - Admission
             <div class="nav-social hidden-md hidden-lg">
                 <ul class="menu social-links-menu-dark text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-black.png" alt="" /></a></li>
@@ -1199,7 +1199,7 @@ Template Name: Concept Art Diploma - Admission
         <h1 class="header-title shadow-text white-text"><small class="white-text">Détails sur<br /> le programme</small></h1>
     </div>
     <!-- end HEADER -->
-    <!-- MAIN CONTENT  
+    <!-- MAIN CONTENT
     <div id="headeroo">
     <div>
         <div class="container">
@@ -1227,7 +1227,7 @@ Template Name: Concept Art Diploma - Admission
         </div>
     </div>
     </div>-->
-    
+
     <div class="main-content-container">
         <div id="requirements">
         <div class="container-fluid section-highlight" id="section-highlight-intro">
@@ -1299,7 +1299,7 @@ Template Name: Concept Art Diploma - Admission
             </div>
         </div>
         </div>
-        
+
         <div class="congrats container-fluid section-highlight" id="congrats" style="display:none;">
             <div class="wrapper-16">
                 <p class="congratulations">Félicitations!</p>
@@ -1363,7 +1363,7 @@ Template Name: Concept Art Diploma - Admission
             </div>
         </div>
         </div>
-        
+
         <div id="structure">
         <div class="container-fluid section-highlight program-div">
             <div class="row">
@@ -1881,7 +1881,7 @@ Template Name: Concept Art Diploma - Admission
                         </div>
                         <!--end of col-md-12-->
                     </div>
-                </div>                
+                </div>
             <div class="row">
                 <div class="col-md-12">
                     <p class="italicpara">
@@ -1953,7 +1953,7 @@ Template Name: Concept Art Diploma - Admission
             </div>
         </div>
         </div>
-        
+
         <div id="dates">
         <div class="container-fluid section-highlight program-div">
             <div class="row">
@@ -2074,7 +2074,7 @@ Template Name: Concept Art Diploma - Admission
             </div>
         </div>
         </div>
-        
+
         <div id="apply">
         <div class="container-fluid section-highlight general-content row-60percent">
             <h1>Formulaire de candidature</h1>
@@ -2164,7 +2164,7 @@ $.extend($.validator.messages, {
             </div>
         </div>
         </div>
-        
+
         <div class="container-fluid section-highlight general-content program-div quotesection">
             <div class="row">
                 <div class="col-md-12">

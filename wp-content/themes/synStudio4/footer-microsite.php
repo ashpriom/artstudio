@@ -3,7 +3,7 @@
  * @package WordPress
  * @subpackage SynStudio_Theme
  */
-	
+
 if (function_exists('pll_current_language')) { $currentLang = pll_current_language('slug'); }
 ?>
 
@@ -71,8 +71,8 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
                         <div>
                             <p>460 St. Catherine <?php if($currentLang == "en"){ echo "West"; }else{ echo "Ouest"; }?></p>
                             <p>#508 Montreal, H3B 1A7</p>
-                            <p><img class="contact-icon" src="http://synstudio.ca/wp-content/themes/synStudio4/images/forma_1_2.png" alt="" />&nbsp;&nbsp;info@synstudio.ca</p>
-                            <p><img class="contact-icon" src="http://synstudio.ca/wp-content/themes/synStudio4/images/forma_1.png" alt="" />&nbsp;&nbsp;&nbsp;514-998-7625</p>
+                            <p><img class="contact-icon" src="<?php echo get_template_directory_uri(); ?>/images/forma_1_2.png" alt="" />&nbsp;&nbsp;info@synstudio.ca</p>
+                            <p><img class="contact-icon" src="<?php echo get_template_directory_uri(); ?>/images/forma_1.png" alt="" />&nbsp;&nbsp;&nbsp;514-998-7625</p>
                         </div>
                     </div>
                     <br class="hidden-xs hidden-sm">
