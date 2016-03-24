@@ -61,10 +61,10 @@
 
 				<?php
 				if ($currentLang == "fr") { ?>
-					<img src="<?php bloginfo('url'); ?>/../wp-content/uploads/2016/01/gathering-banner-fr.jpg" alt="SYN STUDIO - GATHERING OF MASTERS 2016" width="1000" />
+					<img src="<?php bloginfo('url'); ?>/../wp-content/uploads/2016/03/gathering-banner-artstation-fr.jpg" alt="SYN STUDIO - GATHERING OF MASTERS 2016 ARTSTATION" width="1000" />
 				<?php }
 				else { ?>
-					<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/01/gathering-banner-en.jpg" alt="SYN STUDIO - GATHERING OF MASTERS 2016" width="1000" />
+					<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/03/gathering-banner-artstation-en.jpg" alt="SYN STUDIO - GATHERING OF MASTERS 2016 ARTSTATION" width="1000" />
 				<?php } ?>
 
 			  	<div id="language2" style="top: 270px; right: 12px; color:white;">
