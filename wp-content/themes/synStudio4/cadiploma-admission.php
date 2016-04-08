@@ -1671,7 +1671,7 @@ Template Name: Concept Art Diploma - Admission
                                                 <div class="structure-color-bar color-bar-green">
                                                 </div>
                                                 <div class="structure-class-name">
-                                                    <p>Dessiner un personnage et son environnement</p>
+                                                    <p>Illustrer des personnages dans leur environnement</p>
                                                 </div>
                                                 <div class="structure-class-hour">
                                                     <p>60h</p>
