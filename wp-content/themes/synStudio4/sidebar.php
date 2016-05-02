@@ -8,17 +8,18 @@
 
 if (function_exists('pll_current_language')) { $currentLang = pll_current_language('slug'); }
 ?>
-	
+
 <!-- column 2: start -->
 <div id="col2">
-  
+
   <?php
 
-if($currentLang=="en"){  
+if($currentLang=="en"){
   $catID = '10';
   query_posts(array(
 		'showposts' => 1,
-		'orderby' => 'rand',
+		'orderby' => 'date',
+    'order' => 'asc',
 		'category_name' => 'Testimonials' //You can insert any category name
 	));
 }
@@ -27,32 +28,33 @@ else{
   $catID = '110';
   query_posts(array(
     'showposts' => 1,
-    'orderby' => 'rand',
+    'orderby' => 'date',
+    'order' => 'asc',
     'category_name' => 'testimonials-fr' //You can insert any category name
-  )); 
+  ));
 }
 
   while (have_posts()) : the_post();
     echo "<div class='info-box2'>";
     echo '<h3>' . get_cat_name($catID) . '</h3>';
     echo "<div class='text-wrapper'><div class='text'>";
-    the_excerpt();		
+    the_excerpt();
     if ($currentLang == "en") { echo "<a class='lnk-readMore' href='/testimonials'>Read More</a>"; }
 		else{ echo "<a class='lnk-readMore' href='/temoignages/'>En savoir plus</a>"; }
     echo "</div></div>";
     echo "</div>";
   endwhile;
-  
-  ?>	
-   
+
+  ?>
+
   <div id="share-plugins">
-    
+
     <div id="facebook">
-		  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com/SynStudio&amp;send=false&amp;layout=box_count&amp;width=55&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90&amp;appId=223615814335068" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:90px;" allowTransparency="true"></iframe> 
+		  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com/SynStudio&amp;send=false&amp;layout=box_count&amp;width=55&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90&amp;appId=223615814335068" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:90px;" allowTransparency="true"></iframe>
     </div>
-    
+
     <div id="twitter">
-      <div class="twitter-sideBar">  
+      <div class="twitter-sideBar">
         <?php
         echo getTwitterFollowers('SynStudio');
         echo '<div class="followers">Followers</div>';
@@ -61,13 +63,13 @@ else{
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
     </div>
-  
+
   </div>
 
   <?php if ($currentLang == "en") { ?>
-    <div id="btn-findMoreClasses"><a href="/classes/"><span>Register Now</span></a></div>   
+    <div id="btn-findMoreClasses"><a href="/classes/"><span>Register Now</span></a></div>
   <?php	} else{ ?>
-    <div id="btn-findMoreClasses"><a href="/cours-arts/"><span>Apprendre plus</span></a></div>   
+    <div id="btn-findMoreClasses"><a href="/cours-arts/"><span>Apprendre plus</span></a></div>
   <?php	} ?>
-   
+
 </div> <!-- column 2: end -->
