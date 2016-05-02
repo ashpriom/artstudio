@@ -46,11 +46,12 @@
 		<?php wp_head(); ?>
 
 		<?php
-	if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); /* See polylang documentation polylang.wordpress.com/documentation/documentation-for-developers/functions-reference/ */ }
-		if ($currentLang == "fr") { ?>
-			<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-fr.css" type="text/css" media="screen" />
-		<?php }
-		?>
+			if (function_exists('pll_current_language')) {
+				$currentLang = pll_current_language(slug); // See polylang documentation polylang.wordpress.com/documentation/documentation-for-developers/functions-reference/
+			}
+			if ($currentLang == "fr") { ?>
+				<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-fr.css" type="text/css" media="screen" /> <?php
+			} ?>
 
 		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.js"></script>
 
@@ -94,82 +95,73 @@
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-MJ8KT7');</script>
-        <!-- End Google Tag Manager -->
+    <!-- End Google Tag Manager -->
 
 		<?php remove_filter ('the_content', 'wpautop'); ?>
 
 		<div id="wrapper"> <!-- Main Content Wrapper: Start, ends in footer -->
 		<div id="header"> <!-- header: start -->
 
-	  	<!-- pop-up message: start -->
-		<?php
+			<?php <!-- pop-up message: start -->
 	  	if($currentLang=="en"){ $cat = 'Pop-up Message'; } else{ $cat = 'Pop-up Message FR'; }
 	  	$catID = get_cat_ID($cat);
 	  	query_posts('cat=' . $catID);
-		while (have_posts()) : the_post();
-		 	$postID = get_the_ID();
-			echo '<div id="popup-message" style="display:none;">';
-			echo '<a id="close-msg" href="javascript: ;">X</a>';
-		 	echo '<h2>' . get_the_title() . '</h2>';
-		  	the_content();
-			echo '</div>';
-			echo '<script type="text/javascript">jQuery( document ).ready(function( $ ) {';
-			echo 'if ($.cookie("syn-popup")=="true"){';
-			echo '$("#popup-message").hide();';
-			echo '} else {';
-			echo '$("#popup-message").show();';
-			echo '}';
-			echo '});</script>';
-		endwhile;
-		wp_reset_query();
-	  	?>
-  		<!-- pop-up message: end -->
+			while (have_posts()) : the_post();
+			 	$postID = get_the_ID();
+				echo '<div id="popup-message" style="display:none;">';
+				echo '<a id="close-msg" href="javascript: ;">X</a>';
+			 	echo '<h2>' . get_the_title() . '</h2>';
+			  	the_content();
+				echo '</div>';
+				echo '<script type="text/javascript">jQuery( document ).ready(function( $ ) {';
+				echo 'if ($.cookie("syn-popup")=="true"){';
+				echo '$("#popup-message").hide();';
+				echo '} else {';
+				echo '$("#popup-message").show();';
+				echo '}';
+				echo '});</script>';
+			endwhile;
+			wp_reset_query();
+	  	?> <!-- pop-up message: end -->
 
-		<div id="logo">
-			<?php if($currentLang=="en"){ ?><a href="/home/">Syn Studio - Art School</a> <?php }
-			else{ ?><a href="/francais/">Syn Studio - École d’art à Montréal</a> <?php } ?>
-		</div>
+			<div id="logo">
+				<?php if($currentLang=="en"){ ?><a href="/home/">Syn Studio - Art School</a> <?php }
+				else{ ?><a href="/francais/">Syn Studio - École d’art à Montréal</a> <?php } ?>
+			</div>
 
-		<div id="language">
+			<div id="language">
    			<div class="phone">514 998-7625</div>
    			<?php if (function_exists('pll_the_languages')){
    				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); // See Polylang reference }
    			?>
-		</div>
-
-		<div id="nav">
-
-			<div id="mobile-header">
-				<a id="responsive-menu-button" href="#sidr-main"><img alt="Toggle menu" src="<?php echo get_template_directory_uri(); ?>/images/responsive/mobi-toogleMenu.png"></a>
 			</div>
 
+			<div id="nav">
+				<div id="mobile-header">
+					<a id="responsive-menu-button" href="#sidr-main"><img alt="Toggle menu" src="<?php echo get_template_directory_uri(); ?>/images/responsive/mobi-toogleMenu.png"></a>
+				</div>
+
 		  	<div id="nav-wrapper">
-				<?php
-				if ($currentLang == "fr") {
-					wp_nav_menu( array('menu' => 'Main Nav FR' ));
+					<?php
+					if ($currentLang == "fr"){
+						wp_nav_menu( array('menu' => 'Main Nav FR' ));
 					}
-				else {
-					wp_nav_menu( array('menu' => 'Main Nav' ));
+					else{
+						wp_nav_menu( array('menu' => 'Main Nav' ));
 					}
-				?>
+					?>
 		   	</div>
 
 		   	<div id="social">
-				<?php
-				if ($currentLang == "fr") {
-					echo "<h4>GARDEZ LE CONTACT</h4>";
-					}
-				else {
-					echo "<h4>Stay in touch</h4>";
-					}
-				?>
-
-		   		<!-- Social Media -->
-			   	<a href="http://www.facebook.com/SynStudio" target="_blank" title="Facebook" id="lnk-facebook">Facebook</a>
-			    <a href="https://twitter.com/SynStudio" target="_blank" title="Twitter" id="lnk-twitter">Twitter</a>
-			    <a href="https://www.youtube.com/user/SynStudioMontreal" target="_blank" title="You Tube" id="lnk-youtube">YouTube</a>
-
-		   	</div>
+					<?php
+						if ($currentLang == "fr") { echo "<h4>GARDEZ LE CONTACT</h4>"; }
+						else { echo "<h4>Stay in touch</h4>"; }
+					?>
+					<!-- Social Media -->
+				  <a href="http://www.facebook.com/SynStudio" target="_blank" title="Facebook" id="lnk-facebook">Facebook</a>
+					<a href="https://twitter.com/SynStudio" target="_blank" title="Twitter" id="lnk-twitter">Twitter</a>
+				  <a href="https://www.youtube.com/user/SynStudioMontreal" target="_blank" title="You Tube" id="lnk-youtube">YouTube</a>
+				</div>
 
 		</div>
 
