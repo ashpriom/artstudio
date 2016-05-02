@@ -2,9 +2,8 @@
 /**
  * @package WordPress
  * @subpackage SynStudio_Theme
- *
  * header.php is loaded in all pages except - concept art diploma pages and specific pages stated in single.php, which is used to load special headers depending on certain post IDs.
- */
+ **/
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -18,7 +17,7 @@
 
 -->
 
-<html ⚡ xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 	<head>
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
@@ -157,11 +156,11 @@
 
 		   	<div id="social">
 				<?php
-					if ($currentLang == "fr"){
-						echo "<h4>GARDEZ LE CONTACT</h4>";
+				if ($currentLang == "fr") {
+					echo "<h4>GARDEZ LE CONTACT</h4>";
 					}
-					else{
-						echo "<h4>Stay in touch</h4>";
+				else {
+					echo "<h4>Stay in touch</h4>";
 					}
 				?>
 
@@ -170,6 +169,8 @@
 			    <a href="https://twitter.com/SynStudio" target="_blank" title="Twitter" id="lnk-twitter">Twitter</a>
 			    <a href="https://www.youtube.com/user/SynStudioMontreal" target="_blank" title="You Tube" id="lnk-youtube">YouTube</a>
 
-				</div>
+		   	</div>
+
 		</div>
+
 	</div> <!-- header: end....wrapper ends in footer.php -->
