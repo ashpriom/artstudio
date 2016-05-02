@@ -102,7 +102,8 @@
 		<div id="wrapper"> <!-- Main Content Wrapper: Start, ends in footer -->
 		<div id="header"> <!-- header: start -->
 
-			<?php <!-- pop-up message: start -->
+			<!-- pop-up message: start -->
+			<?php
 	  	if($currentLang=="en"){ $cat = 'Pop-up Message'; } else{ $cat = 'Pop-up Message FR'; }
 	  	$catID = get_cat_ID($cat);
 	  	query_posts('cat=' . $catID);
@@ -122,7 +123,8 @@
 				echo '});</script>';
 			endwhile;
 			wp_reset_query();
-	  	?> <!-- pop-up message: end -->
+	  	?>
+			<!-- pop-up message: end -->
 
 			<div id="logo">
 				<?php if($currentLang=="en"){ ?><a href="/home/">Syn Studio - Art School</a> <?php }
