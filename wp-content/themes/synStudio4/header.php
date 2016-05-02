@@ -2,18 +2,21 @@
 /**
  * @package WordPress
  * @subpackage SynStudio_Theme
- */	
+ *
+ * header.php is loaded in all pages except - concept art diploma pages and specific pages stated in single.php, which is used to load special headers depending on certain post IDs.
+ */
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<!--     _______.____    ____ .__   __.         _______..___________. __    __   _______   __    ______   
-    /       |\   \  /   / |  \ |  |        /       ||           ||  |  |  | |       \ |  |  /  __  \  
-   |   (----` \   \/   /  |   \|  |       |   (----``---|  |----`|  |  |  | |  .--.  ||  | |  |  |  | 
-    \   \      \_    _/   |  . `  |        \   \        |  |     |  |  |  | |  |  |  ||  | |  |  |  | 
-.----)   |       |  |     |  |\   |    .----)   |       |  |     |  `--'  | |  '--'  ||  | |  `--'  | 
-|_______/        |__|     |__| \__|    |_______/        |__|      \______/  |_______/ |__|  \______/  
-                                                                                                      
+<!--     _______.____    ____ .__   __.         _______..___________. __    __   _______   __    ______
+    /       |\   \  /   / |  \ |  |        /       ||           ||  |  |  | |       \ |  |  /  __  \
+   |   (----` \   \/   /  |   \|  |       |   (----``---|  |----`|  |  |  | |  .--.  ||  | |  |  |  |
+    \   \      \_    _/   |  . `  |        \   \        |  |     |  |  |  | |  |  |  ||  | |  |  |  |
+.----)   |       |  |     |  |\   |    .----)   |       |  |     |  `--'  | |  '--'  ||  | |  `--'  |
+|_______/        |__|     |__| \__|    |_______/        |__|      \______/  |_______/ |__|  \______/
+
 -->
 
 <html ⚡ xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
@@ -39,14 +42,13 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
 		<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
-		<script async src="https://cdn.ampproject.org/v0.js"></script>
 
 		<?php wp_enqueue_script("jquery"); ?>
-		<?php $options = get_option( 'sample_theme_options' ); ?> 
+		<?php $options = get_option( 'sample_theme_options' ); // loads theme options used for registration dedline notices. See theme_options_do_page() in functions.php  ?>
 		<?php wp_head(); ?>
 
-		<?php 
-		if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); }
+		<?php
+	if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); /* See polylang documentation polylang.wordpress.com/documentation/documentation-for-developers/functions-reference/ */ }
 		if ($currentLang == "fr") { ?>
 			<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-fr.css" type="text/css" media="screen" />
 		<?php }
@@ -56,19 +58,20 @@
 
 		<style>
 			#mobile-header { display: none; }
-			@media only screen and (max-width: 768px){
+			@media only screen and (max-width: 768px){ /* Load mobile menu for screen sizes 767px and below. See footer.php for detailed implementation */
 				#mobile-header { display: block;}
 				#nav-wrapper { display: none; }
 			}
 		</style>
 
+		<!-- Popup Message Cookie -->
 		<script type="text/javascript">
 			jQuery( document ).ready(function( $ ) {
 			 	$("#close-msg").bind( "click", function() {
 					$("#popup-message").hide();
 					$.cookie("syn-popup", "true", { path: '/' });
 					//alert($.cookie("syn-popup"));
-				});	
+				});
 			});
 		</script>
 
@@ -94,12 +97,12 @@
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-MJ8KT7');</script>
         <!-- End Google Tag Manager -->
-        
+
 		<?php remove_filter ('the_content', 'wpautop'); ?>
-		
-		<div id="wrapper"> <!-- Main Content Wrapper: Start -->
+
+		<div id="wrapper"> <!-- Main Content Wrapper: Start, ends in footer -->
 		<div id="header"> <!-- header: start -->
-	  	
+
 	  	<!-- pop-up message: start -->
 		<?php
 	  	if($currentLang=="en"){ $cat = 'Pop-up Message'; } else{ $cat = 'Pop-up Message FR'; }
@@ -118,30 +121,30 @@
 			echo '} else {';
 			echo '$("#popup-message").show();';
 			echo '}';
-			echo '});</script>';		
+			echo '});</script>';
 		endwhile;
 		wp_reset_query();
 	  	?>
   		<!-- pop-up message: end -->
- 
+
 		<div id="logo">
 			<?php if($currentLang=="en"){ ?><a href="/home/">Syn Studio - Art School</a> <?php }
 			else{ ?><a href="/francais/">Syn Studio - École d’art à Montréal</a> <?php } ?>
 		</div>
- 
+
 		<div id="language">
-   			<div class="phone">514 998-7625</div>   	
-   			<?php if (function_exists('pll_the_languages')){ 
-   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); }
+   			<div class="phone">514 998-7625</div>
+   			<?php if (function_exists('pll_the_languages')){
+   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); // See Polylang reference }
    			?>
 		</div>
-  
+
 		<div id="nav">
-	
+
 			<div id="mobile-header">
 				<a id="responsive-menu-button" href="#sidr-main"><img alt="Toggle menu" src="<?php echo get_template_directory_uri(); ?>/images/responsive/mobi-toogleMenu.png"></a>
 			</div>
- 
+
 		  	<div id="nav-wrapper">
 				<?php
 				if ($currentLang == "fr") {
@@ -152,14 +155,14 @@
 					}
 				?>
 		   	</div>
-	   
+
 		   	<div id="social">
 				<?php
-				if ($currentLang == "fr") {
-					echo "<h4>GARDEZ LE CONTACT</h4>";
+					if ($currentLang == "fr"){
+						echo "<h4>GARDEZ LE CONTACT</h4>";
 					}
-				else {
-					echo "<h4>Stay in touch</h4>";
+					else{
+						echo "<h4>Stay in touch</h4>";
 					}
 				?>
 
@@ -168,8 +171,6 @@
 			    <a href="https://twitter.com/SynStudio" target="_blank" title="Twitter" id="lnk-twitter">Twitter</a>
 			    <a href="https://www.youtube.com/user/SynStudioMontreal" target="_blank" title="You Tube" id="lnk-youtube">YouTube</a>
 
-		   	</div>
- 
+				</div>
 		</div>
- 
 	</div> <!-- header: end....wrapper ends in footer.php -->

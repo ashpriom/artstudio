@@ -2,6 +2,9 @@
 /**
  * @package WordPress
  * @subpackage SynStudio_Theme
+ *
+ * footer.php is loaded in all webpages, except concept art diploma pages.
+ *
  */
 
 if (function_exists('pll_current_language')) { $currentLang = pll_current_language('slug'); }
