@@ -42,7 +42,9 @@
 		<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
 
 		<?php wp_enqueue_script("jquery"); ?>
-		<?php $options = get_option( 'sample_theme_options' ); // loads theme options used for registration dedline notices. See theme_options_do_page() in functions.php  ?>
+		<?php
+			$options = get_option( 'sample_theme_options' ); // loads theme options used for registration dedline notices. See theme_options_do_page() in functions.php
+		?>
 		<?php wp_head(); ?>
 
 		<?php
@@ -134,7 +136,8 @@
 			<div id="language">
    			<div class="phone">514 998-7625</div>
    			<?php if (function_exists('pll_the_languages')){
-   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); // See Polylang reference }
+   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); // See Polylang reference
+				}
    			?>
 			</div>
 
@@ -164,7 +167,5 @@
 					<a href="https://twitter.com/SynStudio" target="_blank" title="Twitter" id="lnk-twitter">Twitter</a>
 				  <a href="https://www.youtube.com/user/SynStudioMontreal" target="_blank" title="You Tube" id="lnk-youtube">YouTube</a>
 				</div>
-
-		</div>
-
-	</div> <!-- header: end....wrapper ends in footer.php -->
+			</div>
+		</div> <!-- header: end....wrapper ends in footer.php -->
