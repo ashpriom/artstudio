@@ -39,7 +39,7 @@
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
-		<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+		<script src="//cdn.tinymce.com/4/tinymce.min.js"></script> <!-- CDN transfer, previosuly tinymce.cachefly.net/4.1/tinymce.min.js -->
 
 		<?php wp_enqueue_script("jquery"); ?>
 		<?php

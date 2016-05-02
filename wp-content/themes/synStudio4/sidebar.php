@@ -19,8 +19,8 @@ if($currentLang=="en"){
   query_posts(array(
 		'showposts' => 1,
 		'orderby' => 'date',
-    'order' => 'asc',
-		'category_name' => 'Testimonials' //You can insert any category name
+    'order' => 'desc',
+		'category_name' => 'Testimonials' // Code Reuse: You can insert any category name
 	));
 }
 
@@ -29,8 +29,8 @@ else{
   query_posts(array(
     'showposts' => 1,
     'orderby' => 'date',
-    'order' => 'asc',
-    'category_name' => 'testimonials-fr' //You can insert any category name
+    'order' => 'desc',
+    'category_name' => 'testimonials-fr' // Code Reuse: You can insert any category name
   ));
 }
 
@@ -56,7 +56,7 @@ else{
     <div id="twitter">
       <div class="twitter-sideBar">
         <?php
-        echo getTwitterFollowers('SynStudio');
+        echo getTwitterFollowers('SynStudio'); // see functions.php for reference
         echo '<div class="followers">Followers</div>';
         ?>
         <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true" data-count="none" data-via="SynStudio" data-text="I'm checking out Syn Studio Art School right now!">Tweet</a>
