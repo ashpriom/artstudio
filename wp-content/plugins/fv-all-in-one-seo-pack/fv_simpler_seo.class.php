@@ -89,7 +89,9 @@ class FV_Simpler_SEO_Pack extends FV_Simpler_SEO_Plugin
       update_option( $this->plugin_slug.'_deferred_notices', $deferred.'FV Simpler SEO will from now on automatically add Facebook Open Graph and Twitter Card meta tags to your posts. You can disable this option in its <a href="'.$this->get_admin_page_url().'">Settings</a>.' );     
     }
     
-    global $fvseop_default_options;    
+    global $fvseop_default_options;
+    if( $fvseop_default_options === null ) return;
+    
     $fvseop_options = array_merge( $fvseop_default_options, $fvseop_options );
     update_option( 'aioseop_options', $fvseop_options );
     
@@ -323,67 +325,37 @@ class FV_Simpler_SEO_Pack extends FV_Simpler_SEO_Plugin
     return $strSlug;
   }
   
-
-  function EditPostSlug( $strSlug, $idPost = null, $strPostStatus = null, $strPostType = null, $idPostParent = null ){
-    global $fvseop_options, $wpdb;
-
-    if( !$fvseop_options['aiosp_shorten_slugs'] || $strPostType == 'revision' )
-    return $strSlug;
+  function fvseo_unique_post_slug( $slug, $post_ID, $post_status, $post_type, $post_parent, $original_slug ){
+    global $fvseop_options, $post;
     
-    if( !$idPost ){
-      if( isset( $_GET['post'] ) )
-        $idPost = intval( $_GET['post'] );
-      if( isset( $_POST['post_id'] ) )
-        $idPost = intval( $_POST['post_id'] );
-      if( isset( $_POST['post_ID'] ) )
-        $idPost = intval( $_POST['post_ID'] );
+    //file_put_contents( ABSPATH . 'wp_unique_post_slug.txt', date('r')."\n".var_export( array( $slug, $post_ID, $post_status, $post_type, $post_parent, $original_slug ), true ), FILE_APPEND );
+    
+    if( !isset($fvseop_options['aiosp_shorten_slugs']) || !$fvseop_options['aiosp_shorten_slugs'] )
+      return $slug;
+    
+    
+    if( null === $post ){
+      // get the link on auto-draft edit screen:
+      
+      if( !isset( $_POST['action'] ) || isset( $_POST['new_slug'] ) )
+        return $slug;
+      
+      //post-status is hacked during ajax call on auto-draft, we need to get it via separate function:
+      $status = get_post_status( $post_ID );
+      
+      if( ! in_array( $status, array( 'draft' ) ) )
+        return $slug;
+    }
+    else{
+      // publishing post:
+      
+      if( !empty( $_POST['post_name'] ) || !empty( $post->post_name ) )
+        return $slug;
     }
     
-    if( !$idPost ) {
-      $strSlug = $this->GeneratePostSlug( $strSlug, false );
-    } else if ( isset($_POST['new_slug']) && $_POST['new_slug'] == '' ) {
-      $strSlug = $this->GeneratePostSlug( $strSlug, $idPost );
-    }
-    
-    return $strSlug;
+    $slug = $this->GeneratePostSlug( $slug, $post_ID );
+    return $slug;
   }
-  
-  function SavePostSlug( $aData, $aPostArg ){
-    global $fvseop_options;
-    
-    if( !$fvseop_options['aiosp_shorten_slugs'] || $aPostArg['post_type'] == 'revision' )
-      return $aData;
-    
-    if( isset( $aPostArg['post_id'] ) )
-      $idPost = intval( $aPostArg['post_id'] );
-    if( isset( $aPostArg['post_ID'] ) )
-      $idPost = intval( $aPostArg['post_ID'] );
-    if( isset( $aPostArg['ID'] ) )
-      $idPost = intval( $aPostArg['ID'] );
-    if( isset( $aData['ID'] ) )
-      $idPost = intval( $aData['ID'] );
-    
-    if( !$aData['post_name'] ){
-      $this->idEmptyPostName = $idPost;
-      $this->strTitleForReference = $aData['post_title'];
-    }
-    
-    return $aData;
-  }
-  
-  function SanitizeTitleForShortening( $strTitle, $strRawTitle = '', $strContext = false ){
-    global $fvseop_options;    
-    
-    if( isset($fvseop_options['aiosp_shorten_slugs']) && $fvseop_options['aiosp_shorten_slugs'] && $strContext == 'save' && $this->idEmptyPostName && $strRawTitle == $this->strTitleForReference ) {
-      $strTitle = $this->GeneratePostSlug( $strTitle, $this->idEmptyPostName );
-    }
-    
-    return $strTitle;
-  }
-
-
-
-
 
   /**
    * Runs after WordPress admin has finished loading but before any headers are sent.
@@ -2459,7 +2431,17 @@ class FV_Simpler_SEO_Pack extends FV_Simpler_SEO_Plugin
                 <div style="max-width:500px; text-align:left; display:none" id="fvseo_dont_use_excerpt_tip">
                   <?php _e("Since Typepad export is containing auto generated excerpts for the most of the time we use this option a lot.", 'fv_seo'); ?>
                 </div>
-            </p>  
+            </p>
+            <p>
+                <a style="cursor:pointer;" title="<?php _e('Click for Help!', 'fv_seo')?>" onclick="toggleVisibility('fv_seo_ads_disabled_tip');">
+                <?php _e('Disable ads:', 'fv_seo')?>
+                </a>
+            
+                <input type="checkbox" name="fv_seo_ads_disabled" <?php if ( get_option('fv_seo_ads_disabled') ) echo "checked=\"1\""; ?>/>
+                <div style="max-width:500px; text-align:left; display:none" id="fv_seo_ads_disabled_tip">
+                  With this feature you can use code like <tt>!get_option('fv_seo_ads_disabled')</tt> in your <a href="https://wordpress.org/plugins/widget-logic/" target="_blank">Widget Logic</a> conditions to make all ad widgets disappear at once.
+                </div>
+            </p>             
   <?php
   }
   
@@ -2693,6 +2675,13 @@ class FV_Simpler_SEO_Pack extends FV_Simpler_SEO_Plugin
       $fvseop_options['aiosp_cap_cats'] = '1';
     
     if( isset($_POST['action']) && $_POST['action'] == 'fvseo_update'){
+      
+      if( isset($_POST['fv_seo_ads_disabled']) ) {
+        update_option('fv_seo_ads_disabled', 1 );
+      } else {
+        update_option('fv_seo_ads_disabled', 0 );
+      }
+      
       
       if( isset( $_POST['Submit_Default'] ) && $_POST['Submit_Default'] != '')
       {
@@ -3197,7 +3186,7 @@ add_meta_box( 'fv_simpler_seo_import', 'Import', array( $this, 'admin_settings_i
           
       
       if( !$title = stripcslashes( get_post_meta($post->ID, '_aioseop_title', true) ) ) {
-        $title = get_the_title();
+        $title = strip_tags( get_the_title() );
       }
       
       $title = esc_attr( __($this->internationalize($title)) );
