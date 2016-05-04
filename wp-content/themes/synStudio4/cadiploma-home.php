@@ -9,7 +9,7 @@ Template Name: Concept Art Diploma - Home
 
 ?>
 
-<?php get_header('microsite'); ?>
+<?php get_header('microsite'); ?> <!-- CAD header -->
 <?php if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); } ?>
 
     <body>
@@ -74,20 +74,20 @@ Template Name: Concept Art Diploma - Home
             <div class="nav-social hidden-xs hidden-sm">
                 <ul class="menu social-links-menu text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-white.png" alt="" /></a></li>
                     <li><a class="social-media-icons" href="https://twitter.com/synstudio"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-social-icon-white.png" alt="" /></a></li>
-                    <li><a class="social-media-icons" href="https://www.youtube.com/user/SynStudioMontreal"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube-social-icon-white.png" alt="" /></a></li>   
+                    <li><a class="social-media-icons" href="https://www.youtube.com/user/SynStudioMontreal"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube-social-icon-white.png" alt="" /></a></li>
                 </ul>
             </div>
             <div class="nav-social hidden-md hidden-lg">
                 <ul class="menu social-links-menu-dark text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-black.png" alt="" /></a></li>
@@ -97,7 +97,7 @@ Template Name: Concept Art Diploma - Home
             </div>
             <h1 class="header-title shadow-text-dark orange-text"><small class="white-text"><?php if($currentLang == "en"){ ?>You want to be a<?php } else{ ?>Vous voulez être<?php } ?></small><br /><?php if($currentLang == "en"){ ?>Concept Artist<?php } else{ ?>concept artist<?php } ?></h1>
         </div> <!-- HEADER ends here from header-microsite.php -->
-        
+
         <!-- MAIN CONTENT -->
         <div class="main-content-container">
             <div class="container-fluid section-highlight" id="section-highlight1" style="background-image:none !important; min-height: 325px !important;">
@@ -117,8 +117,8 @@ Template Name: Concept Art Diploma - Home
                 <div class="row">
                     <div class="bx-wrapper-row">
                         <ul class="bxslider">
-                            <li class="slide"><img src="<?php echo get_template_directory_uri(); ?>/images/01_Jeong H. Shin.jpg" alt="shin" title="Jeong H. Shin"></li>          
-                            <li class="slide"><img src="<?php echo get_template_directory_uri(); ?>/images/07_Remko Troost.png" alt="remko" title="Remko Troost"></li>           
+                            <li class="slide"><img src="<?php echo get_template_directory_uri(); ?>/images/01_Jeong H. Shin.jpg" alt="shin" title="Jeong H. Shin"></li>
+                            <li class="slide"><img src="<?php echo get_template_directory_uri(); ?>/images/07_Remko Troost.png" alt="remko" title="Remko Troost"></li>
                             <li class="slide"><img src="<?php echo get_template_directory_uri(); ?>/images/02_Daniel Kvasznicza.png" alt="daniel" title="Daniel Kvasznicza"></li>
                             <li class="slide"><img src="<?php echo get_template_directory_uri(); ?>/images/04_Donglu Yu.png" alt="donglu" title="Donglu Yu"></li>
                             <li class="slide"><img src="<?php echo get_template_directory_uri(); ?>/images/05_Frédéric Bennett.png" alt="bennet" title="Frédéric Bennett"></li>
@@ -139,7 +139,7 @@ Template Name: Concept Art Diploma - Home
                         'What can I<br /> do to take my skills to the highest level?'<span class="fancy-quotations"> "</span>
                         <?php } else{ ?>
                         <span class="fancy-quotations">" </span>
-                        Nous voulons tous que notre art soit la représentation parfaite de l'image<br /> 
+                        Nous voulons tous que notre art soit la représentation parfaite de l'image<br />
                         que nous en avons dans notre esprit. Notre but est d’avoir cette capacité de produire<br />
                         des images qui projettent notre potentiel. Mais nous devons aussi nous demander <br />
                         que puis-je faire pour que mes compétences atteignent leur meilleur niveau?<span class="fancy-quotations"> "</span>
@@ -208,7 +208,7 @@ Template Name: Concept Art Diploma - Home
 
             <div class="container-fluid section-highlight" id="section-highlight6">
                 <div class="row hidden-overflow-section">
-                    
+
                     <!--View in medium to large screen-->
                     <p class="shadow-text-dark hidden-xs hidden-sm hidden-md camera-text">
                         <?php if($currentLang == "en"){ ?> Some films<br /> and games<br /> made here:
