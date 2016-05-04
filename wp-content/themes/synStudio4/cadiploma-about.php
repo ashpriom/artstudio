@@ -2,6 +2,7 @@
 /**
  * @package WordPress
  * @subpackage SynStudio_Theme
+ * This file corresponds to the CAD About page.
  */
 /*
 Template Name: Concept Art Diploma - About
@@ -13,12 +14,12 @@ Template Name: Concept Art Diploma - About
 
 <script type="text/javascript">
     function toggleDiv(divId){
-      $("#"+divId).toggle("6000");
+      $("#"+divId).toggle("6000"); // used to toggle visibility of section containing all people Syn Studio thanks. Hidden by default.
     }
 </script>
 
 <script type="text/javascript">
-    function changeImage(){
+    function changeImage(){ // Toggle between more and less icons for thank you section.
         if (document.getElementById("imgClickAndChange").src == "<?php bloginfo('template_directory'); ?>/css/images/cadiplomaAbout/more.png"){
             document.getElementById("imgClickAndChange").src = "<?php bloginfo('template_directory'); ?>/css/images/cadiplomaAbout/less.png";
         }
@@ -73,20 +74,20 @@ Template Name: Concept Art Diploma - About
             <div class="nav-social hidden-xs hidden-sm">
                 <ul class="menu social-links-menu text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-white.png" alt="" /></a></li>
                     <li><a class="social-media-icons" href="https://twitter.com/synstudio"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-social-icon-white.png" alt="" /></a></li>
-                    <li><a class="social-media-icons" href="https://www.youtube.com/user/SynStudioMontreal"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube-social-icon-white.png" alt="" /></a></li>                
+                    <li><a class="social-media-icons" href="https://www.youtube.com/user/SynStudioMontreal"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube-social-icon-white.png" alt="" /></a></li>
                 </ul>
             </div>
             <div class="nav-social hidden-md hidden-lg">
                 <ul class="menu social-links-menu-dark text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-black.png" alt="" /></a></li>
@@ -214,7 +215,7 @@ Template Name: Concept Art Diploma - About
             </div>
             <br />
 
-            <!-- Teacher slideshow with bxslider...see main.js for JS. -->
+            <!-- Teacher slideshow with bxslider...see the script loaded at the end of this file for implementation. The language of hover text is fired depending on Polylang's language detection -->
             <ul class="bxslider-teachers">
                 <li>
                     <div class="row row-75percent">
@@ -323,7 +324,7 @@ Template Name: Concept Art Diploma - About
                             </div>
                         </div>
                     </div>
-                </li>                
+                </li>
             </ul>
             <div class="outside">
                 <p><span id="slider-prev"></span>   <span id="slider-next"></span></p>
@@ -544,7 +545,7 @@ Template Name: Concept Art Diploma - About
     </div> <!-- end MAIN CONTENT -->
 
     <?php } else{ ?>
-        
+
         <div class="off-canvas-menu-wrap">
             <a class="close-button" id="close-button" href="#">Fermer Menu</a>
             <ul class="menu off-canvas-menu">
@@ -578,8 +579,8 @@ Template Name: Concept Art Diploma - About
             <div class="nav-social hidden-xs hidden-sm">
                 <ul class="menu social-links-menu text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-white.png" alt="" /></a></li>
@@ -590,8 +591,8 @@ Template Name: Concept Art Diploma - About
             <div class="nav-social hidden-md hidden-lg">
                 <ul class="menu social-links-menu-dark text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-black.png" alt="" /></a></li>
@@ -690,7 +691,7 @@ Template Name: Concept Art Diploma - About
                 <br />
             </div>
             <br />
-            
+
             <!-- Teacher slideshow with bxslider...see main.js for JS. -->
             <ul class="bxslider-teachers">
                 <li>
@@ -879,7 +880,7 @@ Template Name: Concept Art Diploma - About
                         <p class="personname">Adrian Bobb</p>
                         <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
                         <p class="persondescription orange-text">directeur artistique, artiste concepteur indépendant et professeur</p>
-                    </div>   
+                    </div>
             </div>
             <br />
             <div class="row row-80percent">
@@ -902,7 +903,7 @@ Template Name: Concept Art Diploma - About
                         <p class="personname">Nick Oroc</p>
                         <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
                         <p class="persondescription orange-text">artiste concepteur sénior</p>
-                    </div> 
+                    </div>
             </div>
             <br />
             <div class="row row-80percent">
@@ -920,12 +921,12 @@ Template Name: Concept Art Diploma - About
                         <p class="personname">Sean Samuels</p>
                         <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
                         <p class="persondescription orange-text">artiste concepteur et matte painter sénior</p>
-                    </div>  
+                    </div>
             </div>
             <br />
             <h3>
                 <br />
-                    Un grand remerciement à tous ceux qui ne sont pas cités dans la liste ci-dessus mais<br /> 
+                    Un grand remerciement à tous ceux qui ne sont pas cités dans la liste ci-dessus mais<br />
                     qui ont joué un rôle décisif dans la rédaction de notre candidature et ceux que nous avons cité dans notre rapport sectoriel :
                 <br /><br />
             </h3>
@@ -951,7 +952,7 @@ Template Name: Concept Art Diploma - About
                         <p class="personname">Davide Tabacco</p>
                         <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
                         <p class="persondescription orange-text">producteur</p>
-                    </div> 
+                    </div>
             </div>
             <br />
             <div class="row row-80percent">
@@ -969,7 +970,7 @@ Template Name: Concept Art Diploma - About
                         <p class="personname">Olivia Bowman</p>
                         <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
                         <p class="persondescription orange-text">chercheur</p>
-                    </div>  
+                    </div>
             </div>
             <br />
             <br />
@@ -1012,7 +1013,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile2 .hovertext2").hide();
             });
-        });  
+        });
 
         $(document).ready(function(){
             jQuery(".tile3").append("<p class='hovertext3'><?php if($currentLang=="en"){echo "Jeong H.Shin designed many vehicles and props for the video game Watch Dogs.";} else{ echo "Jeong H.Shin a créé les principaux véhicules et accessoires pour le jeu vidéo Watch Dogs.";} ?></p>");
@@ -1022,7 +1023,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile3 .hovertext3").hide();
             });
-        });  
+        });
 
         $(document).ready(function(){
             jQuery(".tile4").append("<p class='hovertext4'><?php if($currentLang=="en"){echo "Several of our instructors worked as senior concept artists on the main characters and main environments of the video game Deux Ex : Human Revolution.";} else{ echo "Plusieurs de nos instructeurs ont travaillé sur les principaux personnages et les principaux environnements du jeu Deus Ex : Human Revolution.";} ?></p>");
@@ -1032,7 +1033,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile4 .hovertext4").hide();
             });
-        });  
+        });
 
         $(document).ready(function(){
             jQuery(".tile5").append("<p class='hovertext5'><?php if($currentLang=="en"){echo "Several Syn Studio Instructors designed props and environments for the Batman games.";} else{ echo "Plusieurs professeurs de Syn Studio ont aussi créé des accessoires et des décors pour les jeux vidéo de la série des Batman.";} ?></p>");
@@ -1042,7 +1043,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile5 .hovertext5").hide();
             });
-        });  
+        });
 
         $(document).ready(function(){
             jQuery(".tile6").append("<p class='hovertext6'><?php if($currentLang=="en"){echo "Our instructor Meinert Hansen created 65 key frame illustrations for the film 300.";} else{ echo "Notre professeur Meinert Hansen a réalisé 65 illustrations pour le film 300.";} ?></p>");
@@ -1072,7 +1073,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile8 .hovertext8").hide();
             });
-        });  
+        });
 
         $(document).ready(function(){
             jQuery(".tile9").append("<p class='hovertext9'><?php if($currentLang=="en"){echo "Several of our instructors designed environments, characters and vehicles for the game Far Cry 3.";} else{ echo "Plusieurs de nos instructeurs ont dessiné des décors, des personnages et des véhicules pour le jeu Far Cry 3.";} ?></p>");
@@ -1082,7 +1083,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile9 .hovertext9").hide();
             });
-        });  
+        });
 
         $(document).ready(function(){
             jQuery(".tile10").append("<p class='hovertext10'><?php if($currentLang=="en"){echo "Our instructor Christopher Cao helped to design the characters on the video game Tom Clancy’s Splinter Cell : Conviction.";} else{ echo "Notre instructeur Christopher Cao  a aidé dans le design de plusieurs personnages dans le jeu Tom Clancy’s Splinter Cell : Conviction.";} ?></p>");
@@ -1092,7 +1093,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile10 .hovertext10").hide();
             });
-        });  
+        });
 
         $(document).ready(function(){
             jQuery(".tile11").append("<p class='hovertext11'><?php if($currentLang=="en"){echo "Several of our instructors designed environments, characters and props for the video game Assassin’s Creed : Unity.";} else{ echo "Plusieurs de nos instructeurs ont dessiné des environnements, des personnages, et des accessoires pour le jeu video Assassin’s Creed : Unity.";} ?></p>");
@@ -1102,7 +1103,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile11 .hovertext11").hide();
             });
-        });  
+        });
 
         $(document).ready(function(){
             jQuery(".tile12").append("<p class='hovertext12'><?php if($currentLang=="en"){echo "Our instructor Xin Ran Liu, was lead artist on Moon Hunters, one of the biggest Kickstarter indy game successes of 2014.";} else{ echo "Notre instructeur Xin Ran Liu fut l'artiste principal de Moon Hunters, l'un des plus gros succès Kickstarter en tant que jeu indépendant de 2014.";} ?></p>");
@@ -1132,7 +1133,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile14 .hovertext14").hide();
             });
-        });  
+        });
 
         $(document).ready(function(){
             jQuery(".tile15").append("<p class='hovertext15'><?php if($currentLang=="en"){echo "Several of our instructors designed environments for the movie Beauty and the Beast.";} else{ echo "Plusieurs de nos instructeurs ont aidé dans la conception de décors pour le film la Belle et la Bête.";} ?></p>");
@@ -1142,7 +1143,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile15 .hovertext15").hide();
             });
-        });  
+        });
 
         $(document).ready(function(){
             jQuery(".tile16").append("<p class='hovertext16'><?php if($currentLang=="en"){echo "Our instructor Dhamindra Jeevan designed alien planets for the Emmy award winning TV show Cosmos: A Spacetime Odyssey.";} else{ echo "Notre  instructeur Dhamindra Jeevan a créé les planètes ‘aliens’ pour la série TV récompensée aux Emmy, Cosmos : Une odyssée à travers l’univers.";} ?></p>");
@@ -1152,7 +1153,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile16 .hovertext16").hide();
             });
-        });  
+        });
 
         $(document).ready(function(){
             jQuery(".tile17").append("<p class='hovertext17'><?php if($currentLang=="en"){echo "Several of our instructors designed environments, characters and props for the video game Assassin’s Creed : Brotherhood.";} else{ echo "Plusieurs de nos instructeurs ont créé des décors, des personnages et des accessoires pour le jeu vidéo Assassin’s Creed : Brotherhood.";} ?></p>");
@@ -1162,7 +1163,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile17 .hovertext17").hide();
             });
-        });  
+        });
 
         $(document).ready(function(){
             jQuery(".tile18").append("<p class='hovertext18'><?php if($currentLang=="en"){echo "Our instructor Meinert Hansen designed the main house and other environments for The Spiderwick Chronicles.";} else{ echo "Notre instructeur Meinert Hansen  a dessiné la maison principale et d’autres décors pour le film Les Chroniques de Spiderwick.";} ?></p>");
@@ -1172,7 +1173,7 @@ Template Name: Concept Art Diploma - About
             }).mouseout(function(){
                 jQuery(".tile18 .hovertext18").hide();
             });
-        });        
+        });
     </script>
 
 <?php get_footer('microsite'); ?>
