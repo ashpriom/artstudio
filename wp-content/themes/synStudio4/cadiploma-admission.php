@@ -1173,7 +1173,7 @@ Template Name: Concept Art Diploma - Admission
             <p class="synstudio-logo-text-en">Art school</p>
         </div>
             <div class="nav-social hidden-xs hidden-sm">
-                <ul class="menu social-links-menu text-right">Uncaught
+                <ul class="menu social-links-menu text-right">
                     <li>
                         <?php if (function_exists('pll_the_languages')){
                             pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
