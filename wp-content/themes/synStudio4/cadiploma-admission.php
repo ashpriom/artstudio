@@ -9,6 +9,7 @@ Template Name: Concept Art Diploma - Admission
 
 ?>
 <?php get_header('microsite'); ?>
+
 <?php if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); } ?>
 
 <script type="text/javascript">
@@ -33,7 +34,9 @@ Template Name: Concept Art Diploma - Admission
 
 <script type="text/javascript">
 
-    /*jQuery(document).ready(function(){
+/* floating menu script
+
+    jQuery(document).ready(function(){
       $('.scroll-link').on('click', function(event){
         event.preventDefault();
         var sectionID = $(this).attr("data-id");
@@ -74,7 +77,8 @@ Template Name: Concept Art Diploma - Admission
           $('#headeroo').removeClass('fixed');
         }
         });
-    });*/
+    });
+*/
 
 </script>
 
@@ -147,7 +151,8 @@ Template Name: Concept Art Diploma - Admission
         <h1 class="header-title shadow-text white-text"><small class="white-text">Program</small><br />Details</h1>
     </div> <!-- end HEADER -->
 
-    <!--<div id="headeroo">  MAIN CONTENT
+    <!-- This is the floating menu -->
+    <!--<div id="headeroo">
     <div>
         <div class="container">
             <nav class="navbar navbar-inverse" role="navigation">
@@ -174,6 +179,8 @@ Template Name: Concept Art Diploma - Admission
         </div>
     </div>
     </div>-->
+
+    <!-- MAIN CONTENT -->
     <div class="main-content-container">
         <div id="requirements">
         <div class="container-fluid section-highlight" id="section-highlight-intro">
@@ -194,7 +201,7 @@ Template Name: Concept Art Diploma - Admission
                                 </div>
                             </div>
 
-                            <div class="theanswer">
+                            <div class="theanswer"> <!-- Look at the JS function inside anchor, which is used to toggle explanations for yes/no answers -->
                                 <div class="rounded-rectangle-1-holder">
                                     <a class="btn btn-primary btn-orange-theme" href="javascript:toggleDiv('yestext1');" style="padding: 5px 10px;">Yes</a>
                                 </div>
@@ -2055,12 +2062,9 @@ Template Name: Concept Art Diploma - Admission
                             </table>
                         </div>
                     </div>
-                    <div>
-                        <br />
-                            <p class="italicpara">*Certaines conditions peuvent s'appliquer</p>
-                            <!--<br />
-                            <a class="orange-text" href="<?php echo get_template_directory_uri(); ?>/docs/synstudio-admission-process-details-fr.pdf" target="_blank">Cliquer ici pour voir la procédure et les frais d'admission en détails.</a>-->
-                    </div>
+
+                    <div><br /><p class="italicpara">*Certaines conditions peuvent s'appliquer</p></div>
+                    
                     <div class="hidden-xs hidden-sm">
                         <p class="longnote"><strong class="text-style-8"></strong>*Des bourses d'études allant jusqu'à $20 000 dollars canadiens sont disponibles pour les étudiants canadiens (remplir le formulaire ci-dessous pour plus d'informations)</p>
                         <p class="longnote"><strong class="text-style-8">Note</strong>: Pour $29995 dollars canadiens, vous rejoignez un programme d'entraînement dehaut niveau et recevez l'éducation en art conceptuel la plus éstimée de la planète! Le programme similaire le plus abordable après celui-ci se trouve en Asie et est de près de $45 000 dollars canadiens par an (taxes non incluses – veuillez noter que notre programme dure 18 mois)</p>

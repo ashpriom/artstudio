@@ -2,7 +2,7 @@
 /**
  * @package WordPress
  * @subpackage SynStudio_Theme
- * This file corresponds to the CAD About page.
+ * This file corresponds to the concpet art diploma About page.
  */
 /*
 Template Name: Concept Art Diploma - About

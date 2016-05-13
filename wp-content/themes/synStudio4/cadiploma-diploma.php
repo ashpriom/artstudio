@@ -2,6 +2,7 @@
 /**
  * @package WordPress
  * @subpackage SynStudio_Theme
+ * This file corresponds to the concept art diploma - Diploma page
  */
 /*
 Template Name: Concept Art Diploma - Concept Art Diploma Page
@@ -74,8 +75,8 @@ Template Name: Concept Art Diploma - Concept Art Diploma Page
             <div class="nav-social hidden-xs hidden-sm">
                 <ul class="menu social-links-menu text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-white.png" alt="" /></a></li>
@@ -86,8 +87,8 @@ Template Name: Concept Art Diploma - Concept Art Diploma Page
             <div class="nav-social hidden-md hidden-lg">
                 <ul class="menu social-links-menu-dark text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-black.png" alt="" /></a></li>
@@ -103,7 +104,7 @@ Template Name: Concept Art Diploma - Concept Art Diploma Page
 
         </div>
         <p class="header-credit">Art: Dave Fraser</p>
-        
+
         <!-- MAIN CONTENT -->
         <div class="main-content-container">
             <div class="container-fluid section-highlight" id="section-highlight-intro">
@@ -117,14 +118,14 @@ Template Name: Concept Art Diploma - Concept Art Diploma Page
                         in the <strong>entertainment industry</strong>.
                         <br />
                         <br /> This is a <strong>very intensive training</strong> where you will <strong>develop your design</strong> and
-                        
+
                         <strong>illustration skills </strong>while working in an <strong> industry environment,</strong> under the
                         direct supervision of <strong>an instructor</strong> who will act as your <strong>art director</strong>.
                         <?php } else{ ?>
-                        Si vous avez toutes les qualifications requises pour participer à ce <strong style="color:black;">programme d'entraînement élite de 18 mois</strong>, vous recevrez les outils, 
+                        Si vous avez toutes les qualifications requises pour participer à ce <strong style="color:black;">programme d'entraînement élite de 18 mois</strong>, vous recevrez les outils,
                         les techniques, l'entraînement, les compétences et les stratégies dont vous aurez besoin pour créer un <strong style="color:black;">superbe portfolio</strong>
-                        <strong style="color:black;"> afin de vous faire embaucher</strong> dans le secteur.<br><br>Pendant cet <strong style="color:black;">entraînement intensif</strong>, 
-                        vous <strong style="color:black;">développerez vos compétences en conception et en illustration</strong> tout en travaillant dans un <strong style="color:black;">environnement 
+                        <strong style="color:black;"> afin de vous faire embaucher</strong> dans le secteur.<br><br>Pendant cet <strong style="color:black;">entraînement intensif</strong>,
+                        vous <strong style="color:black;">développerez vos compétences en conception et en illustration</strong> tout en travaillant dans un <strong style="color:black;">environnement
                         professionnel</strong>, sous la supervision de <strong style="color:black;">votre instructeur</strong> qui jouera le rôle de <strong style="color:black;">directeur artistique.</strong>
                         <?php } ?>
                         </p>
@@ -466,7 +467,7 @@ Template Name: Concept Art Diploma - Concept Art Diploma Page
         </div>
 
         <?php } ?>
-        
+
         <?php if($currentLang == "en"){ ?>
             <div class="container-fluid section-highlight" id="section-highlight7">
                 <div class="row">

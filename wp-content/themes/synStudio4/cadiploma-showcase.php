@@ -86,8 +86,8 @@ Template Name: Artwork Showcase
             <div class="nav-social hidden-xs hidden-sm">
                 <ul class="menu social-links-menu text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-white.png" alt="" /></a></li>
@@ -98,8 +98,8 @@ Template Name: Artwork Showcase
             <div class="nav-social hidden-md hidden-lg">
                 <ul class="menu social-links-menu-dark text-right">
                     <li>
-                        <?php if (function_exists('pll_the_languages')){ 
-                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,)); 
+                        <?php if (function_exists('pll_the_languages')){
+                            pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
                     <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-black.png" alt="" /></a></li>
@@ -111,12 +111,12 @@ Template Name: Artwork Showcase
         </div>
         <!-- end HEADER -->
         <!-- MAIN CONTENT -->
-            <div> 
+            <div>
               	<?php while ( have_posts() ) : the_post(); ?>
                     <div class="main-content-container" id="section-highlight-showcase">
                         <div class="container-fluid section-highlight">
                             <ul class="menu showcase-menu">
-                                <?php if($currentLang == "en"){ ?>
+                                <?php if($currentLang == "en"){ ?> <!-- Load showcase menu bars in addition to main menu depending on current language -->
                                 <li class="col-md-3"><span>View : <br class="hidden-md hidden-lg"/></span><a href="<?php bloginfo('url'); ?>/student-showcase/">Student Artwork</a></li>
                                 <li class="col-md-3"><a href="<?php bloginfo('url'); ?>/teacher-showcase/">Teacher Artwork</a></li>
                                 <li class="col-md-3"><span>Click image to enlarge</span></li>
@@ -128,7 +128,7 @@ Template Name: Artwork Showcase
                                 <li class="col-md-3"><span>Suivant: </span><a href="<?php bloginfo('url'); ?>/lexperience-syn-studio/">L'expérience Syn Studio</a></li>
                                 <?php } ?>
                             </ul><br />
-                            <div><?php the_content(); ?></div>
+                            <div><?php the_content(); ?></div> <!-- This loads the Smart Grid Gallery plugin shortcode inside the WordPress page editor. The plugin turns the regular gallery to an enhanced one. -->
                         </div>
                     </div>
                 <?php endwhile; ?>
@@ -155,8 +155,8 @@ Template Name: Artwork Showcase
                     <br />
                     <a class="btn btn-primary btn-orange-theme" href="<?php bloginfo('url'); ?>/presentation-professeurs/"> Présentation des enseignants <img class="white-arrow" src="<?php echo get_template_directory_uri(); ?>/images/shape_1.png" alt="Arrow" /></a>
                 </div>
-            </div>                
-            <?php } 
+            </div>
+            <?php }
             if($postID == "11534"){ ?>
                 <div class="container-fluid section-highlight" id="section-highlight7">
                 <div class="row">
@@ -177,7 +177,7 @@ Template Name: Artwork Showcase
                     <br />
                     <a class="btn btn-primary btn-orange-theme" href="<?php bloginfo('url'); ?>/lexperience-syn-studio/"> l'experience syn studio <img class="white-arrow" src="<?php echo get_template_directory_uri(); ?>/images/shape_1.png" alt="Arrow" /></a>
                 </div>
-            </div>                
+            </div>
             <?php } ?>
 
 
