@@ -7,6 +7,7 @@
 Template Name: Concept Art Diploma - Syn Studio Experience
  */
 ?>
+
 <?php get_header('microsite'); ?>
 <?php if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); } ?>
 
@@ -22,7 +23,10 @@ Template Name: Concept Art Diploma - Syn Studio Experience
 </style>
 
 <script type="text/javascript">
-/*jQuery(document).ready(function(){
+
+/* JS for secondary floating menu, not being used right now.
+
+jQuery(document).ready(function(){
   $('.scroll-link').on('click', function(event){
     event.preventDefault();
     var sectionID = $(this).attr("data-id");
@@ -66,10 +70,11 @@ jQuery(document).ready(function (){
     }
     });
 });*/
+
 </script>
 
 <body>
-        <!-- Google Tag Manager -->
+    <!-- Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MJ8KT7"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -77,10 +82,10 @@ jQuery(document).ready(function (){
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-MJ8KT7');</script>
-        <!-- End Google Tag Manager -->
+    <!-- End Google Tag Manager -->
 
-<?php if($currentLang == "en"){ ?>
-        <div class="off-canvas-menu-wrap"> <!-- GO HEADER -->
+    <?php if($currentLang == "en"){ ?>
+        <div class="off-canvas-menu-wrap">
             <a class="close-button" id="close-button" href="#"><?php if($currentLang == "en"){ ?>Close Menu<?php } else{ ?>Fermer Menu<?php } ?></a>
             <ul class="menu off-canvas-menu">
                 <li><a href="<?php bloginfo('url'); ?>/concept-art/">Home</a></li>
@@ -135,10 +140,14 @@ jQuery(document).ready(function (){
                 </ul>
             </div>
             <h1 class="header-title shadow-text-dark orange-text"><small class="white-text">The Syn Studio</small><br />Experience</h1>
-        </div> 
-        <p class="header-credit">Art: Xin Ran Liu</p> <!-- X HEADER -->
+        </div>
 
-         <!-- GO MAIN CONTENT 
+        <p class="header-credit">Art: Xin Ran Liu</p> <!-- very important to give image credit where due -->
+
+        <!-- MAIN CONTENT 
+        
+        HTML for the secondary floating menu, currently inactive
+
         <div id="headeroo" class="shortheader" style="margin-top:-30px;">
             <div>
             <div class="container">
@@ -165,6 +174,7 @@ jQuery(document).ready(function (){
             </div>
             </div>
         </div>-->
+
         <div class="main-content-container">
             <div class="container-fluid section-highlight general-content exp-highlight">
                 <br />
@@ -177,7 +187,7 @@ jQuery(document).ready(function (){
                                     <h3 class="experience-headline-title">The City</h3>
                                     <p class="experience-quote">
                                         Creative, Artistic, Safe,
-                                        <br />Affordable, Fun, Healthy
+                                        <br />Affordable, Fun, Healthy <!-- These br tags are there for forced line break to improve readability -->
                                     </p>                                    
                                 </div>
                             </div>

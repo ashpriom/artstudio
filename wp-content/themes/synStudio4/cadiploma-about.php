@@ -303,7 +303,7 @@ Template Name: Concept Art Diploma - About
                         </div>
                         <div class="col-md-4">
                             <div class="tile15">
-                                <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/15_teachers_belle_bete.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/15_teachers_belle_bete.jpg" alt="Belle Bete">
                             </div>
                         </div>
                     </div>
