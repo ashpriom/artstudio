@@ -41,7 +41,6 @@
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
 		<script src="//cdn.tinymce.com/4/tinymce.min.js"></script> <!-- CDN transfer, previosuly tinymce.cachefly.net/4.1/tinymce.min.js -->
 		<?php wp_enqueue_script("jquery"); ?>
-		<script>jQuery.noConflict();</script>
 		
 		<?php
 			$options = get_option( 'sample_theme_options' ); // loads theme options used for registration dedline notices. See theme_options_do_page() in functions.php

@@ -943,7 +943,7 @@ Template Name: Concept Art Diploma - Admission
                                 <tbody>
                                     <tr class="grey-table-row">
                                         <td>1</td>
-                                        <td>Submit for the Initial Portfolio/Application Review (receive feedback from a professional concept artist and the chance to reapply free of charge if your portfolio doesn’t pass the review)</td>
+                                        <td>Advance Portfolio/Application Review (get feedback on your application and the chance to re-apply free of charge)</td>
                                         <td>November 3rd, 2016</td>
                                         <td class="orange-table-row">$50 CAN</td>
                                     </tr>
@@ -1982,7 +1982,7 @@ Template Name: Concept Art Diploma - Admission
                                 <tbody>
                                     <tr class="grey-table-row">
                                         <td>1</td>
-                                        <td>Soumission du Portofolio Iinitial/ examen de votre candidature (recevez une critique d'un artiste conceptuel professionnel et la chance de renvoyer gratuitement une candidature si votre portofolio ne passe pas cette étape)</td>
+                                        <td>Revue à l'avance de votre Portfolio/Application (recevez des conseils sur votre application et la chance de réappliquer gratuitement)</td>
                                         <td>3 novembre, 2016</td>
                                         <td class="orange-table-row">$50</td>
                                     </tr>
