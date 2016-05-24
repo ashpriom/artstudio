@@ -1983,20 +1983,20 @@ Template Name: Concept Art Diploma - Admission
                                     <tr class="grey-table-row">
                                         <td>1</td>
                                         <td>Soumission du Portofolio Iinitial/ examen de votre candidature (recevez une critique d'un artiste conceptuel professionnel et la chance de renvoyer gratuitement une candidature si votre portofolio ne passe pas cette étape)</td>
-                                        <td>3 novembre 2016</td>
+                                        <td>3 novembre, 2016</td>
                                         <td class="orange-table-row">$50</td>
                                     </tr>
                                     <tr class="grey-table-row">
                                         <td>2</td>
                                         <td>Portofolio général/ analyse (c'est là que nos équipes décident qui passera à la prochaine étape)</td>
-                                        <td>8 février 2017</td>
+                                        <td>8 février, 2017</td>
                                         <!--<td class="orange-table-row">$50</td>-->
                                         <td class="orange-table-row">GRATUIT pour ceux qui ont déjà envoyé un portfolio pour candidature ($50 pour les autres)</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>Entretiens (entretien individuel ou sur Skype déterminant pour savoir si vous êtes accepté dans notre programme d'entraînement d'élite)</td>
-                                        <td>Février/Mars 2017</td>
+                                        <td>Février/Mars, 2017</td>
                                         <td class="orange-table-row">GRATUIT</td>
                                     </tr>
                                     <tr>
@@ -2007,13 +2007,13 @@ Template Name: Concept Art Diploma - Admission
                                     <tr class="grey-table-row">
                                         <td>4</td>
                                         <td>Envoi du contrat et des frais d'inscription pour finaliser l'inscription.</td>
-                                        <td>28 avril 2017</td>
+                                        <td>28 avril, 2017</td>
                                         <td class="orange-table-row">$50</td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
                                         <td>Journée d'orientation pour les nouveaux élèves début de la session 1</td>
-                                        <td>2 octobre 2017</td>
+                                        <td>2 octobre, 2017</td>
                                         <td class="orange-table-row">$4982.50</td>
                                     </tr>
                                     <tr class="grey-table-row">
@@ -2031,19 +2031,19 @@ Template Name: Concept Art Diploma - Admission
                                     <tr class="grey-table-row">
                                         <td>8</td>
                                         <td>Début de la session 4</td>
-                                        <td>9 juillet 2018</td>
+                                        <td>9 juillet, 2018</td>
                                         <td class="orange-table-row">$4982.50</td>
                                     </tr>
                                     <tr>
                                         <td>9</td>
                                         <td>Début de la session 5</td>
-                                        <td>1 octobre 2018</td>
+                                        <td>1 octobre, 2018</td>
                                         <td class="orange-table-row">$4982.50</td>
                                     </tr>
                                     <tr class="grey-table-row">
                                         <td>10</td>
                                         <td>Début de la session 6</td>
-                                        <td>14 janvier 2019</td>
+                                        <td>14 janvier, 2019</td>
                                         <td class="orange-table-row">$4982.50</td>
                                     </tr>
                                     <tr>
