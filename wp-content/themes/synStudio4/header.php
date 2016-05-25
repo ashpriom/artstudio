@@ -25,7 +25,7 @@
 		<meta name="copyright" content="<?php bloginfo('url'); _e(''); ?>" />
 		<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1,initial-scale=1"/>
 		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
-
+		<meta name="google-site-verification" content="TfjOiPpkpWW7TlZeMwprhmSFJpcrTbsS_FkF5Y8phDY" />
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:site" content="Syn Studio"/>
 		<meta name="twitter:title" content="<?php the_title(); ?>">
