@@ -3,7 +3,7 @@
 * Plugin Name: Smart Grid Gallery
 * Plugin URI: http://topdevs.net/smart-grid-gallery/
 * Description: Turn boring WordPress [gallery] into dynamic responsive grid gallery with many options.
-* Version: 1.3.6
+* Version: 1.4.0
 * Author: topdevs
 * Author URI: http://codecanyon.net/user/topdevs?ref=topdevs
 * Requires at least: 3.5

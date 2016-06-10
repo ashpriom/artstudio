@@ -58,7 +58,7 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 
 			// Plugin defaults
 			$this->shortcode_atts = shortcode_atts( array(
-				"lightbox"		=> "photobox",
+				"lightbox"		=> "photo-swipe",
 				"style"			=> '1',
 				
 				// Font
@@ -78,26 +78,11 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 				"buttonSize"		=> 'medium', 	// small, big
 			), $atts );
 			
-			$this->lightbox = $this->shortcode_atts['lightbox'];
-
-			// Photobox defaults
-			if ( $this->lightbox == "photobox" ) {
-				
-				$this->lightbox_atts = shortcode_atts( array(
-					// Available in generator
-					"title" 		=> 'true',    	// show the original alt or title attribute of the image's thumbnail. (path to image, relative to the element which triggers photobox)
-					"counter" 		=> "(A/B)", 	// Counts which piece of content is being viewed, relative to the total count of items in the photobox set. ["false","String"]
-					"thumbs" 		=> 'true',    	// Show gallery thumbnails below the presented photo
-					"autoplay" 		=> 'false',   	// should autoplay on first time or not
-					"time" 			=> 3000,    	// autoplay interval, in miliseconds (less than 1000 will hide the autoplay button)
-					"zoomable"		=> 'true',    	// disable/enable mousewheel image zooming
-					
-					"history" 		=> 'false',    	// should use history hashing if possible (HTML5 API)
-					//"single" 		=> 'false',   	// if "true" - gallery will only show a single image, with no way to navigate
-					//"loop" 		=> 'true',    	// Allows to navigate between first and last images
-					//"hideFlash" 	=> 'true',    	// Hides flash elements on the page when photobox is activated. NOTE: flash elements must have wmode parameter set to "opaque" or "transparent" if this is set to false
-				), $atts );
+			// support shortcodes if someone used photobox
+			if ( $this->shortcode_atts['lightbox'] == "photobox" ) {
+				$this->shortcode_atts['lightbox'] = "photo-swipe";
 			}
+			$this->lightbox = $this->shortcode_atts['lightbox'];
 
 			// Swipebox defaults
 			if ( $this->lightbox == "swipebox" ) {
@@ -129,6 +114,21 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 				$this->lightbox_atts['counter'] = str_replace( "B", "%total%", 	$this->lightbox_atts['counter'] );
 			}
 
+			// PhotoSwipe defaults
+			if ( $this->lightbox == "photo-swipe" ) {
+
+				$this->lightbox_atts = shortcode_atts( array(
+					"title" 		=> 'true',
+					"share" 		=> 'true',
+					
+					// not presented in docs
+					"history" 		=> 'false'
+				), $atts );
+
+				// output HTML in th footer
+				add_action("wp_footer", array( $this, "photoswipe_html") );
+			}
+
 			// Check fo mobile devices
 			if ( wp_is_mobile() ) {
 				$this->gallery_atts['rowHeight'] = $this->gallery_atts['mobileRowHeight'];
@@ -153,7 +153,7 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 				require 'views/justified-gallery.php';
 			}
 			else {
-				echo "<p><b>[gallery] shortocde not found inside [smart-grid][/smart-grid] shortocde</b></p>";
+				echo "<p><b>[gallery] shortcode not found inside [smart-grid][/smart-grid] shortcode</b></p>";
 			}
 		
 		}
@@ -352,13 +352,13 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 				elseif ( $this->shortcode_atts['lightbox'] == "image" )
 					echo "<a href=\"{$image_src[0]}\"><img src=\"{$thumb_src[0]}\" alt=\"$alt\"/></a>";
 				
-				// Embed URL like YouTube or Vimeo
+				// Lightbox with Embed URL like YouTube or Vimeo
 				elseif ( $embed_url )
-					echo "<a class=\"mfp-iframe\" data-type=\"video\" href=\"{$embed_url}\" data-caption=\"$data_caption\"><img src=\"{$thumb_src[0]}\" alt=\"$alt\"/></a>";
+					echo "<a class=\"sgg-lightbox-item mfp-iframe\" data-type=\"video\" href=\"{$embed_url}\" data-caption=\"$data_caption\"><img src=\"{$thumb_src[0]}\" alt=\"$alt\"/></a>";
 
 				// Lightbox
 				else
-					echo "<a href=\"{$image_src[0]}\" data-caption=\"$data_caption\"><img src=\"{$thumb_src[0]}\" alt=\"$alt\"/></a>";
+					echo "<a class=\"sgg-lightbox-item\" href=\"{$image_src[0]}\" data-size=\"$image_src[1]x$image_src[2]\" data-caption=\"$data_caption\"><img src=\"{$thumb_src[0]}\" alt=\"$alt\"/></a>";
 			}
 
 			if ( $echo ) {
@@ -396,19 +396,20 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 		function lightbox_js () { 
 
 			$js = "";
-
-			// Photobox
-			if ( $this->lightbox == "photobox" ) {
-				
-				$js .= "$('#justified_gallery_$this->ID').photobox('a',{";
-				$js .= $this->js_atts( $this->lightbox_atts );
-				$js .= "});";
-			}
 			
+			// PhotoSwipe
+			if ( $this->lightbox == "photo-swipe" ) {
+			
+				$js .= "$(document).ready(function(){
+							var pswp_$this->ID = SGGinitPhotoSwipeFromDOM('#justified_gallery_$this->ID',";
+				$js .= "{". $this->js_atts( $this->lightbox_atts ) . " uid: '$this->ID' })";
+				$js .= "})";
+			}
+
 			// Swipebox
 			if ( $this->lightbox == "swipebox" ) {
 				
-				$js .= "$('#justified_gallery_$this->ID a').swipebox({";
+				$js .= "$('#justified_gallery_$this->ID a.sgg-lightbox-item').swipebox({";
 				$js .= $this->js_atts( $this->lightbox_atts );
 				$js .= "});";
 			}
@@ -416,7 +417,7 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 			// Magnific Popup
 			if ( $this->lightbox == "magnific-popup" ) {
 				
-				$js .= "$('#justified_gallery_$this->ID a').magnificPopup({";
+				$js .= "$('#justified_gallery_$this->ID a.sgg-lightbox-item').magnificPopup({";
 
 				// Defaults
 				$js .= "type: 'image',
@@ -573,7 +574,7 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 						var gallery_top = $(gallery).offset().top;
 						var gallery_height = $(gallery).innerHeight();
 						var gallery_bottom = gallery_top + gallery_height;
-						if( gallery_bottom <= scroll_bottom ) {
+						if( scroll_bottom >= gallery_bottom ) {
 							var images = galleries.splice(0,1);
 							var image_html = $("#load_more_holder_<?php echo $this->ID; ?>").html(images).text();
 							$(gallery).append(image_html);
@@ -597,7 +598,7 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 		/**
 		 * Echo Load More button HTML
 		 *
-		 * @since 1.0
+		 * @since 1.3
 		 */
 
 		private function load_more_button( $galleries ) {
@@ -621,6 +622,18 @@ if ( ! class_exists( 'JustifiedGallery' ) ) {
 			</button>
 			
 			<?php
+		}
+
+		/**
+		 * Output PhotoSwipe HTML
+		 *
+		 * @author Ilya K.
+		 * @since 1.3
+		 */
+
+		public function photoswipe_html() {
+
+			require_once('views/photoswipe.php');
 		}
 
 

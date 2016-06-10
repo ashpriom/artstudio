@@ -18,8 +18,13 @@ var getDirection = function (ev, obj) {
 };
 var addClass = function ( ev, obj, state ) {
     var direction = getDirection( ev, obj ),
-        class_suffix = "";
+        class_suffix = "",
+        iframe = obj.classList.contains("mfp-iframe");
     obj.className = "";
+    if (iframe) {
+        obj.classList.add("mfp-iframe");
+    }
+    obj.classList.add("sgg-lightbox-item");
     switch ( direction ) {
         case 0 : class_suffix = '-top';    break;
         case 1 : class_suffix = '-right';  break;

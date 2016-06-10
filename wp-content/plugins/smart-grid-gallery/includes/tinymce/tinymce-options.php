@@ -156,7 +156,7 @@ $captions = array (
 			"12" 	=> '12 - Caption Always Bottom',
 			),
 		"title"  => 'Captions Style',
-		"desc"  => 'Captions Hover Style. <a target="_blank" href="http://plugins.topdevs.net/smart-grid-gallery/wordpress-gallery-transitions/">See examples</a>',
+		"desc"  => 'Captions Hover Style. <a target="_blank" href="http://topdevs.net/smart-grid-gallery/wordpress-gallery-hover-effects/">See examples</a>',
 		"condition" => array (
 				"captions" => "true"
 			)  
@@ -255,11 +255,11 @@ $lightbox = array (
 
 	"lightbox" => array (
 		"type"	=> 'select',
-		"value"	=> 'photobox',
+		"value"	=> 'photo-swipe',
 		"options"   => array (
 			"none" 				=> 'None',
 			"image"				=> 'Link to image source',
-			"photobox" 			=> 'Photobox',
+			"photo-swipe" 		=> 'PhotoSwipe',
 			"magnific-popup" 	=> 'Magnific Popup',
 			"swipebox" 			=> 'Swipebox',
 			),
@@ -276,7 +276,21 @@ $lightbox = array (
 		"title" => 'Image Title',
 		"desc"  => 'Set to "False" to hide image title',
 		"condition" => array (
-				"lightbox" => "photobox,magnific-popup"
+				"lightbox" => "photo-swipe,magnific-popup"
+			)
+	 ),
+
+	"share" => array (
+		"type"  => 'select',
+		"value" => 'true',
+		"options"   => array (
+			"true" 	=> 'True',
+			"false" => 'False'
+			),
+		"title" => 'Social Share',
+		"desc"  => 'Enable social sharing options',
+		"condition" => array (
+				"lightbox" => "photo-swipe"
 			)
 	 ),
 
@@ -286,59 +300,10 @@ $lightbox = array (
 		"title"	=> 'Counter',
 		"desc"	=> 'Counts which piece of content (A) is being viewed, relative to the total count (B) of items',
 		"condition" => array (
-				"lightbox" => "photobox,magnific-popup"
+				"lightbox" => "magnific-popup"
 			)
 	 ),
-	
-	"thumbs" => array (
-		"type"  => 'select',
-		"value" => 'true',
-		"options"   => array (
-			"true" 	=> 'True',
-			"false" => 'False'
-			),
-		"title" => 'Thumbnails',
-		"desc"  => 'Set to "False" to hide thumbnails',
-		"condition" => array (
-				"lightbox" => "photobox"
-			) ),
-	
-	"autoplay" => array (
-		"type"  => 'select',
-		"value" => 'false',
-		"options"   => array (
-			"true" 	=> 'True',
-			"false" => 'False'
-			),
-		"title" => 'Autoplay',
-		"desc"  => 'Set to "False" to disable autoplay',
-		"condition" => array (
-				"lightbox" => "photobox"
-			) ),
 
-	"time" => array (
-		"type"	=> 'text',
-		"value"	=> '3000',
-		"units" => 'ms',
-		"title"	=> 'Autoplay interval',
-		"desc"	=> 'Autoplay interval, in miliseconds (less than 1000 will hide the autoplay button)',
-		"condition" => array (
-				"lightbox" => "photobox"
-			) ),
-
-	"zoomable" => array (
-		"type"  => 'select',
-		"value" => 'true',
-		"options"   => array (
-			"true" 	=> 'True',
-			"false" => 'False'
-			),
-		"title" => 'Zoom',
-		"desc"  => 'Disable/enable mousewheel image zooming',
-		"condition" => array (
-				"lightbox" => "photobox"
-			) 
-		),
 	
 	"hide_bars_on_mobile" => array (
 		"type"  => 'select',

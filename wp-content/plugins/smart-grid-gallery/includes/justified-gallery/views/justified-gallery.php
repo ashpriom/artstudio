@@ -1,6 +1,5 @@
 <?php do_action( "before_smart_grid_gallery_html" ); ?>
-<div id="justified_gallery_<?php echo $this->ID; ?>" class="sgg-style-<?php echo $this->shortcode_atts['style']; ?> <?php echo $this->gallery_atts['class']; ?>">
-	<?php 
+<div id="justified_gallery_<?php echo $this->ID; ?>" class="sgg-style-<?php echo $this->shortcode_atts['style']; ?> <?php echo $this->gallery_atts['class']; ?>"><?php 
 	$first_gallery = array_shift( $galleries );
 	$this->gallery_images( $first_gallery['args'] );
 	?>

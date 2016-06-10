@@ -42,9 +42,6 @@ if ( ! class_exists( 'SmartGridGallery' ) ) {
 			//wp_enqueue_script( 'swipebox', 			plugins_url( 'lightboxes/swipebox/js/jquery.swipebox.js', __FILE__ ), array( 'jquery' ) );
 			//wp_enqueue_style ( 'swipebox', 			plugins_url( 'lightboxes/swipebox/css/swipebox.min.css', __FILE__ ) );
 
-			//wp_enqueue_script( 'photobox', 			plugins_url( 'lightboxes/photobox/jquery.photobox.js', __FILE__ ), array( 'jquery' ) );
-			//wp_enqueue_style ( 'photobox', 			plugins_url( 'lightboxes/photobox/photobox.css', __FILE__ ) );
-
 			//wp_enqueue_script( 'magnific-popup', 	plugins_url( 'lightboxes/magnific-popup/jquery.magnific-popup.min.js', __FILE__ ), array( 'jquery' ) );
 			//wp_enqueue_style ( 'magnific-popup', 	plugins_url( 'lightboxes/magnific-popup/magnific-popup.css', __FILE__ ) );
 
