@@ -1079,7 +1079,7 @@ Template Name: Concept Art Diploma - Admission
     </select>
 </div>
 <div class="mc-field-group">
-    <label for="mce-MMERGE3">Select your status: </label>
+    <label for="mce-MMERGE3">Select your status: *</label>
     <select name="MMERGE3" class="" id="mce-MMERGE3">
     <option value=""></option>
     <option value="Canadian citizen">Canadian citizen</option>
@@ -1088,6 +1088,13 @@ Template Name: Concept Art Diploma - Admission
 
     </select>
 </div>
+<div class="row">
+                <div class="col-md-12">
+                    <p class="longnote">
+                       * For Canadian students only: If you are interested in joining in Fall 2016, send an email to admissions@synstudio.ca
+                    </p>
+                </div>
+            </div>
 <div class="mc-field-group input-group">
     <ul><li><input type="checkbox" value="1" name="group[9225][1]" id="mce-group[9225]-9225-0"><label for="mce-group[9225]-9225-0">  I would like to receive free updates from Syn Studio about the world of Concept Art, including masterclasses, podcasts and interviews with world-famous artists, blog articles, free tutorials, etc.. Your information will always be kept safe and secure and won't be shared with others.</label></li>
 </ul>
@@ -2115,7 +2122,7 @@ Template Name: Concept Art Diploma - Admission
     </select>
 </div>
 <div class="mc-field-group">
-    <label for="mce-MMERGE3">Séléctionnez votre statut </label>
+    <label for="mce-MMERGE3">Séléctionnez votre statut *</label>
     <select name="MMERGE3" class="" id="mce-MMERGE3">
     <option value=""></option>
     <option value="Citoyen canadien">Citoyen canadien</option>
@@ -2124,6 +2131,13 @@ Template Name: Concept Art Diploma - Admission
 
     </select>
 </div>
+<div class="row">
+                <div class="col-md-12">
+                    <p class="longnote">
+                        * Seulement pour les étudiants canadiens: Si vous êtes intéressés à joindre le programme cet automne 2016, envoyez un courriel à l'adresse suivante: admissions@synstudio.ca
+                    </p>
+                </div>
+            </div>
 <div class="mc-field-group input-group">
     <ul><li><input type="checkbox" value="1" name="group[9233][1]" id="mce-group[9233]-9233-0"><label for="mce-group[9233]-9233-0">  Je veux recevoir des informations gratuites de la part de Syn Studio  à propos de l'univers de de la conception artistique (cours, émissions et interviews d'artistes de renommée mondiale, artciles, tutoriels ratuits, etc).</label></li>
 </ul>
