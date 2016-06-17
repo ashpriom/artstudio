@@ -10,12 +10,13 @@ Styles for various device sizes can be found in css/responsive.css
 */
 
 @import url('css/globalReset.css');
+@import url('fonts/fontfaces.css');
 
 html{ font-size: 62.5%; } /* Sets default font size to 1em => 10px */ 
 
 body{
 	text-align: center; /* Following line center aligns the layout for ie6 */
-	font: normal 1.2em/1.4 Helvetica, Verdana, Arial, sans-serif;
+	font: normal 1.2em/1.4 Helvetica, Verdana, Arial, sans-serif, 'Noto Sans';
 	background-color: #d2d2d2;
 	background-image: url(images/bgd-tilePage.jpg);
 	background-repeat: repeat-x;
