@@ -1070,7 +1070,7 @@ Template Name: Concept Art Diploma - Admission
     <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
 <div class="mc-field-group">
-    <label for="mce-MMERGE2">Select your preferred start date: </label>
+    <label for="mce-MMERGE2">Select your preferred start date: *</label>
     <select name="MMERGE2" class="" id="mce-MMERGE2">
     <option value=""></option>
     <option value="October 2016">October 2016</option>
@@ -1079,7 +1079,7 @@ Template Name: Concept Art Diploma - Admission
     </select>
 </div>
 <div class="mc-field-group">
-    <label for="mce-MMERGE3">Select your status: *</label>
+    <label for="mce-MMERGE3">Select your status: </label>
     <select name="MMERGE3" class="" id="mce-MMERGE3">
     <option value=""></option>
     <option value="Canadian citizen">Canadian citizen</option>
@@ -1090,9 +1090,9 @@ Template Name: Concept Art Diploma - Admission
 </div>
 <div class="row">
                 <div class="col-md-12">
-                    <p class="longnote">
+                    <strong>
                        * For Canadian students only: If you are interested in joining in Fall 2016, send an email to admissions@synstudio.ca
-                    </p>
+                    </strong>
                 </div>
             </div>
 <div class="mc-field-group input-group">
@@ -2113,7 +2113,7 @@ Template Name: Concept Art Diploma - Admission
     <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
 <div class="mc-field-group">
-    <label for="mce-MMERGE2">Séléctionnez la date de début </label>
+    <label for="mce-MMERGE2">Séléctionnez la date de début *</label>
     <select name="MMERGE2" class="" id="mce-MMERGE2">
     <option value=""></option>
     <option value="Octobre 2016">Octobre 2016</option>
@@ -2122,7 +2122,7 @@ Template Name: Concept Art Diploma - Admission
     </select>
 </div>
 <div class="mc-field-group">
-    <label for="mce-MMERGE3">Séléctionnez votre statut *</label>
+    <label for="mce-MMERGE3">Séléctionnez votre statut </label>
     <select name="MMERGE3" class="" id="mce-MMERGE3">
     <option value=""></option>
     <option value="Citoyen canadien">Citoyen canadien</option>
@@ -2133,9 +2133,9 @@ Template Name: Concept Art Diploma - Admission
 </div>
 <div class="row">
                 <div class="col-md-12">
-                    <p class="longnote">
+                    <strong>
                         * Seulement pour les étudiants canadiens: Si vous êtes intéressés à joindre le programme cet automne 2016, envoyez un courriel à l'adresse suivante: admissions@synstudio.ca
-                    </p>
+                    </strong>
                 </div>
             </div>
 <div class="mc-field-group input-group">
