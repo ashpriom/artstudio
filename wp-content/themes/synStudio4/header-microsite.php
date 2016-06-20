@@ -11,9 +11,9 @@
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-		<meta name="author" content="Anthony, Florent, Courtney, Greg, Priom" />
+		<meta name="author" content="Anthony Walsh, Florent Cachot, Syed Ashfaque Uddin Priom" />
 		<meta name="copyright" content="Syn Studio" />
 		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
 		<meta name="google-site-verification" content="qAS47Im9uAwkEff6CyCYdn_7r6BaP2aRFotf7Fs9Nrs" />
@@ -30,35 +30,38 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:regular,700&amp;subset=latin">
-  	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic,300,300italic,regular,italic,600,600italic,700,700italic&amp;subset=latin,latin-ext">
-  	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.bxslider.css" type="text/css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-mini.css" type="text/css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.responsive-mini.css" type="text/css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/stacktable.css" type="text/css" />
-    <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	  	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic,300,300italic,regular,italic,600,600italic,700,700italic&amp;subset=latin,latin-ext">
+	  	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.bxslider.css" type="text/css" />
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" type="text/css" />
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-mini.css" type="text/css" />
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.responsive-mini.css" type="text/css" />
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/stacktable.css" type="text/css" />
+	    <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+    	
+    	<!--[if lt IE 9]>
+	      	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    	<![endif]-->
 
 		<!--[if IE 6]>
-		<style type="text/css">
-		* html .group {
-			height: 1%;
-		}
-		</style>
+			<style type="text/css">
+				* html .group {
+					height: 1%;
+				}
+			</style>
+	  	<![endif]-->
+	  	
+	  	<!--[if IE 7]>
+			<style type="text/css">
+				*:first-child+html .group {
+					min-height: 1px;
+				}
+			</style>
   		<![endif]-->
-  		<!--[if IE 7]>
-		<style type="text/css">
-		*:first-child+html .group {
-			min-height: 1px;
-		}
-		</style>
-  		<![endif]-->
+  		
   		<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  	<![endif]-->
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  		<![endif]-->
 
 		<?php wp_enqueue_script("jquery"); ?>
 		<?php wp_head(); ?>
