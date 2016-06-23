@@ -70,7 +70,6 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
         js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.6";
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-      }
       <?php } ?>
 
       <div class="fb-like" 
@@ -85,14 +84,25 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
     </div>
 
     <div id="twitter">
-      <div class="twitter-sideBar">
+
+
+      <!--<div class="twitter-sideBar">
         <?php
           echo getTwitterFollowers('SynStudio'); // see functions.php for reference
           echo '<div class="followers">Followers</div>';
         ?>
         <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true" data-count="none" data-via="SynStudio" data-text="I'm checking out Syn Studio Art School right now!">Tweet</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
+      </div>-->
+
+      <iframe
+        src="https://platform.twitter.com/widgets/follow_button.html?screen_name=SynStudio&show_screen_name=false&show_count=true&size=l"
+        title="Follow Syn Studio"
+        width="65"
+        height="90"
+        style="border: 0; overflow: hidden;">
+      </iframe>  
+
     </div>
 
   </div>
