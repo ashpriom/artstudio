@@ -50,7 +50,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 
   <div id="share-plugins">
     
-    <div style="margin-bottom:10px;">
+    <div style="margin-bottom:10px; margin-top:40px;">
 
       <div id="fb-root"></div>
       
