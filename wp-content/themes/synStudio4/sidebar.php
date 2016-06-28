@@ -50,11 +50,12 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 
   <div id="share-plugins">
     
-    <div style="margin-bottom:10px; margin-top:40px;">
+    <div id="facebook">
+    <!--<div style="margin-bottom:10px; margin-top:40px;">-->
 
       <div id="fb-root"></div>
       
-      <?php if($currentLang=="en"){ ?>
+      <!--<?php if($currentLang=="en"){ ?>
 
         <script>(function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
@@ -82,27 +83,27 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
       data-action="like" 
       data-show-faces="false" 
       data-share="false">
-      </div>
+      </div>-->
 
-      <!--<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com/SynStudio&amp;send=false&amp;
+      <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com/SynStudio&amp;send=false&amp;
       layout=box_count&amp;width=55&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90&amp;appId=223615814335068" 
-      scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:90px;" allowTransparency="true"></iframe>-->
+      scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:90px;" allowTransparency="true"></iframe>
 
     </div>
 
     <div id="twitter">
 
-      <a href="https://twitter.com/SynStudio" class="twitter-follow-button" data-show-count="true">Follow @SynStudio</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <!--<a href="https://twitter.com/SynStudio" class="twitter-follow-button" data-show-count="true">Follow</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
 
-      <!--<div class="twitter-sideBar">
+      <div class="twitter-sideBar">
         <?php
-          //echo getTwitterFollowers('SynStudio'); // see functions.php for reference
-          //echo '<div class="followers">Followers</div>';
+          echo getTwitterFollowers('SynStudio'); // see functions.php for reference
+          echo '<div class="followers">Followers</div>';
         ?>
         <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true" data-count="none" data-via="SynStudio" data-text="I'm checking out Syn Studio Art School right now!">Tweet</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>-->
+      </div>
     
     </div>
 
