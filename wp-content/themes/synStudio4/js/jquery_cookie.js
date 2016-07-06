@@ -9,6 +9,9 @@
  */
 
 /**
+
+
+
  * Create a cookie with the given name and value and other optional parameters.
  *
  * @example $.cookie('the_cookie', 'the_value');
