@@ -92,7 +92,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
             <div class="row">
                 <br />
                 <br />
-                <p class=" copyright-text text-left">Syn Studio, <span>École d'art</span>, <span>Art school</span>. © 2015 Syn Studio</p>
+                <p class=" copyright-text text-left">Syn Studio, <span>École d'art</span>, <span>Art school</span>. © <?php auto_copyright('2015'); ?> Syn Studio</p>
                 <br />
             </div>
         </div>
