@@ -72,7 +72,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 	}
 </style>
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/test/js/jquery.sidr.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.sidr.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.touchwipe.1.1.1.js"></script>
 
 <script>
