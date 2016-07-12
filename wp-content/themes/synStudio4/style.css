@@ -1,7 +1,7 @@
 /*
 Theme Name: SynStudio 4
-Description: The default WordPress theme created for SynStudio Art School
-Author: Andrea Acosta Duarte, Bill Jamshedji and Syed Ashfaque Uddin Priom
+Description: Syn Studio Art School native theme.
+Author: Andrea Acosta Duarte, Bill Jamshedji and Syed Priom
 Author URI: http://www.n-somnium.com/, http://www.ashpriom.com/ 
 Tags: Art School, Institution, Billingual Website
 
@@ -365,8 +365,10 @@ a.lnk-readMore {
 }
 
 #share-plugins {
- margin-top: 8px;
-	margin-bottom: 24px;
+ 	/*margin-top: 8px;
+	margin-bottom: 24px;*/
+	margin-top: 45px;
+	margin-bottom: 45px;
 	overflow: hidden;
 }
 #share-plugins #facebook {
