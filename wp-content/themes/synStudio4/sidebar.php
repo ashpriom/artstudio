@@ -93,7 +93,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 
     <div id="twitter">
 
-      <a href="https://twitter.com/SynStudio" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <a href="https://twitter.com/SynStudio" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true">Follow</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
       <!--<div class="twitter-sideBar">
         <?php
