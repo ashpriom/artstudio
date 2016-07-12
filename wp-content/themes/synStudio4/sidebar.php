@@ -16,6 +16,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
   <?php
 
     if($currentLang=="en"){
+      $catID = '10';
       query_posts(array(
     		'showposts' => 1,
     		'orderby' => 'date',
@@ -25,6 +26,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
     }
 
     else{
+      $catID = '110';
       query_posts(array(
         'showposts' => 1,
         'orderby' => 'date',
@@ -63,7 +65,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
       
-      <?php }else{ ?>
+      <?php } else { ?>
 
         <script>(function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
