@@ -7,15 +7,6 @@
 add_theme_support( 'menus' );
 automatic_feed_links();
 
-if ( function_exists('register_sidebar') )
-	register_sidebar(array(
-		'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '',
-		'after_title' => '',
-	));
-	register_sidebars(1);
-	
 
 function custom_excerpt_length( $length ) {
 	return 20;
@@ -112,6 +103,19 @@ add_filter('the_content', 'my_formatter', 99);
 
 <?php 
 
+// register dynamic sidebar to display tweets using plugin. See home.php
+
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget' => '</li>',
+        'before_title' => '',
+        'after_title' => '',
+    ));
+register_sidebars(1);
+
+// This function works with Twitter Widget plugin to display recent tweets on the homepage
+
 /*function getTwitterFollowers($screenName = 'codeforest'){
     // some variables
     $consumerKey = '0lnJHFRzifcDvTDJuwhQ';
@@ -135,10 +139,10 @@ add_filter('the_content', 'my_formatter', 99);
                 'httpversion' => '1.1',
                 'blocking' => true,
                 'headers' => array(
-                    'Authorization' => 'Basic ' . $toSend,
-                    'Content-Type' => 'application/x-www-form-urlencoded;charset=UTF-8'
+                'Authorization' => 'Basic ' . $toSend,
+                'Content-Type' => 'application/x-www-form-urlencoded;charset=UTF-8'
                 ),
-                'body' => array( 'grant_type' => 'client_credentials' )
+            'body' => array( 'grant_type' => 'client_credentials' )
             );
  
             add_filter('https_ssl_verify', '__return_false');
@@ -157,7 +161,7 @@ add_filter('the_content', 'my_formatter', 99);
             'httpversion' => '1.1',
             'blocking' => true,
             'headers' => array(
-                'Authorization' => "Bearer $token"
+            'Authorization' => "Bearer $token"
             )
         );
  
