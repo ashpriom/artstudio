@@ -160,6 +160,7 @@ else{
     <!-- Newsletter -->
     <?php
     $cat = 'General';
+    
     $catID = get_cat_ID($cat);
     query_posts('cat=' . $catID);
     while (have_posts()) : the_post();
