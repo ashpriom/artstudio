@@ -16,7 +16,103 @@ if ( function_exists('register_sidebar') )
 	));
 	register_sidebars(1);
 	
-function getTwitterFollowers($screenName = 'codeforest'){
+
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 40 );
+
+
+
+add_action( 'admin_init', 'theme_options_init' );
+add_action( 'admin_menu', 'theme_options_add_page' ); 
+
+function theme_options_init(){
+ register_setting( 'sample_options', 'sample_theme_options');
+} 
+
+function theme_options_add_page() {
+ add_theme_page( __( 'Theme Options', 'sampletheme' ), __( 'Theme Options', 'sampletheme' ), 'edit_theme_options', 'theme_options', 'theme_options_do_page' );
+}
+
+function theme_options_do_page() { 
+    global $select_options; 
+    if ( ! isset( $_REQUEST['settings-updated'] ) ) $_REQUEST['settings-updated'] = false; ?>
+
+    <div>
+    <?php screen_icon(); 
+        echo "<h2>". __( 'Syn Studio Central Information Panel', 'customtheme' ) . "</h2>";
+        echo "<h3>". __( 'Information entered here are distributed to all corresponding pages.', 'customtheme' ) . "</h2>"; 
+    ?>
+
+    <?php 
+        if ( false !== $_REQUEST['settings-updated'] ) : ?>
+            <div>
+                <p><strong><?php _e( 'Options saved', 'customtheme' ); ?></strong></p></div>
+        <?php endif; ?> 
+
+    <form method="post" action="options.php">
+        <?php settings_fields( 'sample_options' ); ?>  
+        <?php $options = get_option( 'sample_theme_options' ); ?> 
+
+    <table>
+
+    <tr valign="top"><th scope="row"><?php _e( 'Class Registration Notice (English)', 'customtheme' ); ?></th>
+    <td>
+    <textarea id="sample_theme_options[deadline_en]"
+    class="large-text" cols="100" rows="3" placeholder="Example: Late Registration Deadline: Wednesday, July 8th, 11:59 P.M." name="sample_theme_options[deadline_en]"><?php echo esc_textarea( $options['deadline_en'] ); ?></textarea>
+    </td>
+    </tr>
+
+    <tr valign="top"><th scope="row"><?php _e( 'Class Registration Notice (French)', 'customtheme' ); ?></th>
+    <td>
+    <textarea id="sample_theme_options[deadline_fr]"
+    class="large-text" cols="100" rows="3" placeholder="Example: Date limite d\'inscription finale : mercredi 8 juillet à 23h59." name="sample_theme_options[deadline_fr]"><?php echo esc_textarea( $options['deadline_fr'] ); ?></textarea>
+    </td>
+    </tr>
+
+    </table> 
+
+    <p>
+    <input type="submit" value="<?php _e( 'Save Options', 'customtheme' ); ?>" />
+    </p>
+    </form>
+    </div>
+
+<?php } ?>
+
+<?php
+
+// Disable auto formatting for newly defined <raw> tag 
+// http://www.wprecipes.com/disable-wordpress-automatic-formatting-on-posts-using-a-shortcode
+
+function my_formatter($content) {
+    $new_content = '';
+    $pattern_full = '{(\[raw\].*?\[/raw\])}is';
+    $pattern_contents = '{\[raw\](.*?)\[/raw\]}is';
+    $pieces = preg_split($pattern_full, $content, -1, PREG_SPLIT_DELIM_CAPTURE);
+ 
+    foreach ($pieces as $piece) {
+        if (preg_match($pattern_contents, $piece, $matches)) {
+            $new_content .= $matches[1];
+        } else {
+            $new_content .= wptexturize(wpautop($piece));
+        }
+    }
+ 
+    return $new_content;
+}
+
+remove_filter('the_content', 'wpautop');
+remove_filter('the_content', 'wptexturize');
+
+add_filter('the_content', 'my_formatter', 99);
+
+?>
+
+<?php 
+
+/*function getTwitterFollowers($screenName = 'codeforest'){
     // some variables
     $consumerKey = '0lnJHFRzifcDvTDJuwhQ';
     $consumerSecret = '7hPA64Rqt0VGoelIJVuqRflPYGZOMbKirUVqE1Dv760';
@@ -85,94 +181,6 @@ function getTwitterFollowers($screenName = 'codeforest'){
     }
  
     return $numberOfFollowers;
-}
-
-function custom_excerpt_length( $length ) {
-	return 20;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 40 );
-
-add_action( 'admin_init', 'theme_options_init' );
-add_action( 'admin_menu', 'theme_options_add_page' ); 
-
-function theme_options_init(){
- register_setting( 'sample_options', 'sample_theme_options');
-} 
-
-function theme_options_add_page() {
- add_theme_page( __( 'Theme Options', 'sampletheme' ), __( 'Theme Options', 'sampletheme' ), 'edit_theme_options', 'theme_options', 'theme_options_do_page' );
-}
-
-function theme_options_do_page() { 
-    global $select_options; 
-    if ( ! isset( $_REQUEST['settings-updated'] ) ) $_REQUEST['settings-updated'] = false; ?>
-
-    <div>
-    <?php screen_icon(); 
-        echo "<h2>". __( 'Syn Studio Central Information Panel', 'customtheme' ) . "</h2>";
-        echo "<h3>". __( 'Information entered here are distributed to all corresponding pages.', 'customtheme' ) . "</h2>"; 
-    ?>
-
-    <?php 
-        if ( false !== $_REQUEST['settings-updated'] ) : ?>
-            <div>
-                <p><strong><?php _e( 'Options saved', 'customtheme' ); ?></strong></p></div>
-        <?php endif; ?> 
-
-    <form method="post" action="options.php">
-        <?php settings_fields( 'sample_options' ); ?>  
-        <?php $options = get_option( 'sample_theme_options' ); ?> 
-
-    <table>
-
-    <tr valign="top"><th scope="row"><?php _e( 'Class Registration Notice (English)', 'customtheme' ); ?></th>
-    <td>
-    <textarea id="sample_theme_options[deadline_en]"
-    class="large-text" cols="100" rows="3" placeholder="Example: Late Registration Deadline: Wednesday, July 8th, 11:59 P.M." name="sample_theme_options[deadline_en]"><?php echo esc_textarea( $options['deadline_en'] ); ?></textarea>
-    </td>
-    </tr>
-
-    <tr valign="top"><th scope="row"><?php _e( 'Class Registration Notice (French)', 'customtheme' ); ?></th>
-    <td>
-    <textarea id="sample_theme_options[deadline_fr]"
-    class="large-text" cols="100" rows="3" placeholder="Example: Date limite d\'inscription finale : mercredi 8 juillet à 23h59." name="sample_theme_options[deadline_fr]"><?php echo esc_textarea( $options['deadline_fr'] ); ?></textarea>
-    </td>
-    </tr>
-
-    </table> 
-
-    <p>
-    <input type="submit" value="<?php _e( 'Save Options', 'customtheme' ); ?>" />
-    </p>
-    </form>
-    </div>
-
-    <?php 
-} 
-
-?>
-
-<?php
-function my_formatter($content) {
-    $new_content = '';
-    $pattern_full = '{(\[raw\].*?\[/raw\])}is';
-    $pattern_contents = '{\[raw\](.*?)\[/raw\]}is';
-    $pieces = preg_split($pattern_full, $content, -1, PREG_SPLIT_DELIM_CAPTURE);
- 
-    foreach ($pieces as $piece) {
-        if (preg_match($pattern_contents, $piece, $matches)) {
-            $new_content .= $matches[1];
-        } else {
-            $new_content .= wptexturize(wpautop($piece));
-        }
-    }
- 
-    return $new_content;
-}
-
-remove_filter('the_content', 'wpautop');
-remove_filter('the_content', 'wptexturize');
-
-add_filter('the_content', 'my_formatter', 99);
+}*/
 
 ?>
