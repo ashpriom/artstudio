@@ -36,7 +36,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
       the_excerpt();
       echo "<style>.podcast-box p {width: 80%; float: left; padding-right: 34px;}"; 
       echo "@media only screen and (max-width: 640px) {";
-	    echo ".podcast-box p {width: 80%; float: left; padding-right: 12px;}";
+	    echo ".podcast-box p {width: 65%; float: left; padding-right: 12px; text-align: justify;}";
       echo "}";	
 	    echo "</style>";
       echo "<div class='buttons'>";
