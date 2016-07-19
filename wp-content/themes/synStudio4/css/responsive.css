@@ -145,7 +145,7 @@
   }
 
   .teachers-art img{
-    height:100%;
+    height:auto !important;
     width: 100%;
   }
 
@@ -335,10 +335,6 @@
   .teacher-boxWrapper {
     width:100%;
     height:auto;
-  }
-
-  .teachers-art img{
-    height:100%;
   }
 
   .podcast-boxWrapper .podcast-box{
@@ -679,10 +675,6 @@
   .teacher-boxWrapper {
     width:100%;
     height:auto;
-  }
-
-  .teachers-art img{
-    height:100%;
   }
 
   .podcast-boxWrapper .podcast-box{
