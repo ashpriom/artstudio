@@ -1274,7 +1274,7 @@ Template Name: Concept Art Diploma - Admission
                             <div class="thequestion">
                                 <p class="text-139">2. Êtes-vous passionné, motivé, mature et orienté vers l'amélioration? Est-ce que vous auriez complétez, avec succès, 12 ans d'études avant d'avoir débuter ce programme? (Pour les résidents de Québec: est-ce que vous auriez complèté l'école secondaire depuis au moins un an, avant d'avoir commencer ce programme?). Est-ce que vous pouvez démonstrer ce fait avec une documentation appropriée et une lettre de motivation?</p>
                                 <div id="notext2" style="display:none;">
-                                    <p class="text-140">Nous sommes désolés. Ceci est un programme dehaut niveau et nous ne pouvons accepter que les candidats qui sont prêts. Veuillez revenir lorsque vous remplirez les critères cités ci-dessus.</p>
+                                    <p class="text-140">Nous sommes désolés. Ceci est un programme de haut niveau et nous ne pouvons accepter que les candidats qui sont prêts. Veuillez revenir lorsque vous remplirez les critères cités ci-dessus.</p>
                                 </div>
                                 <div id="yestext2" style="display:none;">
                                     <p class="text-140" style="color:lightgreen; font-size:3.5em;"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAdmission/tick.png" alt="tick"></p>
@@ -1917,7 +1917,7 @@ Template Name: Concept Art Diploma - Admission
                 <br />
                 <div class="col-md-4">
                     <div class="featurecol">
-                        <p class="featuretitle"><strong>• Formation dehaut niveau avec des professionnels</strong></p>
+                        <p class="featuretitle"><strong>• Formation de haut niveau avec des professionnels</strong></p>
                         <br />
                         <p>C'est pour cela que vous êtes ici. Pour que ceux qui ont déjà réussi vous ouvrent la voie.</p>
                         <br />
@@ -2074,11 +2074,11 @@ Template Name: Concept Art Diploma - Admission
                     
                     <div class="hidden-xs hidden-sm">
                         <p class="longnote"><strong class="text-style-8"></strong>*Des bourses d'études allant jusqu'à $20 000 dollars canadiens sont disponibles pour les étudiants canadiens (remplir le formulaire ci-dessous pour plus d'informations)</p>
-                        <p class="longnote"><strong class="text-style-8">Note</strong>: Pour $29995 dollars canadiens, vous rejoignez un programme d'entraînement dehaut niveau et recevez l'éducation en art conceptuel la plus éstimée de la planète! Le programme similaire le plus abordable après celui-ci se trouve en Asie et est de près de $45 000 dollars canadiens par an (taxes non incluses – veuillez noter que notre programme dure 18 mois)</p>
-                        <p class="longnote"><strong class="text-style-8">D'autres programmes artistiques dehaut niveau (principalement vers Los Angeles) ont des frais à l'année qui dépassent les $200 000 dollars canadiens!</strong></p>
+                        <p class="longnote"><strong class="text-style-8">Note</strong>: Pour $29995 dollars canadiens, vous rejoignez un programme d'entraînement de haut niveau et recevez l'éducation en art conceptuel la plus éstimée de la planète! Le programme similaire le plus abordable après celui-ci se trouve en Asie et est de près de $45 000 dollars canadiens par an (taxes non incluses – veuillez noter que notre programme dure 18 mois)</p>
+                        <p class="longnote"><strong class="text-style-8">D'autres programmes artistiques de haut niveau (principalement vers Los Angeles) ont des frais à l'année qui dépassent les $200 000 dollars canadiens!</strong></p>
                         <p class="longnote">Ajoutez à tout cela que Montréal est une ville BIEN PLUS abordable et dans laquelle on vit mieux. Les effectifs de nos classes sont également plus réduits (20 élèves maximum) tandis que les leurs sont de 25 à 30 élèves. Avec Syn Studio, vous économiserez des dizaines de milliers de dollars pour recevoir une éducation de meilleure qualité!</p>
                         <p class="longnote">Les frais de $50 dollars canadiens (correspondant à l'envoi de votre portofolio et à votre candidature) sont la garantie que votre portfolio fera l'objet d'une analyse poussée. Même si vous n'êtes pas retenu après cette étape, vous recevrez quand même des commentaires précieux sur votre travail de la part d'artistes conceptuels confirmés ainsi que des conseils pour vous permettre de vous améliorer, après quoi vous pourrez à nouveau soumettre votre portofolio pour examen, et ce, gratuitement!</p>
-                        <p class="longnote"><strong class="text-style-8">**Veuillez garder à l'esprit que c'est un programme à PETIT effectif et que suelement 20 ÉLEVES par an seront sélectionnés. Notre équipe ne pourra examiner qu'un nombre limité de portfolios et de candidatures. Ces candidatures et portofolios seront acceptés selon la règle du PREMIER ARRIVÉ PREMIER SERVI.</strong></p>
+                        <p class="longnote"><strong class="text-style-8">**Veuillez garder à l'esprit que c'est un programme à PETIT effectif et que seulement 20 ÉLÈVES par an seront sélectionnés. Notre équipe ne pourra examiner qu'un nombre limité de portfolios et de candidatures. Ces candidatures et portfolios seront acceptés selon la règle du PREMIER ARRIVÉ PREMIER SERVI.</strong></p>
                         <p class="longnote">Si vous voulez sérieusement devenir un artiste conceptuel professionnel, assurez vous de remplir le formulaire ci-dessous pour réserver votre place pour les prochains examens de portfolio. C'est ENTIÈREMENT GRATUIT et vous recevrez un guide de candidature gratuit par e-mail ainsi que l'adresse e-mail et le numéro de téléphone d'un de nos conseillers que vous pourrez contacter pour d'éventuelles questions.</p>
                     </div>
                 </div>

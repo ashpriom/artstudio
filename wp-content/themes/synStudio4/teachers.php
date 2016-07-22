@@ -64,7 +64,7 @@
             						echo ".podcast #col1 {position: inherit; width: 100%}";
             						echo ".podcast #col1 p {clear: both;}";
             						echo ".podcast #col2 {display: none;}";
-            						echo ".teacher-boxWrapper .teacher-box {height: 412px;}";
+            						echo ".teacher-boxWrapper .teacher-box {height: 435px;}";
             						echo ".teachers-thumb {float: left; margin-right: 43px; margin-bottom: 12px;}";
             						echo ".teachers-art img {height: 152px;}";
             						echo ".podcast-boxWrapper h2 {font-size: 18px; margin-bottom: 10px;}";
