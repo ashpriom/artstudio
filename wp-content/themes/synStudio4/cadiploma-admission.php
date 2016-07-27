@@ -927,7 +927,7 @@ Template Name: Concept Art Diploma - Admission
             <div class="row">
                 <h1>Admission Process, Dates & Tuition</h1>
                 <br />
-                <h3>*Canadian students interested in joining in Fall 2016, send an email to <a href="mailto:admissions@synstudio.ca?Subject=Concept Art Diploma">admissions@synstudio.ca</a></h3>
+                <h4>*Canadian students interested in joining in Fall 2016, send an email to <a href="mailto:admissions@synstudio.ca?Subject=Concept Art Diploma">admissions@synstudio.ca</a></h4>
                 <br />
                 <div class="col-xs-12">
                     <div class="overviewtable2">
@@ -1974,7 +1974,7 @@ Template Name: Concept Art Diploma - Admission
             <div class="row">
                 <h1>Processus d'admission, dates et tarifs</h1>
                 <br />
-                <h3>*Les étudiants canadiens intéressés à joindre en automne 2016, veuillez envoyer un message courriel à <a href="mailto:admissions@synstudio.ca?Subject=Concept Art Diploma">admissions@synstudio.ca</a></h3>
+                <h4>*Les étudiants canadiens intéressés à joindre en automne 2016, veuillez envoyer un message courriel à <a href="mailto:admissions@synstudio.ca?Subject=Concept Art Diploma">admissions@synstudio.ca</a></h4>
                 <br />
                 <div class="col-xs-12">
                     <div class="overviewtable2">
