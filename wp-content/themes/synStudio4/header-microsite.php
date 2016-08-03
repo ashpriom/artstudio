@@ -31,8 +31,8 @@
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.bxslider.css" type="text/css" />
 	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" type="text/css" />
-	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-mini.css" type="text/css" />
-	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.responsive-mini.css" type="text/css" />
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/diplomaStyle.min.css" type="text/css" />
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/diplomaStyleResponsive.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/stacktable.css" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:regular,700&amp;subset=latin">
 	  	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic,300,300italic,regular,italic,600,600italic,700,700italic&amp;subset=latin,latin-ext">

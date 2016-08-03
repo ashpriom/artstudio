@@ -13,7 +13,7 @@
 	<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.sidr.light.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.min.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/synstudioResponsive.min.css" type="text/css" media="screen">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<meta name="keywords" content="<?php bloginfo('url'); _e(''); ?>" />
 	<meta name="copyright" content="Syn Studio" />
