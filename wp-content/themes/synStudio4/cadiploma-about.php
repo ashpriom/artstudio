@@ -107,13 +107,6 @@ Template Name: Concept Art Diploma - About
                 <br />
                 <div class="section-intro-text40">
                     <p>
-                        <!--At <strong>Syn Studio</strong>, we believe in the power of training over talent.
-                        <br />
-                        <strong>Since 2007</strong>, we’ve been <strong>helping passionate and <br />
-                        dedicated </strong>students master the fundamentals and <strong>learn high <br />
-                        level design and digital illustration skills:</strong>. The skills they now
-                        <br /> use professionally to create <strong>mind-blowing concepts and <br />
-                        visuals</strong> for the <strong>next generation</strong> of entertainment media-->
                         At <strong>Syn Studio</strong>, we believe in the power of training over talent.
                         <strong>Since 2007</strong>, we’ve been <strong>helping passionate and
                         dedicated </strong>students master the fundamentals and <strong>learn high
@@ -193,11 +186,6 @@ Template Name: Concept Art Diploma - About
                     <br />
                     <div class="section-intro-text">
                         <p>
-                            <!--Concept art is a quickly evolving field so it is critical that you learn from
-                            <br /> professionals who are working in the industry right now (and not five
-                            <br /> or ten years ago). <strong>Over a dozen top concept artists</strong> teach part time at
-                            <br /> Syn Studio so you can be directed, corrected, coached and mentored
-                            <br /> by the <strong>best in the industry right now!</strong>-->
                             Concept art is a quickly evolving field so it is critical that you learn from
                             professionals who are working in the industry right now (and not five
                             or ten years ago). <strong>Over a dozen top concept artists</strong> teach part time at
@@ -205,16 +193,137 @@ Template Name: Concept Art Diploma - About
                             by the <strong>best in the industry right now!</strong>
                         </p>
                         <br />
-                        <p>
-                            Our instructors have designed the characters, creatures, environments, props
-                            and vehicles for your favourite movies and games such as:
-                        </p>
                     </div>
                 </div>
+
+                    <!-- Teacher Bios -->
+                    <ul class="bxslider-teachers">
+                    <li>
+                        <div class="row row-75percent">
+                            <div class="col-md-4">
+                                <div class="tile1">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/16_teachers_assassin3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tile2">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/layer_150_copy_3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tile3">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/05_teachers_watchdogs.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-75percent">
+                            <div class="col-md-4">
+                                <div class="tile4">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/00_teachers_DeuxExHR.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tile5">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/15_teachers_batmanarkhamo.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tile6">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/08_teachers_300.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row row-75percent">
+                            <div class="col-md-4">
+                                <div class="tile7">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/07_teachers_mummy3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tile8">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/08_teachers_benjamin_button.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tile9">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/09_teachers_farcry3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-75percent">
+                            <div class="col-md-4">
+                                <div class="tile10">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/10_teachers_splinterCell_conviction.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tile11">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/11_teachers_ac_unity.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tile12">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/12_teachers_Moons_Hunters.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row row-75percent">
+                            <div class="col-md-4">
+                                <div class="tile13">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/13_teachers_mirror_mirror.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tile14">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/14_teachers_far_cry4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tile15">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/15_teachers_belle_bete.jpg" alt="Belle Bete">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-75percent">
+                            <div class="col-md-4">
+                                <div class="tile16">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/16_teachers_cosmos.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tile17">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/17_teachers_ac_brotherhood.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="tile18">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/18_teachers_spiderwick.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="outside">
+                    <p><span id="slider-prev"></span>   <span id="slider-next"></span></p>
+                </div>
+                <!-- Teacher Bios -->
+                
                 <br />
+            
             </div>
+            
             <br />
 
+            <div class="section-intro-text">
+                <p>
+                Our instructors have designed the characters, creatures, environments, props
+                and vehicles for your favourite movies and games such as:
+                </p>
+            </div>
             <!-- Teacher slideshow with bxslider...see the script loaded at the end of this file for implementation. The language of hover text is fired depending on Polylang's language detection -->
             <ul class="bxslider-teachers">
                 <li>
@@ -381,15 +490,6 @@ Template Name: Concept Art Diploma - About
             <br />
             <div class="section-intro-text">
                 <p>
-                    <!--Syn Studio wishes to thank the dozens of top concept artists and educators worldwide who met with us
-                    <br /> to advise us in the creation of an elite concept art training program. In particular, we wish to give thanks to the
-                    <br /> legendary concept artist and world renowned educator <strong> Scott Robertson</strong> for generously donating his time
-                    <br /> and sharing his expertise with us on several occasions. We’d also like to thank the following artists and educators,
-                    <br /> mentioned in the “special thanks” sections of our application to the Ministry of Education, who officially
-                    <br /> participated in the process of developing and evaluating our program and application for accreditation.
-                    <br />
-                    <br />
-                    <br />-->
                     Syn Studio wishes to thank the dozens of top concept artists and educators worldwide who met with us
                     to advise us in the creation of an elite concept art training program. In particular, we wish to give thanks to the
                     legendary concept artist and world renowned educator <strong> Scott Robertson</strong> for generously donating his time
