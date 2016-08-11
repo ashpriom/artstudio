@@ -218,7 +218,8 @@ Template Name: Concept Art Diploma - About
                                         Assassin's Creed, Prince of Persia, Deux Ex: Human Revolutions and Tron: Legacy, among 
                                         others. His work has been featured in “Exodyssey: Visual Development of an Epic Adventure”
                                         and  “Steampainting: SPARK - Creative process”, both by Steambot Studios.
-                                        <br />Thierry is the Director of Studies at Syn Studio and chairs the Concept Art Diploma Program.
+                                        <br /><br />
+                                        Thierry is the Director of Studies at Syn Studio and chairs the Concept Art Diploma Program.
                                     </p>
                                 </div>
                             </div>
@@ -239,7 +240,7 @@ Template Name: Concept Art Diploma - About
                                         digital matte curriculum.  A recipient of several awards including the CG Talk choice
                                         award and the XSI Gallery Award, Jessy’s work has been featured in several publications
                                         such as Exposé 5, Mattepainting.org and the CG Channel.
-                                        <br />
+                                        <br /><br />
                                         Jessy will be teaching Digital Image Manipulation in the Concept Art Diploma Program.
                                     </p>
                                 </div>
@@ -309,7 +310,7 @@ Template Name: Concept Art Diploma - About
                                         include Batman Arkham Origins FRANCHISE, Deus Ex Human Revolution, Kim Possible, 
                                         BALLERINA, Ghost Recon, Splinter Cell Chaos Theory and many 2D and 3D animated television
                                         shows.
-                                        <br />    
+                                        <br /><br />    
                                         Eric will be teaching Sketching for Production in the Concept Art Diploma Program.
                                     </p>
                                 </div>
@@ -317,17 +318,14 @@ Template Name: Concept Art Diploma - About
                         </div>
                     </li>
                 </ul>
-                <!--<div class="outside">
+                <!-- add this to have control button like the teacher project slider
+                <div class="outside">
                     <p><span id="slider-prev"></span>   <span id="slider-next"></span></p>
-                </div>
-                Teacher Bios -->
-                
+                </div>-->
+                <!-- Teacher Bios -->
                 <br />
-            
             </div>
-            
             <br />
-
             <div class="section-intro-text">
                 <p>
                 Our instructors have designed the characters, creatures, environments, props
