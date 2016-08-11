@@ -197,120 +197,48 @@ Template Name: Concept Art Diploma - About
                 </div>
 
                     <!-- Teacher Bios -->
-                    <ul class="bxslider-teachers">
+                    <ul class="bxslider-teacherbio">
                     <li>
                         <div class="row row-75percent">
                             <div class="col-md-4">
-                                <div class="tile1">
+                                <div class="tile19">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/16_teachers_assassin3.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="tile2">
+                                <div class="tile20">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/layer_150_copy_3.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="tile3">
+                                <div class="tile21">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/05_teachers_watchdogs.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="row row-75percent">
                             <div class="col-md-4">
-                                <div class="tile4">
+                                <div class="tile22">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/00_teachers_DeuxExHR.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="tile5">
+                                <div class="tile23">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/15_teachers_batmanarkhamo.jpg" alt="">
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="tile6">
+                                <div class="tile24">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/08_teachers_300.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="row row-75percent">
-                            <div class="col-md-4">
-                                <div class="tile7">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/07_teachers_mummy3.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="tile8">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/08_teachers_benjamin_button.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="tile9">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/09_teachers_farcry3.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-75percent">
-                            <div class="col-md-4">
-                                <div class="tile10">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/10_teachers_splinterCell_conviction.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="tile11">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/11_teachers_ac_unity.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="tile12">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/12_teachers_Moons_Hunters.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row row-75percent">
-                            <div class="col-md-4">
-                                <div class="tile13">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/13_teachers_mirror_mirror.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="tile14">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/14_teachers_far_cry4.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="tile15">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/15_teachers_belle_bete.jpg" alt="Belle Bete">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-75percent">
-                            <div class="col-md-4">
-                                <div class="tile16">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/16_teachers_cosmos.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="tile17">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/17_teachers_ac_brotherhood.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="tile18">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/18_teachers_spiderwick.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </li>
                 </ul>
-                <div class="outside">
+                <!--<div class="outside">
                     <p><span id="slider-prev"></span>   <span id="slider-next"></span></p>
                 </div>
-                <!-- Teacher Bios -->
+                Teacher Bios -->
                 
                 <br />
             
@@ -326,6 +254,42 @@ Template Name: Concept Art Diploma - About
             </div>
             <!-- Teacher slideshow with bxslider...see the script loaded at the end of this file for implementation. The language of hover text is fired depending on Polylang's language detection -->
             <ul class="bxslider-teachers">
+                <li>
+                    <div class="row row-75percent">
+                        <div class="col-md-4">
+                            <div class="tile19">
+                                <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tile20">
+                                <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tile21">
+                                <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-75percent">
+                        <div class="col-md-4">
+                            <div class="tile22">
+                                <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-de-massy.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tile23">
+                                <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tile24">
+                                <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-eric.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li>
                     <div class="row row-75percent">
                         <div class="col-md-4">
@@ -1272,6 +1236,66 @@ Template Name: Concept Art Diploma - About
                 jQuery(".tile18 .hovertext18").show();
             }).mouseout(function(){
                 jQuery(".tile18 .hovertext18").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            jQuery(".tile19").append("<p class='hovertext19'><?php if($currentLang=="en"){echo "Our instructor Meinert Hansen designed the main house and other environments for The Spiderwick Chronicles.";} else{ echo "Notre instructeur Meinert Hansen  a dessiné la maison principale et d’autres décors pour le film Les Chroniques de Spiderwick.";} ?></p>");
+            jQuery(".tile19 .hovertext19").hide();
+            jQuery(".tile19").mouseover(function(){
+                jQuery(".tile19 .hovertext19").show();
+            }).mouseout(function(){
+                jQuery(".tile19 .hovertext19").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            jQuery(".tile20").append("<p class='hovertext20'><?php if($currentLang=="en"){echo "Our instructor Meinert Hansen designed the main house and other environments for The Spiderwick Chronicles.";} else{ echo "Notre instructeur Meinert Hansen  a dessiné la maison principale et d’autres décors pour le film Les Chroniques de Spiderwick.";} ?></p>");
+            jQuery(".tile20 .hovertext20").hide();
+            jQuery(".tile20").mouseover(function(){
+                jQuery(".tile20 .hovertext18").show();
+            }).mouseout(function(){
+                jQuery(".tile20 .hovertext20").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            jQuery(".tile21").append("<p class='hovertext21'><?php if($currentLang=="en"){echo "Our instructor Meinert Hansen designed the main house and other environments for The Spiderwick Chronicles.";} else{ echo "Notre instructeur Meinert Hansen  a dessiné la maison principale et d’autres décors pour le film Les Chroniques de Spiderwick.";} ?></p>");
+            jQuery(".tile21 .hovertext21").hide();
+            jQuery(".tile21").mouseover(function(){
+                jQuery(".tile21 .hovertext21").show();
+            }).mouseout(function(){
+                jQuery(".tile21 .hovertext21").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            jQuery(".tile22").append("<p class='hovertext22'><?php if($currentLang=="en"){echo "Our instructor Meinert Hansen designed the main house and other environments for The Spiderwick Chronicles.";} else{ echo "Notre instructeur Meinert Hansen  a dessiné la maison principale et d’autres décors pour le film Les Chroniques de Spiderwick.";} ?></p>");
+            jQuery(".tile22 .hovertext22").hide();
+            jQuery(".tile22").mouseover(function(){
+                jQuery(".tile22 .hovertext22").show();
+            }).mouseout(function(){
+                jQuery(".tile22 .hovertext22").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            jQuery(".tile23").append("<p class='hovertext23'><?php if($currentLang=="en"){echo "Our instructor Meinert Hansen designed the main house and other environments for The Spiderwick Chronicles.";} else{ echo "Notre instructeur Meinert Hansen  a dessiné la maison principale et d’autres décors pour le film Les Chroniques de Spiderwick.";} ?></p>");
+            jQuery(".tile23 .hovertext23").hide();
+            jQuery(".tile23").mouseover(function(){
+                jQuery(".tile23 .hovertext23").show();
+            }).mouseout(function(){
+                jQuery(".tile23 .hovertext23").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            jQuery(".tile24").append("<p class='hovertext24'><?php if($currentLang=="en"){echo "Our instructor Meinert Hansen designed the main house and other environments for The Spiderwick Chronicles.";} else{ echo "Notre instructeur Meinert Hansen  a dessiné la maison principale et d’autres décors pour le film Les Chroniques de Spiderwick.";} ?></p>");
+            jQuery(".tile24 .hovertext24").hide();
+            jQuery(".tile24").mouseover(function(){
+                jQuery(".tile24 .hovertext24").show();
+            }).mouseout(function(){
+                jQuery(".tile24 .hovertext24").hide();
             });
         });
     </script>

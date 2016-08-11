@@ -823,7 +823,13 @@ img {
 .tile15,
 .tile16,
 .tile17,
-.tile18 {
+.tile18,
+.tile19,
+.tile20,
+.tile21,
+.tile22,
+.tile23,
+.tile24 {
   width: 100%;
   position: relative;
   float: left;
@@ -847,7 +853,13 @@ img {
 .tile15:hover,
 .tile16:hover,
 .tile17:hover,
-.tile18:hover {
+.tile18:hover,
+.tile19:hover,
+.tile20:hover,
+.tile21:hover,
+.tile22:hover,
+.tile23:hover,
+.tile24:hover {
   cursor: pointer;
 }
 .tile1 .hovertext1,
@@ -867,7 +879,13 @@ img {
 .tile15 .hovertext15,
 .tile16 .hovertext16,
 .tile17 .hovertext17,
-.tile18 .hovertext18 {
+.tile18 .hovertext18,
+.tile19 .hovertext19,
+.tile20 .hovertext20,
+.tile21 .hovertext21,
+.tile22 .hovertext22,
+.tile23 .hovertext23,
+.tile24 .hovertext24 {
   font-family: 'Gotham-Bold';
   background: #fff;
   zoom: 1;
@@ -900,7 +918,13 @@ img {
 .tile15 .hovertext15:hover,
 .tile16 .hovertext16:hover,
 .tile17 .hovertext17:hover,
-.tile18 .hovertext18:hover{
+.tile18 .hovertext18:hover,
+.tile19 .hovertext19:hover,
+.tile20 .hovertext20:hover,
+.tile21 .hovertext21:hover,
+.tile22 .hovertext22:hover,
+.tile23 .hovertext23:hover,
+.tile24 .hovertext24:hover{
   cursor: pointer;
 }
 .arrow-border-formatting {
