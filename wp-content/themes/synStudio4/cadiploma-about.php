@@ -204,9 +204,9 @@ Template Name: Concept Art Diploma - About
                                 <div class="term-bx">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher">
                                     <p class="small-art-credit text-right"></p>
-                                    <h3 class="orange-text">Thierry Doizon</h3>
+                                    <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
                                     <br>
-                                    <p class="term-description">Thierry Doizon aka Barontieri was a former Art Director 
+                                    <p class="term-description teacher-description">Thierry Doizon aka Barontieri was a former Art Director 
                                         at Square Enix Montreal where he was responsible for Lara Croft GO, Apple’s mobile 
                                         game of the year. A Senior Concept Artist and Art Director with 20 years of industry 
                                         experience, he has worked for a variety of companies around the globe such as Ubisoft, 
@@ -226,9 +226,9 @@ Template Name: Concept Art Diploma - About
                                 <div class="term-bx">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher">
                                     <p class="small-art-credit text-right"></p>
-                                    <h3 class="orange-text">Jessy Veilleux</h3>
+                                    <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
                                     <br>
-                                    <p class="term-description">Jessy Veilleux is the founder and creative director of Meduzarts,
+                                    <p class="term-description teacher-description">Jessy Veilleux is the founder and creative director of Meduzarts,
                                         a digital environment and character design studio, and the creative director of Digital
                                         Dimension. Combining a background in fine arts with his passion for digital work, Jessy’s
                                         unique approach and artistic eye has led to his work being featured in a lot of high profile
@@ -248,9 +248,9 @@ Template Name: Concept Art Diploma - About
                                 <div class="term-bx">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher">
                                     <p class="small-art-credit text-right"></p>
-                                    <h3 class="orange-text">Thierry Doizon</h3>
+                                    <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
                                     <br>
-                                    <p class="term-description">Daniel Kvasznicza is a concept artist, illustrator and matte
+                                    <p class="term-description teacher-description">Daniel Kvasznicza is a concept artist, illustrator and matte
                                         painter with over 10 years of industry experience. He’s worked on AAA franchises including
                                         Batman: Arkham Origins, Starcraft, Far Cry, Dishonoured, Elder Scrolls, Diablo, Fallout,
                                         Deus Ex and Assassin’s Creed and is currently working as a senior concept artist at
@@ -268,9 +268,9 @@ Template Name: Concept Art Diploma - About
                                 <div class="term-bx">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-de-massy.jpg" alt="teacher">
                                     <p class="small-art-credit text-right"></p>
-                                    <h3 class="orange-text">Christian Robert de Massy</h3>
+                                    <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
                                     <br>
-                                    <p class="term-description">Christian Robert de Massy is one of the film industry’s best 
+                                    <p class="term-description teacher-description">Christian Robert de Massy is one of the film industry’s best 
                                         kept secrets. He’s been working for the last 8 years as a freelance concept artist and
                                         illustrator on films such as X-Men: Days of Future Past, Snow White and The Curious
                                         Case of Benjamin Button. All without ever having put any artwork online (until now).
@@ -283,9 +283,9 @@ Template Name: Concept Art Diploma - About
                                 <div class="term-bx">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher">
                                     <p class="small-art-credit text-right"></p>
-                                    <h3 class="orange-text">Frédéric Bennett</h3>
+                                    <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
                                     <br>
-                                    <p class="term-description">Frédéric Bennett is currently a Senior Concept Artist at Eidos
+                                    <p class="term-description teacher-description">Frédéric Bennett is currently a Senior Concept Artist at Eidos
                                         Montreal, in charge of designing characters for the latest Deus Ex game. During his eight
                                         years as a concept artist working mainly in the games’ industry, he has contributed to
                                         projects in the Conan, Transformers, Wet and Kung Fu Panda universes. Frédéric is a very
@@ -297,9 +297,9 @@ Template Name: Concept Art Diploma - About
                                 <div class="term-bx">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-eric.jpg" alt="teacher">
                                     <p class="small-art-credit text-right"></p>
-                                    <h3 class="orange-text">Eric Gagnon</h3>
+                                    <h4 class="orange-text nopaddingleft">Eric Gagnon</h4>
                                     <br>
-                                    <p class="term-description">
+                                    <p class="term-description teacher-description">
                                         Eric Gagnon is a senior concept artist and art director for gaming, film and television,
                                         in addition to having six years of teaching experience at the university level. He is 
                                         presently working AS A LEAD SENIOR CONCEPT ARTIST at Warner Bros Games Montreal FOR AAA 

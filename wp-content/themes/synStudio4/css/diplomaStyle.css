@@ -705,7 +705,7 @@ img {
   padding: 10%;
   width: 100%;
   min-height: 425px;
-  background-color: #fff;
+  background-color: #F2F2F2;
   text-align: left;
 }
 .term-bx .termnumber {
@@ -729,6 +729,12 @@ img {
 .term-bx .term-description {
   padding: 0;
 }
+.term-bx .teacher-description {
+  padding: 0;
+  font-size: 0.9em !important;
+  text-align: justify !important;
+}
+.nopaddingleft{padding-left: 0px !important;}
 .term-bx .term-description-list {
   margin: 0 auto;
   padding: 0;

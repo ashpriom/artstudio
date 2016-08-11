@@ -49,7 +49,8 @@ $(document).ready(function(){
         infiniteLoop: true,
         hideControlOnEnd: true,
         touchEnabled: true,
-        pager:true,
+        controls: true,
+        pager:false,
         adaptiveHeight: true,
         nextSelector: '#slider-next',
         prevSelector: '#slider-prev',
@@ -61,7 +62,7 @@ $(document).ready(function(){
         hideControlOnEnd: true,
         touchEnabled: true,
         controls: false,
-        pager:true,
+        pager:false,
         adaptiveHeight: true,
       });
 });
