@@ -196,40 +196,64 @@ Template Name: Concept Art Diploma - About
                     </div>
                 </div>
 
-                    <!-- Teacher Bios -->
-                    <ul class="bxslider-teacherbio">
+                <!-- Teacher Bios -->
+                <ul class="bxslider-teacherbio">
                     <li>
                         <div class="row row-75percent">
                             <div class="col-md-4">
-                                <div class="tile19">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/16_teachers_assassin3.jpg" alt="">
+                                <div class="term-bx">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher">
+                                    <p class="small-art-credit text-right"></p>
+                                    <h3 class="orange-text">Thierry Doizon</h3>
+                                    <br>
+                                    <p class="term-description">Design iconic characters for the next generation of games, movies and TV shows that engage your audience and connect them emotionally to the story.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="tile20">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/layer_150_copy_3.jpg" alt="">
+                                <div class="term-bx">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher">
+                                    <p class="small-art-credit text-right"></p>
+                                    <h3 class="orange-text">Thierry Doizon</h3>
+                                    <br>
+                                    <p class="term-description">Design iconic characters for the next generation of games, movies and TV shows that engage your audience and connect them emotionally to the story.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="tile21">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/05_teachers_watchdogs.jpg" alt="">
+                                <div class="term-bx">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher">
+                                    <p class="small-art-credit text-right"></p>
+                                    <h3 class="orange-text">Thierry Doizon</h3>
+                                    <br>
+                                    <p class="term-description">Design iconic characters for the next generation of games, movies and TV shows that engage your audience and connect them emotionally to the story.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row row-75percent">
                             <div class="col-md-4">
-                                <div class="tile22">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/00_teachers_DeuxExHR.jpg" alt="">
+                                <div class="term-bx">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-de-massy.jpg" alt="teacher">
+                                    <p class="small-art-credit text-right"></p>
+                                    <h3 class="orange-text">Thierry Doizon</h3>
+                                    <br>
+                                    <p class="term-description">Design iconic characters for the next generation of games, movies and TV shows that engage your audience and connect them emotionally to the story.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="tile23">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/15_teachers_batmanarkhamo.jpg" alt="">
+                                <div class="term-bx">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher">
+                                    <p class="small-art-credit text-right"></p>
+                                    <h3 class="orange-text">Thierry Doizon</h3>
+                                    <br>
+                                    <p class="term-description">Design iconic characters for the next generation of games, movies and TV shows that engage your audience and connect them emotionally to the story.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="tile24">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/08_teachers_300.jpg" alt="">
+                                <div class="term-bx">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-eric.jpg" alt="teacher">
+                                    <p class="small-art-credit text-right"></p>
+                                    <h3 class="orange-text">Thierry Doizon</h3>
+                                    <br>
+                                    <p class="term-description">Design iconic characters for the next generation of games, movies and TV shows that engage your audience and connect them emotionally to the story.</p>
                                 </div>
                             </div>
                         </div>
@@ -1253,7 +1277,7 @@ Template Name: Concept Art Diploma - About
             jQuery(".tile20").append("<p class='hovertext20'><?php if($currentLang=="en"){echo "Our instructor Meinert Hansen designed the main house and other environments for The Spiderwick Chronicles.";} else{ echo "Notre instructeur Meinert Hansen  a dessiné la maison principale et d’autres décors pour le film Les Chroniques de Spiderwick.";} ?></p>");
             jQuery(".tile20 .hovertext20").hide();
             jQuery(".tile20").mouseover(function(){
-                jQuery(".tile20 .hovertext18").show();
+                jQuery(".tile20 .hovertext20").show();
             }).mouseout(function(){
                 jQuery(".tile20 .hovertext20").hide();
             });
