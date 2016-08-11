@@ -734,7 +734,10 @@ img {
   font-size: 0.9em !important;
   text-align: justify !important;
 }
+
 .nopaddingleft{padding-left: 0px !important;}
+.teacher-headshot{width:auto !important;}
+
 .term-bx .term-description-list {
   margin: 0 auto;
   padding: 0;
