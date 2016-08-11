@@ -206,16 +206,42 @@ Template Name: Concept Art Diploma - About
                                     <p class="small-art-credit text-right"></p>
                                     <h3 class="orange-text">Thierry Doizon</h3>
                                     <br>
-                                    <p class="term-description">Design iconic characters for the next generation of games, movies and TV shows that engage your audience and connect them emotionally to the story.</p>
+                                    <p class="term-description">Thierry Doizon aka Barontieri was a former Art Director 
+                                        at Square Enix Montreal where he was responsible for Lara Croft GO, Apple’s mobile 
+                                        game of the year. A Senior Concept Artist and Art Director with 20 years of industry 
+                                        experience, he has worked for a variety of companies around the globe such as Ubisoft, 
+                                        Disney Interactive and Eidos. One of the Co-Founders of Steambot Studios, Thierry has 
+                                        taught at the college level and been a speaker at various workshops and conferences such 
+                                        Disney Imagineering, ADAPT, Ubisoft Campus, MIGS, FIEA, Massive Black and The Gnomon 
+                                        Workshop, for whom he has also released an instructional DVD (Character Design Pipeline: 
+                                        Production Art & Research Techniques with BARONTiERi). Thierry’s other credits include 
+                                        Assassin's Creed, Prince of Persia, Deux Ex: Human Revolutions and Tron: Legacy, among 
+                                        others. His work has been featured in “Exodyssey: Visual Development of an Epic Adventure”
+                                        and  “Steampainting: SPARK - Creative process”, both by Steambot Studios.
+                                        <br />Thierry is the Director of Studies at Syn Studio and chairs the Concept Art Diploma Program.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="term-bx">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher">
                                     <p class="small-art-credit text-right"></p>
-                                    <h3 class="orange-text">Thierry Doizon</h3>
+                                    <h3 class="orange-text">Jessy Veilleux</h3>
                                     <br>
-                                    <p class="term-description">Design iconic characters for the next generation of games, movies and TV shows that engage your audience and connect them emotionally to the story.</p>
+                                    <p class="term-description">Jessy Veilleux is the founder and creative director of Meduzarts,
+                                        a digital environment and character design studio, and the creative director of Digital
+                                        Dimension. Combining a background in fine arts with his passion for digital work, Jessy’s
+                                        unique approach and artistic eye has led to his work being featured in a lot of high profile
+                                        movies and video games such as StarWars, The Force Unleashed II, Avatar VG, 300, AION,
+                                        FallOut 3, SinCity, Transformers: Revenge of the Fallen VG, Assassin’s Creed II, Prince
+                                        of Persia II and Mortal Kombat X, among others. Jessy has been teaching for 10 years at
+                                        Centre NAD in Montreal, where he was instrumental in creating the university’s first
+                                        digital matte curriculum.  A recipient of several awards including the CG Talk choice
+                                        award and the XSI Gallery Award, Jessy’s work has been featured in several publications
+                                        such as Exposé 5, Mattepainting.org and the CG Channel.
+                                        <br />
+                                        Jessy will be teaching Digital Image Manipulation in the Concept Art Diploma Program.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -224,7 +250,16 @@ Template Name: Concept Art Diploma - About
                                     <p class="small-art-credit text-right"></p>
                                     <h3 class="orange-text">Thierry Doizon</h3>
                                     <br>
-                                    <p class="term-description">Design iconic characters for the next generation of games, movies and TV shows that engage your audience and connect them emotionally to the story.</p>
+                                    <p class="term-description">Daniel Kvasznicza is a concept artist, illustrator and matte
+                                        painter with over 10 years of industry experience. He’s worked on AAA franchises including
+                                        Batman: Arkham Origins, Starcraft, Far Cry, Dishonoured, Elder Scrolls, Diablo, Fallout,
+                                        Deus Ex and Assassin’s Creed and is currently working as a senior concept artist at
+                                        Warner Brother Games Montreal. He’s a technical wizard who’s created pipelines, software,
+                                        scripts, brushes and other tools. Some of his jaw-dropping concept art has been featured
+                                        on several E3 posters! He is also a sought after instructor who’s given popular classes
+                                        and workshops in concept design, illustration and 3D to students and professionals at
+                                        Alpha Vision, Meduzarts and here at Syn Studio!
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -233,27 +268,50 @@ Template Name: Concept Art Diploma - About
                                 <div class="term-bx">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-de-massy.jpg" alt="teacher">
                                     <p class="small-art-credit text-right"></p>
-                                    <h3 class="orange-text">Thierry Doizon</h3>
+                                    <h3 class="orange-text">Christian Robert de Massy</h3>
                                     <br>
-                                    <p class="term-description">Design iconic characters for the next generation of games, movies and TV shows that engage your audience and connect them emotionally to the story.</p>
+                                    <p class="term-description">Christian Robert de Massy is one of the film industry’s best 
+                                        kept secrets. He’s been working for the last 8 years as a freelance concept artist and
+                                        illustrator on films such as X-Men: Days of Future Past, Snow White and The Curious
+                                        Case of Benjamin Button. All without ever having put any artwork online (until now).
+                                        He’s known for his incredible speed and the beauty of his environment paintings and
+                                        he’s a popular teacher here at Syn Studio.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="term-bx">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher">
                                     <p class="small-art-credit text-right"></p>
-                                    <h3 class="orange-text">Thierry Doizon</h3>
+                                    <h3 class="orange-text">Frédéric Bennett</h3>
                                     <br>
-                                    <p class="term-description">Design iconic characters for the next generation of games, movies and TV shows that engage your audience and connect them emotionally to the story.</p>
+                                    <p class="term-description">Frédéric Bennett is currently a Senior Concept Artist at Eidos
+                                        Montreal, in charge of designing characters for the latest Deus Ex game. During his eight
+                                        years as a concept artist working mainly in the games’ industry, he has contributed to
+                                        projects in the Conan, Transformers, Wet and Kung Fu Panda universes. Frédéric is a very
+                                        well appreciated teacher by his students from his Character Rendering class.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="term-bx">
                                     <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-eric.jpg" alt="teacher">
                                     <p class="small-art-credit text-right"></p>
-                                    <h3 class="orange-text">Thierry Doizon</h3>
+                                    <h3 class="orange-text">Eric Gagnon</h3>
                                     <br>
-                                    <p class="term-description">Design iconic characters for the next generation of games, movies and TV shows that engage your audience and connect them emotionally to the story.</p>
+                                    <p class="term-description">
+                                        Eric Gagnon is a senior concept artist and art director for gaming, film and television,
+                                        in addition to having six years of teaching experience at the university level. He is 
+                                        presently working AS A LEAD SENIOR CONCEPT ARTIST at Warner Bros Games Montreal FOR AAA 
+                                        GAMES IN THE DC UNIVERSE FRANCHISE.Previously, he’s worked at various gaming companies 
+                                        such as Eidos, Gameloft and Behavior, as well as animation and production studios such 
+                                        as DIGITAL DISTRICT, Ciné-Groupe Animation and Studio Pascal Blais. His other credits 
+                                        include Batman Arkham Origins FRANCHISE, Deus Ex Human Revolution, Kim Possible, 
+                                        BALLERINA, Ghost Recon, Splinter Cell Chaos Theory and many 2D and 3D animated television
+                                        shows.
+                                        <br />    
+                                        Eric will be teaching Sketching for Production in the Concept Art Diploma Program.
+                                    </p>
                                 </div>
                             </div>
                         </div>

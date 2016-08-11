@@ -51,18 +51,18 @@ $(document).ready(function(){
         touchEnabled: true,
         pager:true,
         adaptiveHeight: true,
+        nextSelector: '#slider-next',
+        prevSelector: '#slider-prev',
+        nextText: '<img src="http://synstudio.ca/wp-content/themes/synStudio4/images/next.png" alt="Next" />',
+        prevText: '<img src="http://synstudio.ca/wp-content/themes/synStudio4/images/prev.png" alt="Previous" />',
       });
       $('.bxslider-teacherbio').bxSlider({
         infiniteLoop: true,
         hideControlOnEnd: true,
         touchEnabled: true,
-        controls: true,
-        pager:false,
+        controls: false,
+        pager:true,
         adaptiveHeight: true,
-        nextSelector: '#slider-next',
-        prevSelector: '#slider-prev',
-        nextText: '<img src="http://synstudio.ca/wp-content/themes/synStudio4/images/next.png" alt="Next" />',
-        prevText: '<img src="http://synstudio.ca/wp-content/themes/synStudio4/images/prev.png" alt="Previous" />',
       });
 });
 
