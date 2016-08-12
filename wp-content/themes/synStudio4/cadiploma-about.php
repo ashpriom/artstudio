@@ -791,12 +791,144 @@ Template Name: Concept Art Diploma - About
                     <h1 class="orange-text off-margin-header">Nos professeurs</h1>
                     <br />
                     <div class="section-intro-text">
-                        <!--<p><br>Le conception artistique est un secteur qui évolue rapidement. <br />Il est donc essentiel d'apprendre avec des professionnels qui travaillent actuellement <br />dans ce secteur (et non pas des personnes qui y ont eu une expérience il y a cinq ou dix ans). <br /><strong>Plus d'une douzaine d'artistes professionnels enseignent</strong>  chez Syn Studio afin que vous puissiez être guidé, <br /><strong>corrigé et entraîné par les meilleurs du moment</strong>.</p>
-                        <p>Nos professeurs on conçu des personnages, des créatures, des décors,<br /> des accessoires et des véhicules pour vos jeux et films préférés tels que :</p>-->
                         <p>Le conception artistique est un secteur qui évolue rapidement. Il est donc essentiel d'apprendre avec des professionnels qui travaillent actuellement dans ce secteur (et non pas des personnes qui y ont eu une expérience il y a cinq ou dix ans). <strong>Plus d'une douzaine d'artistes professionnels enseignent</strong>  chez Syn Studio afin que vous puissiez être guidé, <strong>corrigé et entraîné par les meilleurs du moment</strong>.</p>
                         <p>Nos professeurs on conçu des personnages, des créatures, des décors, des accessoires et des véhicules pour vos jeux et films préférés tels que :</p>
                     </div>
                 </div>
+                <br />
+                <h2 class="orange-text off-margin-header">Les professeurs pour la session d'automne 2016 :</h2>
+                <!-- Teacher Bios -->
+                <ul class="bxslider-teacherbio">
+                    <li>
+                        <div class="row row-75percent">
+                            <div class="col-md-4">
+                                <div class="term-bx teacherbox">
+                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher">
+                                    <p class="small-art-credit text-right"></p>
+                                    <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
+                                    <br>
+                                    <p class="term-description teacher-description">Thierry Doizon aka Barontieri a été précédemment le
+                                        directeur artistique à Square Enix Montréal, où il était le responsable de Lara Croft GO, le
+                                        jeu mobile de l’année par Apple. Un chef en art conceptuel et un directeur artistique avec
+                                        plus de 20 ans d’expérience dyans l’industrie, il a travaillé pour une grande variété de
+                                        compagnies autour du monde, tels Ubisoft, Disney Interactive et Eidos. En tant que 
+                                        co-fondateur de Steambot Studios, Thierry a enseigné au niveau collégial et a été invité
+                                        pour parler à plusieurs ateliers et conférences dont Disney Imagineering, ADAPT, Ubisoft
+                                        Campus, MIGS, FIEA, Massive Black et The Gnomon Workshop, ce dernier pour lequel il a 
+                                        également produit un DVD éducatif (Character Design Pipeline: Production Art & Research
+                                        Techniques with BARONTiERi). Quelques autres de ses projets incluent: Assassin's Creed,
+                                        Prince of Persia, Deux Ex: Human Revolutions et Tron: Legacy, entre autres. Ses oeuvres
+                                        ont été publiées dans “Exodyssey: Visual Development of an Epic Adventure” et
+                                        “Steampainting: SPARK - Creative process”, tous les deux par Steambot Studios.<br /><br />
+
+                                        Thierry est le Directeur d’études au Syn Studio et préside le program de Diplôme en conception 
+                                        artistique.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="term-bx teacherbox">
+                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher">
+                                    <p class="small-art-credit text-right"></p>
+                                    <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
+                                    <br>
+                                    <p class="term-description teacher-description">Jessy Veilleux est le fondateur et 
+                                        directeur artistique de Meduzarts, un studio de personnages et d’environnements 
+                                        numériques, ainsi que le directeur artistique de Digital Dimension. Ses connaissances
+                                        en beaux-arts combinées avec sa passion pour l’art numérique lui apportent une 
+                                        approche unique qui ont contribué au publication de plusieurs de ses oeuvres dans des
+                                        films et jeux vidéos très connus tels StarWars, The Force Unleashed II, Avatar VG, 
+                                        300, AION, FallOut 3, SinCity, Transformers: Revenge of the Fallen VG, Assassin’s 
+                                        Creed II, Prince of Persia II et Mortal Kombat X, entre autres. Jessy enseigne depuis
+                                        10 ans au Centre NAD à Montréal, où il a contribué grandement au premier programme
+                                        d’études numériques ‘matte’. Plusieurs prix portent son nom, tels le CG Talk choice
+                                        award et le XSI Gallery Award en plus que ses oeuvres ont été publiées dans Exposé
+                                        5, Mattepainting.org and the CG Channel. 
+                                        <br /><br />
+                                        Jessy Veilleux enseignera le cours de Traitement d’images numériques dans le programme de Diplôme en conception artistique.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="term-bx teacherbox">
+                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher">
+                                    <p class="small-art-credit text-right"></p>
+                                    <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
+                                    <br>
+                                    <p class="term-description teacher-description">Daniel Kvasznicza est un artiste de 
+                                        concept et matte painter ayant plus de 10 ans d’expérience dans l’industrie du jeu
+                                        vidéo. Il a collaboré à plusieurs franchises AAA comme Starcraft, Far Cry, 
+                                        Dishonoured, Elder Scrolls, Diablo, Fallout, Deus Ex, Assassin’s Creed et Batman:
+                                        Arkham Origins. Il est présentement artiste de concept senior chez Warner Bros.
+                                        Games Montréal. Ce génie technique a créé des softwares, des scripts, des pinceaux
+                                        personnalisés et quelques-unes de ses oeuvres ont figuré sur des posters de E3!
+                                        Il est aussi un prof recherché ayant enseigné plusieurs ateliers et cours de
+                                        concept art à Syn Studio,  Alpha Vision et Méduzart.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-75percent">
+                            <div class="col-md-4">
+                                <div class="term-bx teacherbox">
+                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-de-massy.jpg" alt="teacher">
+                                    <p class="small-art-credit text-right"></p>
+                                    <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
+                                    <br>
+                                    <p class="term-description teacher-description">Christian Robert de Massy est l’un des
+                                        secrets les mieux gardés de l’industrie du film. Il à travaillé pendant 8 ans en tant que
+                                        concepteur artistique et illustrateur indépendant sur des films tels que: X-Men: Jours
+                                        d’un futur passé, Blanche neige et L’Étrange histoire de Benjamin Button. Tout cela sans
+                                        jamais avoir publié ses travaux en ligne (jusqu’à ce jour). Il est connu pour son
+                                        incroyable efficacité et la beauté de ses peintures d’environnements.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="term-bx teacherbox">
+                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher">
+                                    <p class="small-art-credit text-right"></p>
+                                    <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
+                                    <br>
+                                    <p class="term-description teacher-description">Frédéric Bennett est présentement artiste
+                                        de concept sénior chez Eidos Montréal, concevant notamment des personnages pour Deus Ex.
+                                        Durant 8 années en tant qu’artiste de concept dans le milieu du jeu vidéo, il a
+                                        contribué à des projets tels que Conan, Transformers, Wet et Kung Fu Panda. Frédéric
+                                        est un professeur très apprécié des élèves de son cours Rendu de Personnages.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="term-bx teacherbox">
+                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-eric.jpg" alt="teacher">
+                                    <p class="small-art-credit text-right"></p>
+                                    <h4 class="orange-text nopaddingleft">Eric Gagnon</h4>
+                                    <br>
+                                    <p class="term-description teacher-description">
+                                        Eric Gagnon est un artiste de conceptions senior et un directeur artistique pour les
+                                        jeux vidéos, les films et la télévision, en plus d’avoir six ans d’expérience au
+                                        niveau universitaire. Il travaille présentement à Warner Bros Games Montréal, 
+                                        où ses oeuvres se trouvent dans le jeu très populaire Batman Arkham Origins. 
+                                        D’ailleurs, il a travaillé à plusieurs compagnies de jeux tels Eidos, Gameloft et
+                                        Behavior, autant que dans des studios d’animation et de production comme Ciné-Groupe
+                                        Animation et Studio Pascal Blais. De plus, Deus Ex Human Revolution, Kim Possible,
+                                        Ghost Recon, Splinter Cell Chaos Theory font aussi partie de certains production
+                                        sur lequel il a contribué son expertise, incluant d’autres séries de dessins
+                                        animés encore. 
+                                        <br /><br />    
+                                        Eric Gagnon enseignera le cours de Dessiner en contexte de production dans le 
+                                        programme de Diplôme en conception artistique.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- add this to have control button like the teacher project slider
+                <div class="outside">
+                    <p><span id="slider-prev"></span>   <span id="slider-next"></span></p>
+                </div>-->
+                <!-- Teacher Bios -->
                 <br />
             </div>
             <br />
