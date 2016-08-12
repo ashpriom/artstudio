@@ -933,6 +933,13 @@ Template Name: Concept Art Diploma - About
             </div>
             <br />
 
+            <div class="section-intro-text">
+                <p>
+                Nos enseignants ont crée les personnages, créatures, environnements, accessoires
+                 et véhicules pour vos films et jeux vidéos préférés tels:
+                </p>
+            </div>
+
             <!-- Teacher slideshow with bxslider...see main.js for JS. -->
             <ul class="bxslider-teachers">
                 <li>
