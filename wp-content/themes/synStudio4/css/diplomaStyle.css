@@ -736,7 +736,7 @@ img {
 }
 
 .nopaddingleft{padding-left: 0px !important;}
-.teacher-headshot{width:auto !important;}
+.teacher-headshot{width:auto !important;float: left; padding: 0px 10px !important;}
 .teacher-artwork{float:left;}
 .teacherbox{min-height: 670px !important;}
 

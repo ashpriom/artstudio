@@ -204,8 +204,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
+                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
                                     </div><br />
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
@@ -230,8 +230,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
+                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
@@ -257,8 +257,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
+                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
@@ -278,8 +278,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
+                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
@@ -298,8 +298,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
+                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
@@ -315,8 +315,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon-art.jpg" alt="teacher"></div>
+                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Eric Gagnon</h4>
@@ -824,8 +824,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-4">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
+                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
@@ -852,8 +852,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-4">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
+                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
@@ -878,8 +878,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-4">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
+                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
@@ -901,8 +901,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-4">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
+                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
@@ -919,8 +919,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-4">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
+                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
@@ -936,8 +936,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-4">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon-art.jpg" alt="teacher"></div>
+                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Eric Gagnon</h4>
