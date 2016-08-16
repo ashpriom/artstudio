@@ -207,9 +207,9 @@ Template Name: Concept Art Diploma - About
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
                                     </div><br />
-                                    <p class="small-art-credit text-right"></p>
+                                    
                                     <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
-                                    <br>
+                                    
                                     <p class="term-description teacher-description">Thierry Doizon aka Barontieri was a former Art Director 
                                         at Square Enix Montreal where he was responsible for Lara Croft GO, Apple’s mobile 
                                         game of the year. A Senior Concept Artist and Art Director with 20 years of industry 
@@ -233,7 +233,7 @@ Template Name: Concept Art Diploma - About
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
                                     </div>
-                                    <p class="small-art-credit text-right"></p>
+                                    
                                     <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
                                     <br>
                                     <p class="term-description teacher-description">Jessy Veilleux is the founder and creative director of Meduzarts,
@@ -260,7 +260,7 @@ Template Name: Concept Art Diploma - About
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
                                     </div>
-                                    <p class="small-art-credit text-right"></p>
+                                    
                                     <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
                                     <br>
                                     <p class="term-description teacher-description">Daniel Kvasznicza is a concept artist, illustrator and matte
@@ -281,7 +281,7 @@ Template Name: Concept Art Diploma - About
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
                                     </div>
-                                    <p class="small-art-credit text-right"></p>
+                                    
                                     <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
                                     <br>
                                     <p class="term-description teacher-description">Christian Robert de Massy is one of the film industry’s best 
@@ -301,7 +301,7 @@ Template Name: Concept Art Diploma - About
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
                                     </div>
-                                    <p class="small-art-credit text-right"></p>
+                                    
                                     <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
                                     <br>
                                     <p class="term-description teacher-description">Frédéric Bennett is currently a Senior Concept Artist at Eidos
@@ -318,7 +318,7 @@ Template Name: Concept Art Diploma - About
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon-art.jpg" alt="teacher"></div>
                                     </div>
-                                    <p class="small-art-credit text-right"></p>
+                                    
                                     <h4 class="orange-text nopaddingleft">Eric Gagnon</h4>
                                     <br>
                                     <p class="term-description teacher-description">
@@ -821,13 +821,13 @@ Template Name: Concept Art Diploma - About
                 <ul class="bxslider-teacherbio">
                     <li>
                         <div class="row row-75percent">
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
                                     </div>
-                                    <p class="small-art-credit text-right"></p>
+                                    
                                     <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
                                     <br>
                                     <p class="term-description teacher-description">Thierry Doizon aka Barontieri a été précédemment le
@@ -849,13 +849,13 @@ Template Name: Concept Art Diploma - About
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
                                     </div>
-                                    <p class="small-art-credit text-right"></p>
+                                    
                                     <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
                                     <br>
                                     <p class="term-description teacher-description">Jessy Veilleux est le fondateur et 
@@ -875,13 +875,15 @@ Template Name: Concept Art Diploma - About
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                        </div>
+                        <div class="row row-75percent">
+                            <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
                                     </div>
-                                    <p class="small-art-credit text-right"></p>
+                                    
                                     <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
                                     <br>
                                     <p class="term-description teacher-description">Daniel Kvasznicza est un artiste de 
@@ -896,15 +898,13 @@ Template Name: Concept Art Diploma - About
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row row-75percent">
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
                                     </div>
-                                    <p class="small-art-credit text-right"></p>
+                                    
                                     <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
                                     <br>
                                     <p class="term-description teacher-description">Christian Robert de Massy est l’un des
@@ -916,13 +916,16 @@ Template Name: Concept Art Diploma - About
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            
+                        </div>
+                        <div class="row row-75percent">
+                            <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
                                     </div>
-                                    <p class="small-art-credit text-right"></p>
+                                    
                                     <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
                                     <br>
                                     <p class="term-description teacher-description">Frédéric Bennett est présentement artiste
@@ -933,13 +936,13 @@ Template Name: Concept Art Diploma - About
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon-art.jpg" alt="teacher"></div>
                                     </div>
-                                    <p class="small-art-credit text-right"></p>
+
                                     <h4 class="orange-text nopaddingleft">Eric Gagnon</h4>
                                     <br>
                                     <p class="term-description teacher-description">
