@@ -737,7 +737,8 @@ img {
 
 .nopaddingleft{padding-left: 0px !important;}
 .teacher-headshot{width:auto !important;}
-.teacherbox{min-height: 870px !important;}
+.teacher-artwork{float:left;}
+.teacherbox{min-height: 670px !important;}
 
 
 .term-bx .term-description-list {
