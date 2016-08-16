@@ -205,7 +205,7 @@ Template Name: Concept Art Diploma - About
                                 <div class="term-bx teacherbox">
                                     <div class="row">
                                         <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
-                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-doizon-art.jpg" alt="teacher"></div>
+                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
@@ -229,7 +229,10 @@ Template Name: Concept Art Diploma - About
                             </div>
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
+                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
+                                    </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
                                     <br>
@@ -253,7 +256,10 @@ Template Name: Concept Art Diploma - About
                         <div class="row row-75percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
+                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
+                                    </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
                                     <br>
@@ -271,7 +277,10 @@ Template Name: Concept Art Diploma - About
                             </div>
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-de-massy.jpg" alt="teacher">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
+                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
+                                    </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
                                     <br>
@@ -288,7 +297,10 @@ Template Name: Concept Art Diploma - About
                         <div class="row row-75percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
+                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
+                                    </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
                                     <br>
@@ -302,19 +314,22 @@ Template Name: Concept Art Diploma - About
                             </div>
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-eric.jpg" alt="teacher">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon.jpg" alt="teacher"></div>
+                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon-art.jpg" alt="teacher"></div>
+                                    </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Eric Gagnon</h4>
                                     <br>
                                     <p class="term-description teacher-description">
                                         Eric Gagnon is a senior concept artist and art director for gaming, film and television,
                                         in addition to having six years of teaching experience at the university level. He is 
-                                        presently working AS A LEAD SENIOR CONCEPT ARTIST at Warner Bros Games Montreal FOR AAA 
-                                        GAMES IN THE DC UNIVERSE FRANCHISE.Previously, he’s worked at various gaming companies 
+                                        presently working as a lead secior concept arttist at Warner Bros Games Montreal FOR AAA 
+                                        games in the DC Universe francise.Previously, he’s worked at various gaming companies 
                                         such as Eidos, Gameloft and Behavior, as well as animation and production studios such 
-                                        as DIGITAL DISTRICT, Ciné-Groupe Animation and Studio Pascal Blais. His other credits 
-                                        include Batman Arkham Origins FRANCHISE, Deus Ex Human Revolution, Kim Possible, 
-                                        BALLERINA, Ghost Recon, Splinter Cell Chaos Theory and many 2D and 3D animated television
+                                        as Digital District, Ciné-Groupe Animation and Studio Pascal Blais. His other credits 
+                                        include Batman Arkham Origins franchise, Deus Ex Human Revolution, Kim Possible, 
+                                        Ballerina, Ghost Recon, Splinter Cell Chaos Theory and many 2D and 3D animated television
                                         shows.
                                         <br /><br />    
                                         Eric will be teaching Sketching for Production in the Concept Art Diploma Program.
@@ -808,7 +823,10 @@ Template Name: Concept Art Diploma - About
                         <div class="row row-75percent">
                             <div class="col-md-4">
                                 <div class="term-bx teacherbox">
-                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
+                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
+                                    </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
                                     <br>
@@ -833,7 +851,10 @@ Template Name: Concept Art Diploma - About
                             </div>
                             <div class="col-md-4">
                                 <div class="term-bx teacherbox">
-                                    <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
+                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
+                                    </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
                                     <br>
