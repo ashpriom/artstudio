@@ -204,8 +204,8 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
-                                        <img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher">
-                                        <img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-doizon-art.jpg" alt="teacher">
+                                        <div class="col-md-4 col-sm-12"><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
+                                        <div class="col-md-8 col-sm-12"><img class="teacher-artwork" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-doizon-art.jpg" alt="teacher"></div>
                                     </div>
                                     <p class="small-art-credit text-right"></p>
                                     <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
