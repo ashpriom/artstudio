@@ -230,10 +230,18 @@ Template Name: Concept Art Diploma - About
                             </div>
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row leftpadding">
+                                    
+
+                                    <!--<div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
+                                    </div>-->
+
+                                    <div class="row">
+                                        <div class="teach-headshot col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
+                                        <div class="teach-artwork col-md-8"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
                                     </div>
+
                                     
                                     <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
                            
@@ -856,8 +864,8 @@ Template Name: Concept Art Diploma - About
                                         ont été publiées dans “Exodyssey: Visual Development of an Epic Adventure” et
                                         “Steampainting: SPARK - Creative process”, tous les deux par Steambot Studios.<br /><br />
 
-                                        Thierry est le Directeur d’études au Syn Studio et préside le program de Diplôme en conception 
-                                        artistique.
+                                        Thierry est le directeur d'études au Syn Studio. En plus d'être le président du Diplôme en 
+                                        conception artistique, il enseignera Intro to Concept Art.
                                     </p>
                                 </div>
                             </div>
@@ -883,7 +891,8 @@ Template Name: Concept Art Diploma - About
                                         award et le XSI Gallery Award en plus que ses oeuvres ont été publiées dans Exposé
                                         5, Mattepainting.org and the CG Channel. 
                                         <br /><br />
-                                        Jessy Veilleux enseignera le cours de Traitement d’images numériques dans le programme de Diplôme en conception artistique.
+                                        Jessy enseignera Visual Reference Library et Digital Image Manipulation dans le 
+                                        Diplôme en Conception Artistique.
                                     </p>
                                 </div>
                             </div>
@@ -906,7 +915,9 @@ Template Name: Concept Art Diploma - About
                                         Games Montréal. Ce génie technique a créé des softwares, des scripts, des pinceaux
                                         personnalisés et quelques-unes de ses oeuvres ont figuré sur des posters de E3!
                                         Il est aussi un prof recherché ayant enseigné plusieurs ateliers et cours de
-                                        concept art à Syn Studio,  Alpha Vision et Méduzart.
+                                        concept art à Syn Studio,  Alpha Vision et Méduzart.<br /><br />
+                                        Daniel enseignera Visual Reference Library et Digital Image Manipulation dans le 
+                                        Diplôme en Conception Artistique.
                                     </p>
                                 </div>
                             </div>
@@ -924,7 +935,9 @@ Template Name: Concept Art Diploma - About
                                         concepteur artistique et illustrateur indépendant sur des films tels que: X-Men: Jours
                                         d’un futur passé, Blanche neige et L’Étrange histoire de Benjamin Button. Tout cela sans
                                         jamais avoir publié ses travaux en ligne (jusqu’à ce jour). Il est connu pour son
-                                        incroyable efficacité et la beauté de ses peintures d’environnements.
+                                        incroyable efficacité et la beauté de ses peintures d’environnements.<br /><br />
+                                        Christian enseignera la partie "How to Draw" dans Sketching for Production dans le Diplôme
+                                        en Conception Artistique.
                                     </p>
                                 </div>
                             </div>
@@ -944,7 +957,9 @@ Template Name: Concept Art Diploma - About
                                         de concept sénior chez Eidos Montréal, concevant notamment des personnages pour Deus Ex.
                                         Durant 8 années en tant qu’artiste de concept dans le milieu du jeu vidéo, il a
                                         contribué à des projets tels que Conan, Transformers, Wet et Kung Fu Panda. Frédéric
-                                        est un professeur très apprécié des élèves de son cours Rendu de Personnages.
+                                        est un professeur très apprécié des élèves de son cours Rendu de Personnages.<br /><br />
+                                        Frédéric enseignera la partie "How to Render" dans Sketching for Production dans le 
+                                        Diplôme en Conception Artistique.
                                     </p>
                                 </div>
                             </div>
@@ -969,8 +984,8 @@ Template Name: Concept Art Diploma - About
                                         sur lequel il a contribué son expertise, incluant d’autres séries de dessins
                                         animés encore. 
                                         <br /><br />    
-                                        Eric Gagnon enseignera le cours de Dessiner en contexte de production dans le 
-                                        programme de Diplôme en conception artistique.
+                                        Eric enseignera la partie "How to Sketch" dans Sketching for Production dans le Diplôme
+                                        en Conception Artistique.
                                     </p>
                                 </div>
                             </div>
