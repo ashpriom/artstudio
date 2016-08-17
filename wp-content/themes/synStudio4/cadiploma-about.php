@@ -223,7 +223,8 @@ Template Name: Concept Art Diploma - About
                                         others. His work has been featured in “Exodyssey: Visual Development of an Epic Adventure”
                                         and  “Steampainting: SPARK - Creative process”, both by Steambot Studios.
                                         <br /><br />
-                                        Thierry is the Director of Studies at Syn Studio and chairs the Concept Art Diploma Program.
+                                        Thierry is the Director of Studies at Syn Studio. In addition to being the Chair of the Concept 
+                                        Art Diploma Program, he will also be teaching Intro to Concept Art.
                                     </p>
                                 </div>
                             </div>
@@ -248,7 +249,8 @@ Template Name: Concept Art Diploma - About
                                         award and the XSI Gallery Award, Jessy’s work has been featured in several publications
                                         such as Exposé 5, Mattepainting.org and the CG Channel.
                                         <br /><br />
-                                        Jessy will be teaching Digital Image Manipulation in the Concept Art Diploma Program.
+                                        Jessy will be teaching Visual Reference Library and Digital Image Manipulation in the 
+                                        Concept Art Diploma Program.
                                     </p>
                                 </div>
                             </div>
@@ -272,6 +274,9 @@ Template Name: Concept Art Diploma - About
                                         on several E3 posters! He is also a sought after instructor who’s given popular classes
                                         and workshops in concept design, illustration and 3D to students and professionals at
                                         Alpha Vision, Meduzarts and here at Syn Studio!
+                                        <br /><br />
+                                        Daniel will be teaching Visual Reference Library and Digital Image Manipulation in the
+                                        Concept Art Diploma Program.
                                     </p>
                                 </div>
                             </div>
@@ -290,6 +295,9 @@ Template Name: Concept Art Diploma - About
                                         Case of Benjamin Button. All without ever having put any artwork online (until now).
                                         He’s known for his incredible speed and the beauty of his environment paintings and
                                         he’s a popular teacher here at Syn Studio.
+                                        <br /><br />
+                                        Christian will be teaching the "How to Draw" module in Sketching for Production in 
+                                        the Concept Art Diploma Program.
                                     </p>
                                 </div>
                             </div>
@@ -309,6 +317,9 @@ Template Name: Concept Art Diploma - About
                                         years as a concept artist working mainly in the games’ industry, he has contributed to
                                         projects in the Conan, Transformers, Wet and Kung Fu Panda universes. Frédéric is a very
                                         well appreciated teacher by his students from his Character Rendering class.
+                                        <br /><br />
+                                        Frédéric will be teaching the "How to Render" module in Sketching for Production in the Concept Art Diploma
+                                        Program.
                                     </p>
                                 </div>
                             </div>
@@ -332,7 +343,8 @@ Template Name: Concept Art Diploma - About
                                         Ballerina, Ghost Recon, Splinter Cell Chaos Theory and many 2D and 3D animated television
                                         shows.
                                         <br /><br />    
-                                        Eric will be teaching Sketching for Production in the Concept Art Diploma Program.
+                                        Eric will be teaching the "How to Sketch" module in Sketching for Production in the Concept
+                                        Art Diploma Program.
                                     </p>
                                 </div>
                             </div>
