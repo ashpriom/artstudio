@@ -200,7 +200,7 @@ Template Name: Concept Art Diploma - About
                 <!-- Teacher Bios -->
                 <ul class="bxslider-teacherbio">
                     <li>
-                        <div class="row row-75percent">
+                        <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
@@ -255,7 +255,7 @@ Template Name: Concept Art Diploma - About
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-75percent">
+                        <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
@@ -302,7 +302,7 @@ Template Name: Concept Art Diploma - About
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-75percent">
+                        <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
@@ -832,7 +832,7 @@ Template Name: Concept Art Diploma - About
                 <!-- Teacher Bios -->
                 <ul class="bxslider-teacherbio">
                     <li>
-                        <div class="row row-75percent">
+                        <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
@@ -888,7 +888,7 @@ Template Name: Concept Art Diploma - About
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-75percent">
+                        <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
@@ -930,7 +930,7 @@ Template Name: Concept Art Diploma - About
                             </div>
                             
                         </div>
-                        <div class="row row-75percent">
+                        <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row">
