@@ -744,8 +744,8 @@ img {
 
 .nopaddingleft{padding-left: 0px !important;}
 .teacher-headshot{width:auto !important;float: left; padding: 7px !important;}
-.teacher-artwork{float:left;padding: 7px !important;}
-.teacherbox{min-height: 720px !important;padding: 7% !important;}
+.teacher-artwork{float:left;padding: 7px 15px 7px 10px !important;}
+.teacherbox{min-height: 650px !important;padding: 7% !important;}
 
 
 .term-bx .term-description-list {
@@ -852,7 +852,7 @@ img {
   width: 100%;
   position: relative;
   float: left;
-  margin: 10px;
+  margin: 7px;
   cursor: pointer;
 }
 .tile1:hover,
