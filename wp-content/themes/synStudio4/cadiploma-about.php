@@ -203,10 +203,10 @@ Template Name: Concept Art Diploma - About
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row">
+                                    <div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
-                                    </div><br />
+                                    </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
                                     
@@ -230,13 +230,13 @@ Template Name: Concept Art Diploma - About
                             </div>
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row">
+                                    <div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
-                                    <br>
+                           
                                     <p class="term-description teacher-description">Jessy Veilleux is the founder and creative director of Meduzarts,
                                         a digital environment and character design studio, and the creative director of Digital
                                         Dimension. Combining a background in fine arts with his passion for digital work, Jessy’s
@@ -258,13 +258,13 @@ Template Name: Concept Art Diploma - About
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row">
+                                    <div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
-                                    <br>
+                             
                                     <p class="term-description teacher-description">Daniel Kvasznicza is a concept artist, illustrator and matte
                                         painter with over 10 years of industry experience. He’s worked on AAA franchises including
                                         Batman: Arkham Origins, Starcraft, Far Cry, Dishonoured, Elder Scrolls, Diablo, Fallout,
@@ -282,13 +282,13 @@ Template Name: Concept Art Diploma - About
                             </div>
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row">
+                                    <div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
-                                    <br>
+     
                                     <p class="term-description teacher-description">Christian Robert de Massy is one of the film industry’s best 
                                         kept secrets. He’s been working for the last 8 years as a freelance concept artist and
                                         illustrator on films such as X-Men: Days of Future Past, Snow White and The Curious
@@ -305,13 +305,13 @@ Template Name: Concept Art Diploma - About
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row">
+                                    <div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
-                                    <br>
+                                 
                                     <p class="term-description teacher-description">Frédéric Bennett is currently a Senior Concept Artist at Eidos
                                         Montreal, in charge of designing characters for the latest Deus Ex game. During his eight
                                         years as a concept artist working mainly in the games’ industry, he has contributed to
@@ -325,13 +325,13 @@ Template Name: Concept Art Diploma - About
                             </div>
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row">
+                                    <div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Eric Gagnon</h4>
-                                    <br>
+                                   
                                     <p class="term-description teacher-description">
                                         Eric Gagnon is a senior concept artist and art director for gaming, film and television,
                                         in addition to having six years of teaching experience at the university level. He is 
@@ -835,13 +835,13 @@ Template Name: Concept Art Diploma - About
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row">
+                                    <div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
-                                    <br>
+                                
                                     <p class="term-description teacher-description">Thierry Doizon aka Barontieri a été précédemment le
                                         directeur artistique à Square Enix Montréal, où il était le responsable de Lara Croft GO, le
                                         jeu mobile de l’année par Apple. Un chef en art conceptuel et un directeur artistique avec
@@ -863,13 +863,13 @@ Template Name: Concept Art Diploma - About
                             </div>
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row">
+                                    <div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
-                                    <br>
+                            
                                     <p class="term-description teacher-description">Jessy Veilleux est le fondateur et 
                                         directeur artistique de Meduzarts, un studio de personnages et d’environnements 
                                         numériques, ainsi que le directeur artistique de Digital Dimension. Ses connaissances
@@ -891,13 +891,13 @@ Template Name: Concept Art Diploma - About
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row">
+                                    <div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
-                                    <br>
+                                 
                                     <p class="term-description teacher-description">Daniel Kvasznicza est un artiste de 
                                         concept et matte painter ayant plus de 10 ans d’expérience dans l’industrie du jeu
                                         vidéo. Il a collaboré à plusieurs franchises AAA comme Starcraft, Far Cry, 
@@ -912,13 +912,13 @@ Template Name: Concept Art Diploma - About
                             </div>
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row">
+                                    <div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
-                                    <br>
+                               
                                     <p class="term-description teacher-description">Christian Robert de Massy est l’un des
                                         secrets les mieux gardés de l’industrie du film. Il à travaillé pendant 8 ans en tant que
                                         concepteur artistique et illustrateur indépendant sur des films tels que: X-Men: Jours
@@ -933,13 +933,13 @@ Template Name: Concept Art Diploma - About
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row">
+                                    <div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
-                                    <br>
+                                
                                     <p class="term-description teacher-description">Frédéric Bennett est présentement artiste
                                         de concept sénior chez Eidos Montréal, concevant notamment des personnages pour Deus Ex.
                                         Durant 8 années en tant qu’artiste de concept dans le milieu du jeu vidéo, il a
@@ -950,13 +950,13 @@ Template Name: Concept Art Diploma - About
                             </div>
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
-                                    <div class="row">
+                                    <div class="row leftpadding">
                                         <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon-art.jpg" alt="teacher"></div>
                                     </div>
 
                                     <h4 class="orange-text nopaddingleft">Eric Gagnon</h4>
-                                    <br>
+                               
                                     <p class="term-description teacher-description">
                                         Eric Gagnon est un artiste de conceptions senior et un directeur artistique pour les
                                         jeux vidéos, les films et la télévision, en plus d’avoir six ans d’expérience au

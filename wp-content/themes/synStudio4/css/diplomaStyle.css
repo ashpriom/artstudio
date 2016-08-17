@@ -663,6 +663,7 @@ img {
   width: 73%;
 }
 .row-73percent .col-md-6{padding-bottom: 15px;}
+.leftpadding{padding-left: 2%;}
 .row-80percent {
   margin-right: auto;
   margin-left: auto;
