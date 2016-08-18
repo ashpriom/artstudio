@@ -660,7 +660,7 @@ img {
 .row-73percent {
   margin-right: auto;
   margin-left: auto;
-  width: 73%;
+  width: 75%;
 }
 .row-73percent .col-md-6{padding: 25px !important;}
 .leftpadding{padding-left: 2%;}
@@ -853,8 +853,8 @@ img {
   width: 100%;
   position: relative;
   float: left;
-  margin: 5px;
-  margin-right: 0px;
+  margin: 3px;
+  margin-right: 10px;
   cursor: pointer;
   margin-bottom: 20px;
 }
