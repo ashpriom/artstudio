@@ -746,7 +746,7 @@ img {
 .extrapadding{padding-left:25px !important;padding-right: 25px !important;}
 .teacher-headshot img{width:auto !important;float: left; padding: 7px !important;padding-right: 18px !important;}
 .teacher-artwork{float:left;padding: 7px !important;}
-.teacherbox{min-height: 520px;padding: 5% !important;background-color: #F2F2F2;margin: 3px; margin-right: 0px;}
+.teacherbox{min-height: 570px;padding: 5% !important;background-color: #F2F2F2;margin: 3px; margin-right: 0px;}
 
 .term-bx .term-description-list {
   margin: 0 auto;
