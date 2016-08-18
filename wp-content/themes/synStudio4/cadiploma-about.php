@@ -237,10 +237,12 @@ Template Name: Concept Art Diploma - About
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
                                     </div>-->
 
-                                    <div class="row">
-                                        <div class="teach-headshot col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
-                                        <div class="teach-headshot col-md-1"></div>
-                                        <div class="teach-artwork col-md-7"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="teach-headshot col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
+                                            <div class="teach-headshot col-md-1"></div>
+                                            <div class="teach-artwork col-md-7"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
+                                        </div>
                                     </div>
 
                                     
