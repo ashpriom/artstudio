@@ -358,8 +358,6 @@
   .accrediation-text {
     padding-top: 100px;
   }
-  .teacherbox {
-    min-height: 520px !important;
 }
 /* Large devices (large desktops, 1600px and up) */
 /* 1600px and up */
@@ -404,6 +402,7 @@
   }
   .teacherbox {
     min-height: 520px !important;
+  }
 }
 
 @media (min-width: 768px) {
