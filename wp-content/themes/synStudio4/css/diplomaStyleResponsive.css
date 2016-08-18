@@ -225,7 +225,7 @@
     margin-right: auto;
     width: 90%;
   }
-  .teacherbox{min-height: 1015px !important;}
+  .teacherbox{min-height: auto !important;}
 }
 /* Special range */
 /* 992px to 1199px */
@@ -471,7 +471,7 @@
 }
 
 @media (min-width: 993px) and (max-width: 1350px) {
-  .teacherbox{min-height: 880px !important;}
+  .teacherbox{min-height: 1000px !important;}
 }
 
 @media (min-width: 992px){
