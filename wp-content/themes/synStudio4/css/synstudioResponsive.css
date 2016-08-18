@@ -491,7 +491,7 @@
   .info-box1Wrapper { margin:auto; float:inherit; width: 98%; }
   .info-box2 .text-wrapper { background-position: center bottom; }
 
-  #slideshow-main, #slideshow-main ul, #slideshow-main li { width: 100%!important; }
+  #slideshow-main, #slideshow-main ul, #slideshow-main li { width: 100%!important;height: auto !important; }
   #slideshow-carousel { width: 640px!important; }
 
   .jcarousel-skin-tango { position: relative; }
@@ -1176,14 +1176,16 @@
 
   /* popme alert message */
   #popup-message{
-    position: relative !important;
+    position: relative!important;
     top: 100px;
     z-index: 1000;
     height: 80px;
-    width: 300px;
+    width: 100%;
+    margin: auto;
+    padding: 1px;
     float: left;
-    font-size: 0.9em;
-    left: 50% !important;
+    font-size: .9em;
+    left: 0px!important;
   }
 
   /* Boxes on Teacher Page */
