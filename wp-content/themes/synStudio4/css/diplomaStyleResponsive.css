@@ -470,8 +470,10 @@
   }
 }
 
-@media (min-width: 993px) and (max-width: 1350px) {
-  .teacherbox{min-height: 1000px !important;}
+@media (min-width: 993px) and (max-width: 1399px) {
+  .teacherbox {
+    min-height: 900px !important;
+  }
 }
 
 @media (min-width: 992px){
