@@ -662,7 +662,7 @@ img {
   margin-left: auto;
   width: 73%;
 }
-.row-73percent .col-md-6{padding: 0px 25px 25px 25px !important;}
+.row-73percent .col-md-6{padding: 25px !important;}
 .leftpadding{padding-left: 2%;}
 .row-80percent {
   margin-right: auto;
@@ -746,7 +746,7 @@ img {
 .extrapadding{padding-left:25px !important;padding-right: 25px !important;}
 .teacher-headshot img{width:auto !important;float: left; padding: 7px !important;}
 .teacher-artwork{float:left;padding: 7px !important;}
-.teacherbox{min-height: 640px !important;padding: 5% !important;}
+.teacherbox{min-height: 640px !important;padding: 5% !important;background-color: #F2F2F2;}
 
 
 .term-bx .term-description-list {
