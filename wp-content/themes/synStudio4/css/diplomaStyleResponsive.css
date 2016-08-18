@@ -473,6 +473,7 @@
 @media (min-width: 993px) and (max-width: 1350px) {
   .teacherbox {
     min-height: 780px !important;
+  }
 }
 
 @media (min-width: 992px){
