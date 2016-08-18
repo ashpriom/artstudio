@@ -173,6 +173,7 @@
     padding-left: 4%;
     padding-right: 4%;
   }
+  .teacherbox{min-height: auto !important;}
 
 }
 /* Special range */
@@ -224,6 +225,7 @@
     margin-right: auto;
     width: 90%;
   }
+  .teacherbox{min-height: 1015px !important;}
 }
 /* Special range */
 /* 992px to 1199px */
