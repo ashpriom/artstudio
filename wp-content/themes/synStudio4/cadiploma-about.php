@@ -204,7 +204,7 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row leftpadding">
-                                        <div ><img class="teacher-headshot" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
                                     </div>
                                     
@@ -268,8 +268,9 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-6">
                                 <div class="term-bx teacherbox">
                                     <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
+                                        <div class="teacher-headshot col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
+                                        <div class="teacher-headshot col-md-1"></div>                                        
+                                        <div class="teacher-artwork col-md-7"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
