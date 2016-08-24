@@ -62,6 +62,8 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 
 </div> <!-- this closing div is wrapper class started in header.php -->
 
+<?php wp_footer(); ?>
+
 <style>
 	#mobile-header { display: none; }
 	@media only screen and (max-width: 768px){
@@ -196,7 +198,6 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
     });
 </script>
 
-<?php wp_footer(); ?>
 <!-- Piwik disabled <noscript><p><img src="http://192.168.2.200/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>-->
 
 </body>
