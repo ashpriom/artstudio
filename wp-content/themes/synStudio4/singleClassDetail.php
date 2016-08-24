@@ -29,8 +29,6 @@
 	if($currentLang=="en"){ $attachment_id = get_post_meta($postID, 'thumbnail', true); }
     else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
 
-    if($currentLang=="en"){ $short_description = get_post_meta($postID, 'short_description_en', true); }
-    else{ $short_description = get_post_meta($translationID, 'short_description_fr', true); }
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
