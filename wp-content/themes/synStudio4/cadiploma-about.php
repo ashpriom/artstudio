@@ -344,7 +344,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Eric Gagnon is a senior concept artist and art director for gaming, film and television,
                                         in addition to having six years of teaching experience at the university level. He is 
-                                        presently working as a lead senior concept arttist at Warner Bros Games Montreal FOR AAA 
+                                        presently working as a lead senior concept artist at Warner Bros Games Montreal FOR AAA 
                                         games in the DC Universe francise.Previously, he’s worked at various gaming companies 
                                         such as Eidos, Gameloft and Behavior, as well as animation and production studios such 
                                         as Digital District, Ciné-Groupe Animation and Studio Pascal Blais. His other credits 
