@@ -15,7 +15,7 @@ else{ get_header(); }
 
 if(have_posts()){ the_post(); rewind_posts();}
 
-if(in_category(4) || in_category(48)){ // This is for all pages in "class (cours)" category
+if(in_category(4) || in_category(48)){ // This is for all posts under "classes (cours)" category
 	if ($postID==6502) { include(TEMPLATEPATH . '/singleClassMaster.php'); }
 	elseif ($postID==12105 || $postID==12106 || $postID==12457 || $postID==12458 || $postID==12459 || $postID==12460) { include(TEMPLATEPATH . '/masterclass.php'); }
 	elseif ($postID==8397 || $postID==11019) { include(TEMPLATEPATH . '/singleIntenseClassDetail.php'); } // this is template for full time intensive
