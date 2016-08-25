@@ -201,8 +201,7 @@ html{ font-size: 62.5%; } /* Sets default font size to 1em => 10px */
 
 body{
 	text-align: center; /* Following line center aligns the layout for ie6 */
-	/*font: normal 1.2em/1.4 Helvetica, Verdana, Arial, sans-serif, 'Noto Sans';*/
-	font: normal 1.2em/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+	font: normal 1.2em/1.4 Helvetica, Verdana, Arial, sans-serif, 'Noto Sans';
 	background-color: #d2d2d2;
 	background-image: url(images/bgd-tilePage.jpg);
 	background-repeat: repeat-x;
@@ -212,7 +211,6 @@ body{
 /* Headings */
 h1, h2, h3, h4, h5, h6{
 	font-family: Helvetica, Verdana, Arial, sans-serif;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
 	color: #151515;
 }
 		
@@ -227,7 +225,7 @@ h6{ font-size: .9em; }
 p { margin: .6em 0; }
 	
 /* Links */
-a, a:link{ color: #ffffff; border: 0; outline: 0; }
+a, a:link{ color: #ffffff; border: 0; outline: 0; font-weight: bold; }
 a:visited{ }
 a:active, a:focus, a:hover{ text-decoration: underline; color:lightgoldenrodyellow; }
 		
@@ -337,7 +335,6 @@ input{ font: 1em Helvetica, Verdana, Arial, sans-serif; }
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: Arial, Helvetica, sans-serif;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
 	background-image: url(images/nav-tile4.png);
 	background-repeat: repeat-x;
 	background-position: 0 0;
@@ -674,7 +671,7 @@ a.lnk-readMore {
 	font-size: 1.7em;
 	color: #393939;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: lighter;
 }
 .info-box1 .text {
 	font-size: 1em;

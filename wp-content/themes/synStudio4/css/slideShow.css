@@ -52,8 +52,7 @@
 	margin:0;
 	color:#000000;
 	font-family: Helvetica, Arial, sans-serif;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-	font-weight: 400;
+	font-weight: lighter;
 	text-transform: uppercase;
 	background: #f16927;
 	display: inline;
