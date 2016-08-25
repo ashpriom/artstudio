@@ -9,10 +9,7 @@ This is the main stylesheet for desktop site of Syn Studio
 Styles for various device sizes can be found in css/responsive.css
 */
 
-@import url('fonts/fontfaces.css');
-
 /* Global Reset */
-
 html, body, div, span, object, iframe,
 address, blockquote, h1, h2, h3, h4, h5, h6, p, pre,
 a, abbr, acronym, b, bdo, big, cite, code,
