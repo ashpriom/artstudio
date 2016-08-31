@@ -20,7 +20,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 		 		<a href="/ateliers/">Nos ateliers</a> || &nbsp;
 		 		<a href="/resources-fr/">Ressources</a> || &nbsp;
 		 		<a href="http://blog.synstudio.ca/fr">Blogue</a> || &nbsp;
-		 		<a href="http://synstudio.ca/wp-content/uploads/2012/10/Politiques.pdf">Nos politiques</a> || &nbsp;
+		 		<a href="<?php echo get_template_directory_uri(); ?>/docs/Politiques.pdf">Nos politiques</a> || &nbsp;
 		 		<a href="/politique-de-confidentialite/">Politique de confidentialité</a> || &nbsp;
 		 		<a href="/contactez-nous/">Contactez-nous</a>
 		 		<br/><br/>
@@ -34,7 +34,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 		 		<a href="/workshops">Workshops</a> || &nbsp;
 		 		<a href="/resources">Resources</a> || &nbsp;
 		 		<a href="http://synstudio.ca/blog/">Blog</a> || &nbsp;
-		 		<a href="http://synstudio.ca/wp-content/uploads/2012/10/Policies.pdf">School Policies</a> || &nbsp;
+		 		<a href="<?php echo get_template_directory_uri(); ?>/docs/Policies.pdf">School Policies</a> || &nbsp;
 		 		<a href="/privacy-policy">Privacy Policy</a> || &nbsp;<a href="/contact-us">Contact us</a>
 		 		<br/><br/>
 	  			460 St. Catherine West, #508. Montreal. H3B 1A7
@@ -45,10 +45,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 	  	</div>
 
 	  	<div class="footer-right">
-	  		<?php
-		  		if ($currentLang == "fr") { ?> Commandité par <?php }
-		  		else{ ?> Sponsored By <?php }
-	  		?>
+	  		<?php if ($currentLang == "fr") { ?> Commandité par <?php } else{ ?> Sponsored By <?php } ?>
 	  		<br/>
 	  		<a href="http://www.wacom.com/" target="_blank"> <!-- Hovering over the sponsor logo changes to another image -->
 	  			<img src="<?php echo get_template_directory_uri(); ?>/images/wacom.png" title="Wacom" alt="Wacom"

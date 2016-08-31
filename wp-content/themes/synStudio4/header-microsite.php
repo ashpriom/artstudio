@@ -67,7 +67,7 @@
 		<?php wp_head(); ?>
 		<?php $postID = get_the_ID(); ?>
 
-		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
 
 		<script type="text/javascript">
 			jQuery( document ).ready(function( $ ) {

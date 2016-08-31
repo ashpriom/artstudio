@@ -61,7 +61,7 @@
 				<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-fr.css" type="text/css" media="screen" /> <?php
 			} ?>
 
-		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
 
 		<style>
 			#mobile-header { display: none; }

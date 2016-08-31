@@ -5,11 +5,10 @@
 	if(function_exists('get_option')){ $options = get_option('synstudio-options'); $redundant_options = get_option( 'sample_theme_options' ); }
 ?>
 
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideShow.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideshow.min.css" />
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
 
 <script type="text/javascript">
 

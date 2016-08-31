@@ -10,8 +10,7 @@ Template Name: Home Page
 get_header(); ?>
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/jquery.jcarousel.css" />
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideShow.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideshow.min.css" />
 
 <?php
 	$postID = get_the_ID();
