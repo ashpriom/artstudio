@@ -18,10 +18,10 @@
 
 -->
 
-<html ⚡ xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html ⚡ <?php language_attributes(); ?>>
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>" />
+		<!--<meta http-equiv="Content-Type" content="<?php // bloginfo('html_type'); ?>" />-->
 		<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1,initial-scale=1"/>
 		<meta itemprop="name" content="<?php the_title(); ?>"/>
 		<meta name="author" content="Andrea Acosta Duarte, Bill Jamshedji, Syed Priom" />
@@ -38,12 +38,12 @@
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="<?php the_title(); ?>" />
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-		<link rel="canonical" href="<?php get_permalink(); ?>" />
+		<link rel="canonical" href="<?php the_permalink(); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
+		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.sidr.light.css" type="text/css">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/synstudioResponsive.min.css" type="text/css" media="screen">
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 		<!-- Detect page language with Polylang polylang.wordpress.com/documentation/documentation-for-developers/functions-reference/ -->
 		<?php if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); } ?>
