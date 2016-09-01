@@ -18,24 +18,12 @@
 
 -->
 
-<<<<<<< HEAD
-<html ⚡ <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="utf-8">
-		<!--<meta http-equiv="Content-Type" content="<?php // bloginfo('html_type'); ?>" />-->
-=======
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-	<head>
-		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
->>>>>>> parent of 3a9b444... Start AMP
+		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>" />
 		<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1,initial-scale=1"/>
 		<meta itemprop="name" content="<?php the_title(); ?>"/>
-		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.sidr.light.css" type="text/css">
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/synstudioResponsive.min.css" type="text/css" media="screen">
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<meta name="author" content="Andrea Acosta Duarte, Bill Jamshedji, Syed Priom" />
 		<meta name="copyright" content="<?php bloginfo('url'); _e(''); ?>" />
 		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
@@ -49,7 +37,6 @@
 		<meta property="og:url" content="<?php the_permalink(); ?>" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="<?php the_title(); ?>" />
-<<<<<<< HEAD
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<link rel="canonical" href="<?php the_permalink(); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
@@ -57,28 +44,15 @@
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.sidr.light.css" type="text/css">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/synstudioResponsive.min.css" type="text/css" media="screen">
-=======
-		
-		<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-		
-		<?php wp_enqueue_script("jquery"); ?>
-		
-		<?php
-			$options = get_option( 'sample_theme_options' ); // loads theme options used for registration dedline notices. See theme_options_do_page() in functions.php
-		?>
-		
-		<?php wp_head(); ?>
->>>>>>> parent of 3a9b444... Start AMP
 
-		<?php
-			if (function_exists('pll_current_language')) {
-				$currentLang = pll_current_language(slug); // See polylang documentation polylang.wordpress.com/documentation/documentation-for-developers/functions-reference/
-			}
-			if ($currentLang == "fr") { ?>
-				<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-fr.css" type="text/css" media="screen" /> <?php
-			} ?>
-
-		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
+		<!-- Detect page language with Polylang polylang.wordpress.com/documentation/documentation-for-developers/functions-reference/ -->
+		<?php if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); } ?>
+		<?php if ($currentLang == "fr") { ?>
+			<Style>
+				.info-box1 h2 {font-size: 1.6em;}
+				.info-box10 .mailform2{width: 350px !important; }
+			</style>
+		<?php } ?>
 
 		<style>
 			#mobile-header { display: none; }
@@ -88,7 +62,13 @@
 			}
 		</style>
 
+		<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+		<?php wp_enqueue_script("jquery"); ?>		
+		<?php $options = get_option( 'sample_theme_options' ); // Custom theme options. See theme_options_do_page() in functions.php ?>
+		<?php wp_head(); ?>
+
 		<!-- Popup Message Cookie -->
+		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
 		<script type="text/javascript">
 			jQuery( document ).ready(function( $ ) {
 			 	$("#close-msg").bind( "click", function() {
@@ -108,12 +88,6 @@
 			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sg, s);
 		   }, 1);
 		</script>
-<<<<<<< HEAD
-
-		<!-- Load AMP JS -->
-		<script async src="https://cdn.ampproject.org/v0.js"></script>
-=======
->>>>>>> parent of 3a9b444... Start AMP
 	
 	</head>
 
@@ -131,7 +105,7 @@
 		<div id="wrapper"> <!-- Main Content Wrapper: Start, ends in footer -->
 		<div id="header"> <!-- header: start -->
 
-		<?php remove_filter ('the_content', 'wpautop'); ?>	
+		<!--<?php // remove_filter ('the_content', 'wpautop'); ?>-->
 		
 		<!-- pop-up message: start -->
 		<?php
@@ -163,11 +137,12 @@
 			</div>
 
 			<div id="language">
-   			<div class="phone">514 998-7625</div>
-   			<?php if (function_exists('pll_the_languages')){
-   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); // See Polylang reference
+	   			<div class="phone">514 998-7625</div>
+	   			<?php 
+	   			if (function_exists('pll_the_languages')){
+	   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); // See Polylang reference
 				}
-   			?>
+	   			?>
 			</div>
 
 			<div id="nav">
@@ -178,24 +153,19 @@
 
 		  		<div id="nav-wrapper">
 					<?php
-					if ($currentLang == "fr"){
-						wp_nav_menu( array('menu' => 'Main Nav FR' ));
-					}
-					else{
-						wp_nav_menu( array('menu' => 'Main Nav' ));
-					}
+					if ( $currentLang == "fr"){ wp_nav_menu( array('menu' => 'Main Nav FR' ));}
+					else{ wp_nav_menu( array('menu' => 'Main Nav' )); }
 					?>
 		   		</div>
 
 		   		<div id="social">
-					<?php
-						if ($currentLang == "fr") { echo "<h4>GARDEZ LE CONTACT</h4>"; }
-						else { echo "<h4>Stay in touch</h4>"; }
+					<?php 
+					if ($currentLang == "fr") { echo "<h4>GARDEZ LE CONTACT</h4>"; }
+					else { echo "<h4>Stay in touch</h4>"; }
 					?>
-					<!-- Social Media -->
-				  <a href="http://www.facebook.com/SynStudio" target="_blank" title="Facebook" id="lnk-facebook">Facebook</a>
+				  	<a href="http://www.facebook.com/SynStudio" target="_blank" title="Facebook" id="lnk-facebook">Facebook</a>
 					<a href="https://twitter.com/SynStudio" target="_blank" title="Twitter" id="lnk-twitter">Twitter</a>
-				  <a href="https://www.youtube.com/user/SynStudioMontreal" target="_blank" title="You Tube" id="lnk-youtube">YouTube</a>
+				  	<a href="https://www.youtube.com/user/SynStudioMontreal" target="_blank" title="You Tube" id="lnk-youtube">YouTube</a>
 				</div>
 			
 			</div>

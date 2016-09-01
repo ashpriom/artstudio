@@ -76,27 +76,23 @@ function theme_options_do_page() {
 
 // Disable auto formatting for newly defined <raw> tag 
 // http://www.wprecipes.com/disable-wordpress-automatic-formatting-on-posts-using-a-shortcode
-
 function my_formatter($content) {
     $new_content = '';
     $pattern_full = '{(\[raw\].*?\[/raw\])}is';
     $pattern_contents = '{\[raw\](.*?)\[/raw\]}is';
     $pieces = preg_split($pattern_full, $content, -1, PREG_SPLIT_DELIM_CAPTURE);
  
-    foreach ($pieces as $piece) {
-        if (preg_match($pattern_contents, $piece, $matches)) {
+    foreach ($pieces as $piece){
+        if (preg_match($pattern_contents, $piece, $matches)){
             $new_content .= $matches[1];
-        } else {
+        } else{
             $new_content .= wptexturize(wpautop($piece));
         }
     }
- 
     return $new_content;
 }
-
 remove_filter('the_content', 'wpautop');
 remove_filter('the_content', 'wptexturize');
-
 add_filter('the_content', 'my_formatter', 99);
 
 ?>
