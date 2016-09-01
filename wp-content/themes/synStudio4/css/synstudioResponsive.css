@@ -165,7 +165,7 @@
 
 
   /* Teacher description */
-  .teacher-boxWrapper .teacher-box { height: auto; }
+  .teacher-boxWrapper .teacher-box { height: auto !important; }
   .teacher-box h2{ text-align: center; }
   .teachers-thumb{ float:none; margin-right:0px; }
   .teachers-thumb img{ margin:auto; width:inherit; }
@@ -408,12 +408,11 @@
   width:100%;
   }
 
-  /* Center main columns */
+  /* Center main columns 
   #col1 #col2{
     float:none;
     width:90%;
-  } 
-
+  } */
   #wrapper { width: 100%!important; }
   #header #language { right: auto; left: 0; top: -26px; width: 100%; }
   #header #language img{
@@ -484,7 +483,7 @@
   font-weight: bold;
   }    
 
-  #col1, #col2 { width: 99%; }
+  #col1, #col2 { width: 100%; }
   .home #col2 { position: relative; top: 90px; }
   .home #col2 #btn-findMoreClasses { position: absolute; top: -68px; left: 50%; margin-left: -126px; }
   .home #col3 { padding-top: 48px; }
