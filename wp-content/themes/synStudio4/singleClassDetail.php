@@ -25,22 +25,12 @@
 	$sevenBeforeLRD->modify('-7 days');
 	$sevenBeforeLRD = $sevenBeforeLRD->format('Y-m-d');
 	$sevenBeforeLRDPretty = DateTime::createFromFormat($format, $sevenBeforeLRD);
-
-	if($currentLang=="en"){ $attachment_id = get_post_meta($postID, 'thumbnail', true); }
-    else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
-
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideshow.min.css" />
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
-
-<!-- Social Media: Load images on share -->
-<meta name="twitter:image:src" content="<?php echo wp_get_attachment_url($attachment_id, 'large'); ?>" />
-<meta property="og:image" content="<?php echo wp_get_attachment_url($attachment_id, 'large'); ?>" />
-<meta itemprop="image" content="<?php echo wp_get_attachment_url($attachment_id, 'large'); ?>" />
-
 
 <script type="text/javascript">
 	function closeDetailBox(a){

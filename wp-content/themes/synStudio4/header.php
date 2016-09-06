@@ -8,12 +8,24 @@
 
 <?php
 $postID = get_the_ID();
+
+// Detect page language with Polylang
+// Check polylang.wordpress.com/documentation/documentation-for-developers/functions-reference/
+if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); }
+
+// Resolve meta tags using Content Field Suite
+if(in_category(4) || in_category(48)){
+	if($currentLang=="en"){ $attachment_id = get_post_meta($postID, 'thumbnail', true); }
+	else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
+	$metaImage = wp_get_attachment_image($attachment_id);
+}
+else{ $metaImage = bloginfo('template_directory');."/css/images/synlogo.jpg"; }
 $metaTitle = get_post_meta($postID, 'meta_title', true);
 $metaDesc = get_post_meta($postID, 'meta_description', true);
 ?>
 
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <!--
      _______.____    ____ .__   __.         _______..___________. __    __   _______   __    ______
     /       |\   \  /   / |  \ |  |        /       ||           ||  |  |  | |       \ |  |  /  __  \
@@ -29,8 +41,7 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>" />
 		<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1,initial-scale=1"/>
-		<meta itemprop="name" content="<?php the_title(); ?>"/>
-		<meta name="author" content="Andrea Acosta Duarte, Bill Jamshedji, Syed Priom" />
+		<meta name="author" content="Syed Priom, Andrea Acosta Duarte, Bill Jamshedji" />
 		<meta name="copyright" content="<?php bloginfo('url'); _e(''); ?>" />
 		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
 		<meta name="google-site-verification" content="TfjOiPpkpWW7TlZeMwprhmSFJpcrTbsS_FkF5Y8phDY" />
@@ -39,13 +50,16 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<meta name="twitter:title" content="<?php echo $metaTitle; ?>">
 		<meta name="twitter:creator" content="Syn Studio"/>
 		<meta name="twitter:domain" content="synstudio.ca"/>
+		<meta name="twitter:image:src" content="<?php echo $metaImage; ?>" />
 		<meta property="og:site_name" content="Syn Studio" />
 		<meta property="og:url" content="<?php the_permalink(); ?>" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="<?php echo $metaTitle; ?>" />
 		<meta property="og:description" content="<?php echo $metaDesc; ?>" />
+		<meta property="og:image" content="<?php echo $metaImage; ?>" />
 		<meta itemprop="name" content="<?php echo $metaTitle; ?>"/>
 		<meta itemprop="description" content="<?php echo $metaDesc; ?>"/>
+		<meta itemprop="image" content="<?php echo $metaImage; ?>" />
 		<meta name="description" content="<?php echo $metaDesc; ?>"/>
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<link rel="canonical" href="<?php the_permalink(); ?>" />
@@ -55,8 +69,6 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.sidr.light.css" type="text/css">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/synstudioResponsive.min.css" type="text/css" media="screen">
 
-		<!-- Detect page language with Polylang polylang.wordpress.com/documentation/documentation-for-developers/functions-reference/ -->
-		<?php if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); } ?>
 		<?php if ($currentLang == "fr") { ?>
 			<Style>
 				.info-box1 h2 {font-size: 1.6em;}

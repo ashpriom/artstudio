@@ -78,7 +78,7 @@ get_header();
                         else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
                       ?>
                       <a class='class-title' href="<?php the_permalink(); ?>">
-                        <?php echo wp_get_attachment_image($attachment_id, 'small'); ?>
+                        <?php echo wp_get_attachment_image($attachment_id, 'large'); ?>
                       </a>
                     </div>
                     <div class='right'>
@@ -180,7 +180,7 @@ get_header();
                         else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
                       ?>
                       <a class='class-title' href="<?php the_permalink(); ?>">
-                        <?php echo wp_get_attachment_image($attachment_id, 'small'); ?>
+                        <?php echo wp_get_attachment_image($attachment_id, 'large'); ?>
                       </a>
                     </div>
                     <div class='right'>
@@ -288,7 +288,7 @@ get_header();
                         else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
                       ?>
                       <a class='class-title' href="<?php the_permalink(); ?>">
-                        <?php echo wp_get_attachment_image($attachment_id, 'small'); ?>
+                        <?php echo wp_get_attachment_image($attachment_id, 'large'); ?>
                       </a>
                     </div>
                     <div class='right'>
