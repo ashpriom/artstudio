@@ -11,12 +11,13 @@ $postID = get_the_ID();
 // Detect page language with Polylang
 // Check polylang.wordpress.com/documentation/documentation-for-developers/functions-reference/
 if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); }
+if(function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en');}
 
 // Resolve meta tags using Content Field Suite
 if(in_category(4) || in_category(48)){
 	if($currentLang=="en"){ $attachment_id = get_post_meta($postID, 'thumbnail', true); }
 	else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
-	$metaImage = wp_get_attachment_image($attachment_id,'large');
+	$metaImage = wp_get_attachment_image($attachment_id);
 }
 else{ $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/css/images/synlogo.jpg"; }
 $metaTitle = get_post_meta($postID, 'meta_title', true);
@@ -31,7 +32,7 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<meta name="copyright" content="Syn Studio" />
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:site" content="Syn Studio"/>
-		<meta name="twitter:title" content="<?php echo $metaTitle; ?>">
+		<meta name="twitter:title" content="<?php echo $metaTitle; ?>" />
 		<meta name="twitter:creator" content="Syn Studio"/>
 		<meta name="twitter:domain" content="synstudio.ca"/>
 		<meta name="twitter:image:src" content="<?php echo $metaImage; ?>" />
