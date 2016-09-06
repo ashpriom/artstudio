@@ -5,10 +5,15 @@
  */
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<?php
+$postID = get_the_ID();
+$metaTitle = get_post_meta($postID, 'meta_title', true);
+$metaDesc = get_post_meta($postID, 'meta_description', true);
+?>
+
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
 	<head>
-		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,14 +24,18 @@
 		<meta name="google-site-verification" content="qAS47Im9uAwkEff6CyCYdn_7r6BaP2aRFotf7Fs9Nrs" />
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:site" content="Syn Studio"/>
-		<meta name="twitter:title" content="<?php the_title(); ?>">
+		<meta name="twitter:title" content="<?php echo $metaTitle; ?>">
 		<meta name="twitter:creator" content="Syn Studio"/>
 		<meta name="twitter:domain" content="synstudio.ca"/>
 		<meta property="og:site_name" content="Syn Studio" />
 		<meta property="og:url" content="<?php the_permalink(); ?>" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="<?php the_title(); ?>" />
-		<meta itemprop="name" content="<?php the_title(); ?>"/>
+		<meta property="og:title" content="<?php echo $metaTitle; ?>" />
+		<meta property="og:description" content="<?php echo $metaDesc; ?>" />
+		<meta itemprop="name" content="<?php echo $metaTitle; ?>"/>
+		<meta itemprop="description" content="<?php echo $metaDesc; ?>"/>
+		<meta name="description" content="<?php echo $metaDesc; ?>"/>
+		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.bxslider.css" type="text/css" />
@@ -65,7 +74,6 @@
 
 		<?php wp_enqueue_script("jquery"); ?>
 		<?php wp_head(); ?>
-		<?php $postID = get_the_ID(); ?>
 
 		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
 
@@ -148,7 +156,6 @@
 	</head>
 	<?php
 		remove_filter ('the_content', 'wpautop');
-	  	$postID = get_the_ID();
 	  	if (function_exists('pll_current_language')) { $currentLang = pll_current_language('slug'); }
 	  	$translationID = pll_get_post($postID,'en');
 	?>
