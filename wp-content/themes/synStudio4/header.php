@@ -17,7 +17,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 if(in_category(4) || in_category(48)){
 	if($currentLang=="en"){ $attachment_id = get_post_meta($postID, 'thumbnail', true); }
 	else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
-	$metaImage = wp_get_attachment_image($attachment_id,'large');
+	$metaImage = echo wp_get_attachment_image($attachment_id,'large');
 }
 else{ $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/css/images/synlogo.jpg"; }
 
