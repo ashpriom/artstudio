@@ -9,7 +9,7 @@
 $postID = get_the_ID();
 $metaTitle = get_post_meta($postID, 'meta_title', true);
 $metaDesc = get_post_meta($postID, 'meta_description', true);
-$metaImage .= bloginfo('template_directory'); ."/images/bannerhome.jpg";
+$templateDir = echo get_template_directory_uri(); $metaImage = "\"".$templateDir ."/images/bannerhome.jpg";
 ?>
 
 <!DOCTYPE html>
