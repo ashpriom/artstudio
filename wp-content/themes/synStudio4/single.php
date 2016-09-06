@@ -19,9 +19,9 @@ if(in_category(4) || in_category(48)){ // This is for all posts under "classes (
 	else { include(TEMPLATEPATH . '/singleClassDetail.php'); } // all regular classes
 }
 else{
-	if(in_category(1)){include(TEMPLATEPATH . '/singleNewsletter.php'); }
+	if(in_category(1)){include(TEMPLATEPATH . '/pageWithNewsletter.php'); }
   	else{
-		if(in_category(8) || in_category(92)){ include(TEMPLATEPATH . '/singlePodcast.php'); }
+		if(in_category(8) || in_category(92)){ include(TEMPLATEPATH . '/singlePodcast.php'); } 
 		elseif (in_category(29) || in_category(95)){ include(TEMPLATEPATH . '/singleInterview.php'); }
 		else{include(TEMPLATEPATH . '/singleDefault.php'); }
 	}
