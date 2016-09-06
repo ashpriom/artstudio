@@ -9,6 +9,7 @@
 $postID = get_the_ID();
 $metaTitle = get_post_meta($postID, 'meta_title', true);
 $metaDesc = get_post_meta($postID, 'meta_description', true);
+$metaImage = "bloginfo('template_directory');"."/images/bannerhome.jpg";
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +19,7 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-		<meta name="author" content="Anthony Walsh, Florent Cachot, Syed Ashfaque Uddin Priom" />
+		<meta name="author" content="Anthony Walsh, Florent Cachot, Syed Priom" />
 		<meta name="copyright" content="Syn Studio" />
 		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
 		<meta name="google-site-verification" content="qAS47Im9uAwkEff6CyCYdn_7r6BaP2aRFotf7Fs9Nrs" />
@@ -27,13 +28,16 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<meta name="twitter:title" content="<?php echo $metaTitle; ?>">
 		<meta name="twitter:creator" content="Syn Studio"/>
 		<meta name="twitter:domain" content="synstudio.ca"/>
+		<meta name="twitter:image:src" content="<?php echo $metaImage; ?>" />
 		<meta property="og:site_name" content="Syn Studio" />
 		<meta property="og:url" content="<?php the_permalink(); ?>" />
 		<meta property="og:type" content="article" />
 		<meta property="og:title" content="<?php echo $metaTitle; ?>" />
 		<meta property="og:description" content="<?php echo $metaDesc; ?>" />
+		<meta property="og:image" content="<?php echo $metaImage; ?>" />
 		<meta itemprop="name" content="<?php echo $metaTitle; ?>"/>
 		<meta itemprop="description" content="<?php echo $metaDesc; ?>"/>
+		<meta itemprop="image" content="<?php echo $metaImage; ?>" />
 		<meta name="description" content="<?php echo $metaDesc; ?>"/>
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
