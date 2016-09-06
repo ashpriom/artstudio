@@ -18,7 +18,7 @@ if(in_category(4) || in_category(48)){
 	else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
 	$metaImage = wp_get_attachment_image($attachment_id,'large');
 }
-else{ $metaImage = "\"".bloginfo('template_directory');. "/css/images/synlogo.jpg"; }
+else{ $metaImage = "\"" . bloginfo('template_directory'); . "/css/images/synlogo.jpg" . "\""; }
 $metaTitle = get_post_meta($postID, 'meta_title', true);
 $metaDesc = get_post_meta($postID, 'meta_description', true);
 ?>
