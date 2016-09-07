@@ -18,7 +18,7 @@ if(function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en')
 if(in_category(4) || in_category(48)){
 	if($currentLang=="en"){ $attachment_id = get_post_meta($postID, 'thumbnail', true); }
 	else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
-	$metaImage = wp_get_attachment_image($attachment_id);
+	$metaImage = wp_get_attachment_image($attachment_id, array('545', '342'), "", "" ));
 }
 else{ $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/css/images/synlogo.jpg"; }
 
@@ -51,7 +51,7 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<meta name="twitter:site" content="Syn Studio"/>
 		<meta name="twitter:title" content="<?php echo $metaTitle; ?>">
 		<meta name="twitter:creator" content="Syn Studio">
-		<meta name="twitter:domain" content="synstudio.ca"/>
+		<meta name="twitter:domain" content="synstudio.ca">
 		<meta name="twitter:image:src" content="<?php echo $metaImage; ?>">
 		<meta property="og:site_name" content="Syn Studio">
 		<meta property="og:url" content="<?php the_permalink(); ?>">
