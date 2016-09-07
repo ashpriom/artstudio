@@ -19,7 +19,7 @@ if(in_category(4) || in_category(48)){
 	if($currentLang=="en"){ $attachment_id = get_post_meta($postID, 'thumbnail', true); }
 	else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
 	$metaImageAtttributes = wp_get_attachment_image_url($attachment_id,'large',false); // Returns an array containing image info
-	$metaImage = $metaImageAtttributes[0];
+	$metaImage = $metaImageAtttributes;
 }
 else{ $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/css/images/synlogo.jpg"; }
 
