@@ -110,7 +110,7 @@ Template Name: Concept Art Diploma - About
                         At <strong>Syn Studio</strong>, we believe in the power of training over talent.
                         <strong>Since 2007</strong>, we’ve been <strong>helping passionate and
                         dedicated </strong>students master the fundamentals and <strong>learn high
-                        level design and digital illustration skills:</strong>. The skills they now
+                        level design and digital illustration skills:</strong> The skills they now
                         use professionally to create <strong>mind-blowing concepts and
                         visuals</strong> for the <strong>next generation</strong> of entertainment media.
                     </p>

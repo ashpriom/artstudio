@@ -9,9 +9,9 @@
 $postID = get_the_ID();
 
 // Detect page language with Polylang
-// Check polylang.wordpress.com/documentation/documentation-for-developers/functions-reference/
+// More in this link: polylang.wordpress.com/documentation/documentation-for-developers/functions-reference/
 if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); }
-if(function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en');}
+if(function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en'); }
 
 // Resolve meta tags using Content Field Suite
 if(in_category(4) || in_category(48)){
