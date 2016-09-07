@@ -18,35 +18,35 @@ $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/image
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-		<meta name="author" content="Anthony Walsh, Florent Cachot, Syed Priom" />
-		<meta name="copyright" content="Syn Studio" />
+		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>">
+		<meta name="author" content="Anthony Walsh, Florent Cachot, Syed Priom">
+		<meta name="copyright" content="Syn Studio">
 		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
-		<meta name="google-site-verification" content="qAS47Im9uAwkEff6CyCYdn_7r6BaP2aRFotf7Fs9Nrs" />
+		<meta name="google-site-verification" content="qAS47Im9uAwkEff6CyCYdn_7r6BaP2aRFotf7Fs9Nrs">
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:site" content="Syn Studio"/>
 		<meta name="twitter:title" content="<?php echo $metaTitle; ?>">
 		<meta name="twitter:creator" content="Syn Studio"/>
 		<meta name="twitter:domain" content="synstudio.ca"/>
-		<meta name="twitter:image:src" content="<?php echo $metaImage; ?>" />
-		<meta property="og:site_name" content="Syn Studio" />
-		<meta property="og:url" content="<?php the_permalink(); ?>" />
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="<?php echo $metaTitle; ?>" />
-		<meta property="og:description" content="<?php echo $metaDesc; ?>" />
-		<meta property="og:image" content="<?php echo $metaImage; ?>" />
+		<meta name="twitter:image:src" content="<?php echo $metaImage; ?>">
+		<meta property="og:site_name" content="Syn Studio">
+		<meta property="og:url" content="<?php the_permalink(); ?>">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="<?php echo $metaTitle; ?>">
+		<meta property="og:description" content="<?php echo $metaDesc; ?>">
+		<meta property="og:image" content="<?php echo $metaImage; ?>">
 		<meta itemprop="name" content="<?php echo $metaTitle; ?>"/>
 		<meta itemprop="description" content="<?php echo $metaDesc; ?>"/>
-		<meta itemprop="image" content="<?php echo $metaImage; ?>" />
+		<meta itemprop="image" content="<?php echo $metaImage; ?>">
 		<meta name="description" content="<?php echo $metaDesc; ?>"/>
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.bxslider.css" type="text/css" />
-	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" type="text/css" />
-	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/diplomaStyle.min.css" type="text/css" />
-	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/diplomaStyleResponsive.min.css" type="text/css" />
-	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/stacktable.css" type="text/css" />
+		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.bxslider.css" type="text/css">
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" type="text/css">
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/diplomaStyle.min.css" type="text/css">
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/diplomaStyleResponsive.min.css" type="text/css">
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/stacktable.css" type="text/css">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:regular,700&amp;subset=latin">
 	  	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans:100,100italic,300,300italic,regular,italic,600,600italic,700,700italic&amp;subset=latin,latin-ext">
 	    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
