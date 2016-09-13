@@ -17,10 +17,9 @@ if(function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en')
 if(in_category(4) || in_category(48)){
 	if($currentLang=="en"){ $attachment_id = get_post_meta($postID, 'thumbnail', true); }
 	else{ $attachment_id = get_post_meta($translationID, 'thumbnail', true); }
-	$metaImageAtttributes = wp_get_attachment_image_url($attachment_id,'large',false);
-	$metaImage = $metaImageAtttributes;
+	$metaImage = wp_get_attachment_image_url($attachment_id,'large',false);
 }
-if(in_category(8) || in_category(92)){ $metaImage = get_post_meta($postID, 'podcastsImage', true); }
+elseif(in_category(8) || in_category(92)){ $metaImage = get_post_meta($postID, 'podcastsImage', true); }
 else{ $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/css/images/synlogo.jpg"; }
 
 $metaTitle = get_post_meta($postID, 'meta_title', true);
