@@ -139,6 +139,9 @@ $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/image
 			<script>
 				// Lead
 				fbq('track', 'Lead');
+
+				// Complete Registration
+				fbq('track', 'CompleteRegistration');
 			</script>
 
 		<!-- Facebook Conversion Code for Application Form Submissions - CADP CANADA 18-30 -->
