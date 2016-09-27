@@ -71,6 +71,26 @@
             						echo " -webkit-line-clamp: 4";
             						echo "-webkit-box-orient: vertical;";
           						echo "</style>";
+                      break;
+              case 11042:
+                      if($currentLang=="en"){
+                        $cat = 'Teachers';
+                      }
+                      else{
+                        $cat = 'Professeurs';  
+                      }
+
+                      echo "<style>";
+                        echo ".podcast #col1 {position: inherit; width: 100%}";
+                        echo ".podcast #col1 p {clear: both;}";
+                        echo ".podcast #col2 {display: none;}";
+                        echo ".teacher-boxWrapper .teacher-box {height: 480px;}";
+                        echo ".teachers-thumb {float: left; margin-right: 43px; margin-bottom: 12px;}";
+                        echo ".teachers-art img {height: 152px;}";
+                        echo ".podcast-boxWrapper h2 {font-size: 18px; margin-bottom: 10px;}";
+                        echo " -webkit-line-clamp: 4";
+                        echo "-webkit-box-orient: vertical;";
+                      echo "</style>";
                       break;        
               case 3123:
                       if($currentLang=="en"){
