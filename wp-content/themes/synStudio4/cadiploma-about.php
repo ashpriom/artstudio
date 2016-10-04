@@ -369,9 +369,10 @@ Template Name: Concept Art Diploma - About
                                     <h4 class="orange-text nopaddingleft">Francis Back</h4>
                                  
                                     <p class="term-description teacher-description">
-                                        Francis Back est un illustrateur et artiste de storyboards, ayant fait ses études aux Beaux Arts en Suisse. Il a travaillé sur plus d'une centaine de films et de productions télévisées au Canada et aux États-Unis, tels que Spyderwick Chronicles, Mummy 3 et le film Incendie nominé aux Oscars. Francis a aussi construits des storyboards pour des spectacles du Cirque du Soleil tel que Ka par Robert Lepage et à travaillé sur plusieurs films éducatifs à l'Office National du Film du Canada (ONF). Francis a plus de 20 ans d'expérience d'enseignement de storyboards à Montréal et à Taiwan.
+                                        Francis Back is an illustrator and storyboard artist who studied Fine Arts in Switzerland and who has worked on over a hundred Canadian and American TV and film productions, such as Spyderwick Chronicles, Mummy 3, Tomb of the Dragon Emperor, and the Academy Award nominated film Incendie. Francis also did storyboards, and concept art, for three Cirque du Soleil shows including Ka by director Robert Lepage and he’s worked on educational films for the National Film Board of Canada (NFB). Francis has over 20 years of experience teaching storyboarding in Montreal and in Taiwan.
                                         <br /><br />
-                                        Francis enseignera la partie "Intro to Cinema" dans Visual Reference Library dans le Diplôme en Conception Artistique.
+                                        Francis will be teaching the "How to Render" module in Sketching for Production in the Concept Art Diploma
+                                        Program.
                                     </p>
                                 </div>
                             </div>
@@ -998,10 +999,9 @@ Template Name: Concept Art Diploma - About
                                     <h4 class="orange-text nopaddingleft">Francis Back</h4>
                                  
                                     <p class="term-description teacher-description">
-                                        Francis Back is an illustrator and storyboard artist who studied Fine Arts in Switzerland and who has worked on over a hundred Canadian and American TV and film productions, such as Spyderwick Chronicles, Mummy 3, Tomb of the Dragon Emperor, and the Academy Award nominated film Incendie. Francis also did storyboards, and concept art, for three Cirque du Soleil shows including Ka by director Robert Lepage and he’s worked on educational films for the National Film Board of Canada (NFB). Francis has over 20 years of experience teaching storyboarding in Montreal and in Taiwan.
+                                        Francis Back est un illustrateur et artiste de storyboards, ayant fait ses études aux Beaux Arts en Suisse. Il a travaillé sur plus d'une centaine de films et de productions télévisées au Canada et aux États-Unis, tels que Spyderwick Chronicles, Mummy 3 et le film Incendie nominé aux Oscars. Francis a aussi construits des storyboards pour des spectacles du Cirque du Soleil tel que Ka par Robert Lepage et à travaillé sur plusieurs films éducatifs à l'Office National du Film du Canada (ONF). Francis a plus de 20 ans d'expérience d'enseignement de storyboards à Montréal et à Taiwan.
                                         <br /><br />
-                                        Francis will be teaching the "How to Render" module in Sketching for Production in the Concept Art Diploma
-                                        Program.
+                                        Francis enseignera la partie "Intro to Cinema" dans Visual Reference Library dans le Diplôme en Conception Artistique.
                                     </p>
                                 </div>
                             </div>
