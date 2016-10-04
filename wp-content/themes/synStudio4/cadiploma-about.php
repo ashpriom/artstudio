@@ -371,7 +371,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Francis Back is an illustrator and storyboard artist who studied Fine Arts in Switzerland and who has worked on over a hundred Canadian and American TV and film productions, such as Spyderwick Chronicles, Mummy 3, Tomb of the Dragon Emperor, and the Academy Award nominated film Incendie. Francis also did storyboards, and concept art, for three Cirque du Soleil shows including Ka by director Robert Lepage and he’s worked on educational films for the National Film Board of Canada (NFB). Francis has over 20 years of experience teaching storyboarding in Montreal and in Taiwan.
                                         <br /><br />
-                                        Francis will be teaching the "How to Render" module in Sketching for Production in the Concept Art Diploma
+                                        Francis will be teaching the "Intro to Cinema" module in Visual Reference Library in the Concept Art Diploma
                                         Program.
                                     </p>
                                 </div>
