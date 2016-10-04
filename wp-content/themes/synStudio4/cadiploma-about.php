@@ -358,6 +358,27 @@ Template Name: Concept Art Diploma - About
                                 </div>
                             </div>
                         </div>
+                        <div class="row row-73percent">
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-francis.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-francis-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Francis Back</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        Francis Back est un illustrateur et artiste de storyboards, ayant fait ses études aux Beaux Arts en Suisse. Il a travaillé sur plus d'une centaine de films et de productions télévisées au Canada et aux États-Unis, tels que Spyderwick Chronicles, Mummy 3 et le film Incendie nominé aux Oscars. Francis a aussi construits des storyboards pour des spectacles du Cirque du Soleil tel que Ka par Robert Lepage et à travaillé sur plusieurs films éducatifs à l'Office National du Film du Canada (ONF). Francis a plus de 20 ans d'expérience d'enseignement de storyboards à Montréal et à Taiwan.
+                                        <br /><br />
+                                        Francis enseignera la partie "Intro to Cinema" dans Visual Reference Library dans le Diplôme en Conception Artistique.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- empty teacher box --> 
+                            <div class="col-md-6">
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <!-- add this to have control button like the teacher project slider
@@ -851,22 +872,10 @@ Template Name: Concept Art Diploma - About
                                     
                                     <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
                                 
-                                    <p class="term-description teacher-description">Thierry Doizon aka Barontieri a été précédemment le
-                                        directeur artistique à Square Enix Montréal, où il était le responsable de Lara Croft GO, le
-                                        jeu mobile de l’année par Apple. Un chef en art conceptuel et un directeur artistique avec
-                                        plus de 20 ans d’expérience dyans l’industrie, il a travaillé pour une grande variété de
-                                        compagnies autour du monde, tels Ubisoft, Disney Interactive et Eidos. En tant que 
-                                        co-fondateur de Steambot Studios, Thierry a enseigné au niveau collégial et a été invité
-                                        pour parler à plusieurs ateliers et conférences dont Disney Imagineering, ADAPT, Ubisoft
-                                        Campus, MIGS, FIEA, Massive Black et The Gnomon Workshop, ce dernier pour lequel il a 
-                                        également produit un DVD éducatif (Character Design Pipeline: Production Art & Research
-                                        Techniques with BARONTiERi). Quelques autres de ses projets incluent: Assassin's Creed,
-                                        Prince of Persia, Deux Ex: Human Revolutions et Tron: Legacy, entre autres. Ses oeuvres
-                                        ont été publiées dans “Exodyssey: Visual Development of an Epic Adventure” et
-                                        “Steampainting: SPARK - Creative process”, tous les deux par Steambot Studios.<br /><br />
-
-                                        Thierry est le directeur d'études au Syn Studio. En plus d'être le président du Diplôme en 
-                                        conception artistique, il enseignera Intro to Concept Art.
+                                    <p class="term-description teacher-description">Thierry Doizon aka Barontieri a été précédemment un directeur artistique et artiste en conception senior avec plus de 20 ans d’expérience dans l’industrie, ayant travaillé pour une grande variété de compagnies autour du monde, tels Square Enix, Ubisoft, Disney Interactive et Eidos. Thierry a enseigné au niveau collégial et a été invité pour parler à plusieurs ateliers et conférences dont Disney Imagineering, ADAPT, Ubisoft Campus, MIGS, FIEA, Massive Black et The Gnomon Workshop, ce dernier pour lequel il a également produit un DVD éducatif (Character Design Pipeline: Production Art & Research Techniques with BARONTiERi). Quelques autres de ses projets incluent: Assassin's Creed, Prince of Persia, Deux Ex: Human Revolutions et Tron: Legacy, entre autres. Ses oeuvres ont été publiées dans “Exodyssey: Visual Development of an Epic Adventure” et “Steampainting: SPARK - Creative process”, tous les deux par Steambot Studios, dont il est le co-fondateur.
+                                    <br /><br />
+                                    Thierry est le directeur d'études au Syn Studio. En plus d'être le président du Diplôme en 
+                                    conception artistique, il enseignera Intro to Concept Art.
                                     </p>
                                 </div>
                             </div>
@@ -879,22 +888,9 @@ Template Name: Concept Art Diploma - About
                                     
                                     <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
                             
-                                    <p class="term-description teacher-description">Jessy Veilleux est le fondateur et 
-                                        directeur artistique de Meduzarts, un studio de personnages et d’environnements 
-                                        numériques, ainsi que le directeur artistique de Digital Dimension. Ses connaissances
-                                        en beaux-arts combinées avec sa passion pour l’art numérique lui apportent une 
-                                        approche unique qui ont contribué au publication de plusieurs de ses oeuvres dans des
-                                        films et jeux vidéos très connus tels StarWars, The Force Unleashed II, Avatar VG, 
-                                        300, AION, FallOut 3, SinCity, Transformers: Revenge of the Fallen VG, Assassin’s 
-                                        Creed II, Prince of Persia II et Mortal Kombat X, entre autres. Jessy enseigne depuis
-                                        10 ans au Centre NAD à Montréal, où il a contribué grandement au premier programme
-                                        d’études numériques ‘matte’. Plusieurs prix portent son nom, tels le CG Talk choice
-                                        award et le XSI Gallery Award en plus que ses oeuvres ont été publiées dans Exposé
-                                        5, Mattepainting.org and the CG Channel. 
-                                        <br /><br />
-                                        Jessy enseignera Visual Reference Library et Digital Image Manipulation dans le 
-                                        Diplôme en Conception Artistique.
-                                    </p>
+                                    <p class="term-description teacher-description">Jessy Veilleux est le fondateur et directeur artistique de Meduzarts, un studio de personnages et d’environnements numériques, ainsi que le directeur artistique de Digital Dimension. Il a contribué des oeuvres au publication de plusieurs films et jeux vidéos très connus tels StarWars, The Force Unleashed II, Avatar VG, 300, AION, FallOut 3, SinCity, Transformers: Revenge of the Fallen VG, Assassin’s Creed II, Prince of Persia II et Mortal Kombat X, entre autres. Jessy enseigne depuis 10 ans au Centre NAD à Montréal, où il a contribué grandement au premier programme d’études numériques ‘matte’. Plusieurs prix portent son nom, tels le CG Talk choice award et le XSI Gallery Award en plus que ses oeuvres ont été publiées dans Exposé 5, Mattepainting.org and the CG Channel.
+                                    <br /><br />
+                                    Jessy enseignera Visual Reference Library et Digital Image Manipulation dans le Diplôme en Conception Artistique.</p>
                                 </div>
                             </div>
                         </div>
@@ -989,6 +985,28 @@ Template Name: Concept Art Diploma - About
                                         en Conception Artistique.
                                     </p>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row row-73percent">
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-francis.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-francis-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Francis Back</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        Francis Back is an illustrator and storyboard artist who studied Fine Arts in Switzerland and who has worked on over a hundred Canadian and American TV and film productions, such as Spyderwick Chronicles, Mummy 3, Tomb of the Dragon Emperor, and the Academy Award nominated film Incendie. Francis also did storyboards, and concept art, for three Cirque du Soleil shows including Ka by director Robert Lepage and he’s worked on educational films for the National Film Board of Canada (NFB). Francis has over 20 years of experience teaching storyboarding in Montreal and in Taiwan.
+                                        <br /><br />
+                                        Francis will be teaching the "How to Render" module in Sketching for Production in the Concept Art Diploma
+                                        Program.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- empty teacher box --> 
+                            <div class="col-md-6">
                             </div>
                         </div>
                     </li>
