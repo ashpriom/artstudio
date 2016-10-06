@@ -575,28 +575,28 @@ Template Name: Concept Art Diploma - About
             <div class="row row-80percent">
                 <div class="col-md-3">
                     <p class="personname">Marc Taro Holmes</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="" />
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="" />
                     <p class="persondescription orange-text">Freelance concept
                         <br />artist, educator and
                         <br />art director</p>
                 </div>
                 <div class="col-md-3">
                     <p class="personname">Florent Cachot</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Technical director of
                         <br />lighting, compositor,
                         <br />illustrator</p>
                 </div>
                 <div class="col-md-3">
                     <p class="personname">Pierre Grenier</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Director of the
                         <br />animation program at
                         <br />Old Montreal College</p>
                 </div>
                 <div class="col-md-3">
                     <p class="personname">Adrian Bobb</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Art director,
                         <br />freelance concept
                         <br />artist &amp; educator</p>
@@ -606,22 +606,22 @@ Template Name: Concept Art Diploma - About
             <div class="row row-80percent">
                 <div class="col-md-3">
                     <p class="personname">Donglu Yu</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text orange-text">Senior concept artist</p>
                 </div>
                 <div class="col-md-3">
                     <p class="personname">Thierry Doizon</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Art director and Senior concept artist</p>
                 </div>
                 <div class="col-md-3">
                     <p class="personname">Meinert Hansen</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Art director and educator</p>
                 </div>
                 <div class="col-md-3">
                     <p class="personname">Nick Oroc</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Senior concept artist</p>
                 </div>
             </div>
@@ -629,17 +629,17 @@ Template Name: Concept Art Diploma - About
             <div class="row row-80percent">
                 <div class="col-md-4">
                     <p class="personname">Jeong Hwan Shin</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Senior concept artist</p>
                 </div>
                 <div class="col-md-4">
                     <p class="personname">Bruno Gauthier Leblanc</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Senior concept artist</p>
                 </div>
                 <div class="col-md-4">
                     <p class="personname">Nick Oroc</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Senior concept artist</p>
                 </div>
             </div>
@@ -658,22 +658,22 @@ Template Name: Concept Art Diploma - About
             <div class="row row-80percent">
                 <div class="col-md-3">
                     <p class="personname">Sylvie Gagnon</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Expert Consultant</p>
                 </div>
                 <div class="col-md-3">
                     <p class="personname">Marc Lemieux</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text"> Expert Consultant</p>
                 </div>
                 <div class="col-md-3">
                     <p class="personname">Vlad Dergachov</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Senior 3D Environment Artist</p>
                 </div>
                 <div class="col-md-3">
                     <p class="personname">Davide Tabacco</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Producer</p>
                 </div>
             </div>
@@ -681,17 +681,17 @@ Template Name: Concept Art Diploma - About
             <div class="row row-80percent">
                 <div class="col-md-4">
                     <p class="personname">Frédéric-Antoine Marcoux</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Senior Recruiter</p>
                 </div>
                 <div class="col-md-4">
                     <p class="personname">Amir Sám Nakhjavan</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Researcher</p>
                 </div>
                 <div class="col-md-4">
                     <p class="personname">Olivia Bowman</p>
-                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                    <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                     <p class="persondescription orange-text">Researcher</p>
                 </div>
             </div>
@@ -1198,22 +1198,22 @@ Template Name: Concept Art Diploma - About
             <div class="row row-80percent">
                 <div class="col-md-3">
                         <p class="personname">Marc Taro Holmes</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="" />
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="" />
                         <p class="persondescription orange-text">artiste conceptuel indépendant,<br />professeur et directeur<br />  artistique</p>
                     </div>
                     <div class="col-md-3">
                         <p class="personname">Florent Cachot</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">directeur technique pour l'éclairage, compositeur, illustrateur</p>
                     </div>
                     <div class="col-md-3">
                         <p class="personname">Pierre Grenier</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">directeur du programme d'animation au Cégep du vieux Montréal</p>
                     </div>
                     <div class="col-md-3">
                         <p class="personname">Adrian Bobb</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">directeur artistique, artiste concepteur indépendant et professeur</p>
                     </div>
             </div>
@@ -1221,22 +1221,22 @@ Template Name: Concept Art Diploma - About
             <div class="row row-80percent">
                 <div class="col-md-3">
                         <p class="personname">Donglu Yu</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text orange-text">artiste conceptrice sénior</p>
                     </div>
                     <div class="col-md-3">
                         <p class="personname">Thierry Doizon</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">directeur artistique et artiste concepteur sénior</p>
                     </div>
                     <div class="col-md-3">
                         <p class="personname">Meinert Hansen</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">professeur et artiste concepteur sénior</p>
                     </div>
                     <div class="col-md-3">
                         <p class="personname">Nick Oroc</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">artiste concepteur sénior</p>
                     </div>
             </div>
@@ -1244,17 +1244,17 @@ Template Name: Concept Art Diploma - About
             <div class="row row-80percent">
                 <div class="col-md-4">
                         <p class="personname">Jeong Hwan Shin</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">artiste concepteur sénior</p>
                     </div>
                     <div class="col-md-4">
                         <p class="personname">Bruno Gauthier Leblanc</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">artiste concepteur sénior</p>
                     </div>
                     <div class="col-md-4">
                         <p class="personname">Sean Samuels</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">artiste concepteur et matte painter sénior</p>
                     </div>
             </div>
@@ -1270,22 +1270,22 @@ Template Name: Concept Art Diploma - About
             <div class="row row-80percent">
                 <div class="col-md-3">
                         <p class="personname">Sylvie Gagnon</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">consultante experte</p>
                     </div>
                     <div class="col-md-3">
                         <p class="personname">Marc Lemieux</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">consultant expert</p>
                     </div>
                     <div class="col-md-3">
                         <p class="personname">Vlad Dergachov</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">créateur de décors 3D sénior</p>
                     </div>
                     <div class="col-md-3">
                         <p class="personname">Davide Tabacco</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">producteur</p>
                     </div>
             </div>
@@ -1293,17 +1293,17 @@ Template Name: Concept Art Diploma - About
             <div class="row row-80percent">
                 <div class="col-md-4">
                         <p class="personname">Frédéric-Antoine Marcoux</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">recruteur confirmé</p>
                     </div>
                     <div class="col-md-4">
                         <p class="personname">Amir Sám Nakhjavan</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">chercheur</p>
                     </div>
                     <div class="col-md-4">
                         <p class="personname">Olivia Bowman</p>
-                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_2.png" alt="">
+                        <img class="personarrow" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/downarrow.png" alt="">
                         <p class="persondescription orange-text">chercheur</p>
                     </div>
             </div>
