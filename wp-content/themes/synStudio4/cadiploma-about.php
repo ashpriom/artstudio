@@ -520,7 +520,7 @@ Template Name: Concept Art Diploma - About
                     <div class="col-sm-4 hidden-xs">
                         <p class="today-text-pt1">
                             Today
-                            <img class="shape-1" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_1.png" alt="">
+                            <img class="shape-1" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/longarrow-right.png" alt="">
                         </p>
                     </div>
                     <div class="col-sm-6">
@@ -711,7 +711,7 @@ Template Name: Concept Art Diploma - About
                         Check out our student artwork showcase.</strong>
                 </p>
                 <br />
-                <a class="btn btn-primary btn-orange-theme" href="<?php bloginfo('url'); ?>/student-showcase/" onClick="ga(‘send’, ‘event’, ‘CADP’, ‘click-button’, ‘Showcase’, 10);">Student Art Showcase <img class="white-arrow" src="<?php echo get_template_directory_uri(); ?>/images/shape_1.png" alt="Arrow" /></a>
+                <a class="btn btn-primary btn-orange-theme" href="<?php bloginfo('url'); ?>/student-showcase/" onClick="ga(‘send’, ‘event’, ‘CADP’, ‘click-button’, ‘Showcase’, 10);">Student Art Showcase <img class="white-arrow" src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.png" alt="Arrow" /></a>
             </div>
         </div>
     </div> <!-- end MAIN CONTENT -->
@@ -1151,7 +1151,7 @@ Template Name: Concept Art Diploma - About
                     <div class="col-sm-4 hidden-xs">
                         <p class="today-text-pt1">
                             Aujourd'hui
-                            <img class="shape-1" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/shape_1.png" alt="">
+                            <img class="shape-1" src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/longarrow-right.png" alt="">
                         </p>
                     </div>
                     <div class="col-sm-6">
@@ -1321,7 +1321,7 @@ Template Name: Concept Art Diploma - About
                     <strong><strong>Vous voulez voir un aperçu de ce <br />que vous pourriez créer à Syn Studio? Jetez un oeil<br /> aux oeuvres de nos élèves.</strong></strong>
                 </p>
                 <br />
-                <a class="btn btn-primary btn-orange-theme" href="<?php bloginfo('url'); ?>/presentation-etudiants/" onClick="ga(‘send’, ‘event’, ‘CADP’, ‘click-button’, ‘Presentation, 10);">Présentation des étudiants <img class="white-arrow" src="<?php echo get_template_directory_uri(); ?>/images/shape_1.png" alt="Arrow" /></a>
+                <a class="btn btn-primary btn-orange-theme" href="<?php bloginfo('url'); ?>/presentation-etudiants/" onClick="ga(‘send’, ‘event’, ‘CADP’, ‘click-button’, ‘Presentation, 10);">Présentation des étudiants <img class="white-arrow" src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.png" alt="Arrow" /></a>
             </div>
         </div>
     </div>

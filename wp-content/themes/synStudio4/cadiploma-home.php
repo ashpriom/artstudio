@@ -67,7 +67,7 @@ Template Name: Concept Art Diploma - Home
         </div>
         <div class="header-container" id="section-header-ca">
             <div class="synstudio-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/layer_1.png" alt="Syn Studio Logo" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/synlogo.png" alt="Syn Studio Logo" />
                 <p class="synstudio-logo-text-fr">École d'art</p>
                 <p class="synstudio-logo-text-en">Art school</p>
             </div>
@@ -78,9 +78,9 @@ Template Name: Concept Art Diploma - Home
                             pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
-                    <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-white.png" alt="" /></a></li>
-                    <li><a class="social-media-icons" href="https://twitter.com/synstudio"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-social-icon-white.png" alt="" /></a></li>
-                    <li><a class="social-media-icons" href="https://www.youtube.com/user/SynStudioMontreal"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube-social-icon-white.png" alt="" /></a></li>
+                    <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-white.png" title="Facebook" alt="facebook" /></a></li>
+                    <li><a class="social-media-icons" href="https://twitter.com/synstudio"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-social-icon-white.png" title="Twitter" alt="twitter" /></a></li>
+                    <li><a class="social-media-icons" href="https://www.youtube.com/user/SynStudioMontreal"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube-social-icon-white.png" title="YouTube" alt="YouTube" /></a></li>
                 </ul>
             </div>
             <div class="nav-social hidden-md hidden-lg">
@@ -90,9 +90,9 @@ Template Name: Concept Art Diploma - Home
                             pll_the_languages(array('hide_current'=>1, 'show_flags'=>1, 'hide_if_no_translation'=>1,));
                         }?>
                     </li>
-                    <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-black.png" alt="" /></a></li>
-                    <li><a class="social-media-icons" href="https://twitter.com/synstudio"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-social-icon-black.png" alt="" /></a></li>
-                    <li><a class="social-media-icons" href="https://www.youtube.com/user/SynStudioMontreal"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube-social-icon-black.png" alt="" /></a></li>
+                    <li><a class="social-media-icons" href="https://www.facebook.com/SynStudio/"><img src="<?php echo get_template_directory_uri(); ?>/images/fb-social-icon-black.png" title="Facebook" alt="facebook" /></a></li>
+                    <li><a class="social-media-icons" href="https://twitter.com/synstudio"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-social-icon-black.png" title="Twitter" alt="twitter" /></a></li>
+                    <li><a class="social-media-icons" href="https://www.youtube.com/user/SynStudioMontreal"><img src="<?php echo get_template_directory_uri(); ?>/images/youtube-social-icon-black.png" title="YouTube" alt="YouTube" /></a></li>
                 </ul>
             </div>
             <h1 class="header-title shadow-text-dark orange-text"><small class="white-text"><?php if($currentLang == "en"){ ?>You want to be a<?php } else{ ?>Vous voulez être<?php } ?></small><br /><?php if($currentLang == "en"){ ?>Concept Artist<?php } else{ ?>concept artist<?php } ?></h1>
@@ -215,9 +215,9 @@ Template Name: Concept Art Diploma - Home
                         <?php } else{ ?>Quelques <br /> films et <br /> jeux qui<br /> y ont été<br /> produits:<?php } ?>
                     </p>
                     <ul class="background-camera hidden-xs hidden-sm hidden-md">
-                    <li class="margin-10px hidden-md"><img class="background-camera-img hidden-xl" src="<?php echo get_template_directory_uri(); ?>/images/layer_40_copy_5.png" alt=""></li>
-                    <li class="margin-10px visible-xl"><img class="background-camera-img visible-xl" src="<?php echo get_template_directory_uri(); ?>/images/layer_40_copy_3.png" alt=""></li>
-                    <li class="margin-10px"><img class="background-camera-img" src="<?php echo get_template_directory_uri(); ?>/images/layer_40_copy_4.png" alt=""></li>
+                    <li class="margin-10px hidden-md"><img class="background-camera-img hidden-xl" src="<?php echo get_template_directory_uri(); ?>/images/camera-back1.png" alt=""></li>
+                    <li class="margin-10px visible-xl"><img class="background-camera-img visible-xl" src="<?php echo get_template_directory_uri(); ?>/images/camera-back2.png" alt=""></li>
+                    <li class="margin-10px"><img class="background-camera-img" src="<?php echo get_template_directory_uri(); ?>/images/camera-back3.png" alt=""></li>
                     <li>
                         <div class="camera-container clearfix">
                             <div class="camera-overlay">
@@ -244,10 +244,10 @@ Template Name: Concept Art Diploma - Home
                             </div>
                         </div>
                     </li>
-                    <li class="margin-10px"><img class="background-camera-img" src="<?php echo get_template_directory_uri(); ?>/images/layer_40_copy_5.png" alt=""></li>
-                    <li class="margin-10px"><img class="background-camera-img" src="<?php echo get_template_directory_uri(); ?>/images/layer_40_copy_3.png" alt=""></li>
-                    <li class="margin-10px"><img class="background-camera-img" src="<?php echo get_template_directory_uri(); ?>/images/layer_40_copy_4.png" alt=""></li>
-                    <li class="margin-10px"><img class="background-camera-img" src="<?php echo get_template_directory_uri(); ?>/images/layer_40_copy_5.png" alt=""></li>
+                    <li class="margin-10px"><img class="background-camera-img" src="<?php echo get_template_directory_uri(); ?>/images/camera-back1.png" alt=""></li>
+                    <li class="margin-10px"><img class="background-camera-img" src="<?php echo get_template_directory_uri(); ?>/images/camera-back2.png" alt=""></li>
+                    <li class="margin-10px"><img class="background-camera-img" src="<?php echo get_template_directory_uri(); ?>/images/camera-back3.png" alt=""></li>
+                    <li class="margin-10px"><img class="background-camera-img" src="<?php echo get_template_directory_uri(); ?>/images/camera-back1.png" alt=""></li>
                     </ul>
 
                     <!--View in small screen -->
@@ -294,9 +294,9 @@ Template Name: Concept Art Diploma - Home
                     </p>
                     <br />
                     <?php if($currentLang == "en"){ ?>
-                    <a class="btn btn-primary btn-orange-theme highlight-7-btn" href="<?php bloginfo('url'); ?>/concept-art-diploma/" onClick="ga(‘send’, ‘event’, ‘CADP’, ‘click-button’, ‘Learn-More-Program’, 10);">Learn more about our program <img class="white-arrow" src="<?php echo get_template_directory_uri(); ?>/images/shape_1.png" alt="Arrow" /></a>
+                    <a class="btn btn-primary btn-orange-theme highlight-7-btn" href="<?php bloginfo('url'); ?>/concept-art-diploma/" onClick="ga(‘send’, ‘event’, ‘CADP’, ‘click-button’, ‘Learn-More-Program’, 10);">Learn more about our program <img class="white-arrow" src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.png" alt="Arrow" /></a>
                     <?php } else{ ?>
-                    <a class="btn btn-primary btn-orange-theme highlight-7-btn" href="<?php bloginfo('url'); ?>/diplome-dart-conceptuel/" onClick="ga(‘send’, ‘event’, ‘CADP’, ‘click-button’, ‘Decouvrez-Notre-Programme’, 10);">DÉCOUVREZ NOTRE PROGRAMME <img class="white-arrow" src="<?php echo get_template_directory_uri(); ?>/images/shape_1.png" alt="Arrow" /></a>
+                    <a class="btn btn-primary btn-orange-theme highlight-7-btn" href="<?php bloginfo('url'); ?>/diplome-dart-conceptuel/" onClick="ga(‘send’, ‘event’, ‘CADP’, ‘click-button’, ‘Decouvrez-Notre-Programme’, 10);">DÉCOUVREZ NOTRE PROGRAMME <img class="white-arrow" src="<?php echo get_template_directory_uri(); ?>/images/arrow-right.png" alt="Arrow" /></a>
                     <?php } ?>
                 </div>
             </div>
