@@ -1,0 +1,538 @@
+/* Extra small devices (phones, less than 768px) */
+/* This is the default in Bootstrap */
+@media (min-width: 0px) {
+  .nav-menu{
+    display: none;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+/* 768px and up */
+@media (min-width: 768px) {
+  .header-title {
+    font-size: 6em;
+  }
+  .nav-menu {
+    display: none;
+  }
+}
+/* X-Small device only */
+/* 0px to 767px */
+@media (min-width: 0px) and (max-width: 767px) {
+  .bxslider-camera-roll {
+    margin-top: 10%;
+    width: 47%;
+  }
+  .header-title {
+    font-size: 45px;
+  }
+  #e-mail-signup-container {
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    width: 275px;
+    text-align: center;
+  }
+  .row70percent,
+  .row-75percent,
+  .row-80percent, {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+  .reserve{
+    width: 100% !important;
+    font-size: 1em !important;
+  }
+  #mc_embed_signup .button{width: auto !important;}
+  .small-art-credit {
+    text-align: center;
+  }
+  .overviewtable {
+    font-size: 10px;
+  }
+  .instructors-text-box h1 {
+    font-size: 1.8em;
+  }
+  .longnote {
+    text-align: center;
+  }
+  .vinci {
+    border-right: 0;
+  }
+  .section-intro-text, .section-intro-text40{
+  line-height: 1.45;
+  width: 100%;
+  margin:auto;
+  }
+  .congratulations{width: 100%; text-align: center;font-size: 2.6em;}
+  .nav-menu-footer{margin-top: 20px;}
+  #wavecom-logo{padding-left: 10px;margin: auto;}
+  .btn{white-space: normal !important;}
+
+  .tile1 .hovertext1,
+  .tile2 .hovertext2,
+  .tile3 .hovertext3,
+  .tile4 .hovertext4,
+  .tile5 .hovertext5,
+  .tile6 .hovertext6,
+  .tile7 .hovertext7,
+  .tile8 .hovertext8,
+  .tile9 .hovertext9,
+  .tile10 .hovertext10,
+  .tile11 .hovertext11,
+  .tile12 .hovertext12,
+  .tile13 .hovertext13,
+  .tile14 .hovertext14,
+  .tile15 .hovertext15,
+  .tile16 .hovertext16,
+  .tile17 .hovertext17,
+  .tile18 .hovertext18 {
+    font-size: 1em;
+  }
+}
+/* Small device only */
+/* 0px to 991px */
+@media (min-width: 0px) and (max-width: 991px) {
+  #e-mail-signup-container #mc-embedded-subscribe {margin: auto !important;}
+  .lang-item a{color:black !important;}
+  .section-footer{text-align: center;}
+  #e-mail-signup-container{
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    width: auto;
+    text-align: center;
+  }
+  #e-mail-signup-container #email-input {
+    padding-top: 12px;
+    padding-bottom: 13px;
+    height: 42px;
+    color: black;
+    margin-bottom: 10px;
+    float: none;
+    border: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
+  }
+  #e-mail-signup-container .btn-grey-theme {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    float: none;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95px;
+  }
+  #section-highlight7 p {
+    font-size: 1.8em;
+  }
+  .today-text-pt1 {
+    padding: 20px 0 0 0;
+    text-align: center;
+  }
+  .today-text-pt2 {
+    padding: 0;
+    text-align: center;
+  }
+  .top-border-description {
+    border-top: 0;
+  }
+  .experience-headline-description-right {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    text-align: center;
+  }
+  .experience-headline-description-left {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    text-align: center;
+  }
+  #section-highlight-careers .term-bx {
+    width: 95%;
+    text-align: center;
+  }
+  #section-highlight-careers .term-bx .orange-text,
+  #section-highlight-careers .term-bx .term-description {
+    text-align: center;
+  }
+  .footer-nav-title {
+    margin-top: 30px;
+  }
+  .padding768-991 {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .teacherbox{min-height: auto !important;}
+
+}
+/* Special range */
+/* 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-footer {
+    text-align: center;
+  }
+  .header-title {
+    font-size: 65px;
+  }
+  #e-mail-signup-container {
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    width: auto;
+    text-align: center;
+  }
+  #e-mail-signup-container #email-input {
+    padding-top: 12px;
+    padding-bottom: 13px;
+    height: 42px;
+    color: black;
+    margin-bottom: 10px;
+    float: none;
+    border: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    text-align: center;
+  }
+  #e-mail-signup-container .btn-grey-theme {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    float: none;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95px;
+  }
+  .admissionprocesstable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .teacherbox{min-height: auto !important;}
+}
+/* Special range */
+/* 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-right-border {
+    border-left: 1px solid #c2c2c1;
+    margin-bottom: 20px;
+  }
+  .col-left-border {
+    border-right: 1px solid #c2c2c1;
+    margin-bottom: 20px;
+  }
+  .shape-1-rev,
+  .shape-1-2,
+  .shape-1-2-school {
+    display: none;
+    visibility: 0;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+/* 992px and up */
+@media (min-width: 992px) {
+  .header-title {
+    font-size: 7.5em;
+  }
+  .nav-menu-footer li {
+    text-align: left;
+  }
+  .toggle-menu-btn {
+    display: none;
+  }
+  .section-footer .row {
+    margin: 0 auto;
+  }
+  .section-footer .row .col-sm-3 {
+    padding-left: 5%;
+  }
+  #section-highlight1 .art-credit {
+    padding-top: 400px;
+  }
+  #section-highlight1 h3 {
+    font-size: 3em;
+  }
+  #section-highlight2 h3 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+  }
+  #section-highlight3 p {
+    font-size: 1.75em;
+  }
+  #section-highlight4 h3 {
+    font-size: 3em;
+  }
+  #section-highlight4 p {
+    font-size: 1.7em;
+  }
+  #section-highlight5 {
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+  #section-highlight5 p {
+    font-size: 6em;
+    vertical-align: bottom;
+  }
+  #section-highlight6 {
+    padding-bottom: 150px;
+  }
+  #section-highlight6 p {
+    left: 7%;
+    font-size: 3em;
+    text-align: left;
+    vertical-align: middle;
+  }
+  #section-highlight7 p {
+    font-size: 2.3em;
+  }
+  #section-highlight-teaser {
+    font-size: 1.35em;
+  }
+  .section-intro-text, .section-intro-text40 {
+    font-size: 1.25em;
+  }
+  .row-percent-md {
+    margin: 0 auto;
+    width: 90%;
+  }
+  #section-highlight-careers .term-bx {
+    height: 100%;
+    min-height: 700px;
+    max-height: 800px;
+  }
+  .highlight-text-box {
+    padding-bottom: 100px;
+  }
+  #section-highlight-instructors {
+    padding-top: 400px;
+  }
+  .arrow-border-formatting {
+    width: 75%;
+  }
+  .experience-headline-text {
+    text-align: left;
+  }
+  .experience-headline-description-right {
+    text-align: left;
+  }
+  .experience-headline-description-left {
+    text-align: left;
+  }
+  .bxslider-sliding-text {
+    font-size: 20px;
+  }
+  .overviewtable2 {
+    width: 80%;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+/* 1200px and up */
+@media (min-width: 1200px) {
+  .header-title {
+    font-size: 7.5em;
+    line-height: 1em;
+  }
+  #section-highlight-careers .term-bx {
+    height: 100%;
+    min-height: 750px;
+    max-height: 800px;
+  }
+  .accrediation-text {
+    padding-top: 100px;
+  }
+}
+/* Large devices (large desktops, 1600px and up) */
+/* 1600px and up */
+@media (min-width: 1600px) {
+  .header-title {
+    font-size: 10em;
+  }
+  .section-footer .row {
+    margin: 0 auto;
+    width: 90%;
+  }
+  #e-mail-signup-container #email-input {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  #e-mail-signup-container .btn-grey-theme {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  #section-highlight-careers .term-bx {
+    height: 100%;
+    min-height: 850px;
+    max-height: 1000px;
+  }
+  #section-highlight-instructors {
+    padding-top: 600px;
+  }
+  .accrediation-text {
+    padding-top: 125px;
+  }
+  .visible-xl {
+    display: block;
+  }
+  .hidden-xl {
+    display: none;
+  }
+  .experience-headline-description-right {
+    margin-left: -8%;
+  }
+  .headline-text-right {
+    padding-left: 40px;
+  }
+  .teacherbox {
+    min-height: 570px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .structure-list {
+    width: 651px;
+  }
+}
+/* X-Small device only */
+/* 0px to 767px */
+@media (min-width: 0px) and (max-width: 767px) {
+  .class-structure-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .structure-term-box {
+    text-align: center;
+  }
+  .structure-list {
+    text-align: center;
+  }
+  .structure-list li {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+/* 1200px and up */
+@media (min-width: 1200px) {
+  .structure-list {
+    width: 815px;
+  }
+}
+
+@media (max-width: 480px) {
+    .page-section h1 {
+        font-size: 3em;
+    }
+    .page-section h2 {
+        font-size: 2em;
+    }
+    .page-section p {
+        font-size: 1em;
+        margin: 0 0 20px;
+    }
+    .teacher-headshot img {
+      width: auto !important;
+      float: left;
+      padding: 7px !important;
+      padding-right:0px !important;
+      padding-left:0px !important;
+    }
+    .teacherbox {padding:0px !important;}
+}
+
+/* Menu fix */
+@media (min-width: 992px) and (max-width: 992px){
+  .nav-menu li {
+    padding: 12px 0px;    
+    margin: 0 0.5% 0 0.3% !important;
+    font-size: 11px;
+  }  
+}
+
+@media (min-width: 993px) and (max-width: 1184px) {
+  .nav-menu {
+    display: block;
+  }
+  .nav-menu li {
+    padding: 12px 0px;
+    margin: 0 0.5% 0 0.5% !important;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1399px) {
+  .teacherbox {
+    min-height: 1000px !important;
+  }
+}
+
+@media (min-width: 992px){
+  .nav-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 991px) {
+    #headeroo .navbar-brand {
+        padding-left: 0;
+    }
+    .navbar-nav {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+  .navbar-nav>li{
+    width: 16.66%;
+  }
+  .container {
+    width: 100%;
+  }
+  .navbar-nav{
+    float: left;
+    width: 100%;
+  }
+  .navbar-header{display:none;}
+
+}
+
+.stacktable.large-only { display: table; }
+.stacktable.small-only { display: none; }
+
+@media (max-width: 800px) {
+  .stacktable.large-only { display: none; }
+  .stacktable.small-only { display: table; }
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+table caption {
+  padding: .5em 0;
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
+}

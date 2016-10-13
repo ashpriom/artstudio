@@ -7,6 +7,7 @@
 
 get_header(); 
 $homeURL = home_url();
+
 ?>
 
 	<!-- content: start -->
