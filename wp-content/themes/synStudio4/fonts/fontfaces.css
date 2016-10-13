@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Book.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Gotham-Thin';
+    src: url('Gotham-Thin.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('NotoSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
