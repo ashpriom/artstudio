@@ -1459,6 +1459,7 @@ a#lnk2-preRequisites:hover {
 .details-box .thumbnail {
 	width: 152px;
 	float: left;
+	margin: .6em 0;
 }
 .details-box .thumbnail img {
 	border: 1px solid #737373;
