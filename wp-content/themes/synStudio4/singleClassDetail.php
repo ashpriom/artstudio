@@ -247,7 +247,7 @@
 					    	echo "slideLink:\"".$field['link'];
 					    }
 					    else{
-					    	echo "slideLink:\"".$field['link']."/fr";
+					    	echo "slideLink:\"".get_permalink();
 					    }
 					    echo "\",\n";
 					    echo "}; \n";
