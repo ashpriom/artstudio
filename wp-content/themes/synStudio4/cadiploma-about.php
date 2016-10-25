@@ -258,7 +258,7 @@ Template Name: Concept Art Diploma - About
                                         award and the XSI Gallery Award, Jessy’s work has been featured in several publications
                                         such as Exposé 5, Mattepainting.org and the CG Channel.
                                         <br /><br />
-                                        Jessy will be teaching Visual Reference Library and Digital Image Manipulation in the 
+                                        Jessy is teaching Visual Reference Library and Digital Image Manipulation in the 
                                         Concept Art Diploma Program.
                                     </p>
                                 </div>
@@ -284,7 +284,7 @@ Template Name: Concept Art Diploma - About
                                         and workshops in concept design, illustration and 3D to students and professionals at
                                         Alpha Vision, Meduzarts and here at Syn Studio!
                                         <br /><br />
-                                        Daniel will be teaching Visual Reference Library and Digital Image Manipulation in the
+                                        Daniel is teaching Visual Reference Library and Digital Image Manipulation in the
                                         Concept Art Diploma Program.
                                     </p>
                                 </div>
@@ -305,7 +305,7 @@ Template Name: Concept Art Diploma - About
                                         He’s known for his incredible speed and the beauty of his environment paintings and
                                         he’s a popular teacher here at Syn Studio.
                                         <br /><br />
-                                        Christian will be teaching the "How to Draw" module in Sketching for Production in 
+                                        Christian is teaching the "How to Draw" module in Sketching for Production in 
                                         the Concept Art Diploma Program.
                                     </p>
                                 </div>
@@ -327,7 +327,7 @@ Template Name: Concept Art Diploma - About
                                         projects in the Conan, Transformers, Wet and Kung Fu Panda universes. Frédéric is a very
                                         well appreciated teacher by his students from his Character Rendering class.
                                         <br /><br />
-                                        Frédéric will be teaching the "How to Render" module in Sketching for Production in the Concept Art Diploma
+                                        Frédéric is teaching the "How to Render" module in Sketching for Production in the Concept Art Diploma
                                         Program.
                                     </p>
                                 </div>
@@ -352,7 +352,7 @@ Template Name: Concept Art Diploma - About
                                         Ballerina, Ghost Recon, Splinter Cell Chaos Theory and many 2D and 3D animated television
                                         shows.
                                         <br /><br />    
-                                        Eric will be teaching the "How to Sketch" module in Sketching for Production in the Concept
+                                        Eric is teaching the "How to Sketch" module in Sketching for Production in the Concept
                                         Art Diploma Program.
                                     </p>
                                 </div>
@@ -371,7 +371,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Francis Back is an illustrator and storyboard artist who studied Fine Arts in Switzerland and who has worked on over a hundred Canadian and American TV and film productions, such as Spyderwick Chronicles, Mummy 3, Tomb of the Dragon Emperor, and the Academy Award nominated film Incendie. Francis also did storyboards, and concept art, for three Cirque du Soleil shows including Ka by director Robert Lepage and he’s worked on educational films for the National Film Board of Canada (NFB). Francis has over 20 years of experience teaching storyboarding in Montreal and in Taiwan.
                                         <br /><br />
-                                        Francis will be teaching the "Intro to Cinema" module in Visual Reference Library in the Concept Art Diploma
+                                        Francis is teaching the "Intro to Cinema" module in Visual Reference Library in the Concept Art Diploma
                                         Program.
                                     </p>
                                 </div>
@@ -876,7 +876,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">Thierry Doizon aka Barontieri a été précédemment un directeur artistique et artiste en conception senior avec plus de 20 ans d’expérience dans l’industrie, ayant travaillé pour une grande variété de compagnies autour du monde, tels Square Enix, Ubisoft, Disney Interactive et Eidos. Thierry a enseigné au niveau collégial et a été invité pour parler à plusieurs ateliers et conférences dont Disney Imagineering, ADAPT, Ubisoft Campus, MIGS, FIEA, Massive Black et The Gnomon Workshop, ce dernier pour lequel il a également produit un DVD éducatif (Character Design Pipeline: Production Art & Research Techniques with BARONTiERi). Quelques autres de ses projets incluent: Assassin's Creed, Prince of Persia, Deux Ex: Human Revolutions et Tron: Legacy, entre autres. Ses oeuvres ont été publiées dans “Exodyssey: Visual Development of an Epic Adventure” et “Steampainting: SPARK - Creative process”, tous les deux par Steambot Studios, dont il est le co-fondateur.
                                     <br /><br />
                                     Thierry est le directeur d'études au Syn Studio. En plus d'être le président du Diplôme en 
-                                    conception artistique, il enseignera Intro to Concept Art.
+                                    conception artistique, il enseigne Intro to Concept Art.
                                     </p>
                                 </div>
                             </div>
@@ -891,7 +891,7 @@ Template Name: Concept Art Diploma - About
                             
                                     <p class="term-description teacher-description">Jessy Veilleux est le fondateur et directeur artistique de Meduzarts, un studio de personnages et d’environnements numériques, ainsi que le directeur artistique de Digital Dimension. Il a contribué des oeuvres au publication de plusieurs films et jeux vidéos très connus tels StarWars, The Force Unleashed II, Avatar VG, 300, AION, FallOut 3, SinCity, Transformers: Revenge of the Fallen VG, Assassin’s Creed II, Prince of Persia II et Mortal Kombat X, entre autres. Jessy enseigne depuis 10 ans au Centre NAD à Montréal, où il a contribué grandement au premier programme d’études numériques ‘matte’. Plusieurs prix portent son nom, tels le CG Talk choice award et le XSI Gallery Award en plus que ses oeuvres ont été publiées dans Exposé 5, Mattepainting.org and the CG Channel.
                                     <br /><br />
-                                    Jessy enseignera Visual Reference Library et Digital Image Manipulation dans le Diplôme en Conception Artistique.</p>
+                                    Jessy enseigne Visual Reference Library et Digital Image Manipulation dans le Diplôme en Conception Artistique.</p>
                                 </div>
                             </div>
                         </div>
@@ -914,7 +914,7 @@ Template Name: Concept Art Diploma - About
                                         personnalisés et quelques-unes de ses oeuvres ont figuré sur des posters de E3!
                                         Il est aussi un prof recherché ayant enseigné plusieurs ateliers et cours de
                                         concept art à Syn Studio,  Alpha Vision et Méduzart.<br /><br />
-                                        Daniel enseignera Visual Reference Library et Digital Image Manipulation dans le 
+                                        Daniel enseigne Visual Reference Library et Digital Image Manipulation dans le 
                                         Diplôme en Conception Artistique.
                                     </p>
                                 </div>
@@ -934,7 +934,7 @@ Template Name: Concept Art Diploma - About
                                         d’un futur passé, Blanche neige et L’Étrange histoire de Benjamin Button. Tout cela sans
                                         jamais avoir publié ses travaux en ligne (jusqu’à ce jour). Il est connu pour son
                                         incroyable efficacité et la beauté de ses peintures d’environnements.<br /><br />
-                                        Christian enseignera la partie "How to Draw" dans Sketching for Production dans le Diplôme
+                                        Christian enseigne la partie "How to Draw" dans Sketching for Production dans le Diplôme
                                         en Conception Artistique.
                                     </p>
                                 </div>
@@ -956,7 +956,7 @@ Template Name: Concept Art Diploma - About
                                         Durant 8 années en tant qu’artiste de concept dans le milieu du jeu vidéo, il a
                                         contribué à des projets tels que Conan, Transformers, Wet et Kung Fu Panda. Frédéric
                                         est un professeur très apprécié des élèves de son cours Rendu de Personnages.<br /><br />
-                                        Frédéric enseignera la partie "How to Render" dans Sketching for Production dans le 
+                                        Frédéric enseigne la partie "How to Render" dans Sketching for Production dans le 
                                         Diplôme en Conception Artistique.
                                     </p>
                                 </div>
@@ -982,7 +982,7 @@ Template Name: Concept Art Diploma - About
                                         sur lequel il a contribué son expertise, incluant d’autres séries de dessins
                                         animés encore. 
                                         <br /><br />    
-                                        Eric enseignera la partie "How to Sketch" dans Sketching for Production dans le Diplôme
+                                        Eric enseigne la partie "How to Sketch" dans Sketching for Production dans le Diplôme
                                         en Conception Artistique.
                                     </p>
                                 </div>
@@ -1001,7 +1001,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Francis Back est un illustrateur et artiste de storyboards, ayant fait ses études aux Beaux Arts en Suisse. Il a travaillé sur plus d'une centaine de films et de productions télévisées au Canada et aux États-Unis, tels que Spyderwick Chronicles, Mummy 3 et le film Incendie nominé aux Oscars. Francis a aussi construits des storyboards pour des spectacles du Cirque du Soleil tel que Ka par Robert Lepage et à travaillé sur plusieurs films éducatifs à l'Office National du Film du Canada (ONF). Francis a plus de 20 ans d'expérience d'enseignement de storyboards à Montréal et à Taiwan.
                                         <br /><br />
-                                        Francis enseignera la partie "Intro to Cinema" dans Visual Reference Library dans le Diplôme en Conception Artistique.
+                                        Francis enseigne la partie "Intro to Cinema" dans Visual Reference Library dans le Diplôme en Conception Artistique.
                                     </p>
                                 </div>
                             </div>
