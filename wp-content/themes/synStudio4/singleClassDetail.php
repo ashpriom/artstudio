@@ -247,7 +247,7 @@
 					    	echo "slideLink:\"".$field['link'];
 					    }
 					    else{
-					    	echo "slideLink:\"".$field['link'];
+					    	echo "slideLink:\"".$field['link']."\fr";
 					    }
 					    echo "\",\n";
 					    echo "}; \n";
