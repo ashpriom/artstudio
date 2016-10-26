@@ -480,8 +480,6 @@ a#lnk-blog:hover {
 
 #col1 {
 	width: 70%;
-	/*center boxes on mobile*
-	width: 702px;*/
 	float: left;
 	margin-right: 40px;
 }
@@ -492,8 +490,6 @@ a#lnk-blog:hover {
 }
 
 #col2 {
-	/*width: 258px;
-	float: right;*/
 	width: 25%;
 	float:left;
 }
@@ -502,6 +498,10 @@ a#lnk-blog:hover {
 	clear: both;
 	overflow: hidden;
 	padding-top: 12px;
+}
+
+#welcomeHero{
+	margin-top: 7px;
 }
 
 a.lnk-homeFindMore {
@@ -588,6 +588,8 @@ a.lnk-readMore {
 	margin: 4px 4px 16px;	
 	position: relative;
 }
+
+.infobox-classpage{margin: 4px 6px 16px 0px !important;}
 
 .info-box1Wrapper .classNotOffered {
 	background: #ffffff;

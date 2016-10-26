@@ -409,7 +409,7 @@
 
 <!-- column 3: start -->
 <div id="col3" onmouseover="hideDetails();">
-	<div id="registration" class="info-box1Wrapper">
+	<div id="registration" class="info-box1Wrapper infobox-classpage">
 	  	<div class="info-box1">
 	  		<h2><?php if($currentLang=="en"){?> Registration <?php } else{ ?> Inscription <?php } ?></h2>
 			<div class="text"><?php echo get_post_meta($postID, 'registration_info_' . $currentLang, true); ?>
@@ -467,7 +467,7 @@
 	   	</div>
   	</div>
 
-	<div class="info-box1Wrapper">
+	<div class="info-box1Wrapper infobox-classpage">
   		<div class="info-box1">
   			<h2><?php if($currentLang=="en"){?> Info <?php } else{ ?> Infos <?php } ?></h2>
     		<div class="text"><?php echo get_post_meta($postID, 'class_info_' . $currentLang, true); ?></div>
@@ -488,7 +488,7 @@
    		while (have_posts()) : the_post();
    		$postID = get_the_ID();
    		if ($postID = "145") {
-   			echo "<div id='newsletter-box' class='info-box1Wrapper'>";
+   			echo "<div id='newsletter-box' class='info-box1Wrapper infobox-classpage'>";
    				echo "<div class='info-box1'>";
    					echo '<h2>' . get_the_title() . '</h2>';
    					echo "<div class='text'>";
