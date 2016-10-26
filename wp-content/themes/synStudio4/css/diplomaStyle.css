@@ -1031,7 +1031,8 @@ img {
   text-align: center;
   font-size: 0.86em;
   width: 80%;
-  text-transform: uppercase
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .showcase-menu li {
   padding-left: 15px;

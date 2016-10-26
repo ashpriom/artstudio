@@ -1460,6 +1460,7 @@ a#lnk2-preRequisites:hover {
 	width: 152px;
 	float: left;
 	margin: .6em 0;
+	margin-right: 0.9em;
 }
 .details-box .thumbnail img {
 	border: 1px solid #737373;
@@ -1968,6 +1969,7 @@ li#menu-item-943, li#menu-item-945, li#menu-item-946, li#menu-item-947, li#menu-
     padding-top: 30px;
     height: 0;
     overflow: hidden;
+    width:100% !important;
 }
 .google-map iframe {
     position: absolute;
