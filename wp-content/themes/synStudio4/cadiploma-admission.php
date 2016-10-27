@@ -371,7 +371,7 @@ Template Name: Concept Art Diploma - Admission
                                                 <div class="structure-color-bar color-bar-yellow">
                                                 </div>
                                                 <div class="structure-class-name">
-                                                    <p>Sketching for production</p>
+                                                    <p>Sketching for Production</p>
                                                 </div>
                                                 <div class="structure-class-hour">
                                                     <p>80h</p>
@@ -454,7 +454,7 @@ Template Name: Concept Art Diploma - Admission
                                                 <div class="structure-color-bar color-bar-yellow">
                                                 </div>
                                                 <div class="structure-class-name">
-                                                    <p>Sketching for production</p>
+                                                    <p>Sketching for Production</p>
                                                 </div>
                                                 <div class="structure-class-hour">
                                                     <p>40h</p>
@@ -1074,8 +1074,8 @@ Template Name: Concept Art Diploma - Admission
     <label for="mce-MMERGE2">Select your preferred start date: *</label>
     <select name="MMERGE2" class="" id="mce-MMERGE2">
     <option value=""></option>
-    <option value="October 2016">October 2016</option>
-<option value="October 2017">October 2017</option>
+    <option value="October 2017">October 2017</option>
+<option value="October 2018">October 2018</option>
 
     </select>
 </div>
@@ -2118,8 +2118,8 @@ Template Name: Concept Art Diploma - Admission
     <label for="mce-MMERGE2">Séléctionnez la date de début *</label>
     <select name="MMERGE2" class="" id="mce-MMERGE2">
     <option value=""></option>
-    <option value="Octobre 2016">Octobre 2016</option>
-<option value="Octobre 2017">Octobre 2017</option>
+    <option value="Octobre 2017">Octobre 2017</option>
+<option value="Octobre 2018">Octobre 2018</option>
 
     </select>
 </div>
