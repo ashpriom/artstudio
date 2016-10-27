@@ -1991,7 +1991,7 @@ Template Name: Concept Art Diploma - Admission
                                 <tbody>
                                     <tr class="grey-table-row">
                                         <td>1</td>
-                                        <td>Revue à l'avance de votre Portfolio/Application (recevez des conseils sur votre application et la chance de réappliquer gratuitement)</td>
+                                        <td>Revue à l'avance de votre Portfolio/Candidature (recevez des conseils sur votre application et la chance de réappliquer gratuitement)</td>
                                         <td>3 novembre, 2016</td>
                                         <td class="orange-table-row">$50</td>
                                     </tr>
