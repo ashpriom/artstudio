@@ -4,7 +4,7 @@
  * @subpackage SynStudio_Theme
  */
 /*
-Template Name: Testimonials Page
+Template Name: Jobs Page
  */
 get_header(); 
 if (function_exists('pll_current_language')) { $currentLang = pll_current_language('slug'); }
