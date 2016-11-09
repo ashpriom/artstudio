@@ -350,7 +350,7 @@ input{ font: 1em Helvetica, Verdana, Arial, sans-serif; }
     width: 165px;
     z-index: 99999;
     border-top: 1px solid #FFF;
-    transition: all 0.7s ease-in-out 0.8s, visibility 0.7s linear 0.7s, z-index 0s linear 0.01s;
+    transition: all 0.7s ease-in-out 0.7s, visibility 0.7s linear 0.7s, z-index 0s linear 0.01s;
 }
 #nav-wrapper ul ul ul {
 	left: 100%;
@@ -382,7 +382,7 @@ input{ font: 1em Helvetica, Verdana, Arial, sans-serif; }
 #nav-wrapper ul li:hover > ul {
 	visibility: visible;
     transform: translateY(0%);
-    transition-delay: 0s, 0s, 0.7s;
+    transition-delay: 0s, 0s, 0.1s;
     opacity: 1;
 }
 #nav-wrapper .current-menu-item > a,
