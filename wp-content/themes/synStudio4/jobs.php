@@ -30,7 +30,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
    
    query_posts('cat=' . $catID);
    while (have_posts()) : the_post();
-   echo "<div class='podcast-boxWrapper'>";
+   echo "<div class='podcast-boxWrapper' style='margin-top: 10px;'>";
    echo "<div class='podcast-box'>";
    echo '<h2>' . get_the_title() . '</h2>';
    the_content();
@@ -43,7 +43,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
   <!-- column 1: end -->
   
   <!-- column 2: start -->
-  <div id="col2" style="margin-top: 47px;">
+  <div id="col2" style="margin-top: 0px;">
     
    <div id="share-plugins">
     
