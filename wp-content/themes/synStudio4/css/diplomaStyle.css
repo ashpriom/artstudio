@@ -744,8 +744,9 @@ img {
 
 .nopaddingleft{padding-left: 0px !important;text-align: left;}
 .extrapadding{padding-left:25px !important;padding-right: 25px !important;}
+.teacher-headshot{width: 40%;}
 .teacher-headshot img{width:auto !important;float: left; padding: 7px !important;padding-right: 30px !important;padding-left: 3px !important;}
-.teacher-artwork{float:left;padding: 7px !important;}
+.teacher-artwork{float:left;padding: 7px !important;width: 58%;}
 .teacherbox{min-height: 570px;padding: 5% !important;background-color: #F2F2F2;margin: 3px; margin-right: 0px;}
 
 .term-bx .term-description-list {
