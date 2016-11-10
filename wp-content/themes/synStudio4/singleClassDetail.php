@@ -7,24 +7,26 @@
 
 	global $wpdb;
 	// $thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
-	$earlyRegistrationDate = $thisSemester->early_registration;
-	$lateRegistrationDate = $thisSemester->late_registration;
+	//$earlyRegistrationDate = $thisSemester->early_registration;
+	//$lateRegistrationDate = $thisSemester->late_registration;
 
-	$today = date('Y-m-d');
-	$format = 'Y-m-d';
+	//$today = date('Y-m-d');
+	//$format = 'Y-m-d';
 
-	$earlyRegistrationDatePretty = DateTime::createFromFormat($format, $earlyRegistrationDate);
-	$lateRegistrationDatePretty = DateTime::createFromFormat($format, $lateRegistrationDate);
+	//$earlyRegistrationDatePretty = DateTime::createFromFormat($format, $earlyRegistrationDate);
+	//$lateRegistrationDatePretty = DateTime::createFromFormat($format, $lateRegistrationDate);
 
-	$sevenBeforeERD = new DateTime($earlyRegistrationDate);
-	$sevenBeforeERD->modify('-7 days');
-	$sevenBeforeERD = $sevenBeforeERD->format('Y-m-d');
-	$sevenBeforeERDPretty = DateTime::createFromFormat($format, $sevenBeforeERD);
+	//$sevenBeforeERD = new DateTime($earlyRegistrationDate);
+	//$sevenBeforeERD->modify('-7 days');
+	//$sevenBeforeERD = $sevenBeforeERD->format('Y-m-d');
+	//$sevenBeforeERDPretty = DateTime::createFromFormat($format, $sevenBeforeERD);
 
+	/*
 	$sevenBeforeLRD = new DateTime($lateRegistrationDate);
 	$sevenBeforeLRD->modify('-7 days');
 	$sevenBeforeLRD = $sevenBeforeLRD->format('Y-m-d');
 	$sevenBeforeLRDPretty = DateTime::createFromFormat($format, $sevenBeforeLRD);
+	*/
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideshow.min.css" />
@@ -207,10 +209,13 @@
 					    echo "slideLarge:\"".$field['image'];
 					    echo "\",\n";
 					    if($field['small_image']==""){
-					    	echo "slideSmall:\"".$field['image'];
+					    	$slideID = get_attachment_id($field['image']);
+					    	$thumbSize = array(270,107);
+					    	$thumbSource = wp_get_attachment_image_src($slideID, $thumbSize,false);
+					    	echo "slideSmall:\"".$thumbSource;
 						}
 						else{
-							echo "slideSmall:\"".$field['small_image'];
+							echo "slideSmall:\"".$thumbSource;
 						}
 					    echo "\",\n";
 					    if($currentLang=="en"){
