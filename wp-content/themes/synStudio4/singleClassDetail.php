@@ -284,7 +284,7 @@
 				$("#slideshow-main ul").append(listItem);
 
 				//Items for Small Image
-				var listItemSmall = "<li><a href='#' rel='p" + i2 + "'><img id='p" + i2 + "ImageSmall' src='' width='170' height='107' alt='#'/></a></li>";
+				var listItemSmall = "<li><a href='#' rel='p" + i2 + "'><img id='p" + i2 + "ImageSmall' src='' width='154' height='127' alt='#'/></a></li>";
 	          	$("#slideshow-carousel ul").append(listItemSmall);
 			}
 

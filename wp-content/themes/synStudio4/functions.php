@@ -183,7 +183,7 @@ register_sidebars(1);
     return $numberOfFollowers;
 }*/
 
-add_image_size( 'slidethumb', 170, 107, array( 'center', 'top' ) );
+add_image_size( 'slidethumb', 154, 127, array( 'center', 'top' ) );
 
 function get_attachment_id( $url ) {
     $attachment_id = 0;
