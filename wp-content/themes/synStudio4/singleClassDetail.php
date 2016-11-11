@@ -208,14 +208,17 @@
 						echo "var slide".$i." = { \n";
 					    echo "slideLarge:\"".$field['image'];
 					    echo "\",\n";
+
+					    $slideID = get_attachment_id($field['image']);
+					    $thumbSize = array(270,107);
+					    $thumbSource = wp_get_attachment_image_src($slideID, $thumbSize,false);
+
 					    if($field['small_image']==""){
-					    	$slideID = get_attachment_id($field['image']);
-					    	$thumbSize = array(270,107);
-					    	$thumbSource = wp_get_attachment_image_src($slideID, $thumbSize,false);
-					    	echo "slideSmall:\"".$thumbSource;
+					    	echo "slideSmall:\"".$field['image'];
 						}
 						else{
-							echo "slideSmall:\"".$thumbSource;
+							echo "<!-- slideSmall:\"".$thumbSource."-->";
+							echo "slideSmall:\"".$field['small_image'];
 						}
 					    echo "\",\n";
 					    if($currentLang=="en"){
