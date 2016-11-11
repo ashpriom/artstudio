@@ -210,8 +210,7 @@
 					    echo "\",\n";
 
 					    $slideID = get_attachment_id($field['image']);
-					    $thumbSize = array(270,107);
-					    $thumbSource = wp_get_attachment_image_src($slideID, $thumbSize,false);
+					    $thumbSource = wp_get_attachment_image_src($slideID,'slidethumb',false);
 
 					    if($field['small_image']==""){
 					    	echo "slideSmall:\"".$field['image'];
