@@ -217,8 +217,8 @@
 					    	echo "slideSmall:\"".$field['image'];
 						}
 						else{
-							echo "<!-- slideSmall:\"".$thumbSource."-->";
-							echo "slideSmall:\"".$field['small_image'];
+							echo "<!-- slideSmall:\"".$thumbSource[0]."-->";
+							echo "slideSmall:\"".$field['small_image'];	
 						}
 					    echo "\",\n";
 					    if($currentLang=="en"){
