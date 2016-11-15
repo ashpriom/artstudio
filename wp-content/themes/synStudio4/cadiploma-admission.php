@@ -948,7 +948,7 @@ Template Name: Concept Art Diploma - Admission
                                         <td>November 3rd, 2016</td>
                                         <td class="orange-table-row">$50 CAN</td>
                                     </tr>
-                                    <tr class="grey-table-row">
+                                    <tr class="grey-table-row" style="font-weight: 700;">
                                         <td>1</td>
                                         <td>General Portfolio/Application Review (this is where our team determines which candidates get an interview)</td>
                                         <td>February 8th, 2017</td>
@@ -1995,7 +1995,7 @@ Template Name: Concept Art Diploma - Admission
                                         <td>3 novembre, 2016</td>
                                         <td class="orange-table-row">$50</td>
                                     </tr>
-                                    <tr class="grey-table-row">
+                                    <tr class="grey-table-row" style="font-weight: 700;">
                                         <td>1</td>
                                         <td>Portofolio général/ analyse (c'est là que nos équipes décident qui passera à la prochaine étape)</td>
                                         <td>8 février, 2017</td>
