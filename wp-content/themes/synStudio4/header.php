@@ -72,14 +72,14 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/synstudioResponsive.min.css" type="text/css" media="screen">
 
 		<?php if ($currentLang == "fr") { 
-			$enID = pll_get_post($postID,'fr'); ?>
+			$enID = pll_get_post($postID,'fr'); echo $enID; ?>
 			<link rel="alternate" hreflang="en" href="<?php get_permalink($enID); ?>" />
 			<Style>
 				.info-box1 h2 {font-size: 1.6em;}
 				.info-box10 .mailform2{width: 350px !important; }
 			</style>
 		<?php } else { 
-			$frID = pll_get_post($postID,'en'); ?>
+			$frID = pll_get_post($postID,'en'); echo $frID; ?>
 			<link rel="alternate" hreflang="fr" href="<?php get_permalink($frID); ?>" />
 		<?php } ?>
 
