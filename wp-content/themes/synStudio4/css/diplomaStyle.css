@@ -1274,6 +1274,9 @@ img {
     color: black;
     font-size: 1.05em;
 }
+
+.overviewtable2 .admissionprocesstable table thead{border-bottom: 1px solid #d3d3d3;}
+
 .overviewtable2 .admissionprocesstable table tr {
   background-color: #fffafa;
 }
