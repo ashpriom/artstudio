@@ -64,18 +64,23 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<meta itemprop="image" content="<?php echo $metaImage; ?>">
 		<meta name="description" content="<?php echo $metaDesc; ?>">
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-		<link rel="canonical" href="<?php the_permalink(); ?>">
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
+		<link rel="canonical" href="<?php the_permalink(); ?>">
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.sidr.light.css" type="text/css">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/synstudioResponsive.min.css" type="text/css" media="screen">
 
-		<?php if ($currentLang == "fr") { ?>
+		<?php if ($currentLang == "fr") { 
+			$enID = pll_get_post($postID,'fr'); ?>
+			<link rel="alternate" hreflang="en" href="<?php get_permalink($enID); ?>" />
 			<Style>
 				.info-box1 h2 {font-size: 1.6em;}
 				.info-box10 .mailform2{width: 350px !important; }
 			</style>
+		<?php } else { 
+			$frID = pll_get_post($postID,'en'); ?>
+			<link rel="alternate" hreflang="fr" href="<?php get_permalink($frID); ?>" />
 		<?php } ?>
 
 		<style>
