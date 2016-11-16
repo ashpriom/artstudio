@@ -198,8 +198,6 @@ Template Name: Concept Art Diploma - About
 
                 <h2 class="orange-text off-margin-header">Teachers for the Fall 2016 term:</h2>
                 <!-- Teacher Bios -->
-                <ul class="bxslider-teacherbio">
-                    <li>
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="teacherbox">
@@ -235,14 +233,6 @@ Template Name: Concept Art Diploma - About
                                         <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
                                         <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
                                     </div>
-
-                                    <!--<div class="container-fluid">
-                                        <div class="row">
-                                            <div class="teach-headshot col-md-4 col-md-4"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
-                                            <div class="teach-headshot col-md-1"></div>
-                                            <div class="teach-artwork col-md-7"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
-                                        </div>
-                                    </div>-->
                                     
                                     <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
                            
@@ -376,17 +366,57 @@ Template Name: Concept Art Diploma - About
                                     </p>
                                 </div>
                             </div>
-                            <!-- empty teacher box --> 
                             <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Oleg Dergachov</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        Oleg Dergachov is an art director, fine artist, cartoonist, animator, and illustrator trained by the Ukrainian Academy. He has won over 85 international prizes and his work is displayed in the Victoria and Albert Museum in London, Centre Pompidou in Paris, the Tretyakov State Gallery in Moscow, the Cirque du Soleil collection as well as other prestigious art museums and public collection. He has taught for 16 years in prestigious universities, design schools and animation academies in 6 countries.
+                                        <br /><br />
+                                        Oleg will be teaching Anatomy Study in the upcoming Winter Term of Concept Art Diploma Program.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <!-- add this to have control button like the teacher project slider
-                <div class="outside">
-                    <p><span id="slider-prev"></span>   <span id="slider-next"></span></p>
-                </div>-->
-                <!-- Teacher Bios -->
+                        <div class="row row-73percent">
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jeong.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jeong-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Jeong H. Shin</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        Jeong H. Shin is currently a senior concept artist at Ubisoft. His unique designs can be seen in blockbuster titles such as Watchdogs and Far Cry 3 and 4. He studied with world-renowned vehicle and entertainment designer Scott Robertson at Art Center College of Design. Robertson’s tutelage, as well as Shin’s own background in industrial, vehicle and entertainment design led him to tenure at General Motors as a senior creative designer. There, Shin designed two Chevrolet (Cruze and Sonic) vehicles that are currently on the road. While concept designer at Mattel, Shin designed cars for Hotwheels Battleforce 5, the animated series.
+                                        <br /><br />
+                                        Jeong will be teaching Sketching for Production in the upcoming Winter Term of Concept Art Diploma Program.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Benoit Massé</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        
+                                        <br /><br />
+                                        Benoit will be teaching 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                 <br />
             </div>
             <br />
@@ -861,8 +891,6 @@ Template Name: Concept Art Diploma - About
                 <br />
                 <h2 class="orange-text off-margin-header">Les professeurs pour la session d'automne 2016 :</h2>
                 <!-- Teacher Bios -->
-                <ul class="bxslider-teacherbio">
-                    <li>
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="teacherbox">
@@ -1005,17 +1033,56 @@ Template Name: Concept Art Diploma - About
                                     </p>
                                 </div>
                             </div>
-                            <!-- empty teacher box --> 
                             <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Oleg Dergachov</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        Oleg Dergachov, formé à l’Académie d’Ukraine, est directeur artistique, artiste, illustrateur, animateur, et caricaturiste. Ayant accumulé environ 85 prix au niveau international, on retrouve ses oeuvres, entre autres au Musée Victoria and Albert de Londres, au Centre Pompidou de Paris, à la galerie Tretyakov de Moscou, dans la collection du Cirque du Soleil, mais aussi dans multiples autres musées et collections publiques. Il a enseigné pendant 16 ans dans les universités, les écoles de design et de dessin animé de 6 pays.
+                                        <br /><br />
+                                        Oleg will be teaching Anatomy Study in the upcoming Winter Term of Concept Art Diploma Program.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <!-- add this to have control button like the teacher project slider
-                <div class="outside">
-                    <p><span id="slider-prev"></span>   <span id="slider-next"></span></p>
-                </div>-->
-                <!-- Teacher Bios -->
+                        <div class="row row-73percent">
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jeong.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jeong-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Jeong H. Shin</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        Jeong H. Shin est présentement artiste de concept sénior chez Ubisoft. Ces designs uniques peuvent être admirés dans des jeux tels que Watchdogs et Far Cry 3 et 4. Il a étudié avec Scott Robertson, designer de vehicule de renom au Art Center College of Design. La tutelle de Robertson jumelée à la carrière de Shin en design industriel et véhicules l’a mené au poste de designer créatif chez General Motors. Là, Shin a dessiné deux Chevrolets (Cruze et Sonic) qui sont présentement sur la route. Lorsqu’il était designer de concept chez Mattel, Shin à aussi concu les voitures pour Hotwheels Battleforce 5, la série animée.
+                                        <br /><br />
+                                        Jeong 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Benoit Massé</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        <br /><br />
+                                        Benoit
+                                    </p>
+                                </div>
+                            </div>
+                        </div>z
                 <br />
             </div>
             <br />
