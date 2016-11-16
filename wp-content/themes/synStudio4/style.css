@@ -340,7 +340,7 @@ input{ font: 1em Helvetica, Verdana, Arial, sans-serif; }
 	background-position: 0 0;
 }
 #nav-wrapper ul ul {
-	/*visibility: hidden;
+	visibility: hidden;
     float: left;
     margin: 0;
     position: absolute;
@@ -350,16 +350,7 @@ input{ font: 1em Helvetica, Verdana, Arial, sans-serif; }
     width: 165px;
     z-index: 99999;
     border-top: 1px solid #FFF;
-    transition: all 0.7s ease-in-out 0.7s, visibility 0.7s linear 0.7s, z-index 0s linear 0.01s;*/
-    display: none;
-	float: left;
-	margin: 0;
-	position: absolute;
-	top: 33px;
-	left: 0;
-	width: 165px;
-	z-index: 99999;
-	border-top: 1px solid #FFF;
+    transition: all 0.7s ease-in-out 0.7s, visibility 0.7s linear 0.7s, z-index 0s linear 0.01s;
 }
 #nav-wrapper ul ul ul {
 	left: 100%;
@@ -389,11 +380,10 @@ input{ font: 1em Helvetica, Verdana, Arial, sans-serif; }
 }
 
 #nav-wrapper ul li:hover > ul {
-	/*visibility: visible;
+	visibility: visible;
     transform: translateY(0%);
     transition-delay: 0s, 0s, 0.1s;
-    opacity: 1;*/
-    display: block;
+    opacity: 1;
 }
 #nav-wrapper .current-menu-item > a,
 #nav-wrapper .current-menu-ancestor > a,
