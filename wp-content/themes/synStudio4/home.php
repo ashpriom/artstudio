@@ -161,8 +161,12 @@ get_header(); ?>
 						echo "var slide".$i." = { \n";
 					    echo "slideLarge:\"".$field['image'];
 					    echo "\",\n";
+
+					    $slideID = get_attachment_id($field['image']);
+					    $thumbSource = wp_get_attachment_image_src($slideID,'slidethumb',false);
+
 					    if($field['small_image']==""){
-					    	echo "slideSmall:\"".$field['image'];
+					    	echo "slideSmall:\"".$thumbSource[0];
 						}
 						else{
 							echo "slideSmall:\"".$field['small_image'];

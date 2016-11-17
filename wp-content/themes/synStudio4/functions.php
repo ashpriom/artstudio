@@ -184,6 +184,7 @@ register_sidebars(1);
 }*/
 
 add_image_size( 'slidethumb', 154, 127, array( 'center', 'top' ) );
+add_filter('jpeg_quality', function($arg){return 100;});
 
 function get_attachment_id( $url ) {
     $attachment_id = 0;

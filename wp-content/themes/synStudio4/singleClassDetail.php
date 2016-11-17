@@ -213,11 +213,10 @@
 					    $thumbSource = wp_get_attachment_image_src($slideID,'slidethumb',false);
 
 					    if($field['small_image']==""){
-					    	//echo "slideSmall:\"".$field['image'];
 					    	echo "slideSmall:\"".$thumbSource[0];
 						}
 						else{
-							echo "slideSmall:\"".$thumbSource[0];
+							echo "slideSmall:\"".$field['small_image'];
 						}
 					    echo "\",\n";
 					    if($currentLang=="en"){
