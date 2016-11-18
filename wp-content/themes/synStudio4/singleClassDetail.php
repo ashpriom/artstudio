@@ -29,9 +29,14 @@
 	*/
 ?>
 
-<?php 
+<?php
+	function first_sentence($content){
+	    $pos = strpos($content, '.');
+	    return substr($content, 0, $pos+1);
+   	}
 	$shortDesc = get_post_meta($postID, 'class_info_' . $currentLang, true);
 	$shortDesc = strip_tags($shortDesc);
+	$shortDesc = first_sentence($shortDesc);
 ?>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideshow.min.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>

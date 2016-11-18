@@ -198,8 +198,8 @@ $metaKeywords = get_post_meta($postID, 'meta_keywords', true);
 			    "geo": 
 			    {
     				"@type": "GeoCoordinates",
-    				"latitude": "40.75",
-    				"longitude": "73.98"
+    				"latitude": "45.504974",
+    				"longitude": "-73.567677"
   				}
 			}
 		</script>
