@@ -47,6 +47,8 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<meta name="copyright" content="<?php bloginfo('url'); _e(''); ?>" />
 		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
 		<meta name="google-site-verification" content="TfjOiPpkpWW7TlZeMwprhmSFJpcrTbsS_FkF5Y8phDY">
+		<meta name="description" content="<?php echo $metaDesc; ?>" />
+		<meta name="keywords" content="Syn Studio, Montreal, Art, School, Concept Art" />
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="Syn Studio"/>
 		<meta name="twitter:title" content="<?php echo $metaTitle; ?>">
@@ -55,10 +57,12 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<meta name="twitter:image:src" content="<?php echo $metaImage; ?>">
 		<meta property="og:site_name" content="Syn Studio">
 		<meta property="og:url" content="<?php the_permalink(); ?>">
-		<meta property="og:type" content="article">
+		<meta property="og:type" content="website">
 		<meta property="og:title" content="<?php echo $metaTitle; ?>">
 		<meta property="og:description" content="<?php echo $metaDesc; ?>">
 		<meta property="og:image" content="<?php echo $metaImage; ?>">
+		<meta property="og:image:width" content="545" />
+		<meta property="og:image:height" content="342" />
 		<meta itemprop="name" content="<?php echo $metaTitle; ?>">
 		<meta itemprop="description" content="<?php echo $metaDesc; ?>">
 		<meta itemprop="image" content="<?php echo $metaImage; ?>">
@@ -70,23 +74,23 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.sidr.light.css" type="text/css">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/synstudioResponsive.min.css" type="text/css" media="screen">
+		<link rel="dns-prefetch" href="http://platform.twitter.com" />
+		<link rel='dns-prefetch' href='//s0.wp.com' />
+		<link rel='dns-prefetch' href='https://connect.facebook.net' />
+		<link rel='dns-prefetch' href='https://dc.skyglue.com' />
+		<link rel='dns-prefetch' href='https://www.googletagmanager.com' />
 
-		<?php if ($currentLang == "fr") { ?>
-			<Style>
-				.info-box1 h2 {font-size: 1.6em;}
-				.info-box10 .mailform2{width: 350px !important; }
-			</style>
+		<?php if ($currentLang == "fr") { ?> <Style> .info-box1 h2 {font-size: 1.6em;} .info-box10 .mailform2{width: 350px !important; } </style> 
 		<?php } ?>
 
 		<style>
 			#mobile-header { display: none; }
-			@media only screen and (max-width: 768px){ /* Load mobile menu for screen sizes 767px and below. See footer.php for detailed implementation */
+			@media only screen and (max-width: 768px){ /* Load mobile menu for screen sizes 767px and below. See footer.php for more. */
 				#mobile-header { display: block;}
 				#nav-wrapper { display: none; }
 			}
 		</style>
-
-		<!--<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>-->
+		
 		<?php wp_enqueue_script("jquery"); ?>		
 		<?php $options = get_option( 'sample_theme_options' ); // Custom theme options. See theme_options_do_page() in functions.php ?>
 		<?php wp_head(); ?>
@@ -111,6 +115,91 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 			 sg.src = ("https:" == document.location.protocol ? "https://dc" : "http://cdn0") + ".skyglue.com/sgtracker.js";
 			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sg, s);
 		   }, 1);
+		</script>
+		
+		<script type="application/ld+json">
+			{
+			  	"@context": "http://schema.org",
+			  	"@type": "Organization",
+			  	"name": "Syn Studio",
+			  	"alternateName": "Galerie Synesthésie",
+			  	"url": "http://synstudio.ca",
+			  	"logo": "http://synstudio.ca/synstudio-logo.jpg",
+			  	"contactPoint": 
+			  	[
+			  		{
+				    	"@type": "ContactPoint",
+				    	"telephone": "+1-514-998-7625",
+				    	"email": "info@synstudio.ca",
+				    	"contactType": "customer service",
+				    	"availableLanguage": 
+				    		[
+	      						"English",
+	      						"French"
+	      					]
+			  		},
+			  		{
+				    	"@type": "ContactPoint",
+				    	"telephone": "+1-514-998-7625",
+				    	"email": "info@synstudio.ca",
+				    	"contactType": "sales",
+				    	"availableLanguage": 
+				    		[
+	      						"English",
+	      						"French"
+	      					]
+			  		},
+			  		{
+				    	"@type": "ContactPoint",
+				    	"telephone": "+1-514-998-7625",
+				    	"email": "info@synstudio.ca",
+				    	"contactType": "billing support",
+				    	"availableLanguage": 
+				    		[
+	      						"English",
+	      						"French"
+	      					]
+			  		}
+			  	],
+			  	"sameAs": 
+			  	[
+				    "https://www.facebook.com/SynStudio",
+				    "https://www.instagram.com/synstudio/",
+				    "https://twitter.com/SynStudio",
+				    "https://www.youtube.com/user/SynStudioMontreal"
+				    "http://synstudio.tumblr.com/"
+				],
+				"openingHoursSpecification": 
+				[
+					  {
+					    "@type": "OpeningHoursSpecification",
+					    "dayOfWeek": [
+					      "Monday",
+					      "Tuesday",
+					      "Wednesday",
+					      "Thursday",
+					      "Friday"
+					    ],
+					    "opens": "11:00",
+					    "closes": "18:00"
+					  }
+				],
+				"address": 
+				{
+			      	"@type": "PostalAddress",
+			      	"addressCountry" : "CA",
+			      	"addressRegion": "CA",
+			      	"addressLocality": "Montreal",
+			      	"postalCode": "H3B 1A7",
+			      	"streetAddress": "460 Saint Catherine West, #508"
+			    },
+			    "geo": 
+			    {
+    				"@type": "GeoCoordinates",
+    				"latitude": "40.75",
+    				"longitude": "73.98"
+  				},
+			}
 		</script>
 	
 	</head>

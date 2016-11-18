@@ -34,6 +34,20 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Course",
+  "name": "<?php get_the_title(); ?>",
+  "description": "<?php echo get_post_meta($postID, 'class_info_' . $currentLang, true); ?>",
+  "provider": {
+    "@type": "Organization",
+    "name": "Syn Studio",
+    "sameAs": "http://synstudio.ca"
+  }
+}
+</script>
+
 <script type="text/javascript">
 	function closeDetailBox(a){
 	   $(a).hide();
