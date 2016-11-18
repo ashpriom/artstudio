@@ -50,7 +50,7 @@
 	  "name": "<?php echo get_the_title(); ?>",
 	  "description": "<?php echo $shortDesc; ?>",
 	  "provider": {
-	    "@type": "Organization",
+	    "@type": "EducationalOrganization",
 	    "name": "Syn Studio",
 	    "sameAs": "http://synstudio.ca"
 	  }

@@ -121,7 +121,7 @@ $metaKeywords = get_post_meta($postID, 'meta_keywords', true);
 		<script type="application/ld+json">
 			{
 			  	"@context": "http://schema.org",
-			  	"@type": "Organization",
+			  	"@type": "EducationalOrganization",
 			  	"name": "Syn Studio",
 			  	"alternateName": "Galerie Synesthésie",
 			  	"url": "http://synstudio.ca",
@@ -170,22 +170,6 @@ $metaKeywords = get_post_meta($postID, 'meta_keywords', true);
 				    "https://www.youtube.com/user/SynStudioMontreal",
 				    "http://synstudio.tumblr.com/"
 				],
-				"openingHoursSpecification": 
-				[
-					  {
-					    "@type": "OpeningHoursSpecification",
-					    "dayOfWeek": 
-					    [
-					    	"Monday",
-					      	"Tuesday",
-					      	"Wednesday",
-					      	"Thursday",
-					      	"Friday"
-					    ],
-					    "opens": "11:00",
-					    "closes": "18:00"
-					  }
-				],
 				"address": 
 				{
 			      	"@type": "PostalAddress",
@@ -194,13 +178,7 @@ $metaKeywords = get_post_meta($postID, 'meta_keywords', true);
 			      	"addressLocality": "Montreal",
 			      	"postalCode": "H3B 1A7",
 			      	"streetAddress": "460 Saint Catherine West, #508"
-			    },
-			    "geo": 
-			    {
-    				"@type": "GeoCoordinates",
-    				"latitude": "45.504974",
-    				"longitude": "-73.567677"
-  				}
+			    }
 			}
 		</script>
 	
