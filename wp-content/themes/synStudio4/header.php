@@ -174,12 +174,13 @@ $metaKeywords = get_post_meta($postID, 'meta_keywords', true);
 				[
 					  {
 					    "@type": "OpeningHoursSpecification",
-					    "dayOfWeek": [
-					      "Monday",
-					      "Tuesday",
-					      "Wednesday",
-					      "Thursday",
-					      "Friday"
+					    "dayOfWeek": 
+					    [
+					    	"Monday",
+					      	"Tuesday",
+					      	"Wednesday",
+					      	"Thursday",
+					      	"Friday"
 					    ],
 					    "opens": "11:00",
 					    "closes": "18:00"
@@ -199,7 +200,7 @@ $metaKeywords = get_post_meta($postID, 'meta_keywords', true);
     				"@type": "GeoCoordinates",
     				"latitude": "40.75",
     				"longitude": "73.98"
-  				},
+  				}
 			}
 		</script>
 	
