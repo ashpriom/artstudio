@@ -29,23 +29,27 @@
 	*/
 ?>
 
+<?php 
+	$shortDesc = get_post_meta($postID, 'class_info_' . $currentLang, true);
+	$shortDesc = strip_tags($shortDesc);
+?>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideshow.min.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
 
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Course",
-  "name": "<?php get_the_title(); ?>",
-  "description": "<?php echo get_post_meta($postID, 'class_info_' . $currentLang, true); ?>",
-  "provider": {
-    "@type": "Organization",
-    "name": "Syn Studio",
-    "sameAs": "http://synstudio.ca"
-  }
-}
+	{
+	  "@context": "http://schema.org",
+	  "@type": "Course",
+	  "name": "<?php echo get_the_title(); ?>",
+	  "description": "<?php echo $shortDesc; ?>",
+	  "provider": {
+	    "@type": "Organization",
+	    "name": "Syn Studio",
+	    "sameAs": "http://synstudio.ca"
+	  }
+	}
 </script>
 
 <script type="text/javascript">

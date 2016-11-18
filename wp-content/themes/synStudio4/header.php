@@ -167,7 +167,7 @@ $metaKeywords = get_post_meta($postID, 'meta_keywords', true);
 				    "https://www.facebook.com/SynStudio",
 				    "https://www.instagram.com/synstudio/",
 				    "https://twitter.com/SynStudio",
-				    "https://www.youtube.com/user/SynStudioMontreal"
+				    "https://www.youtube.com/user/SynStudioMontreal",
 				    "http://synstudio.tumblr.com/"
 				],
 				"openingHoursSpecification": 
