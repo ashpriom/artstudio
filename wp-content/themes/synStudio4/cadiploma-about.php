@@ -217,7 +217,7 @@ Template Name: Concept Art Diploma - About
                                         Disney Imagineering, ADAPT, Ubisoft Campus, MIGS, FIEA, Massive Black and The Gnomon 
                                         Workshop, for whom he has also released an instructional DVD (Character Design Pipeline: 
                                         Production Art & Research Techniques with BARONTiERi). Thierry’s other credits include 
-                                        Assassin's Creed, Prince of Persia, Deux Ex: Human Revolutions and Tron: Legacy, among 
+                                        Assassin's Creed, Prince of Persia, Deus Ex: Human Revolutions and Tron: Legacy, among 
                                         others. His work has been featured in “Exodyssey: Visual Development of an Epic Adventure”
                                         and  “Steampainting: SPARK - Creative process”, both by Steambot Studios.
                                         <br /><br />
@@ -403,16 +403,16 @@ Template Name: Concept Art Diploma - About
                             <div class="col-md-6">
                                 <div class="teacherbox">
                                     <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg-art.jpg" alt="teacher"></div>
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-benoit.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-benoit-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Benoit Massé</h4>
                                  
                                     <p class="term-description teacher-description">
-                                        
+                                        Benoit Massé is a web and graphic designer with over 10 years of freelance and in-house experience, having worked various companies such as Lg2, SAT and Ubisoft, where he was the Director of Presentation/User Interface, for ShapeUP, a Kinect based sport game. His freelance portfolio includes a broad range of projects such as motion concept for Baku 2015 European Games, motion mapping video for Luminothérapie, designing e-commerce websites for companies like Velvet Moustache and Bonlook, among others. He is also a two time Applied Arts Magazine’s Graphics Design Winner for his works “Ecodrain” (2012) and “This is Digital Marketing” (2011). Benoit is currently working as a UI designer at Shopify, where he creates visual designs that help improve the user experience for entrepreneurs using the e-commerce platform.  
                                         <br /><br />
-                                        Benoit will be teaching 
+                                        Benoit will be teaching Visual Communication in the Concept Art Diploma Program.
                                     </p>
                                 </div>
                             </div>
@@ -901,7 +901,7 @@ Template Name: Concept Art Diploma - About
                                     
                                     <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
                                 
-                                    <p class="term-description teacher-description">Thierry Doizon aka Barontieri a été précédemment un directeur artistique et artiste en conception senior avec plus de 20 ans d’expérience dans l’industrie, ayant travaillé pour une grande variété de compagnies autour du monde, tels Square Enix, Ubisoft, Disney Interactive et Eidos. Thierry a enseigné au niveau collégial et a été invité pour parler à plusieurs ateliers et conférences dont Disney Imagineering, ADAPT, Ubisoft Campus, MIGS, FIEA, Massive Black et The Gnomon Workshop, ce dernier pour lequel il a également produit un DVD éducatif (Character Design Pipeline: Production Art & Research Techniques with BARONTiERi). Quelques autres de ses projets incluent: Assassin's Creed, Prince of Persia, Deux Ex: Human Revolutions et Tron: Legacy, entre autres. Ses oeuvres ont été publiées dans “Exodyssey: Visual Development of an Epic Adventure” et “Steampainting: SPARK - Creative process”, tous les deux par Steambot Studios, dont il est le co-fondateur.
+                                    <p class="term-description teacher-description">Thierry Doizon aka Barontieri a été précédemment un directeur artistique et artiste en conception senior avec plus de 20 ans d’expérience dans l’industrie, ayant travaillé pour une grande variété de compagnies autour du monde, tels Square Enix, Ubisoft, Disney Interactive et Eidos. Thierry a enseigné au niveau collégial et a été invité pour parler à plusieurs ateliers et conférences dont Disney Imagineering, ADAPT, Ubisoft Campus, MIGS, FIEA, Massive Black et The Gnomon Workshop, ce dernier pour lequel il a également produit un DVD éducatif (Character Design Pipeline: Production Art & Research Techniques with BARONTiERi). Quelques autres de ses projets incluent: Assassin's Creed, Prince of Persia, Deus Ex: Human Revolutions et Tron: Legacy, entre autres. Ses oeuvres ont été publiées dans “Exodyssey: Visual Development of an Epic Adventure” et “Steampainting: SPARK - Creative process”, tous les deux par Steambot Studios, dont il est le co-fondateur.
                                     <br /><br />
                                     Thierry est le directeur d'études au Syn Studio. En plus d'être le président du Diplôme en 
                                     conception artistique, il enseigne Intro to Concept Art.
@@ -1045,7 +1045,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Oleg Dergachov, formé à l’Académie d’Ukraine, est directeur artistique, artiste, illustrateur, animateur, et caricaturiste. Ayant accumulé environ 85 prix au niveau international, on retrouve ses oeuvres, entre autres au Musée Victoria and Albert de Londres, au Centre Pompidou de Paris, à la galerie Tretyakov de Moscou, dans la collection du Cirque du Soleil, mais aussi dans multiples autres musées et collections publiques. Il a enseigné pendant 16 ans dans les universités, les écoles de design et de dessin animé de 6 pays.
                                         <br /><br />
-                                        Oleg will be teaching Anatomy Study in the upcoming Winter Term of Concept Art Diploma Program.
+                                        Oleg enseignera "Anatomy Study" dans le Diplôme en conception artistique.
                                     </p>
                                 </div>
                             </div>
@@ -1063,22 +1063,23 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Jeong H. Shin est présentement artiste de concept sénior chez Ubisoft. Ces designs uniques peuvent être admirés dans des jeux tels que Watchdogs et Far Cry 3 et 4. Il a étudié avec Scott Robertson, designer de vehicule de renom au Art Center College of Design. La tutelle de Robertson jumelée à la carrière de Shin en design industriel et véhicules l’a mené au poste de designer créatif chez General Motors. Là, Shin a dessiné deux Chevrolets (Cruze et Sonic) qui sont présentement sur la route. Lorsqu’il était designer de concept chez Mattel, Shin à aussi concu les voitures pour Hotwheels Battleforce 5, la série animée.
                                         <br /><br />
-                                        Jeong 
+                                        Jeong enseignera "Sketching for Production" dans le Diplôme en conception artistique. 
                                     </p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="teacherbox">
                                     <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg-art.jpg" alt="teacher"></div>
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-benoit.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-benoit-art.jpg" alt="teacher"></div>
                                     </div>
                                     
                                     <h4 class="orange-text nopaddingleft">Benoit Massé</h4>
                                  
                                     <p class="term-description teacher-description">
+                                        Benoit Massé est un designer graphique et web avec plus de 10 ans d’expérience en tant qu’employé indépendant et de studio. Il a travaillé à Lg2, SAT et Ubisoft, en tant que Directeur de présentation/Interface utilisateur pour ShapeUP, un jeu de sport Kinect. Son portfolio inclut un éventail de projets tels des conceptions de mouvement pour Baku 2015 European Games, les plans de mouvements pour un vidéo de Luminothérapie, les designs de site webs de ventes pour des compagnies tels Velvet Moustache et Bonlook, entre autres. Il est également deux fois le gagnant du prix de Design Graphique d’Applied Arts Magazine pour son travail dans “Ecodrain” (2012) et “This is Digital Marketing” (2011). Benoit travail présentement en tant que designer de l’interface utilisateur à Shopify, où il créé des visuels qui aident à améliorer l’expérience des entrepreneurs qui visitent le site.
                                         <br /><br />
-                                        Benoit
+                                        Benoit enseignera "Visual Communication" dans le Diplôme en conception artistique.
                                     </p>
                                 </div>
                             </div>
