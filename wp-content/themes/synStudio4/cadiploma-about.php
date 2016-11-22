@@ -378,7 +378,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Oleg Dergachov is an art director, fine artist, cartoonist, animator, and illustrator trained by the Ukrainian Academy. He has won over 85 international prizes and his work is displayed in the Victoria and Albert Museum in London, Centre Pompidou in Paris, the Tretyakov State Gallery in Moscow, the Cirque du Soleil collection as well as other prestigious art museums and public collection. He has taught for 16 years in prestigious universities, design schools and animation academies in 6 countries.
                                         <br /><br />
-                                        Oleg will be teaching Anatomy Study in the upcoming Winter Term of Concept Art Diploma Program.
+                                        Oleg will be teaching Anatomy Study in the Winter Term in Concept Art Diploma Program.
                                     </p>
                                 </div>
                             </div>
@@ -396,7 +396,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Jeong H. Shin is currently a senior concept artist at Ubisoft. His unique designs can be seen in blockbuster titles such as Watchdogs and Far Cry 3 and 4. He studied with world-renowned vehicle and entertainment designer Scott Robertson at Art Center College of Design. Robertson’s tutelage, as well as Shin’s own background in industrial, vehicle and entertainment design led him to tenure at General Motors as a senior creative designer. There, Shin designed two Chevrolet (Cruze and Sonic) vehicles that are currently on the road. While concept designer at Mattel, Shin designed cars for Hotwheels Battleforce 5, the animated series.
                                         <br /><br />
-                                        Jeong will be teaching Sketching for Production in the upcoming Winter Term of Concept Art Diploma Program.
+                                        Jeong will be teaching Sketching for Production in the Winter Term of Concept Art Diploma Program.
                                     </p>
                                 </div>
                             </div>
@@ -412,7 +412,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Benoit Massé is a web and graphic designer with over 10 years of freelance and in-house experience, having worked various companies such as Lg2, SAT and Ubisoft, where he was the Director of Presentation/User Interface, for ShapeUP, a Kinect based sport game. His freelance portfolio includes a broad range of projects such as motion concept for Baku 2015 European Games, motion mapping video for Luminothérapie, designing e-commerce websites for companies like Velvet Moustache and Bonlook, among others. He is also a two time Applied Arts Magazine’s Graphics Design Winner for his works “Ecodrain” (2012) and “This is Digital Marketing” (2011). Benoit is currently working as a UI designer at Shopify, where he creates visual designs that help improve the user experience for entrepreneurs using the e-commerce platform.  
                                         <br /><br />
-                                        Benoit will be teaching Visual Communication in the Concept Art Diploma Program.
+                                        Benoit will be teaching Visual Communication in the Winter Term in Concept Art Diploma Program.
                                     </p>
                                 </div>
                             </div>
@@ -1045,7 +1045,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Oleg Dergachov, formé à l’Académie d’Ukraine, est directeur artistique, artiste, illustrateur, animateur, et caricaturiste. Ayant accumulé environ 85 prix au niveau international, on retrouve ses oeuvres, entre autres au Musée Victoria and Albert de Londres, au Centre Pompidou de Paris, à la galerie Tretyakov de Moscou, dans la collection du Cirque du Soleil, mais aussi dans multiples autres musées et collections publiques. Il a enseigné pendant 16 ans dans les universités, les écoles de design et de dessin animé de 6 pays.
                                         <br /><br />
-                                        Oleg enseignera "Anatomy Study" dans le Diplôme en conception artistique.
+                                        Oleg enseignera "Anatomy Study" dans la session d'hiver du Diplôme en conception artistique.
                                     </p>
                                 </div>
                             </div>
@@ -1063,7 +1063,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Jeong H. Shin est présentement artiste de concept sénior chez Ubisoft. Ces designs uniques peuvent être admirés dans des jeux tels que Watchdogs et Far Cry 3 et 4. Il a étudié avec Scott Robertson, designer de vehicule de renom au Art Center College of Design. La tutelle de Robertson jumelée à la carrière de Shin en design industriel et véhicules l’a mené au poste de designer créatif chez General Motors. Là, Shin a dessiné deux Chevrolets (Cruze et Sonic) qui sont présentement sur la route. Lorsqu’il était designer de concept chez Mattel, Shin à aussi concu les voitures pour Hotwheels Battleforce 5, la série animée.
                                         <br /><br />
-                                        Jeong enseignera "Sketching for Production" dans le Diplôme en conception artistique. 
+                                        Jeong enseignera "Sketching for Production" dans la session d'hiver du Diplôme en conception artistique.
                                     </p>
                                 </div>
                             </div>
@@ -1079,11 +1079,11 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Benoit Massé est un designer graphique et web avec plus de 10 ans d’expérience en tant qu’employé indépendant et de studio. Il a travaillé à Lg2, SAT et Ubisoft, en tant que Directeur de présentation/Interface utilisateur pour ShapeUP, un jeu de sport Kinect. Son portfolio inclut un éventail de projets tels des conceptions de mouvement pour Baku 2015 European Games, les plans de mouvements pour un vidéo de Luminothérapie, les designs de site webs de ventes pour des compagnies tels Velvet Moustache et Bonlook, entre autres. Il est également deux fois le gagnant du prix de Design Graphique d’Applied Arts Magazine pour son travail dans “Ecodrain” (2012) et “This is Digital Marketing” (2011). Benoit travail présentement en tant que designer de l’interface utilisateur à Shopify, où il créé des visuels qui aident à améliorer l’expérience des entrepreneurs qui visitent le site.
                                         <br /><br />
-                                        Benoit enseignera "Visual Communication" dans le Diplôme en conception artistique.
+                                        Benoit enseignera "Visual Communication" dans la session d'hiver du Diplôme en conception artistique.
                                     </p>
                                 </div>
                             </div>
-                        </div>z
+                        </div>
                 <br />
             </div>
             <br />
