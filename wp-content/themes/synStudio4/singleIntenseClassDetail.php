@@ -5,7 +5,7 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideshow.min.css" />
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.4.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
 
@@ -172,18 +172,22 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
 				//Prints Javascript snippet for the slider code that is used in next blocks of code.					
 				$fields = CFS()->get('slider',8397);
 				$i=0;
-				foreach ($fields as $field) {
+				foreach ((array)$fields as $field) {
 					$i++;
 					echo "var slide".$i." = { \n";
 					echo "slideLarge:\"".$field['image'];
 					echo "\",\n";
+
+					$slideID = get_attachment_id($field['image']);
+					$thumbSource = wp_get_attachment_image_src($slideID,'slidethumb',false);
+
 					if($field['small_image']==""){
-					    echo "slideSmall:\"".$field['image'];
+					    echo "slideSmall:\"".$thumbSource[0];
 					}
 					else{
 						echo "slideSmall:\"".$field['small_image'];
 					}
-					echo "\",\n";	    
+					echo "\",\n";					    
 					if($currentLang=="en"){
 						echo "slideText1:\"".$field['text1'];
 					}
