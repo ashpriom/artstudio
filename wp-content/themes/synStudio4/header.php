@@ -91,7 +91,7 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 			}
 		</style>
 		
-		<?php wp_enqueue_script("jquery"); ?>		
+		<?php wp_enqueue_script("jquery"); ?>	
 		<?php $options = get_option( 'sample_theme_options' ); // Custom theme options. See theme_options_do_page() in functions.php ?>
 		<?php wp_head(); ?>
 
