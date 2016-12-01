@@ -17,7 +17,8 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
  	<div id="col1">   
    <!-- title: start -->
      <?php while ( have_posts() ) : the_post(); ?>
-      <?php echo "<h1>"; the_title(); echo "</h1>"; ?> 
+      <?php echo "<h1>"; the_title(); echo "</h1>"; ?>
+      <?php the_date('Y-m-d', '<span><u>', '</u></span>'); ?> 
       <?php the_content(); ?>
      <?php endwhile; // end of the loop. ?> 
    <!-- title: end -->
