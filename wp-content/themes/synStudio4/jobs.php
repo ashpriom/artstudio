@@ -33,7 +33,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
    echo "<div class='podcast-boxWrapper' style='margin-top: 10px;'>";
    echo "<div class='podcast-box'>";
    echo '<h2>' . get_the_title() . '</h2>';
-   echo '<span>' . the_date('Y-m-d') . '</span>';
+   echo '<span>' . get_the_date() . '</span>';
    the_content();
    echo "</div>";
    echo "</div>";
