@@ -302,7 +302,7 @@ input{ font: 1em Helvetica, Verdana, Arial, sans-serif; }
 }
 
 .masterclass-nav{
-	margin-top: 0px !important;
+	margin-top: -7px !important;
 }
 
 #nav-wrapper{

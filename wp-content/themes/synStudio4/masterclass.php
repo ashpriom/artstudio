@@ -343,7 +343,7 @@
 			$attachment_id2 = get_post_meta($translationID, 'teacher_photo2', true);
 		}
 		?>
-		<div class="thumbnail"><?php echo wp_get_attachment_image($attachment_id1, small); echo wp_get_attachment_image($attachment_id2, small); ?></div>
+		<div class="thumbnail"><?php // echo wp_get_attachment_image($attachment_id1, small); echo wp_get_attachment_image($attachment_id2, small); ?></div>
 		<?php echo get_post_meta($postID, 'teacher_info_' . $currentLang, true); ?>
 	</div>
 	<div class="bgd-box"></div>
