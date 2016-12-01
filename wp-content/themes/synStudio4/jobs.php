@@ -18,7 +18,6 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
    <!-- title: start -->
      <?php while ( have_posts() ) : the_post(); ?>
       <?php echo "<h1>"; the_title(); echo "</h1>"; ?>
-      <?php the_date('Y-m-d', '<span><u>', '</u></span>'); ?> 
       <?php the_content(); ?>
      <?php endwhile; // end of the loop. ?> 
    <!-- title: end -->
@@ -34,6 +33,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
    echo "<div class='podcast-boxWrapper' style='margin-top: 10px;'>";
    echo "<div class='podcast-box'>";
    echo '<h2>' . get_the_title() . '</h2>';
+   echo '<span>' . the_date('Y-m-d') . '</span>';
    the_content();
    echo "</div>";
    echo "</div>";
