@@ -90,6 +90,7 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 				#nav-wrapper { display: none; }
 			}
 			.breadcrum p{font-size: 1em;}
+			#nav #social{top: -13px !important;}
 		</style>
 		
 		<?php wp_enqueue_script("jquery"); ?>	

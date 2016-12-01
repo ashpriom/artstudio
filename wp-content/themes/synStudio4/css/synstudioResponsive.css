@@ -846,6 +846,8 @@
   width:100%;
   }
 
+  .footer-right img{width:auto !important;}
+
   /* Top Bar */
   #header #logo a { margin: 8% auto 8% auto; } /* 40px auto */
 
