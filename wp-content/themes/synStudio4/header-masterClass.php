@@ -229,7 +229,7 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 					<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/01/gathering-banner-en.jpg" alt="SYN STUDIO - GATHERING OF MASTERS 2016" width="1000" />
 				<?php } ?>
 
-			<div id="language2" style="top: 280px; right: 12px; color:white;">
+			<div id="language2" style="top: 270px; right: 12px; color:white;">
 	   			<div class="phone">514 998-7625</div>
 	   			<?php 
 	   			if (function_exists('pll_the_languages')){

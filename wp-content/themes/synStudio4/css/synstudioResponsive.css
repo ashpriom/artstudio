@@ -1157,6 +1157,7 @@
   				
   #wrapper { width: 100%!important; }
   #header #language { right: auto; left: 0; top: -65px; width: 100%; }
+  #header #language2 {top: 65px!important;right: 3px !important;}
   #header #language .phone { left: 50%; margin-left: -60px; position: absolute; font-family: Arial, Helvetica, sans-serif;font-size: 15px; }
   #header .qtrans_language_chooser { float: right; margin: 0 4px; }
   #header #logo a { margin: 22% auto 5% auto;}
