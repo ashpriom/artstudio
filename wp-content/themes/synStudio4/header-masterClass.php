@@ -232,16 +232,16 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 	   			<div class="phone">514 998-7625</div>
 	   			<?php 
 	   			if (function_exists('pll_the_languages')){
-	   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); // See Polylang reference
+	   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>0)); // See Polylang reference
 				}
 	   			?>
 			</div>
 
 			<div id="nav" class="masterclass-nav">
 				
-				<!--<div id="mobile-header">
+				<div id="mobile-header">
 					<a id="responsive-menu-button" href="#sidr-main"><img alt="Toggle menu" src="<?php echo get_template_directory_uri(); ?>/images/responsive/mobi-toogleMenu.png"></a>
-				</div>-->
+				</div>
 
 		  		<div id="nav-wrapper">
 					<?php
