@@ -23,12 +23,12 @@
   #wrapper{ width: 100%!important; }
   #header #language{ right: auto; left: 0; top: -26px; width: 100%; }
   #header #language .phone{ float: right; margin: 0 4px; } /*float: left;*/
-  #header #language2{top: 100px !important;}
+  #header #language2{top: 140px !important;}
   #header #logo a{ margin: 40px auto; }
 
   #responsive-menu-button{cursor:pointer;}
   #nav { left: 7px; margin-top: 20px; position: absolute; top: -51px; z-index: 4; }
-  .masterclass-nav{top: 60px !important;}
+  .masterclass-nav{top: 20px !important;}
   .masterclass-nav img{-webkit-filter: invert(.8);filter: invert(.8);}
   #nav #social { display: none; }
   #nav-wrapper li { float: none; }
@@ -1042,6 +1042,7 @@
 
   #header #logo a { margin: 60px auto 50px auto; }
   #header #language { top: -50px; }
+  #header #language2 {top: 90px!important;}
   #nav { margin-top: 0px; top: -51px; }
 
   /* Center main columns */
