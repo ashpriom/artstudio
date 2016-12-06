@@ -24,6 +24,7 @@ else{ $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."
 
 $metaTitle = get_post_meta($postID, 'meta_title', true);
 $metaDesc = get_post_meta($postID, 'meta_description', true);
+$metaKeywords = get_post_meta($postID, 'meta_keywords', true);
 ?>
 
 
@@ -43,8 +44,11 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<meta charset="utf-8">
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>">
 		<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1,initial-scale=1">
-		<meta name="author" content="Syed Priom, Andrea Acosta Duarte, Bill Jamshedji">
-		<meta name="copyright" content="<?php bloginfo('url'); _e(''); ?>" />
+		<meta name="title" content="<?php echo $metaTitle; ?>">
+		<meta name="description" content="<?php echo $metaDesc; ?>">
+		<meta name="keywords" content="<?php echo $metaKeywords; ?>">
+		<meta name="author" content="Syn Studio">
+		<meta name="copyright" content="Syn Studio" />
 		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
 		<meta name="google-site-verification" content="TfjOiPpkpWW7TlZeMwprhmSFJpcrTbsS_FkF5Y8phDY">
 		<meta name="description" content="<?php echo $metaDesc; ?>" />
@@ -66,7 +70,6 @@ $metaDesc = get_post_meta($postID, 'meta_description', true);
 		<meta itemprop="name" content="<?php echo $metaTitle; ?>">
 		<meta itemprop="description" content="<?php echo $metaDesc; ?>">
 		<meta itemprop="image" content="<?php echo $metaImage; ?>">
-		<meta name="description" content="<?php echo $metaDesc; ?>">
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 		<link rel="canonical" href="<?php the_permalink(); ?>">

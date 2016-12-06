@@ -9,6 +9,7 @@
 $postID = get_the_ID();
 $metaTitle = get_post_meta($postID, 'meta_title', true);
 $metaDesc = get_post_meta($postID, 'meta_description', true);
+$metaKeywords = get_post_meta($postID, 'meta_keywords', true);
 $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/images/bannerhome.jpg";
 ?>
 
@@ -19,7 +20,10 @@ $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/image
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>">
-		<meta name="author" content="Anthony Walsh, Florent Cachot, Syed Priom">
+		<meta name="title" content="<?php echo $metaTitle; ?>">
+		<meta name="description" content="<?php echo $metaDesc; ?>">
+		<meta name="keywords" content="<?php echo $metaKeywords; ?>">
+		<meta name="author" content="Syn Studio">
 		<meta name="copyright" content="Syn Studio">
 		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
 		<meta name="google-site-verification" content="qAS47Im9uAwkEff6CyCYdn_7r6BaP2aRFotf7Fs9Nrs">
@@ -38,7 +42,6 @@ $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/image
 		<meta itemprop="name" content="<?php echo $metaTitle; ?>"/>
 		<meta itemprop="description" content="<?php echo $metaDesc; ?>"/>
 		<meta itemprop="image" content="<?php echo $metaImage; ?>">
-		<meta name="description" content="<?php echo $metaDesc; ?>"/>
 		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
