@@ -10,6 +10,7 @@ $postID = get_the_ID();
 $metaTitle = get_post_meta($postID, 'meta_title', true);
 $metaDesc = get_post_meta($postID, 'meta_description', true);
 $metaKeywords = get_post_meta($postID, 'meta_keywords', true);
+if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canada, art class";}
 $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/images/bannerhome.jpg";
 ?>
 

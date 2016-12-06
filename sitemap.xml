@@ -8,897 +8,726 @@
 
 <url>
   <loc>https://synstudio.ca/</loc>
-  <changefreq>daily</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/francais/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/about/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/about/teachers/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/full-time-intensive/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/concept-art/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/drawing-from-life/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/analytical-sketching/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/drawing-the-human-form/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/dynamic-drawing/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/urban-sketching-in-perspective/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/nature-sketching/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/advanced-anatomy/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/foundations-of-painting/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/foundations-of-painting-2/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/expressive-watercolour/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/digital-painting/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/digital-character-painting-from-life/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/visual-development-games/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/interior-environment/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/skills-reboot/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/making-comics/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/syn-studios-gathering-of-masters/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/classes/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/testimonials/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/workshops/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/resources/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/privacy-policy/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/contact-us/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/a-propos/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/a-propos/professeurs/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/temps-plein-intensif/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/page-daccueil/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/dessin-observation-etude/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/dessin-analytique/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/dessin-forme-humaine-etude/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/dessin-dynamique/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/croquis-urbains-perspective/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/illustration-nature-croquis/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/dessin-anatomique-etude/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/peinture-bases/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/peinture-bases-2/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/peinture-aquarelle/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/peinture-numerique/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/peinture-numerique-personnages/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/developpement-visuel-jeux-video/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/environnement-interieur/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/reboot-technique-art/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/creer-bande-dessinee/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/assemblee-des-maitres/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/cours-arts/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/temoignages/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/cours-art-numerique/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ateliers/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/politique-de-confidentialite/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/contactez-nous/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/concept-art-diploma/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/about-synstudio/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/student-showcase/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/syn-studio-experience/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/concept-art-diploma-admission/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/drawing-head-and-features/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/analytical-sketching-2/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/colour-and-light/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/figure-painting/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/figure-and-portrait-painting/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/storytelling-and-design/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/environment-design/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/character-rendering/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ressources/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/resources/interviews/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/resources/podcasts/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/embed/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/diplome-dart-conceptuel/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/a-propos-de-syn-studio/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/presentation-etudiants/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/lexperience-syn-studio/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/informations-sur-le-programme/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/dessin-portrait/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/dessin-analytique-2/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/lumiere-et-couleur/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/peindre-la-forme-humaine/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/peinture-de-modeles-et-de-portraits/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/conception-design-histoire/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/conception-denvironnements/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/rendu-de-personnages/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/digital/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/design-architectural-concept-art/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/teacher-showcase/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/concept-art-and-illustration/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ressources/entrevues/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ressources/podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/geof-isherwood-interview-2/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/alp-altiner-interview/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/meinert-hansen-interview/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/adrian-bobb-interview/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/jeff-simpson-interview/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/frederic-st-arnaud-interview/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/marc-taro-holmes-interview/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/jack-zhang-interview/</loc>
-  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://synstudio.ca/ep-35-jessy-veilleux-podcast-2/</loc>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/syn-studio-gathering-of-masters-2016-round-table-discussion/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-33-christian-robert-de-massy-artist-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-32-naomi-savoie-concept-artist-illustrator/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-31-david-giraud-artist-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-30-isaac-hannaford-artist-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-29-samantha-youssef-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep_28-jeevan_artist_podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep27_xin_ran_liu/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/po_yuen_kenny_lam/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-25-frederic-bennett-senior-concept-artist-at-eidos-montreal-deus-ex-mankind-divided-conan-transformers/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/eytan-zana_shaddy-safadi_podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/justin-yun-interview/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/comic-book-artist-panel/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/robert-bonchune-part-2/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/robert-bonchune-1/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-19-henry-fong-concept-designer-movies-worked-on-x-men-days-of-future-pastpacific-rim-the-mummy-3-the-amazing-spider-man-2-immortal/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/nick-oroc/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/bruno-gauthier-leblanc/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/karla-ortiz/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-15-scott-robertson/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-14-ben-mauro-and-eduardo-pena-the-hobbit-trilogy-how-to-succeed-in-concept-art/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep_13_geof_isherwood_comic_book_artist_for_marvel_and_dc_comics/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-12-dhamindra-jeevan-matte-painter-and-concept-artist-for-source-code-x-men-days-of-future-past-and-cosmos-a-spacetime-odyssey-2/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-11-thierry-doizon-aka-barontieri-art-director-at-ubisoft-montreal-concept-artist-on-tron-legacy-assassins-creed-deus-ex-human-revolution/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/episode-10-andrew-maximov/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/episode-9-daniel-kvasznicza-concept-artist-compositor/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/episode-7-alp-altiner-concept-artist-comic-book-artist-vfx-art-portal/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/episode-7-jung-park-concept-artist/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/episode-6-meinert-hansen-concept-artist-illustrator/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/episode-5-adrian-bobb-filmmaker-concept-artist-illustrator/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/episode-4-jeff-simpson-concept-artist-illustrator-colourist/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/episode-3-frdric-st-arnaud-matte-painter-concept-and-vfx-artist/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/episode-2-marc-taro-holmes-concept-artist-art-director-for-ea-disney-microsoft/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/episode-1-jack-zhang/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/presentation-professeurs/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/architectural-design-for-concept-artists/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/cours-concept-art-illustration/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/geof-isherwood-bedeiste-marvel-entrevue/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/alp-altiner-concept-artiste-entrevue/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/meinert-hansen-concept-artiste-entrevue/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/adrian-bobb-concept-artiste-entrevue/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/jeff-simpson-concepteur-personnages-entrevue/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/frederic-st-arnaud-matte-painter-entrevue/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/marc-taro-holmes-concept-artiste-entrevue/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/jack-zhang-modeleur-personnages-entrevue/</loc>
-  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://synstudio.ca/ep-35-jessy-veilleux-podcast-3/</loc>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-34-rassemblement-de-maitres-table-ronde/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-33-christian-robert-de-massy-artiste-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-32-naomi-savoie-concept-artist-illustrator-fr/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-31-david-giraud-artiste-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-30-isaac-hannaford-artiste-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep20-samantha-youssef_fr/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-28-experiences-mystiques-psychedelismes-star-wars-ontologie-et-dessiner-grace-au-cerveau-droit-avec-jeevan-x-men-days-of-the-future-past-gods-of-egypt-world-of-warcraft-deadpool/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-27-creer-des-jeux-video-independants-indie-games-et-soccuper-dun-projet-kickstarter-fructueux-avec-xin-ran-liu-co-proprietaire-artiste-en-chef-et-directeur-artistique-che/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/po_yuen_kenny_lam_fr/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-25-frederic-bennett-artiste-concepteur-senior-chez-eidos-montreal-deus-ex-mankind-divided-conan-transformers/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ep-24-eytan-zana-et-shaddy-safadi-naughty-dog-et-one-pixel-brush-last-of-us-uncharted-magic-the-gathering-bioshock-infinite/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/justin-yun-artiste-concept-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/salgood-sam-thierry-labrosse-jose-holder-bedeistes-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/robert-bonchune-effets-visuels-podcast2/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/robert-bonchune-effets-visuels-podcast1/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/henry-fong-concept-designer-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/nick-oroc-artiste-concepteur-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/bruno-gauthier-leblanc-concepteur-personnages-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/karla-ortiz-illustratrice-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/scott-robertson-concept-designer-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/ben-mauro-eduardo-pena-concept-art-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/geof-isherwood-bedeiste-marvel-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/dhamindra-jeevan-concept-artiste-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/thierry-doizon-concept-artiste-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/andrew-maximov-artiste-3d-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/daniel-kvasznicza-concept-artiste-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/alp-altiner-concept-artiste-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/jung-park-concept-artiste-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/meinert-hansen-concept-artiste-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/adrian-bobb-concept-artiste-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/jeff-simpson-concepteur-personnages-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/frederic-st-arnaud-matte-painter-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/marc-taro-holmes-concept-artiste-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 <url>
   <loc>https://synstudio.ca/jack-zhang-modeleur-personnages-podcast/</loc>
-  <changefreq>daily</changefreq>
   <priority>0.41</priority>
 </url>
 </urlset>
