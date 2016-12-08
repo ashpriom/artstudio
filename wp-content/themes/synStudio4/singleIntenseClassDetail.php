@@ -327,7 +327,7 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
   	</div>
   
   	<div id="cnt-courseOutline" class="details-box">
-  		<h3><?php if($currentLang=="en"){?> Testimonial <?php } else{ ?> TÉMOIGNAGES <?php } ?></h3>
+  		<h3><?php if($currentLang=="en"){?> Testimonials <?php } else{ ?> TÉMOIGNAGES <?php } ?></h3>
    		<div class="text"><?php echo get_post_meta($postID, 'testimonial_' . $currentLang, true); ?></div>
    		<div class="bgd-box"></div>
   	</div>
