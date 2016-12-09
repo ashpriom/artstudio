@@ -1109,7 +1109,7 @@ jQuery(document).ready(function (){
                                         <div class="testifyer">
                                             <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaExperience/DengYjiaLiu_Headshot.jpg" title="" alt="">
                                             <p class="name">Dengyijia Liu</p>
-                                            <p class="designation">Artiste concepteur à Triotech Amusement</p>
+                                            <p class="designation">Artiste concepteur chez Triotech Amusement</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1128,7 +1128,7 @@ jQuery(document).ready(function (){
                                         <div class="testifyer">
                                             <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaExperience/WillSweet_headshot.jpg" title="" alt="">
                                             <p class="name">Will Sweet</p>
-                                            <p class="designation">Artiste conceptuel chez Behaviour Interactive</p>
+                                            <p class="designation">Artiste concepteur chez Behaviour Interactive</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1143,7 +1143,7 @@ jQuery(document).ready(function (){
                                         <div class="testifyer">
                                             <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaExperience/RoxanneRainville_headshot.jpg" title="" alt="">
                                             <p class="name">Roxanne Rainville</p>
-                                            <p class="designation">Artiste conceptuel chez Behaviour Interactive</p>
+                                            <p class="designation">Artiste conceptrice chez Behaviour Interactive</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1158,7 +1158,7 @@ jQuery(document).ready(function (){
                                         <div class="testifyer">
                                             <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaExperience/SeanSamuel_headshot.jpg" title="" alt="">
                                             <p class="name">Sean Samuels</p>
-                                            <p class="designation">Matte Painter sénior / Artiste concepteur chez Atomic Fiction</p>
+                                            <p class="designation">Matte Painter / Artiste concepteur chez Atomic Fiction</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1187,7 +1187,7 @@ jQuery(document).ready(function (){
                                      "J'aimerai exprimer ma reconnaissance et mon appréciation envers Syn Studio pour avoir créer un espace de travail ou les artistes et professionnels peuvent s'épanouir. J'ai assisté a plusieurs de leurs cours durant les dernières années et appris beaucoup puisqu'ils ont une grande variété de classes a offrir. Être entouré d'artistes et de professeurs passionnés de leur travail fut très motivant pour moi. Cela, combiné a une formation de niveau professionnel m'a permis d'avancer plus que jamais en tant qu'artiste et m'a donné les connaissances requises pour me préparer a travailler dans l'industrie. Je recommanderais définitivement Syn Studio a quiconque désirant réussir en tant qu'artiste professionnel ou quiconque intéressé par les arts visuels en général."        <div class="testifyer">
                                             <img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaExperience/SeanVo_Headshot.jpg" title="" alt="">
                                             <p class="name">Sean Vo</p>
-                                            <p class="designation">Artiste conceptuer/Illustrateur chez Aptitude X</p>
+                                            <p class="designation">Artiste concepteur/Illustrateur chez Aptitude X</p>
                                         </div>
                                     </div>
                                 </div>
