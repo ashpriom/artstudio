@@ -357,12 +357,13 @@ if ( ! class_exists( 'PUM_Popup' ) ) {
 			if ( ! $this->data_attr ) {
 
 				$data_attr = array(
-					'id'       => $this->ID,
-					'slug'     => $this->post_name,
-					'theme_id' => $this->get_theme_id(),
-					'cookies'  => $this->get_cookies(),
-					'triggers' => $this->get_triggers(),
-					'meta'     => array(
+					'id'              => $this->ID,
+					'slug'            => $this->post_name,
+					'theme_id'        => $this->get_theme_id(),
+					'cookies'         => $this->get_cookies(),
+					'triggers'        => $this->get_triggers(),
+					'mobile_disabled' => $this->mobile_disabled() ? true : null,
+					'meta'            => array(
 						'display'    => $this->get_display(),
 						'close'      => $this->get_close(),
 						// Added here for backward compatibility in extensions.
@@ -423,6 +424,12 @@ if ( ! class_exists( 'PUM_Popup' ) ) {
 			return boolval( apply_filters( 'pum_popup_show_close_button', $show, $this->ID ) );
 		}
 
+		public function mobile_disabled() {
+			$mobile_disabled = $this->get_meta( 'popup_mobile_disabled', true );
+
+			return (bool) $mobile_disabled;
+		}
+
 		/**
 		 * @return mixed|void
 		 */
@@ -462,7 +469,7 @@ if ( ! class_exists( 'PUM_Popup' ) ) {
 				}
 			}
 
-			return apply_filters( 'pum_popup_get_conditions', $conditions, $this->ID );
+			return apply_filters( 'pum_popup_get_conditions', $conditions, $this->ID, $filters );
 		}
 
 		public function parse_condition( $condition ) {
