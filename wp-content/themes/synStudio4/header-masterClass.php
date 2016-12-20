@@ -128,8 +128,8 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 			  	"@type": "Organization",
 			  	"name": "Syn Studio",
 			  	"alternateName": "Galerie Synesthésie",
-			  	"url": "http://synstudio.ca",
-			  	"logo": "http://synstudio.ca/synstudio-logo.jpg",
+			  	"url": "https://synstudio.ca",
+			  	"logo": "https://synstudio.ca/synstudio-logo.jpg",
 			  	"contactPoint": 
 			  	[
 			  		{

@@ -167,6 +167,70 @@ $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/image
 
 		<?php } ?>
 
+		<script type="application/ld+json">
+			{
+			  	"@context": "http://schema.org",
+			  	"@type": "EducationalOrganization",
+			  	"name": "Syn Studio",
+			  	"alternateName": "Galerie Synesthésie",
+			  	"url": "https://synstudio.ca",
+			  	"logo": "https://synstudio.ca/synstudio-logo.jpg",
+			  	"contactPoint": 
+			  	[
+			  		{
+				    	"@type": "ContactPoint",
+				    	"telephone": "+1-514-998-7625",
+				    	"email": "info@synstudio.ca",
+				    	"contactType": "customer service",
+				    	"availableLanguage": 
+				    		[
+	      						"English",
+	      						"French"
+	      					]
+			  		},
+			  		{
+				    	"@type": "ContactPoint",
+				    	"telephone": "+1-514-998-7625",
+				    	"email": "info@synstudio.ca",
+				    	"contactType": "sales",
+				    	"availableLanguage": 
+				    		[
+	      						"English",
+	      						"French"
+	      					]
+			  		},
+			  		{
+				    	"@type": "ContactPoint",
+				    	"telephone": "+1-514-998-7625",
+				    	"email": "info@synstudio.ca",
+				    	"contactType": "billing support",
+				    	"availableLanguage": 
+				    		[
+	      						"English",
+	      						"French"
+	      					]
+			  		}
+			  	],
+			  	"sameAs": 
+			  	[
+				    "https://www.facebook.com/SynStudio",
+				    "https://www.instagram.com/synstudio/",
+				    "https://twitter.com/SynStudio",
+				    "https://www.youtube.com/user/SynStudioMontreal",
+				    "http://synstudio.tumblr.com/"
+				],
+				"address": 
+				{
+			      	"@type": "PostalAddress",
+			      	"addressCountry" : "CA",
+			      	"addressRegion": "CA",
+			      	"addressLocality": "Montreal",
+			      	"postalCode": "H3B 1A7",
+			      	"streetAddress": "460 Saint Catherine West, #508"
+			    }
+			}
+		</script>
+
 		<style>
 			.lang-item a{
 				color: ivory;
