@@ -52,7 +52,7 @@
 	  "provider": {
 	    "@type": "EducationalOrganization",
 	    "name": "Syn Studio",
-	    "sameAs": "http://synstudio.ca"
+	    "sameAs": "https://synstudio.ca"
 	  }
 	}
 </script>

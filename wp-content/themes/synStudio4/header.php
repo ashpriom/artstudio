@@ -51,7 +51,7 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 		<meta name="author" content="Syn Studio">
 		<meta name="copyright" content="Syn Studio" />
 		<meta name="p:domain_verify" content="ed36e341a2434aae18c7121607bc9247"/>
-		<meta name="google-site-verification" content="TfjOiPpkpWW7TlZeMwprhmSFJpcrTbsS_FkF5Y8phDY">
+		<meta name="google-site-verification" content="TfjOiPpkpWW7TlZeMwprhmSFJpcrTbsS_FkF5Y8phDY" />
 		<meta name="google-site-verification" content="1CwlCi8XhLIV00tdrklmNHx5j5mhNeNPLVMdPK6qsaM" />
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="Syn Studio"/>
