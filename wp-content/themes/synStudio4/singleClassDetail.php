@@ -35,7 +35,7 @@
 	    return substr($content, 0, $pos+1);
    	}
 	$shortDesc = get_post_meta($postID, 'class_info_' . $currentLang, true);
-	$shortDesc = first_sentence($shortDesc);
+	$shortDesc = firstListElement($shortDesc);
 	$shortDesc = html_entity_decode(strip_tags($shortDesc));
 ?>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideshow.min.css" />
