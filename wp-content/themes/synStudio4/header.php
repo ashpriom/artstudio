@@ -75,7 +75,7 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 			<?php 
 				bloginfo('name');
 				if ($currentLang == "fr"){echo " ecole d'art à Montréal, Québec, Canada";}
-				else{echo " art school in Montreal, Quebec, Canada";}
+				else{echo " Art School in Montreal, Quebec, Canada";}
 			?>
 		</title>
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
