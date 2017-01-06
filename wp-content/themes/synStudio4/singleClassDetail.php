@@ -3,9 +3,9 @@
 	if(function_exists('pll_current_language')){ $currentLang = pll_current_language('slug'); }
 	if(function_exists('pll_get_post')){ $translationID = pll_get_post($postID,'en');}
 	if(function_exists('get_option')){ $options = get_option('synstudio-options'); $redundant_options = get_option( 'sample_theme_options' ); }
-	if(function_exists('GetPreSemester')){ $preSemesterID = GetPreSemester();}
-
-	global $wpdb;
+	
+	//if(function_exists('GetPreSemester')){ $preSemesterID = GetPreSemester();}
+	//global $wpdb;
 	// $thisSemester = $wpdb->get_row( "SELECT semester_name_en, semester_name_fr, start_date, end_date, early_registration, late_registration FROM syn1_syn_semester WHERE semester_id = $preSemesterID ");
 	//$earlyRegistrationDate = $thisSemester->early_registration;
 	//$lateRegistrationDate = $thisSemester->late_registration;
@@ -30,13 +30,13 @@
 ?>
 
 <?php
-	function first_sentence($content){
-	    $pos = strpos($content, '.');
+	function firstListElement($content){
+	    $pos = strpos($content, '</li>');
 	    return substr($content, 0, $pos+1);
    	}
 	$shortDesc = get_post_meta($postID, 'class_info_' . $currentLang, true);
-	$shortDesc = strip_tags($shortDesc);
 	$shortDesc = first_sentence($shortDesc);
+	$shortDesc = html_entity_decode(strip_tags($shortDesc));
 ?>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slideshow.min.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
@@ -56,6 +56,66 @@
 	  }
 	}
 </script>
+
+<?php if($currentLang=="en"){ ?>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "https://synstudio.ca",
+      "name": "Home"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+      "@id": "https://synstudio.ca/classes",
+      "name": "All Classes"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 3,
+    "item": {
+      "@id": "<?php echo get_permalink(); ?>",
+      "name": "<?php echo get_the_title(); ?>"
+    }
+  }]
+}
+</script>
+<?php }else{ ?>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "https://synstudio.ca/francais/",
+      "name": "Accueil"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+      "@id": "https://synstudio.ca/cours-arts/",
+      "name": "Cours d'art"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 3,
+    "item": {
+      "@id": "<?php echo get_permalink(); ?>",
+      "name": "<?php echo get_the_title(); ?>"
+    }
+  }]
+}
+</script>
+<?php } ?>
 
 <script type="text/javascript">
 	function closeDetailBox(a){
