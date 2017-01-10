@@ -43,7 +43,14 @@ $templateDir = get_template_directory_uri(); $metaImage .= $templateDir ."/image
 		<meta itemprop="name" content="<?php echo $metaTitle; ?>"/>
 		<meta itemprop="description" content="<?php echo $metaDesc; ?>"/>
 		<meta itemprop="image" content="<?php echo $metaImage; ?>">
-		<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+		<title>
+			<?php wp_title('&laquo;', true, 'right'); ?> 
+			<?php 
+				bloginfo('name');
+				if ($currentLang == "fr"){echo " ecole d'art à Montréal, Québec, Canada";}
+				else{echo " Art School in Montreal, Quebec, Canada";}
+			?>
+		</title>
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.bxslider.css" type="text/css">
