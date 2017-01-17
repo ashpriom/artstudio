@@ -297,7 +297,7 @@
 					    $thumbSource = wp_get_attachment_image_src($slideID,'slidethumb',false);
 					    
 					    if(empty($field['small_image'])){
-					    	if(!empty($thumbSource[0]){
+					    	if(!empty($thumbSource[0])){
 					    		echo "slideSmall:\"".$thumbSource[0];
 					    	}
 					    	else{
