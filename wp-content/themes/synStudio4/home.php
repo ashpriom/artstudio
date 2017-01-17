@@ -165,7 +165,7 @@ get_header(); ?>
 					    $slideID = get_attachment_id($field['image']);
 					    $thumbSource = wp_get_attachment_image_src($slideID,'slidethumb',false);
 
-					    if($field['small_image']==""){
+					    if(empty($field['small_image'])){
 					    	echo "slideSmall:\"".$thumbSource[0];
 						}
 						else{

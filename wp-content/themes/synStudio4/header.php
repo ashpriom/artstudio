@@ -70,13 +70,7 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 		<meta itemprop="name" content="<?php echo $metaTitle; ?>">
 		<meta itemprop="description" content="<?php echo $metaDesc; ?>">
 		<meta itemprop="image" content="<?php echo $metaImage; ?>">
-		<title>
-			<?php wp_title('&laquo;', true, 'right'); ?> 
-			<?php 
-				bloginfo('name');
-				if ($currentLang == "fr"){echo " ecole d'art à Montréal, Québec, Canada";}
-				else{echo " Art School in Montreal, Quebec, Canada";}
-			?>
+		<title><?php wp_title('&#32;&#58;', true, 'right'); ?><?php bloginfo('name'); if($currentLang == "fr"){echo " ecole d'art à Montréal, Québec, Canada";} else{echo " Art School in Montreal, Quebec, Canada";}?>
 		</title>
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 		<link rel="canonical" href="<?php the_permalink(); ?>">
