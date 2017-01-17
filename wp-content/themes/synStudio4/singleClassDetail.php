@@ -293,9 +293,9 @@
 					    echo "\",\n";
 
 					    $slideID = get_attachment_id($field['image']);
-					    <!-- echo $slideID; -->
+					    echo $slideID;
 					    $thumbSource = wp_get_attachment_image_src($slideID,'slidethumb',false);
-					    <!-- echo $thumbSource; -->
+					    echo $thumbSource;
 
 					    if(empty($field['small_image'])){
 					    	echo "slideSmall:\"".$thumbSource[0];
