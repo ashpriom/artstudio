@@ -178,11 +178,16 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
 					echo "slideLarge:\"".$field['image'];
 					echo "\",\n";
 
-					$slideID = get_attachment_id($field['image']);
+					$slideID = attachment_url_to_postid($field['image']);
 					$thumbSource = wp_get_attachment_image_src($slideID,'slidethumb',false);
-
-					if($field['small_image']==""){
-					    echo "slideSmall:\"".$thumbSource[0];
+					    
+					if(empty($field['small_image'])){
+					    if(!empty($thumbSource[0])){
+					    	echo "slideSmall:\"".$thumbSource[0];
+					    }
+					    else{
+					    	echo "slideSmall:\"".$field['image'];
+					    }
 					}
 					else{
 						echo "slideSmall:\"".$field['small_image'];
