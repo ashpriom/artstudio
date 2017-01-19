@@ -98,28 +98,6 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 		<?php wp_enqueue_script("jquery"); ?>	
 		<?php $options = get_option( 'sample_theme_options' ); // Custom theme options. See theme_options_do_page() in functions.php ?>
 		<?php wp_head(); ?>
-
-		<!-- Popup Message Cookie -->
-		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
-		<script type="text/javascript">
-			jQuery( document ).ready(function( $ ) {
-			 	$("#close-msg").bind( "click", function() {
-					$("#popup-message").hide();
-					$.cookie("syn-popup", "true", { path: '/' });
-				});
-			});
-		</script>
-
-		<!-- SkyGlue -->
-		<script type="text/javascript">
-		   var _sgq = _sgq || [];
-		   _sgq.push(['setSgAccount', 'jjkqccji']);
-		   setTimeout(function() {
-			 var sg = document.createElement('script'); sg.type = 'text/javascript'; sg.async = true;
-			 sg.src = ("https:" == document.location.protocol ? "https://dc" : "http://cdn0") + ".skyglue.com/sgtracker.js";
-			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sg, s);
-		   }, 1);
-		</script>
 		
 		<script type="application/ld+json">
 			{
@@ -198,11 +176,31 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 	        })(window,document,'script','dataLayer','GTM-MJ8KT7');</script>
     	<!-- End Google Tag Manager -->
 
+    	<!-- SkyGlue -->
+		<script type="text/javascript">
+		   var _sgq = _sgq || [];
+		   _sgq.push(['setSgAccount', 'jjkqccji']);
+		   setTimeout(function() {
+			 var sg = document.createElement('script'); sg.type = 'text/javascript'; sg.async = true;
+			 sg.src = ("https:" == document.location.protocol ? "https://dc" : "http://cdn0") + ".skyglue.com/sgtracker.js";
+			 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sg, s);
+		   }, 1);
+		</script>
+
 		<div id="wrapper"> <!-- Main Content Wrapper: Start, ends in footer -->
 		<div id="header"> <!-- header: start -->
-
-		<!--<?php // remove_filter ('the_content', 'wpautop'); ?>-->
 		
+		<!-- Popup Message Cookie -->
+		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
+		<script type="text/javascript">
+			jQuery( document ).ready(function( $ ) {
+			 	$("#close-msg").bind( "click", function() {
+					$("#popup-message").hide();
+					$.cookie("syn-popup", "true", { path: '/' });
+				});
+			});
+		</script>
+
 		<!-- pop-up message: start -->
 		<?php
 		  	if($currentLang=="en"){ $cat = 'Pop-up Message'; } else{ $cat = 'Pop-up Message FR'; }

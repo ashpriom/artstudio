@@ -551,8 +551,34 @@
 
 			<div> <!-- Paypal Code: show it if the class is offered -->
 				<?php
-					if($class_offered == "1"){
-				 		echo get_post_meta($postID, 'paypal_button_' . $currentLang, true);
+					if($class_offered == "1"){ ?>
+
+						<!-- 
+						Paypal Button Cookie Monster:
+						Scenario...button1code is used to set a cookie with expiration day of 7.
+						Someone visits the page and he has button1code cookie for next 7 days.
+						In the meantime button2code is placed but user continues to see button1code
+						After the cookie has expired user will see button2code.
+						-->
+						<script src="<?php echo get_template_directory_uri(); ?>/js/js.cookie.js"></script>
+						<script>
+							function cookieMonster(){
+								var buttonCode = "btninit";
+								if(Cookies.get('paypalCookie')){ // if the cookie exists then get it and display it.
+									console.log("cookie found for button." + buttonCode);
+									var buttonCode = Cookies.get('paypalCookie');
+								}
+								else{
+									console.log("no cookie found, setting a new one...");
+									var buttonCode = "<?php get_post_meta($postID, 'paypal_button_' . $currentLang, true); ?>";
+									Cookies.set('paypalCookie', buttonCode, { expires: 0.00138889, path: '' });
+								}
+							}
+							return buttonCode;
+						</script>
+
+				 		<?php
+				 		//echo get_post_meta($postID, 'paypal_button_' . $currentLang, true);
 				 	}
 				?>
 			</div>
