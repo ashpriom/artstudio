@@ -561,7 +561,7 @@
 						After the cookie has expired user will see button2code.
 						-->
 						<script src="<?php echo get_template_directory_uri(); ?>/js/js.cookie.js"></script>
-						<script>
+						<script type="text/javascript">
 							var button = (function cookieMonster(){
 								var buttonCode = "syn";
 								if(Cookies.get('paypalCookie')){ // if the cookie exists then get it and display it.
@@ -571,11 +571,13 @@
 								}
 								else{
 									console.log("no cookie found, setting a new one...");
-									buttonCode = "<?php get_post_meta($postID, 'paypal_button_' . $currentLang, true); ?>";
-									Cookies.set('paypalCookie', buttonCode, { expires: 0.00138889, path: '' });
+									buttonCode = "<?php echo get_post_meta($postID, 'paypal_button_' . $currentLang, true); ?>";
+									Cookies.set('paypalCookie', buttonCode, { expires: 1, path: '' });
+									console.log(paypalCookie);
 									return buttonCode;
 								}
 							})();
+							document.write( cookieMonster() );
 						</script>
 
 				 		<?php
