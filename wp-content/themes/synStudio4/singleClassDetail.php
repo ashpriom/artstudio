@@ -565,19 +565,19 @@
 							var button = (function cookieMonster(){
 								var buttonCode = "syn";
 								if(Cookies.get('paypalCookie')){ // if the cookie exists then get it and display it.
-									console.log("cookie found for button." + buttonCode);
 									buttonCode = Cookies.get('paypalCookie');
+									console.log("cookie found for button." + buttonCode);
 									return buttonCode;
 								}
 								else{
 									console.log("no cookie found, setting a new one...");
 									buttonCode = "<?php echo get_post_meta($postID, 'paypal_button_' . $currentLang, true); ?>";
 									Cookies.set('paypalCookie', buttonCode, { expires: 1, path: '' });
-									console.log(paypalCookie);
+									console.log(buttonCode);
 									return buttonCode;
 								}
 							})();
-							document.write( cookieMonster() );
+							document.write(button);
 						</script>
 
 				 		<?php
