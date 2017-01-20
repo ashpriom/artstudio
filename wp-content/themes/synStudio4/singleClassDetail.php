@@ -579,7 +579,7 @@
 								}
 								else{
 									console.log("no cookie found, setting a new one...");
-									buttonCode = escapeHtml("<?php echo get_post_meta($postID, 'paypal_button_' . $currentLang, true); ?>");
+									buttonCode = "<?php echo json_encode(get_post_meta($postID, 'paypal_button_' . $currentLang, true)); ?>";
 									Cookies.set('paypalCookie', buttonCode, { expires: 1, path: '' });
 									console.log(buttonCode);
 									return buttonCode;
