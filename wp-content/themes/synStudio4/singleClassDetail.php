@@ -563,7 +563,7 @@
 						<script src="<?php echo get_template_directory_uri(); ?>/js/js.cookie.js"></script>
 						<script type="text/javascript">
 							var button = (function cookieMonster(){
-								var buttonCode = "syn";
+								var buttonCode = "syn"; var paypalCookie = "syncookie";
 								if(Cookies.get('paypalCookie')){ // if the cookie exists then get it and display it.
 									buttonCode = Cookies.get('paypalCookie');
 									console.log("cookie found for button." + buttonCode);
