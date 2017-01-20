@@ -291,7 +291,6 @@
 						echo "var slide".$i." = { \n";
 					    echo "slideLarge:\"".$field['image'];
 					    echo "\",\n";
-
 					    $slideID = attachment_url_to_postid($field['image']);
 					    $thumbSource = wp_get_attachment_image_src($slideID,'slidethumb',false);
 					    
