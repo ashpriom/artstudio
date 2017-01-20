@@ -564,6 +564,14 @@
 						<script type="text/javascript">
 							var button = (function cookieMonster(){
 								var buttonCode = "syn"; var paypalCookie = "syncookie";
+								function escapeHtml(unsafe) {
+								    return unsafe
+								    	.replace(/&/g, "&amp;")
+								        .replace(/</g, "&lt;")
+								        .replace(/>/g, "&gt;")
+								        .replace(/"/g, "&quot;")
+								        .replace(/'/g, "&#039;");
+								}
 								if(Cookies.get('paypalCookie')){ // if the cookie exists then get it and display it.
 									buttonCode = Cookies.get('paypalCookie');
 									console.log("cookie found for button." + buttonCode);
@@ -571,7 +579,7 @@
 								}
 								else{
 									console.log("no cookie found, setting a new one...");
-									buttonCode = "<?php echo get_post_meta($postID, 'paypal_button_' . $currentLang, true); ?>";
+									buttonCode = escapeHtml(<?php echo get_post_meta($postID, 'paypal_button_' . $currentLang, true); ?>);
 									Cookies.set('paypalCookie', buttonCode, { expires: 1, path: '' });
 									console.log(buttonCode);
 									return buttonCode;
