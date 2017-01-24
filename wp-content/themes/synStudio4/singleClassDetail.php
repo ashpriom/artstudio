@@ -549,44 +549,48 @@
 					<?php } ?>
 			</div></br>
 
-			<div> <!-- Paypal Code: show it if the class is offered -->
-				<?php
-					if($class_offered == "1"){ ?>
+			<div>
+				<?php if($class_offered == "1"){ ?> <!-- Paypal Code: show it if the class is offered -->
+					
+					<!--
+					Paypal Button Cookie Monster using JS Cookie ( ref: https://github.com/js-cookie/js-cookie)
+						
+					Here is a scenario involving Button1 and Button2:
+						
+					Someone visits Skills Reboot for the first time and sees Button1. A cookie containing Button1 code is set for the next n days (currently I have set it to 1 day for testing).
+						
+					So during the next 24 hours if the user revisits Skills Reboot, no matter how many times, he will see Button1, even if we add Button2 within those 24 hours.
+						
+					The user revisits Skills Reboot 24 hours since his first visit and he has no cookie anymore, as it has expired. So he will see Button2, and a new Button2 cookie will be added. He will continue to see Button2 for the next 24 hours. If the Button2 is unchanged during that time and he revisits after 24 hours, Button2 cookie will be set again for the next 24 hours, and so on.
+					-->
+					
+					<script src="<?php echo get_template_directory_uri(); ?>/js/js.cookie.js"></script>
+					<script type="text/javascript">
+						var button = (function cookieMonster(){ // store result in button using immediately invoked function expression
+							var buttonCode = "syn"; var paypalCookie = "syncookie"; var expiration = 1/480; // init vars, expiry in days
+							if(Cookies.get('paypalCookie')){ // if there is already a cookie return it
+								buttonCode = Cookies.get('paypalCookie');
+								console.log("cookie found for button: \n" + buttonCode);
+								return buttonCode;
+							}
+							else{
+								console.log("no cookie found, setting a new one...\n");
+								buttonCode = <?php $phpButton = json_encode(get_post_meta($postID, 'paypal_button_' . $currentLang, true)); 
+								echo $phpButton ?>; // There is no existing cookie, so get button code from dashboard, set cookie, and return it.
+								Cookies.set('paypalCookie', buttonCode, { expires: expiration, path: '' });
+								console.log(buttonCode);
+								return buttonCode;
+							}
+						})();
+						document.write(button);
+					</script>
 
-						<!-- 
-						Paypal Button Cookie Monster:
-						Scenario...button1code is used to set a cookie with expiration day of 7.
-						Someone visits the page and he has button1code cookie for next 7 days.
-						In the meantime button2code is placed but user continues to see button1code
-						After the cookie has expired user will see button2code.
-						-->
-						<script src="<?php echo get_template_directory_uri(); ?>/js/js.cookie.js"></script>
-						<script type="text/javascript">
-							var button = (function cookieMonster(){
-								var buttonCode = "syn"; var paypalCookie = "syncookie";
-								if(Cookies.get('paypalCookie')){
-									buttonCode = Cookies.get('paypalCookie');
-									console.log("cookie found for button." + buttonCode);
-									return buttonCode;
-								}
-								else{
-									console.log("no cookie found, setting a new one...");
-									buttonCode = <?php $phpButton = json_encode(get_post_meta($postID, 'paypal_button_' . $currentLang, true)); 
-									echo $phpButton ?>;
-									Cookies.set('paypalCookie', buttonCode, { expires: 1, path: '' });
-									console.log(buttonCode);
-									return buttonCode;
-								}
-							})();
-							document.write(button);
-						</script>
-
-				 		<?php
+				 	<?php 
+				 		// If no cookie should be used, uncomment the following line and comment out the script above.
 				 		//echo get_post_meta($postID, 'paypal_button_' . $currentLang, true);
-				 	}
-				?>
-			</div>
+				} ?>
 
+			</div>
 	   	</div>
   	</div>
 
