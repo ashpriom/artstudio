@@ -564,15 +564,7 @@
 						<script type="text/javascript">
 							var button = (function cookieMonster(){
 								var buttonCode = "syn"; var paypalCookie = "syncookie";
-								function escapeHtml(unsafe) {
-								    return unsafe
-								    	.replace(/&/g, "&amp;")
-								        .replace(/</g, "&lt;")
-								        .replace(/>/g, "&gt;")
-								        .replace(/"/g, "&quot;")
-								        .replace(/'/g, "&#039;");
-								}
-								if(Cookies.get('paypalCookie')){ // if the cookie exists then get it and display it.
+								if(Cookies.get('paypalCookie')){
 									buttonCode = Cookies.get('paypalCookie');
 									console.log("cookie found for button." + buttonCode);
 									return buttonCode;
