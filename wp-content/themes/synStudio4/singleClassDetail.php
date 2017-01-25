@@ -567,19 +567,27 @@
 					<script src="<?php echo get_template_directory_uri(); ?>/js/js.cookie.js"></script>
 					<script type="text/javascript">
 						var button = (function cookieMonster(){ // store result in button using immediately invoked function expression
-							var buttonCode = "syn"; var paypalCookie = "syncookie"; var expiration = 1/480; // init vars, expiry in days
+							var buttonCode = "syn"; var paypalCookie = "syncookie"; 
+							var expiration = 1/720; // init vars, expiry in days, currently 2 minutes
+							var time = new Date();
 							if(Cookies.get('paypalCookie')){ // if there is already a cookie return it
 								buttonCode = Cookies.get('paypalCookie');
 								console.log("cookie found for button: \n" + buttonCode);
 								return buttonCode;
 							}
 							else{
-								console.log("no cookie found, setting a new one...\n");
 								buttonCode = <?php $phpButton = json_encode(get_post_meta($postID, 'paypal_button_' . $currentLang, true)); 
-								echo $phpButton ?>; // There is no existing cookie, so get button code from dashboard, set cookie, and return it.
-								Cookies.set('paypalCookie', buttonCode, { expires: expiration, path: '' });
-								console.log(buttonCode);
-								return buttonCode;
+								echo $phpButton ?>;
+								if(buttonCode){ // No cookie but there is button code. Get button code from dashboard, set cookie, and return it.
+									console.log("no cookie found, setting a new one with current button code...\n");
+									Cookies.set('paypalCookie', buttonCode, { expires: expiration, path: '' });
+									console.log(buttonCode + "\n");
+									console.log(time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());
+									return buttonCode;
+								}
+								else{ // There is no cookie and no button code in custom field either. Return without setting a cookie.
+									return buttonCode;
+								}
 							}
 						})();
 						document.write(button);
