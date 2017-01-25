@@ -1354,6 +1354,7 @@ input[type=submit]:hover {
 	overflow: hidden;
 }
 
+.classpageSidebar h3{font-style: normal;}
 
 a#lnk-teacherInfo,
 a#lnk-courseOutline,

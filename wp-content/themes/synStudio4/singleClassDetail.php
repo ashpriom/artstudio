@@ -416,21 +416,21 @@
 
 </div> <!-- column 1: end -->
 
-<div id="col2"> <!-- column 2: start -->
+<div id="col2" class="classpageSidebar"> <!-- column 2: start -->
 
 	<!-- Triggers effects on the boxes on right on mouseover -->
 	<?php if ($currentLang == "en") { ?>
-		<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')">Teacher Info</a>
-		<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>
-		<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Course Outline</a>
-		<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Schedule</a>
-		<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pre-Requisites</a>
+		<h3><a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')">Teacher Info</a></h3>
+		<h3><a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a></h3>
+		<h3><a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Course Outline</a></h3>
+		<h3><a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Schedule</a></h3>
+		<h3><a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pre-Requisites</a></h3>
 	<?php } else { ?>
-		<a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')"> À propos du prof</a>
-		<a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a>
-		<a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Plan de cours</a>
-		<a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Horaire</a>
-		<a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pré-requis</a>
+		<h3><a href="#" id="lnk-teacherInfo" onmouseover="showDetails('#cnt-teacherInfo')"> À propos du prof</a></h3>
+		<h3><a href="#" id="lnk-description" onmouseover="showDetails('#cnt-description')">Description</a></h3>
+		<h3><a href="#" id="lnk-courseOutline" onmouseover="showDetails('#cnt-courseOutline')">Plan de cours</a></h3>
+		<h3><a href="#" id="lnk-schedule" onmouseover="showDetails('#cnt-schedule')">Horaire</a></h3>
+		<h3><a href="#" id="lnk-preRequisites" onmouseover="showDetails('#cnt-preRequisites')">Pré-requis</a></h3>
 	<?php } ?>
 
 </div> <!-- column 2: end -->
