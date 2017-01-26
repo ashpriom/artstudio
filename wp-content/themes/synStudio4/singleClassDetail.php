@@ -562,9 +562,9 @@
 					So during the next 24 hours if the user revisits Skills Reboot, no matter how many times, he will see Button1, even if we add Button2 within those 24 hours.
 						
 					The user revisits Skills Reboot 24 hours since his first visit and he has no cookie anymore, as it has expired. So he will see Button2, and a new Button2 cookie will be added. He will continue to see Button2 for the next 24 hours. If the Button2 is unchanged during that time and he revisits after 24 hours, Button2 cookie will be set again for the next 24 hours, and so on.
-					-->
 					
-					<script src="<?php echo get_template_directory_uri(); ?>/js/js.cookie.js"></script>
+					
+					<script src="<?php // echo get_template_directory_uri(); ?>/js/js.cookie.js"></script>
 					<script type="text/javascript">
 						var button = (function cookieMonster(){ // store result in button using immediately invoked function expression
 							var buttonCode = "syn"; var paypalCookie = "syncookie"; // init vars 
@@ -576,8 +576,8 @@
 								return buttonCode;
 							}
 							else{
-								buttonCode = <?php $phpButton = json_encode(get_post_meta($postID, 'paypal_button_' . $currentLang, true)); 
-								echo $phpButton ?>;
+								buttonCode = <?php // $phpButton = json_encode(get_post_meta($postID, 'paypal_button_' . $currentLang, true)); 
+								// echo $phpButton ?>;
 								if(buttonCode){
 									console.log("No cookie found but there is button code. Setting a new cookie for the button code below...\n");
 									Cookies.set('paypalCookie', buttonCode, { expires: expiration, path: '' });
@@ -593,10 +593,10 @@
 						})();
 						document.write(button);
 					</script>
-
+					-->
 				 	<?php 
 				 		// If no cookie should be used, uncomment the following line and comment out the script above.
-				 		//echo get_post_meta($postID, 'paypal_button_' . $currentLang, true);
+				 		echo get_post_meta($postID, 'paypal_button_' . $currentLang, true);
 				} ?>
 
 			</div>
