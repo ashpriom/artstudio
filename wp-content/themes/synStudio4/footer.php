@@ -203,7 +203,6 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 
   ga('create', 'UA-37910846-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 
 <!-- Piwik disabled <noscript><p><img src="http://192.168.2.200/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>-->
