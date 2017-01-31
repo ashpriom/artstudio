@@ -44,7 +44,7 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
 
 
-<?php if($postID = '46'){ ?>
+<?php if($postID==46){ ?>
 
 <!-- A/B Testing Drawing From Life -->
 
