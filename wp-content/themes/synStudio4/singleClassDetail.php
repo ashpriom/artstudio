@@ -61,7 +61,7 @@
 	var pageVariations = [
 		function() {},  // Original: Do nothing. This will render the default HTML.
 	  	function() {    // Variation 1: Registration Text
-	    	$('#registration .text p').replaceWith("Variation text.");
+			$('#registration').contents().find('.text p').replaceWith("Variation 1.");
 		}
 	];
 
