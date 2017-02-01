@@ -59,7 +59,7 @@
 		var pageVariations = [
 			function(){},	// Original: Do nothing. This will render the default HTML.
 		  	function(){		// Variation 1: Registration Text
-				$('#registration .text p').html("This is our most popular class. Many sections fill up well before the deadline. <del>$340</del> <b><i>$310</i></b>.");
+				$('#registration .text p').html("This is our most popular class, many sections fill up well before the deadline. <del>$390</del> <b><i>$310</i></b>.");
 			}
 		];
 
