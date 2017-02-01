@@ -43,33 +43,6 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
 
-<!-- A/B Testing EN Drawing From Life -->
-<?php if($postID==46){ ?>
-
-	<!-- Load the Content Experiment JavaScript API client for the experiment -->
-	<script src="//www.google-analytics.com/cx/api.js?experiment=wWQfd520TNm0ZrtgqQfwig"></script>
-
-	<script>
-		// Ask Google Analytics which variation to show the user.	
-		var chosenVariation = cxApi.chooseVariation();
-	</script>
-
-	<script>
-		// Define JavaScript for each page variation of this experiment.
-		var pageVariations = [
-			function(){},	// Original: Do nothing. This will render the default HTML.
-		  	function(){		// Variation 1: Registration Text
-				$('#registration .text p').html("This is our most popular class, many sections fill up well before the deadline. <del>$390</del> <b><i>$310</i></b>.");
-			}
-		];
-
-		// Wait for the DOM to load, then execute the view for the chosen variation.
-		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
-	</script>
-
-<?php } ?>
-<!-- A/B Testing EN Drawing From Life -->
-
 
 <!-- A/B Testing Syntest -->
 <?php if($postID==14526){ ?>
