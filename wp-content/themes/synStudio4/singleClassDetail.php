@@ -92,7 +92,7 @@
 		  	function(){		// Variation 1: Registration Text
 				$('#registration .text p').html("This is our most popular class and many sections fill up well before the deadline. <del>$399</del> <b><i>$310</i></b>.");
 
-				buttonCode = "<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); echo $altPaypalCode; ?>";
+				var buttonCode = '<?php $altButton = echo json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>';
 				$('#paypalCode').html(buttonCode);
 			}
 		];
@@ -696,8 +696,16 @@
 
 			<div id="paypalCode">
 				<?php if($class_offered == "1"){ ?> <!-- Paypal Code: show it if the class is offered -->
-					
-					<!--
+				 	<?php 
+				 		// If no cookie should be used, uncomment the following line and comment out the script above.
+				 		echo get_post_meta($postID, 'paypal_button_' . $currentLang, true);
+				} ?>
+
+			</div>
+	   	</div>
+  	</div>
+
+  	<!--
 					Paypal Button Cookie Monster using JS Cookie ( ref: https://github.com/js-cookie/js-cookie)
 						
 					Here is a scenario involving Button1 and Button2:
@@ -739,14 +747,6 @@
 						document.write(button);
 					</script>
 					-->
-				 	<?php 
-				 		// If no cookie should be used, uncomment the following line and comment out the script above.
-				 		echo get_post_meta($postID, 'paypal_button_' . $currentLang, true);
-				} ?>
-
-			</div>
-	   	</div>
-  	</div>
 
 	<div class="info-box1Wrapper infobox-classpage">
   		<div class="info-box1">
