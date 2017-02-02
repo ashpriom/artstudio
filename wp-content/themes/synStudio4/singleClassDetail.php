@@ -91,9 +91,9 @@
 			function(){},	// Original: Do nothing. This will render the default HTML.
 		  	function(){		// Variation 1: Registration Text
 				$('#registration .text p').html("This is our most popular class and many sections fill up well before the deadline. <del>$399</del> <b><i>$310</i></b>.");
-				$('#registration .text div').html(
-					
-				);
+
+				buttonCode = "<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); echo $altPaypalCode; ?>";
+				$('#paypalCode').html(buttonCode);
 			}
 		];
 
