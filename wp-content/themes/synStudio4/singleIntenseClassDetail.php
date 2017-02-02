@@ -26,6 +26,10 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
 			function(){},	// Original: Do nothing. This will render the default HTML.
 		  	function(){		// Variation 1: Registration Text
 				$('#registration .text p').html("Spaces are limited and registration works on a first-come-first serve basis. Enroll in Canada's most popular concept art education program and join our many satisfied students to later become an alumni working in your dream industry job!");
+
+				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php echo $altButton ?>;
+				$('#paypalCode').html(buttonCode);
 			}
 		];
 
@@ -53,6 +57,10 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
 			function(){},	// Original: Do nothing. This will render the default HTML.
 		  	function(){		// Variation 1: Registration Text
 				$('#registration .text p').html("Comme les places sont limitées, premiers arrivés, premiers servis. Inscrivez-vous au program en conception artistique le plus populaire au Canada et joignez-vous au grand nombre d'étudiants satisfaits pour plus tard travailler dans votre carrière de rêve!");
+
+				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php echo $altButton ?>;
+				$('#paypalCode').html(buttonCode);
 			}
 		];
 

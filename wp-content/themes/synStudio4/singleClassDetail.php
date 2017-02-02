@@ -123,6 +123,10 @@
 			function(){},	// Original: Do nothing. This will render the default HTML.
 		  	function(){		// Variation 1: Registration Text
 				$('#registration .text p').html("This is our most popular digital class (over 1000 students have taken this class). <del>$470</del> <b><i>$430</i></b>.");
+
+				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php echo $altButton ?>;
+				$('#paypalCode').html(buttonCode);
 			}
 		];
 
@@ -151,6 +155,10 @@
 			function(){},	// Original: Do nothing. This will render the default HTML.
 		  	function(){		// Variation 1: Registration Text
 				$('#registration .text p').html("Ces cours sont très populaires et se remplissent bien avant la date limite <del>$399</del> <b><i>310 $</i></b>.");
+
+				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php echo $altButton ?>;
+				$('#paypalCode').html(buttonCode);
 			}
 		];
 
@@ -178,6 +186,10 @@
 			function(){},	// Original: Do nothing. This will render the default HTML.
 		  	function(){		// Variation 1: Registration Text
 				$('#registration .text p').html("Ce cours est notre plus populaire des cours numériques que nous offrons (plus de 1000 élèves l'ont assisté). <del>$470</del> <b><i>$430</i></b>.");
+
+				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php echo $altButton ?>;
+				$('#paypalCode').html(buttonCode);
 			}
 		];
 
