@@ -104,32 +104,6 @@
 <?php } ?>
 <!-- EN Drawing From Life -->
 
-<!-- EN Analytical Sketching 
-<?php // if($postID==6710){ ?>
-
-	<script src="//www.google-analytics.com/cx/api.js?experiment=S7ozD4jESO6N0Pwq9fRc5w"></script>
-
-	<script>
-		// Ask Google Analytics which variation to show the user.	
-		var chosenVariation = cxApi.chooseVariation();
-	</script>
-
-	<script>
-		// Define JavaScript for each page variation of this experiment.
-		var pageVariations = [
-			function(){},	// Original: Do nothing. This will render the default HTML.
-		  	function(){		// Variation 1: Registration Text
-				$('#registration .text p').html("This is our most popular class, many sections fill up well before the deadline. <del>$390</del> <b><i>$310</i></b>.");
-			}
-		];
-
-		// Wait for the DOM to load, then execute the view for the chosen variation.
-		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
-	</script>
-
-<?php } ?>
-EN Analytical Sketching -->
-
 
 <!-- EN Digital Painting -->
 <?php if($postID==563){ ?>
@@ -185,34 +159,6 @@ EN Analytical Sketching -->
 
 <?php } ?>
 <!-- FR Drawing From Life -->
-
-
-<!-- FR Analytical Sketching
-<?php // if($postID==11029){ ?>
-
-	<script src="//www.google-analytics.com/cx/api.js?experiment=KjjvO0XVRpi8yp0WPPzOMQ"></script>
-
-	<script>
-		// Ask Google Analytics which variation to show the user.	
-		var chosenVariation = cxApi.chooseVariation();
-	</script>
-
-	<script>
-		// Define JavaScript for each page variation of this experiment.
-		var pageVariations = [
-			function(){},	// Original: Do nothing. This will render the default HTML.
-		  	function(){		// Variation 1: Registration Text
-				$('#registration .text p').html("This is our most popular class, many sections fill up well before the deadline. <del>$390</del> <b><i>$310</i></b>.");
-			}
-		];
-
-		// Wait for the DOM to load, then execute the view for the chosen variation.
-		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
-	</script>
-
-<?php } ?>
-FR Analytical Sketching -->
-
 
 <!-- FR Digital Painting -->
 <?php if($postID==11073){ ?>
