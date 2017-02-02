@@ -73,6 +73,175 @@
 <?php } ?>
 <!-- A/B Testing Syntest -->
 
+
+<!-- EN Drawing From Life -->
+<?php if($postID==46){ ?>
+
+	<!-- Load the Content Experiment JavaScript API client for the experiment -->
+	<script src="//www.google-analytics.com/cx/api.js?experiment=DkxBDqjkRkauasHBvh0xtQ"></script>
+
+	<script>
+		// Ask Google Analytics which variation to show the user.	
+		var chosenVariation = cxApi.chooseVariation();
+	</script>
+
+	<script>
+		// Define JavaScript for each page variation of this experiment.
+		var pageVariations = [
+			function(){},	// Original: Do nothing. This will render the default HTML.
+		  	function(){		// Variation 1: Registration Text
+				$('#registration .text p').html("This is our most popular class and many sections fill up well before the deadline. <del>$399</del> <b><i>$310</i></b>.");
+				$('#registration .text div').html(
+					
+				);
+			}
+		];
+
+		// Wait for the DOM to load, then execute the view for the chosen variation.
+		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
+	</script>
+
+<?php } ?>
+<!-- EN Drawing From Life -->
+
+<!-- EN Analytical Sketching 
+<?php // if($postID==6710){ ?>
+
+	<script src="//www.google-analytics.com/cx/api.js?experiment=S7ozD4jESO6N0Pwq9fRc5w"></script>
+
+	<script>
+		// Ask Google Analytics which variation to show the user.	
+		var chosenVariation = cxApi.chooseVariation();
+	</script>
+
+	<script>
+		// Define JavaScript for each page variation of this experiment.
+		var pageVariations = [
+			function(){},	// Original: Do nothing. This will render the default HTML.
+		  	function(){		// Variation 1: Registration Text
+				$('#registration .text p').html("This is our most popular class, many sections fill up well before the deadline. <del>$390</del> <b><i>$310</i></b>.");
+			}
+		];
+
+		// Wait for the DOM to load, then execute the view for the chosen variation.
+		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
+	</script>
+
+<?php } ?>
+EN Analytical Sketching -->
+
+
+<!-- EN Digital Painting -->
+<?php if($postID==563){ ?>
+
+	<!-- Load the Content Experiment JavaScript API client for the experiment -->
+	<script src="//www.google-analytics.com/cx/api.js?experiment=jvdTAt5rT3CxkXBmLNzrTA"></script>
+
+	<script>
+		// Ask Google Analytics which variation to show the user.	
+		var chosenVariation = cxApi.chooseVariation();
+	</script>
+
+	<script>
+		// Define JavaScript for each page variation of this experiment.
+		var pageVariations = [
+			function(){},	// Original: Do nothing. This will render the default HTML.
+		  	function(){		// Variation 1: Registration Text
+				$('#registration .text p').html("This is our most popular digital class (over 1000 students have taken this class). <del>$470</del> <b><i>$430</i></b>.");
+			}
+		];
+
+		// Wait for the DOM to load, then execute the view for the chosen variation.
+		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
+	</script>
+
+<?php } ?>
+<!-- EN Digital Painting -->
+
+
+<!-- FR Drawing From Life -->
+<?php if($postID==11026){ ?>
+
+	<!-- Load the Content Experiment JavaScript API client for the experiment -->
+	<script src="//www.google-analytics.com/cx/api.js?experiment=rLTo-ZTvRdmkr97C1jR-3A"></script>
+
+	<script>
+		// Ask Google Analytics which variation to show the user.	
+		var chosenVariation = cxApi.chooseVariation();
+	</script>
+
+	<script>
+		// Define JavaScript for each page variation of this experiment.
+		var pageVariations = [
+			function(){},	// Original: Do nothing. This will render the default HTML.
+		  	function(){		// Variation 1: Registration Text
+				$('#registration .text p').html("Ces cours sont très populaires et se remplissent bien avant la date limite <del>$399</del> <b><i>310 $</i></b>.");
+			}
+		];
+
+		// Wait for the DOM to load, then execute the view for the chosen variation.
+		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
+	</script>
+
+<?php } ?>
+<!-- FR Drawing From Life -->
+
+
+<!-- FR Analytical Sketching
+<?php // if($postID==11029){ ?>
+
+	<script src="//www.google-analytics.com/cx/api.js?experiment=KjjvO0XVRpi8yp0WPPzOMQ"></script>
+
+	<script>
+		// Ask Google Analytics which variation to show the user.	
+		var chosenVariation = cxApi.chooseVariation();
+	</script>
+
+	<script>
+		// Define JavaScript for each page variation of this experiment.
+		var pageVariations = [
+			function(){},	// Original: Do nothing. This will render the default HTML.
+		  	function(){		// Variation 1: Registration Text
+				$('#registration .text p').html("This is our most popular class, many sections fill up well before the deadline. <del>$390</del> <b><i>$310</i></b>.");
+			}
+		];
+
+		// Wait for the DOM to load, then execute the view for the chosen variation.
+		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
+	</script>
+
+<?php } ?>
+FR Analytical Sketching -->
+
+
+<!-- FR Digital Painting -->
+<?php if($postID==11073){ ?>
+
+	<!-- Load the Content Experiment JavaScript API client for the experiment -->
+	<script src="//www.google-analytics.com/cx/api.js?experiment=eNyTpsDrQ7O8AJ3QC1h5sQ"></script>
+
+	<script>
+		// Ask Google Analytics which variation to show the user.	
+		var chosenVariation = cxApi.chooseVariation();
+	</script>
+
+	<script>
+		// Define JavaScript for each page variation of this experiment.
+		var pageVariations = [
+			function(){},	// Original: Do nothing. This will render the default HTML.
+		  	function(){		// Variation 1: Registration Text
+				$('#registration .text p').html("Ce cours est notre plus populaire des cours numériques que nous offrons (plus de 1000 élèves l'ont assisté). <del>$470</del> <b><i>$430</i></b>.");
+			}
+		];
+
+		// Wait for the DOM to load, then execute the view for the chosen variation.
+		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
+	</script>
+
+<?php } ?>
+<!-- FR Digital Painting -->
+
+
 <script type="application/ld+json">
 	{
 	  "@context": "http://schema.org",
@@ -579,7 +748,7 @@
 					<?php } ?>
 			</div></br>
 
-			<div>
+			<div id="paypalCode">
 				<?php if($class_offered == "1"){ ?> <!-- Paypal Code: show it if the class is offered -->
 					
 					<!--

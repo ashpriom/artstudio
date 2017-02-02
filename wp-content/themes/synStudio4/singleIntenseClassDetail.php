@@ -9,6 +9,60 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.jcarousel.pack.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery_cookie.min.js"></script>
 
+<!-- EN FTI -->
+<?php if($postID==8397){ ?>
+
+	<!-- Load the Content Experiment JavaScript API client for the experiment -->
+	<script src="//www.google-analytics.com/cx/api.js?experiment=m4cY7Qn1SuO6YU00QGuc3A"></script>
+
+	<script>
+		// Ask Google Analytics which variation to show the user.	
+		var chosenVariation = cxApi.chooseVariation();
+	</script>
+
+	<script>
+		// Define JavaScript for each page variation of this experiment.
+		var pageVariations = [
+			function(){},	// Original: Do nothing. This will render the default HTML.
+		  	function(){		// Variation 1: Registration Text
+				$('#registration .text p').html("Spaces are limited and registration works on a first-come-first serve basis. Enroll in Canada's most popular concept art education program and join our many satisfied students to later become an alumni working in your dream industry job!");
+			}
+		];
+
+		// Wait for the DOM to load, then execute the view for the chosen variation.
+		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
+	</script>
+
+<?php } ?>
+<!-- EN FTI -->
+
+<!-- FR FTI -->
+<?php if($postID==11019){ ?>
+
+	<!-- Load the Content Experiment JavaScript API client for the experiment -->
+	<script src="//www.google-analytics.com/cx/api.js?experiment=x8-5cYbhTm66sAy3zNU0eg"></script>
+
+	<script>
+		// Ask Google Analytics which variation to show the user.	
+		var chosenVariation = cxApi.chooseVariation();
+	</script>
+
+	<script>
+		// Define JavaScript for each page variation of this experiment.
+		var pageVariations = [
+			function(){},	// Original: Do nothing. This will render the default HTML.
+		  	function(){		// Variation 1: Registration Text
+				$('#registration .text p').html("Comme les places sont limitées, premiers arrivés, premiers servis. Inscrivez-vous au program en conception artistique le plus populaire au Canada et joignez-vous au grand nombre d'étudiants satisfaits pour plus tard travailler dans votre carrière de rêve!");
+			}
+		];
+
+		// Wait for the DOM to load, then execute the view for the chosen variation.
+		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
+	</script>
+
+<?php } ?>
+<!-- FR FTI -->
+
 <script type="text/javascript">
 	function closeDetailBox(a){
 	   $(a).hide(); 
@@ -376,7 +430,7 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
 					</h3>
 				</div>
 				</br>
-				<div><?php echo get_post_meta($postID, 'registration_form_' . $currentLang, true); ?></div>
+				<div id="paypalCode"><?php echo get_post_meta($postID, 'registration_form_' . $currentLang, true); ?></div>
 	   		</div> 
 	  	</div>
 	    
