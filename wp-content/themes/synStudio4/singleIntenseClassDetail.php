@@ -13,7 +13,7 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
 <?php if($postID==8397){ ?>
 
 	<!-- Load the Content Experiment JavaScript API client for the experiment -->
-	<script src="//www.google-analytics.com/cx/api.js?experiment=m4cY7Qn1SuO6YU00QGuc3A"></script>
+	<script src="https://www.google-analytics.com/cx/api.js?experiment=m4cY7Qn1SuO6YU00QGuc3A"></script>
 
 	<script>
 		// Ask Google Analytics which variation to show the user.	
@@ -44,7 +44,7 @@ $options = get_option( 'sample_theme_options' ); // This is necessary to trigger
 
 <?php if($postID==11019){ ?>
 
-	<script src="//www.google-analytics.com/cx/api.js?experiment=x8-5cYbhTm66sAy3zNU0eg"></script>
+	<script src="https://www.google-analytics.com/cx/api.js?experiment=x8-5cYbhTm66sAy3zNU0eg"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
 
 	<script>
