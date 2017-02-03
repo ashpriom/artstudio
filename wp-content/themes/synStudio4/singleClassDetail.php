@@ -81,15 +81,15 @@
 	<script src="//www.google-analytics.com/cx/api.js?experiment=DkxBDqjkRkauasHBvh0xtQ"></script>
 
 	<script>
-		// Ask Google Analytics which variation to show the user.	
+		// Ask Google Analytics which variation to show the user.
 		var chosenVariation = cxApi.chooseVariation();
 	</script>
 
 	<script>
 		// Define JavaScript for each page variation of this experiment.
 		var pageVariations = [
-			function(){},	// Original: Do nothing. This will render the default HTML.
-		  	function(){		// Variation 1: Registration Text
+			function(){},	// A Version: This will render the default HTML.
+		  	function(){		// B Version: Use JQuery to manipulate DOM elements.
 				$('#registration .text p').html("This is our most popular class and many sections fill up well before the deadline. <del>$399</del> <b><i>$310</i></b>.");
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
@@ -107,21 +107,15 @@
 
 
 <!-- EN Digital Painting -->
+
 <?php if($postID==563){ ?>
 
-	<!-- Load the Content Experiment JavaScript API client for the experiment -->
 	<script src="//www.google-analytics.com/cx/api.js?experiment=jvdTAt5rT3CxkXBmLNzrTA"></script>
-
+	<script> var chosenVariation = cxApi.chooseVariation(); </script>
 	<script>
-		// Ask Google Analytics which variation to show the user.	
-		var chosenVariation = cxApi.chooseVariation();
-	</script>
-
-	<script>
-		// Define JavaScript for each page variation of this experiment.
 		var pageVariations = [
-			function(){},	// Original: Do nothing. This will render the default HTML.
-		  	function(){		// Variation 1: Registration Text
+			function(){},
+		  	function(){
 				$('#registration .text p').html("This is our most popular digital class (over 1000 students have taken this class). <del>$470</del> <b><i>$430</i></b>.");
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
@@ -130,30 +124,24 @@
 			}
 		];
 
-		// Wait for the DOM to load, then execute the view for the chosen variation.
-		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
+		$(document).ready(pageVariations[chosenVariation]);
 	</script>
 
 <?php } ?>
+
 <!-- EN Digital Painting -->
 
 
 <!-- FR Drawing From Life -->
+
 <?php if($postID==11026){ ?>
 
-	<!-- Load the Content Experiment JavaScript API client for the experiment -->
 	<script src="//www.google-analytics.com/cx/api.js?experiment=rLTo-ZTvRdmkr97C1jR-3A"></script>
-
+	<script> var chosenVariation = cxApi.chooseVariation(); </script>
 	<script>
-		// Ask Google Analytics which variation to show the user.	
-		var chosenVariation = cxApi.chooseVariation();
-	</script>
-
-	<script>
-		// Define JavaScript for each page variation of this experiment.
 		var pageVariations = [
-			function(){},	// Original: Do nothing. This will render the default HTML.
-		  	function(){		// Variation 1: Registration Text
+			function(){},
+		  	function(){
 				$('#registration .text p').html("Ces cours sont très populaires et se remplissent bien avant la date limite <del>$399</del> <b><i>310 $</i></b>.");
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
@@ -162,29 +150,23 @@
 			}
 		];
 
-		// Wait for the DOM to load, then execute the view for the chosen variation.
-		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
+		$(document).ready(pageVariations[chosenVariation]);
 	</script>
 
 <?php } ?>
+
 <!-- FR Drawing From Life -->
 
 <!-- FR Digital Painting -->
+
 <?php if($postID==11073){ ?>
 
-	<!-- Load the Content Experiment JavaScript API client for the experiment -->
 	<script src="//www.google-analytics.com/cx/api.js?experiment=eNyTpsDrQ7O8AJ3QC1h5sQ"></script>
-
+	<script> var chosenVariation = cxApi.chooseVariation(); </script>
 	<script>
-		// Ask Google Analytics which variation to show the user.	
-		var chosenVariation = cxApi.chooseVariation();
-	</script>
-
-	<script>
-		// Define JavaScript for each page variation of this experiment.
 		var pageVariations = [
-			function(){},	// Original: Do nothing. This will render the default HTML.
-		  	function(){		// Variation 1: Registration Text
+			function(){},
+		  	function(){
 				$('#registration .text p').html("Ce cours est notre plus populaire des cours numériques que nous offrons (plus de 1000 élèves l'ont assisté). <del>$470</del> <b><i>$430</i></b>.");
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
@@ -193,8 +175,7 @@
 			}
 		];
 
-		// Wait for the DOM to load, then execute the view for the chosen variation.
-		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
+		$(document).ready(pageVariations[chosenVariation]);
 	</script>
 
 <?php } ?>
