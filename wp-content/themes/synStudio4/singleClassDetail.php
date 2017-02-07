@@ -132,6 +132,32 @@
 <!-- EN Digital Painting -->
 
 
+<!-- EN Analytical Sketching -->
+
+<?php if($postID==){ ?>
+
+	<script src="//www.google-analytics.com/cx/api.js?experiment=jvdTAt5rT3CxkXBmLNzrTA"></script>
+	<script> var chosenVariation = cxApi.chooseVariation(); </script>
+	<script>
+		var pageVariations = [
+			function(){},
+		  	function(){
+				$('#registration .text p').html("This is our most popular digital class (over 1000 students have taken this class). <del>$470</del> <b><i>$430</i></b>.");
+
+				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php echo $altButton ?>;
+				$('#paypalCode').html(buttonCode);
+			}
+		];
+
+		$(document).ready(pageVariations[chosenVariation]);
+	</script>
+
+<?php } ?>
+
+<!-- EN Analytical Sketching -->
+
+
 <!-- FR Drawing From Life -->
 
 <?php if($postID==11026){ ?>
@@ -409,7 +435,10 @@
 
      	<div id="slideshow-carousel"><ul id="carousel" class="jcarousel jcarousel-skin-tango"></ul></div>
 
-     	<script type="text/javascript">
+     	
+     	<div id="slideshowScript">
+
+     		<script type="text/javascript">
 
 		 		<?php
 				/*	echo get_post_meta($postID, 'slideshow_' . $currentLang, true);
@@ -485,6 +514,12 @@
 					    echo "}; \n";
 					}
 				?>
+
+			</script>
+
+		</div>
+
+		<script>
 
 			//Find out number of Slides
 			var totalSlides2 = 0;
