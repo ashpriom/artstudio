@@ -196,8 +196,85 @@ Template Name: Concept Art Diploma - About
                     </div>
                 </div>
 
-                <h2 class="orange-text off-margin-header">Teachers for the Fall 2016 term:</h2>
+                <h2 class="orange-text off-margin-header">Teachers for the Winter 2017 term:</h2>
                 <!-- Teacher Bios -->
+                        <div class="row row-73percent">
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jeong.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jeong-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Jeong H. Shin</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        Jeong H. Shin is currently a senior concept artist at Ubisoft. His unique designs can be seen in blockbuster titles such as For Honor, Watchdogs and Far Cry 3 and 4. He studied with world-renowned vehicle and entertainment designer Scott Robertson at Art Center College of Design. Robertson’s tutelage, as well as Shin’s own background in industrial, vehicle and entertainment design led him to tenure at General Motors as a senior creative designer. There, Shin designed two Chevrolet (Cruze and Sonic) vehicles that are currently on the road. While concept designer at Mattel, Shin designed cars for Hotwheels Battleforce 5, the animated series.
+                                        <br /><br />
+                                        Jeong is teaching Sketching for Production in the Concept Art Diploma Program.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Eric Gagnon</h4>
+                                   
+                                    <p class="term-description teacher-description">
+                                        Eric Gagnon is a senior concept artist and art director for gaming, film and television,
+                                        in addition to having six years of teaching experience at the university level. He is 
+                                        presently working as a lead senior concept artist at Warner Bros Games Montreal FOR AAA 
+                                        games in the DC Universe francise. Previously, he’s worked at various gaming companies 
+                                        such as Eidos, Gameloft and Behavior, as well as animation and production studios such 
+                                        as Digital District, Ciné-Groupe Animation and Studio Pascal Blais. His other credits 
+                                        include Batman Arkham Origins franchise, Deus Ex Human Revolution, Kim Possible, 
+                                        Ballerina, Ghost Recon, Splinter Cell Chaos Theory and many 2D and 3D animated television
+                                        shows.
+                                        <br /><br />
+                                        Eric is teaching Image Integration in the Concept Art Diploma Program.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-73percent">
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Oleg Dergachov</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        Oleg Dergachov is an art director, fine artist, cartoonist, animator, and illustrator trained by the Ukrainian Academy. He has won over 85 international prizes and his work is displayed in the Victoria and Albert Museum in London, Centre Pompidou in Paris, the Tretyakov State Gallery in Moscow, the Cirque du Soleil collection as well as other prestigious art museums and public collection. He has taught for 16 years in prestigious universities, design schools and animation academies in 6 countries.
+                                        <br /><br />
+                                        Oleg is teaching Anatomy Study in the Concept Art Diploma Program.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-benoit.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-benoit-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Benoit Massé</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        Benoit Massé is a web and graphic designer with over 10 years of freelance and in-house experience, having worked various companies such as Lg2, SAT and Ubisoft, where he was the Director of Presentation/User Interface, for ShapeUP, a Kinect based sport game. His freelance portfolio includes a broad range of projects such as motion concept for Baku 2015 European Games, motion mapping video for Luminothérapie, designing e-commerce websites for companies like Velvet Moustache and Bonlook, among others. He is also a two time Applied Arts Magazine’s Graphics Design Winner for his works “Ecodrain” (2012) and “This is Digital Marketing” (2011). Benoit is currently working as a UI designer at Shopify, where he creates visual designs that help improve the user experience for entrepreneurs using the e-commerce platform.  
+                                        <br /><br />
+                                        Benoit is teaching Visual Communication in the Concept Art Diploma Program.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="teacherbox">
@@ -221,8 +298,83 @@ Template Name: Concept Art Diploma - About
                                         others. His work has been featured in “Exodyssey: Visual Development of an Epic Adventure”
                                         and  “Steampainting: SPARK - Creative process”, both by Steambot Studios.
                                         <br /><br />
-                                        Thierry is the Director of Studies at Syn Studio. In addition to being the Chair of the Concept 
-                                        Art Diploma Program, he will also be teaching Intro to Concept Art.
+                                        Thierry is the Director of Studies at Syn Studio. In addition to being the Chair of the Concept Art Diploma Program.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
+     
+                                    <p class="term-description teacher-description">Christian Robert de Massy is one of the film industry’s best 
+                                        kept secrets. He’s been working for the last 8 years as a freelance concept artist and
+                                        illustrator on films such as X-Men: Days of Future Past, Snow White and The Curious
+                                        Case of Benjamin Button. All without ever having put any artwork online (until now).
+                                        He’s known for his incredible speed and the beauty of his environment paintings and
+                                        he’s a popular teacher here at Syn Studio.
+                                    </p>
+                                </div>
+                            </div>                          
+                        </div>
+                        <div class="row row-73percent">
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-francis.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-francis-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Francis Back</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        Francis Back is an illustrator and storyboard artist who studied Fine Arts in Switzerland and who has worked on over a hundred Canadian and American TV and film productions, such as Spyderwick Chronicles, Mummy 3, Tomb of the Dragon Emperor, and the Academy Award nominated film Incendie. Francis also did storyboards, and concept art, for three Cirque du Soleil shows including Ka by director Robert Lepage and he’s worked on educational films for the National Film Board of Canada (NFB). Francis has over 20 years of experience teaching storyboarding in Montreal and in Taiwan.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
+                             
+                                    <p class="term-description teacher-description">Daniel Kvasznicza is a concept artist, illustrator and matte
+                                        painter with over 10 years of industry experience. He’s worked on AAA franchises including
+                                        Batman: Arkham Origins, Starcraft, Far Cry, Dishonoured, Elder Scrolls, Diablo, Fallout,
+                                        Deus Ex and Assassin’s Creed and is currently working as a senior concept artist at
+                                        Warner Brother Games Montreal. He’s a technical wizard who’s created pipelines, software,
+                                        scripts, brushes and other tools. Some of his jaw-dropping concept art has been featured
+                                        on several E3 posters! He is also a sought after instructor who’s given popular classes
+                                        and workshops in concept design, illustration and 3D to students and professionals at
+                                        Alpha Vision, Meduzarts and here at Syn Studio!
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row row-73percent">
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
+                                 
+                                    <p class="term-description teacher-description">Frédéric Bennett is currently a Senior Concept Artist at Eidos
+                                        Montreal, in charge of designing characters for the latest Deus Ex game. During his eight
+                                        years as a concept artist working mainly in the games’ industry, he has contributed to
+                                        projects in the Conan, Transformers, Wet and Kung Fu Panda universes. Frédéric is a very
+                                        well appreciated teacher by his students from his Character Rendering class.
                                     </p>
                                 </div>
                             </div>
@@ -247,175 +399,9 @@ Template Name: Concept Art Diploma - About
                                         digital matte curriculum.  A recipient of several awards including the CG Talk choice
                                         award and the XSI Gallery Award, Jessy’s work has been featured in several publications
                                         such as Exposé 5, Mattepainting.org and the CG Channel.
-                                        <br /><br />
-                                        Jessy is teaching Visual Reference Library and Digital Image Manipulation in the 
-                                        Concept Art Diploma Program.
                                     </p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row row-73percent">
-                            <div class="col-md-6">
-                                <div class="teacherbox">
-                                    <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
-                                    </div>
-                                    
-                                    <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
-                             
-                                    <p class="term-description teacher-description">Daniel Kvasznicza is a concept artist, illustrator and matte
-                                        painter with over 10 years of industry experience. He’s worked on AAA franchises including
-                                        Batman: Arkham Origins, Starcraft, Far Cry, Dishonoured, Elder Scrolls, Diablo, Fallout,
-                                        Deus Ex and Assassin’s Creed and is currently working as a senior concept artist at
-                                        Warner Brother Games Montreal. He’s a technical wizard who’s created pipelines, software,
-                                        scripts, brushes and other tools. Some of his jaw-dropping concept art has been featured
-                                        on several E3 posters! He is also a sought after instructor who’s given popular classes
-                                        and workshops in concept design, illustration and 3D to students and professionals at
-                                        Alpha Vision, Meduzarts and here at Syn Studio!
-                                        <br /><br />
-                                        Daniel is teaching Visual Reference Library and Digital Image Manipulation in the
-                                        Concept Art Diploma Program.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="teacherbox">
-                                    <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
-                                    </div>
-                                    
-                                    <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
-     
-                                    <p class="term-description teacher-description">Christian Robert de Massy is one of the film industry’s best 
-                                        kept secrets. He’s been working for the last 8 years as a freelance concept artist and
-                                        illustrator on films such as X-Men: Days of Future Past, Snow White and The Curious
-                                        Case of Benjamin Button. All without ever having put any artwork online (until now).
-                                        He’s known for his incredible speed and the beauty of his environment paintings and
-                                        he’s a popular teacher here at Syn Studio.
-                                        <br /><br />
-                                        Christian is teaching the "How to Draw" module in Sketching for Production in 
-                                        the Concept Art Diploma Program.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-73percent">
-                            <div class="col-md-6">
-                                <div class="teacherbox">
-                                    <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
-                                    </div>
-                                    
-                                    <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
-                                 
-                                    <p class="term-description teacher-description">Frédéric Bennett is currently a Senior Concept Artist at Eidos
-                                        Montreal, in charge of designing characters for the latest Deus Ex game. During his eight
-                                        years as a concept artist working mainly in the games’ industry, he has contributed to
-                                        projects in the Conan, Transformers, Wet and Kung Fu Panda universes. Frédéric is a very
-                                        well appreciated teacher by his students from his Character Rendering class.
-                                        <br /><br />
-                                        Frédéric is teaching the "How to Render" module in Sketching for Production in the Concept Art Diploma
-                                        Program.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="teacherbox">
-                                    <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-gagnon-art.jpg" alt="teacher"></div>
-                                    </div>
-                                    
-                                    <h4 class="orange-text nopaddingleft">Eric Gagnon</h4>
-                                   
-                                    <p class="term-description teacher-description">
-                                        Eric Gagnon is a senior concept artist and art director for gaming, film and television,
-                                        in addition to having six years of teaching experience at the university level. He is 
-                                        presently working as a lead senior concept artist at Warner Bros Games Montreal FOR AAA 
-                                        games in the DC Universe francise. Previously, he’s worked at various gaming companies 
-                                        such as Eidos, Gameloft and Behavior, as well as animation and production studios such 
-                                        as Digital District, Ciné-Groupe Animation and Studio Pascal Blais. His other credits 
-                                        include Batman Arkham Origins franchise, Deus Ex Human Revolution, Kim Possible, 
-                                        Ballerina, Ghost Recon, Splinter Cell Chaos Theory and many 2D and 3D animated television
-                                        shows.
-                                        <br /><br />    
-                                        Eric is teaching the "How to Sketch" module in Sketching for Production in the Concept
-                                        Art Diploma Program.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-73percent">
-                            <div class="col-md-6">
-                                <div class="teacherbox">
-                                    <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-francis.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-francis-art.jpg" alt="teacher"></div>
-                                    </div>
-                                    
-                                    <h4 class="orange-text nopaddingleft">Francis Back</h4>
-                                 
-                                    <p class="term-description teacher-description">
-                                        Francis Back is an illustrator and storyboard artist who studied Fine Arts in Switzerland and who has worked on over a hundred Canadian and American TV and film productions, such as Spyderwick Chronicles, Mummy 3, Tomb of the Dragon Emperor, and the Academy Award nominated film Incendie. Francis also did storyboards, and concept art, for three Cirque du Soleil shows including Ka by director Robert Lepage and he’s worked on educational films for the National Film Board of Canada (NFB). Francis has over 20 years of experience teaching storyboarding in Montreal and in Taiwan.
-                                        <br /><br />
-                                        Francis is teaching the "Intro to Cinema" module in Visual Reference Library in the Concept Art Diploma
-                                        Program.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="teacherbox">
-                                    <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg-art.jpg" alt="teacher"></div>
-                                    </div>
-                                    
-                                    <h4 class="orange-text nopaddingleft">Oleg Dergachov</h4>
-                                 
-                                    <p class="term-description teacher-description">
-                                        Oleg Dergachov is an art director, fine artist, cartoonist, animator, and illustrator trained by the Ukrainian Academy. He has won over 85 international prizes and his work is displayed in the Victoria and Albert Museum in London, Centre Pompidou in Paris, the Tretyakov State Gallery in Moscow, the Cirque du Soleil collection as well as other prestigious art museums and public collection. He has taught for 16 years in prestigious universities, design schools and animation academies in 6 countries.
-                                        <br /><br />
-                                        Oleg will be teaching Anatomy Study in the Winter Term in Concept Art Diploma Program.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-73percent">
-                            <div class="col-md-6">
-                                <div class="teacherbox">
-                                    <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jeong.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jeong-art.jpg" alt="teacher"></div>
-                                    </div>
-                                    
-                                    <h4 class="orange-text nopaddingleft">Jeong H. Shin</h4>
-                                 
-                                    <p class="term-description teacher-description">
-                                        Jeong H. Shin is currently a senior concept artist at Ubisoft. His unique designs can be seen in blockbuster titles such as For Honor, Watchdogs and Far Cry 3 and 4. He studied with world-renowned vehicle and entertainment designer Scott Robertson at Art Center College of Design. Robertson’s tutelage, as well as Shin’s own background in industrial, vehicle and entertainment design led him to tenure at General Motors as a senior creative designer. There, Shin designed two Chevrolet (Cruze and Sonic) vehicles that are currently on the road. While concept designer at Mattel, Shin designed cars for Hotwheels Battleforce 5, the animated series.
-                                        <br /><br />
-                                        Jeong will be teaching Sketching for Production in the Winter Term of Concept Art Diploma Program.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="teacherbox">
-                                    <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-benoit.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-benoit-art.jpg" alt="teacher"></div>
-                                    </div>
-                                    
-                                    <h4 class="orange-text nopaddingleft">Benoit Massé</h4>
-                                 
-                                    <p class="term-description teacher-description">
-                                        Benoit Massé is a web and graphic designer with over 10 years of freelance and in-house experience, having worked various companies such as Lg2, SAT and Ubisoft, where he was the Director of Presentation/User Interface, for ShapeUP, a Kinect based sport game. His freelance portfolio includes a broad range of projects such as motion concept for Baku 2015 European Games, motion mapping video for Luminothérapie, designing e-commerce websites for companies like Velvet Moustache and Bonlook, among others. He is also a two time Applied Arts Magazine’s Graphics Design Winner for his works “Ecodrain” (2012) and “This is Digital Marketing” (2011). Benoit is currently working as a UI designer at Shopify, where he creates visual designs that help improve the user experience for entrepreneurs using the e-commerce platform.  
-                                        <br /><br />
-                                        Benoit will be teaching Visual Communication in the Winter Term in Concept Art Diploma Program.
-                                    </p>
-                                </div>
-                            </div>
+                            </div>                           
                         </div>
                 <br />
             </div>
@@ -889,106 +875,26 @@ Template Name: Concept Art Diploma - About
                     </div>
                 </div>
                 <br />
-                <h2 class="orange-text off-margin-header">Les professeurs pour la session d'automne 2016 :</h2>
+                <h2 class="orange-text off-margin-header">Les professeurs pour la session d'hiver 2017 :</h2>
                 <!-- Teacher Bios -->
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="teacherbox">
                                     <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jeong.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jeong-art.jpg" alt="teacher"></div>
                                     </div>
                                     
-                                    <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
-                                
-                                    <p class="term-description teacher-description">Thierry Doizon aka Barontieri a été précédemment un directeur artistique et artiste en conception senior avec plus de 20 ans d’expérience dans l’industrie, ayant travaillé pour une grande variété de compagnies autour du monde, tels Square Enix, Ubisoft, Disney Interactive et Eidos. Thierry a enseigné au niveau collégial et a été invité pour parler à plusieurs ateliers et conférences dont Disney Imagineering, ADAPT, Ubisoft Campus, MIGS, FIEA, Massive Black et The Gnomon Workshop, ce dernier pour lequel il a également produit un DVD éducatif (Character Design Pipeline: Production Art & Research Techniques with BARONTiERi). Quelques autres de ses projets incluent: Assassin's Creed, Prince of Persia, Deus Ex: Human Revolutions et Tron: Legacy, entre autres. Ses oeuvres ont été publiées dans “Exodyssey: Visual Development of an Epic Adventure” et “Steampainting: SPARK - Creative process”, tous les deux par Steambot Studios, dont il est le co-fondateur.
-                                    <br /><br />
-                                    Thierry est le directeur d'études au Syn Studio. En plus d'être le président du Diplôme en 
-                                    conception artistique, il enseigne Intro to Concept Art.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="teacherbox">
-                                    <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
-                                    </div>
-                                    
-                                    <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
-                            
-                                    <p class="term-description teacher-description">Jessy Veilleux est le fondateur et directeur artistique de Meduzarts, un studio de personnages et d’environnements numériques, ainsi que le directeur artistique de Digital Dimension. Il a contribué des oeuvres au publication de plusieurs films et jeux vidéos très connus tels StarWars, The Force Unleashed II, Avatar VG, 300, AION, FallOut 3, SinCity, Transformers: Revenge of the Fallen VG, Assassin’s Creed II, Prince of Persia II et Mortal Kombat X, entre autres. Jessy enseigne depuis 10 ans au Centre NAD à Montréal, où il a contribué grandement au premier programme d’études numériques ‘matte’. Plusieurs prix portent son nom, tels le CG Talk choice award et le XSI Gallery Award en plus que ses oeuvres ont été publiées dans Exposé 5, Mattepainting.org and the CG Channel.
-                                    <br /><br />
-                                    Jessy enseigne Visual Reference Library et Digital Image Manipulation dans le Diplôme en Conception Artistique.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-73percent">
-                            <div class="col-md-6">
-                                <div class="teacherbox">
-                                    <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
-                                    </div>
-                                    
-                                    <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
+                                    <h4 class="orange-text nopaddingleft">Jeong H. Shin</h4>
                                  
-                                    <p class="term-description teacher-description">Daniel Kvasznicza est un artiste de 
-                                        concept et matte painter ayant plus de 10 ans d’expérience dans l’industrie du jeu
-                                        vidéo. Il a collaboré à plusieurs franchises AAA comme Starcraft, Far Cry, 
-                                        Dishonoured, Elder Scrolls, Diablo, Fallout, Deus Ex, Assassin’s Creed et Batman:
-                                        Arkham Origins. Il est présentement artiste de concept senior chez Warner Bros.
-                                        Games Montréal. Ce génie technique a créé des softwares, des scripts, des pinceaux
-                                        personnalisés et quelques-unes de ses oeuvres ont figuré sur des posters de E3!
-                                        Il est aussi un prof recherché ayant enseigné plusieurs ateliers et cours de
-                                        concept art à Syn Studio,  Alpha Vision et Méduzart.<br /><br />
-                                        Daniel enseigne Visual Reference Library et Digital Image Manipulation dans le 
-                                        Diplôme en Conception Artistique.
+                                    <p class="term-description teacher-description">
+                                        Jeong H. Shin est présentement artiste de concept sénior chez Ubisoft. Ces designs uniques peuvent être admirés dans des jeux tels que For Honor, Watchdogs et Far Cry 3 et 4. Il a étudié avec Scott Robertson, designer de vehicule de renom au Art Center College of Design. La tutelle de Robertson jumelée à la carrière de Shin en design industriel et véhicules l’a mené au poste de designer créatif chez General Motors. Là, Shin a dessiné deux Chevrolets (Cruze et Sonic) qui sont présentement sur la route. Lorsqu’il était designer de concept chez Mattel, Shin à aussi concu les voitures pour Hotwheels Battleforce 5, la série animée.
+                                        <br /><br />
+                                        Jeong enseigne le cours "Sketching for Production" dans le Diplôme en Conception Artistique.
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="teacherbox">
-                                    <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
-                                    </div>
-                                    
-                                    <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
-                               
-                                    <p class="term-description teacher-description">Christian Robert de Massy est l’un des
-                                        secrets les mieux gardés de l’industrie du film. Il à travaillé pendant 8 ans en tant que
-                                        concepteur artistique et illustrateur indépendant sur des films tels que: X-Men: Jours
-                                        d’un futur passé, Blanche neige et L’Étrange histoire de Benjamin Button. Tout cela sans
-                                        jamais avoir publié ses travaux en ligne (jusqu’à ce jour). Il est connu pour son
-                                        incroyable efficacité et la beauté de ses peintures d’environnements.<br /><br />
-                                        Christian enseigne la partie "How to Draw" dans Sketching for Production dans le Diplôme
-                                        en Conception Artistique.
-                                    </p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="row row-73percent">
-                            <div class="col-md-6">
-                                <div class="teacherbox">
-                                    <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
-                                    </div>
-                                    
-                                    <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
-                                
-                                    <p class="term-description teacher-description">Frédéric Bennett est présentement artiste
-                                        de concept sénior chez Eidos Montréal, concevant notamment des personnages pour Deus Ex.
-                                        Durant 8 années en tant qu’artiste de concept dans le milieu du jeu vidéo, il a
-                                        contribué à des projets tels que Conan, Transformers, Wet et Kung Fu Panda. Frédéric
-                                        est un professeur très apprécié des élèves de son cours Rendu de Personnages.<br /><br />
-                                        Frédéric enseigne la partie "How to Render" dans Sketching for Production dans le 
-                                        Diplôme en Conception Artistique.
-                                    </p>
-                                </div>
-                            </div>
+
                             <div class="col-md-6">
                                 <div class="teacherbox">
                                     <div class="row leftpadding">
@@ -1009,12 +915,82 @@ Template Name: Concept Art Diploma - About
                                         Ghost Recon, Splinter Cell Chaos Theory font aussi partie de certains production
                                         sur lequel il a contribué son expertise, incluant d’autres séries de dessins
                                         animés encore. 
-                                        <br /><br />    
-                                        Eric enseigne la partie "How to Sketch" dans Sketching for Production dans le Diplôme
-                                        en Conception Artistique.
+                                        <br /><br />
+                                        Eric enseigne le cours "Image Integration" dans le Diplôme en Conception Artistique.
+                                    </p>
+                                </div>
+                            </div>      
+                        </div>
+                        <div class="row row-73percent">
+
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Oleg Dergachov</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        Oleg Dergachov, formé à l’Académie d’Ukraine, est directeur artistique, artiste, illustrateur, animateur, et caricaturiste. Ayant accumulé environ 85 prix au niveau international, on retrouve ses oeuvres, entre autres au Musée Victoria and Albert de Londres, au Centre Pompidou de Paris, à la galerie Tretyakov de Moscou, dans la collection du Cirque du Soleil, mais aussi dans multiples autres musées et collections publiques. Il a enseigné pendant 16 ans dans les universités, les écoles de design et de dessin animé de 6 pays.
+                                        <br /><br />
+                                        Oleg enseigne le cours "Anatomy Study" dans le Diplôme en Conception Artistique.
                                     </p>
                                 </div>
                             </div>
+
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-benoit.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-benoit-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Benoit Massé</h4>
+                                 
+                                    <p class="term-description teacher-description">
+                                        Benoit Massé est un designer graphique et web avec plus de 10 ans d’expérience en tant qu’employé indépendant et de studio. Il a travaillé à Lg2, SAT et Ubisoft, en tant que Directeur de présentation/Interface utilisateur pour ShapeUP, un jeu de sport Kinect. Son portfolio inclut un éventail de projets tels des conceptions de mouvement pour Baku 2015 European Games, les plans de mouvements pour un vidéo de Luminothérapie, les designs de site webs de ventes pour des compagnies tels Velvet Moustache et Bonlook, entre autres. Il est également deux fois le gagnant du prix de Design Graphique d’Applied Arts Magazine pour son travail dans “Ecodrain” (2012) et “This is Digital Marketing” (2011). Benoit travail présentement en tant que designer de l’interface utilisateur à Shopify, où il créé des visuels qui aident à améliorer l’expérience des entrepreneurs qui visitent le site.
+                                        <br /><br />
+                                        Eric enseigne le cours "Visual Communication" dans le Diplôme en Conception Artistique.
+                                    </p>
+                                </div>
+                            </div>                                                     
+                        </div>
+                        <div class="row row-73percent">
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-thierry-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Thierry Doizon</h4>
+                                
+                                    <p class="term-description teacher-description">Thierry Doizon aka Barontieri a été précédemment un directeur artistique et artiste en conception senior avec plus de 20 ans d’expérience dans l’industrie, ayant travaillé pour une grande variété de compagnies autour du monde, tels Square Enix, Ubisoft, Disney Interactive et Eidos. Thierry a enseigné au niveau collégial et a été invité pour parler à plusieurs ateliers et conférences dont Disney Imagineering, ADAPT, Ubisoft Campus, MIGS, FIEA, Massive Black et The Gnomon Workshop, ce dernier pour lequel il a également produit un DVD éducatif (Character Design Pipeline: Production Art & Research Techniques with BARONTiERi). Quelques autres de ses projets incluent: Assassin's Creed, Prince of Persia, Deus Ex: Human Revolutions et Tron: Legacy, entre autres. Ses oeuvres ont été publiées dans “Exodyssey: Visual Development of an Epic Adventure” et “Steampainting: SPARK - Creative process”, tous les deux par Steambot Studios, dont il est le co-fondateur.
+                                    <br /><br />
+                                    Thierry est le directeur d'études au Syn Studio. En plus d'être le président du Diplôme en conception artistique.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="teacherbox">
+                                    <div class="row leftpadding">
+                                        <div class="teacher-headshot"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-demassy-art.jpg" alt="teacher"></div>
+                                    </div>
+                                    
+                                    <h4 class="orange-text nopaddingleft">Christian Robert de Massy</h4>
+                               
+                                    <p class="term-description teacher-description">Christian Robert de Massy est l’un des
+                                        secrets les mieux gardés de l’industrie du film. Il à travaillé pendant 8 ans en tant que
+                                        concepteur artistique et illustrateur indépendant sur des films tels que: X-Men: Jours
+                                        d’un futur passé, Blanche neige et L’Étrange histoire de Benjamin Button. Tout cela sans
+                                        jamais avoir publié ses travaux en ligne (jusqu’à ce jour). Il est connu pour son
+                                        incroyable efficacité et la beauté de ses peintures d’environnements.
+                                    </p>
+                                </div>
+                            </div>                          
                         </div>
                         <div class="row row-73percent">
                             <div class="col-md-6">
@@ -1028,61 +1004,62 @@ Template Name: Concept Art Diploma - About
                                  
                                     <p class="term-description teacher-description">
                                         Francis Back est un illustrateur et artiste de storyboards, ayant fait ses études aux Beaux Arts en Suisse. Il a travaillé sur plus d'une centaine de films et de productions télévisées au Canada et aux États-Unis, tels que Spyderwick Chronicles, Mummy 3 et le film Incendie nominé aux Oscars. Francis a aussi construits des storyboards pour des spectacles du Cirque du Soleil tel que Ka par Robert Lepage et à travaillé sur plusieurs films éducatifs à l'Office National du Film du Canada (ONF). Francis a plus de 20 ans d'expérience d'enseignement de storyboards à Montréal et à Taiwan.
-                                        <br /><br />
-                                        Francis enseigne la partie "Intro to Cinema" dans Visual Reference Library dans le Diplôme en Conception Artistique.
                                     </p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="teacherbox">
                                     <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-oleg-art.jpg" alt="teacher"></div>
+                                        <div class="teacher-headshot"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-daniel-art.jpg" alt="teacher"></div>
                                     </div>
                                     
-                                    <h4 class="orange-text nopaddingleft">Oleg Dergachov</h4>
+                                    <h4 class="orange-text nopaddingleft">Daniel Kvasznicza</h4>
                                  
-                                    <p class="term-description teacher-description">
-                                        Oleg Dergachov, formé à l’Académie d’Ukraine, est directeur artistique, artiste, illustrateur, animateur, et caricaturiste. Ayant accumulé environ 85 prix au niveau international, on retrouve ses oeuvres, entre autres au Musée Victoria and Albert de Londres, au Centre Pompidou de Paris, à la galerie Tretyakov de Moscou, dans la collection du Cirque du Soleil, mais aussi dans multiples autres musées et collections publiques. Il a enseigné pendant 16 ans dans les universités, les écoles de design et de dessin animé de 6 pays.
-                                        <br /><br />
-                                        Oleg enseignera "Anatomy Study" dans la session d'hiver du Diplôme en conception artistique.
+                                    <p class="term-description teacher-description">Daniel Kvasznicza est un artiste de 
+                                        concept et matte painter ayant plus de 10 ans d’expérience dans l’industrie du jeu
+                                        vidéo. Il a collaboré à plusieurs franchises AAA comme Starcraft, Far Cry, 
+                                        Dishonoured, Elder Scrolls, Diablo, Fallout, Deus Ex, Assassin’s Creed et Batman:
+                                        Arkham Origins. Il est présentement artiste de concept senior chez Warner Bros.
+                                        Games Montréal. Ce génie technique a créé des softwares, des scripts, des pinceaux
+                                        personnalisés et quelques-unes de ses oeuvres ont figuré sur des posters de E3!
+                                        Il est aussi un prof recherché ayant enseigné plusieurs ateliers et cours de
+                                        concept art à Syn Studio,  Alpha Vision et Méduzart.
                                     </p>
                                 </div>
-                            </div>
+                            </div>                           
                         </div>
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="teacherbox">
                                     <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jeong.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jeong-art.jpg" alt="teacher"></div>
+                                        <div class="teacher-headshot"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-frederic-art.jpg" alt="teacher"></div>
                                     </div>
                                     
-                                    <h4 class="orange-text nopaddingleft">Jeong H. Shin</h4>
-                                 
-                                    <p class="term-description teacher-description">
-                                        Jeong H. Shin est présentement artiste de concept sénior chez Ubisoft. Ces designs uniques peuvent être admirés dans des jeux tels que For Honor, Watchdogs et Far Cry 3 et 4. Il a étudié avec Scott Robertson, designer de vehicule de renom au Art Center College of Design. La tutelle de Robertson jumelée à la carrière de Shin en design industriel et véhicules l’a mené au poste de designer créatif chez General Motors. Là, Shin a dessiné deux Chevrolets (Cruze et Sonic) qui sont présentement sur la route. Lorsqu’il était designer de concept chez Mattel, Shin à aussi concu les voitures pour Hotwheels Battleforce 5, la série animée.
-                                        <br /><br />
-                                        Jeong enseignera "Sketching for Production" dans la session d'hiver du Diplôme en conception artistique.
+                                    <h4 class="orange-text nopaddingleft">Frédéric Bennett</h4>
+                                
+                                    <p class="term-description teacher-description">Frédéric Bennett est présentement artiste
+                                        de concept sénior chez Eidos Montréal, concevant notamment des personnages pour Deus Ex.
+                                        Durant 8 années en tant qu’artiste de concept dans le milieu du jeu vidéo, il a
+                                        contribué à des projets tels que Conan, Transformers, Wet et Kung Fu Panda. Frédéric
+                                        est un professeur très apprécié des élèves de son cours Rendu de Personnages.
                                     </p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="teacherbox">
                                     <div class="row leftpadding">
-                                        <div class="teacher-headshot"><img src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-benoit.jpg" alt="teacher"></div>
-                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-benoit-art.jpg" alt="teacher"></div>
+                                        <div class="teacher-headshot"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy.jpg" alt="teacher"></div>
+                                        <div class="teacher-artwork"><img  src="<?php echo get_template_directory_uri(); ?>/css/images/cadiplomaAbout/teacher-jessy-art.jpg" alt="teacher"></div>
                                     </div>
                                     
-                                    <h4 class="orange-text nopaddingleft">Benoit Massé</h4>
-                                 
-                                    <p class="term-description teacher-description">
-                                        Benoit Massé est un designer graphique et web avec plus de 10 ans d’expérience en tant qu’employé indépendant et de studio. Il a travaillé à Lg2, SAT et Ubisoft, en tant que Directeur de présentation/Interface utilisateur pour ShapeUP, un jeu de sport Kinect. Son portfolio inclut un éventail de projets tels des conceptions de mouvement pour Baku 2015 European Games, les plans de mouvements pour un vidéo de Luminothérapie, les designs de site webs de ventes pour des compagnies tels Velvet Moustache et Bonlook, entre autres. Il est également deux fois le gagnant du prix de Design Graphique d’Applied Arts Magazine pour son travail dans “Ecodrain” (2012) et “This is Digital Marketing” (2011). Benoit travail présentement en tant que designer de l’interface utilisateur à Shopify, où il créé des visuels qui aident à améliorer l’expérience des entrepreneurs qui visitent le site.
-                                        <br /><br />
-                                        Benoit enseignera "Visual Communication" dans la session d'hiver du Diplôme en conception artistique.
+                                    <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
+                            
+                                    <p class="term-description teacher-description">Jessy Veilleux est le fondateur et directeur artistique de Meduzarts, un studio de personnages et d’environnements numériques, ainsi que le directeur artistique de Digital Dimension. Il a contribué des oeuvres au publication de plusieurs films et jeux vidéos très connus tels StarWars, The Force Unleashed II, Avatar VG, 300, AION, FallOut 3, SinCity, Transformers: Revenge of the Fallen VG, Assassin’s Creed II, Prince of Persia II et Mortal Kombat X, entre autres. Jessy enseigne depuis 10 ans au Centre NAD à Montréal, où il a contribué grandement au premier programme d’études numériques ‘matte’. Plusieurs prix portent son nom, tels le CG Talk choice award et le XSI Gallery Award en plus que ses oeuvres ont été publiées dans Exposé 5, Mattepainting.org and the CG Channel.
                                     </p>
                                 </div>
-                            </div>
+                            </div>                          
                         </div>
                 <br />
             </div>
