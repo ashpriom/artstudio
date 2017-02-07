@@ -90,7 +90,7 @@
 		var pageVariations = [
 			function(){},	// A Version: This will render the default HTML.
 		  	function(){		// B Version: Use JQuery to manipulate DOM elements.
-				$('#registration .text p').html("This is our most popular class and many sections fill up well before the deadline. <del>$399</del> <b><i>$310</i></b>.");
+				$('#registration .text p').html("This is our most popular class and many sections fill up well before the deadline. <del>$410</del> <b><i>$310</i></b>.");
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
 				var buttonCode = <?php echo $altButton ?>;
@@ -142,7 +142,7 @@
 		var pageVariations = [
 			function(){},
 		  	function(){
-				$('#registration .text p').html("Ces cours sont très populaires et se remplissent bien avant la date limite <del>$399</del> <b><i>310 $</i></b>.");
+				$('#registration .text p').html("Ces cours sont très populaires et se remplissent bien avant la date limite <del>$410</del> <b><i>310 $</i></b>.");
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
 				var buttonCode = <?php echo $altButton ?>;
