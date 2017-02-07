@@ -134,7 +134,7 @@
 
 <!-- EN Analytical Sketching -->
 
-<?php if($postID==){ ?>
+<?php if($postID==6710){ ?>
 
 	<script src="//www.google-analytics.com/cx/api.js?experiment=jvdTAt5rT3CxkXBmLNzrTA"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
@@ -142,11 +142,7 @@
 		var pageVariations = [
 			function(){},
 		  	function(){
-				$('#registration .text p').html("This is our most popular digital class (over 1000 students have taken this class). <del>$470</del> <b><i>$430</i></b>.");
-
-				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php echo $altButton ?>;
-				$('#paypalCode').html(buttonCode);
+				$('#slideshowScript').html("...");
 			}
 		];
 
@@ -206,6 +202,25 @@
 
 <?php } ?>
 <!-- FR Digital Painting -->
+
+<!-- FR Analytical Sketching -->
+<?php if($postID==11029){ ?>
+
+	<script src="//www.google-analytics.com/cx/api.js?experiment=eNyTpsDrQ7O8AJ3QC1h5sQ"></script>
+	<script> var chosenVariation = cxApi.chooseVariation(); </script>
+	<script>
+		var pageVariations = [
+			function(){},
+		  	function(){
+				$('#slideshowScript').html("fr...");
+			}
+		];
+
+		$(document).ready(pageVariations[chosenVariation]);
+	</script>
+
+<?php } ?>
+<!-- FR Analytical Sketching -->
 
 
 <script type="application/ld+json">
