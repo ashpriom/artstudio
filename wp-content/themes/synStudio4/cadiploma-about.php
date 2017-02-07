@@ -298,7 +298,7 @@ Template Name: Concept Art Diploma - About
                                         others. His work has been featured in “Exodyssey: Visual Development of an Epic Adventure”
                                         and  “Steampainting: SPARK - Creative process”, both by Steambot Studios.
                                         <br /><br />
-                                        Thierry is the Director of Studies at Syn Studio. In addition to being the Chair of the Concept Art Diploma Program.
+                                        Thierry is the Director of Studies at Syn Studio. He is also the Chair of the Concept Art Diploma Program.
                                     </p>
                                 </div>
                             </div>
@@ -952,7 +952,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Benoit Massé est un designer graphique et web avec plus de 10 ans d’expérience en tant qu’employé indépendant et de studio. Il a travaillé à Lg2, SAT et Ubisoft, en tant que Directeur de présentation/Interface utilisateur pour ShapeUP, un jeu de sport Kinect. Son portfolio inclut un éventail de projets tels des conceptions de mouvement pour Baku 2015 European Games, les plans de mouvements pour un vidéo de Luminothérapie, les designs de site webs de ventes pour des compagnies tels Velvet Moustache et Bonlook, entre autres. Il est également deux fois le gagnant du prix de Design Graphique d’Applied Arts Magazine pour son travail dans “Ecodrain” (2012) et “This is Digital Marketing” (2011). Benoit travail présentement en tant que designer de l’interface utilisateur à Shopify, où il créé des visuels qui aident à améliorer l’expérience des entrepreneurs qui visitent le site.
                                         <br /><br />
-                                        Eric enseigne le cours "Visual Communication" dans le Diplôme en Conception Artistique.
+                                        Benoit enseigne le cours "Visual Communication" dans le Diplôme en Conception Artistique.
                                     </p>
                                 </div>
                             </div>                                                     
@@ -969,7 +969,7 @@ Template Name: Concept Art Diploma - About
                                 
                                     <p class="term-description teacher-description">Thierry Doizon aka Barontieri a été précédemment un directeur artistique et artiste en conception senior avec plus de 20 ans d’expérience dans l’industrie, ayant travaillé pour une grande variété de compagnies autour du monde, tels Square Enix, Ubisoft, Disney Interactive et Eidos. Thierry a enseigné au niveau collégial et a été invité pour parler à plusieurs ateliers et conférences dont Disney Imagineering, ADAPT, Ubisoft Campus, MIGS, FIEA, Massive Black et The Gnomon Workshop, ce dernier pour lequel il a également produit un DVD éducatif (Character Design Pipeline: Production Art & Research Techniques with BARONTiERi). Quelques autres de ses projets incluent: Assassin's Creed, Prince of Persia, Deus Ex: Human Revolutions et Tron: Legacy, entre autres. Ses oeuvres ont été publiées dans “Exodyssey: Visual Development of an Epic Adventure” et “Steampainting: SPARK - Creative process”, tous les deux par Steambot Studios, dont il est le co-fondateur.
                                     <br /><br />
-                                    Thierry est le directeur d'études au Syn Studio. En plus d'être le président du Diplôme en conception artistique.
+                                    Thierry est le directeur d'études au Syn Studio. Il est aussi le président du Diplôme en conception artistique.
                                     </p>
                                 </div>
                             </div>
