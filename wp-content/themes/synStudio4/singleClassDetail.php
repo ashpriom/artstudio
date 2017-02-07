@@ -136,7 +136,7 @@
 
 <?php if($postID==6710){ ?>
 
-	<script src="//www.google-analytics.com/cx/api.js?experiment=jvdTAt5rT3CxkXBmLNzrTA"></script>
+	<script src="//www.google-analytics.com/cx/api.js?experiment=S7ozD4jESO6N0Pwq9fRc5w"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
 	<script>
 		var pageVariations = [
@@ -206,7 +206,7 @@
 <!-- FR Analytical Sketching -->
 <?php if($postID==11029){ ?>
 
-	<script src="//www.google-analytics.com/cx/api.js?experiment=eNyTpsDrQ7O8AJ3QC1h5sQ"></script>
+	<script src="//www.google-analytics.com/cx/api.js?experiment=KjjvO0XVRpi8yp0WPPzOMQ"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
 	<script>
 		var pageVariations = [
