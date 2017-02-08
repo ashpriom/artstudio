@@ -142,7 +142,7 @@
 		var pageVariations = [
 			function(){},
 		  	function(){
-				$('#registration .text p').html("Ces cours sont très populaires et se remplissent bien avant la date limite <del>$410</del> <b><i>310 $</i></b>.");
+				$('#registration .text p').html("Ces cours sont très populaires et se remplissent bien avant la date limite <del>410 $</del> <b><i>310 $</i></b>.");
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
 				var buttonCode = <?php echo $altButton ?>;
