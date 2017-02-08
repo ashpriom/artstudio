@@ -132,6 +132,28 @@
 <!-- EN Digital Painting -->
 
 
+<!-- EN Analytical Sketching -->
+
+<?php if($postID==6710){ ?>
+
+	<script src="//www.google-analytics.com/cx/api.js?experiment=S7ozD4jESO6N0Pwq9fRc5w"></script>
+	<script> var chosenVariation = cxApi.chooseVariation(); </script>
+	<script>
+		var pageVariations = [
+			function(){},
+		  	function(){
+				$('#slideshowScript').html("...");
+			}
+		];
+
+		$(document).ready(pageVariations[chosenVariation]);
+	</script>
+
+<?php } ?>
+
+<!-- EN Analytical Sketching -->
+
+
 <!-- FR Drawing From Life -->
 
 <?php if($postID==11026){ ?>
@@ -180,6 +202,25 @@
 
 <?php } ?>
 <!-- FR Digital Painting -->
+
+<!-- FR Analytical Sketching -->
+<?php if($postID==11029){ ?>
+
+	<script src="//www.google-analytics.com/cx/api.js?experiment=KjjvO0XVRpi8yp0WPPzOMQ"></script>
+	<script> var chosenVariation = cxApi.chooseVariation(); </script>
+	<script>
+		var pageVariations = [
+			function(){},
+		  	function(){
+				$('#slideshowScript').html("fr...");
+			}
+		];
+
+		$(document).ready(pageVariations[chosenVariation]);
+	</script>
+
+<?php } ?>
+<!-- FR Analytical Sketching -->
 
 
 <script type="application/ld+json">
@@ -409,7 +450,10 @@
 
      	<div id="slideshow-carousel"><ul id="carousel" class="jcarousel jcarousel-skin-tango"></ul></div>
 
-     	<script type="text/javascript">
+     	
+     	<div id="slideshowScript">
+
+     		<script type="text/javascript">
 
 		 		<?php
 				/*	echo get_post_meta($postID, 'slideshow_' . $currentLang, true);
@@ -485,6 +529,12 @@
 					    echo "}; \n";
 					}
 				?>
+
+			</script>
+
+		</div>
+
+		<script>
 
 			//Find out number of Slides
 			var totalSlides2 = 0;
