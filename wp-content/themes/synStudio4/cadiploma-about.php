@@ -928,7 +928,7 @@ Template Name: Concept Art Diploma - About
                                         sur lequel il a contribué son expertise, incluant d’autres séries de dessins
                                         animés encore. 
                                         <br /><br />
-                                        Eric enseigne le cours "Image Integration" dans le Diplôme en Conception Artistique. Il a également enseigné le module « How to Draw » dans le cours "Sketching for Production" au cours de l'automne 2016.
+                                        Eric enseigne le cours "Image Integration" dans le Diplôme en Conception Artistique. Il a également enseigné le module "How to Draw" dans le cours "Sketching for Production" au cours de l'automne 2016.
                                     </p>
                                 </div>
                             </div>      
