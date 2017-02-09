@@ -902,7 +902,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Jeong H. Shin est présentement artiste de concept sénior chez Ubisoft. Ces designs uniques peuvent être admirés dans des jeux tels que For Honor, Watchdogs et Far Cry 3 et 4. Il a étudié avec Scott Robertson, designer de vehicule de renom au Art Center College of Design. La tutelle de Robertson jumelée à la carrière de Shin en design industriel et véhicules l’a mené au poste de designer créatif chez General Motors. Là, Shin a dessiné deux Chevrolets (Cruze et Sonic) qui sont présentement sur la route. Lorsqu’il était designer de concept chez Mattel, Shin à aussi concu les voitures pour Hotwheels Battleforce 5, la série animée.
                                         <br /><br />
-                                        Jeong enseigne le cours "Sketching for Production" dans le Diplôme en Conception Artistique.
+                                        Jeong enseigne le cours « Sketching for Production » dans le Diplôme en conception artistique.
                                     </p>
                                 </div>
                             </div>
@@ -928,7 +928,7 @@ Template Name: Concept Art Diploma - About
                                         sur lequel il a contribué son expertise, incluant d’autres séries de dessins
                                         animés encore. 
                                         <br /><br />
-                                        Eric enseigne le cours "Image Integration" dans le Diplôme en Conception Artistique. Il a également enseigné le module "How to Draw" dans le cours "Sketching for Production" au cours de l'automne 2016.
+                                        Eric enseigne le cours « Image Integration » dans le Diplôme en conception artistique. Il a également enseigné le module « How to Draw » dans le cours « Sketching for Production » lors de la session d'automne 2016.
                                     </p>
                                 </div>
                             </div>      
@@ -947,7 +947,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Oleg Dergachov, formé à l’Académie d’Ukraine, est directeur artistique, artiste, illustrateur, animateur, et caricaturiste. Ayant accumulé environ 85 prix au niveau international, on retrouve ses oeuvres, entre autres au Musée Victoria and Albert de Londres, au Centre Pompidou de Paris, à la galerie Tretyakov de Moscou, dans la collection du Cirque du Soleil, mais aussi dans multiples autres musées et collections publiques. Il a enseigné pendant 16 ans dans les universités, les écoles de design et de dessin animé de 6 pays.
                                         <br /><br />
-                                        Oleg enseigne le cours "Anatomy Study" dans le Diplôme en Conception Artistique.
+                                        Oleg enseigne le cours « Anatomy Study » dans le Diplôme en conception artistique.
                                     </p>
                                 </div>
                             </div>
@@ -964,7 +964,7 @@ Template Name: Concept Art Diploma - About
                                     <p class="term-description teacher-description">
                                         Benoit Massé est un designer graphique et web avec plus de 10 ans d’expérience en tant qu’employé indépendant et de studio. Il a travaillé à Lg2, SAT et Ubisoft, en tant que Directeur de présentation/Interface utilisateur pour ShapeUP, un jeu de sport Kinect. Son portfolio inclut un éventail de projets tels des conceptions de mouvement pour Baku 2015 European Games, les plans de mouvements pour un vidéo de Luminothérapie, les designs de site webs de ventes pour des compagnies tels Velvet Moustache et Bonlook, entre autres. Il est également deux fois le gagnant du prix de Design Graphique d’Applied Arts Magazine pour son travail dans “Ecodrain” (2012) et “This is Digital Marketing” (2011). Benoit travail présentement en tant que designer de l’interface utilisateur à Shopify, où il créé des visuels qui aident à améliorer l’expérience des entrepreneurs qui visitent le site.
                                         <br /><br />
-                                        Benoit enseigne le cours "Visual Communication" dans le Diplôme en Conception Artistique.
+                                        Benoit enseigne le cours « Visual Communication » dans le Diplôme en conception artistique.
                                     </p>
                                 </div>
                             </div>                                                     
