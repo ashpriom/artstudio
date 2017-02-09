@@ -236,7 +236,7 @@ Template Name: Concept Art Diploma - About
                                         Ballerina, Ghost Recon, Splinter Cell Chaos Theory and many 2D and 3D animated television
                                         shows.
                                         <br /><br />
-                                        Eric is teaching Image Integration in the Concept Art Diploma Program.
+                                        Eric is teaching Image Integration in the Concept Art Diploma Program. He also taught the "How To Draw" module in "Sketching for Production" course in the Fall 2016 term.
                                     </p>
                                 </div>
                             </div>
@@ -275,6 +275,8 @@ Template Name: Concept Art Diploma - About
                                 </div>
                             </div>
                         </div>
+
+                        <h2 class="orange-text off-margin-header">Teachers for the Fall 2016 term:</h2>
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="teacherbox">
@@ -317,6 +319,8 @@ Template Name: Concept Art Diploma - About
                                         Case of Benjamin Button. All without ever having put any artwork online (until now).
                                         He’s known for his incredible speed and the beauty of his environment paintings and
                                         he’s a popular teacher here at Syn Studio.
+                                        <br /><br />
+                                        Christian is taking a break this semester. We expect him to be back to teach at Syn Studio soon. 
                                     </p>
                                 </div>
                             </div>                          
@@ -333,6 +337,8 @@ Template Name: Concept Art Diploma - About
                                  
                                     <p class="term-description teacher-description">
                                         Francis Back is an illustrator and storyboard artist who studied Fine Arts in Switzerland and who has worked on over a hundred Canadian and American TV and film productions, such as Spyderwick Chronicles, Mummy 3, Tomb of the Dragon Emperor, and the Academy Award nominated film Incendie. Francis also did storyboards, and concept art, for three Cirque du Soleil shows including Ka by director Robert Lepage and he’s worked on educational films for the National Film Board of Canada (NFB). Francis has over 20 years of experience teaching storyboarding in Montreal and in Taiwan.
+                                        <br /><br />
+                                        Francis is taking a break this semester. We expect him to be back to teach at Syn Studio soon. 
                                     </p>
                                 </div>
                             </div>
@@ -355,6 +361,8 @@ Template Name: Concept Art Diploma - About
                                         on several E3 posters! He is also a sought after instructor who’s given popular classes
                                         and workshops in concept design, illustration and 3D to students and professionals at
                                         Alpha Vision, Meduzarts and here at Syn Studio!
+                                        <br /><br />
+                                        Daniel is taking a break this semester. We expect him to be back to teach at Syn Studio soon.
                                     </p>
                                 </div>
                             </div>
@@ -375,6 +383,8 @@ Template Name: Concept Art Diploma - About
                                         years as a concept artist working mainly in the games’ industry, he has contributed to
                                         projects in the Conan, Transformers, Wet and Kung Fu Panda universes. Frédéric is a very
                                         well appreciated teacher by his students from his Character Rendering class.
+                                        <br /><br />
+                                        Frédéric is taking a break this semester. We expect him to be back to teach at Syn Studio soon.
                                     </p>
                                 </div>
                             </div>
@@ -399,6 +409,8 @@ Template Name: Concept Art Diploma - About
                                         digital matte curriculum.  A recipient of several awards including the CG Talk choice
                                         award and the XSI Gallery Award, Jessy’s work has been featured in several publications
                                         such as Exposé 5, Mattepainting.org and the CG Channel.
+                                        <br /><br />
+                                        Jessy is taking a break this semester. We expect him to be back to teach at Syn Studio soon.
                                     </p>
                                 </div>
                             </div>                           
@@ -916,7 +928,7 @@ Template Name: Concept Art Diploma - About
                                         sur lequel il a contribué son expertise, incluant d’autres séries de dessins
                                         animés encore. 
                                         <br /><br />
-                                        Eric enseigne le cours "Image Integration" dans le Diplôme en Conception Artistique.
+                                        Eric enseigne le cours "Image Integration" dans le Diplôme en Conception Artistique. Il a également enseigné le module « How to Draw » dans le cours "Sketching for Production" au cours de l'automne 2016.
                                     </p>
                                 </div>
                             </div>      
@@ -957,6 +969,8 @@ Template Name: Concept Art Diploma - About
                                 </div>
                             </div>                                                     
                         </div>
+
+                        <h2 class="orange-text off-margin-header">Les professeurs pour la session d'autumn 2016 :</h2>
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="teacherbox">
@@ -988,6 +1002,8 @@ Template Name: Concept Art Diploma - About
                                         d’un futur passé, Blanche neige et L’Étrange histoire de Benjamin Button. Tout cela sans
                                         jamais avoir publié ses travaux en ligne (jusqu’à ce jour). Il est connu pour son
                                         incroyable efficacité et la beauté de ses peintures d’environnements.
+                                        <br /><br />
+                                        Christian prend une pause pour cette session. Nous nous attendons de le revoir bientôt.
                                     </p>
                                 </div>
                             </div>                          
@@ -1004,6 +1020,8 @@ Template Name: Concept Art Diploma - About
                                  
                                     <p class="term-description teacher-description">
                                         Francis Back est un illustrateur et artiste de storyboards, ayant fait ses études aux Beaux Arts en Suisse. Il a travaillé sur plus d'une centaine de films et de productions télévisées au Canada et aux États-Unis, tels que Spyderwick Chronicles, Mummy 3 et le film Incendie nominé aux Oscars. Francis a aussi construits des storyboards pour des spectacles du Cirque du Soleil tel que Ka par Robert Lepage et à travaillé sur plusieurs films éducatifs à l'Office National du Film du Canada (ONF). Francis a plus de 20 ans d'expérience d'enseignement de storyboards à Montréal et à Taiwan.
+                                        <br /><br />
+                                        Francis prend une pause pour cette session. Nous nous attendons de le revoir bientôt.
                                     </p>
                                 </div>
                             </div>
@@ -1025,6 +1043,8 @@ Template Name: Concept Art Diploma - About
                                         personnalisés et quelques-unes de ses oeuvres ont figuré sur des posters de E3!
                                         Il est aussi un prof recherché ayant enseigné plusieurs ateliers et cours de
                                         concept art à Syn Studio,  Alpha Vision et Méduzart.
+                                        <br /><br />
+                                        Daniel prend une pause pour cette session. Nous nous attendons de le revoir bientôt.
                                     </p>
                                 </div>
                             </div>                           
@@ -1044,6 +1064,8 @@ Template Name: Concept Art Diploma - About
                                         Durant 8 années en tant qu’artiste de concept dans le milieu du jeu vidéo, il a
                                         contribué à des projets tels que Conan, Transformers, Wet et Kung Fu Panda. Frédéric
                                         est un professeur très apprécié des élèves de son cours Rendu de Personnages.
+                                        <br /><br />
+                                        Frédéric prend une pause pour cette session. Nous nous attendons de le revoir bientôt.
                                     </p>
                                 </div>
                             </div>
@@ -1057,6 +1079,8 @@ Template Name: Concept Art Diploma - About
                                     <h4 class="orange-text nopaddingleft">Jessy Veilleux</h4>
                             
                                     <p class="term-description teacher-description">Jessy Veilleux est le fondateur et directeur artistique de Meduzarts, un studio de personnages et d’environnements numériques, ainsi que le directeur artistique de Digital Dimension. Il a contribué des oeuvres au publication de plusieurs films et jeux vidéos très connus tels StarWars, The Force Unleashed II, Avatar VG, 300, AION, FallOut 3, SinCity, Transformers: Revenge of the Fallen VG, Assassin’s Creed II, Prince of Persia II et Mortal Kombat X, entre autres. Jessy enseigne depuis 10 ans au Centre NAD à Montréal, où il a contribué grandement au premier programme d’études numériques ‘matte’. Plusieurs prix portent son nom, tels le CG Talk choice award et le XSI Gallery Award en plus que ses oeuvres ont été publiées dans Exposé 5, Mattepainting.org and the CG Channel.
+                                    <br /><br />
+                                    Jessy prend une pause pour cette session. Nous nous attendons de le revoir bientôt.
                                     </p>
                                 </div>
                             </div>                          
