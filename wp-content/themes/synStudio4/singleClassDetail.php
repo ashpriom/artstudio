@@ -93,7 +93,7 @@
 				$('#registration .text p').html("This is our most popular class and many sections fill up well before the deadline. <del>$410</del> <b><i>$310</i></b>.");
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php echo $altButton ?>;
+				var buttonCode = <?php echo $altButton; ?>;
 				$('#paypalCode').html(buttonCode);
 			}
 		];
@@ -107,7 +107,6 @@
 
 
 <!-- EN Digital Painting -->
-
 <?php if($postID==563){ ?>
 
 	<script src="//www.google-analytics.com/cx/api.js?experiment=jvdTAt5rT3CxkXBmLNzrTA"></script>
@@ -119,7 +118,7 @@
 				$('#registration .text p').html("This is our most popular digital class (over 1000 students have taken this class). <del>$470</del> <b><i>$430</i></b>.");
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php echo $altButton ?>;
+				var buttonCode = <?php echo $altButton; ?>;
 				$('#paypalCode').html(buttonCode);
 			}
 		];
@@ -128,13 +127,11 @@
 	</script>
 
 <?php } ?>
-
 <!-- EN Digital Painting -->
 
 
-<!-- EN Analytical Sketching -->
-
-<?php if($postID==6710){ ?>
+<!-- EN Analytical Sketching 
+<?php // if($postID==6710){ ?>
 
 	<script src="//www.google-analytics.com/cx/api.js?experiment=S7ozD4jESO6N0Pwq9fRc5w"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
@@ -142,7 +139,13 @@
 		var pageVariations = [
 			function(){},
 		  	function(){
-				$('#slideshowScript').html("...");
+		  		<?php // $altSlideshow = json_encode(get_post_meta($postID, 'altSlideshowCode', true)); ?>
+				var slideshowCode = <?php // echo $altSlideshow; ?>;
+				$('#slideshowScript').text(slideshowCode);
+
+				<?php // $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php // echo $altButton; ?>;
+				$('#paypalCode').html(buttonCode);
 			}
 		];
 
@@ -150,12 +153,10 @@
 	</script>
 
 <?php } ?>
-
-<!-- EN Analytical Sketching -->
+< EN Analytical Sketching -->
 
 
 <!-- FR Drawing From Life -->
-
 <?php if($postID==11026){ ?>
 
 	<script src="//www.google-analytics.com/cx/api.js?experiment=rLTo-ZTvRdmkr97C1jR-3A"></script>
@@ -167,7 +168,7 @@
 				$('#registration .text p').html("Ces cours sont très populaires et se remplissent bien avant la date limite <del>410 $</del> <b><i>310 $</i></b>.");
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php echo $altButton ?>;
+				var buttonCode = <?php echo $altButton; ?>;
 				$('#paypalCode').html(buttonCode);
 			}
 		];
@@ -176,11 +177,10 @@
 	</script>
 
 <?php } ?>
-
 <!-- FR Drawing From Life -->
 
-<!-- FR Digital Painting -->
 
+<!-- FR Digital Painting -->
 <?php if($postID==11073){ ?>
 
 	<script src="//www.google-analytics.com/cx/api.js?experiment=eNyTpsDrQ7O8AJ3QC1h5sQ"></script>
@@ -192,7 +192,7 @@
 				$('#registration .text p').html("Ce cours est notre plus populaire des cours numériques que nous offrons (plus de 1000 élèves l'ont assisté). <del>$470</del> <b><i>$430</i></b>.");
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php echo $altButton ?>;
+				var buttonCode = <?php echo $altButton; ?>;
 				$('#paypalCode').html(buttonCode);
 			}
 		];
@@ -203,8 +203,9 @@
 <?php } ?>
 <!-- FR Digital Painting -->
 
-<!-- FR Analytical Sketching -->
-<?php if($postID==11029){ ?>
+
+<!-- FR Analytical Sketching
+<?php // if($postID==11029){ ?>
 
 	<script src="//www.google-analytics.com/cx/api.js?experiment=KjjvO0XVRpi8yp0WPPzOMQ"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
@@ -212,7 +213,13 @@
 		var pageVariations = [
 			function(){},
 		  	function(){
-				$('#slideshowScript').html("fr...");
+		  		<?php // $altSlideshow = json_encode(get_post_meta($postID, 'altSlideshowCode', true)); ?>
+				var slideshowCode = <?php // echo $altSlideshow; ?>;
+				$('#slideshowScript').html(slideshowCode);
+
+				<?php // $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php // echo $altButton; ?>;
+				$('#paypalCode').html(buttonCode);
 			}
 		];
 
@@ -220,7 +227,7 @@
 	</script>
 
 <?php } ?>
-<!-- FR Analytical Sketching -->
+FR Analytical Sketching -->
 
 
 <script type="application/ld+json">
