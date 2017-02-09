@@ -152,7 +152,7 @@
 		$(document).ready(pageVariations[chosenVariation]);
 	</script>
 
-<?php } ?>
+<?php // } ?>
 < EN Analytical Sketching -->
 
 
@@ -226,7 +226,7 @@
 		$(document).ready(pageVariations[chosenVariation]);
 	</script>
 
-<?php } ?>
+<?php // } ?>
 FR Analytical Sketching -->
 
 
