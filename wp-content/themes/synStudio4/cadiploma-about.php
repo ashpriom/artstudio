@@ -236,7 +236,7 @@ Template Name: Concept Art Diploma - About
                                         Ballerina, Ghost Recon, Splinter Cell Chaos Theory and many 2D and 3D animated television
                                         shows.
                                         <br /><br />
-                                        Eric is teaching Image Integration in the Concept Art Diploma Program. He also taught the "How To Draw" module in "Sketching for Production" course in the Fall 2016 term.
+                                        Eric is teaching Image Integration in the Concept Art Diploma Program. He also taught the "How To Sketch" module in Sketching for Production course in the Fall 2016 term.
                                     </p>
                                 </div>
                             </div>
@@ -928,7 +928,7 @@ Template Name: Concept Art Diploma - About
                                         sur lequel il a contribué son expertise, incluant d’autres séries de dessins
                                         animés encore. 
                                         <br /><br />
-                                        Eric enseigne le cours « Image Integration » dans le Diplôme en conception artistique. Il a également enseigné le module « How to Draw » dans le cours « Sketching for Production » lors de la session d'automne 2016.
+                                        Eric enseigne le cours « Image Integration » dans le Diplôme en conception artistique. Il a également enseigné le module « How to Sketch » dans le cours « Sketching for Production » lors de la session d'automne 2016.
                                     </p>
                                 </div>
                             </div>      
@@ -970,7 +970,7 @@ Template Name: Concept Art Diploma - About
                             </div>                                                     
                         </div>
 
-                        <h2 class="orange-text off-margin-header">Les professeurs pour la session d'autumn 2016 :</h2>
+                        <h2 class="orange-text off-margin-header">Les professeurs pour la session d'automne 2016 :</h2>
                         <div class="row row-73percent">
                             <div class="col-md-6">
                                 <div class="teacherbox">
