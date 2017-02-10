@@ -326,7 +326,7 @@
 	        $('#carousel').jcarousel({
 	            horizontal: true,
 	            scroll: 1,
-	            auto: 2,
+	            auto: 0,
 	            wrap: 'last',
 	            initCallback: mycarousel_initCallback
 	        });
@@ -346,7 +346,7 @@
 		    $('#carousel').jcarousel({
 				vertical: true,
 				scroll: 1,
-				auto: 2,
+				auto: 0,
 				wrap: 'last',
 				initCallback: mycarousel_initCallback
 		   	});
