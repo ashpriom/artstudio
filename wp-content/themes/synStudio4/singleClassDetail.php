@@ -141,6 +141,7 @@
 		  	function(){
 		  		<?php $altSlideshow = json_encode(get_post_meta($postID, 'altSlideshowCode', true)); ?>
 				var slideshowCode = <?php echo $altSlideshow; ?>;
+				$('#welcomeHero').empty();
 				$('#welcomeHero').html(slideshowCode);
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
@@ -215,8 +216,9 @@
 		  	function(){
 		  		<?php $altSlideshow = json_encode(get_post_meta($postID, 'altSlideshowCode', true)); ?>
 				var slideshowCode = <?php echo $altSlideshow; ?>;
+				$('#welcomeHero').empty();
 				$('#welcomeHero').html(slideshowCode);
-				
+
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
 				var buttonCode = <?php echo $altButton; ?>;
 				$('#paypalCode').html(buttonCode);
