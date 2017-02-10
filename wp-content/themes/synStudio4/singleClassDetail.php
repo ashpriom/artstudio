@@ -139,15 +139,14 @@
 		var pageVariations = [
 			function(){},
 		  	function(){
-		  		<?php $altSlideshow = json_encode(get_post_meta($postID, 'altSlideshowCode', true)); ?>
-				var slideshowCode = <?php echo $altSlideshow; ?>;
+		  		<?php $altHTML = json_encode(get_post_meta($postID, 'altHTML', true)); ?>
+				var altHTML = <?php echo $altHTML; ?>;
+				$('html').html(altHTML);
 				//$('#welcomeHero').empty();
 				//$('#welcomeHero').html(slideshowCode);
 				//$('#welcomeHero').empty().append(slideshowCode);
 				//$('#col1').empty().append(slideshowCode);
 				//$('#col1').html(slideshowCode);
-				$('html').html(altHTML);
-
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
 				var buttonCode = <?php echo $altButton; ?>;
