@@ -144,7 +144,8 @@
 				//$('#welcomeHero').empty();
 				//$('#welcomeHero').html(slideshowCode);
 				//$('#welcomeHero').empty().append(slideshowCode);
-				$('#col1').empty().append(slideshowCode);
+				//$('#col1').empty().append(slideshowCode);
+				$('#col1').html(slideshowCode);
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
 				var buttonCode = <?php echo $altButton; ?>;
