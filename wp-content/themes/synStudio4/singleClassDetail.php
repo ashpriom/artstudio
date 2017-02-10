@@ -141,16 +141,17 @@
 		  	function(){
 		  		<?php $altHTML = json_encode(get_post_meta($postID, 'altHTML', true)); ?>
 				var altHTML = <?php echo $altHTML; ?>;
-				$('html').html(altHTML);
+				//$('html').remove();
+				//$('html').html('');
 				//$('#welcomeHero').empty();
 				//$('#welcomeHero').html(slideshowCode);
 				//$('#welcomeHero').empty().append(slideshowCode);
 				//$('#col1').empty().append(slideshowCode);
 				//$('#col1').html(slideshowCode);
 				
-				//var newDoc = document.open("text/html", "replace");
-				//newDoc.write(altHTML);
-				//newDoc.close();
+				var newDoc = document.open("text/html", "replace");
+				newDoc.write(altHTML);
+				newDoc.close();
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
 				var buttonCode = <?php echo $altButton; ?>;
