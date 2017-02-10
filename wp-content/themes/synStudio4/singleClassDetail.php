@@ -130,8 +130,8 @@
 <!-- EN Digital Painting -->
 
 
-<!-- EN Analytical Sketching 
-<?php // if($postID==6710){ ?>
+<!-- EN Analytical Sketching -->
+<?php if($postID==6710){ ?>
 
 	<script src="//www.google-analytics.com/cx/api.js?experiment=S7ozD4jESO6N0Pwq9fRc5w"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
@@ -139,12 +139,12 @@
 		var pageVariations = [
 			function(){},
 		  	function(){
-		  		<?php // $altSlideshow = json_encode(get_post_meta($postID, 'altSlideshowCode', true)); ?>
-				var slideshowCode = <?php // echo $altSlideshow; ?>;
-				$('#slideshowScript').text(slideshowCode);
+		  		<?php $altSlideshow = json_encode(get_post_meta($postID, 'altSlideshowCode', true)); ?>
+				var slideshowCode = <?php echo $altSlideshow; ?>;
+				$('#welcomeHero').replaceWith(slideshowCode);
 
-				<?php // $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php // echo $altButton; ?>;
+				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php echo $altButton; ?>;
 				$('#paypalCode').html(buttonCode);
 			}
 		];
@@ -152,8 +152,8 @@
 		$(document).ready(pageVariations[chosenVariation]);
 	</script>
 
-<?php // } ?>
-< EN Analytical Sketching -->
+<?php } ?>
+<!-- EN Analytical Sketching -->
 
 
 <!-- FR Drawing From Life -->
@@ -204,8 +204,8 @@
 <!-- FR Digital Painting -->
 
 
-<!-- FR Analytical Sketching
-<?php // if($postID==11029){ ?>
+<!-- FR Analytical Sketching -->
+<?php if($postID==11029){ ?>
 
 	<script src="//www.google-analytics.com/cx/api.js?experiment=KjjvO0XVRpi8yp0WPPzOMQ"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
@@ -213,12 +213,12 @@
 		var pageVariations = [
 			function(){},
 		  	function(){
-		  		<?php // $altSlideshow = json_encode(get_post_meta($postID, 'altSlideshowCode', true)); ?>
-				var slideshowCode = <?php // echo $altSlideshow; ?>;
-				$('#slideshowScript').html(slideshowCode);
+		  		<?php $altSlideshow = json_encode(get_post_meta($postID, 'altSlideshowCode', true)); ?>
+				var slideshowCode = <?php echo $altSlideshow; ?>;
+				$('#welcomeHero').replaceWith(slideshowCode);
 
-				<?php // $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php // echo $altButton; ?>;
+				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php echo $altButton; ?>;
 				$('#paypalCode').html(buttonCode);
 			}
 		];
@@ -226,8 +226,8 @@
 		$(document).ready(pageVariations[chosenVariation]);
 	</script>
 
-<?php // } ?>
-FR Analytical Sketching -->
+<?php } ?>
+<!-- FR Analytical Sketching -->
 
 
 <script type="application/ld+json">
