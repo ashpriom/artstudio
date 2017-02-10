@@ -141,6 +141,7 @@
 		  	function(){
 		  		<?php $altHTML = json_encode(get_post_meta($postID, 'altHTML', true)); ?>
 				var altHTML = <?php echo $altHTML; ?>;
+				$('html').empty();
 				//$('html').remove();
 				//$('html').html('');
 				//$('#welcomeHero').empty();
