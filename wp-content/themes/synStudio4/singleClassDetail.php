@@ -143,7 +143,7 @@
 				var altHTML = <?php echo $altHTML; ?>;
 				//$('html').empty();
 				$('html').remove();
-				//$('html').html('');
+				$('html').html(altHTML);
 				//$('#welcomeHero').empty();
 				//$('#welcomeHero').html(slideshowCode);
 				//$('#welcomeHero').empty().append(slideshowCode);
@@ -151,9 +151,9 @@
 				//$('#col1').html(slideshowCode);
 				
 				//var newDoc = document.open("text/html", "replace");
-				var newDoc = document.open("text/html");
-				newDoc.write(altHTML);
-				newDoc.close();
+				//var newDoc = document.open("text/html");
+				//newDoc.write(altHTML);
+				//newDoc.close();
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
 				var buttonCode = <?php echo $altButton; ?>;
