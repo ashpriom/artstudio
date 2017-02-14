@@ -133,14 +133,14 @@
 <!-- EN Analytical Sketching -->
 <?php if($postID==6710){ ?>
 
-	<script src="//www.google-analytics.com/cx/api.js?experiment=S7ozD4jESO6N0Pwq9fRc5w"></script>
+	<!--<script src="//www.google-analytics.com/cx/api.js?experiment=S7ozD4jESO6N0Pwq9fRc5w"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
 	<script>
 		var pageVariations = [
 			function(){},
 		  	function(){
-		  		<?php $altHTML = json_encode(get_post_meta($postID, 'altHTML', true)); ?>
-				var altHTML = <?php echo $altHTML; ?>;
+		  		<?php // $altHTML = json_encode(get_post_meta($postID, 'altHTML', true)); ?>
+				var altHTML = <?php // echo $altHTML; ?>;
 				//$('html').empty();
 				//$('html').html('new');
 				//$('html').replaceWith(altHTML);
@@ -155,14 +155,14 @@
 				newDoc.write(altHTML);
 				//newDoc.close();
 
-				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php echo $altButton; ?>;
+				<?php // $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php // echo $altButton; ?>;
 				$('#paypalCode').html(buttonCode);
 			}
 		];
 
 		$(document).ready(pageVariations[chosenVariation]);
-	</script>
+	</script>-->
 
 <?php } ?>
 <!-- EN Analytical Sketching -->
@@ -219,25 +219,25 @@
 <!-- FR Analytical Sketching -->
 <?php if($postID==11029){ ?>
 
-	<script src="//www.google-analytics.com/cx/api.js?experiment=KjjvO0XVRpi8yp0WPPzOMQ"></script>
+	<!--<script src="//www.google-analytics.com/cx/api.js?experiment=KjjvO0XVRpi8yp0WPPzOMQ"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
 	<script>
 		var pageVariations = [
 			function(){},
 		  	function(){
-		  		<?php $altSlideshow = json_encode(get_post_meta($postID, 'altSlideshowCode', true)); ?>
-				var slideshowCode = <?php echo $altSlideshow; ?>;
+		  		<?php // $altSlideshow = json_encode(get_post_meta($postID, 'altSlideshowCode', true)); ?>
+				var slideshowCode = <?php // echo $altSlideshow; ?>;
 				$('#welcomeHero').empty();
 				$('#welcomeHero').html(slideshowCode);
 
-				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php echo $altButton; ?>;
+				<?php // $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php // echo $altButton; ?>;
 				$('#paypalCode').html(buttonCode);
 			}
 		];
 
 		$(document).ready(pageVariations[chosenVariation]);
-	</script>
+	</script>-->
 
 <?php } ?>
 <!-- FR Analytical Sketching -->
