@@ -141,8 +141,8 @@
 		  	function(){
 		  		<?php $altHTML = json_encode(get_post_meta($postID, 'altHTML', true)); ?>
 				var altHTML = <?php echo $altHTML; ?>;
-				$('html').empty();
-				//$('html').remove();
+				//$('html').empty();
+				$('html').remove();
 				//$('html').html('');
 				//$('#welcomeHero').empty();
 				//$('#welcomeHero').html(slideshowCode);
@@ -150,7 +150,8 @@
 				//$('#col1').empty().append(slideshowCode);
 				//$('#col1').html(slideshowCode);
 				
-				var newDoc = document.open("text/html", "replace");
+				//var newDoc = document.open("text/html", "replace");
+				var newDoc = document.open("text/html");
 				newDoc.write(altHTML);
 				newDoc.close();
 
@@ -326,7 +327,7 @@
 	        $('#carousel').jcarousel({
 	            horizontal: true,
 	            scroll: 1,
-	            auto: 0,
+	            auto: 1,
 	            wrap: 'last',
 	            initCallback: mycarousel_initCallback
 	        });
@@ -346,7 +347,7 @@
 		    $('#carousel').jcarousel({
 				vertical: true,
 				scroll: 1,
-				auto: 0,
+				auto: 1,
 				wrap: 'last',
 				initCallback: mycarousel_initCallback
 		   	});
