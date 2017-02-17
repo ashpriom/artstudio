@@ -130,44 +130,6 @@
 <!-- EN Digital Painting -->
 
 
-<!-- EN Analytical Sketching -->
-<?php if($postID==6710){ ?>
-
-	<!--<script src="//www.google-analytics.com/cx/api.js?experiment=S7ozD4jESO6N0Pwq9fRc5w"></script>
-	<script> var chosenVariation = cxApi.chooseVariation(); </script>
-	<script>
-		var pageVariations = [
-			function(){},
-		  	function(){
-		  		<?php // $altHTML = json_encode(get_post_meta($postID, 'altHTML', true)); ?>
-				var altHTML = <?php // echo $altHTML; ?>;
-				//$('html').empty();
-				//$('html').html('new');
-				//$('html').replaceWith(altHTML);
-				//$('#welcomeHero').empty();
-				//$('#welcomeHero').html(slideshowCode);
-				//$('#welcomeHero').empty().append(slideshowCode);
-				//$('#col1').empty().append(slideshowCode);
-				//$('#col1').html(slideshowCode);
-				
-				//var newDoc = document.open("text/html");
-				var newDoc = document.open("text/html", "replace");
-				newDoc.write(altHTML);
-				//newDoc.close();
-
-				<?php // $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php // echo $altButton; ?>;
-				$('#paypalCode').html(buttonCode);
-			}
-		];
-
-		$(document).ready(pageVariations[chosenVariation]);
-	</script>-->
-
-<?php } ?>
-<!-- EN Analytical Sketching -->
-
-
 <!-- FR Drawing From Life -->
 <?php if($postID==11026){ ?>
 
@@ -201,7 +163,7 @@
 		var pageVariations = [
 			function(){},
 		  	function(){
-				$('#registration .text p').html("Ce cours est notre plus populaire des cours numériques que nous offrons (plus de 1000 élèves l'ont assisté). <del>$470</del> <b><i>$430</i></b>.");
+				$('#registration .text p').html("Le cours de peinture numérique est notre cours le plus populaire (plus de mille personnes y ont assisté). <del>$470</del> <b><i>$430</i></b>.");
 
 				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
 				var buttonCode = <?php echo $altButton; ?>;
@@ -214,33 +176,6 @@
 
 <?php } ?>
 <!-- FR Digital Painting -->
-
-
-<!-- FR Analytical Sketching -->
-<?php if($postID==11029){ ?>
-
-	<!--<script src="//www.google-analytics.com/cx/api.js?experiment=KjjvO0XVRpi8yp0WPPzOMQ"></script>
-	<script> var chosenVariation = cxApi.chooseVariation(); </script>
-	<script>
-		var pageVariations = [
-			function(){},
-		  	function(){
-		  		<?php // $altSlideshow = json_encode(get_post_meta($postID, 'altSlideshowCode', true)); ?>
-				var slideshowCode = <?php // echo $altSlideshow; ?>;
-				$('#welcomeHero').empty();
-				$('#welcomeHero').html(slideshowCode);
-
-				<?php // $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php // echo $altButton; ?>;
-				$('#paypalCode').html(buttonCode);
-			}
-		];
-
-		$(document).ready(pageVariations[chosenVariation]);
-	</script>-->
-
-<?php } ?>
-<!-- FR Analytical Sketching -->
 
 
 <script type="application/ld+json">
