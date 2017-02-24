@@ -16,107 +16,36 @@
 <!-- content: start -->
 <div id="content" class="podcast">
 
- 	<div id="col1">   
-    
-    <?php while ( have_posts() ) : the_post(); ?>
-    <?php echo "<h1>"; the_title(); echo "</h1>"; ?> 
-    <?php the_content(); ?>
-    <?php $postID = get_the_ID(); ?>
+ 	<div id="col1">
+
     <?php 
-      endwhile; // end of the loop. 
-    ?>
-		
-    <?php
-			switch ($postID){
-							case 135:
-											if($currentLang=="en"){
-                       $cat = 'Podcasts';
-                      }
-                      else{
-                       $cat = 'Podcasts-Fr';  
-                      }
-											break;
-							case 235:
-											if($currentLang=="en"){
-                       $cat = 'Workshops';
-                      }
-                      else{
-                       $cat = 'Ateliers';  
-                      }
-                      break;
-							case 239:
-                      if($currentLang=="en"){
-                       $cat = 'Videos';
-                      }
-                      else{
-                       $cat = 'Videos-Fr';  
-                      }
-                      break;
-              case 953:
-                      if($currentLang=="en"){
-          					   $cat = 'Teachers';
-                      }
-                      else{
-                       $cat = 'Professeurs';  
-                      }
-          					  
-                      echo "<style>";
-            						echo ".podcast #col1 {position: inherit; width: 100%}";
-            						echo ".podcast #col1 p {clear: both;}";
-            						echo ".podcast #col2 {display: none;}";
-            						echo ".teacher-boxWrapper .teacher-box {height: 530px;}";
-            						echo ".teachers-thumb {float: left; margin-right: 43px; margin-bottom: 12px;}";
-            						echo ".teachers-art img {height: 152px;}";
-            						echo ".podcast-boxWrapper h2 {font-size: 18px; margin-bottom: 10px;}";
-            						echo " -webkit-line-clamp: 4";
-            						echo "-webkit-box-orient: vertical;";
-          						echo "</style>";
-                      break;
-              case 11042:
-                      if($currentLang=="en"){
-                        $cat = 'Teachers';
-                      }
-                      else{
-                        $cat = 'Professeurs';  
-                      }
-
-                      echo "<style>";
-                        echo ".podcast #col1 {position: inherit; width: 100%}";
-                        echo ".podcast #col1 p {clear: both;}";
-                        echo ".podcast #col2 {display: none;}";
-                        echo ".teacher-boxWrapper .teacher-box {height: 530px;}";
-                        echo ".teachers-thumb {float: left; margin-right: 43px; margin-bottom: 12px;}";
-                        echo ".teachers-art img {height: 152px;}";
-                        echo ".podcast-boxWrapper h2 {font-size: 18px; margin-bottom: 10px;}";
-                        echo " -webkit-line-clamp: 4";
-                        echo "-webkit-box-orient: vertical;";
-                      echo "</style>";
-                      break;        
-              case 3123:
-                      if($currentLang=="en"){
-                        $cat = 'Testimonials';
-                      }
-                      else{
-                        $cat = 'Témoignages';  
-                      }
-                      break;        
-			}			
-   
-    $catID = get_cat_ID($cat);
-    query_posts('cat=' . $catID);
-
-    /*query_posts(array(
-        'orderby' => 'ASC',
-        'category_id' => $catID,
-    ));*/
+      echo "<style>";
+        echo ".podcast #col1 {position: inherit; width: 100%}";
+        echo ".podcast #col1 p {clear: both;}";
+        echo ".podcast #col2 {display: none;}";
+        echo ".teacher-boxWrapper .teacher-box {height: 530px;}";
+        echo ".teachers-thumb {float: left; margin-right: 43px; margin-bottom: 12px;}";
+        echo ".teachers-art img {height: 152px;}";
+        echo ".podcast-boxWrapper h2 {font-size: 18px; margin-bottom: 10px;}";
+        echo " -webkit-line-clamp: 4";
+        echo "-webkit-box-orient: vertical;";
+      echo "</style>";
+      
+      while ( have_posts() ) : the_post();
+        echo "<h1>"; the_title(); echo "</h1>";
+      endwhile;
     
-    while (have_posts()) : the_post();
-      echo "<div class='teacher-boxWrapper'>";
-      echo "<div class='teacher-box'>";
-      echo '<h2>' . get_the_title() . '</h2>';
-
-      if ($cat=="Teachers" || $cat=="Professeurs"){
+      if($currentLang=="en"){ $cat = 'Teachers'; }
+      else{ $cat = 'Professeurs';}
+      $catID = get_cat_ID($cat);
+      query_posts('cat=' . $catID);
+    
+      while (have_posts()) : the_post();
+        echo "<div class='teacher-boxWrapper'>";
+        echo "<div class='teacher-box'>";
+        echo '<h2>' . get_the_title() . '</h2>';
         $postIDTeacher = get_the_ID();
+
         if($currentLang=="en"){
           echo "<div class='teachers-thumb'><img src='";
           echo get_post_meta($postIDTeacher, 'teacherImageUrl' , true);
@@ -127,8 +56,7 @@
           echo get_post_meta($postIDTeacher, 'teacherArtUrl' , true);
           echo "' /></div>";
         }
-
-        else{
+        else {
           if(function_exists('pll_get_post')){ $translationID = pll_get_post($postIDTeacher,'en'); }
           echo "<div class='teachers-thumb'><img src='";
           echo get_post_meta($translationID, 'teacherImageUrl' , true);
@@ -139,38 +67,23 @@
           echo get_post_meta($translationID, 'teacherArtUrl' , true);
           echo "' /></div>";
         }
-      }
+  		
+      ?>
 
-  		?>	
-      <p>
-        <?php the_content(); ?>
-      </p>
+      <p> <?php the_content(); ?> </p>
+      
       <?php
-      echo "</div>";
-      echo "</div>";
+  
+      echo "</div>"; // <div class='teacher-box'>
+      echo "</div>"; // ends <div class='teacher-boxWrapper'>  
     
-    endwhile;
-    
-    ?>	
+    endwhile; ?>
        
   </div>
 
   <div id="col2">
   
 		<?php
-    if ($cat=="Podcasts") {
-      if ($currentLang=="en") {
-        echo "<div class='info-box2'><h3>Coming...</h3><div class='text-wrapper'><div class='text'><p>";
-        echo get_post_meta($postID, 'podcastsNextEpisodes_en', true);
-        echo "</div></div></div> ";  
-      }   
-      else {
-        echo "<div class='info-box2'><h3>À venir...</h3><div class='text-wrapper'><div class='text'><p>";
-        echo get_post_meta($postID, 'podcastsNextEpisodes_fr', true);
-        echo "</div></div></div> ";         
-      } 
-        
-    }
 
    
     if($currentLang=="en"){  
@@ -201,11 +114,11 @@
       echo "</div></div>";
       echo "</div>";
     endwhile;
+    
     ?>	
    
     <div id="share-plugins">
     
-    <!--<div id="facebook">-->
     <div style="margin-bottom:10px;">
 
       <div id="fb-root"></div>
@@ -270,6 +183,7 @@
    
       
   </div>
+
 </div>
 
 <?php get_footer(); ?>
