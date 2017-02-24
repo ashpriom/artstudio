@@ -239,34 +239,58 @@
       data-show-faces="false" 
       data-share="false">
       </div>
+
+      <!--<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com/SynStudio&amp;send=false&amp;
+      layout=box_count&amp;width=55&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90&amp;appId=223615814335068" 
+      scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:90px;" allowTransparency="true"></iframe>-->
+
     </div>
 
     <div id="twitter">
+
       <a href="https://twitter.com/SynStudio" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true">Follow</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      <!--<div class="twitter-sideBar">
+        <?php
+          //echo getTwitterFollowers('SynStudio'); // see functions.php for reference
+          //echo '<div class="followers">Followers</div>';
+        ?>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true" data-count="none" data-via="SynStudio" data-text="I'm checking out Syn Studio Art School right now!">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>-->
+    
     </div>
 
   </div>
-
-    <!-- Join Our Newsletter : start -->
-    <?php 
-    if($currentLang=="en"){ $newsletterPost = get_post(145); }
-    else{ $newsletterPost = get_post(11014); }
-    $newsletterTitle = $newsletterPost->post_title;
-    $newsletterContent = apply_filters( 'the_content', $newsletterPost->post_content );
-    $newsletterExcerpt = $newsletterPost->post_excerpt;
+   
+   <div id="btn-howToRegister"><a href="#">How to Register</a></div>
+   
+   <!-- Join Our Newsletter : start -->
+   <?php
+   $cat = 'General';
+   $catID = get_cat_ID($cat);
+   
+   query_posts('cat=' . $catID);
+   while (have_posts()) : the_post();
+   
+   $postID = get_the_ID();
+   if ($postID = "145") {
     echo "<div id='newsletter-box2' class='info-box2'>";
-      echo '<h3>' . $newsletterTitle . '</h3>';
+     echo '<h3>' . get_the_title() . '</h3>';
       echo "<div class='text-wrapper'>";
-        echo "<div class='text'>";
-          echo "<p>";
-            echo $newsletterExcerpt;
-          echo "</p>";
-          echo $newsletterContent;
-        echo "</div>";
+  			echo "<div class='text'>";
+        echo "<p>";
+          the_excerpt();
+        echo "</p>";
+        the_content();
       echo "</div>";
+     echo "</div>";
     echo "</div>";
-    ?>
-    <!-- Join Our Newsletter : end -->
+   }
+   
+   endwhile;
+    ?>	
+   <!-- Join Our Newsletter : end -->
    
       
   </div>
