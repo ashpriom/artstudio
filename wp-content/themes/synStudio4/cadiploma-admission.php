@@ -969,7 +969,7 @@ Template Name: Concept Art Diploma - Admission
                                     <tr class="grey-table-row">
                                         <td>2</td>
                                         <td>Send us your student contract and registration fee to finalize your registration.</td>
-                                        <td>April 28th, 2017</td>
+                                        <td>March, 2017</td>
                                         <td class="orange-table-row">$50 CAN</td>
                                     </tr>
                                     <tr>
@@ -2016,7 +2016,7 @@ Template Name: Concept Art Diploma - Admission
                                     <tr class="grey-table-row">
                                         <td>2</td>
                                         <td>Envoi du contrat et des frais d'inscription pour finaliser l'inscription.</td>
-                                        <td>28 avril, 2017</td>
+                                        <td>Mars, 2017</td>
                                         <td class="orange-table-row">$50</td>
                                     </tr>
                                     <tr>
