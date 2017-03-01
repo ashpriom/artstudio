@@ -20,12 +20,12 @@ get_header(); ?>
 	if ($currentLang == "en") {	?>
 		<style type="text/css">
 			.gce-description { display: none; }
-		</style> <?	
+		</style> <?php 
 	}
 	else{ ?>
 		<style type="text/css">
 			.gce-list-event { display: none; }
-		</style> <?	
+		</style> <?php 
 	}
 ?>
 
@@ -310,24 +310,22 @@ get_header(); ?>
 
 		<!-- Join Our Newsletter : start -->
 		<?php
-			$cat = 'General';
-			$catID = get_cat_ID($cat);
-			query_posts('cat=' . $catID);
-			while (have_posts()) : the_post();
-			$postID = get_the_ID();
-			if ($postID = "145") {
-				echo "<div id='newsletter-box' class='info-box1Wrapper'>";
-					echo "<div class='info-box1'>";
-						echo '<h2>' . get_the_title() . '</h2>';
-						echo "<div class='text'>";
-							the_excerpt();
-							the_content();
-						echo "</div>";
+			if($currentLang=="en"){ $newsletterPost = get_post(145); }
+		    else{ $newsletterPost = get_post(11014); }
+		    $newsletterTitle = $newsletterPost->post_title;
+		    $newsletterContent = apply_filters( 'the_content', $newsletterPost->post_content );
+		    $newsletterExcerpt = $newsletterPost->post_excerpt;
+			echo "<div id='newsletter-box' class='info-box1Wrapper'>";
+				echo "<div class='info-box1'>";
+					echo '<h2>' . $newsletterTitle . '</h2>';
+					echo "<div class='text'>";
+						echo "<p>". $newsletterExcerpt. "</p>";
+						echo $newsletterContent;
 					echo "</div>";
 				echo "</div>";
-			}
-			endwhile;
-		?>	<!-- Join Our Newsletter : end -->
+			echo "</div>";
+		?>
+		<!-- Join Our Newsletter : end -->
 
 		
 		<div class="info-box1Wrapper"> <!-- Calendar : start -->
@@ -427,7 +425,7 @@ get_header(); ?>
 		<div class="info-box1Wrapper">
 			<div class="info-box1">
 				<?php
-					if($currentLang=="en"){?>
+					if($currentLang=="en"){ ?>
 						<h2>Jobs</h2>
 						<div><?php echo get_post_meta('9', 'jobs_en', true); ?></div>
 					<?php } 
