@@ -196,9 +196,13 @@ jQuery(document).ready(function (){
                             </div>
                             <div class="experience-description">
                                 <p>
-                                   <b>Syn Studio</b> is located in the <b>heart of downtown Montreal</b> - rated 2nd best city to live in the world by <b>The Economist in 2015</b>.
+                                    <b>Syn Studio</b>  is located in the <b>heart of downtown Montreal</b> which has been rated as the best student city in the world in 2017 by <b>QS Best Student City</b> rankings.  It is also one of the most affordable cities in North America and was termed the 2nd best city to live in the world by <b>The Economist in 2015</b>. 
+
+                                    Montreal is also a <b>world artistic and cultural capital</b>, recognized by the <b>United Nations Economic Scientific and Cultural Organization</b> as one of the world’s cities of design. &nbsp; <br /><br /> In addition to this, it is <b>a world entertainment hub, attracting new studios</b> and creating <b>new concept art jobs</b> everyday.
+
+                                    <!--<b>Syn Studio</b> is located in the <b>heart of downtown Montreal</b> - rated 2nd best city to live in the world by <b>The Economist in 2015</b>.
                                     Montreal is also a <b>world artistic and cultural capital</b>, recognized by the<b> United Nations Economic Scientific and Cultural Organization</b> as one of the world’s cities of design. &nbsp;
-                                    <br /><br />It is one of <b>the biggest student cities </b>and <b>one of the most affordable</b> in North America. And it is <b>a world entertainment hub, attracting new studios</b> and <b>new concept art jobs</b>.
+                                    <br /><br />It is one of <b>the biggest student cities </b>and <b>one of the most affordable</b> in North America. And it is <b>a world entertainment hub, attracting new studios</b> and <b>new concept art jobs</b>.-->
                                 </p>
                             </div>
                         </div>
@@ -224,9 +228,13 @@ jQuery(document).ready(function (){
                         </div>
                         <div class="col-md-6 top-border-description">
                             <p class="experience-headline-description-right">
-                                <b>Syn Studio</b> &nbsp;is located in the <b>heart of downtown Montreal</b> - rated 2nd best city to live in the world by <b>The Economist in 2015</b>.
+                                <b>Syn Studio</b>  is located in the <b>heart of downtown Montreal</b> which has been rated as the best student city in the world in 2017 by <b>QS Best Student City</b> rankings.  It is also one of the most affordable cities in North America and was termed the 2nd best city to live in the world by <b>The Economist in 2015</b>. 
+
+                                Montreal is also a <b>world artistic and cultural capital</b>, recognized by the <b>United Nations Economic Scientific and Cultural Organization</b> as one of the world’s cities of design. &nbsp; <br /><br /> In addition to this, it is <b>a world entertainment hub, attracting new studios</b> and creating <b>new concept art jobs</b> everyday.
+
+                                <!--<b>Syn Studio</b> &nbsp;is located in the <b>heart of downtown Montreal</b> - rated 2nd best city to live in the world by <b>The Economist in 2015</b>.
                                 Montreal is also a <b>world artistic and cultural capital</b>, recognized by the<b> United Nations Economic Scientific and Cultural Organization</b> as one of the world’s cities of design. &nbsp;
-                                <br /><br />It is one of <b>the biggest student cities </b>and <b>one of the most affordable</b> in North America. And it is <b>a world entertainment hub, attracting new studios</b> and <b>new concept art jobs</b>.
+                                <br /><br />It is one of <b>the biggest student cities </b>and <b>one of the most affordable</b> in North America. And it is <b>a world entertainment hub, attracting new studios</b> and <b>new concept art jobs</b>.-->
                             </p>
                         </div>
                         <div class="col-md-1"></div>
@@ -720,7 +728,7 @@ jQuery(document).ready(function (){
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
-                        <a href="#" class="navbar-brand scroll-top"><img src="<?php echo get_template_directory_uri(); ?>/images/up.png" alt="" /></a>
+                        <a href="#" class="navbar-brand scroll-top"><img src="<?php // echo get_template_directory_uri(); ?>/images/up.png" alt="" /></a>
                     </div>
                     <div class="collapse navbar-collapse" id="main-nav">
                         <ul class="nav navbar-nav">
@@ -760,9 +768,14 @@ jQuery(document).ready(function (){
                             </div>
                             <div class="experience-description">
                                 <p>
-                               Syn Studio est situé au coeur de Montréal, 2ème au classement des villes où il fait bon vivre par The Economist en 2015. Montréal est également une capitale mondiale artistique et culturelle reconnue par l'Organisation des Nations Unies pour l'éducation, la science et la culture comme l'une des villes mondiales pour le design.  &nbsp;
-                            <br>
-                            <br> C'est l'une des villes qui compte le plus grand nombre d'étudiants et l'une des plus accessibles financièrement en Amérique du Nord. Enfin, c'est l'un des pôles du divertissement qui attire de nouveaux studios et de nouveaux emplois dans la conception artistique. </p>
+                                Syn Studio est situé au coeur du centre-ville de Montréal, ce dernier étant classé par QS Best Student City comme la meilleure ville au monde en 2017 pour les étudiants. Montréal est aussi une des villes les plus abordables en Amérique du Nord en plus d'être la deuxième meilleure ville pour la qualité de vie selon The Economist en 2015. &nbsp;
+                                <br/><br/>
+                                Montréal est, de plus, une capitale artistique et culturelle, reconnue par l'Organisation économique, scientifique et culturelle de l'ONU comme une des villes de design du monde. Plusieurs nouveaux studios sont attirés par le secteur de divertissement renommé de Montréal, créant des nouveaux emplois en art de conception chaque jour.
+
+                                <!--Syn Studio est situé au coeur de Montréal, 2ème au classement des villes où il fait bon vivre par The Economist en 2015. Montréal est également une capitale mondiale artistique et culturelle reconnue par l'Organisation des Nations Unies pour l'éducation, la science et la culture comme l'une des villes mondiales pour le design.  &nbsp;
+                                <br>
+                                <br> C'est l'une des villes qui compte le plus grand nombre d'étudiants et l'une des plus accessibles financièrement en Amérique du Nord. Enfin, c'est l'un des pôles du divertissement qui attire de nouveaux studios et de nouveaux emplois dans la conception artistique.-->                                  
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -789,9 +802,13 @@ jQuery(document).ready(function (){
                         </div>
                         <div class="col-md-6 top-border-description">
                             <p class="experience-headline-description-right">
-                          Syn Studio est situé au coeur de Montréal, 2ème au classement des villes où il fait bon vivre par The Economist en 2015. Montréal est également une capitale mondiale artistique et culturelle reconnue par l'Organisation des Nations Unies pour l'éducation, la science et la culture comme l'une des villes mondiales pour le design.  &nbsp;
+                            Syn Studio est situé au coeur du centre-ville de Montréal, ce dernier étant classé par QS Best Student City comme la meilleure ville au monde en 2017 pour les étudiants. Montréal est aussi une des villes les plus abordables en Amérique du Nord en plus d'être la deuxième meilleure ville pour la qualité de vie selon The Economist en 2015. &nbsp;
+                            <br/><br/>
+                            Montréal est, de plus, une capitale artistique et culturelle, reconnue par l'Organisation économique, scientifique et culturelle de l'ONU comme une des villes de design du monde. Plusieurs nouveaux studios sont attirés par le secteur de divertissement renommé de Montréal, créant des nouveaux emplois en art de conception chaque jour.
+                            <!--Syn Studio est situé au coeur de Montréal, 2ème au classement des villes où il fait bon vivre par The Economist en 2015. Montréal est également une capitale mondiale artistique et culturelle reconnue par l'Organisation des Nations Unies pour l'éducation, la science et la culture comme l'une des villes mondiales pour le design.  &nbsp;
                             <br>
-                            <br> C'est l'une des villes qui compte le plus grand nombre d'étudiants et l'une des plus accessibles financièrement en Amérique du Nord. Enfin, c'est l'un des pôles du divertissement qui attire de nouveaux studios et de nouveaux emplois dans la conception artistique.  </p>
+                            <br> C'est l'une des villes qui compte le plus grand nombre d'étudiants et l'une des plus accessibles financièrement en Amérique du Nord. Enfin, c'est l'un des pôles du divertissement qui attire de nouveaux studios et de nouveaux emplois dans la conception artistique.-->
+                            </p>
                         </div>
                         <div class="col-md-1">
                         </div>
