@@ -761,26 +761,23 @@
 	?>
 
    	<!-- Join Our Newsletter : start -->
-   	<?php
-   		$cat = 'General';
-   		$catID = get_cat_ID($cat);
-   		query_posts('cat=' . $catID);
-   		while (have_posts()) : the_post();
-   		$postID = get_the_ID();
-   		if ($postID = "145") {
-   			echo "<div id='newsletter-box' class='info-box1Wrapper infobox-classpage'>";
-   				echo "<div class='info-box1'>";
-   					echo '<h2>' . get_the_title() . '</h2>';
-   					echo "<div class='text'>";
-   						the_excerpt();
-   						the_content();
-   					echo "</div>";
-   				echo "</div>";
-   			echo "</div>";
-   		}
-
-   		endwhile;
-    ?>
+	<?php
+		if($currentLang=="en"){ $newsletterPost = get_post(145); }
+	    else{ $newsletterPost = get_post(11014); }
+	    $newsletterTitle = $newsletterPost->post_title;
+	    $newsletterContent = apply_filters( 'the_content', $newsletterPost->post_content );
+	    $newsletterExcerpt = $newsletterPost->post_excerpt;
+		echo "<div id='newsletter-box' class='info-box1Wrapper infobox-classpage'>";
+			echo "<div class='info-box1'>";
+				echo '<h2>' . $newsletterTitle . '</h2>';
+				echo "<div class='text'>";
+					echo "<p>". $newsletterExcerpt. "</p>";
+					echo $newsletterContent;
+				echo "</div>";
+			echo "</div>";
+		echo "</div>";
+	?>
+	<!-- Join Our Newsletter : end -->
 
 </div> <!-- column 3: end -->
 </div> <!-- content: end -->

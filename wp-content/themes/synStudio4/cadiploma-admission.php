@@ -969,7 +969,7 @@ Template Name: Concept Art Diploma - Admission
                                     <tr class="grey-table-row">
                                         <td>2</td>
                                         <td>Send us your student contract and registration fee to finalize your registration.</td>
-                                        <td>April 28th, 2017</td>
+                                        <td>March 2017</td>
                                         <td class="orange-table-row">$50 CAN</td>
                                     </tr>
                                     <tr>
@@ -2005,7 +2005,7 @@ Template Name: Concept Art Diploma - Admission
                                     <tr style="font-weight: 700;"">
                                         <td>1</td>
                                         <td>Entretiens (entretien individuel ou sur Skype déterminant pour savoir si vous êtes accepté dans notre programme d'entraînement d'élite)</td>
-                                        <td>Février/Mars, 2017</td>
+                                        <td>février/ mars, 2017</td>
                                         <td class="orange-table-row">GRATUIT</td>
                                     </tr>
                                     <tr>
@@ -2016,7 +2016,7 @@ Template Name: Concept Art Diploma - Admission
                                     <tr class="grey-table-row">
                                         <td>2</td>
                                         <td>Envoi du contrat et des frais d'inscription pour finaliser l'inscription.</td>
-                                        <td>28 avril, 2017</td>
+                                        <td>mars 2017</td>
                                         <td class="orange-table-row">$50</td>
                                     </tr>
                                     <tr>
@@ -2058,7 +2058,7 @@ Template Name: Concept Art Diploma - Admission
                                     <tr>
                                         <td>9</td>
                                         <td>Cérémonie de remise des diplômes</td>
-                                        <td>Avril 2019</td>
+                                        <td>avril 2019</td>
                                         <td class="orange-table-row">GRATUIT</td>
                                     </tr>
                                     <tr class="grey-table-row">
