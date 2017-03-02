@@ -23,18 +23,19 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
   <div id="col2"> <!-- column 2: start -->
     
     <?php
-    if($currentLang=="en"){$catName = "Testimonials";} else{$catName = "testimonials-fr";}
+    
+    if($currentLang=="en"){$catName = "Testimonials";} else{$catName = "Témoignages";}
 
     query_posts(array(
     'showposts' => 1,
     'orderby' => 'rand',
-    'category_name' => $catName //You can insert any category name
+    'category_name' => $catName
     ));
 
 
     while (have_posts()) : the_post();
       echo "<div class='info-box2'>";
-      echo '<h3>' . get_cat_name($catID) . '</h3>';
+      echo '<h3>' . $catName . '</h3>';
       echo "<div class='text-wrapper'><div class='text'>";
       the_excerpt();    
       if ($currentLang == "en") { echo "<a class='lnk-readMore' href='/testimonials'>Read More</a>"; }
