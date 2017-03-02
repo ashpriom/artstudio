@@ -197,8 +197,8 @@ jQuery(document).ready(function (){
                             <div class="experience-description">
                                 <p>
                                     <b>Syn Studio</b>  is located in the <b>heart of downtown Montreal</b> which has been rated as the best student city in the world in 2017 by <b>QS Best Student City</b> rankings.  It is also one of the most affordable cities in North America and was termed the 2nd best city to live in the world by <b>The Economist in 2015</b>. 
-
-                                    Montreal is also a <b>world artistic and cultural capital</b>, recognized by the <b>United Nations Economic Scientific and Cultural Organization</b> as one of the world’s cities of design. &nbsp; <br /><br /> In addition to this, it is <b>a world entertainment hub, attracting new studios</b> and creating <b>new concept art jobs</b> everyday.
+                                     &nbsp; <br /><br />    
+                                    Montreal is also a <b>world artistic and cultural capital</b>, recognized by the <b>United Nations Economic Scientific and Cultural Organization</b> as one of the world’s cities of design. In addition to this, it is <b>a world entertainment hub, attracting new studios</b> and creating <b>new concept art jobs</b> everyday.
 
                                     <!--<b>Syn Studio</b> is located in the <b>heart of downtown Montreal</b> - rated 2nd best city to live in the world by <b>The Economist in 2015</b>.
                                     Montreal is also a <b>world artistic and cultural capital</b>, recognized by the<b> United Nations Economic Scientific and Cultural Organization</b> as one of the world’s cities of design. &nbsp;
@@ -229,8 +229,8 @@ jQuery(document).ready(function (){
                         <div class="col-md-6 top-border-description">
                             <p class="experience-headline-description-right">
                                 <b>Syn Studio</b>  is located in the <b>heart of downtown Montreal</b> which has been rated as the best student city in the world in 2017 by <b>QS Best Student City</b> rankings.  It is also one of the most affordable cities in North America and was termed the 2nd best city to live in the world by <b>The Economist in 2015</b>. 
-
-                                Montreal is also a <b>world artistic and cultural capital</b>, recognized by the <b>United Nations Economic Scientific and Cultural Organization</b> as one of the world’s cities of design. &nbsp; <br /><br /> In addition to this, it is <b>a world entertainment hub, attracting new studios</b> and creating <b>new concept art jobs</b> everyday.
+                                &nbsp; <br /><br />
+                                Montreal is also a <b>world artistic and cultural capital</b>, recognized by the <b>United Nations Economic Scientific and Cultural Organization</b> as one of the world’s cities of design. In addition to this, it is <b>a world entertainment hub, attracting new studios</b> and creating <b>new concept art jobs</b> everyday.
 
                                 <!--<b>Syn Studio</b> &nbsp;is located in the <b>heart of downtown Montreal</b> - rated 2nd best city to live in the world by <b>The Economist in 2015</b>.
                                 Montreal is also a <b>world artistic and cultural capital</b>, recognized by the<b> United Nations Economic Scientific and Cultural Organization</b> as one of the world’s cities of design. &nbsp;
