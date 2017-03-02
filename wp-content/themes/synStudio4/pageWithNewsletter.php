@@ -24,18 +24,17 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
     
     <?php
     
-    if($currentLang=="en"){$catName = "Testimonials";} else{$catName = "Témoignages";}
+    if($currentLang=="en"){$catID = 10;} else{$catID = 110;}
 
     query_posts(array(
-    'showposts' => 1,
-    'orderby' => 'rand',
-    'category_name' => $catName
+      'cat' => $catID,  
+      'showposts' => 1,
+      'orderby' => 'rand'
     ));
-
 
     while (have_posts()) : the_post();
       echo "<div class='info-box2'>";
-      echo '<h3>' . $catName . '</h3>';
+      echo '<h3>' . get_cat_name($catID) . '</h3>';
       echo "<div class='text-wrapper'><div class='text'>";
       the_excerpt();    
       if ($currentLang == "en") { echo "<a class='lnk-readMore' href='/testimonials'>Read More</a>"; }
