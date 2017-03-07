@@ -1073,10 +1073,9 @@ Template Name: Concept Art Diploma - Admission
 <div class="mc-field-group">
     <label for="mce-MMERGE2">Select your preferred start date: *</label>
     <select name="MMERGE2" class="" id="mce-MMERGE2">
-    <option value=""></option>
-    <option value="October 2017">October 2017</option>
-<option value="October 2018">October 2018</option>
-
+        <option value=""></option>
+        <option value="October 2018">October 2018</option>
+        <option value="October 2019">October 2019</option>
     </select>
 </div>
 <div class="mc-field-group">
@@ -2117,10 +2116,9 @@ Template Name: Concept Art Diploma - Admission
 <div class="mc-field-group">
     <label for="mce-MMERGE2">Séléctionnez la date de début *</label>
     <select name="MMERGE2" class="" id="mce-MMERGE2">
-    <option value=""></option>
-    <option value="Octobre 2017">Octobre 2017</option>
-<option value="Octobre 2018">Octobre 2018</option>
-
+        <option value=""></option>
+        <option value="Octobre 2018">Octobre 2018</option>
+        <option value="Octobre 2019">Octobre 2019</option>
     </select>
 </div>
 <div class="mc-field-group">
