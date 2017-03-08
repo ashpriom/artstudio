@@ -245,8 +245,6 @@ get_header();
      }
      ?>
 
-     <h2></h2>
-
 <!-- classes : start -->
 <?php
       if($currentLang=="en"){ $cats = get_categories('child_of=4'); }
@@ -258,7 +256,7 @@ get_header();
             if ($my_query->have_posts()) : ?>
 
             <?php
-            if ($cat->name=="Special Classes") {
+            if ($cat->name=="Concept Art" || $cat->name=="Concept Art Fr") {
               if ($this_category->category_parent != 0) {
                 while ($my_query->have_posts()) : $my_query->the_post(); /*general loop output; for instance: */
                 $postID = get_the_ID();
