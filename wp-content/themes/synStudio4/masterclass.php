@@ -167,12 +167,12 @@
      		<script type="text/javascript">
 
      			var slide1 = { 
-					slideLarge:"<iframe src=\"https://www.youtube.com/embed/THWecUL38uQ?autoplay=1\" width=\"545\" height=\"342\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe>",
+					slideLarge:"",
 					slideSmall:"http://synstudio.staging.wpengine.com/wp-content/uploads/2016/01/Thumbnail_4.jpg",
 					slideText1:"",
 					slideText2:"",
 					slideLink:"",
-				}; 
+				};
 
 		 		<?php
 				/*	A loop field named "slider" with sub-fields "image"
@@ -261,7 +261,7 @@
 				
 				//Items for Large Image
 				if (i2==1) {
-					var listItem = "<li class='p" + i2 + " active'><a href=''><img src='' width='545' height='342' alt=''/><span class='opacity'></span><span class='content'><h1></h1><p></p></span></a></li>";
+					var listItem = "<li class='p" + i2 + " active'><iframe src=\"https://www.youtube.com/embed/THWecUL38uQ?autoplay=1\" width=\"550\" height=\"340\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></li>";
 				}
 				else {
 					var listItem = "<li class='p" + i2 + "'><a href=''><img src='' width='545' height='342' alt=''/><span class='opacity'></span><span class='content'><h1></h1><p></p></span></a></li>";
@@ -276,7 +276,7 @@
 					
 			//count array elements
 			var arrayElements = "";
-			for (var countVble=1; countVble<=totalSlides2; countVble++){
+			for (var countVble=2; countVble<=totalSlides2; countVble++){
 				arrayElements = arrayElements + "var count"+countVble+" = 0;";
 				arrayElements = arrayElements + "for (i in slide"+countVble+") {";
 				arrayElements = arrayElements + "if (slide"+countVble+".hasOwnProperty(i)) {";
@@ -287,7 +287,7 @@
 			eval(arrayElements);
 													
 			//Apply array values
-			for (var i2=1; i2<=totalSlides2; i2++){
+			for (var i2=2; i2<=totalSlides2; i2++){
 				var builtSlide1 = "$('.p" + i2 + " a').attr('href',slide" + i2 + ".slideLink); $('.p" + i2 + " img').attr('src',slide" + i2 + ".slideLarge); $('#p" + i2 + "ImageSmall').attr('src',slide" + i2 + ".slideSmall);";
 				var builtSlide2 = " $('.p" + i2 + " h1').append(slide" + i2 + ".slideText1); $('.p" + i2 + " p').append(slide" + i2 + ".slideText2);";							
 				var slideTest = "count" + i2;
