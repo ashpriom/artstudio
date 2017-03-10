@@ -270,7 +270,13 @@
 				$("#slideshow-main ul").append(listItem);
 				
 				//Items for Small Image
-				var listItemSmall = "<li><a href='#' rel='p" + i2 + "'><img id='p" + i2 + "ImageSmall' src='' width='154' height='127' alt='#'/></a></li>";
+				if (i2==1) {
+					var listItemSmall = "<li><a href='#' rel='p" + i2 + "'><img id='p" + i2 + "ImageSmall' src='http://synstudio.staging.wpengine.com/wp-content/uploads/2016/01/Thumbnail_4.jpg' width='154' height='127' alt='#'/></a></li>";
+	          	}
+	          	else{
+	          		var listItemSmall = "<li><a href='#' rel='p" + i2 + "'><img id='p" + i2 + "ImageSmall' src='' width='154' height='127' alt='#'/></a></li>";
+	          	}
+
 	          	$("#slideshow-carousel ul").append(listItemSmall);
 			}
 					
