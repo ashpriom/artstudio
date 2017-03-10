@@ -91,13 +91,13 @@
 				r = 1;
 			}	
 		};
-		var interval = setInterval(slider, 15000);
+		var interval = setInterval(slider, 95000);
 						
 		// when the user hovers in, clear the interval; if they hover out, restart it again
 		$('#slideshow-carousel').hover(function() {
 			clearInterval(interval);
 		},function() {
-			interval = setInterval(slider, 15000);
+			interval = setInterval(slider, 95000);
 		});
 	});
 
@@ -108,7 +108,7 @@
 		carousel.clip.hover(function() {
 			carousel.stopAuto();
 		}, function() {
-			carousel.startAuto();
+			carousel.stopAuto();
 		});
 	}
 
