@@ -6,9 +6,7 @@
 $postID = get_the_ID();
 
 // activate header-masterClass.php, header-masterClass2.php and so on.
-if ($postID==12105 || $postID==12106){ get_header("masterClass"); }
-elseif ($postID==12457 || $postID==12459){ get_header("masterClassArtstation"); } // English and French versions of company specific header
-elseif ($postID==12458 || $postID==12460){ get_header("masterClassWacom"); }
+if ($postID==14658 || $postID==14659){ get_header("masterClass"); }
 else{ get_header(); }
 
 if(have_posts()){ the_post(); rewind_posts();}
