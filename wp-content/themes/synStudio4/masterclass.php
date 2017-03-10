@@ -168,7 +168,7 @@
 
      			var slide1 = { 
 					slideLarge:"",
-					slideSmall:"http://synstudio.staging.wpengine.com/wp-content/uploads/2016/01/Thumbnail_4.jpg",
+					slideSmall:"<?php get_site_url(); ?>/wp-content/uploads/2017/03/ssgm-video-thumb.jpg",
 					slideText1:"",
 					slideText2:"",
 					slideLink:"",
@@ -261,7 +261,7 @@
 				
 				//Items for Large Image
 				if (i2==1) {
-					var listItem = "<li class='p" + i2 + " active'><iframe src=\"https://www.youtube.com/embed/THWecUL38uQ?autoplay=1\" width=\"550\" height=\"340\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></li>";
+					var listItem = "<li class='p" + i2 + " active'><iframe style=\"position: relative; height: 100%; width: 100%;\" src=\"https://www.youtube.com/embed/THWecUL38uQ?autoplay=1\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></li>";
 				}
 				else {
 					var listItem = "<li class='p" + i2 + "'><a href=''><img src='' width='545' height='342' alt=''/><span class='opacity'></span><span class='content'><h1></h1><p></p></span></a></li>";
@@ -271,7 +271,7 @@
 				
 				//Items for Small Image
 				if (i2==1) {
-					var listItemSmall = "<li><a href='#' rel='p" + i2 + "'><img id='p" + i2 + "ImageSmall' src='http://synstudio.staging.wpengine.com/wp-content/uploads/2016/01/Thumbnail_4.jpg' width='154' height='127' alt='#'/></a></li>";
+					var listItemSmall = "<li><a href='#' rel='p" + i2 + "'><img id='p" + i2 + "ImageSmall' src='<?php get_site_url(); ?>/wp-content/uploads/2017/03/ssgm-video-thumb.jpg' width='154' height='127' alt='#'/></a></li>";
 	          	}
 	          	else{
 	          		var listItemSmall = "<li><a href='#' rel='p" + i2 + "'><img id='p" + i2 + "ImageSmall' src='' width='154' height='127' alt='#'/></a></li>";
