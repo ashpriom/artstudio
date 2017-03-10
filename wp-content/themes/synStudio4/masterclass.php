@@ -341,13 +341,36 @@
 		if($currentLang=="en"){ 
 			$attachment_id1 = get_post_meta($postID, 'teacher_photo1', true);
 			$attachment_id2 = get_post_meta($postID, 'teacher_photo2', true);
+			$attachment_id3 = get_post_meta($postID, 'teacher_photo3', true);
+			$attachment_id4 = get_post_meta($postID, 'teacher_photo4', true);
+			$attachment_id5 = get_post_meta($postID, 'teacher_photo5', true);
+			$attachment_id6 = get_post_meta($postID, 'teacher_photo6', true);
+			$attachment_id7 = get_post_meta($postID, 'teacher_photo7', true);
+			$attachment_id8 = get_post_meta($postID, 'teacher_photo8', true);
 		}
 		else{
 			$attachment_id1 = get_post_meta($translationID, 'teacher_photo1', true);
 			$attachment_id2 = get_post_meta($translationID, 'teacher_photo2', true);
+			$attachment_id3 = get_post_meta($translationID, 'teacher_photo3', true);
+			$attachment_id4 = get_post_meta($translationID, 'teacher_photo4', true);
+			$attachment_id5 = get_post_meta($translationID, 'teacher_photo5', true);
+			$attachment_id6 = get_post_meta($translationID, 'teacher_photo6', true);
+			$attachment_id7 = get_post_meta($translationID, 'teacher_photo7', true);
+			$attachment_id8 = get_post_meta($translationID, 'teacher_photo8', true);
 		}
 		?>
-		<div class="thumbnail"><?php // echo wp_get_attachment_image($attachment_id1, small); echo wp_get_attachment_image($attachment_id2, small); ?></div>
+		<div class="thumbnail">
+			<?php
+				echo wp_get_attachment_image($attachment_id1, small); 
+				echo wp_get_attachment_image($attachment_id2, small);
+				echo wp_get_attachment_image($attachment_id3, small);
+				echo wp_get_attachment_image($attachment_id4, small);
+				echo wp_get_attachment_image($attachment_id5, small);
+				echo wp_get_attachment_image($attachment_id6, small);
+				echo wp_get_attachment_image($attachment_id7, small);
+				echo wp_get_attachment_image($attachment_id8, small);
+			?>
+		</div>
 		<?php echo get_post_meta($postID, 'teacher_info_' . $currentLang, true); ?>
 	</div>
 	<div class="bgd-box"></div>
