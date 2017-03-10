@@ -21,7 +21,7 @@
 	        $('#carousel').jcarousel({
 	            horizontal: true,
 	            scroll: 1,
-	            auto: 2,
+	            auto: 0,
 	            wrap: 'last',
 	            initCallback: mycarousel_initCallback
 	        });
@@ -41,11 +41,11 @@
 		    $('#carousel').jcarousel({
 				vertical: true,
 				scroll: 1,
-				auto: 2,
+				auto: 0,
 				wrap: 'last',
 				initCallback: mycarousel_initCallback
 		   	});
-		}     
+		}
 
 		//Front page Carousel - Initial Setup
 	   	$('div#slideshow-carousel a img').css({'opacity': '0.5'});
@@ -91,13 +91,13 @@
 				r = 1;
 			}	
 		};
-		var interval = setInterval(slider, 5000);
+		var interval = setInterval(slider, 95000);
 						
 		// when the user hovers in, clear the interval; if they hover out, restart it again
 		$('#slideshow-carousel').hover(function() {
 			clearInterval(interval);
 		},function() {
-			interval = setInterval(slider, 5000);
+			interval = setInterval(slider, 95000);
 		});
 	});
 
@@ -108,7 +108,7 @@
 		carousel.clip.hover(function() {
 			carousel.stopAuto();
 		}, function() {
-			carousel.startAuto();
+			carousel.stopAuto();
 		});
 	}
 
@@ -166,6 +166,14 @@
   
      		<script type="text/javascript">
 
+     			var slide1 = { 
+					slideLarge:"",
+					slideSmall:"<?php get_site_url(); ?>/wp-content/uploads/2017/03/ssgm-video-thumb.jpg",
+					slideText1:"",
+					slideText2:"",
+					slideLink:"",
+				};
+
 		 		<?php
 				/*	A loop field named "slider" with sub-fields "image"
 				    It uses the Custom Field Suite plugin's loop functionality.
@@ -177,7 +185,7 @@
 					else{
 						$fields = CFS()->get('slider',$translationID);
 					}
-					$i=0;
+					$i=1;
 					foreach ((array)$fields as $field) {
 						$i++;
 						echo "var slide".$i." = { \n";
@@ -253,7 +261,7 @@
 				
 				//Items for Large Image
 				if (i2==1) {
-					var listItem = "<li class='p" + i2 + " active'><a href=''><img src='' width='545' height='342' alt=''/><span class='opacity'></span><span class='content'><h1></h1><p></p></span></a></li>";
+					var listItem = "<li class='p" + i2 + " active'><iframe style=\"position: relative; height: 100%; width: 100%;\" src=\"https://www.youtube.com/embed/THWecUL38uQ?autoplay=1\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></li>";
 				}
 				else {
 					var listItem = "<li class='p" + i2 + "'><a href=''><img src='' width='545' height='342' alt=''/><span class='opacity'></span><span class='content'><h1></h1><p></p></span></a></li>";
@@ -262,13 +270,19 @@
 				$("#slideshow-main ul").append(listItem);
 				
 				//Items for Small Image
-				var listItemSmall = "<li><a href='#' rel='p" + i2 + "'><img id='p" + i2 + "ImageSmall' src='' width='154' height='127' alt='#'/></a></li>";
+				if (i2==1) {
+					var listItemSmall = "<li><a href='#' rel='p" + i2 + "'><img id='p" + i2 + "ImageSmall' src='<?php get_site_url(); ?>/wp-content/uploads/2017/03/ssgm-video-thumb.jpg' width='154' height='127' alt='#'/></a></li>";
+	          	}
+	          	else{
+	          		var listItemSmall = "<li><a href='#' rel='p" + i2 + "'><img id='p" + i2 + "ImageSmall' src='' width='154' height='127' alt='#'/></a></li>";
+	          	}
+
 	          	$("#slideshow-carousel ul").append(listItemSmall);
 			}
 					
 			//count array elements
 			var arrayElements = "";
-			for (var countVble=1; countVble<=totalSlides2; countVble++){
+			for (var countVble=2; countVble<=totalSlides2; countVble++){
 				arrayElements = arrayElements + "var count"+countVble+" = 0;";
 				arrayElements = arrayElements + "for (i in slide"+countVble+") {";
 				arrayElements = arrayElements + "if (slide"+countVble+".hasOwnProperty(i)) {";
@@ -279,7 +293,7 @@
 			eval(arrayElements);
 													
 			//Apply array values
-			for (var i2=1; i2<=totalSlides2; i2++){
+			for (var i2=2; i2<=totalSlides2; i2++){
 				var builtSlide1 = "$('.p" + i2 + " a').attr('href',slide" + i2 + ".slideLink); $('.p" + i2 + " img').attr('src',slide" + i2 + ".slideLarge); $('#p" + i2 + "ImageSmall').attr('src',slide" + i2 + ".slideSmall);";
 				var builtSlide2 = " $('.p" + i2 + " h1').append(slide" + i2 + ".slideText1); $('.p" + i2 + " p').append(slide" + i2 + ".slideText2);";							
 				var slideTest = "count" + i2;
@@ -341,13 +355,36 @@
 		if($currentLang=="en"){ 
 			$attachment_id1 = get_post_meta($postID, 'teacher_photo1', true);
 			$attachment_id2 = get_post_meta($postID, 'teacher_photo2', true);
+			$attachment_id3 = get_post_meta($postID, 'teacher_photo3', true);
+			$attachment_id4 = get_post_meta($postID, 'teacher_photo4', true);
+			$attachment_id5 = get_post_meta($postID, 'teacher_photo5', true);
+			$attachment_id6 = get_post_meta($postID, 'teacher_photo6', true);
+			$attachment_id7 = get_post_meta($postID, 'teacher_photo7', true);
+			$attachment_id8 = get_post_meta($postID, 'teacher_photo8', true);
 		}
 		else{
 			$attachment_id1 = get_post_meta($translationID, 'teacher_photo1', true);
 			$attachment_id2 = get_post_meta($translationID, 'teacher_photo2', true);
+			$attachment_id3 = get_post_meta($translationID, 'teacher_photo3', true);
+			$attachment_id4 = get_post_meta($translationID, 'teacher_photo4', true);
+			$attachment_id5 = get_post_meta($translationID, 'teacher_photo5', true);
+			$attachment_id6 = get_post_meta($translationID, 'teacher_photo6', true);
+			$attachment_id7 = get_post_meta($translationID, 'teacher_photo7', true);
+			$attachment_id8 = get_post_meta($translationID, 'teacher_photo8', true);
 		}
 		?>
-		<div class="thumbnail"><?php // echo wp_get_attachment_image($attachment_id1, small); echo wp_get_attachment_image($attachment_id2, small); ?></div>
+		<div class="thumbnail">
+			<?php
+				echo wp_get_attachment_image($attachment_id1, small); 
+				echo wp_get_attachment_image($attachment_id2, small);
+				echo wp_get_attachment_image($attachment_id3, small);
+				echo wp_get_attachment_image($attachment_id4, small);
+				echo wp_get_attachment_image($attachment_id5, small);
+				echo wp_get_attachment_image($attachment_id6, small);
+				echo wp_get_attachment_image($attachment_id7, small);
+				echo wp_get_attachment_image($attachment_id8, small);
+			?>
+		</div>
 		<?php echo get_post_meta($postID, 'teacher_info_' . $currentLang, true); ?>
 	</div>
 	<div class="bgd-box"></div>
