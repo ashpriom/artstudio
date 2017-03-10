@@ -166,6 +166,14 @@
   
      		<script type="text/javascript">
 
+     			var slide1 = { 
+					slideLarge:"<iframe src=\"https://www.youtube.com/embed/THWecUL38uQ?autoplay=1\" width=\"545\" height=\"342\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe>",
+					slideSmall:"http://synstudio.staging.wpengine.com/wp-content/uploads/2016/01/Thumbnail_4.jpg",
+					slideText1:"",
+					slideText2:"",
+					slideLink:"",
+				}; 
+
 		 		<?php
 				/*	A loop field named "slider" with sub-fields "image"
 				    It uses the Custom Field Suite plugin's loop functionality.
@@ -177,7 +185,7 @@
 					else{
 						$fields = CFS()->get('slider',$translationID);
 					}
-					$i=0;
+					$i=1;
 					foreach ((array)$fields as $field) {
 						$i++;
 						echo "var slide".$i." = { \n";
