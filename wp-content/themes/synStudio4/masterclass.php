@@ -45,7 +45,11 @@
 				wrap: 'last',
 				initCallback: mycarousel_initCallback
 		   	});
-		}     
+		}
+
+		$('#carousel').jcarouselAutoscroll({
+    		autostart: false
+		});
 
 		//Front page Carousel - Initial Setup
 	   	$('div#slideshow-carousel a img').css({'opacity': '0.5'});
@@ -91,13 +95,13 @@
 				r = 1;
 			}	
 		};
-		var interval = setInterval(slider, 5000);
+		var interval = setInterval(slider, 15000);
 						
 		// when the user hovers in, clear the interval; if they hover out, restart it again
 		$('#slideshow-carousel').hover(function() {
 			clearInterval(interval);
 		},function() {
-			interval = setInterval(slider, 5000);
+			interval = setInterval(slider, 15000);
 		});
 	});
 
