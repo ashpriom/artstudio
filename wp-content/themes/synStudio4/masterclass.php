@@ -18,18 +18,13 @@
 
 	$(document).ready(function (){
 		if($(window).width() < 768){
-	        $('#carousel')
-		        .jcarousel({
-		            horizontal: true,
-		            scroll: 1,
-		            auto: 1,
-		            wrap: 'last',
-		            initCallback: mycarousel_initCallback
-		        })
-		        .jcarouselAutoscroll({
-		            autostart: false
-	        	})
-	        ;
+	        $('#carousel').jcarousel({
+	            horizontal: true,
+	            scroll: 1,
+	            auto: 0,
+	            wrap: 'last',
+	            initCallback: mycarousel_initCallback
+	        });
 
 	        $( "#col2 a" ).bind( "click", function(event) {
 	            event.preventDefault();
@@ -43,20 +38,14 @@
 		}
 
 		else{
-		    $('#carousel')
-			    .jcarousel({
-					vertical: true,
-					scroll: 1,
-					auto: 1,
-					wrap: 'last',
-					initCallback: mycarousel_initCallback
-			   	})
-			   	.jcarouselAutoscroll({
-		            autostart: false
-	        	})
-	        ;
+		    $('#carousel').jcarousel({
+				vertical: true,
+				scroll: 1,
+				auto: 0,
+				wrap: 'last',
+				initCallback: mycarousel_initCallback
+		   	});
 		}
-
 
 		//Front page Carousel - Initial Setup
 	   	$('div#slideshow-carousel a img').css({'opacity': '0.5'});
