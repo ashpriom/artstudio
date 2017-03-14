@@ -1585,11 +1585,11 @@ msgid "Account Page"
 msgstr ""
 
 #: includes/integrations/class-pum-woocommerce-integration.php:69
-msgid "Is Enpoint"
+msgid "Is Endpoint"
 msgstr ""
 
 #: includes/integrations/class-pum-woocommerce-integration.php:73
-msgid "Selected Enpoints"
+msgid "Selected Endpoints"
 msgstr ""
 
 #: includes/integrations/ninja-forms/Actions/ClosePopup.php:36, includes/modules/admin-bar.php:121
@@ -1628,11 +1628,11 @@ msgstr ""
 msgid "Popup ID"
 msgstr ""
 
-#: includes/modules/menus.php:123
+#: includes/modules/menus.php:127
 msgid "Trigger a Popup"
 msgstr ""
 
-#: includes/modules/menus.php:134
+#: includes/modules/menus.php:138
 msgid "Choose a popup to trigger when this item is clicked."
 msgstr ""
 
