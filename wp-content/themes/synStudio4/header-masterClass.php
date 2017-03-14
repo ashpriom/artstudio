@@ -226,17 +226,17 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 
 		<?php
 			if ($currentLang == "fr") { ?>
-					<img src="<?php bloginfo('url'); ?>/../wp-content/uploads/2016/01/gathering-banner-fr.jpg" alt="SYN STUDIO - GATHERING OF MASTERS 2016" width="1000" />
+					<img src="<?php bloginfo('url'); ?>/../wp-content/uploads/2017/03/ssgm17-synstudio-fr.jpg" alt="SYN STUDIO - GATHERING OF MASTERS 2016" width="1000" />
 				<?php }
 				else { ?>
-					<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/01/gathering-banner-en.jpg" alt="SYN STUDIO - GATHERING OF MASTERS 2016" width="1000" />
+					<img src="<?php bloginfo('url'); ?>/wp-content/uploads/2017/03/ssgm17-synstudio-en.jpg" alt="SYN STUDIO - GATHERING OF MASTERS 2016" width="1000" />
 				<?php } ?>
 
 			<div id="language2" style="top: 270px; right: 12px; color:white;">
 	   			<div class="phone">514 998-7625</div>
 	   			<?php 
 	   			if (function_exists('pll_the_languages')){
-	   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>0)); // See Polylang reference
+	   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); // See Polylang reference
 				}
 	   			?>
 			</div>
