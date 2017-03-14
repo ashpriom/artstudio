@@ -233,7 +233,7 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 				<?php } ?>
 
 			<div id="language2" style="top: 270px; right: 12px; color:white;">
-	   			<div class="phone">514 998-7625</div>
+	   			<div class="phone"><img src="<?php echo get_template_directory_uri(); ?>/images/icon-phone.png"> 514 998-7625</div>
 	   			<?php 
 	   			if (function_exists('pll_the_languages')){
 	   				pll_the_languages(array('hide_current'=>1, 'show_flags'=>1)); // See Polylang reference
