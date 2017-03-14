@@ -183,7 +183,7 @@
 						$fields = CFS()->get('slider');
 					}
 					else{
-						$fields = CFS()->get('slider',$translationID);
+						$fields = CFS()->get('ssgm_fr_slider');
 					}
 					$i=1;
 					foreach ((array)$fields as $field) {
