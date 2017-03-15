@@ -376,6 +376,7 @@
 		<div class="thumbnail">
 			<?php
 				echo wp_get_attachment_image($attachment_id1, small); 
+				echo get_post_field('post_excerpt', $attachment_id1); 
 				echo wp_get_attachment_image($attachment_id2, small);
 				echo wp_get_attachment_image($attachment_id3, small);
 				echo wp_get_attachment_image($attachment_id4, small);
