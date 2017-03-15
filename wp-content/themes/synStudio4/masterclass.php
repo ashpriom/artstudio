@@ -261,7 +261,7 @@
 				
 				//Items for Large Image
 				if (i2==1) {
-					var listItem = "<li class='p" + i2 + " active'><iframe style=\"position: relative; height: 100%; width: 100%;\" src=\"https://www.youtube.com/embed/THWecUL38uQ?autoplay=1\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></li>";
+					var listItem = "<li class='p" + i2 + " active'><iframe id=\"ssgmplayer\" style=\"position: relative; height: 100%; width: 100%;\" src=\"https://www.youtube.com/embed/THWecUL38uQ?autoplay=1&enablejsapi=1\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></li>";
 				}
 				else {
 					var listItem = "<li class='p" + i2 + "'><a href=''><img src='' width='545' height='342' alt=''/><span class='opacity'></span><span class='content'><h1></h1><p></p></span></a></li>";
