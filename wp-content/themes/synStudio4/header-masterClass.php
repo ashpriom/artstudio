@@ -98,9 +98,9 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 		</style>
 
 		<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg  {border-collapse:collapse;border-spacing:0;border-color:grey;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:grey;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:grey;color:#039;background-color:#b9c9fe;}
 .tg .tg-uxap{background-color:#efefef;color:#656565;vertical-align:top}
 .tg .tg-jg2s{background-color:#f16927;color:#f7f7f7;text-align:center;vertical-align:top}
 .tg .tg-o0ph{background-color:#efefef;color:#343434;vertical-align:top}
