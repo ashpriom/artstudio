@@ -91,6 +91,7 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 			@media only screen and (max-width: 768px){ /* Load mobile menu for screen sizes 767px and below. See footer.php for more. */
 				#mobile-header { display: block;}
 				#nav-wrapper { display: none; }
+				#cnt-teacherInfo .thumbnail{width: 140px;float: left;margin: 0.2em 1.2em 0 0;}
 			}
 			.breadcrum p{font-size: 1.1em;font-weight: 600;}
 			#nav #social{top: -13px !important;}
