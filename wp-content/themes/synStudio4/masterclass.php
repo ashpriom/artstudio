@@ -373,42 +373,42 @@
 			$attachment_id8 = get_post_meta($translationID, 'teacher_photo8', true);
 		}
 	?>
-	<div class="text">
+	<div class="teachertext">
 		<div class="thumbnail"> <?php echo wp_get_attachment_image($attachment_id1, small); ?></div>
 		<?php echo get_post_meta($postID, 'teacher_info1_' . $currentLang, true); ?>
 	</div>
 
-	<div class="text">
+	<div class="teachertext">
 		<div class="thumbnail"> <?php echo wp_get_attachment_image($attachment_id2, small); ?></div>
 		<?php echo get_post_meta($postID, 'teacher_info2_' . $currentLang, true); ?>
 	</div>
 
-	<div class="text">
+	<div class="teachertext">
 		<div class="thumbnail"> <?php echo wp_get_attachment_image($attachment_id3, small); ?></div>
 		<?php echo get_post_meta($postID, 'teacher_info3_' . $currentLang, true); ?>
 	</div>
 
-	<div class="text">
+	<div class="teachertext">
 		<div class="thumbnail"> <?php echo wp_get_attachment_image($attachment_id4, small); ?></div>
 		<?php echo get_post_meta($postID, 'teacher_info4_' . $currentLang, true); ?>
 	</div>
 
-	<div class="text">
+	<div class="teachertext">
 		<div class="thumbnail"> <?php echo wp_get_attachment_image($attachment_id5, small); ?></div>
 		<?php echo get_post_meta($postID, 'teacher_info5_' . $currentLang, true); ?>
 	</div>
 
-	<div class="text">
+	<div class="teachertext">
 		<div class="thumbnail"> <?php echo wp_get_attachment_image($attachment_id6, small); ?></div>
 		<?php echo get_post_meta($postID, 'teacher_info6_' . $currentLang, true); ?>
 	</div>
 
-	<div class="text">
+	<div class="teachertext">
 		<div class="thumbnail"> <?php echo wp_get_attachment_image($attachment_id7, small); ?></div>
 		<?php echo get_post_meta($postID, 'teacher_info7_' . $currentLang, true); ?>
 	</div>
 
-	<div class="text">
+	<div class="teachertext">
 		<div class="thumbnail"> <?php echo wp_get_attachment_image($attachment_id8, small); ?></div>
 		<?php echo get_post_meta($postID, 'teacher_info8_' . $currentLang, true); ?>
 	</div>

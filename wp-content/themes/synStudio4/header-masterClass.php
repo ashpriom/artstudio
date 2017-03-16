@@ -100,7 +100,7 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 			#header{margin-top: 0px !important;}
 
 			#cnt-teacherInfo{max-height: 300px;overflow: auto;}
-			#cnt-teacherInfo .details-box .text{max-height: none !important;}
+			.details-box .teachertext{max-height: none !important;}
 			#cnt-teacherInfo .details-box .thumbnail{
 			    width: 140px;
 			    float: left;
