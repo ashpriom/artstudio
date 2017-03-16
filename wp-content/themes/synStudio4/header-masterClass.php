@@ -114,7 +114,7 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 		<?php $options = get_option( 'sample_theme_options' ); // Custom theme options. See theme_options_do_page() in functions.php ?>
 		<?php wp_head(); ?>
 
-		<script type='text/javascript' src='http://www.youtube.com/iframe_api'></script>
+		<script type='text/javascript' src='https://www.youtube.com/iframe_api'></script>
 		<script type='text/javascript'>
         	var player;
         	function onYouTubeIframeAPIReady(){
