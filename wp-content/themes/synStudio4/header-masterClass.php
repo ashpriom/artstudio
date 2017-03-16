@@ -101,6 +101,11 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 
 			#cnt-teacherInfo{max-height: 300px;overflow: auto;}
 			.details-box .text{max-height: none !important;}
+			.details-box .thumbnail{
+			    width: 140px;
+			    float: left;
+			    margin: .9em 0.7em 0 0;
+			}
 
 			.tg  {border-collapse:collapse;border-spacing:0;border-color:lightgrey;}
 			.tg td{font-family:Arial, sans-serif;font-size:13px;padding:11px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:lightgrey;color:#669;background-color:#e8edff;}
