@@ -92,20 +92,13 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 				#mobile-header { display: block;}
 				#nav-wrapper { display: none; }
 			}
-			.breadcrum p{
-				font-size: 1.1em;
-    			font-weight: 600;
-			}
+			.breadcrum p{font-size: 1.1em;font-weight: 600;}
 			#nav #social{top: -13px !important;}
 			#header{margin-top: 0px !important;}
 
 			#cnt-teacherInfo{max-height: 300px;overflow: auto;}
-			.details-box .teachertext{max-height: none !important;}
-			#cnt-teacherInfo .details-box .thumbnail{
-			    width: 140px;
-			    float: left;
-			    margin: .9em 0.7em 0 0;
-			}
+			#cnt-teacherInfo .teachertext{max-height: none !important;margin-top: 20px;}
+			#cnt-teacherInfo .thumbnail{width: 140px;float: left;margin: 0.2em 0.7em 0 0;}
 
 			.tg  {border-collapse:collapse;border-spacing:0;border-color:lightgrey;}
 			.tg td{font-family:Arial, sans-serif;font-size:13px;padding:11px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:lightgrey;color:#669;background-color:#e8edff;}
