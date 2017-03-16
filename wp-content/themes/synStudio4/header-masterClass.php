@@ -93,7 +93,7 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 				#nav-wrapper { display: none; }
 			}
 			.breadcrum p{
-				font-size: 1.25em;
+				font-size: 1.1em;
     			font-weight: 600;
 			}
 			#nav #social{top: -13px !important;}
