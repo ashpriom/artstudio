@@ -92,19 +92,23 @@ if($metaKeywords == ""){$metaKeywords = "syn studio, art school, montreal, canad
 				#mobile-header { display: block;}
 				#nav-wrapper { display: none; }
 			}
-			.breadcrum p{font-size: 1em;}
+			.breadcrum p{
+				font-size: 1.25em;
+    			font-weight: 600;
+			}
 			#nav #social{top: -13px !important;}
-			#header{margin-top: 1px !important;}
+			#header{margin-top: 0px !important;}
 		</style>
 
 		<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;border-color:lightgrey;}
-.tg td{font-family:Arial, sans-serif;font-size:13px;padding:11px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:lightgrey;color:#669;background-color:#e8edff;}
-.tg th{font-family:Arial, sans-serif;font-size:13px;font-weight:normal;padding:11px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:lightgrey;color:#039;background-color:#b9c9fe;}
-.tg .tg-3x04{background-color:#ffffff;color:#656565;vertical-align:top}
-.tg .tg-6kke{background-color:#efefef;color:#656565;vertical-align:top}
-.tg .tg-pikk{background-color:#efefef;color:#656565;vertical-align:top}
-@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+			.tg  {border-collapse:collapse;border-spacing:0;border-color:lightgrey;}
+			.tg td{font-family:Arial, sans-serif;font-size:13px;padding:11px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:lightgrey;color:#669;background-color:#e8edff;}
+			.tg th{font-family:Arial, sans-serif;font-size:13px;font-weight:normal;padding:11px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:lightgrey;color:#039;background-color:#b9c9fe;}
+			.tg .tg-3x04{background-color:#ffffff;color:#656565;vertical-align:top}
+			.tg .tg-6kke{background-color:#efefef;color:#656565;vertical-align:top}
+			.tg .tg-pikk{background-color:#efefef;color:#656565;vertical-align:top}
+			@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}
+		</style>
 
 		<?php wp_enqueue_script("jquery"); ?>	
 		<?php $options = get_option( 'sample_theme_options' ); // Custom theme options. See theme_options_do_page() in functions.php ?>
