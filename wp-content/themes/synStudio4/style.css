@@ -809,11 +809,11 @@ a.lnk-readMore {
 	font-weight: normal;
 }
 #footer a:hover {
-	text-decoration: underline !important;
+	text-decoration: underline;
 }
 .footer-left{width:80%;text-align: left;float: left;}
 .footer-right{width:20%;float: left;}
-.footer-right a:hover{text-decoration: none;}
+.footer-right a:hover{text-decoration: none !important;}
 
 input[type=text]  {
 	border: 1px solid #848484;		
