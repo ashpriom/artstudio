@@ -401,12 +401,13 @@ img {
   font-family: 'Gotham-Book';
   font-size: 12px;
 }
+.footer-container .sponsors a:hover{color: transparent;}
 .section-footer p {
   padding: 0;
 }
 #wavecom-logo {
     width: 100px;
-    padding-left: 20px;
+    padding: 10px;
 }
 .nav-menu-footer p {
   padding-right: 0;
