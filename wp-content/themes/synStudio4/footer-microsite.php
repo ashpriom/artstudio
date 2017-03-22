@@ -9,7 +9,7 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
 
     <div class="footer-container">
         <div class="container-fluid section-footer">
-            <div class="row">
+            <div class="row sponsors">
                 <div class="col-sm-3">
                     <p class="footer-nav-title"><?php if($currentLang == "en"){ echo "  Sponsored by"; }else{ echo "  Commandité par"; }?></p>
                     <br />

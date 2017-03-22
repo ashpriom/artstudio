@@ -401,6 +401,7 @@ img {
   font-family: 'Gotham-Book';
   font-size: 12px;
 }
+.footer-container .sponsors a:hover{color: transparent;}
 .section-footer p {
   padding: 0;
 }

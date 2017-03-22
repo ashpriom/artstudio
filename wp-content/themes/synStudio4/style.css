@@ -813,6 +813,7 @@ a.lnk-readMore {
 }
 .footer-left{width:80%;text-align: left;float: left;}
 .footer-right{width:20%;float: left;}
+.footer-right a:hover{text-decoration: none;}
 
 input[type=text]  {
 	border: 1px solid #848484;		
