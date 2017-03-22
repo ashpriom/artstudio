@@ -13,6 +13,12 @@ if (function_exists('pll_current_language')) { $currentLang = pll_current_langua
                 <div class="col-sm-3">
                     <p class="footer-nav-title"><?php if($currentLang == "en"){ echo "  Sponsored by"; }else{ echo "  Commandité par"; }?></p>
                     <br />
+                    <a href="http://www.artstation.com/" target="_blank"> <!-- Hovering over the sponsor logo changes to another image -->
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/artstation.png" title="artstation" alt="artstation"
+                            onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/artstation-color.png';"
+                            onmouseout="this.src='<?php echo get_template_directory_uri(); ?>/images/artstation.png';">
+                        </img>
+                    </a>
                     <a href="http://www.wacom.com/" target="_blank">
                         <img id="wavecom-logo" src="<?php echo get_template_directory_uri(); ?>/images/diplomawacombw.png" title="Wacom" alt="Wacom"
                             onmouseover="this.src='<?php echo get_template_directory_uri(); ?>/images/diplomawacomcolor.png';"
