@@ -809,7 +809,7 @@ a.lnk-readMore {
 	font-weight: normal;
 }
 #footer a:hover {
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 .footer-left{width:80%;text-align: left;float: left;}
 .footer-right{width:20%;float: left;}
