@@ -12,9 +12,20 @@ Template Name: Artwork Showcase
 <?php if (function_exists('pll_current_language')) { $currentLang = pll_current_language(slug); } ?>
 
     <style>
-    /*.container-fluid{padding:0px !important;}*/
-    .pbWrapper img{width: auto !important;}
-    .justified-gallery{overflow: visible !important;}
+        /*.container-fluid{padding:0px !important;}*/
+        .pbWrapper img{width: auto !important;}
+        .justified-gallery{overflow: visible !important;}
+        /*  SHOWCASE STYLE  */
+        #section-header-ca-student-showcase {
+          background-image: url("<?php echo get_template_directory_uri(); ?>/images/student.jpg ?>");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        #section-header-ca-teacher-showcase {
+          background-image: url("<?php echo get_template_directory_uri(); ?>/images/teacher.png ?>");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
     </style>
 
     <body>
