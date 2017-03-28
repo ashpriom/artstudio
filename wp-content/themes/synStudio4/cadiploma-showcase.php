@@ -17,12 +17,12 @@ Template Name: Artwork Showcase
         .justified-gallery{overflow: visible !important;}
         /*  SHOWCASE STYLE  */
         #section-header-ca-student-showcase {
-          background-image: url("<?php echo get_template_directory_uri(); ?>/images/student.jpg ?>");
+          background-image: url("<?php echo get_template_directory_uri(); ?>/images/student.jpg");
           background-repeat: no-repeat;
           background-size: cover;
         }
         #section-header-ca-teacher-showcase {
-          background-image: url("<?php echo get_template_directory_uri(); ?>/images/teacher.png ?>");
+          background-image: url("<?php echo get_template_directory_uri(); ?>/images/teacher.png");
           background-repeat: no-repeat;
           background-size: cover;
         }
