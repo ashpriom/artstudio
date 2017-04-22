@@ -53,7 +53,7 @@
 	<script src="//www.google-analytics.com/cx/api.js?experiment=B0qO3mcISyCjR4BT_bf60A"></script>
 
 	<script>
-		// Ask Google Analytics which variation to show the user.	
+		// Ask Google Analytics which variation to show the user.
 		var chosenVariation = cxApi.chooseVariation();
 	</script>
 
@@ -75,9 +75,9 @@
 
 
 <!-- EN Drawing From Life -->
-<?php if($postID==46){ ?>
+<?php // if($postID==46){ ?>
 
-	<!-- Load the Content Experiment JavaScript API client for the experiment -->
+	<!-- Load the Content Experiment JavaScript API client for the experiment 
 	<script src="//www.google-analytics.com/cx/api.js?experiment=DkxBDqjkRkauasHBvh0xtQ"></script>
 
 	<script>
@@ -92,24 +92,24 @@
 		  	function(){		// B Version: Use JQuery to manipulate DOM elements.
 				$('#registration .text p').html("This is our most popular class and many sections fill up well before the deadline. <del>$410</del> <b><i>$310</i></b>.");
 
-				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php echo $altButton; ?>;
+				<?php // $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php // echo $altButton; ?>;
 				$('#paypalCode').html(buttonCode);
 			}
 		];
 
 		// Wait for the DOM to load, then execute the view for the chosen variation.
 		$(document).ready(pageVariations[chosenVariation]); // Execute the chosen view
-	</script>
+	</script> 
 
-<?php } ?>
-<!-- EN Drawing From Life -->
+<?php // } ?>
+EN Drawing From Life -->
 
 
 <!-- EN Digital Painting -->
 <?php if($postID==563){ ?>
 
-	<script src="//www.google-analytics.com/cx/api.js?experiment=jvdTAt5rT3CxkXBmLNzrTA"></script>
+	<script src="//www.google-analytics.com/cx/api.js?experiment=TnEX7eyrR6y0G3_IVes5yA"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
 	<script>
 		var pageVariations = [
@@ -130,8 +130,8 @@
 <!-- EN Digital Painting -->
 
 
-<!-- FR Drawing From Life -->
-<?php if($postID==11026){ ?>
+<!-- FR Drawing From Life
+<?php // if($postID==11026){ ?>
 
 	<script src="//www.google-analytics.com/cx/api.js?experiment=rLTo-ZTvRdmkr97C1jR-3A"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
@@ -141,8 +141,8 @@
 		  	function(){
 				$('#registration .text p').html("Ces cours sont très populaires et se remplissent bien avant la date limite <del>410 $</del> <b><i>310 $</i></b>.");
 
-				<?php $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
-				var buttonCode = <?php echo $altButton; ?>;
+				<?php // $altButton = json_encode(get_post_meta($postID, 'altPaypalCode', true)); ?>
+				var buttonCode = <?php // echo $altButton; ?>;
 				$('#paypalCode').html(buttonCode);
 			}
 		];
@@ -151,13 +151,13 @@
 	</script>
 
 <?php } ?>
-<!-- FR Drawing From Life -->
+FR Drawing From Life -->
 
 
 <!-- FR Digital Painting -->
 <?php if($postID==11073){ ?>
 
-	<script src="//www.google-analytics.com/cx/api.js?experiment=eNyTpsDrQ7O8AJ3QC1h5sQ"></script>
+	<script src="//www.google-analytics.com/cx/api.js?experiment=0tvogVAWRZG2speAn1oJ7A"></script>
 	<script> var chosenVariation = cxApi.chooseVariation(); </script>
 	<script>
 		var pageVariations = [
