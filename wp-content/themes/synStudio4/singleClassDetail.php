@@ -74,10 +74,10 @@
 <!-- A/B Testing Syntest -->
 
 
-<!-- EN Drawing From Life -->
+<!-- EN Drawing From Life 
 <?php // if($postID==46){ ?>
 
-	<!-- Load the Content Experiment JavaScript API client for the experiment 
+	Load the Content Experiment JavaScript API client for the experiment 
 	<script src="//www.google-analytics.com/cx/api.js?experiment=DkxBDqjkRkauasHBvh0xtQ"></script>
 
 	<script>
@@ -150,7 +150,7 @@ EN Drawing From Life -->
 		$(document).ready(pageVariations[chosenVariation]);
 	</script>
 
-<?php } ?>
+<?php // } ?>
 FR Drawing From Life -->
 
 
